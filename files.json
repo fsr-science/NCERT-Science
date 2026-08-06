@@ -2610,6 +2610,11 @@
           ]
         }
       ]
+    },
+    {
+      "type": "file",
+      "name": "README.md",
+      "path": "README.md"
     }
   ]
 }
