@@ -2615,6 +2615,16 @@
       "type": "file",
       "name": "README.md",
       "path": "README.md"
+    },
+    {
+      "type": "file",
+      "name": "app.js",
+      "path": "app.js"
+    },
+    {
+      "type": "file",
+      "name": "styles.css",
+      "path": "styles.css"
     }
   ]
 }
