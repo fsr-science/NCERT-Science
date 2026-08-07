@@ -1,41 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NCERT Science</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="brand">
-        <h1>NCERT Science</h1>
-      </div>
-      <div class="search-wrap">
-        <input id="searchInput" type="search" placeholder="Search files and folders..." />
-      </div>
-    </header>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NCERT Science</title>
+<link rel="stylesheet" href="./styles.css" />
+<!--
+  Additive styles for the new table-based browser and inline viewer.
+  I don't have your existing styles.css, so these are scoped to new
+  "fb-*" classes and kept theme-neutral (currentColor / low-opacity
+  borders) so they should sit alongside your existing look without
+  colliding. Feel free to move these into styles.css directly.
+-->
+<style>
+  .fb-breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .fb-crumb {
+    background: none;
+    border: none;
+    color: inherit;
+    opacity: 0.75;
+    cursor: pointer;
+    padding: 2px 4px;
+    font: inherit;
+  }
+  .fb-crumb:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .fb-crumb:focus-visible {
+    opacity: 1;
+    outline: 2px solid rgba(255, 255, 255, 0.6);
+    outline-offset: 2px;
+  }
+  .fb-crumb-sep {
+    opacity: 0.4;
+  }
+  .fb-table-wrap {
+    overflow-y: auto;
+  }
+  .fb-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  .fb-table thead th {
+    text-align: left;
+    padding: 6px 12px;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    opacity: 0.6;
+    position: sticky;
+    top: 0;
+  }
+  .fb-row {
+    cursor: pointer;
+  }
+  .fb-row:hover {
+    background: rgba(255, 255, 255, 0.06);
+  }
+  .fb-row:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.6);
+    outline-offset: -2px;
+  }
+  .fb-row td {
+    padding: 6px 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    vertical-align: top;
+  }
+  .fb-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .fb-type-cell {
+    opacity: 0.75;
+    white-space: nowrap;
+  }
+  .fb-location {
+    font-size: 0.72rem;
+    opacity: 0.6;
+    white-space: normal;
+    margin-top: 2px;
+  }
+  .fb-empty-row {
+    padding: 16px 12px;
+    opacity: 0.6;
+    text-align: center;
+  }
+  .fb-content-title {
+    font-weight: 600;
+  }
+  .markdown-body {
+    padding: 16px 20px;
+    overflow-y: auto;
+    line-height: 1.6;
+  }
+  .markdown-body pre {
+    white-space: pre-wrap;
+  }
+  .fb-loading,
+  .fb-error {
+    opacity: 0.7;
+  }
+  .fb-download-wrap {
+    padding: 10px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .fb-download-wrap.hidden {
+    display: none;
+  }
+  .fb-download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+  }
+  .fb-download-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .fb-download-link:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.6);
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+<header class="topbar">
+<div class="brand">
+<h1>NCERT Science</h1>
+</div>
+<div class="search-wrap">
+<input id="searchInput" type="search" placeholder="Search files and folders..." />
+</div>
+</header>
 
-    <main class="layout">
-      <aside class="sidebar">
-        <div class="sidebar-header">Browse</div>
-        <nav id="tree"></nav>
-      </aside>
+<main class="layout">
+<aside class="sidebar">
+<div class="sidebar-header">Browse</div>
+<div id="breadcrumbs" class="fb-breadcrumbs"></div>
+<div class="fb-table-wrap">
+<table class="fb-table">
+<thead>
+<tr><th>Name</th><th>Type</th></tr>
+</thead>
+<tbody id="fileTableBody"></tbody>
+</table>
+</div>
+</aside>
 
-      <section class="content">
-        <div class="viewer-toolbar">
-          <a id="openFileLink" href="#" target="_blank" rel="noopener">Open file</a>
-        </div>
+<section class="content">
+<div class="viewer-toolbar">
+<span id="contentTitle" class="fb-content-title">No file selected</span>
+</div>
 
-        <div id="viewerBox" class="viewer-box">
-          <div id="emptyState" class="empty-state">
-            Select a file or folder to browse.
-          </div>
-          <iframe id="pdfFrame" title="PDF Viewer"></iframe>
-        </div>
-      </section>
-    </main>
+<div id="viewerBox" class="viewer-box">
+<div id="emptyState" class="empty-state">
+            Select a file to preview it here.
+</div>
+<div id="markdownBody" class="markdown-body" style="display:none;"></div>
+<iframe id="pdfFrame" title="PDF Viewer" style="display:none;"></iframe>
+</div>
 
-    <script src="./app.js"></script>
-  </body>
+<div id="downloadWrap" class="fb-download-wrap hidden">
+<a id="downloadLink" class="fb-download-link" download>
+<span aria-hidden="true">⬇</span> Download <span id="downloadFileName"></span>
+</a>
+</div>
+</section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+<script src="./app.js" defer></script>
+</body>
 </html>
