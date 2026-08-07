@@ -1,26 +1,30 @@
-name: Update files.json
+name: Generate files manifest
 
 on:
   push:
-    branches: ["**"]
+    branches: [main]
+
+permissions:
+  contents: write
 
 jobs:
   fmtree:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
-      - name: Checkout
+      - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Run fmtree.py
-        run: python fmtree.py
+      - name: Generate files.json
+        run: python3 fmtree.py
 
-      - name: Commit files.json if changed
+      - name: Commit manifest when changed
         run: |
-          git config user.name  "github-actions[bot]"
+          if git diff --quiet -- files.json; then
+            echo "files.json is already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add files.json
-          git diff --cached --quiet && echo "No changes" || git commit -m "chore: update files.json [skip ci]"
+          git commit -m "chore: regenerate files manifest [skip ci]"
           git push

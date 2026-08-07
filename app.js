@@ -11,6 +11,7 @@ const downloadFileName = document.getElementById("downloadFileName");
 
 let treeData = null;
 let breadcrumbStack = []; // array of folder nodes, root to current
+const CDN_BASE_URL = "https://cdn.jsdelivr.net/gh/fsr-science/NCERT-Science@main/";
 
 function escapeHtml(value) {
   return String(value)
@@ -212,7 +213,7 @@ function showDownload(url, filename) {
 async function openFile(node) {
   const safePath = node.path.replace(/\\/g, "/");
   const lower = safePath.toLowerCase();
-  const fileUrl = "./" + safePath;
+  const fileUrl = CDN_BASE_URL + safePath.split("/").map(encodeURIComponent).join("/");
 
   contentTitle.textContent = node.name;
   // Reveal the download link only now that a file has actually been opened.

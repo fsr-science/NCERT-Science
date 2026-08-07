@@ -1,70 +1,58 @@
-import os
 import json
+import mimetypes
+import subprocess
+from pathlib import Path
 
-EXCLUDED_ROOT_FILES = {
-    "files.json",
-    "fmtree.py",
-    "index.html",
-    "favicon.png",
-    "manifest.json",
-    "service-worker.js",
-    "offline.html",
-    "offline.png",
-    "admins.json",
-    "obsidian-md.js",
-    "obsidian-markdown-it.js",
-    "fallback.html",
-    "autopush.sh",
-    "installer.html",
-    "package.json",
-    "package-lock.json",
-    "tree.txt",
-    "zip.sh"
-    "styles.css"
-}
+ROOT = Path(__file__).resolve().parent
 
-EXCLUDED_ROOT_DIRS = {
-    "community",
-    "waiting-list",
-    "api",
-    "node_modules",
-    "bin",
-    "GH Fix"
-}
 
-def build_tree(path, rel_path=""):
-    tree = []
-    for name in sorted(os.listdir(path)):
-        if name.startswith('.'):
-            continue  # skip hidden
-        full_path = os.path.join(path, name)
-        rel_file_path = os.path.join(rel_path, name).replace("\\", "/")
+def blob_sha(path):
+    """Return Git's blob SHA, matching the SHA exposed by GitHub."""
+    result = subprocess.run(
+        ["git", "hash-object", str(path)],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return result.stdout.strip()
 
-        if os.path.isdir(full_path):
-            if rel_path == "" and name in EXCLUDED_ROOT_DIRS:
-                continue  # skip root-level directory exclusions
-            tree.append({
+
+def file_entry(path):
+    relative_path = path.relative_to(ROOT).as_posix()
+    mime, _ = mimetypes.guess_type(path.name)
+    return {
+        "type": "file",
+        "name": path.name,
+        "path": relative_path,
+        "sha": blob_sha(path),
+        "mime": mime or "application/octet-stream",
+    }
+
+
+def build_tree(path):
+    children = []
+    for child in sorted(path.iterdir(), key=lambda item: item.name):
+        if child.name in {"files.json", ".git", ".venv"}:
+            continue
+        if child.is_dir():
+            children.append({
                 "type": "folder",
-                "name": name,
-                "children": build_tree(full_path, rel_file_path)
+                "name": child.name,
+                "children": build_tree(child),
             })
-        else:
-            if rel_path == "" and name in EXCLUDED_ROOT_FILES:
-                continue  # skip root-level file exclusions
-            tree.append({
-                "type": "file",
-                "name": name,
-                "path": rel_file_path
-            })
-    return tree
+        elif child.is_file():
+            children.append(file_entry(child))
+    return children
 
 if __name__ == "__main__":
-    root_dir = "."  # start from current directory
+    root_dir = ROOT
     tree = {
         "type": "folder",
-        "name": os.path.basename(os.path.abspath(root_dir)),
+        "name": ROOT.name,
         "children": build_tree(root_dir)
     }
-    with open("files.json", "w", encoding="utf-8") as f:
-        json.dump(tree, f, indent=2)
+    with (ROOT / "files.json").open("w", encoding="utf-8") as f:
+        json.dump(tree, f, indent=2, ensure_ascii=False)
+        f.write("\n")
     print("✓ files.json generated.")
