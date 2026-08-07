@@ -20,6 +20,7 @@ EXCLUDED_ROOT_FILES = {
     "package-lock.json",
     "tree.txt",
     "zip.sh"
+    "styles.css"
 }
 
 EXCLUDED_ROOT_DIRS = {
