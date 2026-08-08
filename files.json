@@ -3509,6 +3509,20 @@
     },
     {
       "type": "file",
+      "name": "fallback.html",
+      "path": "fallback.html",
+      "sha": "f7e420b527ed285289899dbc48a23007f05c610f",
+      "mime": "text/html"
+    },
+    {
+      "type": "file",
+      "name": "favicon.png",
+      "path": "favicon.png",
+      "sha": "78d4cea8f44f268a419acb0c2239f904471d8f49",
+      "mime": "image/png"
+    },
+    {
+      "type": "file",
       "name": "fmtree.py",
       "path": "fmtree.py",
       "sha": "d7f62fe495a227f62b2d6d9b2cea1ac6f9e59c2f",
@@ -3518,7 +3532,7 @@
       "type": "file",
       "name": "index.html",
       "path": "index.html",
-      "sha": "c8d98b58bba171fb9e175ab04ea6b4a15ab2cd65",
+      "sha": "631efa0a5933ebb0bf8a0d8b1551faa1eb2fb8ea",
       "mime": "text/html"
     },
     {
