@@ -30,20 +30,10 @@ jobs:
         run: |
           python3 fmtree.py --out ./files.json
 
-      - name: Assemble Pages output
-        run: |
-          mkdir -p _site
-          cp index.html app.js styles.css fallback.html _site/ 2>/dev/null || true
-          cp -r AI-NOTES _site/ 2>/dev/null || true
-          cp -r NCERT-EXAMPLER _site/ 2>/dev/null || true
-          cp -r NCERT-PDF _site/ 2>/dev/null || true
-          # ensure files.json (generated in repo root) is included in the Pages artifact
-          cp files.json _site/ 2>/dev/null || true
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
