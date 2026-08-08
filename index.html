@@ -712,6 +712,7 @@ async function fetchTree() {
 
       // Start update checks only after splash is gone
       setTimeout(() => setInterval(checkForUpdate, 120000), 5000); // 2-minute interval
+    }, 500);
   } catch (error) {
     showStatus("Error loading files: " + error.message);
     console.error("Error fetching tree:", error);
