@@ -1,11 +1,10 @@
-name: Generate files manifest
+name: Generate files manifest (manual)
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   fmtree:
@@ -14,17 +13,5 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Generate files.json
+      - name: Generate files.json (no commit)
         run: python3 fmtree.py
-
-      - name: Commit manifest when changed
-        run: |
-          if git diff --quiet -- files.json; then
-            echo "files.json is already up to date"
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add files.json
-          git commit -m "chore: regenerate files manifest [skip ci]"
-          git push

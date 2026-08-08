@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Notebook-X</title>
+  <title>NCERT-Science</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="favicon.png" />
   <style>
@@ -582,7 +582,7 @@
 
   <div class="window">
     <div class="toolbar">
-      <h1>Notebook-X</h1>
+      <h1>NCERT-Science</h1>
       <button onclick="refreshFiles()">↻</button>
       <button onclick="goUp()">↑</button>
     </div>
@@ -700,19 +700,6 @@ async function fetchTree() {
     const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(raw));
     lastHash = Array.from(new Uint8Array(digest)).map(b => b.toString(16).padStart(2, '0')).join('');
     initialLoadComplete = true;
-    try {
-      lastCommit = await fetchLatestCommit();
-    } catch (e) {
-      console.warn("Failed to fetch initial commit:", e);
-    }
-
-	
-	
-	if (!window.updateCheckStarted) {
-    window.updateCheckStarted = true;
-    setInterval(checkForUpdate, 20000);
-    }
-
 
     currentNode = tree;
     pathHistory = [];
@@ -724,13 +711,7 @@ async function fetchTree() {
       splash.style.display = 'none';
 
       // Start update checks only after splash is gone
-      if (!window.updateCheckStarted) {
-        window.updateCheckStarted = true;
-        setTimeout(() => setInterval(checkForUpdate, 20000), 5000); // or 60000 for 1-minute interval
-      }
-    }, 500);
-
-    showStatus("Files loaded successfully!");
+      setTimeout(() => setInterval(checkForUpdate, 120000), 5000); // 2-minute interval
   } catch (error) {
     showStatus("Error loading files: " + error.message);
     console.error("Error fetching tree:", error);
@@ -766,7 +747,7 @@ function renderFolder(node) {
     // Exclude .github/ folder
     if (item.type === "folder" && item.name === ".github") return false;
     // Exclude specific root files
-    if (node.name === "notebooks" && item.type === "file" && EXCLUDED_ROOT_FILES.includes(item.name)) return false;
+    if (pathHistory.length === 0 && item.type === "file" && EXCLUDED_ROOT_FILES.includes(item.name)) return false;
     return true;
   });
   
@@ -1136,47 +1117,28 @@ window.addEventListener("DOMContentLoaded", fetchTree);
     return marked.parse(text);
   }
   
-let lastCommit = null;	
 let lastHash = null;
 let initialLoadComplete = false;
-async function fetchLatestCommit() {
-  try {
-    const res = await fetch("https://api.github.com/repos/ubsr-official/notebooks/commits?per_page=1");
-
-    if (!res.ok) {
-      throw new Error(`GitHub API returned ${res.status}`);
-    }
-
-    const data = await res.json();
-
-    if (!Array.isArray(data) || !data[0]?.sha) {
-      throw new Error("Unexpected response format from GitHub API");
-    }
-
-    return data[0].sha;
-
-  } catch (err) {
-	  showStatus("Could not fetch latest commit: " + err.message);
-      console.error("Could not fetch latest commit:", err);
-    return null;
-  }
-}
 
 async function checkForUpdate() {
   if (!initialLoadComplete) return;
 
-  const newCommit = await fetchLatestCommit();
-  if (!newCommit) return;
-  
-  console.log("lastCommit:", lastCommit);
-  console.log("newCommit:", newCommit);
+  try {
+    const res = await fetch("files.json?v=" + Date.now(), { cache: 'no-store' });
+    if (!res.ok) return;
+    const tree = await res.json();
+    const raw = JSON.stringify(tree, Object.keys(tree).sort());
+    const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(raw));
+    const currentHash = Array.from(new Uint8Array(digest)).map(b => b.toString(16).padStart(2, '0')).join('');
 
-  if (lastCommit && newCommit !== lastCommit) {
-    const notice = document.getElementById("updateNotice");
-    if (notice && notice.style.display !== "flex") {
-      notice.style.display = "flex";
+    if (lastHash && currentHash !== lastHash) {
+      const notice = document.getElementById("updateNotice");
+      if (notice && notice.style.display !== "flex") {
+        notice.style.display = "flex";
+      }
     }
-
+  } catch (err) {
+    console.warn("Could not check update manifest:", err);
   }
 }	
 

@@ -23,15 +23,39 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      - name: Generate files.json (build artifact only)
+        run: |
+          python3 fmtree.py --out ./files.json
+
+      - name: Assemble Pages output
+        run: |
+          mkdir -p _site
+          cp index.html app.js styles.css fallback.html _site/ 2>/dev/null || true
+          cp -r AI-NOTES _site/ 2>/dev/null || true
+          cp -r NCERT-EXAMPLER _site/ 2>/dev/null || true
+          cp -r NCERT-PDF _site/ 2>/dev/null || true
+          # ensure files.json (generated in repo root) is included in the Pages artifact
+          cp files.json _site/ 2>/dev/null || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ./_site
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Notify NoteBooks-Framework
+        if: always()
+        run: |
+          PAYLOAD=$(jq -n --arg sha "${{ github.sha }}" --arg repo "${{ github.repository }}" '{sha:$sha, repo:$repo}')
+          curl -s -X POST "https://notebooks-framework.vercel.app/api/webhooks/content-update" \
+            -H "Content-Type: application/json" -d "$PAYLOAD" || true
+
+      - name: Purge jsDelivr (optional)
+        run: |
+          curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@${{ github.ref_name }}/files.json" || true

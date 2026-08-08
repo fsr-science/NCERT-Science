@@ -249,7 +249,10 @@ async function openFile(node) {
 async function init() {
   const res = await fetch("./files.json");
   if (!res.ok) throw new Error("files.json not found");
-  treeData = await res.json();
+  const text = await res.text();
+  treeData = JSON.parse(text);
+  // cheap signature used by the background poller
+  lastManifestSignature = text.length + ':' + text.slice(0, 64);
 
   renderBreadcrumbs();
   renderBrowseTable(treeData.children || []);
@@ -267,3 +270,32 @@ async function init() {
 init().catch((err) => {
   fileTableBody.innerHTML = `<tr><td colspan="2" class="fb-empty-row">Could not load files.json: ${escapeHtml(err.message)}</td></tr>`;
 });
+
+// ---- Background manifest poller ----
+let lastManifestSignature = null;
+
+async function checkForContentUpdate() {
+  try {
+    const res = await fetch(`./files.json?v=${Date.now()}`, { cache: 'no-store' });
+    if (!res.ok) return;
+    const text = await res.text();
+    const signature = text.length + ':' + text.slice(0, 64);
+    if (lastManifestSignature && signature !== lastManifestSignature) {
+      console.info('[refresh] Repository update detected — refreshing tree');
+      try {
+        treeData = JSON.parse(text);
+        breadcrumbStack = [];
+        renderBreadcrumbs();
+        renderBrowseTable(treeData.children || []);
+      } catch (e) {
+        console.warn('[refresh] failed to parse updated manifest', e);
+      }
+    }
+    lastManifestSignature = signature;
+  } catch (e) {
+    console.warn('[refresh] manifest check failed', e);
+  }
+}
+
+// Poll every 2 minutes
+setInterval(checkForContentUpdate, 120_000);

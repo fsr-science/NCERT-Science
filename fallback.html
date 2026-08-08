@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8" />
- <title>Notebook-X File Manager</title>
+ <title>NCERT-Science File Manager</title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <link rel="icon" href="favicon.png" />
  <style>
@@ -307,7 +307,7 @@
 
  <div class="window">
  <div class="toolbar">
- <h1>Notebook-X File Manager</h1>
+ <h1>NCERT-Science File Manager</h1>
  <button onclick="goUp()">Up</button>
  </div>
  <div class="grid" id="grid"></div>
@@ -364,7 +364,7 @@ function renderFolder(node) {
  // Exclude .github/ folder
  if (item.type === "folder" && item.name === ".github") return false;
  // Exclude specific root files
- if (node.name === "notebooks" && item.type === "file" && EXCLUDED_ROOT_FILES.includes(item.name)) return false;
+ if (pathHistory.length === 0 && item.type === "file" && EXCLUDED_ROOT_FILES.includes(item.name)) return false;
  return true;
  });
 
