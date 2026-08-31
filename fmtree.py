@@ -27,8 +27,13 @@ SKIP_DIRECTORIES = {
     ".mypy_cache",
     ".ruff_cache",
     "node_modules",
+    ".github",
+    ".vscode",
 }
-SKIP_FILES = {".DS_Store", "files.json"}
+SKIP_FILES = {
+    ".DS_Store", 
+    "files.json"
+              }
 
 
 def run_git(*arguments: str) -> str:
