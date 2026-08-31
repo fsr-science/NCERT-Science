@@ -28,12 +28,17 @@ SKIP_DIRECTORIES = {
     ".ruff_cache",
     "node_modules",
     ".github",
-    ".vscode",
+    ".vscode"
 }
 SKIP_FILES = {
     ".DS_Store", 
-    "files.json"
-              }
+    "files.json",
+    ".nojekyll",
+    "index.html",
+    "app.js",
+    "styles.css",
+    ""
+}
 
 
 def run_git(*arguments: str) -> str:
