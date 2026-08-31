@@ -39,7 +39,8 @@ SKIP_FILES = {
     "app.js",
     "styles.css",
     "fallback.html",
-    "favicon.png"
+    "favicon.png",
+    "fmtree.py"
 }
 
 
