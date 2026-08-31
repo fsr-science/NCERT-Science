@@ -19,6 +19,7 @@ from pathlib import Path
 from typing import Iterable
 
 ROOT = Path(__file__).resolve().parent
+
 SKIP_DIRECTORIES = {
     ".git",
     ".venv",
@@ -37,7 +38,8 @@ SKIP_FILES = {
     "index.html",
     "app.js",
     "styles.css",
-    ""
+    "fallback.html",
+    "favicon.png"
 }
 
 
