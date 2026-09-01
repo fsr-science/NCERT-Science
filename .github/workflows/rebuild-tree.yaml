@@ -1,0 +1,10 @@
+jobs:
+  rebuild-notebooks-tree:
+    needs: build-content
+    uses: fsr-official/NoteBooks-Framework/.github/workflows/rebuild-tree.yml@main
+    with:
+      stream: science
+      origin: fsr-science/NCERT-Science
+    secrets:
+      TREE_REBUILD_URL: https://notebooks-framework.vercel.app/api/workspace/tree/rebuild
+      TREE_REBUILD_SECRET: ${{ secrets.TREE_REBUILD_SECRET }}
