@@ -76,7 +76,7 @@ $$\mathbf{A}\cdot\mathbf{B} = A(B\cos\theta) = B(A\cos\theta)$$
   \draw[orange!80!black, line width=1.6pt] (O) -- (F) node[midway, below, font=\small, orange!80!black] {$B\cos\theta$};
   \draw[orange!80!black] (0.7,0) arc (0:40:0.7);
   \node[font=\small, orange!80!black] at (0.95,0.35) {$\theta$};
-  \node[below, font=\small, text=gray, style=italic] at (2,-0.9) {$\mathbf{A}\cdot\mathbf{B}=AB\cos\theta$: product of $A$ and the projection of $\mathbf{B}$ onto $\mathbf{A}$};
+  \node[below, font=\itshape\small, text=gray] at (2,-0.9) {$\mathbf{A}\cdot\mathbf{B}=AB\cos\theta$: product of $A$ and the projection of $\mathbf{B}$ onto $\mathbf{A}$};
 \end{tikzpicture}
 ```
 
@@ -185,7 +185,7 @@ where θ = angle between **F** and **d**.
   \draw[->, red!75!black, line width=1.8pt] (0.5,0.4) -- (2.1,1.55) node[above, font=\small] {$\mathbf{F}$};
   \draw[red!75!black] (1.0,0.4) arc (0:35:0.5);
   \node[font=\small, red!75!black] at (1.35,0.62) {$\theta$};
-  \node[below, font=\small, text=gray, style=italic] at (2.5,-1.1) {$W=(F\cos\theta)d=\mathbf{F}\cdot\mathbf{d}$ — only the component of $\mathbf{F}$ along $d$ does work};
+  \node[below, font=\itshape\small, text=gray] at (2.5,-1.1) {$W=(F\cos\theta)d=\mathbf{F}\cdot\mathbf{d}$ — only the component of $\mathbf{F}$ along $d$ does work};
 \end{tikzpicture}
 ```
 
@@ -513,7 +513,7 @@ Bob of mass m on string of length L; horizontal velocity v₀ at lowest point A;
   \draw[->, red!75!black, line width=1.4pt] (B) -- ++(0,0.9);
   \draw[->, red!75!black, line width=1.4pt] (C) -- ++(-0.9,0);
   \draw[dashed, gray] (0,-2) -- (0,2);
-  \node[below, font=\small, text=gray, style=italic] at (0,-2.7) {String goes slack at C — gravity alone supplies the centripetal force there};
+  \node[below, font=\itshape\small, text=gray] at (0,-2.7) {String goes slack at C — gravity alone supplies the centripetal force there};
 \end{tikzpicture}
 ```
 
@@ -558,7 +558,7 @@ where x = displacement from equilibrium; k = spring constant (N m⁻¹) = [MT⁻
 
 ```tikz
 \usetikzlibrary{arrows.meta}
-\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, thick, scale=0.95]
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, <={Stealth[length=7pt,width=5pt]}, thick, scale=0.95]
   \draw[line width=2pt] (-0.2,-0.1) -- (-0.2,1.1);
   \draw[gray] (-0.5,-0.1)--(-0.2,0.2) (-0.5,0.4)--(-0.2,0.7) (-0.5,0.9)--(-0.2,1.1);
   \draw[blue!70!black] (-0.2,0.5) -- (0.15,0.75) -- (0.5,0.25) -- (0.85,0.75) -- (1.2,0.25) -- (1.55,0.75) -- (1.9,0.25) -- (2.25,0.5);
@@ -571,7 +571,7 @@ where x = displacement from equilibrium; k = spring constant (N m⁻¹) = [MT⁻
   \draw[fill=orange!25] (3.3,-1.4) rectangle (4.1,-0.6);
   \node[below, font=\small] at (3.7,-1.55) {extreme position};
   \draw[<->, black] (2.65,-2.0) -- (3.7,-2.0) node[midway, below, font=\small] {$x_m$};
-  \node[below, font=\small, text=gray, style=italic] at (2.3,-2.5) {Block oscillates between $-x_m$ and $+x_m$ about the mean (equilibrium) position};
+  \node[below, font=\itshape\small, text=gray] at (2.3,-2.5) {Block oscillates between $-x_m$ and $+x_m$ about the mean (equilibrium) position};
 \end{tikzpicture}
 ```
 
