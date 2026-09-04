@@ -1,4 +1,3 @@
-
 # ⚡ CHAPTER 5 — WORK, ENERGY AND POWER
 > **Complete Study Notes** | Board · NEET · JEE Layered
 
@@ -17,6 +16,7 @@ flowchart TD
     E --> F["Conservative Forces"]
     F --> F1["Gravitational PE: V = mgh"]
     F --> F2["Spring PE: V = (1/2)kx^2"]
+    F --> F3["Sign of V: negative = attractive & bound (V to 0 at infinity)"]
     F1 --> G["Conservation of Mechanical Energy"]
     F2 --> G
     G --> G1["K + V = constant (conservative forces only)"]
@@ -26,6 +26,8 @@ flowchart TD
     H1 --> I
     I --> J["COLLISIONS"]
     J --> J1["Elastic: KE + p conserved"]
+    J1 --> J1a["General: both bodies moving"]
+    J1a --> J1b["Special case: target at rest (u2=0)"]
     J --> J2["Inelastic: p conserved only"]
     J --> J3["Perfectly Inelastic: bodies stick"]
 
@@ -36,6 +38,8 @@ flowchart TD
     style H1 fill:#3d2a1a,color:#f0d0a8,stroke:#e67e22
     style J fill:#3d1a1a,color:#ffd0d0,stroke:#e74c3c
     style J1 fill:#3d1a1a,color:#ffd0d0,stroke:#e74c3c
+    style J1a fill:#3d1a1a,color:#ffd0d0,stroke:#e74c3c
+    style J1b fill:#3d1a1a,color:#ffd0d0,stroke:#e74c3c
     style J2 fill:#3d1a1a,color:#ffd0d0,stroke:#e74c3c
     style J3 fill:#3d1a1a,color:#ffd0d0,stroke:#e74c3c
 ```
@@ -492,6 +496,27 @@ $$\frac{1}{2}mv_f^2 = mgH \implies v_f = \sqrt{2gH} \quad \checkmark \text{ (mat
 
 Bob of mass m on string of length L; horizontal velocity v₀ at lowest point A; string goes slack at highest point C.
 
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, thick, scale=1.0]
+  \draw[gray!60] (0,0) circle (2);
+  \coordinate (A) at (0,-2);
+  \coordinate (B) at (2,0);
+  \coordinate (C) at (0,2);
+  \fill[blue!70!black] (A) circle (2.5pt);
+  \fill[blue!70!black] (B) circle (2.5pt);
+  \fill[blue!70!black] (C) circle (2.5pt);
+  \node[below, font=\small] at (A) {A ($v_0$)};
+  \node[right, font=\small] at (B) {B ($v_B$)};
+  \node[above, font=\small] at (C) {C ($v_C$)};
+  \draw[->, red!75!black, line width=1.4pt] (A) -- ++(0.9,0);
+  \draw[->, red!75!black, line width=1.4pt] (B) -- ++(0,0.9);
+  \draw[->, red!75!black, line width=1.4pt] (C) -- ++(-0.9,0);
+  \draw[dashed, gray] (0,-2) -- (0,2);
+  \node[below, font=\small, text=gray, style=italic] at (0,-2.7) {String goes slack at C — gravity alone supplies the centripetal force there};
+\end{tikzpicture}
+```
+
 > [!example] Solution
 >
 > **At point C** (string slack ⟹ tension $T_C=0$; gravity alone supplies the centripetal force):
@@ -530,6 +555,25 @@ $$\boxed{F_s = -kx} \quad \text{...(Hooke's Law)}$$
 where x = displacement from equilibrium; k = spring constant (N m⁻¹) = [MT⁻²]; negative sign → restoring force (always toward equilibrium).
 
 **Stiff spring:** large k | **Soft spring:** small k
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, thick, scale=0.95]
+  \draw[line width=2pt] (-0.2,-0.1) -- (-0.2,1.1);
+  \draw[gray] (-0.5,-0.1)--(-0.2,0.2) (-0.5,0.4)--(-0.2,0.7) (-0.5,0.9)--(-0.2,1.1);
+  \draw[blue!70!black] (-0.2,0.5) -- (0.15,0.75) -- (0.5,0.25) -- (0.85,0.75) -- (1.2,0.25) -- (1.55,0.75) -- (1.9,0.25) -- (2.25,0.5);
+  \draw[fill=orange!25] (2.25,0.1) rectangle (3.05,0.9);
+  \node[above, font=\small] at (2.65,0.95) {mean position};
+  \draw[dashed, gray] (2.65,-1.7) -- (2.65,0.1);
+  \draw[line width=2pt] (-0.2,-1.6) -- (-0.2,-0.4);
+  \draw[gray] (-0.5,-1.6)--(-0.2,-1.3) (-0.5,-1.1)--(-0.2,-0.8) (-0.5,-0.6)--(-0.2,-0.4);
+  \draw[blue!70!black] (-0.2,-1.0) -- (0.3,-0.75) -- (0.8,-1.25) -- (1.3,-0.75) -- (1.8,-1.25) -- (2.3,-0.75) -- (2.8,-1.25) -- (3.3,-1.0);
+  \draw[fill=orange!25] (3.3,-1.4) rectangle (4.1,-0.6);
+  \node[below, font=\small] at (3.7,-1.55) {extreme position};
+  \draw[<->, black] (2.65,-2.0) -- (3.7,-2.0) node[midway, below, font=\small] {$x_m$};
+  \node[below, font=\small, text=gray, style=italic] at (2.3,-2.5) {Block oscillates between $-x_m$ and $+x_m$ about the mean (equilibrium) position};
+\end{tikzpicture}
+```
 
 ### 9.2 Potential Energy of a Spring
 
@@ -979,3 +1023,7 @@ Equal masses (m₁ = m₂); θ₂ = 37°; elastic collision.
 9. **During collision, KE ≠ conserved even in elastic.** KE conservation in elastic collisions applies to initial and final states — NOT at every instant during contact.
 
 10. **Work done by internal forces:** The sum of work done by action-reaction forces (W₁₂ + W₂₁) is NOT necessarily zero. This is why a block sliding on another can lose KE.
+
+11. **Zero total momentum + elastic collision ⟹ both velocities simply reverse.** If $m_1u_1+m_2u_2=0$, an elastic 1D collision gives $v_1=-u_1$ and $v_2=-u_2$ — a quick sanity-check shortcut, not a coincidence.
+
+12. **Negative PE (with the V→0-at-infinity convention) always means a bound, attractive system.** The same logic reappears in gravitation (Chapter 7) and atomic binding energy.
