@@ -1396,21 +1396,21 @@
                   "type": "file",
                   "name": "MATHEMATICS02-RELATIONS_AND_FUNCTIONS-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "bfc17c6279e9323fc485a10d91089f19cdebdb71",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS02-RELATIONS_AND_FUNCTIONS-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "7153a448cd266cf36e71b85e64fd6a17c3f99ab8",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS02-RELATIONS_AND_FUNCTIONS-PQs.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS-PQs.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "8db9c7930f2ecaae656486a7d94cff24cfed019e",
                   "mime": "text/markdown"
                 },
                 {
@@ -1430,14 +1430,14 @@
                   "type": "file",
                   "name": "MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "8ebc23c17e03a0f9d9a220b6117dd11df40089b0",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "5a945d4be98563b6288dde5f3e4895047a51d1fe",
                   "mime": "text/markdown"
                 },
                 {
@@ -1451,7 +1451,7 @@
                   "type": "file",
                   "name": "MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-REVISION_MINDMAPS.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-REVISION_MINDMAPS.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "77ae03f9692a9a942d0d7f7b3f15dc06bd5764dd",
                   "mime": "text/markdown"
                 }
               ]
@@ -1464,14 +1464,14 @@
                   "type": "file",
                   "name": "MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "dabeb9de47d0abebc73a4897c6a9c49a71f38acd",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "1a021f91a06add3fe2b608423ae3362c249e89a4",
                   "mime": "text/markdown"
                 },
                 {
@@ -1485,7 +1485,7 @@
                   "type": "file",
                   "name": "MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-REVISION_MINDMAPS.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-REVISION_MINDMAPS.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "0413fa6cc71125c41a34d3ee481f15c36e940102",
                   "mime": "text/markdown"
                 }
               ]
@@ -1498,14 +1498,14 @@
                   "type": "file",
                   "name": "MATHEMATICS05-LINEAR_INEQUALITIES-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS05-LINEAR_INEQUALITIES/MATHEMATICS05-LINEAR_INEQUALITIES-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "fee45c1854ab29c2a9d3bc5b786c36dd98f83dcc",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS05-LINEAR_INEQUALITIES-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS05-LINEAR_INEQUALITIES/MATHEMATICS05-LINEAR_INEQUALITIES-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "e71c440c7c8e4a976b1c43a9c5eafac4f4c0921f",
                   "mime": "text/markdown"
                 },
                 {
@@ -1519,7 +1519,7 @@
                   "type": "file",
                   "name": "MATHEMATICS05-LINEAR_INEQUALITIES-REVISION_MINDMAPS.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS05-LINEAR_INEQUALITIES/MATHEMATICS05-LINEAR_INEQUALITIES-REVISION_MINDMAPS.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "30d95364b6f550ed570a74132a305248913f2e85",
                   "mime": "text/markdown"
                 }
               ]
@@ -1532,14 +1532,14 @@
                   "type": "file",
                   "name": "MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "af4cd0894b6f2bdc37412d26cd3d11dceaa2be5d",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "1592d6beeb03a955084ecc04adaffc02c5d5364b",
                   "mime": "text/markdown"
                 },
                 {
@@ -1553,7 +1553,7 @@
                   "type": "file",
                   "name": "MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-REVISION_MINDMAPS.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-REVISION_MINDMAPS.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "da9e3545bc690e2f10f8b8c7ee95c74339b9557d",
                   "mime": "text/markdown"
                 }
               ]
@@ -1566,14 +1566,14 @@
                   "type": "file",
                   "name": "MATHEMATICS07-BINOMIAL_THEOREM-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS07-BINOMIAL_THEOREM/MATHEMATICS07-BINOMIAL_THEOREM-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "6121679d565ad50f93d33925bf0e70693e1adc92",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS07-BINOMIAL_THEOREM-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS07-BINOMIAL_THEOREM/MATHEMATICS07-BINOMIAL_THEOREM-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "d3c090e93a71248541b062096ee7db87d4332649",
                   "mime": "text/markdown"
                 },
                 {
@@ -1587,7 +1587,7 @@
                   "type": "file",
                   "name": "MATHEMATICS07-BINOMIAL_THEOREM-REVISION_MINDMAPS.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS07-BINOMIAL_THEOREM/MATHEMATICS07-BINOMIAL_THEOREM-REVISION_MINDMAPS.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "8973e05b10d70dac141c5fcbc47d9f7091291b82",
                   "mime": "text/markdown"
                 }
               ]
@@ -1634,14 +1634,14 @@
                   "type": "file",
                   "name": "MATHEMATICS09-STRAIGHT_LINES-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS09-STRAIGHT_LINES/MATHEMATICS09-STRAIGHT_LINES-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "612d202a43e5ad132dcba68af789de13436200e9",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS09-STRAIGHT_LINES-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS09-STRAIGHT_LINES/MATHEMATICS09-STRAIGHT_LINES-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "571227485db655cf5a6a88281b24df069891c0f9",
                   "mime": "text/markdown"
                 },
                 {
@@ -1655,7 +1655,7 @@
                   "type": "file",
                   "name": "MATHEMATICS09-STRAIGHT_LINES-REVISION_MINDMAPS.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS09-STRAIGHT_LINES/MATHEMATICS09-STRAIGHT_LINES-REVISION_MINDMAPS.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "befd7922234460001edb07cd91e75978ba499162",
                   "mime": "text/markdown"
                 }
               ]
@@ -1829,6 +1829,33 @@
                   "mime": "text/markdown"
                 }
               ]
+            },
+            {
+              "type": "folder",
+              "name": "MATHEMATICSEX-MATHEMATICAL_INDUCTION",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "MATHEMATICSEX-MATHEMATICAL_INDUCTION-GLOSSARY.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICSEX-MATHEMATICAL_INDUCTION/MATHEMATICSEX-MATHEMATICAL_INDUCTION-GLOSSARY.md",
+                  "sha": "3f5a80db073f86dc2f605ef416a6ad8b474f39b2",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "MATHEMATICSEX-MATHEMATICAL_INDUCTION-NOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICSEX-MATHEMATICAL_INDUCTION/MATHEMATICSEX-MATHEMATICAL_INDUCTION-NOTES.md",
+                  "sha": "6233068280067ab5b56d4cd5c01b5950fac5f847",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "MATHEMATICSEX-MATHEMATICAL_INDUCTION-REVISION_MINDMAPS.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICSEX-MATHEMATICAL_INDUCTION/MATHEMATICSEX-MATHEMATICAL_INDUCTION-REVISION_MINDMAPS.md",
+                  "sha": "d7e102dec712958454debaa9a1e484bd4561f3ed",
+                  "mime": "text/markdown"
+                }
+              ]
             }
           ]
         },
@@ -1987,7 +2014,7 @@
                   "type": "file",
                   "name": "PHYSICS05-WORK_ENERGY_AND_POWER-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS05-WORK_ENERGY_AND_POWER/PHYSICS05-WORK_ENERGY_AND_POWER-NOTES.md",
-                  "sha": "db55fc0806d17964c1d180f5732a657bb13572a4",
+                  "sha": "1f4cc31b91cfbb53c92a75618c2212dc836e15fa",
                   "mime": "text/markdown"
                 },
                 {
@@ -2021,7 +2048,7 @@
                   "type": "file",
                   "name": "PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-NOTES.md",
-                  "sha": "17635511d9db9cf0d1a7f0635161e983311315ad",
+                  "sha": "20127086e8dea70eb04aa927dc8fe23d7521a154",
                   "mime": "text/markdown"
                 },
                 {
