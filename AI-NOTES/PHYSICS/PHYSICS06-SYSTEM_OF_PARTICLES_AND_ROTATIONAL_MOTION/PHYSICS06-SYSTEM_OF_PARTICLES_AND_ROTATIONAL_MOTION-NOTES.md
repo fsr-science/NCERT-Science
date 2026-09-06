@@ -1,3 +1,4 @@
+
 # CHAPTER 6: SYSTEMS OF PARTICLES AND ROTATIONAL MOTION
 
 ### Complete Study Notes | Board · NEET · JEE Layered
@@ -102,6 +103,40 @@ No real body is truly rigid; deformations exist but are often negligible (e.g., 
 - A particle at perpendicular distance r from the axis traces a circle of radius r.
 - Particles **on the axis** have r = 0, so v = ωr = 0 → they remain **stationary**.
 - The axis of a spinning top is **not fixed** (it precesses) — our chapter mainly deals with fixed-axis rotation.
+
+### 1.4 Interactive — Why Different Points Have Different Speeds *(New)*
+
+The TikZ figure above is a snapshot; this graph is the mechanism. Five points sit at different radii on the *same* rotating disc (same $\omega$ for all of them, exactly as the Key Principle box states). Drag $\omega$ and watch every arrow's length scale — **linearly with $r$**, never with anything else.
+
+```desmos
+\omega=1.4
+r_{1}=0.6
+r_{2}=1.2
+r_{3}=1.8
+r_{4}=2.4
+r_{5}=3.0
+t=0
+\theta=\omega t
+P_{1}=r_{1}\left(\cos\theta,\sin\theta\right)
+P_{2}=r_{2}\left(\cos\theta,\sin\theta\right)
+P_{3}=r_{3}\left(\cos\theta,\sin\theta\right)
+P_{4}=r_{4}\left(\cos\theta,\sin\theta\right)
+P_{5}=r_{5}\left(\cos\theta,\sin\theta\right)
+V_{1}=\omega r_{1}\left(-\sin\theta,\cos\theta\right)
+V_{2}=\omega r_{2}\left(-\sin\theta,\cos\theta\right)
+V_{3}=\omega r_{3}\left(-\sin\theta,\cos\theta\right)
+V_{4}=\omega r_{4}\left(-\sin\theta,\cos\theta\right)
+V_{5}=\omega r_{5}\left(-\sin\theta,\cos\theta\right)
+v_{1}=\operatorname{vector}\left(P_{1},P_{1}+V_{1}\right)
+v_{2}=\operatorname{vector}\left(P_{2},P_{2}+V_{2}\right)
+v_{3}=\operatorname{vector}\left(P_{3},P_{3}+V_{3}\right)
+v_{4}=\operatorname{vector}\left(P_{4},P_{4}+V_{4}\right)
+v_{5}=\operatorname{vector}\left(P_{5},P_{5}+V_{5}\right)
+x^{2}+y^{2}=r_{5}^{2}
+speed_{table}=\left[\left|V_{1}\right|,\left|V_{2}\right|,\left|V_{3}\right|,\left|V_{4}\right|,\left|V_{5}\right|\right]
+```
+
+Every arrow points along its own tangent — none of them parallel — but the ratio $|V_i|/r_i$ is the **same number** ($=\omega$) for all five points, every single frame. That ratio being constant *is* the content of Eq. (6.19), $v_i=\omega r_i$.
 
 ---
 
@@ -412,7 +447,7 @@ $$\boxed{\mathbf{v} = \boldsymbol\omega \times \mathbf{r}} \qquad \text{...(6.20
 \begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, thick, scale=1.0]
   \draw[->, thick] (0,-0.4) -- (0,4.2) node[above, font=\small] {$z$ (axis)};
   \draw[->, purple!70!black, line width=1.6pt] (0,3.2) -- (0,4.0);
-  \node[font=\small, purple!70!black] at (0.4,3.9) {$\boldsymbol\omega$};
+  \node[font=\small, purple!70!black] at (0.4,3.9) {$\vec\omega$};
   \coordinate (C) at (0,1.6);
   \draw[gray!60] (C) ellipse (2.0 and 0.5);
   \fill[black] (C) circle (1.5pt) node[left=2pt, font=\small] {$C$};
@@ -423,7 +458,7 @@ $$\boxed{\mathbf{v} = \boldsymbol\omega \times \mathbf{r}} \qquad \text{...(6.20
   \draw[blue!60!black, line width=1.2pt] (C) -- (P) node[midway, above, font=\small, blue!60!black] {$r_\perp$};
   \draw[->, orange!85!black, line width=1.5pt] (O) -- (P) node[midway, below right=1pt, font=\small, orange!85!black] {$\mathbf r$};
   \draw[->, green!45!black, line width=1.7pt] (P) -- ++(0,1.3) node[above, font=\small, green!45!black] {$\mathbf v$};
-  \node[below, font=\itshape\small, text=gray] at (0.3,-0.9) {$P$ traces a circle of radius $r_\perp$; $\mathbf v=\boldsymbol\omega\times\mathbf r$ is tangential to it};
+  \node[below, font=\itshape\small, text=gray] at (0.3,-0.9) {$P$ traces a circle of radius $r_\perp$; $\mathbf v=\vec\omega\times\mathbf r$ is tangential to it};
 \end{tikzpicture}
 ```
 
@@ -455,8 +490,69 @@ $$\boxed{\mathbf{a}_t = \boldsymbol\alpha\times\mathbf{r}, \qquad |a_t| = \alpha
 
 $$\boxed{a_c = \omega^2 r_\perp = \frac{v^2}{r_\perp}} \quad \text{(centripetal — always toward the axis, changes direction only)}$$
 
+**How $a_t$ and $a_c$ actually scale — plotted, not just stated:** $a_t=\alpha r$ is a **straight line** against $\omega$ (it doesn't even depend on $\omega$!), while $a_c=\omega^2 r$ is a **parabola**. This is easy to state and easy to forget — plotting both against the same axis makes the quadratic growth of $a_c$ impossible to un-see.
+
+```desmos
+a_{tan}\left(\omega\right)=\alpha r
+a_{cen}\left(\omega\right)=\omega^{2}r
+r=2
+\alpha=1.5
+\omega_{now}=1.8
+P_{tan}=\left(\omega_{now},a_{tan}\left(\omega_{now}\right)\right)
+P_{cen}=\left(\omega_{now},a_{cen}\left(\omega_{now}\right)\right)
+```
+
+Slide $\omega_{now}$ to the right: the point on the flat line $a_{tan}(\omega)$ barely moves, but the point on $a_{cen}(\omega)$ shoots upward — double $\omega$ and $a_c$ quadruples, not doubles.
+
 > [!warning] Common Confusion
 > $a_t = \alpha r_\perp$ is only the **tangential** part. It vanishes when $\omega$ is constant ($\alpha = 0$) — but the particle is *still* accelerating centripetally, $a_c=\omega^2 r_\perp \neq 0$, as long as it keeps moving in a circle at all. "No angular acceleration" does **not** mean "no acceleration."
+
+### 5.4 Interactive 3D Model — Visualizing $\mathbf v=\boldsymbol\omega\times\mathbf r$ and $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ *(New)*
+
+Section 5.1 asserted that $\boldsymbol\omega$ is a genuine **vector** lying along the rotation axis — that's the single hardest thing to picture from a flat page. The model below makes it concrete: $\boldsymbol\omega$ and $\boldsymbol\alpha$ literally point along the $z$-axis, $\mathbf r$ sweeps around in the $xy$-plane, and $\mathbf v$, $\mathbf a_{rad}$, $\mathbf a_{tan}$ are computed as genuine cross products — not just plugged into a memorised formula. Drag $t$ and watch every vector update live.
+
+| Desmos variable | Meaning | Matches this note's notation |
+|:---|:---|:---|
+| $\sigma$ | angular position | $\theta$ |
+| $\omega_0,\ \omega$ | initial / instantaneous angular velocity | $\omega_0,\ \omega$ |
+| $\alpha$ | angular acceleration | $\alpha$ |
+| $r_{head}$ | tip of the position vector | $\mathbf r$ |
+| $\omega_{head},\ \alpha_{head}$ | $(0,0,\omega)$, $(0,0,\alpha)$ — $\boldsymbol\omega,\boldsymbol\alpha$ as real 3-vectors | $\boldsymbol\omega,\ \boldsymbol\alpha$ |
+| $v_{head}=\omega_{head}\times r_{head}$ | velocity, via genuine cross product | $\mathbf v=\boldsymbol\omega\times\mathbf r$ (Eq. 6.20) |
+| $a_{tan}=\alpha_{head}\times r_{head}$ | tangential acceleration | $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ (§5.3) |
+| $a_{rad}$ | centripetal (radial) acceleration | $a_c=-\omega^2\mathbf r$ (§5.3) |
+
+```desmos-3d
+O_{rg}\ =\ \left(0,0,0\right)
+\sigma=\omega_{0}t+\frac{1}{2}\alpha t^{2}\ +\ \sigma_{0}
+\omega=\omega_{0}+\alpha t
+r_{head}=R\left(\cos\sigma,\sin\sigma,0\right)
+\omega_{head}=\left(0,0,\omega\right)
+v_{head}\ =\ \omega_{head}\times r_{head}
+v_{body}=v_{head}+\ r_{head}
+\alpha_{head}=\left(0,0,\alpha\right)
+a_{rad}=-R\omega^{2}\left(\frac{r_{head}}{R}\right)
+a_{radbody}=a_{rad}+r_{head}
+a_{tan}\ =\alpha_{head}\times r_{head}
+a_{tanbody}=a_{tan}+r_{head}
+a_{net}=a_{rad}+a_{tan}
+a_{netbody}=a_{net}+r_{head}
+x^{2}+y^{2}=R^{2}
+r_{vec}=\operatorname{vector}\left(O_{rg},r_{head}\right)
+\omega_{vec}=\operatorname{vector}\left(O_{rg},\omega_{head}\right)
+\alpha_{vec}=\operatorname{vector}\left(O_{rg},\alpha_{head}\right)
+v_{vec}=\operatorname{vector}\left(r_{head},v_{body}\right)
+a_{radvec}=\operatorname{vector}\left(r_{head},a_{radbody}\right)
+a_{tanvec}=\operatorname{vector}\left(r_{head},a_{tanbody}\right)
+a_{netvec}=\operatorname{vector}\left(r_{head},a_{netbody}\right)
+\sigma_{0}=0
+\omega_{0}=-1.53
+\alpha=1.1
+R=3.3
+t=2.541
+```
+
+Try setting $\alpha=0$: the $\vec\alpha$ arrow and $\mathbf a_{tan}$ both vanish, but $\mathbf a_{rad}$ stays put — a direct, hands-on confirmation of the §5.3 warning above.
 
 ---
 
@@ -486,7 +582,7 @@ Torque vanishes if $r=0$, $F=0$, or if the line of action of $\mathbf F$ passes 
   \fill[black] (O) circle (1.5pt) node[below left=1pt, font=\small] {$O$};
   \fill[black] (P) circle (2pt) node[below right=1pt, font=\small] {$P$};
   \node[draw, circle, minimum size=14pt, font=\tiny] at (5.3,3.0) {$\odot$};
-  \node[font=\small, purple!70!black] at (6.1,3.0) {$\boldsymbol\tau$ out of page};
+  \node[font=\small, purple!70!black] at (6.1,3.0) {$\vec\tau$ out of page};
 \end{tikzpicture}
 ```
 
@@ -507,6 +603,29 @@ $$\frac{d\mathbf{L}}{dt} = \frac{d\mathbf{r}}{dt}\times\mathbf{p} + \mathbf{r}\t
 $$\boxed{\frac{d\mathbf{L}}{dt} = \boldsymbol\tau} \qquad \text{...(6.27)}$$
 
 ($\mathbf v\times m\mathbf v = \mathbf 0$ because the cross product of any vector with itself — or a scalar multiple of itself — vanishes.) This is the exact rotational analogue of $\mathbf F = d\mathbf p/dt$.
+
+**Interactive 3D — $\mathbf L=\mathbf r\times\mathbf p$ for a particle going in a circle** *(New)*: this is the object Eq. (6.25a) actually is — not a formula, a vector. Here a particle of mass $m$ moves on a circle of radius $R$ in the $xy$-plane with angular speed $\omega$; $\mathbf r$ and $\mathbf p$ both sweep around together, yet their cross product $\mathbf L$ **never changes** — same direction ($+z$), same magnitude, every instant. That's Section 11's whole "$L=I\omega=$ constant" idea, seen a chapter early, from first principles.
+
+```desmos-3d
+O_{rg}=\left(0,0,0\right)
+R=2.5
+\omega=1.2
+m=1
+t=0.7
+\sigma=\omega t
+r_{head}=R\left(\cos\sigma,\sin\sigma,0\right)
+v_{head}=\omega\left(0,0,1\right)\times r_{head}
+p_{head}=m\cdot v_{head}
+L_{head}=r_{head}\times p_{head}
+r_{vec}=\operatorname{vector}\left(O_{rg},r_{head}\right)
+p_{vec}=\operatorname{vector}\left(r_{head},r_{head}+p_{head}\right)
+L_{vec}=\operatorname{vector}\left(O_{rg},O_{rg}+L_{head}\right)
+x^{2}+y^{2}=R^{2}
+L_{magnitude}=\left|L_{head}\right|
+L_{expected}=m\omega R^{2}
+```
+
+Drag $t$ through a full revolution: $\vec r$ and $\vec p$ both rotate in the $xy$-plane, but $\vec L$ stands **perfectly still**, pointing along $+z$, with $L_{magnitude}$ locked to $m\omega R^2$ throughout — exactly the invariance Example 6.6 proves algebraically for a straight-line particle, now shown for a circular one.
 
 ### 6.3 Torque and Angular Momentum for a System of Particles
 
@@ -977,6 +1096,53 @@ Number of revolutions $= 1152\pi/(2\pi) = \boxed{576 \text{ revolutions}}$
 >
 > $$\boxed{\text{Angular retardation} = \frac{80}{\pi}\approx 25.5 \text{ rad/s}^2}$$
 
+### 9.6 Interactive Model — Explore the Kinematics Equations Yourself *(New)*
+
+Everything derived in this section — $\theta=\theta_0+\omega_0t+\tfrac12\alpha t^2$, $\omega=\omega_0+\alpha t$ — plus the tangential/centripetal split from §5.3, is live below. Drag $t$ to watch time evolve, or change $u_{ang}$, $a_{ang}$, $\phi$, or $R$ and watch every vector update instantly.
+
+| Desmos variable | Meaning | Matches this note's notation |
+|:---|:---|:---|
+| $A$ | angular position | $\theta$ |
+| $u_{ang}$ | initial angular velocity | $\omega_0$ |
+| $v_{ang}$ | angular velocity at time $t$ | $\omega$ |
+| $a_{ang}$ | angular acceleration | $\alpha$ |
+| $\phi$ | initial angular position | $\theta_0$ |
+| $r$ | position vector on the circle | $\mathbf r$ |
+| $v$ | tangential velocity vector | $\mathbf v=\boldsymbol\omega\times\mathbf r$ |
+| $a_{rad}$ | centripetal (radial) acceleration | $a_c=-\omega^2\mathbf r$ |
+| $a_{tan}$ | tangential acceleration | $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ |
+| $a_{net}$ | total acceleration | $\mathbf a_{rad}+\mathbf a_{tan}$ |
+
+```desmos
+A\ =\frac{1}{2}a_{ang}t^{2}+u_{ang}t\ +\ \phi
+v_{ang}=u_{ang}+a_{ang}t
+x^{2}+y^{2}\ =\ R^{2}
+r=R\left(\cos A,\ \sin A\right)
+r_{dir}=\frac{r}{R}
+v=Rv_{ang}\left(-\sin A,\ \cos A\right)
+v_{body}=v+r
+v_{dir}=\frac{v}{Rv_{ang}}
+a_{rad}=-R\left(v_{ang}\right)^{2}\left(r_{dir}\right)
+a_{radbody}=a_{rad}+r
+a_{tan}=Ra_{ang}\left(v_{dir}\right)
+a_{tanbody}=a_{tan}+r
+a_{net}=a_{rad}+a_{tan}
+a_{netbody}=a_{net}+r
+y_{r}\ =\ \tan\left(A\right)x\ \left\{x^{2}\le r.x^{2}\right\}\left\{\operatorname{sgn}\left(r.x\right)=\operatorname{sgn}\left(x\right)\right\}
+y_{v}=\ -\cot\left(A\right)\left(x-r.x\right)\ +r.y\ \ \left\{\left(x-r.x\right)^{2\ }\le\left(v.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(v.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
+y_{rad}=\tan\left(A\right)\left(x-r.x\right)+r.y\ \left\{\left(x-r.x\right)^{2}\le\left(a_{rad}.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(a_{rad}.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
+y_{tan}=-\cot\left(A\right)\left(x-r.x\right)+r.y\ \left\{\left(x-r.x\right)^{2\ }\le\left(a_{tan}.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(a_{tan}.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
+y_{net}=\tan\left(\arctan\left(-\frac{Ra_{ang}}{R\left(v_{ang}\right)^{2}}\right)+A\right)\left(x-r.x\right)+r.y\left\{\left(x-r.x\right)^{2\ }\le\left(a_{net}.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(a_{net}.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
+R=3.54
+u_{ang}=1.72
+\phi=0.8
+a_{ang}=-0.48
+t\ =0
+R_{ext}=0
+```
+
+Try setting $a_{ang}=0$ and dragging $t$: the point still moves (constant $\omega$), $a_{tan}$ disappears, but $a_{rad}$ never does — this is the same §5.3 warning, now something you can drag instead of just read.
+
 ---
 
 ## SECTION 10 — DYNAMICS OF ROTATIONAL MOTION ABOUT A FIXED AXIS ⭐⭐⭐
@@ -1095,6 +1261,19 @@ So if $I$ **decreases**, $\omega$ must **increase** to keep $I\omega$ fixed, and
   \node[font=\small, gray] at (3.2,2.6) {Same $L=I\omega$ throughout — no external torque};
 \end{tikzpicture}
 ```
+
+**Turn this into a dial you can actually drag:** with $L$ held fixed, $\omega$ and $I$ trace out the hyperbola $\omega=L/I$ below — pull $I_{now}$ toward zero (arms tucked in tight) and watch $\omega_{now}$ shoot upward, exactly the "arms in → spin faster" effect in the panel above, now with numbers attached.
+
+```desmos
+L=5
+I_{now}=2.2
+\omega_{now}=\frac{L}{I_{now}}
+K_{now}=\frac{L^{2}}{2I_{now}}
+f\left(I\right)=\frac{L}{I}
+P=\left(I_{now},\omega_{now}\right)
+```
+
+Watch $K_{now}=L^2/(2I_{now})$ climb as you drag $I_{now}$ down — this is the "kinetic energy increases" claim below, made concrete: halving $I_{now}$ doesn't just double $K_{now}$, it **quadruples** it, because $K\propto 1/I$ while $\omega\propto 1/I$ too.
 
 A skater (or a person on a frictionless swivel chair) pulls their arms in: $I$ decreases sharply, so $\omega$ increases to conserve $L=I\omega$. Pulling arms back out reverses the effect. The kinetic energy $K=\tfrac12I\omega^2=\tfrac12L\omega$ actually **increases** when arms are pulled in (since $\omega$ increases while $L$ stays fixed) — that extra energy comes from the **muscular work** done pulling the arms inward against the effective outward pull, not from nowhere.
 
