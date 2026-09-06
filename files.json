@@ -1600,14 +1600,14 @@
                   "type": "file",
                   "name": "MATHEMATICS08-SEQUENCES_AND_SERIES-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS08-SEQUENCES_AND_SERIES/MATHEMATICS08-SEQUENCES_AND_SERIES-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "9a9bd99a841c82e16951c55dcf1717c65b8ebf51",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS08-SEQUENCES_AND_SERIES-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS08-SEQUENCES_AND_SERIES/MATHEMATICS08-SEQUENCES_AND_SERIES-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "44af37e4ec6d89a32607bb1986f64556201e5323",
                   "mime": "text/markdown"
                 },
                 {
@@ -1621,7 +1621,7 @@
                   "type": "file",
                   "name": "MATHEMATICS08-SEQUENCES_AND_SERIES-REVISION_MINDMAPS.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS08-SEQUENCES_AND_SERIES/MATHEMATICS08-SEQUENCES_AND_SERIES-REVISION_MINDMAPS.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "08417ae877bfcb4048e942449dd9f0b946904475",
                   "mime": "text/markdown"
                 }
               ]
@@ -1702,14 +1702,14 @@
                   "type": "file",
                   "name": "MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "7026f2c924c7592e399086d74ab23cf4fe2bc26e",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "fdadb37b390fec6174e4746cc12e0cd77ca3c23e",
                   "mime": "text/markdown"
                 },
                 {
@@ -1723,7 +1723,7 @@
                   "type": "file",
                   "name": "MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-REVISION_MINDMAPS.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-REVISION_MINDMAPS.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "1ad5b263fe7f8d170c3d8801da33bb2c9793188d",
                   "mime": "text/markdown"
                 }
               ]
@@ -3365,6 +3365,13 @@
               "name": "MATHEMATICS14-PROBABILITY.pdf",
               "path": "NCERT-PDF/MATHEMATICS/MATHEMATICS14-PROBABILITY.pdf",
               "sha": "da0611955c50db5d259dec40350df9cd6a308158",
+              "mime": "application/pdf"
+            },
+            {
+              "type": "file",
+              "name": "MATHEMATICSEX-MATHEMATICAL_INDUCTION.pdf",
+              "path": "NCERT-PDF/MATHEMATICS/MATHEMATICSEX-MATHEMATICAL_INDUCTION.pdf",
+              "sha": "f92eae1514670bec3ac08e02d6b9c72642fc7d62",
               "mime": "application/pdf"
             }
           ]
