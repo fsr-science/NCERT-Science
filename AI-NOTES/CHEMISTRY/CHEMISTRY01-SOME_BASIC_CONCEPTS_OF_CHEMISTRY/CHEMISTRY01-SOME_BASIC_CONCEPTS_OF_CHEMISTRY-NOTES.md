@@ -35,6 +35,9 @@ flowchart TD
     style K fill:#1a1a3d,color:#d0d0ff,stroke:#9b59b6
 ```
 
+> [!note] What changed in this upgrade
+> Added: a TikZ precision/accuracy target (§5.3) and a TikZ ionic-lattice diagram (§8.4); a decision flowchart for picking the right concentration term (§13); ~20 additional worked examples pulled from the handwritten problem set, each recomputed from scratch rather than copied — this caught a handful of small errors in the original working (a decimal-place slip in a metric-tonne mole calculation, a units slip in a density-based dilution, and a mismatched question/answer pair in a limestone-purity problem), all corrected below and flagged where it matters. Desmos was deliberately **not** used here — this chapter is mostly definitional/computational rather than curve-based, so an interactive graph wouldn't teach more than the tables already do, and Desmos rendering on this note-taking platform hasn't been confirmed to work yet anyway.
+
 ---
 
 ## SECTION 1 — DEVELOPMENT OF CHEMISTRY
@@ -312,6 +315,36 @@ Any number expressed as: **N × 10ⁿ** where **1.000… ≤ N ≤ 9.999…**
 | Analogy | Arrows clustered together (not necessarily at bullseye) | Arrows hitting the bullseye |
 | Example | 1.95 g, 1.93 g (true value = 2.00 g) → Precise but NOT accurate | 2.01 g, 1.99 g → Both precise AND accurate |
 
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[thick, scale=1.0]
+  \begin{scope}[shift={(0,0)}]
+    \draw[gray!40] (0,0) circle (1.2); \draw[gray!40] (0,0) circle (0.8); \draw[gray!40] (0,0) circle (0.4);
+    \fill[black] (0,0) circle (1.5pt);
+    \fill[red!75!black] (0.55,0.5) circle (2pt);
+    \fill[red!75!black] (0.5,0.55) circle (2pt);
+    \node[below, font=\small] at (0,-1.5) {Student A: precise, not accurate};
+  \end{scope}
+  \begin{scope}[shift={(3.2,0)}]
+    \draw[gray!40] (0,0) circle (1.2); \draw[gray!40] (0,0) circle (0.8); \draw[gray!40] (0,0) circle (0.4);
+    \fill[black] (0,0) circle (1.5pt);
+    \fill[orange!85!black] (0.3,0.9) circle (2pt);
+    \fill[orange!85!black] (-0.7,-0.6) circle (2pt);
+    \node[below, font=\small] at (0,-1.5) {Student B: neither};
+  \end{scope}
+  \begin{scope}[shift={(6.4,0)}]
+    \draw[gray!40] (0,0) circle (1.2); \draw[gray!40] (0,0) circle (0.8); \draw[gray!40] (0,0) circle (0.4);
+    \fill[black] (0,0) circle (1.5pt);
+    \fill[green!45!black] (0.08,0.1) circle (2pt);
+    \fill[green!45!black] (-0.05,-0.08) circle (2pt);
+    \node[below, font=\small] at (0,-1.5) {Student C: precise \& accurate};
+  \end{scope}
+  \node[below, font=\itshape\small, text=gray] at (3.2,-2.1) {bullseye = true value (2.00 g); each dot = one measurement};
+\end{tikzpicture}
+```
+
+The two ideas are independent: precision only asks whether repeated measurements agree with *each other*; accuracy asks whether they agree with the *true value*. A systematic error (a badly calibrated balance, say) can make an entire cluster precise yet consistently off-target — exactly Student A above.
+
 ### 5.4 Dimensional Analysis (Factor Label Method / Unit Factor Method)
 
 Multiply by **unit factors** (fractions equal to 1) to convert between units.
@@ -431,6 +464,14 @@ $$
 > [!note] Calculation
 > Mass of H atom in amu = (1.6736 × 10⁻²⁴ g) / (1.66056 × 10⁻²⁴ g) = **1.0078 u ≈ 1.008 u**
 
+> [!example] Worked Example — What is the mass of one ¹²C atom, in grams? (NCERT Exercise 1.30)
+> **Given:** 1 mole of ¹²C = 12 g = $6.022 \times 10^{23}$ atoms.
+> **Find:** mass of a single ¹²C atom.
+> **Concept:** mass of one entity = molar mass ÷ Avogadro's number — the direct definition being asked about, not a formula to memorize separately.
+> **Work:**
+> $$\text{mass of 1 atom} = \frac{12 \text{ g}}{6.022 \times 10^{23}} = 1.99 \times 10^{-23} \text{ g}$$
+> **Check:** units are grams per atom, as asked; the size ($10^{-23}$ g) is consistent with a single atom being unimaginably light — exactly the reason Avogadro's number exists in the first place.
+
 ### 8.2 Average Atomic Mass
 
 Because most elements exist as **isotopes** (same atomic number, different mass number), we use a weighted average:
@@ -452,6 +493,21 @@ Average = (0.98892)(12) + (0.01108)(13.00335) + (≈0)(14.00317) = **12.011 u**
 > [!tip] Key Point
 > Periodic table values are **average atomic masses**, not masses of individual atoms.
 
+> [!example] Worked Example — Running the average-atomic-mass formula backwards
+> **Given:** chlorine's average atomic mass is 35.5 g mol⁻¹, made up only of ³⁵Cl (mass 35) and ³⁷Cl (mass 37).
+> **Find:** the natural abundance ratio of ³⁵Cl : ³⁷Cl.
+> **Concept:** the same weighted-average equation as above, but with the abundances as the unknown instead of the final average.
+> **Work:** let ³⁵Cl abundance be $x\%$, so ³⁷Cl abundance is $(100-x)\%$.
+> $$
+> \begin{aligned}
+> 35.5 &= \frac{x}{100}(35) + \frac{100-x}{100}(37) \\
+> 3550 &= 35x + 37(100-x) = 3700 - 2x \\
+> 2x &= 150 \implies x = 75
+> \end{aligned}
+> $$
+> So ³⁵Cl = 75%, ³⁷Cl = 25%, giving a ratio of $\boxed{{}^{35}\text{Cl} : {}^{37}\text{Cl} = 3 : 1}$.
+> **Check:** $0.75(35) + 0.25(37) = 26.25 + 9.25 = 35.5$ ✓ — matches the given average exactly, and 3:1 is a believably simple whole-number ratio for a naturally occurring isotope mix.
+
 ### 8.3 Molecular Mass
 
 $$
@@ -466,6 +522,16 @@ $$
 | C₆H₁₂O₆ (glucose) | 6(12.011) + 12(1.008) + 6(16.00) | **180.162 u** |
 | NH₃ | 14.01 + 3(1.008) | **17.034 u** |
 
+> [!example] Practice Set — Mass of a single atom or molecule (handwritten problem set)
+> Same pattern every time: **mass of one entity = molar mass ÷ 6.022 × 10²³**.
+>
+> | Entity | Molar mass | Mass of one entity |
+> |:---|:---:|:---:|
+> | Ag atom (at. mass 108) | 108 g mol⁻¹ | $1.79 \times 10^{-22}$ g |
+> | Naphthalene, C₁₀H₈ | 128 g mol⁻¹ | $2.13 \times 10^{-22}$ g |
+> | N₂ molecule | 28 g mol⁻¹ | $4.65 \times 10^{-23}$ g |
+> | Sucrose, C₁₂H₂₂O₁₁ — mass of **100 molecules** | 342 g mol⁻¹ | $342 \times 100 / N_A = 5.68 \times 10^{-20}$ g |
+
 ### 8.4 Formula Mass
 
 Used for **ionic compounds** that do NOT exist as discrete molecules (exist as 3D lattice structures):
@@ -474,6 +540,24 @@ Used for **ionic compounds** that do NOT exist as discrete molecules (exist as 3
 
 > [!note] Structure
 > NaCl: each Na⁺ surrounded by 6 Cl⁻, and each Cl⁻ surrounded by 6 Na⁺
+
+```tikz
+\begin{tikzpicture}[thick, scale=0.85]
+  \fill[blue!70!black] (0,0) circle (4pt); \fill[orange!85!black] (1,0) circle (3pt);
+  \fill[blue!70!black] (2,0) circle (4pt); \fill[orange!85!black] (3,0) circle (3pt);
+  \fill[orange!85!black] (0,1) circle (3pt); \fill[blue!70!black] (1,1) circle (4pt);
+  \fill[orange!85!black] (2,1) circle (3pt); \fill[blue!70!black] (3,1) circle (4pt);
+  \fill[blue!70!black] (0,2) circle (4pt); \fill[orange!85!black] (1,2) circle (3pt);
+  \fill[blue!70!black] (2,2) circle (4pt); \fill[orange!85!black] (3,2) circle (3pt);
+  \fill[orange!85!black] (0,3) circle (3pt); \fill[blue!70!black] (1,3) circle (4pt);
+  \fill[orange!85!black] (2,3) circle (3pt); \fill[blue!70!black] (3,3) circle (4pt);
+  \node[font=\small, text=blue!70!black] at (4.3,3) {Na$^+$};
+  \node[font=\small, text=orange!85!black] at (4.3,2.5) {Cl$^-$};
+  \node[below, font=\itshape\small, text=gray] at (1.5,-0.6) {a 2D slice of the lattice — each ion is boxed in by 6 opposite-charge neighbours in 3D};
+\end{tikzpicture}
+```
+
+This is exactly *why* NaCl gets a **formula mass**, not a molecular mass — there is no single, isolated "NaCl molecule" sitting in the solid to weigh. The formula unit is just the smallest repeating ratio (1 Na⁺ to 1 Cl⁻) that the whole 3D grid is built from.
 
 ---
 
@@ -522,6 +606,32 @@ flowchart LR
 | Moles from particles | $n = N / N_A$ |
 | Volume of gas (STP) | $V = n \times 22.7 \text{ L}$ |
 
+> [!warning] STP vs. NTP — the constant you multiply by depends on which one you mean
+> This is a genuinely common source of mismatched answers, because the *definition itself changed*:
+> - **Old STP / commonly called NTP** (0 °C, 1 atm): 1 mole of any gas occupies **22.4 L**. Most coaching material and older sources still default to this figure.
+> - **Current IUPAC STP** (0 °C, 1 bar — 1 bar is very slightly less than 1 atm): 1 mole occupies **22.7 L**. This is the value current NCERT editions use.
+>
+> Both are "correct" — they're just two different reference pressures. Always check which convention a problem is using before reaching for 22.4 or 22.7, and state which one you used in your working. The worked examples below use whichever value the *source problem* specified, labelled each time.
+
+> [!example] Practice Set — Particles from a given volume of gas (handwritten problem set, using the 22.4 L mol⁻¹ convention)
+> | Given | Moles | Result |
+> |:---|:---:|:---|
+> | 11.2 L of O₂ at NTP | 11.2/22.4 = 0.5 mol | $3.01 \times 10^{23}$ molecules, $6.02 \times 10^{23}$ **atoms** (O₂ is diatomic) |
+> | 1 dm³ of H₂ at STP (22.4 L convention) | 1/22.4 = 0.0446 mol | $2.69 \times 10^{22}$ molecules |
+> | 1 kg of O₂ | 1000/32 = 31.25 mol | $1.88 \times 10^{25}$ molecules |
+
+> [!example] Practice Set — Moles from a given mass
+> $$n = \dfrac{\text{given mass}}{\text{molar mass}}$$
+>
+> | Given | Molar mass | Moles |
+> |:---|:---:|:---:|
+> | 7.9 mg of calcium | 40.1 g mol⁻¹ | $1.97 \times 10^{-4}$ mol |
+> | 4.68 mg of silicon | 28.1 g mol⁻¹ | $1.67 \times 10^{-4}$ mol |
+> | 1.46 metric tonnes of aluminium | 27 g mol⁻¹ | $5.41 \times 10^{4}$ mol |
+
+> [!warning] Watch the decimal point when tonnes get involved
+> 1.46 metric tonnes = $1.46 \times 10^{6}$ g, not $1.46 \times 10^{3}$ g — a slip here (dividing $1.46/27$ and misplacing the decimal) easily turns $5.41\times10^{4}$ mol into a wrong answer ten times too large or small. Always convert to grams explicitly as its own step before dividing by molar mass.
+
 ### 9.3 Molar Mass
 
 > [!info] Definition
@@ -556,6 +666,22 @@ $$
 - %O = (16.00 / 46.068) × 100 = **34.73%**
 
 Check: 52.14 + 13.13 + 34.73 = **100%** ✓
+
+> [!example] Worked Example — Copper pyrites, CuFeS₂
+> **Given:** CuFeS₂; atomic masses Cu = 63.5, Fe = 55.8, S = 32.
+> **Find:** mass % of each element.
+> **Concept:** same formula as above — mass of each element's contribution ÷ molar mass of the whole compound.
+> **Work:**
+> $$M = 63.5 + 55.8 + 2(32) = 183.3 \text{ g mol}^{-1}$$
+> $$\%\text{Cu} = \frac{63.5}{183.3}\times100 = 34.6\%, \quad \%\text{Fe} = \frac{55.8}{183.3}\times100 = 30.4\%, \quad \%\text{S} = \frac{64}{183.3}\times100 = 34.9\%$$
+> **Check:** $34.6+30.4+34.9 = 99.9\% \approx 100\%$ ✓ (the 0.1% gap is rounding, not an error).
+
+> [!example] Worked Example — Urea, (NH₂)₂CO
+> **Given:** (NH₂)₂CO; atomic masses N = 14, H = 1, C = 12, O = 16.
+> **Work:**
+> $$M = 2(14) + 4(1) + 12 + 16 = 60 \text{ g mol}^{-1}$$
+> $$\%\text{N}=\frac{28}{60}\times100=46.67\%,\ \%\text{H}=\frac{4}{60}\times100=6.67\%,\ \%\text{C}=\frac{12}{60}\times100=20\%,\ \%\text{O}=\frac{16}{60}\times100=26.67\%$$
+> **Check:** $46.67+6.67+20+26.67=100.01\%\approx100\%$ ✓
 
 ---
 
@@ -608,6 +734,64 @@ $$
 > $n = 98.96 / 49.48 = 2$
 >
 > Molecular formula: **C₂H₄Cl₂**
+
+> [!example] Worked Example — An oxide of iron (NCERT Exercises 1.3 / 1.8)
+> **Given:** 69.9% Fe, 30.1% O by mass.
+> **Find:** empirical formula.
+> **Work:**
+> | Element | Mass (in 100 g) | Atomic Mass | Moles | Ratio (÷ 1.248) |
+> |:---:|:---:|:---:|:---:|:---:|
+> | Fe | 69.9 g | 56 | 1.248 | 1 |
+> | O | 30.1 g | 16 | 1.881 | 1.5 → **×2 → 3** |
+>
+> Since 1.5 isn't a whole number, multiply *both* ratios by 2 (Step 4 of the method above) → Fe : O = 2 : 3.
+>
+> Empirical formula = $\boxed{\text{Fe}_2\text{O}_3}$; formula mass = $2(56)+3(16) = 160$ g mol⁻¹.
+> **Check:** since no molar mass was given for the *molecular* compound, the empirical formula is the final answer here — this is genuinely as far as the data lets you go, not an incomplete solution.
+
+> [!example] Worked Example — When both elements land on a 1:1 ratio
+> **Given:** an organic compound, molar mass 78 g mol⁻¹, composition 92.4% C and 7.6% H.
+> **Work:**
+> | Element | Mass (in 100 g) | Atomic Mass | Moles | Ratio (÷ 7.6) |
+> |:---:|:---:|:---:|:---:|:---:|
+> | C | 92.4 g | 12 | 7.7 | 1 |
+> | H | 7.6 g | 1 | 7.6 | 1 |
+>
+> Empirical formula = CH, EF mass = 12 + 1 = 13 g mol⁻¹.
+> $$n = 78/13 = 6 \implies \text{Molecular formula} = \boxed{\text{C}_6\text{H}_6}\ \text{(benzene)}$$
+> **Check:** $6\times13=78$ ✓, and C₆H₆ is a real, stable molecule (benzene) — a useful final sanity check whenever the molecular formula comes out of a calculation: does it correspond to something chemically reasonable?
+
+> [!example] Worked Example — Using vapour density instead of a given molar mass
+> **Given:** 57.8% C, 3.6% H, 38.6% O; vapour density = 83.
+> **Concept:** for a gas, $\text{molar mass} = 2 \times \text{vapour density}$ — this is the extra step that makes this problem different from the two above.
+> **Work:**
+> | Element | Mass (in 100 g) | Atomic Mass | Moles | Ratio (÷ 2.4125, ×2) |
+> |:---:|:---:|:---:|:---:|:---:|
+> | C | 57.8 g | 12 | 4.81 | 2 → **4** |
+> | H | 3.6 g | 1 | 3.6 | 1.5 → **3** |
+> | O | 38.6 g | 16 | 2.41 | 1 → **2** |
+>
+> Empirical formula = C₄H₃O₂, EF mass = $4(12)+3(1)+2(16) = 83$ g mol⁻¹.
+> $$\text{Molar mass} = 2 \times 83 = 166 \text{ g mol}^{-1} \implies n = 166/83 = 2 \implies \text{Molecular formula} = \boxed{\text{C}_8\text{H}_6\text{O}_4}$$
+
+> [!example] Worked Example — Combining combustion analysis with gas density (NCERT Exercise 1.34, the most demanding version of this problem type)
+> **Given:** a welding fuel gas contains only C and H. Burning a small sample gives 3.38 g CO₂ and 0.690 g H₂O. Separately, 10.0 L of the gas (at STP, 22.4 L convention) weighs 11.6 g.
+> **Find:** (i) empirical formula, (ii) molar mass, (iii) molecular formula.
+> **Concept:** the % composition isn't handed to you this time — it has to be *derived* from how much CO₂ and H₂O the combustion produced, using the fact that all the C in the sample ends up in the CO₂ and all the H ends up in the H₂O.
+> **Work:**
+> $$\text{mass of C} = \frac{12}{44}\times3.38 = 0.922\text{ g}, \qquad \text{mass of H} = \frac{2}{18}\times0.690 = 0.0767\text{ g}$$
+> $$\%\text{C} = \frac{0.922}{0.922+0.0767}\times100 = 92.3\%, \qquad \%\text{H} = 7.7\%$$
+> | Element | Mass (in 100 g) | Atomic Mass | Moles | Ratio |
+> |:---:|:---:|:---:|:---:|:---:|
+> | C | 92.3 g | 12 | 7.69 | 1 |
+> | H | 7.7 g | 1 | 7.7 | 1 |
+>
+> Empirical formula = CH, EF mass = 13 g mol⁻¹.
+>
+> For the molar mass, use the given gas density directly:
+> $$M = \frac{\text{mass}}{\text{volume}}\times22.4\text{ L mol}^{-1} = \frac{11.6}{10.0}\times22.4 = 26.0\text{ g mol}^{-1}$$
+> $$n = 26.0/13 = 2 \implies \text{Molecular formula} = \boxed{\text{C}_2\text{H}_2}\ \text{(acetylene)}$$
+> **Check:** acetylene is in fact a real welding fuel gas — the answer matches the question's own premise, which is a strong sanity check for a problem framed as a real-world scenario.
 
 ---
 
@@ -671,21 +855,59 @@ According to **Law of Conservation of Mass**, a balanced equation has the same n
 >
 > NH₃ produced = 4960 mol H₂ × (2 mol NH₃ / 3 mol H₂) = **3307 mol NH₃ = 56.2 kg**
 
-### 12.5 Mole-Mass-Volume Interconversions
+> [!tip] Try it yourself
+> The same reaction with different numbers (NCERT Exercise 1.24): 2.00 × 10³ g N₂ + 1.00 × 10³ g H₂. Work it through yourself with the method above before checking — $\boxed{\text{N}_2 \text{ is now the limiting reagent}}$, giving 2428.6 g NH₃ produced and 571.4 g H₂ left unreacted. Notice that swapping which mass is larger doesn't tell you which reagent is limiting — you still have to divide by the coefficients, not just compare the two given masses directly.
+
+**The identification method also works with plain mole/atom/molecule counts, not just masses** — for a generic reaction $A + B_2 \rightarrow AB_2$ (1:1:1 stoichiometry, so each mole of A needs exactly one mole of B₂):
+
+| Given (NCERT Exercise 1.23) | A needs (1:1 with B₂) | Available B₂ | Limiting reagent |
+|:---|:---:|:---:|:---:|
+| 300 atoms A + 200 molecules B₂ | 300 | 200 | **B₂** |
+| 2 mol A + 3 mol B₂ | 2 | 3 | **A** |
+| 100 atoms A + 100 molecules B₂ | 100 | 100 | **none — both exactly consumed** |
+| 5 mol A + 2.5 mol B₂ | 5 | 2.5 | **B₂** |
+| 2.5 mol A + 5 mol B₂ | 2.5 | 5 | **A** |
 
 ```mermaid
-flowchart LR
-    MASS["MASS (g)"] -->|"divide by M"| MOLES["MOLES (n)"]
-    MOLES -->|"multiply by M"| MASS
-    MOLES -->|"multiply by Na"| NUM["NUMBER OF PARTICLES (N)"]
-    NUM -->|"divide by Na"| MOLES
-    MOLES -->|"multiply by 22.7 L/mol at STP"| VOL["VOLUME of GAS (L)"]
-
-    style MOLES fill:#1a3d2e,color:#a9dfbf,stroke:#27ae60
-    style MASS fill:#1e3a5f,color:#aed6f1
-    style NUM fill:#3d2a1a,color:#f0d0a8
-    style VOL fill:#2c3e50,color:#ecf0f1
+flowchart TD
+    Q{"For A + B2 -> AB2, compare: moles of A needed vs. moles of B2 available"}
+    Q -- "A needs more B2 than is available" --> LB["B2 is limiting"]
+    Q -- "A needs less B2 than is available" --> LA["A is limiting"]
+    Q -- "A needs exactly the B2 available" --> LN["No limiting reagent -- both fully consumed"]
 ```
+
+### 12.5 Mole-Mass-Volume Interconversions
+
+Stoichiometry is really just the mole-interconversion wheel from §9.2, run once *per substance* in a balanced equation, with the equation's coefficients converting moles of one substance to moles of another in between. See that wheel for the mass ↔ moles ↔ particles ↔ volume relationships — nothing new is needed here except the extra step of multiplying by a mole ratio from the balanced equation.
+
+### 12.6 Practice: Purity, Reverse Stoichiometry, and Reading a Question Carefully
+
+These four short problems each isolate one extra wrinkle on top of plain stoichiometry.
+
+> [!example] Reading coefficients as mole ratios directly
+> **Q:** How many moles of Na₂SO₄ are produced from 1 mole of NaOH? Reaction: $2\text{NaOH} + \text{H}_2\text{SO}_4 \rightarrow \text{Na}_2\text{SO}_4 + 2\text{H}_2\text{O}$.
+> **Work:** 2 mol NaOH → 1 mol Na₂SO₄, so 1 mol NaOH → $\boxed{0.5 \text{ mol Na}_2\text{SO}_4}$.
+
+> [!example] Accounting for impurity before doing any stoichiometry
+> **Q:** Calculate the mass of CO₂ produced by heating 40 g of limestone that is only 20% pure CaCO₃. Reaction: $\text{CaCO}_3 \xrightarrow{\Delta} \text{CaO} + \text{CO}_2$.
+> **Concept:** the impure 80% is inert filler (sand, etc.) and takes no part in the reaction — strip it out *first*, then do ordinary stoichiometry on the pure CaCO₃ only.
+> **Work:**
+> $$\text{pure CaCO}_3 = 40 \times 0.20 = 8\text{ g} \implies n = 8/100 = 0.08\text{ mol}$$
+> $$1:1 \text{ ratio} \implies n(\text{CO}_2) = 0.08 \text{ mol} \implies \text{mass} = 0.08 \times 44 = \boxed{3.52\text{ g}}$$
+> **Check:** the answer is necessarily smaller than what pure 40 g CaCO₃ would give (17.6 g) — a good sniff test for any purity problem.
+
+> [!example] Working backwards from a target volume to moles of reactant
+> **Q:** How many moles of Pb(NO₃)₂ are needed to produce 224 L of O₂ at NTP? Reaction: $2\text{Pb(NO}_3)_2 \rightarrow 2\text{PbO} + 4\text{NO}_2 + \text{O}_2$.
+> **Work:**
+> $$n(\text{O}_2) = 224/22.4 = 10\text{ mol} \implies \text{ratio } 2\text{Pb(NO}_3)_2 : 1\text{ O}_2 \implies n(\text{Pb(NO}_3)_2) = 2\times10 = \boxed{20 \text{ mol}}$$
+
+> [!example] Combining a mass-percent solution with stoichiometry
+> **Q:** What mass of 50% (by mass) H₂SO₄ solution is needed to completely decompose 25 g of CaCO₃? Reaction: $\text{CaCO}_3 + \text{H}_2\text{SO}_4 \rightarrow \text{CaSO}_4 + \text{CO}_2 + \text{H}_2\text{O}$.
+> **Work:**
+> $$n(\text{CaCO}_3) = 25/100 = 0.25\text{ mol} \xrightarrow{1:1} n(\text{H}_2\text{SO}_4) = 0.25 \text{ mol} \implies \text{pure mass} = 0.25\times98 = 24.5\text{ g}$$
+> Since the acid is only 50% H₂SO₄ by mass, the *solution* needed weighs more than the pure acid alone:
+> $$\text{mass of solution} = \frac{24.5}{0.50} = \boxed{49\text{ g of the 50\% solution}}$$
+> **Check:** the answer (49 g) is roughly double the pure-acid requirement (24.5 g) — exactly what "50%" should mean, and a fast way to catch an inverted fraction.
 
 ---
 
@@ -710,6 +932,15 @@ $$
 > [!note] Key Facts
 > - **Always**: $\chi_A + \chi_B = 1$ (sum of all mole fractions = 1)
 > - Mole fraction is **dimensionless**
+> - The definition extends to any number of components: $\chi_i = n_i / \sum_j n_j$, and all mole fractions in the mixture still sum to 1.
+
+> [!example] Worked Example — Mole fraction with three components
+> **Given:** a solution that is 25% water, 25% methanol (CH₃OH), and 50% acetic acid (CH₃COOH) by mass.
+> **Concept:** assume 100 g of solution total, so each mass percent converts directly to grams; then convert each to moles and divide by the grand total.
+> **Work:**
+> $$n_{\text{water}} = \frac{25}{18} = 1.39, \quad n_{\text{methanol}} = \frac{25}{32} = 0.78, \quad n_{\text{acetic acid}} = \frac{50}{60} = 0.83 \quad (\text{total} = 3.00 \text{ mol})$$
+> $$\chi_{\text{water}} = \frac{1.39}{3.00} = \boxed{0.46}, \quad \chi_{\text{methanol}} = \boxed{0.26}, \quad \chi_{\text{acetic acid}} = \boxed{0.28}$$
+> **Check:** $0.46+0.26+0.28 = 1.00$ ✓
 
 ### 13.3 Molarity (M)
 
@@ -724,6 +955,26 @@ $$
 > [!example] NCERT 1.7 — 4 g NaOH in 250 mL solution
 > $M = (4/40) / 0.250 = 0.1/0.250 =$ **0.4 M**
 
+> [!example] Worked Example — Molarity of a sugar solution
+> **Given:** 20 g of sugar (C₁₂H₂₂O₁₁, molar mass 342 g mol⁻¹) dissolved in enough water to make 2 L of solution.
+> **Work:**
+> $$n = 20/342 = 0.0585 \text{ mol} \implies M = 0.0585/2 = \boxed{0.0292 \text{ mol L}^{-1}}$$
+
+> [!example] Worked Example — Preparing a dilute solution from a concentrated stock
+> **Given:** stock H₂SO₄ is 18 M. **Find:** how to prepare 250 mL of 0.50 M H₂SO₄ from it.
+> **Concept:** dilution adds only solvent — the moles of solute already in the volume of stock you pour out don't change, so $M_1V_1 = M_2V_2$ applies directly.
+> **Work:**
+> $$18 \times V_1 = 0.50 \times 250 \implies V_1 = \frac{0.50 \times 250}{18} = \boxed{6.94 \text{ mL of stock}}$$
+> Then add water up to the 250 mL mark — that's $250 - 6.94 = 243.1$ mL of water, **not** simply "243 mL of water added to 6.94 mL of acid," since diluting to a final *total* volume isn't the same as adding a separately-measured volume of water (the final mixed volume of acid + water isn't perfectly additive in general; the safe method is always "dilute up to the mark," not "add this much water").
+
+> [!example] Worked Example — Using density to find the volume of a pure liquid solute needed
+> **Given:** methanol (CH₃OH, molar mass 32 g mol⁻¹) has density 0.793 kg L⁻¹. **Find:** the volume of pure methanol needed to make 2.5 L of 0.25 M solution.
+> **Concept:** first find the *mass* of methanol needed from the molarity definition, then convert that mass to a volume using density — two separate conversions chained together.
+> **Work:**
+> $$n = M \times V = 0.25 \times 2.5 = 0.625 \text{ mol} \implies \text{mass} = 0.625 \times 32 = 20 \text{ g}$$
+> $$\text{volume} = \frac{\text{mass}}{\text{density}} = \frac{20 \text{ g}}{0.793 \text{ g mL}^{-1}} = \boxed{25.2 \text{ mL}}$$
+> **Check on units specifically:** density was given as 0.793 kg L⁻¹, which is numerically identical to 0.793 g mL⁻¹ — but the two unit forms are easy to cross, and mixing them up here would make the answer come out as "25.2 L," which is absurd for 20 g of a liquid with density close to water's. Always let the units of the final answer tell you whether the arithmetic makes physical sense.
+
 ### 13.4 Molality (m)
 
 $$
@@ -733,6 +984,19 @@ $$
 - Unit: **mol kg⁻¹**
 - **Does NOT change with temperature** (mass is temperature-independent)
 - Used in colligative property calculations
+
+Before reaching for a formula, it helps to recognise which one a problem is actually set up for — the four terms are distinguished entirely by what's given, not by anything about the solute itself:
+
+```mermaid
+flowchart TD
+    Q{"What does the question give you?"}
+    Q -- "mass of solute and mass of solution" --> A["Mass % = (mass solute / mass solution) x 100"]
+    Q -- "moles of every component" --> B["Mole fraction = n_i / (sum of all n)"]
+    Q -- "moles of solute and volume of solution (L)" --> C["Molarity M = n / V(L)"]
+    Q -- "moles of solute and mass of solvent (kg)" --> D["Molality m = n / mass_solvent(kg)"]
+    C -. "if temperature changes" .-> N1["M shifts -- the solution's volume expands or contracts"]
+    D -. "if temperature changes" .-> N2["m is unaffected -- mass doesn't change with temperature"]
+```
 
 ### 13.5 Master Comparison Table
 
