@@ -585,13 +585,31 @@ $$
 **How $a_t$ and $a_c$ actually scale — plotted, not just stated:** $a_t=\alpha r$ is a **straight line** against $\omega$ (it doesn't even depend on $\omega$!), while $a_c=\omega^2 r$ is a **parabola**. This is easy to state and easy to forget — plotting both against the same axis makes the quadratic growth of $a_c$ impossible to un-see.
 
 ```desmos
-a_{tan}\left(\omega\right)=\alpha r
-a_{cen}\left(\omega\right)=\omega^{2}r
-r=2
-\alpha=1.5
-\omega_{now}=1.8
-P_{tan}=\left(\omega_{now},a_{tan}\left(\omega_{now}\right)\right)
-P_{cen}=\left(\omega_{now},a_{cen}\left(\omega_{now}\right)\right)
+A\ =\frac{1}{2}a_{ang}t^{2}+u_{ang}t\ +\ \phi
+v_{ang}=u_{ang}+a_{ang}t
+x^{2}+y^{2}\ =\ R^{2}
+r=R\left(\cos A,\ \sin A\right)
+r_{dir}=\frac{r}{R}
+v=Rv_{ang}\left(-\sin A,\ \cos A\right)
+v_{body}=v+r
+v_{dir}=\frac{v}{Rv_{ang}}
+a_{rad}=-R\left(v_{ang}\right)^{2}\left(r_{dir}\right)
+a_{radbody}=a_{rad}+r
+a_{tan}=Ra_{ang}\left(v_{dir}\right)
+a_{tanbody}=a_{tan}+r
+a_{net}=a_{rad}+a_{tan}
+a_{netbody}=a_{net}+r
+y_{r}\ =\ \tan\left(A\right)x\ \left\{x^{2}\le r.x^{2}\right\}\left\{\operatorname{sgn}\left(r.x\right)=\operatorname{sgn}\left(x\right)\right\}
+y_{v}=\ -\cot\left(A\right)\left(x-r.x\right)\ +r.y\ \ \left\{\left(x-r.x\right)^{2\ }\le\left(v.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(v.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
+y_{rad}=\tan\left(A\right)\left(x-r.x\right)+r.y\ \left\{\left(x-r.x\right)^{2}\le\left(a_{rad}.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(a_{rad}.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
+y_{tan}=-\cot\left(A\right)\left(x-r.x\right)+r.y\ \left\{\left(x-r.x\right)^{2\ }\le\left(a_{tan}.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(a_{tan}.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
+y_{net}=\tan\left(\arctan\left(-\frac{Ra_{ang}}{R\left(v_{ang}\right)^{2}}\right)+A\right)\left(x-r.x\right)+r.y\left\{\left(x-r.x\right)^{2\ }\le\left(a_{net}.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(a_{net}.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
+R=3.54
+u_{ang}=1.72
+\phi=0.8
+a_{ang}=-0.48
+t\ =0
+R_{ext}=0
 ```
 
 Slide $\omega_{now}$ to the right: the point on the flat line $a_{tan}(\omega)$ barely moves, but the point on $a_{cen}(\omega)$ shoots upward — double $\omega$ and $a_c$ quadruples, not doubles.
