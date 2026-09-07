@@ -1,4 +1,3 @@
-
 # CHAPTER 6: SYSTEMS OF PARTICLES AND ROTATIONAL MOTION
 
 ### Complete Study Notes | Board · NEET · JEE Layered
@@ -116,17 +115,17 @@ r_{3}=1.8
 r_{4}=2.4
 r_{5}=3.0
 t=0
-\theta=\omega t
-P_{1}=r_{1}\left(\cos\theta,\sin\theta\right)
-P_{2}=r_{2}\left(\cos\theta,\sin\theta\right)
-P_{3}=r_{3}\left(\cos\theta,\sin\theta\right)
-P_{4}=r_{4}\left(\cos\theta,\sin\theta\right)
-P_{5}=r_{5}\left(\cos\theta,\sin\theta\right)
-V_{1}=\omega r_{1}\left(-\sin\theta,\cos\theta\right)
-V_{2}=\omega r_{2}\left(-\sin\theta,\cos\theta\right)
-V_{3}=\omega r_{3}\left(-\sin\theta,\cos\theta\right)
-V_{4}=\omega r_{4}\left(-\sin\theta,\cos\theta\right)
-V_{5}=\omega r_{5}\left(-\sin\theta,\cos\theta\right)
+\sigma=\omega t
+P_{1}=r_{1}\left(\cos\sigma,\sin\sigma\right)
+P_{2}=r_{2}\left(\cos\sigma,\sin\sigma\right)
+P_{3}=r_{3}\left(\cos\sigma,\sin\sigma\right)
+P_{4}=r_{4}\left(\cos\sigma,\sin\sigma\right)
+P_{5}=r_{5}\left(\cos\sigma,\sin\sigma\right)
+V_{1}=\omega r_{1}\left(-\sin\sigma,\cos\sigma\right)
+V_{2}=\omega r_{2}\left(-\sin\sigma,\cos\sigma\right)
+V_{3}=\omega r_{3}\left(-\sin\sigma,\cos\sigma\right)
+V_{4}=\omega r_{4}\left(-\sin\sigma,\cos\sigma\right)
+V_{5}=\omega r_{5}\left(-\sin\sigma,\cos\sigma\right)
 v_{1}=\operatorname{vector}\left(P_{1},P_{1}+V_{1}\right)
 v_{2}=\operatorname{vector}\left(P_{2},P_{2}+V_{2}\right)
 v_{3}=\operatorname{vector}\left(P_{3},P_{3}+V_{3}\right)
@@ -522,7 +521,7 @@ Section 5.1 asserted that $\boldsymbol\omega$ is a genuine **vector** lying alon
 | $a_{tan}=\alpha_{head}\times r_{head}$ | tangential acceleration | $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ (§5.3) |
 | $a_{rad}$ | centripetal (radial) acceleration | $a_c=-\omega^2\mathbf r$ (§5.3) |
 
-```desmos-3d
+```desmos3d
 O_{rg}\ =\ \left(0,0,0\right)
 \sigma=\omega_{0}t+\frac{1}{2}\alpha t^{2}\ +\ \sigma_{0}
 \omega=\omega_{0}+\alpha t
@@ -588,6 +587,24 @@ Torque vanishes if $r=0$, $F=0$, or if the line of action of $\mathbf F$ passes 
 
 If $\mathbf F$ is reversed, $\boldsymbol\tau$ reverses. If **both** $\mathbf r$ and $\mathbf F$ are reversed, $\boldsymbol\tau$ is unchanged (two sign flips cancel).
 
+**Interactive — the $\sin\theta$ dependence, isolated** *(New)*: hold $r$ and $F$ fixed and sweep only the angle between them. This is the reason pushing a door **near the hinge** barely turns it (small effective moment) while the same push at the door's outer edge, applied perpendicular, is maximally effective — it's not really about distance from the hinge at all, it's about $\sin\theta$.
+
+| Desmos variable | Meaning |
+|:---|:---|
+| $r, F$ | fixed magnitudes of $\mathbf r$ and $\mathbf F$ |
+| $\phi$ | angle between them — **drag this one** (kept as $\phi$, not $\theta$ — Desmos reserves $\theta$ for polar mode) |
+| $tau(\phi)$ | $rF\sin\phi$, plotted as a function of $\phi$ |
+
+```desmos
+r=2
+F=5
+\phi=1.2
+tau\left(x\right)=rF\sin\left(x\right)
+P=\left(\phi,tau\left(\phi\right)\right)
+```
+
+Drag $\phi$ from $0$ to $\pi$: $tau$ starts at zero, peaks exactly at $\phi=\pi/2$ (force perpendicular to $\mathbf r$ — the most effective angle possible), then falls back to zero at $\phi=\pi$ (force now anti-parallel to $\mathbf r$, along the same line — no turning effect at all, matching the "vanishes if the line of action passes through the origin" rule above).
+
 ### 6.2 Angular Momentum of a Particle
 
 > [!note] Definition
@@ -606,7 +623,7 @@ $$\boxed{\frac{d\mathbf{L}}{dt} = \boldsymbol\tau} \qquad \text{...(6.27)}$$
 
 **Interactive 3D — $\mathbf L=\mathbf r\times\mathbf p$ for a particle going in a circle** *(New)*: this is the object Eq. (6.25a) actually is — not a formula, a vector. Here a particle of mass $m$ moves on a circle of radius $R$ in the $xy$-plane with angular speed $\omega$; $\mathbf r$ and $\mathbf p$ both sweep around together, yet their cross product $\mathbf L$ **never changes** — same direction ($+z$), same magnitude, every instant. That's Section 11's whole "$L=I\omega=$ constant" idea, seen a chapter early, from first principles.
 
-```desmos-3d
+```desmos3d
 O_{rg}=\left(0,0,0\right)
 R=2.5
 \omega=1.2
@@ -779,6 +796,26 @@ $$\text{Mechanical Advantage} = \frac{F_1}{F_2} = \frac{d_2}{d_1} \qquad \text{.
 
 If $d_2 > d_1$: M.A. $> 1$ → a **small effort lifts a large load**. Examples of levers: seesaw, beam balance, scissors, human forearm, pliers, a crowbar.
 
+**Interactive — find the balance point yourself** *(New)*: $F_1$ and $d_1$ are fixed (a known load, a known load arm); $d_2$ is a slider. $\text{Net}=d_1F_1-d_2F_2$ is plotted live — drag $d_2$ until it reads exactly zero, and you've re-derived Eq. (6.32a) by hand rather than being told it.
+
+| Desmos variable | Meaning |
+|:---|:---|
+| $F_1, d_1$ | load and load arm (fixed) |
+| $F_2$ | effort (fixed) |
+| $d_2$ | effort arm — **drag this one** |
+| Net | $d_1F_1-d_2F_2$ — the rotational-equilibrium condition, live |
+
+```desmos
+F_{1}=10
+d_{1}=2
+F_{2}=5
+d_{2}=3
+Net=d_{1}F_{1}-d_{2}F_{2}
+MA=\frac{F_{1}}{F_{2}}
+```
+
+At $d_1=2,F_1=10,F_2=5$: balance requires $d_2=4$. Slide $d_2$ toward $4$ and watch $Net\to0$ — overshoot it and $Net$ flips sign, telling you which way the lever would actually tip.
+
 ### 7.5 Centre of Gravity (CG)
 
 > [!note] Definition
@@ -898,6 +935,26 @@ where $r_i$ is the **perpendicular distance** of the $i^{\text{th}}$ particle fr
 
 Notice how heavily $I$ weights **distance**, not just mass — a small mass far from the axis can contribute more to $I$ than a large mass close to it, because of the $r_i^2$ factor.
 
+**Interactive — same $M$, same $R$, wildly different $I$** *(New)*: four bodies, identical total mass $M$ and identical outer radius $R$, but with that mass distributed differently relative to the axis. The bar heights below are exactly the coefficients in Table 6.1 (§8.4) — this is *why* the table has different numbers for shapes that look similarly sized.
+
+| Desmos variable | Meaning |
+|:---|:---|
+| $M, R$ | shared mass and radius — **drag either** |
+| $I_{point}$ | all mass at radius $R$ (point mass / thin ring) |
+| $I_{disc}$ | mass spread uniformly out to $R$ (disc) |
+| $I_{sphere}$ | mass spread through the whole volume (solid sphere) |
+
+```desmos
+M=2
+R=1.5
+I_{point}=MR^{2}
+I_{disc}=0.5MR^{2}
+I_{sphere}=0.4MR^{2}
+bars=\left[I_{point},I_{disc},I_{sphere}\right]
+```
+
+Drag $R$ upward: all three bars grow, but $I_{point}$ always grows **fastest**, because every last bit of its mass sits at the maximum possible distance $R$; $I_{sphere}$ always trails, because most of a sphere's mass sits well inside its outer radius, closer to the axis than $R$.
+
 ### 8.2 Kinetic Energy of Rotation
 
 $$\boxed{K_{rot} = \frac{1}{2}I\omega^2} \qquad \text{...(6.35)}$$
@@ -982,6 +1039,19 @@ $$I = \frac{M}{2}\left(\frac{l}{2}\right)^2 + \frac{M}{2}\left(\frac{l}{2}\right
   \node[below, font=\itshape\small, text=gray] at (2.4,-1.7) {$I' = I_{cm} + Md^2$ — always true, for ANY rigid body and ANY pair of parallel axes};
 \end{tikzpicture}
 ```
+
+**Interactive — watch $I'$ grow as the axis moves away** *(New)*: slide $d$ from $0$ (back at the centre) outward, and watch $I'=I_{cm}+Md^2$ trace out a parabola in $d$ — never a straight line. This is the same "quadratic, not linear" lesson as §5.3's $a_c=\omega^2r$ graph, showing up again in a completely different part of the chapter.
+
+```desmos
+I_{cm}=1
+M=2
+d=0.8
+I_{prime}=I_{cm}+Md^{2}
+f\left(x\right)=I_{cm}+Mx^{2}
+P=\left(d,I_{prime}\right)
+```
+
+Because it's $Md^2$ and not $Md$, doubling $d$ **quadruples** the extra term — moving an axis just a little further out costs far more than intuition suggests.
 
 > [!example] Worked application — Rod about one end
 >
@@ -1154,6 +1224,18 @@ From the work-energy route (or directly from Newton's 2nd Law applied to rotatio
 $$\boxed{\tau = I\alpha} \qquad \text{...(6.41)}$$
 
 This is the exact rotational analogue of $F=ma$: torque produces angular acceleration, exactly as force produces linear acceleration, with $I$ playing the role of inertia.
+
+**Interactive — same torque, different $I$, very different response** *(New)*: exactly the same shape of relationship as §11.2's $\omega=L/I$ hyperbola, but now for *dynamics* rather than *conservation*. Hold $\tau$ fixed and drag $I$: a small $I$ (a light disc) snaps into fast rotation; a large $I$ (a heavy flywheel) barely budges under the same push. This is the entire reason a flywheel resists jerky speed changes (§8.8) — not a separate fact, but this exact curve.
+
+```desmos
+\tau=5
+I_{now}=2
+\alpha_{now}=\frac{\tau}{I_{now}}
+f\left(x\right)=\frac{\tau}{x}
+P=\left(I_{now},\alpha_{now}\right)
+```
+
+Drag $I_{now}$ down toward $0.5$ and $\alpha_{now}$ spikes; drag it up toward $8$ and $\alpha_{now}$ barely registers — the same fixed torque, wildly different outcomes, purely because of how the mass is distributed.
 
 ### 10.2 Work Done by a Torque and Rotational Power
 
