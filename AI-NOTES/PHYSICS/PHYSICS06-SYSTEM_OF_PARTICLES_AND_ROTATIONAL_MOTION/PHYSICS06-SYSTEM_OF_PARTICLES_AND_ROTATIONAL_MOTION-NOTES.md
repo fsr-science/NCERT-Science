@@ -47,21 +47,20 @@ flowchart TD
 
 ### 1.1 What is a Rigid Body?
 
-> [!note] ✏️ Definition
+> [!note] Definition
 > A **rigid body** is a body with a perfectly definite and unchanging shape. The distances between all pairs of particles remain constant, regardless of the forces acting.
 
 No real body is truly rigid; deformations exist but are often negligible (e.g., a steel beam, a flywheel, a wheel of a vehicle).
 
 ### 1.2 Types of Motion of a Rigid Body
 
+| Type | Description | Example |
+|:---|:---|:---|
+| **Pure Translation** | All particles have the same velocity at every instant | Block sliding down inclined plane |
+| **Pure Rotation** | Body rotates about a fixed axis; particles move in circles | Ceiling fan, Potter's wheel |
+| **Rolling Motion** | Translation + Rotation combined | Cylinder rolling down an incline |
 
-| Type                 | Description                                                | Example                           |
-| :--------------------- | :----------------------------------------------------------- | :---------------------------------- |
-| **Pure Translation** | All particles have the same velocity at every instant      | Block sliding down inclined plane |
-| **Pure Rotation**    | Body rotates about a fixed axis; particles move in circles | Ceiling fan, Potter's wheel       |
-| **Rolling Motion**   | Translation + Rotation combined                            | Cylinder rolling down an incline  |
-
-> [!important] ❗ Key Principle
+> [!important] Key Principle
 > In **pure translation**, every particle has the same velocity. In **pure rotation** about a fixed axis, every particle has the **same angular velocity** ω.
 
 ```tikz
@@ -144,7 +143,7 @@ Every arrow points along its own tangent — none of them parallel — but the r
 
 ### 2.1 What Is the Centre of Mass?
 
-> [!note] ✏️ Definition
+> [!note] Definition
 > The **centre of mass (COM)** is that single point which moves in exactly the same way a single particle — carrying the *total mass* of the system — would move if the same external force were applied to it.
 
 The COM is a bookkeeping device: instead of tracking every particle of a possibly-huge system individually, track this one point, and you have completely captured the system's translational behaviour. Sections 2 and 3 make this idea precise; Section 3 in particular shows *why* this definition is dynamically useful, not just geometrically convenient.
@@ -153,10 +152,7 @@ The COM is a bookkeeping device: instead of tracking every particle of a possibl
 
 Consider two particles of masses $m_1$ and $m_2$ with position vectors $\mathbf{r}_1$ and $\mathbf{r}_2$ from some origin $O$. Their COM is the point $C$, with position vector $\mathbf{R}_{cm}$:
 
-$$
-\mathbf{R}_{cm} = \frac{m_1\mathbf{r}_1 + m_2\mathbf{r}_2}{m_1+m_2}
-
-$$
+$$\mathbf{R}_{cm} = \frac{m_1\mathbf{r}_1 + m_2\mathbf{r}_2}{m_1+m_2}$$
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -181,86 +177,62 @@ Restricting motion to the x-axis (as is conventional for the scalar derivation) 
 
 **Step 1 — the weighted-sum relation:**
 
-$$
-(m_1+m_2)\,x_{cm} = m_1x_1 + m_2x_2
-
-$$
+$$(m_1+m_2)\,x_{cm} = m_1x_1 + m_2x_2$$
 
 **Step 2 — solve for $x_{cm}$:**
 
-$$
-\boxed{x_{cm} = \frac{m_1x_1 + m_2x_2}{m_1 + m_2}} \qquad \text{...(6.1)}
-
-$$
+$$\boxed{x_{cm} = \frac{m_1x_1 + m_2x_2}{m_1 + m_2}} \qquad \text{...(6.1)}$$
 
 The same steps along $y$ give $y_{cm} = \dfrac{m_1y_1+m_2y_2}{m_1+m_2}$.
 
 **Step 3 — special case, equal masses ($m_1=m_2=m$):**
 
-$$
-x_{cm} = \frac{mx_1+mx_2}{2m} = \frac{x_1+x_2}{2}
-
-$$
+$$x_{cm} = \frac{mx_1+mx_2}{2m} = \frac{x_1+x_2}{2}$$
 
 For equal masses, the COM lies exactly **midway** between them — this falls out of the general weighted-average result; it is not a separate rule to memorise.
 
-> [!note] ✏️ Reading $x_{cm}$
+> [!note] Reading $x_{cm}$
 > $X$ in Eq. (6.1) is the **mass-weighted mean** of $x_1$ and $x_2$ — it is pulled toward whichever particle is heavier, exactly like a weighted average in statistics.
 
 ### 2.3 General Case — n Particles
 
-$$
-\boxed{X = \frac{\sum m_i x_i}{M}, \quad Y = \frac{\sum m_i y_i}{M}, \quad Z = \frac{\sum m_i z_i}{M}} \qquad \text{...(6.4a–c)}
-
-$$
+$$\boxed{X = \frac{\sum m_i x_i}{M}, \quad Y = \frac{\sum m_i y_i}{M}, \quad Z = \frac{\sum m_i z_i}{M}} \qquad \text{...(6.4a–c)}$$
 
 where $M = \sum m_i$ is the **total mass**.
 
 **In vector form:**
 
-$$
-\boxed{\mathbf{R} = \frac{\sum m_i \mathbf{r}_i}{M}} \qquad \text{...(6.4d)}
+$$\boxed{\mathbf{R} = \frac{\sum m_i \mathbf{r}_i}{M}} \qquad \text{...(6.4d)}$$
 
-$$
-
-> [!note] ✏️ Origin Choice
+> [!note] Origin Choice
 > If the origin is chosen **at the COM**, then $\sum m_i \mathbf{r}_i = \mathbf{0}$.
 
 ### 2.4 Continuous Mass Distribution
 
-$$
-X = \frac{1}{M}\int x\,dm, \quad Y = \frac{1}{M}\int y\,dm, \quad Z = \frac{1}{M}\int z\,dm \qquad \text{...(6.5a)}
-
-$$
+$$X = \frac{1}{M}\int x\,dm, \quad Y = \frac{1}{M}\int y\,dm, \quad Z = \frac{1}{M}\int z\,dm \qquad \text{...(6.5a)}$$
 
 **For uniform, symmetric bodies:** The COM coincides with the **geometric centre** — by symmetry, for every element $dm$ at $\mathbf{r}$, there is an element $dm$ at $-\mathbf{r}$, so the integrals vanish.
 
 ### 2.5 COM of Regular Shapes
 
-
-| Body                       | COM Location                                                      |
-| :--------------------------- | :------------------------------------------------------------------ |
-| Uniform thin rod           | Midpoint (geometric centre)                                       |
-| Uniform ring of radius R   | Centre of the ring                                                |
-| Uniform disc of radius R   | Centre of the disc                                                |
-| Uniform sphere of radius R | Centre of the sphere                                              |
-| Uniform triangular lamina  | Centroid (intersection of medians) — proved in Example 6.2 below |
-| L-shaped lamina (uniform)  | Use mass-weighted average of sub-shapes                           |
+| Body | COM Location |
+|:---|:---|
+| Uniform thin rod | Midpoint (geometric centre) |
+| Uniform ring of radius R | Centre of the ring |
+| Uniform disc of radius R | Centre of the disc |
+| Uniform sphere of radius R | Centre of the sphere |
+| Uniform triangular lamina | Centroid (intersection of medians) — proved in Example 6.2 below |
+| L-shaped lamina (uniform) | Use mass-weighted average of sub-shapes |
 
 ### 2.6 Solved Examples from NCERT
 
 > [!example] Example 6.1 — Three unequal masses at vertices of equilateral triangle (side 0.5 m)
+>
 > Masses: $m_1 = 100$ g at O(0,0), $m_2 = 150$ g at A(0.5, 0), $m_3 = 200$ g at B(0.25, 0.25√3)
 >
-> $$
-> X = \frac{100(0) + 150(0.5) + 200(0.25)}{450} = \frac{125}{450} = \frac{5}{18} \text{ m}
+> $$X = \frac{100(0) + 150(0.5) + 200(0.25)}{450} = \frac{125}{450} = \frac{5}{18} \text{ m}$$
 >
-> $$
->
-> $$
-> Y = \frac{100(0) + 150(0) + 200(0.25\sqrt{3})}{450} = \frac{1}{3\sqrt{3}} \text{ m}
->
-> $$
+> $$Y = \frac{100(0) + 150(0) + 200(0.25\sqrt{3})}{450} = \frac{1}{3\sqrt{3}} \text{ m}$$
 >
 > Note: COM is NOT the geometric centre of the triangle (unequal masses).
 
@@ -298,17 +270,12 @@ The same argument applied to strips parallel to the other two sides shows the CO
 A point that lies on all three medians simultaneously must be their **point of concurrence** — the **centroid** $G$. Hence, for a uniform triangular lamina, the **COM coincides with the centroid**, regardless of the triangle's shape.
 
 > [!example] Example 6.3 — L-shaped uniform lamina (3 kg, three unit squares)
+>
 > COM of each unit square is at its geometric centre: $C_1 = (1/2, 1/2)$, $C_2 = (3/2, 1/2)$, $C_3 = (1/2, 3/2)$; each of mass 1 kg.
 >
-> $$
-> X = \frac{1(1/2) + 1(3/2) + 1(1/2)}{3} = \frac{5}{6} \text{ m}
+> $$X = \frac{1(1/2) + 1(3/2) + 1(1/2)}{3} = \frac{5}{6} \text{ m}$$
 >
-> $$
->
-> $$
-> Y = \frac{1(1/2) + 1(1/2) + 1(3/2)}{3} = \frac{5}{6} \text{ m}
->
-> $$
+> $$Y = \frac{1(1/2) + 1(1/2) + 1(3/2)}{3} = \frac{5}{6} \text{ m}$$
 >
 > COM lies on the line of symmetry at (5/6, 5/6).
 
@@ -324,47 +291,29 @@ Start from Eq. (6.4d): $M\mathbf{R} = \sum m_i \mathbf{r}_i$.
 
 **Step 1 — differentiate once (masses are constant in time):**
 
-$$
-M\frac{d\mathbf{R}}{dt} = \sum m_i \frac{d\mathbf{r}_i}{dt}
+$$M\frac{d\mathbf{R}}{dt} = \sum m_i \frac{d\mathbf{r}_i}{dt}$$
 
-$$
-
-$$
-\boxed{M\mathbf{V} = \sum m_i \mathbf{v}_i = m_1\mathbf{v}_1 + m_2\mathbf{v}_2 + \dots} \qquad \text{...(6.8)}
-
-$$
+$$\boxed{M\mathbf{V} = \sum m_i \mathbf{v}_i = m_1\mathbf{v}_1 + m_2\mathbf{v}_2 + \dots} \qquad \text{...(6.8)}$$
 
 Here $\mathbf V = d\mathbf R/dt$ is the **velocity of the COM**.
 
 **Step 2 — differentiate again:**
 
-$$
-M\frac{d\mathbf{V}}{dt} = \sum m_i \frac{d\mathbf{v}_i}{dt}
+$$M\frac{d\mathbf{V}}{dt} = \sum m_i \frac{d\mathbf{v}_i}{dt}$$
 
-$$
-
-$$
-\boxed{M\mathbf{A} = \sum m_i \mathbf{a}_i = m_1\mathbf{a}_1 + m_2\mathbf{a}_2 + \dots} \qquad \text{...(6.9)}
-
-$$
+$$\boxed{M\mathbf{A} = \sum m_i \mathbf{a}_i = m_1\mathbf{a}_1 + m_2\mathbf{a}_2 + \dots} \qquad \text{...(6.9)}$$
 
 Here $\mathbf A = d\mathbf V/dt$ is the **acceleration of the COM**.
 
 **Step 3 — bring in Newton's second law for each particle.** The force on particle $i$ is $\mathbf F_i = m_i\mathbf a_i$ (this $\mathbf F_i$ already includes *both* external and internal forces on that particle), so:
 
-$$
-M\mathbf{A} = \mathbf{F}_1 + \mathbf{F}_2 + \dots + \mathbf{F}_n \qquad \text{...(6.10)}
-
-$$
+$$M\mathbf{A} = \mathbf{F}_1 + \mathbf{F}_2 + \dots + \mathbf{F}_n \qquad \text{...(6.10)}$$
 
 **Step 4 — internal forces cancel.** Every internal force (particle $j$ on particle $i$) is matched by an equal-and-opposite reaction (particle $i$ on particle $j$), by Newton's third law. Summed over the whole system, these pairs cancel exactly, leaving only the external forces:
 
-$$
-\boxed{M\mathbf{A} = \mathbf{F}_{ext}} \qquad \text{...(6.11)}
+$$\boxed{M\mathbf{A} = \mathbf{F}_{ext}} \qquad \text{...(6.11)}$$
 
-$$
-
-> [!important] ❗ The Big Idea
+> [!important] The Big Idea
 > **The centre of mass of a system of particles moves as if all the mass of the system were concentrated at the COM, and all the external forces were applied at that point** — regardless of whether the system is rigid, deforming, exploding, or has any internal motion whatsoever. To find the motion of the COM, you never need to know the internal forces.
 
 ```tikz
@@ -390,7 +339,7 @@ A shell following a parabolic trajectory explodes mid-air into fragments. The fo
 - **Radioactive decay:** A radium nucleus at rest decays into a radon nucleus and an alpha particle. Since there's no external force, the COM stays at rest — the two products must fly apart **back-to-back**, in exactly opposite directions.
 - **Binary stars:** With no external force, the COM of a double-star system moves like a free particle (uniform velocity, or rest). In the COM frame, the two stars orbit the (stationary) COM in circles, always diametrically opposite each other.
 
-> [!tip] 💡 Problem-Solving Technique
+> [!tip] Problem-Solving Technique
 > Separating a system's motion into **(i) translation of the COM** and **(ii) motion relative to the COM** is one of the most powerful techniques in mechanics — it lets you analyse the "boring" overall drift and the "interesting" internal dynamics independently.
 
 ---
@@ -403,9 +352,8 @@ Two of the most important rotational quantities — **torque** and **angular mom
 
 ### 4.2 Definition
 
-> [!note] ✏️ Definition
+> [!note] Definition
 > The vector product (cross product) of $\mathbf{a}$ and $\mathbf{b}$ is a vector $\mathbf{c} = \mathbf{a}\times\mathbf{b}$ such that:
->
 > 1. **Magnitude:** $|\mathbf{c}| = ab\sin\theta$, where $\theta$ is the angle between $\mathbf a$ and $\mathbf b$.
 > 2. **Direction:** $\mathbf{c}$ is perpendicular to the plane containing $\mathbf a$ and $\mathbf b$.
 > 3. **Sense:** given by the **right-hand screw rule** — curl the fingers of the right hand from $\mathbf a$ to $\mathbf b$ (through the smaller angle); the thumb points along $\mathbf c$.
@@ -427,69 +375,50 @@ The cross product $\mathbf c$ points straight out of the plane containing $\math
 
 ### 4.3 Key Properties
 
-
-| Property                       | Statement                                                                                                |
-| :------------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| **Not commutative**            | $\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}$                                               |
-| **Not associative in general** | Order and grouping matter                                                                                |
-| **Distributive**               | $\mathbf{a}\times(\mathbf{b}+\mathbf{c}) = \mathbf{a}\times\mathbf{b} + \mathbf{a}\times\mathbf{c}$      |
-| **Self cross product**         | $\mathbf{a}\times\mathbf{a} = \mathbf{0}$ (since $\sin 0^\circ = 0$)                                     |
+| Property | Statement |
+|:---|:---|
+| **Not commutative** | $\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}$ |
+| **Not associative in general** | Order and grouping matter |
+| **Distributive** | $\mathbf{a}\times(\mathbf{b}+\mathbf{c}) = \mathbf{a}\times\mathbf{b} + \mathbf{a}\times\mathbf{c}$ |
+| **Self cross product** | $\mathbf{a}\times\mathbf{a} = \mathbf{0}$ (since $\sin 0^\circ = 0$) |
 | **Behaviour under reflection** | $\mathbf{a}\times\mathbf{b}$ does **not** change sign under reflection (unlike ordinary/"polar" vectors) |
 
 ### 4.4 Unit Vector Rules
 
-$$
-\hat{\imath}\times\hat{\imath} = \hat{\jmath}\times\hat{\jmath} = \hat{k}\times\hat{k} = \mathbf{0}
+$$\hat{\imath}\times\hat{\imath} = \hat{\jmath}\times\hat{\jmath} = \hat{k}\times\hat{k} = \mathbf{0}$$
 
-$$
+$$\hat{\imath}\times\hat{\jmath} = \hat{k}, \quad \hat{\jmath}\times\hat{k} = \hat{\imath}, \quad \hat{k}\times\hat{\imath} = \hat{\jmath}$$
 
-$$
-\hat{\imath}\times\hat{\jmath} = \hat{k}, \quad \hat{\jmath}\times\hat{k} = \hat{\imath}, \quad \hat{k}\times\hat{\imath} = \hat{\jmath}
-
-$$
-
-> [!tip] 💡 Cyclic Order Trick
+> [!tip] Cyclic Order Trick
 > If $\hat\imath,\hat\jmath,\hat k$ occur in **cyclic order** ($\hat\imath\to\hat\jmath\to\hat k\to\hat\imath\to\dots$), the product is **positive**. Reverse the order and it's **negative**: $\hat\jmath\times\hat\imath=-\hat k$, $\hat k\times\hat\jmath=-\hat\imath$, $\hat\imath\times\hat k=-\hat\jmath$.
 
 ### 4.5 Component (Determinant) Form
 
-$$
-\mathbf{a}\times\mathbf{b} = \begin{vmatrix} \hat{\imath} & \hat{\jmath} & \hat{k} \\ a_x & a_y & a_z \\ b_x & b_y & b_z \end{vmatrix} = (a_yb_z - a_zb_y)\hat\imath + (a_zb_x - a_xb_z)\hat\jmath + (a_xb_y - a_yb_x)\hat{k}
-
-$$
+$$\mathbf{a}\times\mathbf{b} = \begin{vmatrix} \hat{\imath} & \hat{\jmath} & \hat{k} \\ a_x & a_y & a_z \\ b_x & b_y & b_z \end{vmatrix} = (a_yb_z - a_zb_y)\hat\imath + (a_zb_x - a_xb_z)\hat\jmath + (a_xb_y - a_yb_x)\hat{k}$$
 
 > [!example] Example 6.4 — Scalar and vector products
+>
 > Given $\mathbf a = 3\hat\imath - 4\hat\jmath + 5\hat k$ and $\mathbf b = -2\hat\imath + \hat\jmath + 3\hat k$:
 >
-> $$
-> \mathbf{a}\cdot\mathbf{b} = (3)(-2)+(-4)(1)+(5)(3) = -6-4+15 = 5
+> $$\mathbf{a}\cdot\mathbf{b} = (3)(-2)+(-4)(1)+(5)(3) = -6-4+15 = 5$$
 >
-> $$
->
-> $$
-> \mathbf{a}\times\mathbf{b} = \begin{vmatrix} \hat\imath & \hat\jmath & \hat k \\ 3 & -4 & 5 \\ -2 & 1 & 3\end{vmatrix}
->
-> $$
+> $$\mathbf{a}\times\mathbf{b} = \begin{vmatrix} \hat\imath & \hat\jmath & \hat k \\ 3 & -4 & 5 \\ -2 & 1 & 3\end{vmatrix}$$
 >
 > Working component by component: $\hat\imath: (-4)(3)-(5)(1) = -17$; $\hat\jmath: (5)(-2)-(3)(3) = -19$; $\hat k: (3)(1)-(-4)(-2) = -5$.
 >
-> $$
-> \mathbf{a}\times\mathbf{b} = -17\hat\imath - 19\hat\jmath - 5\hat{k}
->
-> $$
+> $$\mathbf{a}\times\mathbf{b} = -17\hat\imath - 19\hat\jmath - 5\hat{k}$$
 >
 > and $\mathbf{b}\times\mathbf{a} = -(\mathbf a\times\mathbf b) = 17\hat\imath+19\hat\jmath+5\hat k$.
 
 ### 4.6 Dot Product vs Cross Product — Quick Comparison
 
-
-|                   | Dot Product$\mathbf a\cdot\mathbf b$                                 | Cross Product$\mathbf a\times\mathbf b$                                                                   |
-| :------------------ | :--------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
-| Result type       | Scalar                                                               | Vector                                                                                                    |
-| Formula           | $ab\cos\theta$                                                       | $ab\sin\theta$, direction ⟂ to plane                                                                     |
-| Commutative?      | Yes                                                                  | No — anti-commutative                                                                                    |
-| Zero when         | $\theta = 90°$                                                      | $\theta = 0°$ or $180°$ (parallel vectors)                                                              |
-| Physical examples | Work$W=\mathbf F\cdot\mathbf s$, Power $P = \mathbf F\cdot\mathbf v$ | Torque$\boldsymbol\tau = \mathbf r\times\mathbf F$, Angular momentum $\mathbf L=\mathbf r\times\mathbf p$ |
+| | Dot Product $\mathbf a\cdot\mathbf b$ | Cross Product $\mathbf a\times\mathbf b$ |
+|:---|:---|:---|
+| Result type | Scalar | Vector |
+| Formula | $ab\cos\theta$ | $ab\sin\theta$, direction ⟂ to plane |
+| Commutative? | Yes | No — anti-commutative |
+| Zero when | $\theta = 90°$ | $\theta = 0°$ or $180°$ (parallel vectors) |
+| Physical examples | Work $W=\mathbf F\cdot\mathbf s$, Power $P = \mathbf F\cdot\mathbf v$ | Torque $\boldsymbol\tau = \mathbf r\times\mathbf F$, Angular momentum $\mathbf L=\mathbf r\times\mathbf p$ |
 
 ---
 
@@ -497,31 +426,20 @@ $$
 
 ### 5.1 Angular Velocity — Definition
 
-> [!note] ✏️ Definition
+> [!note] Definition
 > **Angular velocity** $\omega$ is the time rate of change of angular displacement:
->
-> $$
-> \omega = \lim_{\Delta t \to 0}\frac{\Delta\theta}{\Delta t} = \frac{d\theta}{dt}
->
-> $$
->
+> $$\omega = \lim_{\Delta t \to 0}\frac{\Delta\theta}{\Delta t} = \frac{d\theta}{dt}$$
 > **SI unit:** rad s⁻¹. **Dimensional formula:** $[T^{-1}]$.
 
 For a particle at perpendicular distance $r_i$ from a fixed axis:
 
-$$
-v_i = \omega r_i \qquad \text{...(6.19)}
-
-$$
+$$v_i = \omega r_i \qquad \text{...(6.19)}$$
 
 The **same** $\omega$ applies to every particle of the body — this is why we speak of "the angular velocity of the body" as a single number, even though different particles have different linear speeds.
 
 **Vector form**, valid even for rotation about one fixed point (not just a fixed axis):
 
-$$
-\boxed{\mathbf{v} = \boldsymbol\omega \times \mathbf{r}} \qquad \text{...(6.20)}
-
-$$
+$$\boxed{\mathbf{v} = \boldsymbol\omega \times \mathbf{r}} \qquad \text{...(6.20)}$$
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -545,25 +463,20 @@ $$
 
 Since $\boldsymbol\omega$ lies along $OC$ (the axis) and $\mathbf{r} = \mathbf{OC}+\mathbf{CP}$, and $\boldsymbol\omega\times\mathbf{OC}=\mathbf 0$ (parallel vectors), we get $\boldsymbol\omega\times\mathbf r = \boldsymbol\omega\times\mathbf{CP}$ — a vector of magnitude $\omega r_\perp$, tangential to the circle at $P$. This confirms $|\mathbf v| = \omega r_\perp$, matching Eq. (6.19).
 
-> [!tip] 💡 The Four Rotational Cross-Products
+> [!tip] The Four Rotational Cross-Products
 > Every core relation in this chapter is a cross product pairing an angular quantity with a position (or momentum) vector. Keep these four together:
 
-
-| Relation                                         | Gives you               | Rotational analogue of                  |
-| :------------------------------------------------- | :------------------------ | :---------------------------------------- |
-| $\mathbf v = \boldsymbol\omega\times\mathbf r$   | linear velocity         | —                                      |
-| $\mathbf a_t = \boldsymbol\alpha\times\mathbf r$ | tangential acceleration | —                                      |
-| $\mathbf L = \mathbf r\times\mathbf p$           | angular momentum        | linear momentum$\mathbf p = m\mathbf v$ |
-| $\boldsymbol\tau = \mathbf r\times\mathbf F$     | torque                  | force$\mathbf F$                        |
+| Relation | Gives you | Rotational analogue of |
+|:---|:---|:---|
+| $\mathbf v = \boldsymbol\omega\times\mathbf r$ | linear velocity | — |
+| $\mathbf a_t = \boldsymbol\alpha\times\mathbf r$ | tangential acceleration | — |
+| $\mathbf L = \mathbf r\times\mathbf p$ | angular momentum | linear momentum $\mathbf p = m\mathbf v$ |
+| $\boldsymbol\tau = \mathbf r\times\mathbf F$ | torque | force $\mathbf F$ |
 
 ### 5.2 Angular Acceleration
 
-> [!note] ✏️ Definition
-> $$
-> \boldsymbol\alpha = \frac{d\boldsymbol\omega}{dt}, \qquad \text{scalar form (fixed axis): } \alpha = \frac{d\omega}{dt} \qquad \text{...(6.21), (6.22)}
->
-> $$
->
+> [!note] Definition
+> $$\boldsymbol\alpha = \frac{d\boldsymbol\omega}{dt}, \qquad \text{scalar form (fixed axis): } \alpha = \frac{d\omega}{dt} \qquad \text{...(6.21), (6.22)}$$
 > **SI unit:** rad s⁻². **Dimensional formula:** $[T^{-2}]$.
 
 For **fixed-axis** rotation, $\boldsymbol\omega$'s *direction* never changes — only its magnitude can — so $\boldsymbol\alpha$ is also fixed in direction, and the vector equation collapses to the scalar one above.
@@ -572,66 +485,41 @@ For **fixed-axis** rotation, $\boldsymbol\omega$'s *direction* never changes —
 
 A particle undergoing circular motion in a rotating rigid body has, in general, **two** perpendicular components of acceleration:
 
-$$
-\boxed{\mathbf{a}_t = \boldsymbol\alpha\times\mathbf{r}, \qquad |a_t| = \alpha r_\perp} \quad \text{(tangential — speeds it up/slows it down along the circle)}
+$$\boxed{\mathbf{a}_t = \boldsymbol\alpha\times\mathbf{r}, \qquad |a_t| = \alpha r_\perp} \quad \text{(tangential — speeds it up/slows it down along the circle)}$$
 
-$$
-
-$$
-\boxed{a_c = \omega^2 r_\perp = \frac{v^2}{r_\perp}} \quad \text{(centripetal — always toward the axis, changes direction only)}
-
-$$
+$$\boxed{a_c = \omega^2 r_\perp = \frac{v^2}{r_\perp}} \quad \text{(centripetal — always toward the axis, changes direction only)}$$
 
 **How $a_t$ and $a_c$ actually scale — plotted, not just stated:** $a_t=\alpha r$ is a **straight line** against $\omega$ (it doesn't even depend on $\omega$!), while $a_c=\omega^2 r$ is a **parabola**. This is easy to state and easy to forget — plotting both against the same axis makes the quadratic growth of $a_c$ impossible to un-see.
 
 ```desmos
-A\ =\frac{1}{2}a_{ang}t^{2}+u_{ang}t\ +\ \phi
-v_{ang}=u_{ang}+a_{ang}t
-x^{2}+y^{2}\ =\ R^{2}
-r=R\left(\cos A,\ \sin A\right)
-r_{dir}=\frac{r}{R}
-v=Rv_{ang}\left(-\sin A,\ \cos A\right)
-v_{body}=v+r
-v_{dir}=\frac{v}{Rv_{ang}}
-a_{rad}=-R\left(v_{ang}\right)^{2}\left(r_{dir}\right)
-a_{radbody}=a_{rad}+r
-a_{tan}=Ra_{ang}\left(v_{dir}\right)
-a_{tanbody}=a_{tan}+r
-a_{net}=a_{rad}+a_{tan}
-a_{netbody}=a_{net}+r
-y_{r}\ =\ \tan\left(A\right)x\ \left\{x^{2}\le r.x^{2}\right\}\left\{\operatorname{sgn}\left(r.x\right)=\operatorname{sgn}\left(x\right)\right\}
-y_{v}=\ -\cot\left(A\right)\left(x-r.x\right)\ +r.y\ \ \left\{\left(x-r.x\right)^{2\ }\le\left(v.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(v.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
-y_{rad}=\tan\left(A\right)\left(x-r.x\right)+r.y\ \left\{\left(x-r.x\right)^{2}\le\left(a_{rad}.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(a_{rad}.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
-y_{tan}=-\cot\left(A\right)\left(x-r.x\right)+r.y\ \left\{\left(x-r.x\right)^{2\ }\le\left(a_{tan}.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(a_{tan}.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
-y_{net}=\tan\left(\arctan\left(-\frac{Ra_{ang}}{R\left(v_{ang}\right)^{2}}\right)+A\right)\left(x-r.x\right)+r.y\left\{\left(x-r.x\right)^{2\ }\le\left(a_{net}.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(a_{net}.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
-R=3.54
-u_{ang}=1.72
-\phi=0.8
-a_{ang}=-0.48
-t\ =0
-R_{ext}=0
+a_{tan}\left(\omega\right)=\alpha r
+a_{cen}\left(\omega\right)=\omega^{2}r
+r=2
+\alpha=1.5
+\omega_{now}=1.8
+P_{tan}=\left(\omega_{now},a_{tan}\left(\omega_{now}\right)\right)
+P_{cen}=\left(\omega_{now},a_{cen}\left(\omega_{now}\right)\right)
 ```
 
 Slide $\omega_{now}$ to the right: the point on the flat line $a_{tan}(\omega)$ barely moves, but the point on $a_{cen}(\omega)$ shoots upward — double $\omega$ and $a_c$ quadruples, not doubles.
 
-> [!warning] ⚠️ Common Confusion
+> [!warning] Common Confusion
 > $a_t = \alpha r_\perp$ is only the **tangential** part. It vanishes when $\omega$ is constant ($\alpha = 0$) — but the particle is *still* accelerating centripetally, $a_c=\omega^2 r_\perp \neq 0$, as long as it keeps moving in a circle at all. "No angular acceleration" does **not** mean "no acceleration."
 
 ### 5.4 Interactive 3D Model — Visualizing $\mathbf v=\boldsymbol\omega\times\mathbf r$ and $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ *(New)*
 
 Section 5.1 asserted that $\boldsymbol\omega$ is a genuine **vector** lying along the rotation axis — that's the single hardest thing to picture from a flat page. The model below makes it concrete: $\boldsymbol\omega$ and $\boldsymbol\alpha$ literally point along the $z$-axis, $\mathbf r$ sweeps around in the $xy$-plane, and $\mathbf v$, $\mathbf a_{rad}$, $\mathbf a_{tan}$ are computed as genuine cross products — not just plugged into a memorised formula. Drag $t$ and watch every vector update live.
 
-
-| Desmos variable                         | Meaning                                                                                   | Matches this note's notation                            |
-| :---------------------------------------- | :------------------------------------------------------------------------------------------ | :-------------------------------------------------------- |
-| $\sigma$                                | angular position                                                                          | $\theta$                                                |
-| $\omega_0,\ \omega$                     | initial / instantaneous angular velocity                                                  | $\omega_0,\ \omega$                                     |
-| $\alpha$                                | angular acceleration                                                                      | $\alpha$                                                |
-| $r_{head}$                              | tip of the position vector                                                                | $\mathbf r$                                             |
-| $\omega_{head},\ \alpha_{head}$         | $(0,0,\omega)$, $(0,0,\alpha)$ — $\boldsymbol\omega,\boldsymbol\alpha$ as real 3-vectors | $\boldsymbol\omega,\ \boldsymbol\alpha$                 |
-| $v_{head}=\omega_{head}\times r_{head}$ | velocity, via genuine cross product                                                       | $\mathbf v=\boldsymbol\omega\times\mathbf r$ (Eq. 6.20) |
-| $a_{tan}=\alpha_{head}\times r_{head}$  | tangential acceleration                                                                   | $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ (§5.3)  |
-| $a_{rad}$                               | centripetal (radial) acceleration                                                         | $a_c=-\omega^2\mathbf r$ (§5.3)                        |
+| Desmos variable | Meaning | Matches this note's notation |
+|:---|:---|:---|
+| $\sigma$ | angular position | $\theta$ |
+| $\omega_0,\ \omega$ | initial / instantaneous angular velocity | $\omega_0,\ \omega$ |
+| $\alpha$ | angular acceleration | $\alpha$ |
+| $r_{head}$ | tip of the position vector | $\mathbf r$ |
+| $\omega_{head},\ \alpha_{head}$ | $(0,0,\omega)$, $(0,0,\alpha)$ — $\boldsymbol\omega,\boldsymbol\alpha$ as real 3-vectors | $\boldsymbol\omega,\ \boldsymbol\alpha$ |
+| $v_{head}=\omega_{head}\times r_{head}$ | velocity, via genuine cross product | $\mathbf v=\boldsymbol\omega\times\mathbf r$ (Eq. 6.20) |
+| $a_{tan}=\alpha_{head}\times r_{head}$ | tangential acceleration | $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ (§5.3) |
+| $a_{rad}$ | centripetal (radial) acceleration | $a_c=-\omega^2\mathbf r$ (§5.3) |
 
 ```desmos3d
 O_{rg}\ =\ \left(0,0,0\right)
@@ -671,20 +559,12 @@ Try setting $\alpha=0$: the $\vec\alpha$ arrow and $\mathbf a_{tan}$ both vanish
 
 ### 6.1 Moment of Force (Torque)
 
-> [!note] ✏️ Definition
+> [!note] Definition
 > The **torque** (moment of force) of $\mathbf F$ acting at point $P$ (position vector $\mathbf r$ from origin $O$) is:
->
-> $$
-> \boxed{\boldsymbol\tau = \mathbf{r}\times\mathbf{F}} \qquad \text{...(6.23)}
->
-> $$
->
+> $$\boxed{\boldsymbol\tau = \mathbf{r}\times\mathbf{F}} \qquad \text{...(6.23)}$$
 > **SI unit:** N m. **Dimensional formula:** $[ML^2T^{-2}]$ — dimensionally identical to energy, but torque is a **vector**, energy is a **scalar**; never equate them physically.
 
-$$
-\tau = rF\sin\theta = rF_\perp = r_\perp F \qquad \text{...(6.24a–c)}
-
-$$
+$$\tau = rF\sin\theta = rF_\perp = r_\perp F \qquad \text{...(6.24a–c)}$$
 
 Torque vanishes if $r=0$, $F=0$, or if the line of action of $\mathbf F$ passes through the origin ($\theta = 0°$ or $180°$).
 
@@ -709,12 +589,11 @@ If $\mathbf F$ is reversed, $\boldsymbol\tau$ reverses. If **both** $\mathbf r$ 
 
 **Interactive — the $\sin\theta$ dependence, isolated** *(New)*: hold $r$ and $F$ fixed and sweep only the angle between them. This is the reason pushing a door **near the hinge** barely turns it (small effective moment) while the same push at the door's outer edge, applied perpendicular, is maximally effective — it's not really about distance from the hinge at all, it's about $\sin\theta$.
 
-
-| Desmos variable | Meaning                                                                                                          |
-| :---------------- | :----------------------------------------------------------------------------------------------------------------- |
-| $r, F$          | fixed magnitudes of$\mathbf r$ and $\mathbf F$                                                                   |
-| $\phi$          | angle between them —**drag this one** (kept as $\phi$, not $\theta$ — Desmos reserves $\theta$ for polar mode) |
-| $tau(\phi)$     | $rF\sin\phi$, plotted as a function of $\phi$                                                                    |
+| Desmos variable | Meaning |
+|:---|:---|
+| $r, F$ | fixed magnitudes of $\mathbf r$ and $\mathbf F$ |
+| $\phi$ | angle between them — **drag this one** (kept as $\phi$, not $\theta$ — Desmos reserves $\theta$ for polar mode) |
+| $tau(\phi)$ | $rF\sin\phi$, plotted as a function of $\phi$ |
 
 ```desmos
 r=2
@@ -728,30 +607,17 @@ Drag $\phi$ from $0$ to $\pi$: $tau$ starts at zero, peaks exactly at $\phi=\pi/
 
 ### 6.2 Angular Momentum of a Particle
 
-> [!note] ✏️ Definition
-> $$
-> \boxed{\mathbf{L} = \mathbf{r}\times\mathbf{p}} \qquad \text{...(6.25a)}
->
-> $$
->
+> [!note] Definition
+> $$\boxed{\mathbf{L} = \mathbf{r}\times\mathbf{p}} \qquad \text{...(6.25a)}$$
 > **SI unit:** kg m² s⁻¹ (= J s). **Dimensional formula:** $[ML^2T^{-1}]$.
 
-$$
-L = rp\sin\theta = rp_\perp = r_\perp p \qquad \text{...(6.26a,b)}
-
-$$
+$$L = rp\sin\theta = rp_\perp = r_\perp p \qquad \text{...(6.26a,b)}$$
 
 **Rate of change of angular momentum equals torque** — derived by differentiating $\mathbf L = \mathbf r\times\mathbf p$:
 
-$$
-\frac{d\mathbf{L}}{dt} = \frac{d\mathbf{r}}{dt}\times\mathbf{p} + \mathbf{r}\times\frac{d\mathbf{p}}{dt} = \mathbf{v}\times m\mathbf{v} + \mathbf{r}\times\mathbf{F} = \mathbf{0} + \mathbf{r}\times\mathbf F
+$$\frac{d\mathbf{L}}{dt} = \frac{d\mathbf{r}}{dt}\times\mathbf{p} + \mathbf{r}\times\frac{d\mathbf{p}}{dt} = \mathbf{v}\times m\mathbf{v} + \mathbf{r}\times\mathbf{F} = \mathbf{0} + \mathbf{r}\times\mathbf F$$
 
-$$
-
-$$
-\boxed{\frac{d\mathbf{L}}{dt} = \boldsymbol\tau} \qquad \text{...(6.27)}
-
-$$
+$$\boxed{\frac{d\mathbf{L}}{dt} = \boldsymbol\tau} \qquad \text{...(6.27)}$$
 
 ($\mathbf v\times m\mathbf v = \mathbf 0$ because the cross product of any vector with itself — or a scalar multiple of itself — vanishes.) This is the exact rotational analogue of $\mathbf F = d\mathbf p/dt$.
 
@@ -780,93 +646,71 @@ Drag $t$ through a full revolution: $\vec r$ and $\vec p$ both rotate in the $xy
 
 ### 6.3 Torque and Angular Momentum for a System of Particles
 
-$$
-\mathbf{L} = \sum_i \mathbf{l}_i = \sum_i \mathbf{r}_i\times\mathbf{p}_i \qquad \text{...(6.25b)}
-
-$$
+$$\mathbf{L} = \sum_i \mathbf{l}_i = \sum_i \mathbf{r}_i\times\mathbf{p}_i \qquad \text{...(6.25b)}$$
 
 Differentiating, and using $d\mathbf l_i/dt = \boldsymbol\tau_i$ for each particle:
 
-$$
-\frac{d\mathbf{L}}{dt} = \sum_i \boldsymbol\tau_i = \sum_i \mathbf{r}_i\times\mathbf{F}_i \qquad \text{...(6.28a)}
-
-$$
+$$\frac{d\mathbf{L}}{dt} = \sum_i \boldsymbol\tau_i = \sum_i \mathbf{r}_i\times\mathbf{F}_i \qquad \text{...(6.28a)}$$
 
 Each $\mathbf F_i$ splits into an external part and an internal part, so the total torque splits the same way:
 
-$$
-\boldsymbol\tau = \boldsymbol\tau_{ext} + \boldsymbol\tau_{int}
+$$\boldsymbol\tau = \boldsymbol\tau_{ext} + \boldsymbol\tau_{int}$$
 
-$$
-
-> [!warning] ⚠️ Why $\boldsymbol\tau_{int}=0$ needs TWO assumptions, not one
+> [!warning] Why $\boldsymbol\tau_{int}=0$ needs TWO assumptions, not one
 > It's tempting to say "internal torques cancel by Newton's third law" and stop there — that's incomplete. Newton's third law only guarantees that the force pair between any two particles is **equal and opposite**; by itself, that does *not* force their torques to cancel. Cancellation additionally requires the internal forces to act **along the line joining the two particles** (i.e., they are *central* forces). Only with **both** Newton's third law **and** collinearity does every action–reaction pair contribute zero net torque about any point.
 
 With both assumptions in place, $\boldsymbol\tau_{int}=\mathbf 0$, giving:
 
-$$
-\boxed{\frac{d\mathbf{L}}{dt} = \boldsymbol\tau_{ext}} \qquad \text{...(6.28b)}
-
-$$
+$$\boxed{\frac{d\mathbf{L}}{dt} = \boldsymbol\tau_{ext}} \qquad \text{...(6.28b)}$$
 
 **Conservation of angular momentum:** if $\boldsymbol\tau_{ext}=\mathbf 0$, then $\mathbf L = \text{constant}$ — Eq. (6.29a), the rotational analogue of momentum conservation.
 
 ### 6.4 Solved Examples
 
 > [!example] Example 6.5 — Torque of a force about the origin
+>
 > $\mathbf r = \hat\imath-\hat\jmath+\hat k$, $\mathbf F = 7\hat\imath+3\hat\jmath-5\hat k$.
 >
 > $\hat\imath: (-1)(-5)-(1)(3) = 5-3=2$; $\hat\jmath: (1)(7)-(1)(-5) = 7+5=12$; $\hat k: (1)(3)-(-1)(7)=3+7=10$.
 >
-> $$
-> \boldsymbol\tau = 2\hat\imath+12\hat\jmath+10\hat{k} \text{ N m}
->
-> $$
+> $$\boldsymbol\tau = 2\hat\imath+12\hat\jmath+10\hat{k} \text{ N m}$$
 
 > [!example] Example 6.6 — Angular momentum of a uniformly moving particle
+>
 > A particle moves with **constant velocity** $\mathbf v$. Show its angular momentum about any point $O$ never changes.
 >
 > $\mathbf l = \mathbf r\times m\mathbf v$, with magnitude $mvr\sin\theta = mv\,(OM)$, where $OM$ is the perpendicular distance from $O$ to the (straight) line of motion. Since the particle travels in a straight line at constant $\mathbf v$, this perpendicular distance $OM$ never changes — and neither does the direction of $\mathbf l$ (always perpendicular to the fixed plane containing $\mathbf r$ and $\mathbf v$). Hence $\mathbf l$ is constant throughout the motion. (Consistent with Eq. 6.28b: there is no torque on a free particle, so $\mathbf l$ cannot change.)
 
 > [!example] Example *(New)* — Reusing Example 6.4's numbers as a torque
+>
 > Example 6.4 already computed $\mathbf a\times\mathbf b$ for $\mathbf a = 3\hat\imath-4\hat\jmath+5\hat k$, $\mathbf b=-2\hat\imath+\hat\jmath+3\hat k$. If instead $\mathbf a$ is read as a position vector $\mathbf r$ and $\mathbf b$ as a force $\mathbf F$, the *identical* computation gives the torque directly:
 >
-> $$
-> \boldsymbol\tau = \mathbf r\times\mathbf F = -17\hat\imath-19\hat\jmath-5\hat{k} \text{ N m}
->
-> $$
+> $$\boldsymbol\tau = \mathbf r\times\mathbf F = -17\hat\imath-19\hat\jmath-5\hat{k} \text{ N m}$$
 >
 > The lesson: $\mathbf r\times\mathbf F$, $\mathbf a\times\mathbf b$, and $\mathbf r\times\mathbf p$ are all the *same* mathematical operation — only the physical labels on the vectors change.
 
 > [!example] Example *(New)* — Same $\mathbf r$ as Example 6.5, different $\mathbf F$
+>
 > $\mathbf r = \hat\imath+\hat\jmath-\hat k$ (same as Example 6.5), but now $\mathbf F = 7\hat\imath-3\hat\jmath-5\hat k$ (both non-$\hat\imath$ signs flipped compared to Example 6.5).
 >
 > $\hat\imath: (1)(-5)-(-1)(-3) = -5-3=-8$; $\hat\jmath: (-1)(7)-(1)(-5) = -7+5=-2$; $\hat k: (1)(-3)-(1)(7)=-3-7=-10$.
 >
-> $$
-> \boldsymbol\tau = -8\hat\imath-2\hat\jmath-10\hat{k} \text{ N m}
->
-> $$
+> $$\boldsymbol\tau = -8\hat\imath-2\hat\jmath-10\hat{k} \text{ N m}$$
 >
 > Compare with Example 6.5's $2\hat\imath+12\hat\jmath+10\hat k$: flipping two components of $\mathbf F$ changes the torque completely — there's no shortcut relating the two answers; each must be computed fresh.
 
 > [!example] Example *(New)* — Torque from a time-varying momentum
+>
 > A particle sits at the fixed position $\mathbf r = \hat\imath+\hat\jmath-\hat k$ while its momentum varies as $\mathbf p(t) = 5t\,\hat\imath + 9t^2\,\hat\jmath - 3\,\hat k$. Find the torque on it as a function of time.
 >
 > **Step 1 — find $\mathbf L(t) = \mathbf r\times\mathbf p(t)$:**
 > $\hat\imath: (1)(-3)-(-1)(9t^2) = 9t^2-3$; $\hat\jmath: (-1)(5t)-(1)(-3) = 3-5t$; $\hat k: (1)(9t^2)-(1)(5t) = 9t^2-5t$.
 >
-> $$
-> \mathbf{L}(t) = (9t^2-3)\hat\imath + (3-5t)\hat\jmath + (9t^2-5t)\hat{k}
->
-> $$
+> $$\mathbf{L}(t) = (9t^2-3)\hat\imath + (3-5t)\hat\jmath + (9t^2-5t)\hat{k}$$
 >
 > **Step 2 — differentiate component-wise, using $\boldsymbol\tau = d\mathbf L/dt$:**
 >
-> $$
-> \boxed{\boldsymbol\tau(t) = 18t\,\hat\imath - 5\,\hat\jmath + (18t-5)\,\hat{k}}
->
-> $$
+> $$\boxed{\boldsymbol\tau(t) = 18t\,\hat\imath - 5\,\hat\jmath + (18t-5)\,\hat{k}}$$
 >
 > This is a genuinely useful example because it shows $\boldsymbol\tau = d\mathbf L/dt$ being used the way it's actually tested — via differentiation of a time-dependent $\mathbf L$, not just $\mathbf r\times\mathbf F$ read off directly.
 
@@ -878,15 +722,9 @@ $$
 
 A rigid body is in **mechanical equilibrium** when it has neither linear nor angular acceleration:
 
-$$
-\boxed{\sum \mathbf{F}_i = \mathbf{0}} \qquad \text{(Translational equilibrium) ...(6.30a)}
+$$\boxed{\sum \mathbf{F}_i = \mathbf{0}} \qquad \text{(Translational equilibrium) ...(6.30a)}$$
 
-$$
-
-$$
-\boxed{\sum \boldsymbol{\tau}_i = \mathbf{0}} \qquad \text{(Rotational equilibrium) ...(6.30b)}
-
-$$
+$$\boxed{\sum \boldsymbol{\tau}_i = \mathbf{0}} \qquad \text{(Rotational equilibrium) ...(6.30b)}$$
 
 > [!note]
 > The rotational equilibrium condition is **independent of the choice of origin** (provided translational equilibrium also holds) — so you're always free to take moments about whichever point makes the algebra simplest.
@@ -900,7 +738,7 @@ A body can satisfy *one* condition without the other:
 
 ### 7.3 Couple
 
-> [!note] ✏️ Definition
+> [!note] Definition
 > A **couple** is a pair of forces of **equal magnitude** acting in **opposite directions** with **different (parallel) lines of action**. A couple produces rotation **without** translation.
 
 ```tikz
@@ -925,12 +763,11 @@ Examples: turning a bottle cap with your fingers, a compass needle in the Earth'
 
 For a lever (light, rigid rod) pivoted at the **fulcrum**:
 
-
-| Term             | Definition                                             |
-| :----------------- | :------------------------------------------------------- |
-| **Load** $F_1$   | Force to be lifted; acts at load arm$d_1$ from fulcrum |
-| **Effort** $F_2$ | Force applied; acts at effort arm$d_2$ from fulcrum    |
-| **Fulcrum**      | Pivot point of the lever                               |
+| Term | Definition |
+|:---|:---|
+| **Load** $F_1$ | Force to be lifted; acts at load arm $d_1$ from fulcrum |
+| **Effort** $F_2$ | Force applied; acts at effort arm $d_2$ from fulcrum |
+| **Fulcrum** | Pivot point of the lever |
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -953,27 +790,20 @@ For a lever (light, rigid rod) pivoted at the **fulcrum**:
 
 For translational equilibrium: $R - F_1 - F_2 = 0$. Taking moments about the fulcrum ($R$ contributes none, since it acts there):
 
-$$
-\boxed{d_1 F_1 = d_2 F_2} \qquad \text{...(6.32a)}
+$$\boxed{d_1 F_1 = d_2 F_2} \qquad \text{...(6.32a)}$$
 
-$$
-
-$$
-\text{Mechanical Advantage} = \frac{F_1}{F_2} = \frac{d_2}{d_1} \qquad \text{...(6.32b)}
-
-$$
+$$\text{Mechanical Advantage} = \frac{F_1}{F_2} = \frac{d_2}{d_1} \qquad \text{...(6.32b)}$$
 
 If $d_2 > d_1$: M.A. $> 1$ → a **small effort lifts a large load**. Examples of levers: seesaw, beam balance, scissors, human forearm, pliers, a crowbar.
 
 **Interactive — find the balance point yourself** *(New)*: $F_1$ and $d_1$ are fixed (a known load, a known load arm); $d_2$ is a slider. $\text{Net}=d_1F_1-d_2F_2$ is plotted live — drag $d_2$ until it reads exactly zero, and you've re-derived Eq. (6.32a) by hand rather than being told it.
 
-
-| Desmos variable | Meaning                                                       |
-| :---------------- | :-------------------------------------------------------------- |
-| $F_1, d_1$      | load and load arm (fixed)                                     |
-| $F_2$           | effort (fixed)                                                |
-| $d_2$           | effort arm —**drag this one**                                |
-| Net             | $d_1F_1-d_2F_2$ — the rotational-equilibrium condition, live |
+| Desmos variable | Meaning |
+|:---|:---|
+| $F_1, d_1$ | load and load arm (fixed) |
+| $F_2$ | effort (fixed) |
+| $d_2$ | effort arm — **drag this one** |
+| Net | $d_1F_1-d_2F_2$ — the rotational-equilibrium condition, live |
 
 ```desmos
 F_{1}=10
@@ -988,13 +818,10 @@ At $d_1=2,F_1=10,F_2=5$: balance requires $d_2=4$. Slide $d_2$ toward $4$ and wa
 
 ### 7.5 Centre of Gravity (CG)
 
-> [!note] ✏️ Definition
+> [!note] Definition
 > The **Centre of Gravity (CG)** is the point where the total gravitational torque on the body is **zero**.
 
-$$
-\sum \boldsymbol{\tau}_g = \sum \mathbf{r}_i \times m_i\mathbf{g} = \mathbf{0} \qquad \text{...(6.33)}
-
-$$
+$$\sum \boldsymbol{\tau}_g = \sum \mathbf{r}_i \times m_i\mathbf{g} = \mathbf{0} \qquad \text{...(6.33)}$$
 
 Since $\mathbf g$ is the same for every particle in an ordinary-sized body, it factors out of the sum — leaving $\sum m_i\mathbf r_i = \mathbf 0$, exactly the condition that defines the COM. So:
 
@@ -1034,10 +861,7 @@ Translational equilibrium: $R_1+R_2-W_1-W=0 \Rightarrow R_1+R_2=10g=98$ N ...(i)
 
 Rotational equilibrium (moments about $G$): $-R_1(K_1G)+W_1(PG)+R_2(K_2G)=0$
 
-$$
--0.25R_1 + 6g(0.05) + 0.25R_2 = 0 \;\Rightarrow\; R_1-R_2=1.2g=11.76\text{ N} \qquad \text{...(ii)}
-
-$$
+$$-0.25R_1 + 6g(0.05) + 0.25R_2 = 0 \;\Rightarrow\; R_1-R_2=1.2g=11.76\text{ N} \qquad \text{...(ii)}$$
 
 Solving (i) and (ii) together: $\boxed{R_1\approx 54.88\text{ N}, \quad R_2\approx 43.12\text{ N}}$
 
@@ -1083,10 +907,7 @@ Net force from the floor: $\boxed{F_2=\sqrt{F^2+N^2}\approx199.0\text{ N}, \text
 
 The **moment of inertia** (MI) of a rigid body about an axis:
 
-$$
-\boxed{I = \sum_i m_i r_i^2} \qquad \text{...(6.34)}
-
-$$
+$$\boxed{I = \sum_i m_i r_i^2} \qquad \text{...(6.34)}$$
 
 where $r_i$ is the **perpendicular distance** of the $i^{\text{th}}$ particle from the axis.
 
@@ -1116,13 +937,12 @@ Notice how heavily $I$ weights **distance**, not just mass — a small mass far 
 
 **Interactive — same $M$, same $R$, wildly different $I$** *(New)*: four bodies, identical total mass $M$ and identical outer radius $R$, but with that mass distributed differently relative to the axis. The bar heights below are exactly the coefficients in Table 6.1 (§8.4) — this is *why* the table has different numbers for shapes that look similarly sized.
 
-
-| Desmos variable | Meaning                                             |
-| :---------------- | :---------------------------------------------------- |
-| $M, R$          | shared mass and radius —**drag either**            |
-| $I_{point}$     | all mass at radius$R$ (point mass / thin ring)      |
-| $I_{disc}$      | mass spread uniformly out to$R$ (disc)              |
-| $I_{sphere}$    | mass spread through the whole volume (solid sphere) |
+| Desmos variable | Meaning |
+|:---|:---|
+| $M, R$ | shared mass and radius — **drag either** |
+| $I_{point}$ | all mass at radius $R$ (point mass / thin ring) |
+| $I_{disc}$ | mass spread uniformly out to $R$ (disc) |
+| $I_{sphere}$ | mass spread through the whole volume (solid sphere) |
 
 ```desmos
 M=2
@@ -1137,80 +957,149 @@ Drag $R$ upward: all three bars grow, but $I_{point}$ always grows **fastest**, 
 
 ### 8.2 Kinetic Energy of Rotation
 
-$$
-\boxed{K_{rot} = \frac{1}{2}I\omega^2} \qquad \text{...(6.35)}
-
-$$
+$$\boxed{K_{rot} = \frac{1}{2}I\omega^2} \qquad \text{...(6.35)}$$
 
 **Derivation:** each particle moves in a circle with speed $v_i = r_i\omega$, so its KE is $\tfrac12 m_i v_i^2 = \tfrac12 m_i r_i^2 \omega^2$. Summing over all particles, with $\omega$ common to every one of them:
 
-$$
-K = \sum_i \tfrac12 m_i r_i^2\omega^2 = \tfrac12\omega^2\sum_i m_i r_i^2 = \tfrac12 I\omega^2
-
-$$
+$$K = \sum_i \tfrac12 m_i r_i^2\omega^2 = \tfrac12\omega^2\sum_i m_i r_i^2 = \tfrac12 I\omega^2$$
 
 Compare with translational KE $K = \tfrac{1}{2}mv^2$ → **$I$ is the rotational analogue of mass $m$**; $\omega$ is the analogue of $v$.
 
 ### 8.3 Radius of Gyration $k$ ⭐⭐
 
-> [!note] ✏️ Definition
+> [!note] Definition
 > The **radius of gyration** $k$ about a given axis is the distance from the axis at which the *entire mass* of the body, if concentrated as a single point, would produce the same moment of inertia as the actual body. Equivalently, $k$ is the **RMS (root-mean-square)** value of the distances of all the particles from the axis:
->
-> $$
-> k = \sqrt{\frac{r_1^2+r_2^2+\cdots+r_n^2}{n}}
->
-> $$
->
+> $$k = \sqrt{\frac{r_1^2+r_2^2+\cdots+r_n^2}{n}}$$
 > **SI unit:** m. **Dimensional formula:** $[L]$.
 
 **Derivation of $I = Mk^2$:** Suppose (for a clean derivation) that the body is made of $n$ *identical* particles, each of mass $m$, so $M = mn$.
 
 **Step 1:**
-
-$$
-I = \sum_i m_i r_i^2 = m\sum_i r_i^2 \quad \text{(mass $m$ is common, pull it out)}
-
-$$
+$$I = \sum_i m_i r_i^2 = m\sum_i r_i^2 \quad \text{(mass $m$ is common, pull it out)}$$
 
 **Step 2 — multiply and divide by $n$:**
-
-$$
-I = (mn)\left(\frac{\sum_i r_i^2}{n}\right)
-
-$$
+$$I = (mn)\left(\frac{\sum_i r_i^2}{n}\right)$$
 
 **Step 3 — identify the two factors:** $mn = M$ (total mass), and $\dfrac{\sum r_i^2}{n} = k^2$ (mean-square distance, by definition above):
 
-$$
-\boxed{I = Mk^2 \quad\Longrightarrow\quad k=\sqrt{I/M}} \qquad \text{...(new result)}
+$$\boxed{I = Mk^2 \quad\Longrightarrow\quad k=\sqrt{I/M}} \qquad \text{...(new result)}$$
 
-$$
-
-
-| Body                     | Axis                                  | $k$           |
-| :------------------------- | :-------------------------------------- | :-------------- |
-| Thin rod (length L)      | Midpoint, perpendicular               | $L/\sqrt{12}$ |
-| Circular ring (radius R) | Central axis (perpendicular to plane) | $R$           |
-| Circular disc (radius R) | Central axis (perpendicular to plane) | $R/\sqrt2$    |
-| Circular disc (radius R) | Diameter                              | $R/2$         |
-| Solid sphere (radius R)  | Diameter                              | $R\sqrt{2/5}$ |
+| Body | Axis | $k$ |
+|:---|:---|:---|
+| Thin rod (length L) | Midpoint, perpendicular | $L/\sqrt{12}$ |
+| Circular ring (radius R) | Central axis (perpendicular to plane) | $R$ |
+| Circular disc (radius R) | Central axis (perpendicular to plane) | $R/\sqrt2$ |
+| Circular disc (radius R) | Diameter | $R/2$ |
+| Solid sphere (radius R) | Diameter | $R\sqrt{2/5}$ |
 
 ### 8.4 Standard Results — Moments of Inertia (Table 6.1) ⭐⭐
 
+| Body | Axis | $I$ |
+|:---|:---|:---|
+| Thin circular ring, radius R | Perpendicular to plane, at centre | $MR^2$ |
+| Thin circular ring, radius R | Diameter | $MR^2/2$ |
+| Thin rod, length L | Perpendicular to rod, at midpoint | $ML^2/12$ |
+| Circular disc, radius R | Perpendicular to disc, at centre | $MR^2/2$ |
+| Circular disc, radius R | Diameter | $MR^2/4$ |
+| Hollow cylinder, radius R | Axis of cylinder | $MR^2$ |
+| Solid cylinder, radius R | Axis of cylinder | $MR^2/2$ |
+| Solid sphere, radius R | Diameter | $2MR^2/5$ |
+| Thin rod, length L *(New — via §8.6)* | Perpendicular to rod, **at one end** | $ML^2/3$ |
 
-| Body                                   | Axis                                | $I$       |
-| :--------------------------------------- | :------------------------------------ | :---------- |
-| Thin circular ring, radius R           | Perpendicular to plane, at centre   | $MR^2$    |
-| Thin circular ring, radius R           | Diameter                            | $MR^2/2$  |
-| Thin rod, length L                     | Perpendicular to rod, at midpoint   | $ML^2/12$ |
-| Circular disc, radius R                | Perpendicular to disc, at centre    | $MR^2/2$  |
-| Circular disc, radius R                | Diameter                            | $MR^2/4$  |
-| Hollow cylinder, radius R              | Axis of cylinder                    | $MR^2$    |
-| Solid cylinder, radius R               | Axis of cylinder                    | $MR^2/2$  |
-| Solid sphere, radius R                 | Diameter                            | $2MR^2/5$ |
-| Thin rod, length L*(New — via §8.6)* | Perpendicular to rod,**at one end** | $ML^2/3$  |
+### 8.4.1 See the Axis, Not Just the Formula — 3D Models for Every Row *(New)*
 
-> [!warning] ⚠️ Exam Trap
+Every mix-up in the table above ("wait, is this the disc-about-its-axis one or the disc-about-diameter one?") comes from the same root cause: the axis is invisible in a formula. These four models make the rotation axis a literal, draggable vector in 3D — one per shape, with an **axis toggle slider** so you can watch the *same body* switch between rows of the table and see $I$ change as a direct consequence of which line it's spinning about.
+
+**Rod** — toggle between rotating about its **midpoint** ($ML^2/12$) and about its **end** ($ML^2/3$):
+
+| Desmos variable | Meaning |
+|:---|:---|
+| $L$ | rod length |
+| $piv$ | $0$ = pivot at midpoint, $1$ = pivot at end — **drag/toggle this** |
+| $P_{ivot}$ | the actual pivot point, switches with $piv$ |
+| $\sigma$ | sweep angle, driven by $t$ |
+
+```desmos3d
+L=3
+M=1
+piv=0
+t=0
+\omega=1
+\sigma=\omega t
+P_{ivot}=\left(-\frac{L}{2}\cdot piv,0,0\right)
+end_{1}=\left(-\frac{L}{2},0,0\right)
+end_{2}=\left(\frac{L}{2},0,0\right)
+rod_{vec}=\operatorname{vector}\left(end_{1},end_{2}\right)
+axis_{vec}=\operatorname{vector}\left(\left(0,0,-1.5\right),\left(0,0,1.5\right)\right)
+I_{now}=\frac{1}{12}ML^{2}+piv\cdot M\left(\frac{L}{2}\right)^{2}
+```
+
+Slide $piv$ from $0\to1$: the vertical **axis vector jumps from the rod's centre to its end**, and $I_{now}$ jumps from $L^2/12$ straight to $L^2/3$ — no smooth transition, because these are two genuinely different axes, not two points on a continuum.
+
+**Ring** — toggle between the **central axis** (perpendicular to the ring's plane, $MR^2$) and a **diameter** (in-plane, $MR^2/2$):
+
+| Desmos variable | Meaning |
+|:---|:---|
+| $R$ | ring radius |
+| $axmode$ | $0$ = central axis, $1$ = diameter |
+| $r_{ing}$ | a representative point on the ring, sweeping around |
+
+```desmos3d
+R=2
+M=1
+axmode=0
+t=0
+\omega=1
+\sigma=\omega t
+r_{ing}=R\left(\cos\sigma,\sin\sigma,0\right)
+axis_{dir}=\left(axmode,0,1-axmode\right)
+axis_{vec}=\operatorname{vector}\left(-1.5axis_{dir},1.5axis_{dir}\right)
+I_{now}=MR^{2}-axmode\cdot0.5MR^{2}
+```
+
+At $axmode=0$ the axis vector stands straight up through the centre (perpendicular to the ring) and $I_{now}=MR^2$; flip to $axmode=1$ and the axis vector **lies flat in the ring's own plane** and $I_{now}$ halves — same ring, same radius, half the moment of inertia, purely because the axis rotated $90°$.
+
+**Disc / Solid Cylinder** — toggle between the **central axis** ($MR^2/2$, this is also "axis of cylinder" from the table) and a **diameter** ($MR^2/4$):
+
+| Desmos variable | Meaning |
+|:---|:---|
+| $R$ | disc/cylinder radius |
+| $axmode$ | $0$ = central axis, $1$ = diameter |
+
+```desmos3d
+R=2
+M=1
+axmode=0
+t=0
+\omega=1
+\sigma=\omega t
+r_{edge}=R\left(\cos\sigma,\sin\sigma,0\right)
+axis_{dir}=\left(axmode,0,1-axmode\right)
+axis_{vec}=\operatorname{vector}\left(-1.5axis_{dir},1.5axis_{dir}\right)
+I_{now}=0.5MR^{2}-axmode\cdot0.25MR^{2}
+```
+
+This is exactly the Perpendicular Axis Theorem application from §8.7 ($I_z=2I_x$ for a disc) made draggable: at $axmode=1$, $I_{now}$ is precisely **half** of its value at $axmode=0$.
+
+**Solid Sphere** — only one axis worth showing (a diameter, $\tfrac25MR^2$) since every diameter of a sphere gives the same $I$ by symmetry — the model demonstrates *that* symmetry directly, by letting you spin the axis itself:
+
+| Desmos variable | Meaning |
+|:---|:---|
+| $R$ | sphere radius |
+| $\phi$ | tilts which diameter is the axis — **drag this** |
+
+```desmos3d
+R=2
+M=1
+\phi=0.6
+axis_{dir}=\left(\sin\phi,0,\cos\phi\right)
+axis_{vec}=\operatorname{vector}\left(-1.5axis_{dir},1.5axis_{dir}\right)
+I_{now}=0.4MR^{2}
+```
+
+Drag $\phi$ through a full range — the axis vector visibly tilts to point in a completely different direction, but $I_{now}$ **never moves**. That constancy is the whole reason Table 6.1 only needs to list "diameter" once for a sphere, unlike the ring and disc, which each need two separate rows.
+
+> [!warning] Exam Trap
 > Hollow cylinder = Ring ($MR^2$). Solid cylinder = Disc ($MR^2/2$). Solid sphere = $2MR^2/5$. Always specify the axis — the same body has a *different* $I$ for each row above.
 
 ### 8.5 Two Special Cases (NCERT derivations)
@@ -1221,20 +1110,13 @@ All mass is at the same distance $R$ from the axis: $K=\tfrac12 Mv^2=\tfrac12M(R
 
 **(b) Rod of negligible mass, length $l$, with point masses $M/2$ at each end, rotating about a perpendicular axis through the centre**
 
-$$
-I = \frac{M}{2}\left(\frac{l}{2}\right)^2 + \frac{M}{2}\left(\frac{l}{2}\right)^2 = \frac{Ml^2}{4}
-
-$$
+$$I = \frac{M}{2}\left(\frac{l}{2}\right)^2 + \frac{M}{2}\left(\frac{l}{2}\right)^2 = \frac{Ml^2}{4}$$
 
 ### 8.6 Parallel Axis Theorem ⭐⭐⭐ *(New)*
 
-> [!note] ✏️ Statement
+> [!note] Statement
 > The moment of inertia of a body about **any** axis equals the moment of inertia about a **parallel axis through the centre of mass**, plus $Md^2$, where $d$ is the perpendicular distance between the two axes:
->
-> $$
-> \boxed{I' = I_{cm} + Md^2}
->
-> $$
+> $$\boxed{I' = I_{cm} + Md^2}$$
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -1265,26 +1147,20 @@ P=\left(d,I_{prime}\right)
 Because it's $Md^2$ and not $Md$, doubling $d$ **quadruples** the extra term — moving an axis just a little further out costs far more than intuition suggests.
 
 > [!example] Worked application — Rod about one end
+>
 > A uniform rod of mass $M$, length $L$ has $I_{cm} = ML^2/12$ (axis through centre, perpendicular to rod). Find $I$ about a **parallel axis through one end**.
 >
 > Here $d = L/2$ (perpendicular distance from centre to end):
 >
-> $$
-> I_{end} = I_{cm} + Md^2 = \frac{ML^2}{12} + M\left(\frac{L}{2}\right)^2 = \frac{ML^2}{12}+\frac{ML^2}{4} = \boxed{\frac{ML^2}{3}}
->
-> $$
+> $$I_{end} = I_{cm} + Md^2 = \frac{ML^2}{12} + M\left(\frac{L}{2}\right)^2 = \frac{ML^2}{12}+\frac{ML^2}{4} = \boxed{\frac{ML^2}{3}}$$
 >
 > This is one of the most frequently tested single results in the whole chapter — memorise both $ML^2/12$ (centre) and $ML^2/3$ (end), and know how they're related.
 
 ### 8.7 Perpendicular Axis Theorem ⭐⭐⭐ *(New)*
 
-> [!note] ✏️ Statement
+> [!note] Statement
 > For a **planar (laminar) body only**, the moment of inertia about an axis perpendicular to its plane equals the sum of the moments of inertia about any two mutually perpendicular axes **in its own plane**, all three axes intersecting at one point:
->
-> $$
-> \boxed{I_z = I_x + I_y}, \qquad I_x=\sum m_i x_i^2,\; I_y = \sum m_i y_i^2,\; I_z = \sum m_i z_i^2
->
-> $$
+> $$\boxed{I_z = I_x + I_y}, \qquad I_x=\sum m_i x_i^2,\; I_y = \sum m_i y_i^2,\; I_z = \sum m_i z_i^2$$
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -1299,20 +1175,19 @@ Because it's $Md^2$ and not $Md$, doubling $d$ **quadruples** the extra term —
 \end{tikzpicture}
 ```
 
-> [!warning] ⚠️ Critical Restriction
+> [!warning] Critical Restriction
 > The perpendicular axis theorem applies **only to flat, two-dimensional (planar/laminar) bodies** — rings, discs, plane laminas. It does **not** apply to three-dimensional solids like a solid sphere or a solid cylinder, because those bodies have mass genuinely spread along the $z$-direction too, not confined to the $xy$-plane.
 
 > [!example] Worked application — Disc about a diameter, from the disc about its centre
+>
 > A uniform disc has $I_z = MR^2/2$ about the axis through its centre, perpendicular to its plane (Table 6.1). By symmetry, the two in-plane diameters (any two mutually perpendicular ones) must have **equal** moments of inertia: $I_x=I_y$. By the perpendicular axis theorem:
 >
-> $$
-> I_z = I_x+I_y = 2I_x \;\Rightarrow\; I_x = \frac{I_z}{2}=\frac{MR^2/2}{2}=\boxed{\frac{MR^2}{4}}
->
-> $$
+> $$I_z = I_x+I_y = 2I_x \;\Rightarrow\; I_x = \frac{I_z}{2}=\frac{MR^2/2}{2}=\boxed{\frac{MR^2}{4}}$$
 >
 > This exactly reproduces the "disc about diameter" row of Table 6.1 — confirming the theorem and showing how the table's own entries are *not* independent facts, but consequences of each other.
 
 > [!example] Worked application — Ring about a diameter, from the ring about its centre
+>
 > Similarly for a ring, $I_z=MR^2$ (centre, perpendicular), so $I_x=I_y=I_z/2=\boxed{MR^2/2}$ — matching Table 6.1's "ring about diameter" row.
 
 ### 8.8 Flywheel — Practical Application
@@ -1327,12 +1202,11 @@ A **flywheel** is a disc with large $I$ used in steam engines and automobiles. B
 
 Exact analogues of the linear kinematic equations:
 
-
-| Linear                               | Rotational                                                          |
-| :------------------------------------- | :-------------------------------------------------------------------- |
-| $v = v_0 + at$                       | $\omega = \omega_0 + \alpha t$ ...(6.36)                            |
+| Linear | Rotational |
+|:---|:---|
+| $v = v_0 + at$ | $\omega = \omega_0 + \alpha t$ ...(6.36) |
 | $x = x_0 + v_0 t + \tfrac{1}{2}at^2$ | $\theta = \theta_0 + \omega_0 t + \tfrac{1}{2}\alpha t^2$ ...(6.37) |
-| $v^2 = v_0^2 + 2a(x - x_0)$          | $\omega^2 = \omega_0^2 + 2\alpha(\theta - \theta_0)$ ...(6.38)      |
+| $v^2 = v_0^2 + 2a(x - x_0)$ | $\omega^2 = \omega_0^2 + 2\alpha(\theta - \theta_0)$ ...(6.38) |
 
 These apply only when angular acceleration $\alpha$ is **constant** (uniform).
 
@@ -1344,14 +1218,9 @@ Therefore $\omega = \omega_0 + \alpha t$ ✓
 
 Integrating again: $\theta = \theta_0 + \omega_0 t + \tfrac{1}{2}\alpha t^2$ ✓
 
-> [!tip] 💡 Quick Convert: rpm → rad/s
+> [!tip] Quick Convert: rpm → rad/s
 > If $N$ is the speed in **revolutions per minute (rpm)**:
->
-> $$
-> \omega = 2\pi\left(\frac{N}{60}\right) = \frac{\pi N}{30} \text{ rad/s}
->
-> $$
->
+> $$\omega = 2\pi\left(\frac{N}{60}\right) = \frac{\pi N}{30} \text{ rad/s}$$
 > This shortcut saves a step in almost every rotational-kinematics numerical.
 
 ### 9.3 Solved Example (NCERT 6.11) — Motor Wheel ⭐
@@ -1369,57 +1238,43 @@ Number of revolutions $= 1152\pi/(2\pi) = \boxed{576 \text{ revolutions}}$
 ### 9.4 Additional Practice — Angular Velocity of a Clock's Minute Hand *(New)*
 
 > [!example] Find the angular velocity of the minute hand of a clock
+>
 > The minute hand completes **one full revolution** ($2\pi$ rad) in exactly **60 minutes** $= 3600$ s.
 >
-> $$
-> \omega = \frac{2\pi}{T} = \frac{2\pi}{3600} = \frac{\pi}{1800} \approx \boxed{1.745\times10^{-3}\text{ rad/s}}
->
-> $$
+> $$\omega = \frac{2\pi}{T} = \frac{2\pi}{3600} = \frac{\pi}{1800} \approx \boxed{1.745\times10^{-3}\text{ rad/s}}$$
 
 ### 9.5 Additional Practice — Car Wheel Angular Retardation *(New)*
 
 > [!example] A car moves at 72 km/h; wheel diameter 0.5 m; brakes stop the wheel in 20 rotations. Find the angular retardation.
+>
 > **Step 1 — convert given data to SI and to angular quantities.** $v = 72$ km/h $= 20$ m/s; radius $r=0.25$ m.
 >
-> $$
-> \omega_0 = \frac{v}{r} = \frac{20}{0.25} = 80 \text{ rad/s}, \qquad \omega = 0 \text{ (wheel stops)}
+> $$\omega_0 = \frac{v}{r} = \frac{20}{0.25} = 80 \text{ rad/s}, \qquad \omega = 0 \text{ (wheel stops)}$$
 >
-> $$
->
-> $$
-> \theta = 20 \text{ rotations} = 20\times2\pi = 40\pi \text{ rad}
->
-> $$
+> $$\theta = 20 \text{ rotations} = 20\times2\pi = 40\pi \text{ rad}$$
 >
 > **Step 2 — apply $\omega^2=\omega_0^2+2\alpha\theta$, with $\alpha$ negative (retardation):**
 >
-> $$
-> 0 = (80)^2 + 2\alpha(40\pi) \;\Rightarrow\; \alpha = -\frac{6400}{80\pi} = -\frac{80}{\pi}
+> $$0 = (80)^2 + 2\alpha(40\pi) \;\Rightarrow\; \alpha = -\frac{6400}{80\pi} = -\frac{80}{\pi}$$
 >
-> $$
->
-> $$
-> \boxed{\text{Angular retardation} = \frac{80}{\pi}\approx 25.5 \text{ rad/s}^2}
->
-> $$
+> $$\boxed{\text{Angular retardation} = \frac{80}{\pi}\approx 25.5 \text{ rad/s}^2}$$
 
 ### 9.6 Interactive Model — Explore the Kinematics Equations Yourself *(New)*
 
 Everything derived in this section — $\theta=\theta_0+\omega_0t+\tfrac12\alpha t^2$, $\omega=\omega_0+\alpha t$ — plus the tangential/centripetal split from §5.3, is live below. Drag $t$ to watch time evolve, or change $u_{ang}$, $a_{ang}$, $\phi$, or $R$ and watch every vector update instantly.
 
-
-| Desmos variable | Meaning                           | Matches this note's notation                   |
-| :---------------- | :---------------------------------- | :----------------------------------------------- |
-| $A$             | angular position                  | $\theta$                                       |
-| $u_{ang}$       | initial angular velocity          | $\omega_0$                                     |
-| $v_{ang}$       | angular velocity at time$t$       | $\omega$                                       |
-| $a_{ang}$       | angular acceleration              | $\alpha$                                       |
-| $\phi$          | initial angular position          | $\theta_0$                                     |
-| $r$             | position vector on the circle     | $\mathbf r$                                    |
-| $v$             | tangential velocity vector        | $\mathbf v=\boldsymbol\omega\times\mathbf r$   |
-| $a_{rad}$       | centripetal (radial) acceleration | $a_c=-\omega^2\mathbf r$                       |
-| $a_{tan}$       | tangential acceleration           | $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ |
-| $a_{net}$       | total acceleration                | $\mathbf a_{rad}+\mathbf a_{tan}$              |
+| Desmos variable | Meaning | Matches this note's notation |
+|:---|:---|:---|
+| $A$ | angular position | $\theta$ |
+| $u_{ang}$ | initial angular velocity | $\omega_0$ |
+| $v_{ang}$ | angular velocity at time $t$ | $\omega$ |
+| $a_{ang}$ | angular acceleration | $\alpha$ |
+| $\phi$ | initial angular position | $\theta_0$ |
+| $r$ | position vector on the circle | $\mathbf r$ |
+| $v$ | tangential velocity vector | $\mathbf v=\boldsymbol\omega\times\mathbf r$ |
+| $a_{rad}$ | centripetal (radial) acceleration | $a_c=-\omega^2\mathbf r$ |
+| $a_{tan}$ | tangential acceleration | $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ |
+| $a_{net}$ | total acceleration | $\mathbf a_{rad}+\mathbf a_{tan}$ |
 
 ```desmos
 A\ =\frac{1}{2}a_{ang}t^{2}+u_{ang}t\ +\ \phi
@@ -1459,10 +1314,7 @@ Try setting $a_{ang}=0$ and dragging $t$: the point still moves (constant $\omeg
 
 From the work-energy route (or directly from Newton's 2nd Law applied to rotation):
 
-$$
-\boxed{\tau = I\alpha} \qquad \text{...(6.41)}
-
-$$
+$$\boxed{\tau = I\alpha} \qquad \text{...(6.41)}$$
 
 This is the exact rotational analogue of $F=ma$: torque produces angular acceleration, exactly as force produces linear acceleration, with $I$ playing the role of inertia.
 
@@ -1480,27 +1332,23 @@ Drag $I_{now}$ down toward $0.5$ and $\alpha_{now}$ spikes; drag it up toward $8
 
 ### 10.2 Work Done by a Torque and Rotational Power
 
-$$
-dW = \tau\,d\theta \qquad \text{...(6.39)}, \qquad P = \tau\omega \qquad \text{...(6.40)}
-
-$$
+$$dW = \tau\,d\theta \qquad \text{...(6.39)}, \qquad P = \tau\omega \qquad \text{...(6.40)}$$
 
 matching the linear forms $dW=F\,ds$ and $P=Fv$.
 
 ### 10.3 Table of Analogies — Linear vs Rotational Motion
 
-
-| # | Linear Motion            | Rotational Motion (fixed axis)            |
-| :-- | :------------------------- | :------------------------------------------ |
-| 1 | Displacement$x$          | Angular displacement$\theta$              |
-| 2 | Velocity$v=dx/dt$        | Angular velocity$\omega = d\theta/dt$     |
-| 3 | Acceleration$a=dv/dt$    | Angular acceleration$\alpha = d\omega/dt$ |
-| 4 | Mass$M$                  | Moment of inertia$I$                      |
-| 5 | Force$F=Ma$              | Torque$\tau=I\alpha$                      |
-| 6 | Work$dW=F\,ds$           | Work$dW=\tau\,d\theta$                    |
-| 7 | Kinetic energy$K=Mv^2/2$ | Kinetic energy$K=I\omega^2/2$             |
-| 8 | Power$P=Fv$              | Power$P=\tau\omega$                       |
-| 9 | Linear momentum$p=Mv$    | Angular momentum$L=I\omega$               |
+| # | Linear Motion | Rotational Motion (fixed axis) |
+|:---|:---|:---|
+| 1 | Displacement $x$ | Angular displacement $\theta$ |
+| 2 | Velocity $v=dx/dt$ | Angular velocity $\omega = d\theta/dt$ |
+| 3 | Acceleration $a=dv/dt$ | Angular acceleration $\alpha = d\omega/dt$ |
+| 4 | Mass $M$ | Moment of inertia $I$ |
+| 5 | Force $F=Ma$ | Torque $\tau=I\alpha$ |
+| 6 | Work $dW=F\,ds$ | Work $dW=\tau\,d\theta$ |
+| 7 | Kinetic energy $K=Mv^2/2$ | Kinetic energy $K=I\omega^2/2$ |
+| 8 | Power $P=Fv$ | Power $P=\tau\omega$ |
+| 9 | Linear momentum $p=Mv$ | Angular momentum $L=I\omega$ |
 
 ### 10.4 Solved Example (NCERT 6.12) — Flywheel and Cord ⭐⭐
 
@@ -1525,19 +1373,13 @@ Flywheel (M = 20 kg, R = 20 cm), pulled by a 25 N cord. A cord of negligible mas
 
 **(a) Angular acceleration:** $\tau = FR = 25\times0.20=5.0$ N m. $I=\dfrac{MR^2}{2}=\dfrac{20(0.2)^2}{2}=0.4$ kg m².
 
-$$
-\alpha = \frac{\tau}{I} = \frac{5.0}{0.4} = \boxed{12.5\text{ rad/s}^2}
-
-$$
+$$\alpha = \frac{\tau}{I} = \frac{5.0}{0.4} = \boxed{12.5\text{ rad/s}^2}$$
 
 **(b) Work done unwinding 2 m of cord:** $W = F\times d = 25\times2=\boxed{50\text{ J}}$.
 
 **(c) Kinetic energy gained** (starting from rest): angular displacement $\theta = 2\text{ m}/0.2\text{ m}=10$ rad. Using $\omega^2=\omega_0^2+2\alpha\theta=0+2(12.5)(10)=250\;(\text{rad/s})^2$.
 
-$$
-K=\tfrac12I\omega^2 = \tfrac12(0.4)(250)=\boxed{50\text{ J}}
-
-$$
+$$K=\tfrac12I\omega^2 = \tfrac12(0.4)(250)=\boxed{50\text{ J}}$$
 
 **(d) Comparison:** the kinetic energy gained (50 J) exactly equals the work done by the pull (50 J) — no energy is lost, since the bearings are frictionless. This is the rotational work–energy theorem in action.
 
@@ -1549,31 +1391,22 @@ $$
 
 For a rigid body symmetric about its axis of rotation (an axis of symmetry — true for every body in Table 6.1), the component of angular momentum along the axis works out to:
 
-$$
-\boxed{L = I\omega} \qquad \text{...(6.42d)}
-
-$$
+$$\boxed{L = I\omega} \qquad \text{...(6.42d)}$$
 
 Differentiating, and using $dL/dt=\tau_{ext}$ (Eq. 6.28b) restricted to the fixed-axis component:
 
-$$
-\frac{d}{dt}(I\omega) = \tau_{ext}
-
-$$
+$$\frac{d}{dt}(I\omega) = \tau_{ext}$$
 
 If $I$ itself doesn't change with time, this reduces straight back to $\tau=I\alpha$ (Eq. 6.41) — consistent with Section 10.
 
-> [!warning] ⚠️ $\mathbf L$ and $\boldsymbol\omega$ are not always parallel
+> [!warning] $\mathbf L$ and $\boldsymbol\omega$ are not always parallel
 > In general, for a body not symmetric about its rotation axis, $\mathbf L\neq\mathbf L_z$ and $\mathbf L$ does **not** lie along the axis at all. The simple relation $\mathbf L=I\boldsymbol\omega$ (as vectors) is a **special-case convenience** for symmetric bodies — the only kind this course deals with — not a universal law.
 
 ### 11.2 Conservation of Angular Momentum
 
 If $I$ is *allowed to change* (mass redistributes relative to the axis) but $\tau_{ext}=0$:
 
-$$
-\boxed{L_z = I\omega = \text{constant}} \qquad \text{...(6.44)}
-
-$$
+$$\boxed{L_z = I\omega = \text{constant}} \qquad \text{...(6.44)}$$
 
 So if $I$ **decreases**, $\omega$ must **increase** to keep $I\omega$ fixed, and vice versa — this is the single most powerful idea in the chapter for solving "sudden change in shape/configuration" problems.
 
@@ -1622,31 +1455,20 @@ A skater (or a person on a frictionless swivel chair) pulls their arms in: $I$ d
 ### 11.3 Additional Practice — Earth Shrinks: Change in Day Length *(New)*
 
 > [!example] If the Earth's volume suddenly shrinks to $1/64$ of its original value (mass unchanged), find the new duration of the day.
+>
 > **Step 1 — find the new radius.** Since $V\propto R^3$:
 >
-> $$
-> V' = \frac{V}{64} \;\Rightarrow\; \frac{4}{3}\pi R'^3 = \frac{1}{64}\cdot\frac{4}{3}\pi R^3 \;\Rightarrow\; R' = \frac{R}{4}
->
-> $$
+> $$V' = \frac{V}{64} \;\Rightarrow\; \frac{4}{3}\pi R'^3 = \frac{1}{64}\cdot\frac{4}{3}\pi R^3 \;\Rightarrow\; R' = \frac{R}{4}$$
 >
 > **Step 2 — no external torque acts during the shrink** (it's an internal redistribution of the Earth's own mass), so angular momentum is conserved. Treating Earth as a uniform solid sphere, $I=\tfrac25MR^2$, and $\omega=2\pi/T$:
 >
-> $$
-> I\omega = I'\omega' \;\Rightarrow\; \frac{2}{5}MR^2\cdot\frac{2\pi}{T} = \frac{2}{5}MR'^2\cdot\frac{2\pi}{T'}
->
-> $$
+> $$I\omega = I'\omega' \;\Rightarrow\; \frac{2}{5}MR^2\cdot\frac{2\pi}{T} = \frac{2}{5}MR'^2\cdot\frac{2\pi}{T'}$$
 >
 > **Step 3 — mass and the $\tfrac25\cdot2\pi$ factors cancel**, leaving:
 >
-> $$
-> \frac{R^2}{T} = \frac{R'^2}{T'} \;\Rightarrow\; T' = T\left(\frac{R'}{R}\right)^2 = T\cdot\frac{1}{16}
+> $$\frac{R^2}{T} = \frac{R'^2}{T'} \;\Rightarrow\; T' = T\left(\frac{R'}{R}\right)^2 = T\cdot\frac{1}{16}$$
 >
-> $$
->
-> $$
-> \boxed{T' = \frac{24}{16} = 1.5 \text{ hours}}
->
-> $$
+> $$\boxed{T' = \frac{24}{16} = 1.5 \text{ hours}}$$
 >
 > A day would last just 1.5 hours — the Earth would spin **sixteen times faster**, purely because it got smaller while keeping the same mass and angular momentum.
 
@@ -1654,26 +1476,30 @@ A skater (or a person on a frictionless swivel chair) pulls their arms in: $I$ d
 
 ## 📋 QUICK REFERENCE
 
-> [!important] ❗ Centre of Mass
+> [!important] Centre of Mass
+>
 > $\mathbf{R} = \sum m_i \mathbf{r}_i / M$ (discrete); $\mathbf{R} = \frac{1}{M}\int \mathbf{r}\,dm$ (continuous)
 >
 > COM of symmetric homogeneous body = geometric centre; for a uniform triangular lamina = centroid
 >
 > If $F_{ext} = 0$: COM moves with constant velocity
 
-> [!important] ❗ Cross Product
+> [!important] Cross Product
+>
 > $|\mathbf{a}\times\mathbf{b}| = ab\sin\theta$; $\mathbf{a}\times\mathbf{b} = -(\mathbf{b}\times\mathbf{a})$ (NOT commutative); $\mathbf{a}\times\mathbf{a} = \mathbf{0}$
 >
 > $\hat{\imath}\times\hat{\jmath} = \hat{k};\;\hat{\jmath}\times\hat{k} = \hat{\imath};\;\hat{k}\times\hat{\imath} = \hat{\jmath}$ (cyclic → positive)
 
-> [!important] ❗ Angular Kinematics
+> [!important] Angular Kinematics
+>
 > $\omega = d\theta/dt$; SI: rad/s; $[T^{-1}]$ $\qquad$ $\alpha = d\omega/dt$; SI: rad/s²; $[T^{-2}]$
 >
 > $v=\omega r$; $\mathbf v=\boldsymbol\omega\times\mathbf r$ $\qquad$ $a_t=\alpha r$; $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ $\qquad$ $a_c=\omega^2r=v^2/r$
 >
 > rpm → rad/s: $\omega=\pi N/30$
 
-> [!important] ❗ Torque and Angular Momentum
+> [!important] Torque and Angular Momentum
+>
 > $\boldsymbol{\tau} = \mathbf{r}\times\mathbf{F}$; $|\tau| = rF\sin\theta = r_\perp F = rF_\perp$; $[ML^2T^{-2}]$; N m
 >
 > $\mathbf{l} = \mathbf{r}\times\mathbf{p}$; $|l| = rp\sin\theta = r_\perp p = rp_\perp$; $[ML^2T^{-1}]$
@@ -1682,7 +1508,8 @@ A skater (or a person on a frictionless swivel chair) pulls their arms in: $I$ d
 >
 > If $\tau_{ext} = 0$: $\mathbf{L} =$ constant
 
-> [!important] ❗ Equilibrium
+> [!important] Equilibrium
+>
 > $\sum\mathbf{F} = \mathbf{0}$ (translational); $\sum\boldsymbol{\tau} = \mathbf{0}$ (rotational) — origin-independent if $\sum\mathbf{F} = \mathbf{0}$
 >
 > Couple: equal & opposite, different lines of action; torque $=\mathbf{AB}\times\mathbf F$, origin-independent always
@@ -1691,7 +1518,8 @@ A skater (or a person on a frictionless swivel chair) pulls their arms in: $I$ d
 >
 > CG = COM if $g$ is uniform across the body
 
-> [!important] ❗ Moment of Inertia
+> [!important] Moment of Inertia
+>
 > $I = \sum m_i r_i^2$; $[ML^2]$; kg m²; $I=Mk^2$ ($k=$ radius of gyration, $[L]$, unit m)
 >
 > $K_{rot} = \tfrac{1}{2}I\omega^2$
@@ -1706,14 +1534,16 @@ A skater (or a person on a frictionless swivel chair) pulls their arms in: $I$ d
 >
 > **Perpendicular axis:** $I_z=I_x+I_y$ (**planar bodies only**)
 
-> [!important] ❗ Rotational Kinematics (uniform α)
+> [!important] Rotational Kinematics (uniform α)
+>
 > $\omega = \omega_0 + \alpha t$
 >
 > $\theta = \theta_0 + \omega_0 t + \tfrac{1}{2}\alpha t^2$
 >
 > $\omega^2 = \omega_0^2 + 2\alpha(\theta - \theta_0)$
 
-> [!important] ❗ Rotational Dynamics
+> [!important] Rotational Dynamics
+>
 > $\tau = I\alpha$ (rotational Newton's 2nd law)
 >
 > $P = \tau\omega$ (power in rotation); $W = \tau\,d\theta$ (work done by torque)
@@ -1747,28 +1577,25 @@ A skater (or a person on a frictionless swivel chair) pulls their arms in: $I$ d
 
 ## 🔑 Key Historical Persons (Chapter 6)
 
-
-| Person                              | Contribution                                                                                                                          |
-| :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------- |
-| **Isaac Newton** (1643–1727)       | Laws of motion — foundation for all rotational mechanics                                                                             |
-| **Leonhard Euler** (1707–1783)     | Developed rotational dynamics; Euler's equations of motion                                                                            |
-| **Christiaan Huygens** (1629–1695) | First to correctly derive moment of inertia of a pendulum; the Parallel Axis Theorem is also known as the**Huygens–Steiner theorem** |
-| **Jakob Steiner** (1796–1863)      | Co-namesake of the Parallel Axis Theorem (Huygens–Steiner theorem)                                                                   |
-| **James Watt** (1736–1819)         | Flywheel concept for steam engines (practical application of I)                                                                       |
+| Person | Contribution |
+|:---|:---|
+| **Isaac Newton** (1643–1727) | Laws of motion — foundation for all rotational mechanics |
+| **Leonhard Euler** (1707–1783) | Developed rotational dynamics; Euler's equations of motion |
+| **Christiaan Huygens** (1629–1695) | First to correctly derive moment of inertia of a pendulum; the Parallel Axis Theorem is also known as the **Huygens–Steiner theorem** |
+| **Jakob Steiner** (1796–1863) | Co-namesake of the Parallel Axis Theorem (Huygens–Steiner theorem) |
+| **James Watt** (1736–1819) | Flywheel concept for steam engines (practical application of I) |
 
 ---
 
 ## 🧭 PROBLEM-SOLVING STRATEGY
 
 **Type A — Centre of Mass problems**
-
 1. Identify whether the system is discrete particles or a continuous body.
 2. For discrete systems: set up a coordinate origin, list every $(m_i, x_i, y_i)$, and apply $X=\sum m_ix_i/M$.
 3. For continuous, uniform, symmetric bodies: COM = geometric centre — skip the integral entirely.
 4. For composite shapes (like an L-lamina): split into simple sub-shapes, treat each sub-shape's mass as concentrated at *its own* COM, then apply the discrete formula to those points.
 
 **Type B — Equilibrium problems (levers, ladders, beams)**
-
 1. Draw a clean free-body diagram; mark every force with its point of application.
 2. Write the **translational** equilibrium equations ($\sum F_x=0$, $\sum F_y=0$).
 3. Choose a **smart pivot point** for moments — usually the point where the most unknown forces act, so they drop out of the torque equation.
@@ -1776,372 +1603,21 @@ A skater (or a person on a frictionless swivel chair) pulls their arms in: $I$ d
 5. Solve the resulting system (usually 2–3 equations) simultaneously.
 
 **Type C — Moment of Inertia and Axis Theorem problems**
-
 1. Identify the body's shape and check Table 6.1 for $I$ about the "natural" axis (through the centre).
 2. If the target axis is parallel to that natural axis → Parallel Axis Theorem, $I'=I_{cm}+Md^2$.
 3. If the body is planar and you need $I$ about an axis perpendicular to its plane, or want to split $I_z$ into in-plane components → Perpendicular Axis Theorem, $I_z=I_x+I_y$.
 4. For composite bodies, find $I$ of each piece about the *same* axis (using the theorems as needed) and add.
 
 **Type D — Combined Rotational Kinematics + Dynamics**
-
 1. From the given information, find $\tau$ (from forces) and $I$ (from geometry/mass) separately.
 2. Get $\alpha = \tau/I$.
 3. Feed $\alpha$ into the standard kinematic equations (6.36)–(6.38) to find $\omega$, $\theta$, or $t$ as needed.
 4. Cross-check energy: work done by external torque should equal the kinetic energy gained (if no friction).
 
 **Type E — Angular Momentum Conservation problems**
-
 1. Confirm $\tau_{ext}=0$ about the axis in question (internal reconfiguration, no outside twist).
 2. Write $I_1\omega_1 = I_2\omega_2$.
 3. Compute $I_1$ and $I_2$ from the geometry before and after the change.
 4. Solve for the unknown $\omega$ — and if asked about energy, remember $K$ is generally **not** conserved even though $L$ is (any change in $K$ is accounted for by real work done in changing the configuration).
 
 ---
-
----
-name: "notes-generator"
-description: "This is NoteBooks Science Notes Creation Guideslies"
----
-# NoteBooks Markdown Note-Crafting Skill
-
-Create study notes that are clear on the first read, useful on revision, and pleasant to navigate. Prefer semantic Markdown over styling tricks. Preserve factual uncertainty, source context, and the distinction between rendered content and future placeholders.
-
-## Renderer Contract
-
-Write for the current NoteBooks renderer. It supports ordinary Markdown, headings, paragraphs, emphasis, links, images, ordered and unordered lists, task lists where available, tables, blockquotes, fenced code blocks, footnotes, subscript, superscript, LaTeX math, syntax highlighting, Obsidian-compatible conventions, raw Markdown viewing with line numbers, and source-aware “Suggest changes” workflows.
-
-Use Mermaid, TikZJax, and Desmos as fully supported rendering languages -- render real content with each rather than describing what a diagram or graph would show. Do not claim that Bio/Chem diagram conversion is currently available; represent that one remaining future capability with an explicit placeholder block instead of fake output.
-
-## Core Note Structure
-
-Use this structure when it fits the subject. Omit sections that do not add value, but keep the progression from orientation to understanding to practice.
-
-```markdown
-# Topic: Specific, useful title
-
-> One-sentence explanation of what this note helps the reader understand or do.
-
-## At a glance
-
-- **Subject:** ...
-- **Level:** ...
-- **Prerequisites:** ...
-- **Key idea:** ...
-
-## Learning goals
-
-By the end of this note, the reader should be able to:
-
-1. ...
-2. ...
-3. ...
-
-## 1. The central idea
-
-Explain the concept in plain language before introducing dense terminology.
-
-## 2. Key concepts
-
-### Concept A
-
-Define the term, explain why it matters, and give a compact example.
-
-## 3. How it works
-
-Present the mechanism, derivation, process, or sequence in a logical order.
-
-## 4. Worked example
-
-Show the reasoning, not only the answer.
-
-## Common misconceptions
-
-> **Watch out:** State the tempting but incorrect interpretation and correct it.
-
-## Summary
-
-Restate the essential relationships in a few sentences.
-
-## Check your understanding
-
-1. ...
-2. ...
-
-## Further reading
-
-- [Descriptive source title](https://example.com)
-```
-
-For revision-heavy subjects, add a compact “Exam memory” or “Quick recall” section near the end. For humanities, add context, chronology, competing interpretations, and evidence. For sciences, add definitions, assumptions, units, mechanisms, equations, diagrams, and limitations. For commerce, add formulas, transaction logic, tables, worked calculations, and interpretation of results.
-
-## Writing and Layout Rules
-
-1. Start with the reader’s question, not an unexplained formal definition.
-2. Use one primary idea per paragraph. Keep paragraphs short enough to scan.
-3. Use headings as a meaningful outline. Do not skip randomly from `##` to `####`.
-4. Make headings descriptive: prefer `## How enzymes lower activation energy` over `## Explanation`.
-5. Use bold for terms being defined and italics for emphasis or notation. Do not make entire paragraphs bold.
-6. Use tables for comparisons, classifications, symbol glossaries, timelines, and formula summaries. Keep table cells concise.
-7. Use numbered lists for procedures, derivations, and ordered reasoning. Use bullets for unordered facts.
-8. Use blockquotes for definitions, warnings, source excerpts, and memorable principles. Identify quotations accurately.
-9. Put long equations, algorithms, and multi-line examples in fenced blocks when inline math would be hard to read.
-10. Add whitespace around major sections. Avoid decorative separator lines unless they clarify a genuine section boundary.
-11. Do not use raw HTML, inline CSS, embedded scripts, or arbitrary classes to simulate presentation.
-12. Do not encode important meaning only through color, emoji, indentation, or diagram placement.
-13. Use descriptive link text and useful image alt text. Do not use “click here”.
-14. Keep terminology consistent. Introduce an abbreviation once, then use it consistently.
-15. Preserve the source’s meaning when improving prose. Do not silently change facts, units, dates, quotations, or conclusions.
-
-## Approachable Explanation Pattern
-
-For each difficult idea, use this sequence when appropriate:
-
-1. **Plain-language intuition:** explain what is happening without specialist vocabulary.
-2. **Formal definition:** state the precise meaning.
-3. **Representation:** provide an equation, table, code block, or Mermaid diagram.
-4. **Worked example:** apply the idea to concrete values or a real situation.
-5. **Boundary:** state assumptions, exceptions, limitations, or common failure modes.
-6. **Recall prompt:** ask one question that tests understanding rather than recognition.
-
-Use analogies only when their limits are stated. Never let an analogy replace the formal definition.
-
-## Callouts and Emphasis
-
-Use blockquotes with a bold label for portable callouts:
-
-```markdown
-> **Key idea:** A catalyst changes the rate of a reaction without changing the overall equilibrium position.
-
-> **Watch out:** Correlation describes association; it does not by itself establish causation.
-
-> **Try it:** Predict the result before reading the worked solution.
-
-> **Source note:** This interpretation depends on the stated historical context.
-```
-
-Use callouts sparingly. A note should not become a wall of colored boxes or warnings.
-
-## Equations and Notation
-
-Use LaTeX delimiters supported by the renderer:
-
-```markdown
-Inline: \( a^2 + b^2 = c^2 \)
-
-Display:
-
-\[
-\Delta G = \Delta H - T\Delta S
-\]
-```
-
-Explain every symbol that is not obvious. Include units and sign conventions. Keep derivations stepwise:
-
-```markdown
-\[
-\begin{aligned}
-F &= ma \\
-  &= (2\,\mathrm{kg})(3\,\mathrm{m\,s^{-2}}) \\
-  &= 6\,\mathrm{N}
-\end{aligned}
-\]
-```
-
-Do not place unsupported diagram syntax inside an equation fence. Keep math delimiters balanced and avoid relying on raw HTML for alignment.
-
-## Mermaid Diagrams
-
-Use Mermaid fully and deliberately for flowcharts, process maps, timelines, state diagrams, mind maps, relationship diagrams, class diagrams, and simple sequence diagrams. Always use a fenced block whose language is exactly `mermaid`:
-
-````markdown
-```mermaid
-flowchart TD
-    A[Observe the question] --> B[Identify the concept]
-    B --> C{Enough evidence?}
-    C -- Yes --> D[Explain and test]
-    C -- No --> E[Gather context]
-    E --> B
-```
-````
-
-Mermaid guidance:
-
-- Give every node a readable label.
-- Prefer short node text and put detail in surrounding prose.
-- Use arrows whose direction expresses the actual relationship.
-- Use a decision node only when the process truly branches.
-- Keep diagrams small enough to understand without zooming.
-- Follow each important diagram with a short reading guide or interpretation.
-- Use valid Mermaid syntax and avoid arbitrary HTML, JavaScript, or unsafe URL payloads.
-- Do not use a diagram where a two-column table or list would be clearer.
-- For timelines, keep dates in chronological order and state the time scale.
-- For causal diagrams, distinguish correlation from causation in the prose.
-
-Example sequence diagram:
-
-````markdown
-```mermaid
-sequenceDiagram
-    participant S as Student
-    participant N as Note
-    S->>N: Ask a focused question
-    N-->>S: Explain the central idea
-    S->>N: Test with an example
-    N-->>S: Correct misconception
-```
-````
-
-The renderer uses a strict Mermaid security posture. Treat labels and links as content, not as a place to execute code.
-
-## TikZJax Diagrams
-
-Use a fenced block whose language is exactly `tikz` for precise, static, geometrically-accurate figures -- true proportions, true angles, true curves, anything a diagram must get *exactly* right rather than approximately right:
-
-````markdown
-```tikz
-\begin{tikzpicture}
-  ...
-\end{tikzpicture}
-```
-````
-
-General rules:
-
-- Every curve, region, vector, or angle gets a color **and** a label -- never color alone.
-- Follow every figure with a sentence of interpretation, not just the image.
-- Coordinates must be numerically accurate to what they represent -- if a figure implies two lengths or angles are equal, the coordinates must actually produce that.
-- Use TikZ for a figure that needs to look a specific, fixed way every time it's read. If the figure's point is watching something change (a parameter, a coefficient, a moving point), use Desmos instead.
-
-The concrete figure patterns (number lines, function graphs, vectors, force diagrams, and so on) belong in the subject-specific skill (`maths-generator`, `physics-generator`, etc.), not here -- this section only owns the contract that TikZJax is live and the general rules above.
-
-## Desmos Graphs
-
-Use a fenced block whose language is exactly `desmos` for graphs meant to be explored rather than merely viewed -- a function family with a parameter, a transformation, an intersection or region a reader would want to see change:
-
-````markdown
-```desmos
-{
-  "expressions": [
-    { "id": "1", "latex": "y=x^2" }
-  ],
-  "graphSettings": { "xmin": -10, "xmax": 10, "ymin": -10, "ymax": 10 }
-}
-```
-````
-
-The block content is a JSON object matching the Desmos Graphing Calculator's expression-list schema (`expressions`, each with an `id` and `latex`, plus optional `color`, `label`, or `hidden`; an optional `graphSettings` viewport). Treat this schema as the working default -- confirm it against the actual renderer implementation before relying on any field beyond `id`/`latex`/`graphSettings`, since it hasn't been verified against this renderer's parser the way the Mermaid and TikZ contracts have.
-
-General rules:
-
-- State the window/viewport bounds explicitly (`graphSettings`) rather than leaving them to an arbitrary default -- what's in frame is part of what the graph communicates.
-- Label or color-distinguish every expression when more than one is plotted.
-- Follow every graph with a sentence of interpretation, and state what a reader should notice if they move a slider or vary a parameter.
-- Use Desmos only where interactivity or a live parameter genuinely adds understanding. A single fixed curve with no parameter to explore is still better served by TikZ or by an ordinary image.
-
-## Future Diagram Placeholders
-
-Use these exact styles until the corresponding renderer capabilities are implemented. Keep the explanatory text useful even when the visual is unavailable.
-
-### Bio diagram placeholder
-
-```markdown
-> **Bio diagram placeholder — add in a later pass**
->
-> Planned visual: `[describe the biological structure, pathway, or process]`.
-> The reader should understand: `[state the relationship the final diagram must show]`.
-```
-
-### Chemistry experimental setup placeholder
-
-```markdown
-> **Chemistry diagram placeholder — add in a later pass**
->
-> Planned visual: `[describe the apparatus, labels, flow, and safety features]`.
-> Required annotations: `[list substances, conditions, measurements, and direction of flow]`.
-```
-
-TikZJax and Desmos are live (see the sections above) and should never use a placeholder -- render the real figure or graph.
-
-Never present a placeholder as if it were a rendered figure. If a Mermaid approximation is used, label it as an approximation.
-
-## Subject-Specific Patterns
-
-### Mathematics and quantitative science
-
-State variables, assumptions, units, and the target quantity before calculating. Separate the general formula from the substituted values. Include a sanity check and explain whether the answer is exact, approximate, bounded, or dimensionless.
-
-### Biology and chemistry
-
-Because specialized Bio/Chem diagrams are placeholders in the current renderer, explain structures and processes with labeled tables, ordered steps, equations where supported, and Mermaid only when it accurately expresses relationships. Add a placeholder for the future figure and preserve the prose explanation.
-
-### Physics
-
-Use a “Given / Find / Model / Work / Check” pattern. State coordinate conventions, sign conventions, approximations, and units. Use Mermaid for conceptual systems or process relationships, not for pretending to be a precision plot.
-
-### Commerce and economics
-
-Define each account, variable, or indicator before using it. Show transaction direction, formula inputs, units, period, and interpretation. Use tables for comparisons and Mermaid for process flows such as accounting cycles or decision paths.
-
-### Humanities and social sciences
-
-Separate event, context, interpretation, and evidence. Identify chronology and perspective. Distinguish primary evidence from later analysis. When interpretations differ, show them in a comparison table rather than presenting one contested view as unquestionable fact.
-
-## Code, Data, and Tables
-
-Use fenced code blocks with a language identifier when syntax highlighting is useful:
-
-````markdown
-```python
-values = [2, 4, 6]
-mean = sum(values) / len(values)
-```
-````
-
-Explain what the code demonstrates and do not include credentials, tokens, private URLs, or executable payloads. For data tables, include units, a clear header row, and a note about rounding or missing values. Keep very wide tables split into smaller focused tables.
-
-## Source-Aware Editing and Issue Suggestions
-
-When a note is derived from an existing Markdown source:
-
-1. Preserve the original heading and surrounding context when making a change.
-2. Do not invent line numbers. Let the renderer’s raw view provide the authoritative source lines.
-3. Keep proposed changes separate from the polished note text.
-4. State the reason for a suggestion briefly and specifically.
-5. Identify whether the issue is factual, explanatory, structural, typographical, accessibility-related, or stylistic.
-6. Do not include secrets or private repository data in a suggestion.
-
-Use this structure for a human-readable suggestion summary:
-
-```markdown
-> **Suggested change:** `[short description]`
->
-> **Why:** `[specific reason this passage should change]`
->
-> **Type:** factual / clarity / structure / accessibility / formatting
-```
-
-## Accessibility and Reading Comfort
-
-Write for keyboard users, screen readers, mobile readers, and readers returning to the note later. Use meaningful heading order, descriptive links, text alternatives for images, readable table headers, and visible explanations of symbols. Avoid very long unbroken lines, unexplained abbreviations, dense paragraph walls, and information conveyed only by visual styling.
-
-Every diagram must have an explanatory paragraph. Every important image must have useful alt text. If a visual is unavailable, the surrounding prose and placeholder must still communicate the intended learning objective.
-
-## Final Quality Checklist
-
-Before delivering a note, verify:
-
-- The title states the actual topic and level where useful.
-- The opening explains why the topic matters.
-- Learning goals are concrete and testable.
-- Definitions precede specialized use.
-- Headings form a logical outline with no accidental level jumps.
-- Equations have balanced delimiters, defined symbols, and units where relevant.
-- Tables have headers and are not being used for decorative layout.
-- Mermaid fences are valid, small, readable, and followed by interpretation.
-- Bio/Chem content is clearly marked as a placeholder rather than falsely rendered; TikZJax and Desmos figures are real rendered content, not placeholders.
-- Code fences identify the language and contain no secrets.
-- Links have descriptive text and images have alt text.
-- Facts, quotations, dates, and source meaning were not invented or silently altered.
-- The note includes a summary and at least one active-recall question when appropriate.
-- The result remains useful in raw Markdown view as well as rendered view.
-- The note does not depend on color, emoji, unsupported HTML, or client-side scripts to convey meaning.
