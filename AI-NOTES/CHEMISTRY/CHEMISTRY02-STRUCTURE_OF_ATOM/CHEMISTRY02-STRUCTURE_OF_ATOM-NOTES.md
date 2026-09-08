@@ -1,58 +1,31 @@
 # CHAPTER 2: STRUCTURE OF ATOM
 
-### Complete Study Notes | Board · NEET · JEE Layered
+### Physical Chemistry | Complete Study Notes | Board · NEET · JEE Layered
 
 ---
 
 ## 🗺️ CONCEPT ROADMAP
 
+```mermaid
+%%{init: {'theme':'dark'}}%%
+flowchart TD
+    A["Discovery of Sub-atomic Particles"] --> B["Atomic Models: Thomson to Rutherford"]
+    B --> C["Z, A, Isotopes and Isobars"]
+    C --> D["EM Radiation and Planck's Quantum Theory"]
+    D --> E["Photoelectric Effect"]
+    E --> F["Atomic Spectra: Line Spectrum of H"]
+    F --> G["Bohr's Model of the H Atom"]
+    G --> H["Limitations of Bohr's Model"]
+    H --> I["de Broglie: Wave Nature of Matter"]
+    I --> J["Heisenberg Uncertainty Principle"]
+    J --> K["Quantum Mechanical Model"]
+    K --> L["Quantum Numbers"]
+    L --> M["Shapes of Atomic Orbitals"]
+    M --> N["Aufbau, Pauli, Hund's Rule"]
+    N --> O["Electronic Configurations, incl. exceptions and ions"]
 ```
-[Discovery of Sub-atomic Particles]
-        → Electron (CRT → Thomson → Millikan)
-        → Proton (Canal Rays, 1919)
-        → Neutron (Chadwick, 1932)
-        ↓
-[Atomic Models]
-        → Thomson Model (Plum Pudding, 1898)
-        → Rutherford Nuclear Model (α-scattering, 1911)
-             → Atomic Number (Z) · Mass Number (A) · Isotopes · Isobars
-        ↓
-[Developments Toward Bohr's Model]
-        → Wave Nature of EM Radiation (Maxwell, c = νλ)
-        → EM Spectrum (radio → γ-rays)
-        → Planck's Quantum Theory (E = hν)
-        → Black Body Radiation
-        → Photoelectric Effect (Einstein, 1905)
-        → Dual Nature of Light
-        ↓
-[Atomic Spectra]
-        → Emission vs Absorption Spectra
-        → Line Spectrum of Hydrogen
-        → Rydberg Equation → Spectral Series (Lyman to Pfund)
-        ↓
-[Bohr's Model of Hydrogen Atom]
-        → 4 Postulates · rₙ = n²a₀ · Eₙ = −RH/n²
-        → Hydrogen-like Species (He⁺, Li²⁺)
-        → Limitations
-        ↓
-[Wave–Particle Duality of Matter]
-        → de Broglie Relation (λ = h/mv)
-        → Heisenberg Uncertainty Principle (Δx·Δp ≥ h/4π)
-        ↓
-[Quantum Mechanical Model]
-        → Schrödinger Equation · Wave Function ψ · Probability Density ψ²
-        → Atomic Orbital · Nodes (radial & angular)
-        ↓
-[Quantum Numbers]
-        → n (principal) · l (azimuthal) · mₗ (magnetic) · ms (spin)
-        → Orbital Shapes: s (sphere) · p (dumbbell) · d (cloverleaf)
-        ↓
-[Electronic Configuration]
-        → Aufbau Principle · Pauli Exclusion · Hund's Rule
-        → Filling Order (1s → 2s → 2p → 3s → ...)
-        → Exceptions: Cr (3d⁵4s¹), Cu (3d¹⁰4s¹)
-        → Stability of Half/Fully-Filled Subshells
-```
+
+Each box is one numbered section below (§1–§13); the chain runs prerequisite → concept → application, e.g. the *failure* of Rutherford's model (§2) is exactly what motivates Bohr's postulates (§6), and Bohr's own failure (§6.3) is what motivates de Broglie and Heisenberg (§7), which in turn motivate the Schrödinger picture (§8).
 
 ---
 
@@ -67,6 +40,25 @@
 * A glass tube containing two metallic electrodes (cathode: −ve, anode: +ve)
 * Gas at very low pressure (∼10⁻⁴ atm); very high voltage applied across electrodes
 * Fluorescent coating of **zinc sulphide (ZnS)** placed behind the anode detects rays
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=6pt,width=4pt]}, thick, scale=1.0]
+  \draw[line width=1.2pt] (0,0) rectangle (7,1.6);
+  \draw[line width=2.2pt] (0.3,0.3) -- (0.3,1.3);
+  \node[below, font=\small] at (0.3,-0.15) {Cathode ($-$)};
+  \draw[line width=2.2pt] (5.2,0.3) -- (5.2,0.75);
+  \draw[line width=2.2pt] (5.2,1.05) -- (5.2,1.3);
+  \node[below, font=\small] at (5.2,-0.15) {Perforated anode ($+$)};
+  \draw[->, blue!60!black, line width=1.4pt] (0.35,0.8) -- (5.15,0.8);
+  \draw[->, blue!60!black, line width=1.4pt] (5.25,0.8) -- (6.9,0.8);
+  \node[above, font=\small, text=blue!60!black] at (2.7,0.95) {cathode rays};
+  \draw[line width=3pt, green!40!black] (6.9,0.2) -- (6.9,1.4);
+  \node[right, font=\small] at (6.95,0.8) {ZnS screen};
+  \node[below, font=\itshape\small, text=gray] at (3.5,-0.9) {Low-pressure gas, high voltage: rays travel cathode $\to$ anode, pass through the hole, strike the fluorescent screen};
+\end{tikzpicture}
+```
+The rays travel in straight lines (Section 1.1's third observation) until deflected by an external field — that straight-line path is what the fluorescent screen is recording.
 
 **Key Observations:**
 
@@ -172,15 +164,19 @@ $$
 * Electrons are **embedded** into this positive sphere like plums in a pudding (also called: raisin pudding / watermelon model)
 * Mass of atom is uniformly distributed throughout the atom
 
-```
-        ⊕ ⊕ ⊕ ⊕ ⊕
-      ⊕  ●    ●  ⊕
-     ⊕  ●   ●   ⊕
-      ⊕  ●    ●  ⊕
-        ⊕ ⊕ ⊕ ⊕ ⊕
-
-    ⊕ = positive charge spread evenly
-    ● = embedded electrons
+```tikz
+\begin{tikzpicture}[thick, scale=1.0]
+  \fill[orange!25] (0,0) circle (1.6);
+  \draw[orange!70!black, line width=1pt] (0,0) circle (1.6);
+  \fill[blue!70!black] (0.5,0.6) circle (2.5pt);
+  \fill[blue!70!black] (-0.6,0.4) circle (2.5pt);
+  \fill[blue!70!black] (0.2,-0.5) circle (2.5pt);
+  \fill[blue!70!black] (-0.5,-0.7) circle (2.5pt);
+  \fill[blue!70!black] (0.9,-0.3) circle (2.5pt);
+  \fill[blue!70!black] (-1.0,0.9) circle (2.5pt);
+  \fill[blue!70!black] (0,1.1) circle (2.5pt);
+  \node[below, font=\itshape\small, text=gray] at (0,-2.1) {positive charge (orange) spread uniformly through the sphere; electrons (blue) embedded like plums in a pudding};
+\end{tikzpicture}
 ```
 
 **Success:** Explained overall **electrical neutrality** of atom.
@@ -199,17 +195,20 @@ $$
 * Target: **Ultra-thin gold foil** (thickness ~100 nm = 1000 atoms thick)
 * Detector: Circular fluorescent **zinc sulphide (ZnS)** screen around the foil
 
-```
-                    Gold foil (100 nm thick)
-                          │
-        ┌─────────────────┼─────────────────────────────────────┐
-        │                 │                                      │
-Source  │                 │ ●→→→→→→→→→→→→→→→→ (undeflected)   │
-of      │  α-particles ───┤ ●→→→  ↗→→→→→→→→   (small deflect)  │
-α-rays  │                 │      ↙ nucleus                       │
-        │                 │ ●← (bounced back ~180°)              │
-        └─────────────────┴─────────────────────────────────────┘
-                              ↑ ZnS screen (detects all around)
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=6pt,width=4pt]}, thick, scale=1.0]
+  \fill[yellow!60!orange] (3.4,-1.6) rectangle (3.7,1.6);
+  \node[above, font=\small] at (3.55,1.75) {Gold foil ($\sim$100 nm)};
+  \fill[red!70!black] (3.55,0.05) circle (2.2pt);
+  \draw[->, blue!55!black] (0,1.1) -- (7,1.1);
+  \draw[->, blue!55!black] (0,0.5) -- (7,0.5);
+  \draw[->, blue!55!black] (0,-1.1) -- (7,-1.1);
+  \draw[->, blue!55!black] (0,-0.3) -- (3.4,-0.15) -- (7,0.6);
+  \draw[->, red!70!black, line width=1.3pt] (0,0.05) -- (3.55,0.05) -- (0.6,0.75);
+  \node[left, font=\small] at (0,0.05) {$\alpha$-source};
+  \node[below, font=\itshape\small, text=gray] at (3.5,-2.0) {most $\alpha$-particles (blue) pass straight through; a few deflect slightly; about 1 in 20{,}000 (red) bounces back $\Rightarrow$ a small, dense, positive nucleus};
+\end{tikzpicture}
 ```
 
 **Observations and Their Interpretations:**
@@ -234,15 +233,7 @@ Based on the scattering experiment, Rutherford proposed:
 2. Electrons move around the nucleus in **circular orbits at very high speed** (like planets around the sun → "solar system model")
 3. Nucleus + electrons held together by **electrostatic forces of attraction**
 
-```
-         e⁻ ←——————— circular orbit
-        ↗
-      ↗
- [NUCLEUS]   → tiny, dense, +ve charged
-      ↘
-        ↘
-         e⁻
-```
+This "mini solar system" picture is qualitative here — Section 6.1 gives the quantised version (fixed orbits, fixed energies) once Bohr fixes the stability problem raised in 2.6 below.
 
 ---
 
@@ -357,14 +348,26 @@ where:
 
 ### 3.2 The Electromagnetic Spectrum `[Board · NEET]`
 
-```
-Increasing Frequency (ν) →
-Increasing Energy →
-←  Increasing Wavelength (λ)
-
-γ-rays | X-rays | UV | Visible | IR | Microwave | FM/AM | Long Radio
-  ↑        ↑      ↑      ↑       ↑       ↑           ↑         ↑
-10²⁴Hz  10¹⁸  10¹⁶   10¹⁵  10¹³   10¹⁰        10⁸       10⁶
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=6pt,width=4pt]}, thick, scale=1.0]
+  \draw[->, red!70!black, line width=1.4pt] (0,2.0) -- (9.8,2.0) node[midway, above, font=\small, text=red!70!black] {increasing frequency, increasing energy};
+  \draw (0,0) rectangle (1.4,1.2); \node[font=\tiny] at (0.7,0.6) {radio};
+  \draw (1.4,0) rectangle (2.6,1.2); \node[font=\tiny] at (2.0,0.6) {micro};
+  \draw (2.6,0) rectangle (3.8,1.2); \node[font=\tiny] at (3.2,0.6) {IR};
+  \draw[fill=violet!25] (3.8,0) rectangle (4.6,1.2); \node[font=\tiny] at (4.2,0.6) {vis};
+  \draw (4.6,0) rectangle (5.8,1.2); \node[font=\tiny] at (5.2,0.6) {UV};
+  \draw (5.8,0) rectangle (7.4,1.2); \node[font=\tiny] at (6.6,0.6) {X-ray};
+  \draw (7.4,0) rectangle (9.8,1.2); \node[font=\tiny] at (8.6,0.6) {$\gamma$-ray};
+  \node[below, font=\tiny] at (0.7,-0.15) {$10^{6}$Hz};
+  \node[below, font=\tiny] at (2.0,-0.15) {$10^{10}$};
+  \node[below, font=\tiny] at (3.2,-0.15) {$10^{13}$};
+  \node[below, font=\tiny] at (4.2,-0.15) {$10^{15}$};
+  \node[below, font=\tiny] at (5.2,-0.15) {$10^{16}$};
+  \node[below, font=\tiny] at (6.6,-0.15) {$10^{18}$};
+  \node[below, font=\tiny] at (8.6,-0.15) {$10^{24}$};
+  \node[below, font=\itshape\small, text=gray] at (4.9,-0.9) {visible light (shaded) is only a thin sliver of the full spectrum: 400 nm (violet) to 750 nm (red)};
+\end{tikzpicture}
 ```
 
 **Visible light region:** ~4.0 × 10¹⁴ Hz (red) to 7.5 × 10¹⁴ Hz (violet)
@@ -394,6 +397,16 @@ Wavelength: **400 nm (violet) to 750 nm (red)**
 
 * At given temperature: intensity increases with wavelength, peaks at a specific λ, then decreases
 * As temperature increases: peak shifts to **shorter wavelengths** (higher energy)
+
+```desmos
+c_{2}=1.4388\times10^{7}
+T_{1}=4000
+T_{2}=6000
+f\left(\lambda\right)=\frac{1}{\lambda^{5}\left(e^{\frac{c_{2}}{\lambda T_{1}}}-1\right)}
+g\left(\lambda\right)=\frac{1}{\lambda^{5}\left(e^{\frac{c_{2}}{\lambda T_{2}}}-1\right)}
+```
+*Legend:* `c_2` = second radiation constant `hc/k_B ≈ 1.4388×10⁷ nm·K`, `T_1`/`T_2` = absolute temperature in K (sliders, `T_2 > T_1`), `λ` = wavelength in nm, `f(λ)`/`g(λ)` = relative spectral intensity (Planck's law, unnormalised — only the shape matters, exactly as NCERT Fig. 2.8 plots "Intensity" with no numeric axis).
+*Try this:* drag `T_2` higher — the peak shifts to shorter wavelength and grows taller, which is Wien's displacement law (`λ_max·T` = constant) falling straight out of Planck's formula.
 
 **Planck's Hypothesis (1900):**
 Atoms/molecules can emit or absorb energy  **only in discrete packets (quanta)** , not continuously.
@@ -439,6 +452,26 @@ Where:
 * hν₀ = **work function** (W₀) = minimum energy to eject electron from metal surface (= threshold energy)
 * ½mₑv² = kinetic energy of ejected photoelectron
 * ν₀ = **threshold frequency** (minimum frequency for photoelectric effect)
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=6pt,width=4pt]}, thick, scale=0.9]
+  \draw[->, line width=1pt] (-0.3,0) -- (5,0) node[right, font=\small] {Intensity};
+  \draw[->, line width=1pt] (0,-0.3) -- (0,2.6) node[above, font=\small] {K.E. of photoelectron};
+  \draw[blue!60!black, line width=1.6pt] (0.3,1.4) -- (4.6,1.4);
+  \node[below, font=\itshape\small, text=gray] at (2.3,-0.8) {K.E. is flat with intensity -- only the *number* of photoelectrons rises with intensity, not their energy};
+\end{tikzpicture}
+```
+
+```desmos
+k=0.4136
+n_{0}=5
+f\left(n\right)=k\left(n-n_{0}\right)\left\{n\ge n_{0}\right\}
+n_{now}=7
+P=\left(n_{now},f\left(n_{now}\right)\right)
+```
+*Legend:* `n` = frequency of incident light in units of 10¹⁴ Hz, `n_0` = threshold frequency (slider; default 5 matches NCERT's own potassium example, ν₀ = 5.0×10¹⁴ Hz), `k` = Planck's constant expressed as eV per unit of `n`, i.e. `h × 10¹⁴ = 0.4136 eV`, `f(n)` = photoelectron kinetic energy in eV (undefined/zero below threshold), `P` = a draggable point (`n_now`) to read off K.E. at a chosen frequency.
+*Try this:* drag `n_0` to the right (a metal with a larger work function) and watch the whole line's x-intercept move right with it — nothing is emitted until `n` catches up; drag `n_now` past the intercept and read the linear K.E. growth directly, which is Einstein's equation `hν = hν₀ + K.E.` traced out as a straight line of slope `h`.
 
 **Work Function Values (important for NEET):**
 
@@ -518,15 +551,34 @@ where n₁ = 1, 2, 3... and n₂ = n₁+1, n₁+2, ...
 | **Brackett** | 4   | 5, 6, 7... | **Infrared**    | Brackett  |
 | **Pfund**    | 5   | 6, 7, 8... | **Infrared**    | Pfund     |
 
-```
-Energy Level Diagram:
-n = ∞ ─────────────────────────── E = 0 (ionised)
-n = 5 ─────────────────────────── Pfund (ends at n=5)
-n = 4 ─────────────────────────── Brackett (ends at n=4)
-n = 3 ─────────────────────────── Paschen (ends at n=3, IR)
-n = 2 ─────────────────────────── Balmer (ends at n=2, visible)
-n = 1 ─────────────────────────── Lyman (ends at n=1, UV)
-          ↑ ground state (most stable)
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=5pt,width=3.5pt]}, thick, scale=0.85]
+  \draw (0,0) -- (10,0) node[right, font=\small] {$n=1$};
+  \draw (0,3) -- (10,3) node[right, font=\small] {$n=2$};
+  \draw (0,5) -- (10,5) node[right, font=\small] {$n=3$};
+  \draw (0,6.2) -- (10,6.2) node[right, font=\small] {$n=4$};
+  \draw (0,7) -- (10,7) node[right, font=\small] {$n=5$};
+  \draw (0,7.6) -- (10,7.6) node[right, font=\small] {$n=6$};
+  \draw[dashed] (0,8.6) -- (10,8.6) node[right, font=\small] {$n=\infty$ ($E=0$)};
+  \draw[->, violet] (0.8,3) -- (0.8,0.1);
+  \draw[->, violet] (1.4,5) -- (1.4,0.1);
+  \draw[->, violet] (2.0,6.2) -- (2.0,0.1);
+  \node[violet, font=\tiny] at (1.4,-0.5) {Lyman (UV)};
+  \draw[->, blue!70!black] (3.0,5) -- (3.0,3.1);
+  \draw[->, blue!70!black] (3.6,6.2) -- (3.6,3.1);
+  \draw[->, blue!70!black] (4.2,7) -- (4.2,3.1);
+  \node[blue!70!black, font=\tiny] at (3.6,2.5) {Balmer (Vis)};
+  \draw[->, orange!80!black] (5.2,6.2) -- (5.2,5.1);
+  \draw[->, orange!80!black] (5.8,7) -- (5.8,5.1);
+  \node[orange!80!black, font=\tiny] at (5.5,4.6) {Paschen (IR)};
+  \draw[->, teal] (6.8,7) -- (6.8,6.3);
+  \draw[->, teal] (7.3,7.6) -- (7.3,6.3);
+  \node[teal, font=\tiny] at (7.05,5.9) {Brackett (IR)};
+  \draw[->, brown] (8.3,7.6) -- (8.3,7.1);
+  \node[brown, font=\tiny] at (8.3,6.8) {Pfund (IR)};
+  \node[below, font=\itshape\small, text=gray] at (5,-1.3) {level spacing shrinks as $n$ increases ($E_n \propto -1/n^2$); every downward arrow is one spectral line};
+\end{tikzpicture}
 ```
 
 > 🔑 **Memory Hook for Series Regions:**
@@ -536,6 +588,24 @@ n = 1 ────────────────────────�
 > ```
 
 > ⚠️ **Balmer series** is the ONLY series in the **visible** region — frequently tested!
+
+### 5.4 Counting the Number of Spectral Lines `[NEET · JEE — high-yield, not in the NCERT text]`
+
+When an electron sitting at some excited level n₂ cascades all the way down to a lower level n₁ — falling through every intermediate level on the way rather than jumping straight there — each pair of levels it passes between produces one distinct line. Choosing any 2 of the (Δn + 1) levels available gives:
+
+$$
+\boxed{\text{Maximum number of spectral lines} = \binom{\Delta n + 1}{2} = \frac{\Delta n(\Delta n + 1)}{2}}, \qquad \Delta n = n_2 - n_1
+$$
+
+**Special case** — falling all the way to the ground state (n₁ = 1) from level n reduces this to the more commonly quoted **n(n − 1)/2**.
+
+**Worked Example (New):** Maximum number of emission lines when an excited electron in an H atom at n = 6 drops to the ground state.
+Δn = 6 − 1 = 5 → lines = (5 × 6)/2 = **15**
+
+**Worked Example (New):** Maximum number of emission lines when an excited electron in an H atom at n = 5 drops to n = 2.
+Δn = 5 − 2 = 3 → lines = (3 × 4)/2 = **6**
+
+> ⚠️ **Common Mistake:** This formula counts *every* line in the whole cascade, not the single line from a named direct transition. "Find the wavelength of the photon emitted during the transition n = 5 to n = 2" (NCERT Problem 2.10) is ONE line via the Rydberg equation; "the *maximum number* of lines when an excited electron at n = 5 drops (eventually) to n = 2" is the cascade count above. Read the question carefully before reaching for this formula. `[NEET trap]`
 
 ---
 
@@ -567,6 +637,26 @@ $$
 $$
 
 where n is the  **principal quantum number** . This is why only certain orbits are allowed!
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=6pt,width=4pt]}, thick, scale=1.0]
+  \fill[red!70!black] (0,0) circle (3pt);
+  \node[below, font=\small] at (0,-0.2) {nucleus};
+  \draw[gray] (0,0) circle (1.0);
+  \node[gray, font=\tiny] at (0.75,0.75) {$n=1$};
+  \draw[gray] (0,0) circle (1.8);
+  \node[gray, font=\tiny] at (1.35,1.35) {$n=2$};
+  \draw[gray] (0,0) circle (2.5);
+  \node[gray, font=\tiny] at (1.9,1.9) {$n=3$};
+  \fill[blue!30] (2.5,0) circle (2.5pt);
+  \node[blue!70!black, font=\small] at (2.5,-0.4) {e$^-$ starts at $n=3$};
+  \draw[->, orange!80!black, line width=1.3pt] (2.5,0.15) -- (1.8,0.15);
+  \node[orange!80!black, font=\small] at (2.15,0.45) {$h\nu$};
+  \fill[blue!70!black] (1.8,0) circle (2.5pt);
+  \node[below, font=\itshape\small, text=gray] at (0,-3.0) {electron drops from $n=3$ to $n=2$: a photon of energy $h\nu=E_3-E_2$ is emitted (Postulate 3); it can only ever sit on one of these fixed circles, never in between (Postulate 1)};
+\end{tikzpicture}
+```
 
 ---
 
@@ -670,6 +760,26 @@ where:
 > 🔑 **Critical Insight:** de Broglie wavelength is significant ONLY for **microscopic particles** (electrons, protons). For macroscopic objects, λ is so tiny it has no practical significance. `[NEET]`
 
 **Experimental confirmation:** Electron beam undergoes **diffraction** (wave property) — used in **electron microscope** (magnification ~15 million times).
+
+**Connecting de Broglie to Bohr's Postulate `[Board — common derivation question, not spelled out in NCERT's own text]`**
+
+Bohr simply *assumed* quantised angular momentum (Postulate 4, §6.1) without proving it. Once de Broglie's relation is available, that postulate stops being an assumption and becomes a derivation:
+
+Model the electron's orbit as a standing wave. For the wave not to cancel itself out after one full trip around the circle, the circumference must hold a whole number of wavelengths:
+
+$$
+2\pi r = n\lambda, \qquad n = 1, 2, 3, \ldots
+$$
+
+Substitute de Broglie's λ = h/(mv):
+
+$$
+2\pi r = n\frac{h}{mv} \quad\Longrightarrow\quad \boxed{m v r = \frac{nh}{2\pi}}
+$$
+
+— exactly Bohr's fourth postulate. Angular momentum quantisation isn't an independent assumption at all; it falls straight out of treating the electron as a de Broglie standing wave.
+
+> 🔑 This derivation is itself a frequently-asked 2–3 mark question: *"Derive Bohr's postulate of quantisation of angular momentum from de Broglie's hypothesis."*
 
 ### 7.2 Heisenberg's Uncertainty Principle (1927) `[NEET · JEE]`
 
@@ -872,14 +982,28 @@ $$
 * Probability density is **maximum at nucleus** for 1s; then decreases
 * 2s has **1 radial node** (spherical shell of zero density inside)
 
-```
-     1s            2s (has one radial node inside)
-   ·····          ·····   ·····
-  ·     ·        ·     · ·     ·
- ·       ·      ·       |·       ·
-  ·     ·        ·  node |     ·
-   ·····          ·····   ·····
-  (simple sphere)   (two concentric regions)
+```tikz
+\begin{tikzpicture}[thick, scale=1.0]
+  \draw[->] (0,0) -- (2.6,0) node[right, font=\tiny] {$r$};
+  \draw[->] (0,0) -- (0,2.2) node[above, font=\tiny] {$\psi^2$};
+  \draw[blue!60!black, line width=1.3pt, smooth] plot coordinates {(0,2.0) (0.3,1.5) (0.6,1.0) (1.0,0.55) (1.5,0.22) (2.0,0.08) (2.5,0.02)};
+  \node[below, font=\small] at (1.2,-0.4) {$1s$};
+  \begin{scope}[shift={(4.2,0)}]
+    \draw[->] (0,0) -- (2.8,0) node[right, font=\tiny] {$r$};
+    \draw[->] (0,0) -- (0,2.2) node[above, font=\tiny] {$\psi^2$};
+    \draw[blue!60!black, line width=1.3pt, smooth] plot coordinates {(0,1.7) (0.3,1.0) (0.6,0.35) (0.85,0.02) (1.0,0.10) (1.3,0.42) (1.6,0.28) (2.0,0.10) (2.5,0.02)};
+    \draw[dashed, gray] (0.85,0) -- (0.85,1.7);
+    \node[gray, font=\tiny] at (0.85,1.95) {node};
+    \node[below, font=\small] at (1.3,-0.4) {$2s$};
+  \end{scope}
+  \begin{scope}[shift={(8.4,0)}]
+    \draw[->] (0,0) -- (2.8,0) node[right, font=\tiny] {$r$};
+    \draw[->] (0,0) -- (0,2.2) node[above, font=\tiny] {$\psi^2$};
+    \draw[blue!60!black, line width=1.3pt, smooth] plot coordinates {(0,0) (0.3,0.35) (0.6,0.85) (0.9,1.3) (1.2,1.55) (1.6,1.35) (2.0,0.75) (2.5,0.15)};
+    \node[below, font=\small] at (1.3,-0.4) {$2p$};
+  \end{scope}
+  \node[below, font=\itshape\small, text=gray] at (5.5,-1.0) {1s: no radial node, falls monotonically from the nucleus · 2s: one radial node (crosses zero) then a small secondary hump · 2p: zero AT the nucleus itself (angular node there), single hump, zero radial nodes};
+\end{tikzpicture}
 ```
 
 ### 10.2 p Orbitals (l = 1) `[Board · NEET]`
@@ -890,19 +1014,41 @@ $$
 * One **angular node** (the nodal plane through the nucleus)
 * Size increases: 4p > 3p > 2p
 
-```
-z          z          z
-|          |          |
-|    ●●    |     ●    |
-|   ●  ●   |    ●●●   |    ●    (along z)
-|   ● N ●  |    ●N●   |   ●N●
-|   ●  ●   |    ●●●   |    ●
-|    ●●    |     ●    |
-─────────── ─────────── ───────
-   2pz         2px         2py
-(lobes         (lobes        (lobes
-along z)      along x)      along y)
-N = nucleus; ●● = electron probability lobes
+```tikz
+\begin{tikzpicture}[thick, scale=1.0]
+  \draw[->, gray] (-1.4,0) -- (1.4,0) node[right, font=\tiny]{$x$};
+  \draw[->, gray] (0,-1.6) -- (0,1.6) node[above, font=\tiny]{$z$};
+  \fill[purple!35] (0,0.75) ellipse (0.5 and 0.7);
+  \draw[purple!70!black] (0,0.75) ellipse (0.5 and 0.7);
+  \fill[purple!35] (0,-0.75) ellipse (0.5 and 0.7);
+  \draw[purple!70!black] (0,-0.75) ellipse (0.5 and 0.7);
+  \fill[black] (0,0) circle (1.5pt);
+  \node[below, font=\small] at (0,-1.9) {$p_z$};
+
+  \begin{scope}[shift={(3.6,0)}]
+    \draw[->, gray] (-1.6,0) -- (1.6,0) node[right, font=\tiny]{$x$};
+    \draw[->, gray] (0,-1.4) -- (0,1.4) node[above, font=\tiny]{$z$};
+    \fill[purple!35] (0.75,0) ellipse (0.7 and 0.5);
+    \draw[purple!70!black] (0.75,0) ellipse (0.7 and 0.5);
+    \fill[purple!35] (-0.75,0) ellipse (0.7 and 0.5);
+    \draw[purple!70!black] (-0.75,0) ellipse (0.7 and 0.5);
+    \fill[black] (0,0) circle (1.5pt);
+    \node[below, font=\small] at (0,-1.9) {$p_x$};
+  \end{scope}
+
+  \begin{scope}[shift={(7.2,0)}]
+    \draw[->, gray] (-1.4,-0.9) -- (1.4,0.9) node[right, font=\tiny]{$y$};
+    \draw[->, gray] (0,-1.4) -- (0,1.4) node[above, font=\tiny]{$z$};
+    \fill[purple!35] (0.6,0.4) ellipse (0.65 and 0.5);
+    \draw[purple!70!black] (0.6,0.4) ellipse (0.65 and 0.5);
+    \fill[purple!35] (-0.6,-0.4) ellipse (0.65 and 0.5);
+    \draw[purple!70!black] (-0.6,-0.4) ellipse (0.65 and 0.5);
+    \fill[black] (0,0) circle (1.5pt);
+    \node[below, font=\small] at (0,-1.9) {$p_y$};
+  \end{scope}
+
+  \node[below, font=\itshape\small, text=gray] at (3.6,-2.6) {each has two lobes on opposite sides of the nucleus, separated by one nodal plane through the origin; identical in size, shape and energy -- differing only in orientation};
+\end{tikzpicture}
 ```
 
 ### 10.3 d Orbitals (l = 2) `[NEET · JEE]`
@@ -914,6 +1060,54 @@ N = nucleus; ●● = electron probability lobes
 * d_z² has **unique shape** — two lobes along z-axis + a donut (torus) in xy-plane
 * All five 3d orbitals are **degenerate** (same energy)
 * Two **angular nodes** for each d orbital
+
+```tikz
+\begin{tikzpicture}[thick, scale=1.0]
+  \begin{scope}
+    \begin{scope}[rotate=45]  \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \begin{scope}[rotate=135] \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \begin{scope}[rotate=225] \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \begin{scope}[rotate=315] \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \fill[black] (0,0) circle (1.2pt);
+    \node[below, font=\small] at (0,-1.1) {$d_{xy}$};
+  \end{scope}
+  \begin{scope}[shift={(3.2,0)}]
+    \begin{scope}[rotate=45]  \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \begin{scope}[rotate=135] \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \begin{scope}[rotate=225] \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \begin{scope}[rotate=315] \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \fill[black] (0,0) circle (1.2pt);
+    \node[below, font=\small] at (0,-1.1) {$d_{yz}$};
+  \end{scope}
+  \begin{scope}[shift={(6.4,0)}]
+    \begin{scope}[rotate=45]  \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \begin{scope}[rotate=135] \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \begin{scope}[rotate=225] \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \begin{scope}[rotate=315] \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \fill[black] (0,0) circle (1.2pt);
+    \node[below, font=\small] at (0,-1.1) {$d_{xz}$};
+  \end{scope}
+  \begin{scope}[shift={(1.6,-3.0)}]
+    \begin{scope}[rotate=0]   \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \begin{scope}[rotate=90]  \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \begin{scope}[rotate=180] \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \begin{scope}[rotate=270] \fill[teal!35] (0.7,0) ellipse (0.55 and 0.28); \draw[teal!70!black] (0.7,0) ellipse (0.55 and 0.28); \end{scope}
+    \fill[black] (0,0) circle (1.2pt);
+    \node[below, font=\small] at (0,-1.1) {$d_{x^2-y^2}$};
+  \end{scope}
+  \begin{scope}[shift={(4.8,-3.0)}]
+    \fill[teal!35] (0,0.75) ellipse (0.4 and 0.7);
+    \draw[teal!70!black] (0,0.75) ellipse (0.4 and 0.7);
+    \fill[teal!35] (0,-0.75) ellipse (0.4 and 0.7);
+    \draw[teal!70!black] (0,-0.75) ellipse (0.4 and 0.7);
+    \fill[teal!20] (0,0) ellipse (0.9 and 0.22);
+    \draw[teal!70!black] (0,0) ellipse (0.9 and 0.22);
+    \fill[black] (0,0) circle (1.2pt);
+    \node[below, font=\small] at (0,-1.6) {$d_{z^2}$};
+  \end{scope}
+  \node[below, font=\itshape\small, text=gray] at (3.2,-5.0) {schematic 2D projections: $d_{xy}, d_{yz}, d_{xz}$ share an identical four-lobe shape, each lying between a different pair of axes; $d_{x^2-y^2}$ has its four lobes along the axes instead of between them; $d_{z^2}$ alone has two lobes plus a ring};
+\end{tikzpicture}
+```
 
 | d Orbital  | Lobes Along/Between    | Nodal Planes     |
 | ---------- | ---------------------- | ---------------- |
@@ -940,8 +1134,28 @@ Energy order (hydrogen):
 
 In multi-electron atoms, electron-electron **repulsion** and **shielding** cause splitting:
 
-```
-Within same shell (n): Energy order is s < p < d < f
+```tikz
+\begin{tikzpicture}[thick, scale=0.9]
+  \node[font=\small] at (1.5,6.6) {Hydrogen atom};
+  \draw (0,0) -- (3,0); \node[right, font=\tiny] at (3,0) {$1s$};
+  \draw (0,2.0) -- (3,2.0); \node[right, font=\tiny] at (3,2.0) {$2s,\,2p$};
+  \draw (0,3.6) -- (3,3.6); \node[right, font=\tiny] at (3,3.6) {$3s,\,3p,\,3d$};
+  \draw (0,4.8) -- (3,4.8); \node[right, font=\tiny] at (3,4.8) {$4s,\,4p,\,4d,\,4f$};
+
+  \begin{scope}[shift={(6.5,0)}]
+    \node[font=\small] at (1.5,6.6) {Multi-electron atom};
+    \draw (0,0) -- (3,0); \node[right, font=\tiny] at (3,0) {$1s$};
+    \draw (0,2.0) -- (3,2.0); \node[right, font=\tiny] at (3,2.0) {$2s$};
+    \draw (0,2.6) -- (3,2.6); \node[right, font=\tiny] at (3,2.6) {$2p$};
+    \draw (0,3.6) -- (3,3.6); \node[right, font=\tiny] at (3,3.6) {$3s$};
+    \draw (0,4.1) -- (3,4.1); \node[right, font=\tiny] at (3,4.1) {$3p$};
+    \draw (0,4.6) -- (3,4.6); \node[right, font=\tiny] at (3,4.6) {$4s$};
+    \draw (0,5.0) -- (3,5.0); \node[right, font=\tiny] at (3,5.0) {$3d$};
+    \draw (0,5.5) -- (3,5.5); \node[right, font=\tiny] at (3,5.5) {$4p$};
+  \end{scope}
+
+  \node[below, font=\itshape\small, text=gray] at (5,-0.9) {in H, energy depends only on $n$ (every subshell of a shell is degenerate); in a multi-electron atom shielding splits each shell into separate $s<p<d<f$ levels -- close enough that $4s$ actually sits below $3d$};
+\end{tikzpicture}
 ```
 
 **Shielding effect:** Inner electrons shield outer electrons from full nuclear charge (Zeff < Z)
@@ -985,17 +1199,29 @@ Within same shell (n): Energy order is s < p < d < f
 
 **Memory Aid (diagonal arrow method):**
 
-```
-1s
-2s  2p
-3s  3p  3d
-4s  4p  4d  4f
-5s  5p  5d  5f
-6s  6p  6d
-7s  7p
-
-Fill along diagonal arrows from top-right to bottom-left:
-1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s → ...
+```tikz
+\begin{tikzpicture}[thick, scale=0.8]
+  \draw (0,0) rectangle (1.4,0.8); \node[font=\small] at (0.7,0.4) {$1s$}; \node[font=\tiny, red!70!black] at (0.2,0.65) {1};
+  \draw (0,-1.2) rectangle (1.4,-0.4); \node[font=\small] at (0.7,-0.8) {$2s$}; \node[font=\tiny, red!70!black] at (0.2,-0.55) {2};
+  \draw (1.8,-1.2) rectangle (3.2,-0.4); \node[font=\small] at (2.5,-0.8) {$2p$}; \node[font=\tiny, red!70!black] at (2.0,-0.55) {3};
+  \draw (0,-2.4) rectangle (1.4,-1.6); \node[font=\small] at (0.7,-2.0) {$3s$}; \node[font=\tiny, red!70!black] at (0.2,-1.75) {4};
+  \draw (1.8,-2.4) rectangle (3.2,-1.6); \node[font=\small] at (2.5,-2.0) {$3p$}; \node[font=\tiny, red!70!black] at (2.0,-1.75) {5};
+  \draw (3.6,-2.4) rectangle (5.0,-1.6); \node[font=\small] at (4.3,-2.0) {$3d$}; \node[font=\tiny, red!70!black] at (3.8,-1.75) {7};
+  \draw (0,-3.6) rectangle (1.4,-2.8); \node[font=\small] at (0.7,-3.2) {$4s$}; \node[font=\tiny, red!70!black] at (0.2,-2.95) {6};
+  \draw (1.8,-3.6) rectangle (3.2,-2.8); \node[font=\small] at (2.5,-3.2) {$4p$}; \node[font=\tiny, red!70!black] at (2.0,-2.95) {8};
+  \draw (3.6,-3.6) rectangle (5.0,-2.8); \node[font=\small] at (4.3,-3.2) {$4d$}; \node[font=\tiny, red!70!black] at (3.8,-2.95) {10};
+  \draw (5.4,-3.6) rectangle (6.8,-2.8); \node[font=\small] at (6.1,-3.2) {$4f$}; \node[font=\tiny, red!70!black] at (5.6,-2.95) {13};
+  \draw (0,-4.8) rectangle (1.4,-4.0); \node[font=\small] at (0.7,-4.4) {$5s$}; \node[font=\tiny, red!70!black] at (0.2,-4.15) {9};
+  \draw (1.8,-4.8) rectangle (3.2,-4.0); \node[font=\small] at (2.5,-4.4) {$5p$}; \node[font=\tiny, red!70!black] at (2.0,-4.15) {11};
+  \draw (3.6,-4.8) rectangle (5.0,-4.0); \node[font=\small] at (4.3,-4.4) {$5d$}; \node[font=\tiny, red!70!black] at (3.8,-4.15) {14};
+  \draw (5.4,-4.8) rectangle (6.8,-4.0); \node[font=\small] at (6.1,-4.4) {$5f$}; \node[font=\tiny, red!70!black] at (5.6,-4.15) {17};
+  \draw (0,-6.0) rectangle (1.4,-5.2); \node[font=\small] at (0.7,-5.6) {$6s$}; \node[font=\tiny, red!70!black] at (0.2,-5.35) {12};
+  \draw (1.8,-6.0) rectangle (3.2,-5.2); \node[font=\small] at (2.5,-5.6) {$6p$}; \node[font=\tiny, red!70!black] at (2.0,-5.35) {15};
+  \draw (3.6,-6.0) rectangle (5.0,-5.2); \node[font=\small] at (4.3,-5.6) {$6d$}; \node[font=\tiny, red!70!black] at (3.8,-5.35) {18};
+  \draw (0,-7.2) rectangle (1.4,-6.4); \node[font=\small] at (0.7,-6.8) {$7s$}; \node[font=\tiny, red!70!black] at (0.2,-6.55) {16};
+  \draw (1.8,-7.2) rectangle (3.2,-6.4); \node[font=\small] at (2.5,-6.8) {$7p$}; \node[font=\tiny, red!70!black] at (2.0,-6.55) {19};
+  \node[below, font=\itshape\small, text=gray] at (3.4,-7.9) {small red numbers = filling order; read them in sequence for the classic diagonal ($n{+}l$) pattern -- notice rank 7 ($3d$) sits below rank 6 ($4s$) on the grid, which is exactly why $4s$ fills first};
+\end{tikzpicture}
 ```
 
 ### 12.2 Pauli Exclusion Principle `[Board · NEET]`
@@ -1093,6 +1319,32 @@ WRONG:                      CORRECT (Hund's Rule):
 >
 > **Reason:** Half-filled (d⁵) and fully-filled (d¹⁰) configurations are **extra stable** due to symmetrical electron distribution and maximum exchange energy. One electron shifts from 4s to 3d.
 
+### 13.3 Electronic Configurations of Ions `[NEET · JEE — high-yield trap, no worked example in the NCERT text]`
+
+**The rule:** electrons are removed from the orbital with the **highest n first**. For a transition-metal cation this means the **ns electron(s) empty before any (n−1)d electron**, even though 4s *filled* before 3d on the way in — the filling order and the emptying order are not the same list run backwards.
+
+```mermaid
+flowchart TD
+    A["Writing a configuration"] --> B{"Neutral atom, cation, or anion?"}
+    B -->|Neutral| C["Follow Aufbau: fill the lowest-energy orbital first, n+l rule"]
+    B -->|"Cation, e.g. Fe2+"| D["Start from the neutral atom's config, remove electrons from the HIGHEST n subshell first: ns before (n-1)d"]
+    B -->|"Anion, e.g. F-"| E["Add electrons to the next available orbital, same as Aufbau"]
+```
+
+**Worked Example (New):** Fe²⁺ (from Fe, Z = 26)
+Fe (neutral) = [Ar]3d⁶4s² → remove 2 electrons from the **4s** orbital first, not 3d
+Fe²⁺ = **[Ar]3d⁶**
+
+**Worked Example (New):** Cu⁺ (from Cu, Z = 29)
+Cu (neutral) = [Ar]3d¹⁰4s¹ → remove the single **4s** electron
+Cu⁺ = **[Ar]3d¹⁰**
+
+**Worked Example (New):** Cu²⁺ (from Cu, Z = 29)
+Cu (neutral) = [Ar]3d¹⁰4s¹ → remove the 4s electron first (1 gone, 4s now empty), then — since 4s is empty — the second electron must come from **3d**
+Cu²⁺ = **[Ar]3d⁹**
+
+> ⚠️ **Common Mistake:** Writing Fe²⁺ as [Ar]3d⁴4s² ("3d was added last, so remove it last" — backwards!), or Cu²⁺ as [Ar]3d⁸4s² (removing both electrons from 3d and leaving 4s untouched). The rule is always **highest n leaves first**, regardless of which orbital filled last. `[NEET trap]`
+
 ---
 
 ## SECTION 14 — STABILITY OF COMPLETELY FILLED AND HALF-FILLED SUBSHELLS
@@ -1115,10 +1367,22 @@ Configurations that are **extra stable:** p³, p⁶, d⁵, d¹⁰, f⁷, f¹⁴
 * This exchange releases **exchange energy** → lowers total energy → greater stability
 * Exchange energy is **maximum** when subshell is half-filled or fully-filled
 
-```
-For d⁵ (e.g., Cr 3d⁵):
-↑  ↑  ↑  ↑  ↑
-Each electron can exchange with every other → 4+3+2+1 = 10 exchanges = maximum
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=5pt,width=3.5pt]}, thick, scale=0.9]
+  \draw (0,0) rectangle (0.9,0.9); \draw[->, blue!70!black] (0.45,0.15) -- (0.45,0.75);
+  \draw (0.9,0) rectangle (1.8,0.9); \draw[->, blue!70!black] (1.35,0.15) -- (1.35,0.75);
+  \draw (1.8,0) rectangle (2.7,0.9); \draw[->, blue!70!black] (2.25,0.15) -- (2.25,0.75);
+  \draw (2.7,0) rectangle (3.6,0.9); \draw[->, blue!70!black] (3.15,0.15) -- (3.15,0.75);
+  \draw (3.6,0) rectangle (4.5,0.9); \draw[->, blue!70!black] (4.05,0.15) -- (4.05,0.75);
+  \node[font=\tiny] at (0.45,-0.3) {1}; \node[font=\tiny] at (1.35,-0.3) {2}; \node[font=\tiny] at (2.25,-0.3) {3}; \node[font=\tiny] at (3.15,-0.3) {4}; \node[font=\tiny] at (4.05,-0.3) {5};
+  \draw[->, red!70!black] (0.45,0.9) to[bend left=35] (1.35,0.9);
+  \draw[->, red!70!black] (0.45,0.9) to[bend left=45] (2.25,1.3);
+  \draw[->, red!70!black] (0.45,0.9) to[bend left=50] (3.15,1.6);
+  \draw[->, red!70!black] (0.45,0.9) to[bend left=55] (4.05,1.9);
+  \node[right, font=\itshape\small, text=gray] at (4.7,1.0) {electron 1 alone exchanges with 2, 3, 4, 5 -- 4 possible swaps};
+  \node[below, font=\itshape\small, text=gray] at (2.25,-0.9) {continuing this way: electron 2 with the remaining 3, electron 3 with the remaining 2, electron 4 with the last 1 $\Rightarrow$ $4+3+2+1=10$ exchanges -- the maximum possible for 5 electrons, exactly why $d^5$ is extra stable};
+\end{tikzpicture}
 ```
 
 > 🔑 **Bottom Line:** An electron from 4s moves to 3d in Cr and Cu because the extra stability of d⁵/d¹⁰ **more than compensates** for the energy cost of emptying 4s.
@@ -1146,6 +1410,7 @@ Each electron can exchange with every other → 4+3+2+1 = 10 exchanges = maximum
 | Bohr energy (H)                | Eₙ = −R_H/n²                        | R_H = 2.18 × 10⁻¹⁸ J    |
 | Bohr energy (H-like)           | Eₙ = −2.18×10⁻¹⁸(Z²/n²) J      | —                          |
 | Energy of transition           | ΔE = R_H(1/nᵢ² − 1/n_f²)          | Emission: nᵢ > n_f         |
+| Max. number of spectral lines   | Δn(Δn+1)/2                             | Δn = n₂ − n₁ (§5.4)        |
 | de Broglie wavelength          | λ = h/mv = h/p                        | —                          |
 | Heisenberg principle           | Δx·Δp ≥ h/4π                      | Δx·Δv ≥ h/4πm          |
 | Angular momentum (Bohr)        | mₑvr = nh/2π                         | —                          |
@@ -1194,6 +1459,34 @@ Each electron can exchange with every other → 4+3+2+1 = 10 exchanges = maximum
 | Bright lines on dark background                | Dark lines on bright continuous background |
 | Atoms in excited state → ground state         | Atoms in ground state → excited state     |
 | Same wavelengths as absorption (complementary) | Negative of emission spectrum              |
+
+**Further traps worth a second look before an exam:**
+
+* **Subshells vs orbitals in shell n:** number of *subshells* = n; number of *orbitals* = n². Don't answer "3" when asked for the orbital count in n = 3 — that's the subshell count; the orbital count is 9.
+* **Radial vs angular nodes:** radial = n − l − 1 (spherical shells), angular = l (planes through the nucleus). Total nodes = n − 1 either way — swap the two formulas and the total still looks plausible, so it's an easy slip to miss.
+* **Threshold frequency vs threshold wavelength:** a *larger* ν₀ (harder to eject electrons, bigger work function) corresponds to a *smaller* λ₀ = c/ν₀ — easy to flip mid-calculation.
+* **Photoelectric effect, the one-line version:** *frequency* controls whether electrons are ejected at all and their kinetic energy; *intensity* only controls how many electrons come out. Intensity never belongs in a K.E. calculation.
+* **Orbital degeneracy is a hydrogen-only privilege:** 2s = 2p in energy for H and H-like ions only (§11.1). The moment there's more than one electron, shielding splits them and 2s < 2p (§11.2).
+* **Filling order ≠ emptying order:** 4s fills before 3d going in (Aufbau), but 4s *empties* before 3d coming out when forming a cation (§13.3) — these look like mirror-image rules and aren't.
+* **Isotopes vs isobars vs isotones:** isotopes share Z (protons), isobars share A (mass number), isotones share A − Z (neutrons) — all three get tested as "identify the pair" questions.
+* **Mass number vs atomic mass:** mass number (A) is a whole number specific to one nuclide; atomic mass on the periodic table is the isotope-weighted *average* across all naturally occurring isotopes — that's why chlorine's atomic mass (35.45) isn't an integer even though every individual Cl atom has one.
+
+---
+
+## PROBLEM-SOLVING STRATEGY — CHAPTER 2 `[Board · NEET · JEE]`
+
+Before solving, identify which of these ten patterns the question actually is:
+
+1. **Finding p / n / e⁻ from ᴬZX (or an ion):** protons = Z; electrons = Z ∓ (ion charge); neutrons = A − Z always, ion or not.
+2. **Photon energy ↔ wavelength ↔ frequency:** pick the one equation connecting what's given to what's wanted (E = hν, c = νλ, so E = hc/λ) and convert units — nm→m, eV→J — *before* substituting, not after.
+3. **Rydberg equation, forward and backward:** forward — given nᵢ and n_f, find ΔE/λ/ν̄. Backward — given λ, solve for the missing n (it should come out as a clean integer; if it doesn't, re-check the arithmetic before assuming the question is wrong).
+4. **"Maximum number of spectral lines" (§5.4):** a cascade-counting question (Δn(Δn+1)/2), not a single-transition question — check whether it says "the transition n=a to n=b" (one line) or "drops to n=b" from an excited state (possibly many).
+5. **Bohr radius/energy for H-like species:** always check for Z ≠ 1 (He⁺, Li²⁺…) — forgetting to square Z in the energy formula, or scale by 1/Z in the radius formula, is the single most common numeric slip in this chapter.
+6. **de Broglie wavelength:** λ = h/mv — settle the momentum first: is v given directly, or does it need to come from K.E. = ½mv² first?
+7. **Heisenberg uncertainty:** Δx·Δp ≥ h/4π — decide up front whether you're solving for Δx, Δv, or Δp, and don't lose the mass hiding inside Δp = mΔv.
+8. **Checking whether a quantum-number set is valid:** l runs 0 to n−1; mₗ runs −l to +l; ms is only ±½ — check all three constraints, not just one, before calling a set valid or invalid.
+9. **Counting nodes for a given (n, l):** radial = n−l−1, angular = l, total = n−1 — compute all three even if only one is asked, as a self-check that they add up correctly.
+10. **Writing an electronic configuration:** neutral atom → Aufbau (n+l rule), checked against the Cr/Cu-type exceptions (§13.2); ion → start from the neutral atom's configuration, then add/remove using the ns-before-(n−1)d rule for cations (§13.3).
 
 ---
 
