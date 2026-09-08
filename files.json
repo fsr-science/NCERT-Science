@@ -677,7 +677,7 @@
                   "type": "file",
                   "name": "CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY/CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY-NOTES.md",
-                  "sha": "6ddba94864b0341f0ad2213b8c73b52f5e2f770d",
+                  "sha": "a11518e0ff466e901fe3da6c3aa5935a69796716",
                   "mime": "text/markdown"
                 },
                 {
@@ -745,7 +745,7 @@
                   "type": "file",
                   "name": "CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY/CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-NOTES.md",
-                  "sha": "38cf2a5c8e8b6c63f1c5f264c92c881a4514f6cc",
+                  "sha": "d10cb7737f6f46fb04b3f73061bea66bd6dafb96",
                   "mime": "text/markdown"
                 },
                 {
@@ -881,7 +881,7 @@
                   "type": "file",
                   "name": "CHEMISTRY07-REDOX_REACTIONS-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY07-REDOX_REACTIONS/CHEMISTRY07-REDOX_REACTIONS-NOTES.md",
-                  "sha": "eb98dacb254d11179f68dda99c554e2b9d548fa4",
+                  "sha": "5c978d0c0c520513bd485d8213ea0eb751e1cc7c",
                   "mime": "text/markdown"
                 },
                 {
@@ -1668,14 +1668,14 @@
                   "type": "file",
                   "name": "MATHEMATICS10-CONIC_SECTIONS-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS10-CONIC_SECTIONS/MATHEMATICS10-CONIC_SECTIONS-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "9e1a5e9a6a0ab03cafca1efc5a919106fa63f524",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS10-CONIC_SECTIONS-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS10-CONIC_SECTIONS/MATHEMATICS10-CONIC_SECTIONS-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "71b3be01475dd6ffcbc765ae93e9ab38ee740f2b",
                   "mime": "text/markdown"
                 },
                 {
@@ -1689,7 +1689,7 @@
                   "type": "file",
                   "name": "MATHEMATICS10-CONIC_SECTIONS-REVISION_MINDMAPS.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS10-CONIC_SECTIONS/MATHEMATICS10-CONIC_SECTIONS-REVISION_MINDMAPS.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "d5e2086abcc20352fbf8f1c863637c058269b688",
                   "mime": "text/markdown"
                 }
               ]
@@ -1736,14 +1736,14 @@
                   "type": "file",
                   "name": "MATHEMATICS12-LIMITS_AND_DERIVATIVES-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS12-LIMITS_AND_DERIVATIVES/MATHEMATICS12-LIMITS_AND_DERIVATIVES-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "d11404e3f8ce8075ab196c079cc782077f687113",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS12-LIMITS_AND_DERIVATIVES-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS12-LIMITS_AND_DERIVATIVES/MATHEMATICS12-LIMITS_AND_DERIVATIVES-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "437ab497c86ae5f7dff7093d45d7372da9b657f0",
                   "mime": "text/markdown"
                 },
                 {
@@ -1757,7 +1757,7 @@
                   "type": "file",
                   "name": "MATHEMATICS12-LIMITS_AND_DERIVATIVES-REVISION_MINDMAPS.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS12-LIMITS_AND_DERIVATIVES/MATHEMATICS12-LIMITS_AND_DERIVATIVES-REVISION_MINDMAPS.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "59674ffd7c7b08ce68251fda558b62185a4e3d1f",
                   "mime": "text/markdown"
                 }
               ]
@@ -1770,14 +1770,14 @@
                   "type": "file",
                   "name": "MATHEMATICS13-STATISTICS-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS13-STATISTICS/MATHEMATICS13-STATISTICS-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "97b6f2ab1b54ec1ae9310d0cd8db993aa64e1ad6",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS13-STATISTICS-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS13-STATISTICS/MATHEMATICS13-STATISTICS-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "e84b9470c3184db9511c26bd6a1e4cf466d4b86d",
                   "mime": "text/markdown"
                 },
                 {
@@ -1791,7 +1791,7 @@
                   "type": "file",
                   "name": "MATHEMATICS13-STATISTICS-REVISION_MINDMAPS.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS13-STATISTICS/MATHEMATICS13-STATISTICS-REVISION_MINDMAPS.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "e96bbc270086f9a1ce90a294df53e1b1d5388df9",
                   "mime": "text/markdown"
                 }
               ]
@@ -1804,14 +1804,14 @@
                   "type": "file",
                   "name": "MATHEMATICS14-PROBABILITY-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS14-PROBABILITY/MATHEMATICS14-PROBABILITY-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "ae78d705082abb288d1a92c971ef5887a036854f",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "MATHEMATICS14-PROBABILITY-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS14-PROBABILITY/MATHEMATICS14-PROBABILITY-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "4a287ea6a38834f33c88ac90ae2248fc7cc0e15a",
                   "mime": "text/markdown"
                 },
                 {
@@ -1825,7 +1825,7 @@
                   "type": "file",
                   "name": "MATHEMATICS14-PROBABILITY-REVISION_MINDMAPS.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS14-PROBABILITY/MATHEMATICS14-PROBABILITY-REVISION_MINDMAPS.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "64c7919a6a5b08e621ca49581b8a287a345ef552",
                   "mime": "text/markdown"
                 }
               ]
@@ -1858,6 +1858,11 @@
               ]
             }
           ]
+        },
+        {
+          "type": "folder",
+          "name": "PHYSICAL-EDUCATION",
+          "children": []
         },
         {
           "type": "folder",
@@ -2048,7 +2053,7 @@
                   "type": "file",
                   "name": "PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-NOTES.md",
-                  "sha": "20127086e8dea70eb04aa927dc8fe23d7521a154",
+                  "sha": "c30595d0f03cc5418951306b71091975e1e004ea",
                   "mime": "text/markdown"
                 },
                 {
@@ -3228,12 +3233,126 @@
             {
               "type": "folder",
               "name": "HORNBILL",
-              "children": []
+              "children": [
+                {
+                  "type": "file",
+                  "name": "ENGLISH-HORNBILL01-THE_PORTRAIT_OF_A_LADY.pdf",
+                  "path": "NCERT-PDF/ENGLISH/HORNBILL/ENGLISH-HORNBILL01-THE_PORTRAIT_OF_A_LADY.pdf",
+                  "sha": "c3917be8a77bb39dd13446165c43e3b7201e0eda",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-HORNBILL02-A_PHOTOGRAPH.pdf",
+                  "path": "NCERT-PDF/ENGLISH/HORNBILL/ENGLISH-HORNBILL02-A_PHOTOGRAPH.pdf",
+                  "sha": "93fb3af0692d9da975005ac43d9fc1f8834b59a0",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-HORNBILL03-WERE_NOT_AFRAID_TO_DIE_IF_WE_CAN_ALL_BE_TOGETHER.pdf",
+                  "path": "NCERT-PDF/ENGLISH/HORNBILL/ENGLISH-HORNBILL03-WERE_NOT_AFRAID_TO_DIE_IF_WE_CAN_ALL_BE_TOGETHER.pdf",
+                  "sha": "2463ce148aefe628aff29e872c7a3519f978541c",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-HORNBILL04-DISCOVERING_TUT_THE_SAGA_CONTINUES.pdf",
+                  "path": "NCERT-PDF/ENGLISH/HORNBILL/ENGLISH-HORNBILL04-DISCOVERING_TUT_THE_SAGA_CONTINUES.pdf",
+                  "sha": "42764ca8ef5678a79355a798dcc7812e47dd1fdc",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-HORNBILL05-THE_LABURNUM_TOP.pdf",
+                  "path": "NCERT-PDF/ENGLISH/HORNBILL/ENGLISH-HORNBILL05-THE_LABURNUM_TOP.pdf",
+                  "sha": "bcf790b815d37fc94ebf746309187e94c19db13d",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-HORNBILL06-THE_VOICE_OF_THE_RAIN.pdf",
+                  "path": "NCERT-PDF/ENGLISH/HORNBILL/ENGLISH-HORNBILL06-THE_VOICE_OF_THE_RAIN.pdf",
+                  "sha": "54d9aa6446f79888aab15655b64581879334cae8",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-HORNBILL07-THE_AILING_PLANET.pdf",
+                  "path": "NCERT-PDF/ENGLISH/HORNBILL/ENGLISH-HORNBILL07-THE_AILING_PLANET.pdf",
+                  "sha": "e5f41c44db6791bbbe55b620911eb83c8affe537",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-HORNBILL08-CHILDHOOD.pdf",
+                  "path": "NCERT-PDF/ENGLISH/HORNBILL/ENGLISH-HORNBILL08-CHILDHOOD.pdf",
+                  "sha": "d822f8ad75c60b4093b9c6168340b0a13b7707ea",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-HORNBILL09-THE_ADVENTURE.pdf",
+                  "path": "NCERT-PDF/ENGLISH/HORNBILL/ENGLISH-HORNBILL09-THE_ADVENTURE.pdf",
+                  "sha": "e35574b852f21f2177e8dcdd6dcfe00250325423",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-HORNBILL10-SILK_ROAD.pdf",
+                  "path": "NCERT-PDF/ENGLISH/HORNBILL/ENGLISH-HORNBILL10-SILK_ROAD.pdf",
+                  "sha": "c94d2996753b3a575a4bb259811bf4b01dfbe687",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-HORNBILL11-FATHER_TO_SON.pdf",
+                  "path": "NCERT-PDF/ENGLISH/HORNBILL/ENGLISH-HORNBILL11-FATHER_TO_SON.pdf",
+                  "sha": "54fd1aacc44f53eb4735340c634f2203caf54821",
+                  "mime": "application/pdf"
+                }
+              ]
             },
             {
               "type": "folder",
               "name": "SNAPSHOTS",
-              "children": []
+              "children": [
+                {
+                  "type": "file",
+                  "name": "ENGLISH-SNAPSHOTS01-THE_SUMMER_OF_THE_BEAUTIFUL_WHITE_HORSE.pdf",
+                  "path": "NCERT-PDF/ENGLISH/SNAPSHOTS/ENGLISH-SNAPSHOTS01-THE_SUMMER_OF_THE_BEAUTIFUL_WHITE_HORSE.pdf",
+                  "sha": "dd9c9a1545b1f1621e1fbd5c22dda4ddb1447eee",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-SNAPSHOTS02-THE_ADDRESS.pdf",
+                  "path": "NCERT-PDF/ENGLISH/SNAPSHOTS/ENGLISH-SNAPSHOTS02-THE_ADDRESS.pdf",
+                  "sha": "a5588896c77ead832ef842937c5bdf827ddb0e62",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-SNAPSHOTS03-MOTHERS_DAY.pdf",
+                  "path": "NCERT-PDF/ENGLISH/SNAPSHOTS/ENGLISH-SNAPSHOTS03-MOTHERS_DAY.pdf",
+                  "sha": "5e77ef19707bf3f38e0699cdd28d8f05e58b461a",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-SNAPSHOTS04-BIRTH.pdf",
+                  "path": "NCERT-PDF/ENGLISH/SNAPSHOTS/ENGLISH-SNAPSHOTS04-BIRTH.pdf",
+                  "sha": "6bcdf300111193710a424629ceffca91ed7206a1",
+                  "mime": "application/pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "ENGLISH-SNAPSHOTS05-THE_TALE_OF_MELON_CITY.pdf",
+                  "path": "NCERT-PDF/ENGLISH/SNAPSHOTS/ENGLISH-SNAPSHOTS05-THE_TALE_OF_MELON_CITY.pdf",
+                  "sha": "7b9fce6cbf12f220fca641399145ac7591fe120c",
+                  "mime": "application/pdf"
+                }
+              ]
             }
           ]
         },
