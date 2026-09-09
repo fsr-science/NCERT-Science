@@ -55,6 +55,21 @@ flowchart TD
 - **Johannes Kepler (1571–1640):** Brahe's assistant. Analysed Brahe's compiled data and extracted **three elegant laws** — Kepler's Laws — that described planetary motion.
 - **Isaac Newton (1643–1727):** Used Kepler's laws to make the leap to the **Universal Law of Gravitation**, linking terrestrial (apple falling) and celestial (moon orbiting) phenomena.
 
+```mermaid
+timeline
+    title Gravitation — Historical Timeline
+    section Ancient & Medieval
+        ~150 AD : Ptolemy — Geocentric model (Earth at centre)
+        476–550 AD : Aryabhatta — Early heliocentric mention
+    section Renaissance
+        1473–1543 : Copernicus — Definitive heliocentric model
+        1546–1601 : Tycho Brahe — Precise naked-eye observations
+        1564–1642 : Galileo — Equal acceleration for all falling bodies
+    section Scientific Revolution
+        1571–1640 : Kepler — Three laws of planetary motion
+        1643–1727 : Newton — Universal Law of Gravitation
+```
+
 ---
 
 ## SECTION 2 — KEPLER'S LAWS ⭐⭐⭐
@@ -75,6 +90,37 @@ flowchart TD
 
 > [!tip] For Earth: ratio of semi-minor to semi-major axis b/a = 0.99986 — nearly circular!
 
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, <={Stealth[length=7pt,width=5pt]}, thick, scale=1.0]
+  \draw[blue!70!black, line width=1.4pt] (0,0) ellipse (3 and 1.8);
+  \coordinate (O) at (0,0);
+  \coordinate (F1) at (-2.4,0);
+  \coordinate (F2) at (2.4,0);
+  \coordinate (B) at (0,1.8);
+  \coordinate (T) at (1.5,1.559);
+  \draw[dashed, orange!80!black] (T) -- (F1);
+  \draw[dashed, orange!80!black] (T) -- (F2);
+  \draw[gray, line width=0.8pt] (F1) -- (F2);
+  \draw[gray, line width=0.8pt] (O) -- (B);
+  \fill[red!70!black] (F1) circle (3pt);
+  \fill[red!70!black] (F2) circle (3pt);
+  \fill[black] (O) circle (1.5pt);
+  \fill[green!45!black] (T) circle (2.2pt);
+  \node[below, font=\small, red!70!black] at (F1) {$F_1$ (Sun)};
+  \node[below, font=\small, red!70!black] at (F2) {$F_2$};
+  \node[above right, font=\small, green!45!black] at (T) {$T$};
+  \node[below, font=\small] at (-3,-0.15) {$P$};
+  \node[below, font=\small] at (3,-0.15) {$A$};
+  \node[above, font=\small] at (0,1.95) {$B$};
+  \node[below, font=\small] at (O) {$O$};
+  \draw[<->, black!70] (0,-2.3) -- (3,-2.3) node[midway, below, font=\small] {$a$};
+  \draw[<->, black!70] (3.4,0) -- (3.4,1.8) node[midway, right, font=\small] {$b$};
+  \node[below, font=\itshape\small, text=gray] at (0,-2.9) {For any point $T$ on the ellipse, $TF_1+TF_2=2a=$ constant};
+\end{tikzpicture}
+```
+*Fig 2.1 — The ellipse: Sun at focus $F_1$, semi-major axis $a=OA=OP$, semi-minor axis $b=OB$, perihelion $P$, aphelion $A$.*
+
 ### 2.2 Law of Areas (Second Law)
 
 > [!important] Second Law — Law of Areas
@@ -86,6 +132,27 @@ flowchart TD
 > Planet moves **slower** near aphelion (farther from Sun).
 >
 > Area swept per unit time = $\Delta A / \Delta t =$ constant.
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, <={Stealth[length=7pt,width=5pt]}, thick, scale=1.0]
+  \draw[blue!60!black, line width=1.3pt] (0,0) ellipse (3 and 1.8);
+  \coordinate (S) at (-2.4,0);
+  \coordinate (P) at (0.776,1.739);
+  \coordinate (Pp) at (1.268,1.631);
+  \fill[green!30] (S) -- (Pp) -- (P) -- cycle;
+  \fill[orange!80!black] (S) circle (3.2pt);
+  \node[below, font=\small, orange!80!black] at (S) {$S$ (Sun)};
+  \fill[black] (P) circle (2pt);
+  \node[above, font=\small] at (P) {$P$};
+  \draw[->, red!75!black, line width=1.5pt] (S) -- (P) node[midway, below right, font=\small, red!75!black] {$\mathbf{r}$};
+  \draw[->, purple!70!black, line width=1.5pt] (P) -- ++(0.55,0.75) node[above, font=\small, purple!70!black] {$\mathbf{v}$};
+  \draw[->, teal!70!black, line width=1.4pt] (P) -- ++(-1.03,-0.68) node[below left, font=\small, teal!70!black] {$\mathbf{F}$};
+  \node[font=\small, green!35!black] at (-0.5,1.1) {$\Delta A$};
+  \node[below, font=\itshape\small, text=gray] at (0,-2.4) {Equal areas $\Delta A$ swept in equal times $\Delta t$ -- direct consequence of $\mathbf{F}\parallel\mathbf{r}$ (central force) $\Rightarrow$ $L$ conserved};
+\end{tikzpicture}
+```
+*Fig 2.2 — At any point P on the orbit: position vector $\mathbf{r}$ from Sun, velocity $\mathbf{v}$, and central force $\mathbf{F}$ along $-\mathbf{r}$. The wedge $\Delta A$ is what stays constant per unit time.*
 
 **Physical basis — Conservation of Angular Momentum:**
 
@@ -126,6 +193,24 @@ $$\boxed{T^2 \propto a^3} \qquad \text{or} \qquad \frac{T^2}{a^3} = \text{consta
 | Neptune | 450 | 165 | 2.99 |
 
 > [!tip] The constant $T^2/a^3$ is **the same for all planets** — confirming the law. This equals $K_S = 4\pi^2/GM_S$ (derived in Section 8 for satellites).
+
+```desmos
+{
+  "expressions": [
+    { "id": "1", "latex": "(0.763,-0.620)", "label": "Mercury", "color": "#2ca02c" },
+    { "id": "2", "latex": "(1.033,-0.211)", "label": "Venus", "color": "#2ca02c" },
+    { "id": "3", "latex": "(1.176,0.000)", "label": "Earth", "color": "#2ca02c" },
+    { "id": "4", "latex": "(1.358,0.274)", "label": "Mars", "color": "#2ca02c" },
+    { "id": "5", "latex": "(1.891,1.076)", "label": "Jupiter", "color": "#2ca02c" },
+    { "id": "6", "latex": "(2.155,1.470)", "label": "Saturn", "color": "#2ca02c" },
+    { "id": "7", "latex": "(2.458,1.924)", "label": "Uranus", "color": "#2ca02c" },
+    { "id": "8", "latex": "(2.653,2.218)", "label": "Neptune", "color": "#2ca02c" },
+    { "id": "9", "latex": "y=1.5x-1.764", "color": "#1f77b4" }
+  ],
+  "graphSettings": { "xmin": 0, "xmax": 3, "ymin": -1, "ymax": 2.5 }
+}
+```
+*Fig 2.3 — $\log_{10}(a)$ (x-axis) vs $\log_{10}(T)$ (y-axis) for all 8 planets from Table 7.1. They fall on a straight line of slope $\mathbf{3/2}$, which is exactly what $T \propto a^{3/2}$ (i.e. $T^2 \propto a^3$) predicts — the log-log trick compresses Neptune's huge orbit and Mercury's tiny one onto the same readable line.*
 
 ### 2.4 Solved Example 7.1 — Perihelion and Aphelion
 
@@ -172,6 +257,23 @@ where $\hat{r}$ is the unit vector from $m_1$ to $m_2$ and the force on $m_2$ du
 - $\mathbf{F}_{12} = -\mathbf{F}_{21}$ (Newton's third law satisfied).
 - G is the **Universal Gravitational Constant** — same for all pairs of masses everywhere in the universe.
 
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, <={Stealth[length=7pt,width=5pt]}, thick, scale=1.0]
+  \coordinate (M1) at (0,0);
+  \coordinate (M2) at (5,0.6);
+  \fill[blue!70!black] (M1) circle (5pt);
+  \fill[blue!70!black] (M2) circle (5pt);
+  \node[below, font=\small] at (M1) {$m_1$};
+  \node[above, font=\small] at (M2) {$m_2$};
+  \draw[gray, dashed] (M1) -- (M2) node[midway, above, font=\small, gray] {$\mathbf{r}=\mathbf{r}_2-\mathbf{r}_1$};
+  \draw[->, red!75!black, line width=1.6pt] (M1) -- ++(1.9,0.23) node[above, font=\small, red!75!black] {$\mathbf{F}_{12}$};
+  \draw[->, green!45!black, line width=1.6pt] (M2) -- ++(-1.9,-0.23) node[below, font=\small, green!45!black] {$\mathbf{F}_{21}$};
+  \node[below, font=\itshape\small, text=gray] at (2.5,-0.9) {$\mathbf{F}_{12}=-\mathbf{F}_{21}$ -- both point toward the other mass (attractive), equal in magnitude};
+\end{tikzpicture}
+```
+*Fig 3.1 — The attractive Newton's-third-law pair: $\mathbf{F}_{12}$ (on $m_1$, pointing toward $m_2$) and $\mathbf{F}_{21}$ (on $m_2$, pointing toward $m_1$).*
+
 ### 3.3 Principle of Superposition
 
 For a collection of point masses, the total gravitational force on mass $m_1$ is the **vector sum** of forces from all other masses:
@@ -200,6 +302,33 @@ $$\mathbf{F}_1 = \frac{Gm_2 m_1}{r_{21}^2}\hat{r}_{21} + \frac{Gm_3 m_1}{r_{31}^
 >
 > $\mathbf{F}'_R = 2Gm^2\hat{j}$ (directed toward the doubled mass at A)
 
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, <={Stealth[length=7pt,width=5pt]}, thick, scale=1.6]
+  \coordinate (G) at (0,0);
+  \coordinate (A) at (0,1);
+  \coordinate (B) at (-0.866,-0.5);
+  \coordinate (C) at (0.866,-0.5);
+  \draw[gray, line width=1pt] (A) -- (B) -- (C) -- cycle;
+  \fill[blue!70!black] (A) circle (2.5pt);
+  \fill[blue!70!black] (B) circle (2.5pt);
+  \fill[blue!70!black] (C) circle (2.5pt);
+  \fill[orange!80!black] (G) circle (2.8pt);
+  \node[above, font=\small] at (A) {$A\ (m)$};
+  \node[left, font=\small] at (B) {$B\ (m)$};
+  \node[right, font=\small] at (C) {$C\ (m)$};
+  \node[below right, font=\small, orange!80!black] at (0.05,-0.07) {$G\ (2m)$};
+  \draw[->, red!75!black, line width=1.5pt] (G) -- (A) node[midway, right, font=\small, red!75!black] {$\mathbf{F}_{GA}$};
+  \draw[->, red!75!black, line width=1.5pt] (G) -- (B) node[midway, above left, font=\small, red!75!black] {$\mathbf{F}_{GB}$};
+  \draw[->, red!75!black, line width=1.5pt] (G) -- (C) node[midway, above right, font=\small, red!75!black] {$\mathbf{F}_{GC}$};
+  \draw[dashed, gray] (-1.1,0) -- (1.1,0);
+  \draw[orange!80!black] (0.25,0) arc (0:-30:0.25);
+  \node[font=\small, orange!80!black] at (0.36,-0.14) {$30^\circ$};
+  \node[below, font=\itshape\small, text=gray] at (0,-1.05) {Three equal forces at $120^\circ$ apart sum to zero by symmetry: $\mathbf{F}_{GA}+\mathbf{F}_{GB}+\mathbf{F}_{GC}=\mathbf{0}$};
+\end{tikzpicture}
+```
+*Fig 3.2 — Example 7.2: mass $2m$ at centroid $G$, equidistant (1 m) from each vertex mass $m$. $GC$ makes $30^\circ$ with the horizontal, exactly as stated in the solution.*
+
 ---
 
 ## SECTION 4 — THE GRAVITATIONAL CONSTANT G ⭐⭐
@@ -207,6 +336,28 @@ $$\mathbf{F}_1 = \frac{Gm_2 m_1}{r_{21}^2}\hat{r}_{21} + \frac{Gm_3 m_1}{r_{31}^
 ### 4.1 Cavendish Experiment (1798)
 
 **Apparatus:** A torsion balance — a light rigid bar AB with two small lead spheres at its ends, suspended by a fine wire from a rigid support. Two large lead spheres are brought close to the small ones, on opposite sides.
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, <={Stealth[length=7pt,width=5pt]}, thick, scale=1.0]
+  \draw[gray, line width=2pt] (-0.35,3.7) -- (0.35,3.7);
+  \draw[gray, line width=1pt] (0,3.6) -- (0.08,3.5) -- (-0.08,3.4) -- (0.08,3.3) -- (-0.08,3.2) -- (0.08,3.1) -- (0,3.0);
+  \draw[black, line width=1.4pt] (-1.8,3.0) -- (1.8,3.0);
+  \fill[blue!70!black] (-1.8,3.0) circle (5pt);
+  \fill[blue!70!black] (1.8,3.0) circle (5pt);
+  \node[below, font=\small] at (-1.8,2.85) {$A$ (small sphere $m$)};
+  \node[below, font=\small] at (1.8,2.85) {$B$ (small sphere $m$)};
+  \fill[orange!80!black] (-2.9,2.3) circle (9pt);
+  \fill[orange!80!black] (2.9,3.7) circle (9pt);
+  \node[left, font=\small, orange!80!black] at (-3.15,2.3) {$S_1\ (M)$};
+  \node[right, font=\small, orange!80!black] at (3.15,3.7) {$S_2\ (M)$};
+  \draw[->, red!75!black, line width=1.2pt] (-1.8,3.0) -- (-2.4,2.5);
+  \draw[->, red!75!black, line width=1.2pt] (1.8,3.0) -- (2.4,3.5);
+  \draw[<->, gray] (-1.8,2.6) -- (1.8,2.6) node[midway, below, font=\small] {$L$};
+  \node[below, font=\itshape\small, text=gray] at (0,1.9) {Large spheres attract the near small spheres, twisting the wire by $\theta$ until restoring torque $\tau\theta$ balances gravitational torque $F\!\cdot\!L$};
+\end{tikzpicture}
+```
+*Fig 4.1 — Cavendish's torsion balance (schematic). The angle of twist $\theta$, measured experimentally, lets you solve Eq. (7.7) for $G$.*
 
 **Principle:**
 - Large spheres attract small ones with equal and opposite forces → a **torque** on bar AB = F × L.
@@ -262,6 +413,31 @@ $$\boxed{g(d) = g\left(1 - \frac{d}{R_E}\right)} \qquad \text{...(7.19)}$$
 - g **decreases linearly** with depth.
 - At the centre ($d = R_E$): g = 0 (forces from all sides cancel).
 
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, <={Stealth[length=7pt,width=5pt]}, thick, scale=1.0]
+  \fill[orange!15] (0,0) circle (2.5);
+  \fill[blue!8] (0,0) circle (2.0);
+  \draw[blue!60!black, line width=1.3pt] (0,0) circle (2.5);
+  \draw[blue!60!black, line width=1pt, dashed] (0,0) circle (2.0);
+  \coordinate (O) at (0,0);
+  \fill[black] (O) circle (1.5pt);
+  \node[below, font=\small] at (O) {$O$};
+  \coordinate (Q) at (0,2.0);
+  \fill[green!45!black] (Q) circle (2.5pt);
+  \node[above, font=\small, green!45!black] at (Q) {$Q$ (depth $d$)};
+  \draw[green!45!black] (O) -- (Q);
+  \coordinate (P) at (2.333,1.633);
+  \fill[red!70!black] (P) circle (2.5pt);
+  \node[right, font=\small, red!70!black] at (P) {$P$ (height $h$)};
+  \draw[red!70!black, dashed] (O) -- (P);
+  \node[font=\small, orange!70!black] at (1.85,-1.55) {shell of thickness $d$};
+  \draw[<->, gray] (-2.5,-3.0) -- (0,-3.0) node[midway, below, font=\small] {$R_E$};
+  \node[below, font=\itshape\small, text=gray] at (0,-3.7) {Outer shell (shaded) exerts zero net force on $Q$; only the inner sphere of radius $R_E-d$ pulls on $Q$. Point $P$ outside feels the whole Earth's mass acting from $O$.};
+\end{tikzpicture}
+```
+*Fig 5.1 — Why $g$ behaves differently above and below the surface: at height $h$ the whole Earth pulls from the centre; at depth $d$ only the smaller inner sphere contributes (shell theorem).*
+
 ### 5.4 Summary — Variation of g
 
 > [!important] Variation of g — Critical Summary
@@ -273,6 +449,18 @@ $$\boxed{g(d) = g\left(1 - \frac{d}{R_E}\right)} \qquad \text{...(7.19)}$$
 
 > [!warning] Exam Trap
 > $g$ decreases going **both** up (above surface) and going down (below surface). Maximum $g$ is at the surface. The rate of decrease above is twice the rate below (for small displacements).
+
+```desmos
+{
+  "expressions": [
+    { "id": "1", "latex": "y=\\{x<1: 9.8x, 9.8/x^{2}\\}", "color": "#d62728" },
+    { "id": "2", "latex": "x=1", "color": "#888888" },
+    { "id": "3", "latex": "(1,9.8)", "label": "surface, g maximum", "color": "#1f77b4" }
+  ],
+  "graphSettings": { "xmin": 0, "xmax": 4, "ymin": 0, "ymax": 11 }
+}
+```
+*Fig 5.2 — $g$ (y-axis, m s⁻²) vs distance from Earth's centre in units of $R_E$ (x-axis). Linear rise inside ($g\propto r$), sharp peak of 9.8 m s⁻² exactly at $r=R_E$, then inverse-square fall outside ($g\propto 1/r^2$). This single curve is the whole of Section 5 in one picture.*
 
 ---
 
@@ -299,6 +487,18 @@ $$\boxed{V(r) = -\frac{GM_E m}{r}} \qquad \text{...(7.25), valid for } r > R_E$$
 > [!note] Why Negative?
 > We set $V = 0$ at infinity. Moving a mass from infinity toward Earth, gravity does positive work — so PE decreases from 0, becoming negative. A negative PE means the mass is in a **bound state** (must supply energy to escape to infinity).
 
+```desmos
+{
+  "expressions": [
+    { "id": "1", "latex": "y=-1/x\\{x\\ge1\\}", "color": "#1f77b4", "label": "exact V(r)" },
+    { "id": "2", "latex": "y=x-2\\{0.7\\le x\\le1.6\\}", "color": "#d62728", "label": "mgh approximation" },
+    { "id": "3", "latex": "(1,-1)", "label": "Earth's surface", "color": "#2ca02c" }
+  ],
+  "graphSettings": { "xmin": 0.5, "xmax": 4, "ymin": -2, "ymax": 0.5 }
+}
+```
+*Fig 6.1 — Blue: exact $V(r)=-GM_Em/r$ in units of $GM_Em/R_E$, plotted against $r/R_E$. Red: the linear $mgh$ approximation, which is the **tangent line at the surface**. They agree only very close to $r=R_E$ — the further you move away, the more the straight-line approximation overshoots.*
+
 ### 6.3 Gravitational Potential (Field Concept)
 
 The **gravitational potential** is defined as the PE of a **unit mass** at that point:
@@ -323,6 +523,35 @@ For a system of n particles, total PE = sum over all pairs (superposition princi
 > Gravitational potential at centre (distance $r = l\sqrt{2}/2$ from each corner):
 >
 > $$U(r) = -4\sqrt{2}\,\frac{Gm}{l}$$
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, <={Stealth[length=7pt,width=5pt]}, thick, scale=1.1]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (2,0);
+  \coordinate (C) at (2,2);
+  \coordinate (D) at (0,2);
+  \coordinate (O) at (1,1);
+  \draw[blue!60!black, line width=1.3pt] (A) -- (B) -- (C) -- (D) -- cycle;
+  \draw[gray, dashed, line width=0.9pt] (A) -- (C);
+  \draw[gray, dashed, line width=0.9pt] (B) -- (D);
+  \fill[blue!70!black] (A) circle (3pt);
+  \fill[blue!70!black] (B) circle (3pt);
+  \fill[blue!70!black] (C) circle (3pt);
+  \fill[blue!70!black] (D) circle (3pt);
+  \fill[orange!80!black] (O) circle (2.5pt);
+  \node[below left, font=\small] at (A) {$m$};
+  \node[below right, font=\small] at (B) {$m$};
+  \node[above right, font=\small] at (C) {$m$};
+  \node[above left, font=\small] at (D) {$m$};
+  \node[below right, font=\small, orange!80!black] at (0.12,0.92) {centre};
+  \node[below, font=\small] at (1,0) {$l$};
+  \node[left, font=\small] at (0,1) {$l$};
+  \node[above, font=\small, gray] at (1.15,1.55) {$\sqrt{2}\,l$};
+  \node[below, font=\itshape\small, text=gray] at (1,-0.55) {4 side pairs at distance $l$, 2 diagonal pairs at distance $\sqrt{2}\,l$};
+\end{tikzpicture}
+```
+*Fig 6.2 — Four equal masses at square corners: the potential energy sum has 6 pairs total — 4 at distance $l$, 2 at distance $\sqrt{2}\,l$ across the diagonals.*
 
 ---
 
@@ -368,6 +597,24 @@ $$v_e = \sqrt{2 \times 9.8 \times 6.4 \times 10^6} \approx \boxed{11.2 \text{ km
 >
 > $$v = \sqrt{\frac{3GM}{5R}}$$
 
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, <={Stealth[length=7pt,width=5pt]}, thick, scale=0.75]
+  \draw[blue!60!black, fill=blue!12, line width=1.2pt] (0,0) circle (1);
+  \draw[orange!70!black, fill=orange!25, line width=1.2pt] (6,0) circle (1);
+  \node[below, font=\small] at (0,-1.3) {$M$ (mass $M$, radius $R$)};
+  \node[below, font=\small] at (6,-1.3) {$4M$ (mass $4M$, radius $R$)};
+  \coordinate (N) at (2,0);
+  \fill[red!75!black] (N) circle (3pt);
+  \node[above, font=\small, red!75!black] at (N) {$N$ (neutral point)};
+  \draw[->, green!45!black, line width=1.6pt] (1,0) -- (1.9,0) node[midway, above, font=\small, green!45!black] {$v$};
+  \draw[<->, gray] (0,1.6) -- (2,1.6) node[midway, above, font=\small] {$r=2R$};
+  \draw[<->, gray] (0,2.3) -- (6,2.3) node[midway, above, font=\small] {$6R$ (centre-to-centre)};
+  \node[below, font=\itshape\small, text=gray] at (3,-2.0) {At $N$, the pulls of $M$ and $4M$ cancel exactly. A projectile launched from $M$'s surface toward $4M$ need only just reach $N$};
+\end{tikzpicture}
+```
+*Fig 7.1 — Both spheres have the same radius $R$ but different mass ($M$ vs $4M$), so the neutral point sits closer to the lighter sphere: $r=2R$, not the midpoint.*
+
 ---
 
 ## SECTION 8 — EARTH SATELLITES ⭐⭐⭐
@@ -382,6 +629,23 @@ $$\boxed{V = \sqrt{\frac{GM_E}{R_E+h}}} \qquad \text{...(7.35)}$$
 
 - For $h = 0$: $V = \sqrt{GM_E/R_E} = \sqrt{gR_E} \approx$ **7.9 km s⁻¹** (first cosmic velocity)
 - V **decreases** as h increases (higher orbits → slower satellites).
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, <={Stealth[length=7pt,width=5pt]}, thick, scale=1.0]
+  \draw[blue!60!black, fill=blue!12, line width=1.3pt] (0,0) circle (1.6);
+  \node[font=\small] at (0,0) {Earth};
+  \draw[gray, dashed, line width=1pt] (0,0) circle (2.8);
+  \coordinate (Sat) at (1.98,1.98);
+  \fill[orange!80!black] (Sat) circle (3pt);
+  \node[above right, font=\small, orange!80!black] at (Sat) {satellite, mass $m$};
+  \draw[gray] (0,0) -- (Sat) node[midway, below right, font=\small, gray] {$R_E+h$};
+  \draw[->, green!45!black, line width=1.6pt] (Sat) -- ++(-1.4,1.4) node[above, font=\small, green!45!black] {$\mathbf{V}$ (tangential)};
+  \draw[->, red!75!black, line width=1.6pt] (Sat) -- ++(-0.99,-0.99) node[below, font=\small, red!75!black] {$\mathbf{F}$ (centripetal $=$ gravity)};
+  \node[below, font=\itshape\small, text=gray] at (0,-3.4) {Gravity supplies exactly the centripetal force needed: $\dfrac{mV^2}{R_E+h}=\dfrac{GM_Em}{(R_E+h)^2}$};
+\end{tikzpicture}
+```
+*Fig 8.1 — Circular orbit: tangential velocity $\mathbf{V}$ perpendicular to the radius, gravitational force $\mathbf{F}$ pointing toward Earth's centre providing the centripetal pull.*
 
 ### 8.2 Time Period
 
@@ -439,6 +703,18 @@ $$\boxed{E = KE + PE = -\frac{GM_E m}{2(R_E+h)}} \qquad \text{...(7.42)}$$
 > **Chain:** $|KE| = |E|$ ; $|PE| = 2|E|$ ; $PE = 2E$
 
 > [!tip] Virial Theorem in action: For a bound gravitational system, $KE = -\tfrac{1}{2} \times PE = -E$. Total energy is always **negative** for a bound (closed-orbit) system. If $E \geq 0$, the object escapes.
+
+```desmos
+{
+  "expressions": [
+    { "id": "1", "latex": "y=1/(2x)", "color": "#2ca02c", "label": "KE" },
+    { "id": "2", "latex": "y=-1/x", "color": "#d62728", "label": "PE" },
+    { "id": "3", "latex": "y=-1/(2x)", "color": "#1f77b4", "label": "E (total)" }
+  ],
+  "graphSettings": { "xmin": 1, "xmax": 5, "ymin": -1, "ymax": 0.6 }
+}
+```
+*Fig 9.1 — KE (green), PE (red), and total E (blue) vs orbital radius $(R_E+h)/R_E$, all in units of $GM_Em/R_E$. Notice PE is always exactly twice the magnitude of E, and KE is always exactly $-E$ — and that KE (the satellite's speed) genuinely falls as the orbit climbs, which is Points to Ponder #5.*
 
 ### 9.4 Binding Energy
 
