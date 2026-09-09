@@ -19,11 +19,13 @@ flowchart TD
     E3 --> F["Graphical Representations"]
     F --> F1["x-t graph: slope = velocity"]
     F --> F2["v-t graph: slope = acceleration, area = displacement"]
+    F2 --> F2a["Wavy velocity: displacement = signed area, distance = sum of |area|"]
     F2 --> G["Uniformly Accelerated Motion"]
     G --> G1["v = v0 + at"]
     G --> G2["x = v0t + (1/2)at^2"]
     G --> G3["v^2 = v0^2 + 2ax"]
-    G3 --> H["Special Cases"]
+    G3 --> G4["Strategy: missing quantity picks the equation"]
+    G4 --> H["Special Cases"]
     H --> H1["Free Fall: a = g = 9.8 m s^-2"]
     H --> H2["Stopping Distance: ds = v0^2 / (2a)"]
     H --> H3["Relative Velocity: v_AB = v_A - v_B"]
@@ -145,6 +147,17 @@ $$\bar{v} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}$$
 >
 > Confirmed by NCERT Table 2.1 — as $\Delta t \to 0$, $\Delta x / \Delta t \to 3.84$ m s⁻¹.
 
+> **Desmos graph placeholder — add in a later pass**
+>
+> Planned graph: the curve $x = 0.08t^3$ for $t \in [2, 6]$ s ($x$ in metres), with a secant line through $t = 4-\tfrac{\Delta t}{2}$ and $t = 4+\tfrac{\Delta t}{2}$, and a slider for $\Delta t \in [0.01, 2.0]$ s so the secant visibly rotates into the tangent at $t=4$ s as $\Delta t \to 0$.
+> NCERT Table 2.1 values (this is exactly what the slider should reproduce):
+>
+> | $\Delta t$ (s) | 2.0 | 1.0 | 0.5 | 0.1 | 0.01 |
+> |:---:|:---:|:---:|:---:|:---:|:---:|
+> | $\Delta x/\Delta t$ (m s⁻¹) | 3.92 | 3.86 | 3.845 | 3.8402 | 3.8400 |
+>
+> The secant's slope converges monotonically to $3.84$ m s⁻¹ — the tangent slope — exactly matching the calculus answer above.
+
 ### 3.4 Instantaneous Speed
 
 - **Instantaneous speed** = magnitude of instantaneous velocity = $|v|$
@@ -202,6 +215,65 @@ $$a = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} = \frac{dv}{dt}$$
 | Uniformly accelerated ($a > 0$) | Upward parabola | Straight line, positive slope |
 | Uniformly decelerated ($a < 0$) | Downward parabola | Straight line, negative slope |
 
+```tikz
+\begin{tikzpicture}[thick, font=\small]
+  \begin{scope}
+    \draw[->, line width=0.8pt] (0,0) -- (2.4,0) node[right, font=\tiny] {$t$};
+    \draw[->, line width=0.8pt] (0,0) -- (0,1.8) node[above, font=\tiny] {$x$};
+    \draw[blue!70!black, line width=1.6pt] (0,0.15) -- (2.2,1.6);
+    \node[below] at (1.1,-0.4) {$a=0$};
+  \end{scope}
+  \begin{scope}[xshift=3.4cm]
+    \draw[->, line width=0.8pt] (0,0) -- (2.4,0) node[right, font=\tiny] {$t$};
+    \draw[->, line width=0.8pt] (0,0) -- (0,1.8) node[above, font=\tiny] {$x$};
+    \draw[orange!80!black, line width=1.6pt] plot[smooth] coordinates {(0,0.1) (0.6,0.2) (1.2,0.5) (1.8,1.0) (2.2,1.55)};
+    \node[below] at (1.1,-0.4) {$a>0$};
+  \end{scope}
+  \begin{scope}[xshift=6.8cm]
+    \draw[->, line width=0.8pt] (0,0) -- (2.4,0) node[right, font=\tiny] {$t$};
+    \draw[->, line width=0.8pt] (0,0) -- (0,1.8) node[above, font=\tiny] {$x$};
+    \draw[red!70!black, line width=1.6pt] plot[smooth] coordinates {(0,0.1) (0.6,0.75) (1.2,1.2) (1.8,1.45) (2.2,1.5)};
+    \node[below] at (1.1,-0.4) {$a<0$};
+  \end{scope}
+\end{tikzpicture}
+```
+
+*Reading the figure:* the **bend direction** of the x–t curve *is* the sign of acceleration — bending upward (concave up, getting steeper) means $a>0$; bending downward (concave down, flattening out) means $a<0$; no bend at all means $a=0$. This is the fastest way to read acceleration off a position-time graph without doing any calculus.
+
+The four v–t cases below match NCERT Fig. 2.3 exactly — the two things that can each independently be $+$ or $-$ are the **direction of motion** and the **sign of acceleration**:
+
+```tikz
+\begin{tikzpicture}[thick, font=\small]
+  \begin{scope}
+    \draw[gray] (-0.3,0) -- (2.3,0);
+    \draw[->, line width=0.8pt] (0,-1.2) -- (0,1.6) node[above, font=\tiny] {$v$};
+    \draw[blue!70!black, line width=1.6pt] (0,0.2) -- (2,1.4);
+    \node[below] at (1,-1.5) {(a) $+$dir, $a>0$};
+  \end{scope}
+  \begin{scope}[xshift=3.6cm]
+    \draw[gray] (-0.3,0) -- (2.3,0);
+    \draw[->, line width=0.8pt] (0,-1.2) -- (0,1.6) node[above, font=\tiny] {$v$};
+    \draw[orange!80!black, line width=1.6pt] (0,1.4) -- (2,0.2);
+    \node[below] at (1,-1.5) {(b) $+$dir, $a<0$};
+  \end{scope}
+  \begin{scope}[yshift=-4.3cm]
+    \draw[gray] (-0.3,0) -- (2.3,0);
+    \draw[->, line width=0.8pt] (0,-1.6) -- (0,1.2) node[above, font=\tiny] {$v$};
+    \draw[red!70!black, line width=1.6pt] (0,-0.2) -- (2,-1.4);
+    \node[below] at (1,-1.9) {(c) $-$dir, $a<0$};
+  \end{scope}
+  \begin{scope}[xshift=3.6cm, yshift=-4.3cm]
+    \draw[gray] (-0.3,0) -- (2.3,0);
+    \draw[->, line width=0.8pt] (0,-1.2) -- (0,1.6) node[above, font=\tiny] {$v$};
+    \draw[violet!70!black, line width=1.6pt] (0,1.4) -- (2,-1.0);
+    \node[below, font=\tiny] at (1.17,0.15) {$t_1$};
+    \node[below] at (1,-1.9) {(d) reverses at $t_1$};
+  \end{scope}
+\end{tikzpicture}
+```
+
+*Reading the figure:* (a) speeding up while moving forward; (b) slowing down while still moving forward (deceleration, but $v$ stays positive); (c) speeding up while moving backward (both $v$ and $a$ negative — this is *still* "speeding up," which is why "negative acceleration $\ne$ slowing down" is the trap in §4.3); (d) constant negative acceleration throughout — the object moves forward, slows, crosses $v=0$ at $t_1$, then moves backward, picking up speed in the new direction (a ball thrown straight up is exactly this case).
+
 > [!tip] JEE Note
 > In realistic graphs, x–t, v–t, a–t curves are **smooth** (no sharp kinks). Sharp kinks imply non-differentiable functions — physically impossible since velocity and acceleration cannot change instantaneously.
 
@@ -225,6 +297,37 @@ $$x = \int_{t_1}^{t_2} v \, dt$$
 > [!warning] Board Note
 > Students often confuse "area under v–t curve" (= displacement) with "area under a–t curve" (= change in velocity, $\Delta v$). Know **both**!
 
+### 5.1 Wavy Velocity — Signed Area vs. Absolute Area ⭐⭐
+
+> [!important] What happens when velocity changes sign
+> If an object reverses direction one or more times, the v–t curve crosses the time axis. The region **above** the axis contributes a **positive** area; the region **below** contributes a **negative** area (since $v<0$ there). Displacement and distance treat these regions differently:
+
+$$\text{Displacement} = A_1 - A_2 + A_3 - \cdots \qquad \text{(signed sum — regions below the axis subtract)}$$
+
+$$\text{Distance} = |A_1| + |A_2| + |A_3| + \cdots \qquad \text{(sum of magnitudes — every region adds)}$$
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, thick]
+  \draw[->, line width=1pt] (-0.3,0) -- (6.8,0) node[right, font=\small] {$t$};
+  \draw[->, line width=1pt] (0,-2.0) -- (0,2.0) node[above, font=\small] {$v$};
+  \fill[green!25] plot[smooth] coordinates {(0,0) (0.5,1.0) (1,1.4) (1.5,1.0) (2,0)} -- cycle;
+  \fill[red!20] plot[smooth] coordinates {(2,0) (2.5,-1.0) (3,-1.4) (3.5,-1.0) (4,0)} -- cycle;
+  \fill[green!25] plot[smooth] coordinates {(4,0) (4.5,0.8) (5,1.1) (5.5,0.6) (6,0)} -- cycle;
+  \draw[blue!70!black, line width=1.8pt]
+    plot[smooth] coordinates {(0,0) (0.5,1.0) (1,1.4) (1.5,1.0) (2,0) (2.5,-1.0) (3,-1.4) (3.5,-1.0) (4,0) (4.5,0.8) (5,1.1) (5.5,0.6) (6,0)};
+  \node[font=\small, green!40!black] at (1,0.55) {$A_1\ (+)$};
+  \node[font=\small, red!60!black] at (3,-0.55) {$A_2\ (-)$};
+  \node[font=\small, green!40!black] at (5,0.45) {$A_3\ (+)$};
+  \node[below, font=\itshape\small, text=gray] at (3.2,-1.85) {Displacement $=A_1-A_2+A_3$ \quad Distance $=|A_1|+|A_2|+|A_3|$};
+\end{tikzpicture}
+```
+
+*Reading the figure:* the curve rises above the axis ($A_1$ — object moving in the $+$ direction), dips below it ($A_2$ — the object has reversed and is now moving in the $-$ direction), then rises again ($A_3$). Net displacement counts $A_2$ as a subtraction; total distance counts it as a fresh contribution — exactly like an odometer, which never runs backward.
+
+> [!warning] NEET/JEE Trap
+> This is the general version of the trap flagged in Section 9: **whenever a v–t graph dips below the axis, "area under the curve" for displacement subtracts that region, but distance always adds it.** A particle that ends up back near its starting point (small net displacement) can still have covered a large total distance — this is a favourite two-mark "distance vs. displacement from a graph" question.
+
 ---
 
 ## SECTION 6 — KINEMATIC EQUATIONS FOR UNIFORM ACCELERATION ⭐⭐⭐
@@ -243,7 +346,60 @@ For an object with **constant acceleration $a$**, initial velocity $v_0$ at $t =
 > [!note]
 > If initial position is $x_0$ (not zero), replace $x$ with $(x - x_0)$ in all equations.
 
-### 6.2 Derivation Summary (Calculus Method — NCERT Example 2.2)
+### 6.2 Derivation via Graphical (Area) Method ⭐⭐⭐
+
+> [!important] This is how NCERT itself first obtains Eq. 2 and Eq. 3 — geometrically, from the area under the v–t line — before the calculus method in 6.3.
+
+Consider an object with initial velocity $v_0$ at $t=0$, reaching velocity $v$ at time $t$, under constant acceleration $a$. Its v–t graph is the straight line $AB$ from $A(0, v_0)$ to $B(t, v)$.
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, thick]
+  \coordinate (O) at (0,0);
+  \coordinate (A) at (0,1.5);
+  \coordinate (D) at (5,0);
+  \coordinate (C) at (5,1.5);
+  \coordinate (B) at (5,4.2);
+  \draw[->, line width=1pt] (-0.3,0) -- (6.3,0) node[right, font=\small] {$t$};
+  \draw[->, line width=1pt] (0,-0.3) -- (0,5) node[above, font=\small] {$v$};
+  \draw[fill=blue!12, draw=none] (O) -- (A) -- (C) -- (D) -- cycle;
+  \draw[fill=orange!20, draw=none] (A) -- (B) -- (C) -- cycle;
+  \draw[blue!70!black, line width=1.8pt] (A) -- (B);
+  \draw[gray] (O) -- (A) -- (B) -- (D) -- cycle;
+  \draw[dashed, gray] (A) -- (C) -- (B);
+  \draw[dashed, gray] (C) -- (D);
+  \node[left, font=\small] at (-0.15,1.5) {$A,\ v_0$};
+  \node[right, font=\small] at (5.15,4.2) {$B,\ v$};
+  \node[below left, font=\small] at (O) {$O$};
+  \node[below, font=\small] at (D) {$D\ (t)$};
+  \node[right, font=\small] at (5.05,1.35) {$C$};
+  \node[font=\small, blue!50!black] at (2.4,0.7) {$v_0 t$};
+  \node[font=\small, orange!70!black] at (4.35,2.6) {$\tfrac12(v-v_0)t$};
+  \node[below, font=\itshape\small, text=gray] at (2.6,-0.9) {Area (rectangle $OACD$ + triangle $ACB$) $=$ displacement $x$};
+\end{tikzpicture}
+```
+
+*Reading the figure:* the total area under $AB$, from $t=0$ to $t$, splits cleanly into a **rectangle** $OACD$ (height $v_0$, width $t$) and a **triangle** $ACB$ (base $t$, height $v-v_0$).
+
+**Step 1 — add the two areas** (Section 5: area under v–t = displacement $x$):
+
+$$x = \underbrace{v_0 t}_{\text{rectangle } OACD} + \underbrace{\tfrac{1}{2}(v - v_0)t}_{\text{triangle } ACB}$$
+
+**Step 2 — substitute $v - v_0 = at$** (the first equation of motion):
+
+$$x = v_0 t + \tfrac{1}{2}(at)(t) \;\Rightarrow\; \boxed{x = v_0 t + \tfrac{1}{2}at^2}$$
+
+**Step 3 — eliminate $t$ for the third equation.** From Eq. 1, $t = (v-v_0)/a$. Writing the same area as (average height) × (width):
+
+$$x = \bar v\, t = \left(\frac{v+v_0}{2}\right)\left(\frac{v-v_0}{a}\right) = \frac{v^2-v_0^2}{2a} \;\Rightarrow\; \boxed{v^2 = v_0^2 + 2ax}$$
+
+> [!tip] Why keep both derivations?
+> The graphical method is faster to *see* and is exactly what's being tested when a question gives you a graph instead of numbers. The calculus method below is the one that survives once acceleration stops being constant — keep both tools.
+
+### 6.3 Derivation via Calculus Method (NCERT Example 2.2)
+
+> [!note]
+> The graphical method above assumed a straight v–t line (constant $a$) from the start. The calculus method below makes no such assumption until the integration step — which is exactly why it generalizes to *non-uniform* acceleration (see the JEE note below).
 
 **Equation 1:**
 
@@ -269,19 +425,46 @@ For an object with **constant acceleration $a$**, initial velocity $v_0$ at $t =
 > [!warning] JEE Note
 > Kinematic equations are valid **only for constant acceleration** (both magnitude and direction constant). For variable acceleration, use calculus directly — integrate $a$ to get $v$, integrate $v$ to get $x$.
 
-### 6.3 Average Velocity Under Constant Acceleration
+### 6.4 Average Velocity Under Constant Acceleration
 
 $$\bar{v} = \frac{v + v_0}{2}$$
 
 This is the **arithmetic mean** of initial and final velocities — valid **only for constant acceleration**.
 
-### 6.4 Distance in the nth Second
+### 6.5 Distance in the nth Second ⭐⭐
 
-$$s_n = v_0 + a\!\left(n - \frac{1}{2}\right)$$
+> [!info] What "nth second" means
+> $s_n$ is the distance covered **during** the interval from $t=(n-1)\,\text{s}$ to $t=n\,\text{s}$ — one specific one-second slice, not the total distance from $0$ to $n$ seconds.
 
-This gives the distance covered in the **nth second specifically** — NOT total distance in $n$ seconds.
+**Derivation (calculus):** the distance in $[n-1, n]$ is the area under the v–t line over just that slice:
 
-### 6.5 Worked NCERT Examples
+$$s_n = \int_{n-1}^{n} v\, dt = \int_{n-1}^{n} (v_0 + at)\, dt = \Big[v_0 t + \tfrac{1}{2}at^2\Big]_{n-1}^{n}$$
+
+$$s_n = v_0\big(n-(n-1)\big) + \tfrac12 a\big(n^2-(n-1)^2\big) = v_0 + \tfrac12 a(n+n-1)$$
+
+$$\boxed{s_n = v_0 + \frac{a}{2}(2n-1)}$$
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, thick]
+  \draw[->, line width=1pt] (-0.3,0) -- (6.5,0) node[right, font=\small] {$t\ (\mathrm{s})$};
+  \draw[->, line width=1pt] (0,-0.3) -- (0,4.6) node[above, font=\small] {$v$};
+  \fill[orange!30] (3,0) -- (3,2.4) -- (4,3.0) -- (4,0) -- cycle;
+  \draw[blue!70!black, line width=1.8pt] (0,0.6) -- (6,4.2);
+  \foreach \x in {1,2,3,4,5} { \draw[gray!50] (\x,0) -- (\x,{0.6+\x*0.6}); }
+  \node[below, font=\small] at (3,-0.05) {$n-1$};
+  \node[below, font=\small] at (4,-0.05) {$n$};
+  \node[font=\small, orange!70!black] at (3.5,1.1) {$s_n$};
+  \node[below, font=\itshape\small, text=gray] at (3,-0.9) {Shaded strip $=$ distance covered in the $n$-th second};
+\end{tikzpicture}
+```
+
+*Reading the figure:* each gridline marks a whole second; the shaded strip between $t=n-1$ and $t=n$ is $s_n$ — a thin trapezoid, not the full area from the origin (that full area would be total distance in $n$ seconds, a different and larger quantity).
+
+> [!tip] Cross-check against Galileo's Law (Section 7.1)
+> For free fall from rest ($v_0 = 0$), this reduces to $s_n = \frac{a}{2}(2n-1)$, i.e. $s_1 : s_2 : s_3 \cdots = 1:3:5\cdots$ — exactly the odd-number ratio. The general $s_n$ formula and Galileo's special case are the same result.
+
+### 6.6 Worked NCERT Examples
 
 **Example 2.1 — Position as function of time:** $x = a + bt^2$ where $a = 8.5$ m, $b = 2.5$ m s⁻²
 
@@ -296,6 +479,28 @@ This gives the distance covered in the **nth second specifically** — NOT total
 
 **Example 2.3 — Ball thrown upward from 25 m height at 20 m s⁻¹:** (Take $g = 10$ m s⁻²)
 
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=6pt,width=4pt]}, thick]
+  \draw[line width=1pt] (-0.6,0) -- (2.6,0);
+  \draw[fill=gray!20] (0,0) rectangle (0.9,2.5);
+  \node[font=\tiny, gray!60!black, rotate=90] at (0.45,1.25) {building};
+  \coordinate (A) at (0.45,2.5);
+  \coordinate (Bmax) at (0.45,4.5);
+  \fill (A) circle (1.6pt);
+  \fill (Bmax) circle (1.6pt);
+  \draw[->, blue!70!black, line width=1.3pt] (A) -- ++(0,0.6) node[right, font=\small, blue!70!black] {$v_0=20$ m/s};
+  \draw[dashed, gray] (A) -- (Bmax);
+  \node[left, font=\small] at (A) {$A$};
+  \node[above, font=\small] at (Bmax) {$B,\ v=0$};
+  \draw[<->, gray] (1.3,2.5) -- (1.3,4.5) node[midway, right, font=\small] {$20$ m};
+  \draw[<->, gray] (1.75,0) -- (1.75,2.5) node[midway, right, font=\small] {$25$ m};
+  \node[below, font=\small] at (0.45,-0.3) {ground};
+\end{tikzpicture}
+```
+
+*Reading the figure:* the ball is launched from $A$, atop a $25$ m building, at $20$ m s⁻¹ upward. It decelerates under gravity, rising a further $20$ m to $B$ (where $v=0$), then falls the full $45$ m back to the ground — that full fall is what part (b) below solves for.
+
 > [!example] Solution
 > **(a) Maximum height above launch point:**
 >
@@ -306,6 +511,42 @@ This gives the distance covered in the **nth second specifically** — NOT total
 > $y_0 = 25$ m, $y = 0$, $v_0 = 20$ m s⁻¹, $a = -10$ m s⁻²
 >
 > $0 = 25 + 20t - 5t^2 \Rightarrow 5t^2 - 20t - 25 = 0 \Rightarrow \mathbf{t = 5}$ **s**
+
+### 6.7 Problem-Solving Strategy — Which Equation to Use? ⭐⭐⭐
+
+> [!tip] The five-quantities method
+> Every constant-acceleration problem involves five quantities: $v_0, v, a, t, x$. Each of the four equations in §6.1 leaves out exactly one of them. **List what the problem gives you and what it asks for — whichever quantity doesn't appear at all is your cue for which equation to reach for.**
+
+```mermaid
+flowchart TD
+    Start["List what's given and asked:<br/>v0, v, a, t, x"] --> Qt{"Is t absent?"}
+    Qt -->|Yes| E3["Use v² = v0² + 2ax"]
+    Qt -->|No| Qv{"Is v absent?"}
+    Qv -->|Yes| E2["Use x = v0t + ½at²"]
+    Qv -->|No| Qx{"Is x absent?"}
+    Qx -->|Yes| E1["Use v = v0 + at"]
+    Qx -->|No| Qa{"Is a absent?"}
+    Qa -->|Yes| E4["Use x = ½(v+v0)t"]
+```
+
+*Reading the flowchart:* work top to bottom, asking "is this quantity missing from the problem?" The first "yes" tells you which equation to reach for.
+
+> [!example] Quick drill
+> A car starts from rest ($v_0=0$) and covers $100$ m in $5$ s. Find its acceleration.
+> Given: $v_0, x, t$. Missing: $v$. → Use $x = v_0t + \tfrac12at^2 \Rightarrow 100 = 0 + \tfrac12 a(25) \Rightarrow a = 8$ m s⁻².
+
+### 6.8 Interactive Exploration (Coming Soon)
+
+> **Desmos graph placeholder — add in a later pass**
+>
+> Planned graph: $x = v_0 t + \tfrac12 a t^2$ plotted for $t \in [0,10]$ s, with independent sliders for $v_0 \in [-10,10]$ m s⁻¹ and $a \in [-5,5]$ m s⁻², shown alongside $v = v_0+at$ so the slope of the $v$–$t$ line visibly matches the changing steepness of the $x$–$t$ curve.
+> Value table for $v_0=0$, $a=2$ m s⁻² (illustrates the parabolic growth pattern):
+>
+> | $t$ (s) | 0 | 1 | 2 | 3 | 4 |
+> |:---:|:---:|:---:|:---:|:---:|:---:|
+> | $x$ (m) | 0 | 1 | 4 | 9 | 16 |
+>
+> Increasing $a$ steepens the parabola; a nonzero $v_0$ shifts where the curve's turning point sits relative to $t=0$.
 
 ---
 
@@ -364,6 +605,21 @@ For $d = 21.0$ cm: $t_r = \sqrt{2 \times 0.21 / 9.8} \approx 0.2$ s
 > $$v_{AB} = v_A - v_B$$
 >
 > where $v_A$ and $v_B$ are velocities measured with respect to the ground frame.
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=6pt,width=4pt]}, thick]
+  \draw[line width=1pt] (-0.5,0) -- (7,0);
+  \fill (1,0) circle (2pt);
+  \node[below, font=\small] at (1,-0.3) {$B$};
+  \fill (4,0) circle (2pt);
+  \node[below, font=\small] at (4,-0.3) {$A$};
+  \draw[->, red!70!black, line width=1.4pt] (1,0.3) -- (2.3,0.3) node[midway, above, font=\small, red!70!black] {$v_B$};
+  \draw[->, blue!70!black, line width=1.4pt] (4,0.3) -- (6.3,0.3) node[midway, above, font=\small, blue!70!black] {$v_A$};
+  \draw[->, violet!70!black, line width=1.4pt] (4,-0.9) -- (5.5,-0.9) node[midway, below, font=\small, violet!70!black] {$v_{AB}=v_A-v_B$};
+  \node[below, font=\itshape\small, text=gray] at (3,-1.6) {Both $v_A$ and $v_B$ are ground-frame velocities; $v_{AB}$ is how fast $A$ appears to move to an observer riding on $B$};
+\end{tikzpicture}
+```
 
 ### 8.2 Cases
 
