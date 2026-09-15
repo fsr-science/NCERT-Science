@@ -1,4 +1,3 @@
-
 # Linear Inequalities — Class 11 Mathematics (NCERT Chapter 5)
 
 > Board-level foundation for JEE/NEET-adjacent inequality skills: comparing expressions with \(<, >, \le, \ge\) instead of \(=\), and tracking how the *solution set* changes with the domain (\(\mathbb{N}, \mathbb{Z}\), or \(\mathbb{R}\)).
@@ -18,7 +17,7 @@ By the end of this note, the reader should be able to:
 2. Solve a linear inequality in one variable over \(\mathbb{N}\), \(\mathbb{Z}\), or \(\mathbb{R}\), and write the solution set in interval notation.
 3. Represent the solution set of a linear inequality on a number line.
 4. Solve a compound (double) inequality and a system of two inequalities, including graphing the intersection.
-5. Translate an applied word problem (averages, mixtures, unit conversion, consecutive integers) into a linear inequality and solve it.
+5. Translate an applied word problem (averages, mixtures, unit conversion, consecutive integers, length constraints, ratio-based formulas) into a linear inequality — recognizing when it hides a *system* of two constraints rather than one — and solve it.
 
 ---
 
@@ -93,6 +92,23 @@ Substituting the special cases "add/subtract a constant" and "multiply/divide by
 \boxed{\textbf{Rule 2: } \text{if } c>0,\ a<b\iff ac<bc; \quad \text{if } c<0,\ a<b\iff ac>bc \text{ (sign reverses only for negative } c)}
 \]
 
+**See it happen, not just read it.** Fix \(a=2 < b=5\) and let \(c\) vary:
+
+```desmos
+{
+  "expressions": [
+    { "id": "a", "latex": "a=2" },
+    { "id": "b", "latex": "b=5" },
+    { "id": "c", "latex": "c=1" },
+    { "id": "ptA", "latex": "(a\\cdot c,\\ 0)", "color": "#2563eb", "label": "a\\cdot c" },
+    { "id": "ptB", "latex": "(b\\cdot c,\\ 0)", "color": "#dc2626", "label": "b\\cdot c" }
+  ],
+  "graphSettings": { "xmin": -20, "xmax": 20, "ymin": -3, "ymax": 3 }
+}
+```
+
+Drag the slider \(c\) from positive through \(0\) to negative. For every \(c>0\) the blue point \(a\cdot c\) stays to the *left* of the red point \(b\cdot c\) — same order as \(a<b\). The instant \(c\) crosses \(0\) into negative territory, blue jumps to the *right* of red: the order reverses discontinuously at \(c=0\), never gradually. That discontinuity at exactly \(c=0\) is Rule 2 made visible — it's also why the rule has no "in-between" case to memorize separately.
+
 The same two rules apply with \(\le\) in place of \(<\) throughout.
 
 ### 5.3 Solved — Domain changes the solution set (NCERT Example 1)
@@ -108,6 +124,42 @@ The same two rules apply with \(\le\) in place of \(<\) throughout.
   (ii) Integers less than \(20/3\): solution set \(\{\dots,-3,-2,-1,0,1,2,3,4,5,6\}\), i.e. every integer up to \(6\).
 - **Check:** \(x=6\): \(30(6)=180<200\) ✓. \(x=7\): \(30(7)=210\not<200\) ✓ correctly excluded.
 
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, thick, scale=0.85]
+  \draw[->, line width=1pt] (-5.5,0) -- (8.5,0) node[right, font=\small] {$x$};
+  \draw (-4,0.08) -- (-4,-0.08); \node[below, font=\small] at (-4,-0.2) {$-4$};
+  \draw (-3,0.08) -- (-3,-0.08); \node[below, font=\small] at (-3,-0.2) {$-3$};
+  \draw (-2,0.08) -- (-2,-0.08); \node[below, font=\small] at (-2,-0.2) {$-2$};
+  \draw (-1,0.08) -- (-1,-0.08); \node[below, font=\small] at (-1,-0.2) {$-1$};
+  \draw (0,0.08) -- (0,-0.08); \node[below, font=\small] at (0,-0.2) {$0$};
+  \draw (1,0.08) -- (1,-0.08); \node[below, font=\small] at (1,-0.2) {$1$};
+  \draw (2,0.08) -- (2,-0.08); \node[below, font=\small] at (2,-0.2) {$2$};
+  \draw (3,0.08) -- (3,-0.08); \node[below, font=\small] at (3,-0.2) {$3$};
+  \draw (4,0.08) -- (4,-0.08); \node[below, font=\small] at (4,-0.2) {$4$};
+  \draw (5,0.08) -- (5,-0.08); \node[below, font=\small] at (5,-0.2) {$5$};
+  \draw (6,0.08) -- (6,-0.08); \node[below, font=\small] at (6,-0.2) {$6$};
+  \draw (7,0.08) -- (7,-0.08); \node[below, font=\small] at (7,-0.2) {$7$};
+  \draw[fill=white, draw=red!75!black, line width=1.4pt] (6.667,0) circle (2.2pt);
+  \node[above, font=\small, text=red!75!black] at (6.667,0.3) {$\frac{20}{3}$};
+  \fill[blue!60!black] (1,0) circle (2.6pt);
+  \fill[blue!60!black] (2,0) circle (2.6pt);
+  \fill[blue!60!black] (3,0) circle (2.6pt);
+  \fill[blue!60!black] (4,0) circle (2.6pt);
+  \fill[blue!60!black] (5,0) circle (2.6pt);
+  \fill[blue!60!black] (6,0) circle (2.6pt);
+  \fill[gray!60!black] (0,0) circle (2.2pt);
+  \fill[gray!60!black] (-1,0) circle (2.2pt);
+  \fill[gray!60!black] (-2,0) circle (2.2pt);
+  \fill[gray!60!black] (-3,0) circle (2.2pt);
+  \node[font=\small, text=gray!60!black] at (-4.5,0) {$\cdots$};
+  \node[below, font=\itshape\small, text=blue!60!black] at (3.5,-0.9) {blue: $\mathbb{N}$-solutions $\{1,\dots,6\}$, finite};
+  \node[below, font=\itshape\small, text=gray!60!black] at (-1.5,-1.4) {gray: $\mathbb{Z}$-solutions extend unboundedly left of $\frac{20}{3}$};
+\end{tikzpicture}
+```
+
+Same boundary, two different-looking answers: the open circle at \(20/3\) is excluded either way (strict \(<\)), but restricting to \(\mathbb{N}\) crops the picture to a *finite* set of six dots, while \(\mathbb{Z}\) keeps the same dots and lets them continue forever to the left. Neither domain changes the algebra — only how far along the resulting ray you're allowed to read off solutions.
+
 ### 5.3 Solved — Two-step isolation over integers vs. reals (NCERT Example 2)
 
 **Solve** \(5x-3<3x+1\) for (i) \(x\in\mathbb{Z}\), (ii) \(x\in\mathbb{R}\).
@@ -119,6 +171,33 @@ The same two rules apply with \(\le\) in place of \(<\) throughout.
   (i) Over \(\mathbb{Z}\): \(\{\dots,-4,-3,-2,-1,0,1\}\).
   (ii) Over \(\mathbb{R}\): solution set \(x\in(-\infty,2)\).
 - **Domain convention:** Unless a problem restricts \(x\) to \(\mathbb{N}\) or \(\mathbb{Z}\), this chapter solves over \(\mathbb{R}\) by default.
+
+```tikz
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[>={Stealth[length=7pt,width=5pt]}, thick, scale=0.85]
+  \draw[->, line width=1pt] (-5.5,0) -- (4.5,0) node[right, font=\small] {$x$};
+  \draw (-4,0.08) -- (-4,-0.08); \node[below, font=\small] at (-4,-0.2) {$-4$};
+  \draw (-3,0.08) -- (-3,-0.08); \node[below, font=\small] at (-3,-0.2) {$-3$};
+  \draw (-2,0.08) -- (-2,-0.08); \node[below, font=\small] at (-2,-0.2) {$-2$};
+  \draw (-1,0.08) -- (-1,-0.08); \node[below, font=\small] at (-1,-0.2) {$-1$};
+  \draw (0,0.08) -- (0,-0.08); \node[below, font=\small] at (0,-0.2) {$0$};
+  \draw (1,0.08) -- (1,-0.08); \node[below, font=\small] at (1,-0.2) {$1$};
+  \draw (2,0.08) -- (2,-0.08); \node[below, font=\small] at (2,-0.2) {$2$};
+  \draw (3,0.08) -- (3,-0.08); \node[below, font=\small] at (3,-0.2) {$3$};
+  \draw[gray!50!black, line width=2pt, ->] (2,0) -- (-5.3,0);
+  \draw[fill=white, draw=gray!50!black, line width=1.4pt] (2,0) circle (2.2pt);
+  \fill[blue!60!black] (1,0.4) circle (2.6pt);
+  \fill[blue!60!black] (0,0.4) circle (2.6pt);
+  \fill[blue!60!black] (-1,0.4) circle (2.6pt);
+  \fill[blue!60!black] (-2,0.4) circle (2.6pt);
+  \fill[blue!60!black] (-3,0.4) circle (2.6pt);
+  \node[font=\small, text=blue!60!black] at (-4.2,0.4) {$\cdots$};
+  \node[right, font=\small, text=blue!60!black] at (1.15,0.4) {$\mathbb{Z}$-solutions};
+  \node[below, font=\itshape\small, text=gray!50!black] at (-1.3,-0.9) {gray ray = $\mathbb{R}$-solutions $(-\infty,2)$; blue dots = $\mathbb{Z}$-solutions, same open boundary at $2$};
+\end{tikzpicture}
+```
+
+The \(\mathbb{Z}\) dots and the \(\mathbb{R}\) ray share the *identical* boundary at \(2\) (open, since the inequality is strict) — the only difference is whether every point in between counts as a solution (continuous \(\mathbb{R}\)) or only the integer-valued ones do (discrete \(\mathbb{Z}\)).
 
 ### 5.3 Solved — Collecting variable terms (NCERT Example 3)
 
@@ -287,6 +366,23 @@ Rewriting with the smaller value first: \(x\in\left[-\dfrac{11}{3},\,5\right]\).
   \]
 - **Check:** boundary \(x=2\): \(3(2)-4=2\), and \(2\le2\le5\) ✓ (equality at the lower bound). Boundary \(x=3\): \(3(3)-4=5\), and \(2\le5\le5\) ✓ (equality at the upper bound). Solution set: \([2,3]\).
 
+### 5.4 Additional Practice — System of inequalities from a word problem (New, from Miscellaneous Exercise Q.26)
+
+**A man wants to cut three lengths from a single board of length \(91\) cm.** The second length is to be \(3\) cm longer than the shortest, and the third is to be twice as long as the shortest. What are the possible lengths of the shortest piece if the third piece must be at least \(5\) cm longer than the second?
+
+- **Given:** shortest piece \(=x\); second \(=x+3\); third \(=2x\) (all in cm); total board \(=91\) cm; third \(\ge\) second \(+5\).
+- **Find:** the range of possible values of \(x\).
+- **Approach:** this sentence is quietly stating *two* separate constraints at once — a total-length cap and a relative-length floor. Spot both before writing any algebra; they form a system, not one chained inequality, because they're independent limits rather than parts of a single "\(a<f(x)<b\)" statement.
+- **Work:**
+  \[
+  x+(x+3)+2x\le91 \;\Longrightarrow\; 4x+3\le91 \;\Longrightarrow\; 4x\le88 \;\Longrightarrow\; x\le22
+  \]
+  \[
+  2x\ge(x+3)+5 \;\Longrightarrow\; 2x\ge x+8 \;\Longrightarrow\; x\ge8
+  \]
+  Intersection of \(x\le22\) and \(x\ge8\): \(8\le x\le22\).
+- **Check (context):** at \(x=8\): pieces are \(8,11,16\); third \(16\ge\) second\(+5=16\) ✓ (boundary met exactly). At \(x=22\): pieces are \(22,25,44\); sum \(=91\) ✓ (boundary met exactly, board fully used); third \(44\ge\) second\(+5=30\) ✓ with room to spare. Lengths are also automatically positive throughout this range, so no extra domain restriction is needed. Final answer: \(x\in[8,22]\) cm.
+
 ---
 
 ## 5.5 Applied Problems: Unit Conversion and Mixture Constraints ⭐⭐⭐
@@ -328,6 +424,16 @@ Rewriting with the smaller value first: \(x\in\left[-\dfrac{11}{3},\,5\right]\).
   \]
 - **Check:** at \(x=320\): concentration \(=\frac{51.2+6.4}{960}=\frac{57.6}{960}=6\%\) exactly — confirms \(320\) is the boundary *excluded* by the strict "\(<6\%\)" condition on the original (unreduced) mixture, consistent with \(x>320\) being open. Final range: \(320<x<1280\) litres.
 
+### 5.5 Additional Practice — IQ formula, compound inequality on a ratio (New, from Miscellaneous Exercise Q.14)
+
+- **Given:** \(\text{IQ}=\dfrac{\text{MA}}{\text{CA}}\times100\), where MA is mental age and CA is chronological age; for a group of \(12\)-year-olds (\(\text{CA}=12\)), \(80\le\text{IQ}\le140\).
+- **Find:** the corresponding range of mental age MA.
+- **Approach:** same compound-inequality technique as Example 12's temperature conversion — substitute the formula in, then isolate MA by operating on all three parts at once. Every multiplier used below (\(\div100\), then \(\times12\)) is positive, so the direction never flips.
+  \[
+  80\le\frac{\text{MA}}{12}\times100\le140 \;\xRightarrow{\div100>0}\; 0.8\le\frac{\text{MA}}{12}\le1.4 \;\xRightarrow{\times12>0}\; 9.6\le\text{MA}\le16.8
+  \]
+- **Check:** at \(\text{MA}=9.6\): \(\text{IQ}=\frac{9.6}{12}\times100=80\) ✓ (lower boundary, included — slack \(\le\)). At \(\text{MA}=16.8\): \(\text{IQ}=\frac{16.8}{12}\times100=140\) ✓ (upper boundary, included). A mental age of \(9.6\) to \(16.8\) years for a \(12\)-year-old is a physically sensible range — MA needn't equal CA, only fall in a plausible band around it. Final range: \(9.6\le\text{MA}\le16.8\) years.
+
 ---
 
 ## Quick Reference (inline)
@@ -359,6 +465,8 @@ Rewriting with the smaller value first: \(x\in\left[-\dfrac{11}{3},\,5\right]\).
 > **Watch out:** In word problems, "at least" means \(\ge\) (not \(>\)), and "at most"/"upto" means \(\le\) (not \(<\)) — using the strict version instead of the slack one excludes a boundary value the problem intended to allow (see NCERT Example 7, where a mark of exactly 70 must count).
 
 > **Watch out:** Always restate the domain before finalizing an answer. The *same* inequality \(30x<200\) has three different solution sets depending on whether \(x\in\mathbb{N}\), \(x\in\mathbb{Z}\), or \(x\in\mathbb{R}\) — dropping this restriction is a common way to lose marks even with correct algebra.
+
+> **Watch out:** Not every word problem announces "solve the system" out loud — a sentence can state two independent constraints back to back (a total-length cap *and* a relative-length floor, say) without ever using the word "system." Read for how many separate limits are actually being placed on the variable before deciding whether you're solving one inequality, a compound chain, or a system of two (see the board-cutting example, §5.4).
 
 ## Summary
 

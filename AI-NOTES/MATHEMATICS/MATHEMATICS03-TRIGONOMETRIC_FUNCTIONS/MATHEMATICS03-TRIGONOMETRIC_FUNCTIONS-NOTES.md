@@ -1,4 +1,3 @@
-
 # Trigonometric Functions
 
 ### NCERT Class 11 Mathematics — Chapter 3 · **Board / JEE Foundation**
@@ -474,6 +473,13 @@ Equating (since $P_1P_3^2=P_2P_4^2$):
 
 #### Worked Examples — 3.4
 
+**Example 10 — Prove $3\sin\dfrac\pi6\sec\dfrac\pi3-4\sin\dfrac{5\pi}6\cot\dfrac\pi4=1$ (NCERT Example 10)**
+*Approach:* reduce $\sin\tfrac{5\pi}6$ to a standard angle first, using identity 9's $(\pi-x)$ row ($\sin(\pi-x)=\sin x$), then substitute standard values directly.
+\[
+\text{L.H.S.} = 3\sin\tfrac\pi6\sec\tfrac\pi3-4\sin\!\left(\pi-\tfrac\pi6\right)\cot\tfrac\pi4
+= 3\cdot\tfrac12\cdot2-4\sin\tfrac\pi6\cdot1 = 3-4\cdot\tfrac12=\boxed{1}=\text{R.H.S.}
+\]
+
 **Example 11 — Find $\sin15°$ (NCERT Example 11)**
 \[
 \sin15°=\sin(45°-30°)=\sin45°\cos30°-\cos45°\sin30°=\frac1{\sqrt2}\cdot\frac{\sqrt3}2-\frac1{\sqrt2}\cdot\frac12=\boxed{\frac{\sqrt3-1}{2\sqrt2}}
@@ -487,6 +493,13 @@ Equating (since $P_1P_3^2=P_2P_4^2$):
 \]
 *(rationalised by multiplying top and bottom by $\sqrt3-1$.)*
 
+**Example 13 — Prove $\dfrac{\sin(x+y)}{\sin(x-y)}=\dfrac{\tan x+\tan y}{\tan x-\tan y}$ (NCERT Example 13)**
+*Approach:* expand numerator and denominator with identities 7 and 8, then divide both by $\cos x\cos y$ — the same "divide through" step used earlier to obtain $\tan(x\pm y)$ from the sine/cosine sum formulas.
+\[
+\text{L.H.S.}=\frac{\sin x\cos y+\cos x\sin y}{\sin x\cos y-\cos x\sin y}\ \xrightarrow{\ \div\,\cos x\cos y\ }\ \boxed{\frac{\tan x+\tan y}{\tan x-\tan y}}=\text{R.H.S.}
+\]
+*Validity:* needs $\cos x,\cos y\neq0$ (for the division) and $\sin(x-y)\neq0$ (for the original ratio to be defined).
+
 **Example 14 — Show $\tan3x\tan2x\tan x=\tan3x-\tan2x-\tan x$ (NCERT Example 14)**
 *Approach:* write $3x=2x+x$ and expand with the tangent-sum formula — no need to touch $\sin,\cos$ at all.
 \[
@@ -498,6 +511,50 @@ Equating (since $P_1P_3^2=P_2P_4^2$):
 \Longrightarrow\ \boxed{\tan3x\tan2x\tan x=\tan3x-\tan2x-\tan x}
 \]
 *Check:* purely algebraic rearrangement — no domain issue introduced beyond the usual $\tan$ exclusions.
+
+**Example 15 — Prove $\cos\!\left(\dfrac\pi4+x\right)+\cos\!\left(\dfrac\pi4-x\right)=\sqrt2\cos x$ (NCERT Example 15)**
+*Approach:* direct application of sum-to-product identity (20)(i), with $x\to\tfrac\pi4+x,\ y\to\tfrac\pi4-x$.
+\[
+\text{L.H.S.}=2\cos\!\left(\frac{\left(\tfrac\pi4+x\right)+\left(\tfrac\pi4-x\right)}2\right)\cos\!\left(\frac{\left(\tfrac\pi4+x\right)-\left(\tfrac\pi4-x\right)}2\right)=2\cos\tfrac\pi4\cos x=2\cdot\tfrac1{\sqrt2}\cos x=\boxed{\sqrt2\cos x}=\text{R.H.S.}
+\]
+
+**Example 16 — Prove $\dfrac{\cos7x+\cos5x}{\sin7x-\sin5x}=\cot x$ (NCERT Example 16)**
+*Approach:* apply sum-to-product identity (20)(i) to the numerator and (20)(iv) to the denominator; both produce a common factor $\cos\!\left(\tfrac{7x+5x}2\right)=\cos6x$ that cancels.
+\[
+\text{L.H.S.}=\frac{2\cos6x\cos x}{2\cos6x\sin x}=\boxed{\cot x}=\text{R.H.S.}
+\]
+
+**Example 17 — Prove $\dfrac{\sin5x-2\sin3x+\sin x}{\cos5x-\cos x}=\tan x$ (NCERT Example 17)**
+*Approach:* regroup the numerator as $(\sin5x+\sin x)-2\sin3x$ so sum-to-product identity (20)(iii) applies to the bracket; the $\sin3x$ factor that then appears cancels top and bottom.
+\[
+\text{L.H.S.}=\frac{2\sin3x\cos2x-2\sin3x}{-2\sin3x\sin2x}=\frac{\sin3x(\cos2x-1)}{-\sin3x\sin2x}=\frac{1-\cos2x}{\sin2x}=\frac{2\sin^2x}{2\sin x\cos x}=\boxed{\tan x}=\text{R.H.S.}
+\]
+*(the last step is the half-angle corollary $2\sin^2x=1-\cos2x$, read in reverse.)*
+
+---
+
+## Miscellaneous Examples ⭐⭐⭐
+
+The source's own closing set — drawn from across §3.2–3.4 at once, so this is the real test of whether the identity chain was learned as a *derivation* rather than as 20 unrelated formulas.
+
+**Example 18 — $\sin x=\tfrac35,\ \cos y=-\tfrac{12}{13}$, both $x,y$ in QII; find $\sin(x+y)$ (NCERT Example 18)**
+*Approach:* find $\cos x,\sin y$ using QII signs, then apply the sum formula (7) directly.
+\[
+\cos^2x=1-\tfrac9{25}=\tfrac{16}{25}\Rightarrow\cos x=-\tfrac45\ (\text{QII}),\qquad
+\sin^2y=1-\tfrac{144}{169}=\tfrac{25}{169}\Rightarrow\sin y=\tfrac5{13}\ (\text{QII})
+\]
+\[
+\sin(x+y)=\sin x\cos y+\cos x\sin y = \tfrac35\!\left(-\tfrac{12}{13}\right)+\left(-\tfrac45\right)\!\tfrac5{13} = -\tfrac{36}{65}-\tfrac{20}{65}=\boxed{-\frac{56}{65}}
+\]
+
+**Example 19 — Prove $\cos2x\cos\dfrac x2-\cos3x\cos\dfrac{9x}2=\sin5x\sin\dfrac{5x}2$ (NCERT Example 19)**
+*Approach:* convert both products to sums with identity (21)(i) ($2\cos A\cos B=\cos(A+B)+\cos(A-B)$), simplify the resulting cosine terms, then convert the surviving difference back to a product with identity (20)(ii).
+\[
+\text{L.H.S.}=\frac12\Big[\cos\tfrac{5x}2+\cos\tfrac{3x}2-\cos\tfrac{15x}2-\cos\tfrac{3x}2\Big]=\frac12\left[\cos\tfrac{5x}2-\cos\tfrac{15x}2\right]
+\]
+\[
+=\frac12\left[-2\sin\!\left(\tfrac{5x/2+15x/2}2\right)\sin\!\left(\tfrac{5x/2-15x/2}2\right)\right]=-\sin5x\sin\!\left(-\tfrac{5x}2\right)=\boxed{\sin5x\sin\tfrac{5x}2}=\text{R.H.S.}
+\]
 
 **Example 20 — Find $\tan\dfrac\pi8$ (NCERT Example 20)**
 *Approach:* $\dfrac\pi8=\dfrac12\cdot\dfrac\pi4$; use the double-angle formula for $\tan$ with $x=\pi/8,\ 2x=\pi/4$, and solve the resulting quadratic.
@@ -511,15 +568,21 @@ Since $\pi/8$ lies in quadrant I, $\tan\tfrac\pi8>0$, so the $-1-\sqrt2$ root is
 \]
 *Check:* $\sqrt2-1\approx0.414>0$ ✓, matches QI.
 
-**Miscellaneous Example 18 — $\sin x=\tfrac35,\ \cos y=-\tfrac{12}{13}$, both $x,y$ in QII; find $\sin(x+y)$**
-*Approach:* find $\cos x,\sin y$ using QII signs, then apply the sum formula (7) directly — this is the payoff application of the whole section.
+**Example 21 — $\tan x=\tfrac34,\ \pi<x<\tfrac{3\pi}2$: find $\sin\dfrac x2,\cos\dfrac x2,\tan\dfrac x2$ (NCERT Example 21)**
+*Given:* $\tan x=\tfrac34$, $x$ in QIII. *Find:* $\sin\tfrac x2,\cos\tfrac x2,\tan\tfrac x2$. *Approach:* pin down $\cos x$ from $\sec^2x=1+\tan^2x$ and the QIII sign, then apply the half-angle corollaries — but resolve the $\pm$ using the quadrant of **$x/2$ itself**, not of $x$: since $\pi<x<\tfrac{3\pi}2$, halving gives $\tfrac\pi2<\tfrac x2<\tfrac{3\pi}4$, i.e. $x/2$ lies in QII, not QIII.
 \[
-\cos^2x=1-\tfrac9{25}=\tfrac{16}{25}\Rightarrow\cos x=-\tfrac45\ (\text{QII}),\qquad
-\sin^2y=1-\tfrac{144}{169}=\tfrac{25}{169}\Rightarrow\sin y=\tfrac5{13}\ (\text{QII})
+\sec^2x=1+\tfrac9{16}=\tfrac{25}{16}\ \Rightarrow\ \cos x=-\tfrac45\ (\text{QIII}\Rightarrow\cos x<0)
 \]
 \[
-\sin(x+y)=\sin x\cos y+\cos x\sin y = \tfrac35\!\left(-\tfrac{12}{13}\right)+\left(-\tfrac45\right)\!\tfrac5{13} = -\tfrac{36}{65}-\tfrac{20}{65}=\boxed{-\frac{56}{65}}
+2\sin^2\tfrac x2=1-\left(-\tfrac45\right)=\tfrac95\ \Rightarrow\ \sin\tfrac x2=\tfrac3{\sqrt{10}}\ (\text{QII}\Rightarrow\sin>0)
 \]
+\[
+2\cos^2\tfrac x2=1+\left(-\tfrac45\right)=\tfrac15\ \Rightarrow\ \cos\tfrac x2=-\tfrac1{\sqrt{10}}\ (\text{QII}\Rightarrow\cos<0)
+\]
+\[
+\boxed{\tan\frac x2 = \frac{3/\sqrt{10}}{-1/\sqrt{10}} = -3}
+\]
+*Check:* signs match QII for $x/2$ ($\sin>0,\cos<0,\tan<0$) ✓; $\sin^2\tfrac x2+\cos^2\tfrac x2=\tfrac9{10}+\tfrac1{10}=1$ ✓.
 
 **Example 22 — Prove $\cos^2x+\cos^2\!\left(x+\tfrac\pi3\right)+\cos^2\!\left(x-\tfrac\pi3\right)=\tfrac32$ (NCERT Example 22)**
 *Approach:* rewrite every $\cos^2(\cdot)$ using the power-reduction form $\cos^2\theta=\tfrac{1+\cos2\theta}2$ (a direct corollary of double-angle identity 14), then apply product-to-sum on the two shifted terms.
@@ -530,8 +593,6 @@ By the sum-to-product identity (20)(i): $\cos\!\left(2x+\tfrac{2\pi}3\right)+\co
 \[
 \text{L.H.S.} = \frac32+\frac12\big[\cos2x-\cos2x\big]=\boxed{\frac32}=\text{R.H.S.}\qquad\blacksquare
 \]
-
-> Examples 10, 13, 15–19 and 21 in the source apply exactly these identities (co-function corollaries, product-to-sum, half-angle) to prove further trig identities and evaluate more standard-angle values; the method each time is: rewrite using the appropriate boxed formula above, simplify, and match sides — never verify only the final numeric answer without checking the algebra is reversible.
 
 ---
 
@@ -546,3 +607,4 @@ By the sum-to-product identity (20)(i): $\cos\!\left(2x+\tfrac{2\pi}3\right)+\co
 > - **$D°M'$ must be fully converted to a decimal degree before multiplying by $\pi/180$** — plugging minutes directly into the radian formula (instead of $M'=\tfrac M{60}°$ first) is a very common arithmetic slip (see Example 1).
 > - **The tangent-sum/difference formulas have an explicit validity condition** — none of $x,y,(x\pm y)$ may be an odd multiple of $\pi/2$ (else $\tan$ itself is undefined there). Check this before applying the formula inside an identity proof, not after.
 > - **A quadratic derived from a double-angle formula can produce an extraneous root**, exactly as in ordinary algebra (Example 20): always re-impose the quadrant's sign constraint on $\tan,\sin,\cos$ before accepting a root.
+> - **The quadrant of $x/2$ is *not* the quadrant of $x$.** When resolving the $\pm$ in a half-angle formula, halve the *inequality* bounding $x$ to find which quadrant $x/2$ itself sits in — don't reuse $x$'s own ASTC sign (Example 21: $x$ in QIII but $x/2$ in QII, so $\cos\tfrac x2<0$ for a different reason than $\cos x<0$ — treating the two as "the same negative" is a coincidence, not a rule).

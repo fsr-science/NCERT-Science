@@ -1,4 +1,3 @@
-
 # Linear Inequalities — Revision Mindmap (NCERT Chapter 5)
 
 > Visual revision aid: how the chapter's ideas connect, and a decision flow for approaching any inequality problem. Pairs with the NOTES and GLOSSARY files.
@@ -78,7 +77,7 @@ flowchart TD
     class J,K result;
 ```
 
-**Interpretation:** the branch point is recognizing the problem's *shape* before touching any algebra — a compound inequality and a system look similar on paper but are solved by different mechanics (operate on all parts at once vs. solve-then-intersect).
+**Interpretation:** the branch point is recognizing the problem's *shape* before touching any algebra — a compound inequality and a system look similar on paper but are solved by different mechanics (operate on all parts at once vs. solve-then-intersect). A word problem can hide either shape in prose rather than symbols — e.g. "the third piece must be at least 5 cm longer than the second, and the total must not exceed 91 cm" is stating a system of two constraints, even though the word "system" never appears (see NOTES §5.4, board-cutting example).
 
 ## Problem-Solving Strategy: Word-Problem Keyword Mapping
 

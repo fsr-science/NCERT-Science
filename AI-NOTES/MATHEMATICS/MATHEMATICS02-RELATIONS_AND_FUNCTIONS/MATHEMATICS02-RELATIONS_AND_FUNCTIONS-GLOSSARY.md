@@ -1,4 +1,3 @@
-
 # Relations and Functions — Glossary & Quick Reference
 
 ## Cartesian Products
@@ -50,8 +49,9 @@
 
 | Function             | \(f(x)\)            | Domain               | Range                | Shape                                   |
 | ---------------------- | --------------------- | ---------------------- | ---------------------- | ----------------------------------------- |
-| Identity             | \(x\)               | \(\mathbb{R}\)       | \(\mathbb{R}\)       | line through origin, slope 1            |
-| Constant             | \(c\)               | \(\mathbb{R}\)       | \(\{c\}\)            | horizontal line                         |
+| Linear (general)     | \(mx+c\)            | \(\mathbb{R}\)       | \(\mathbb{R}\) if \(m\neq0\); \(\{c\}\) if \(m=0\) | straight line, slope \(m\), intercept \(c\) |
+| Identity (\(m{=}1,c{=}0\)) | \(x\)         | \(\mathbb{R}\)       | \(\mathbb{R}\)       | line through origin, slope 1            |
+| Constant (\(m{=}0\)) | \(c\)               | \(\mathbb{R}\)       | \(\{c\}\)            | horizontal line                         |
 | Polynomial (\(x^2\)) | \(x^2\)             | \(\mathbb{R}\)       | \([0,\infty)\)       | upward parabola                         |
 | Polynomial (\(x^3\)) | \(x^3\)             | \(\mathbb{R}\)       | \(\mathbb{R}\)       | odd, increasing                         |
 | Rational (\(1/x\))   | \(1/x\)             | \(\mathbb{R}-\{0\}\) | \(\mathbb{R}-\{0\}\) | two asymptotic branches                 |

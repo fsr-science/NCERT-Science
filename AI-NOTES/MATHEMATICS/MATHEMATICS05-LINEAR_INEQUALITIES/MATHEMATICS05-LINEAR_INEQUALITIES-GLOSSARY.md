@@ -1,4 +1,3 @@
-
 # Linear Inequalities — Glossary & Quick Reference (NCERT Chapter 5)
 
 > Standalone formula/term sheet for last-minute revision. Pairs with the companion NOTES file, which has the full derivations and worked examples.

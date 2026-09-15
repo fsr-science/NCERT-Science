@@ -385,5 +385,85 @@ flowchart TD
 
 ---
 
+# 🗺️ MIND MAP 9 — Problem-Solving Strategy Checklist
+
+> Run through these decision flows *before* reaching for a formula. Each one matches a question type that shows up repeatedly in Board and JEE papers.
+
+### 9A — "Is this a set, and how do I write it?"
+
+```mermaid
+flowchart TD
+    S1(["A collection is described"]) --> S2{"Can membership be decided\nwith certainty for every object?"}
+    S2 -- No --> S2A["NOT a set — e.g. 'best movies', 'most talented writers'"]
+    S2 -- Yes --> S3{"Roster or set-builder\nasked for?"}
+    S3 -- Roster --> S4["List elements once each, order irrelevant, dots for infinite patterns"]
+    S3 -- Set-builder --> S5["Find the common property; write it as 'the set of all x such that P(x) holds'"]
+    S4 --> S6["Double-check: does every listed element satisfy the source condition?"]
+    S5 --> S7["Double-check: does the property generate exactly the intended elements, no more, no less?"]
+
+    style S1 fill:#1e3a5f,color:#aed6f1
+    style S2A fill:#3d1a1a,color:#f5b7b1,stroke:#e74c3c
+    style S6 fill:#1a3d2e,color:#a9dfbf,stroke:#27ae60
+    style S7 fill:#1a3d2e,color:#a9dfbf,stroke:#27ae60
+```
+
+### 9B — "Prove $A \subseteq B$ / $A = B$ / $A \neq B$"
+
+```mermaid
+flowchart TD
+    P1(["Asked to prove a set relation"]) --> P2{"Which relation?"}
+    P2 -- "A subset B" --> P3["Take arbitrary x in A, show x in B using the given definitions — never test only a few sample elements"]
+    P2 -- "A = B" --> P4["Prove A subset B AND B subset A separately (Section 2.3), OR show both satisfy the same defining property"]
+    P2 -- "A not-equal B" --> P5["Exhibit one specific element in one set but not the other — a single counterexample suffices"]
+    P3 --> P6["State which definition/theorem each step uses — don't skip to the conclusion"]
+    P4 --> P6
+    P5 --> P7["Check: does your counterexample actually satisfy the stated conditions of both sets?"]
+
+    style P1 fill:#1e3a5f,color:#aed6f1
+    style P6 fill:#3d2a1a,color:#f0d0a8,stroke:#e67e22
+    style P7 fill:#3d2a1a,color:#f0d0a8,stroke:#e67e22
+```
+
+### 9C — "Counting / survey word problem"
+
+```mermaid
+flowchart TD
+    Q1(["Word problem gives group sizes and overlaps"]) --> Q2{"How many sets involved?"}
+    Q2 -- Two --> Q3["n(A union B) = n(A) + n(B) - n(A intersect B)"]
+    Q2 -- Three --> Q4["Add all three individually, subtract all three pairwise intersections, add back the triple intersection"]
+    Q3 --> Q5{"Asked for 'only A' or 'neither'?"}
+    Q4 --> Q5
+    Q5 -- "Only A" --> Q6["Only A = n(A) minus n(A intersect B); for three sets also subtract n(A intersect C) and add back n(A intersect B intersect C)"]
+    Q5 -- "Neither / none" --> Q7["Neither = n(U) minus n(A union B), or n(U) minus n(A union B union C) for three sets"]
+    Q6 --> Q8["Sanity check: do all the 'only' regions plus overlaps add back up to the total?"]
+    Q7 --> Q8
+
+    style Q1 fill:#1e3a5f,color:#aed6f1
+    style Q3 fill:#1a3d2e,color:#a9dfbf,stroke:#27ae60
+    style Q4 fill:#1a3d2e,color:#a9dfbf,stroke:#27ae60
+    style Q8 fill:#3d1a3a,color:#f0a8e0,stroke:#8e44ad
+```
+
+### 9D — "Power set / subset-count question"
+
+```mermaid
+flowchart TD
+    R1(["Question asks to count or list subsets"]) --> R2{"Count n first: how many\nelements does the set have?"}
+    R2 --> R3{"What exactly is being counted?"}
+    R3 -- "All subsets" --> R4["2^n"]
+    R3 -- "Proper subsets" --> R5["2^n - 1"]
+    R3 -- "Non-empty subsets" --> R6["2^n - 1 (same count, different exclusion)"]
+    R3 -- "Non-empty proper subsets" --> R7["2^n - 2"]
+    R4 --> R8["If listing (not just counting), enumerate by size 0,1,2,...,n so nothing is missed"]
+    R5 --> R8
+    R6 --> R8
+    R7 --> R8
+
+    style R1 fill:#1e3a5f,color:#aed6f1
+    style R8 fill:#3d2a1a,color:#f0d0a8,stroke:#e67e22
+```
+
+---
+
 *End of Rapid Revision + Mind Maps — Ch. 1: Sets*
 *Exam Tags: Board · JEE Mains · JEE Advanced*

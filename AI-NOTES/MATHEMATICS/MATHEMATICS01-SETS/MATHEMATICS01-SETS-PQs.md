@@ -1,5 +1,5 @@
 # 📝 CHAPTER 1 — PRACTICE QUESTION BANK
-> **Sets** | 80 Questions | Board · JEE Layered
+> **Sets** | 82 Questions | Board · JEE Layered
 
 ---
 
@@ -7,6 +7,15 @@
 > 🟢 Board | 🟡 JEE Mains | 🔴 JEE Advanced
 >
 > **Answers** provided at the end of each section.
+
+> [!note] Upgrade Notes (this revision)
+> Every question was recomputed from scratch against the given data (not just transcribed). Four issues were found and corrected:
+> - **Q4** was malformed (two overlapping option lists left in from drafting) — rewritten as one clean question.
+> - **Q30** — recomputing $(A \cup C)'$ gives $\{7,8,9\}$, i.e. option **(a)**, not the previously listed (c). Answer key corrected.
+> - **Q35** — the stated $n(A \cup B \cup C) = 100$ was inconsistent with every answer choice; correcting it to $90$ makes the data consistent with the intended answer (a) $7$.
+> - **Q67** — the worked solution computed $B - C$ incorrectly as $\{2,4\}$; the correct value is $\{2,8\}$ (since $4, 6 \in C$ but $2, 8 \notin C$), which changes the final answer.
+>
+> Two questions (**Q81, Q82**) were added to fill a gap: NCERT's Miscellaneous Exercise Q2 and Q10 had no equivalent in this bank.
 
 ---
 
@@ -46,12 +55,7 @@
 **Q4.** Which of the following is an example of the empty set?
 
 - (a) $\{0\}$
-- (b) $\{\phi\}$
-- (c) $\{x : x \in \mathbb{N},\ x < 5 \text{ and } x > 7\}$
-- (d) $\{x : x \text{ is a natural number less than 1}\}$ — wait, 0 is not in $\mathbb{N}$, so this is empty too — but among given options:
-
-- (a) $\{0\}$
-- (b) Set of odd numbers divisible by 2
+- (b) Set of odd natural numbers divisible by 2
 - (c) $\{x : x + 1 = 1\}$
 - (d) Set of even prime numbers
 
@@ -301,7 +305,7 @@
 ---
 
 > [!example] Answers — A2
-> Q16: (b) | Q17: (b) | Q18: (c) | Q19: (a) | Q20: (b) | Q21: (b) | Q22: (a) | Q23: (c) | Q24: (b) | Q25: (a) | Q26: (b) | Q27: (a) | Q28: (b) | Q29: (c) | Q30: (c)
+> Q16: (b) | Q17: (b) | Q18: (c) | Q19: (a) | Q20: (b) | Q21: (b) | Q22: (a) | Q23: (c) | Q24: (b) | Q25: (a) | Q26: (b) | Q27: (a) | Q28: (b) | Q29: (c) | Q30: (a)
 
 ---
 
@@ -345,7 +349,7 @@
 
 ---
 
-**Q35.** Let $A$, $B$, $C$ be three sets. $n(A \cup B \cup C) = 100$, $n(A) = 50$, $n(B) = 40$, $n(C) = 30$, $n(A \cap B) = 15$, $n(B \cap C) = 10$, $n(A \cap C) = 12$. Find $n(A \cap B \cap C)$:
+**Q35.** Let $A$, $B$, $C$ be three sets. $n(A \cup B \cup C) = 90$, $n(A) = 50$, $n(B) = 40$, $n(C) = 30$, $n(A \cap B) = 15$, $n(B \cap C) = 10$, $n(A \cap C) = 12$. Find $n(A \cap B \cap C)$:
 
 - (a) 7
 - (b) 5
@@ -737,9 +741,11 @@ $A \cup (A \cap B) = A$ (Absorption Law)
 **Q67.** 🟢 Let $U = \{1,...,9\}$, $A = \{1,2,3,4\}$, $B = \{2,4,6,8\}$, $C = \{3,4,5,6\}$. Find $(B - C)'$.
 
 > [!example] Solution
-> $B - C = \{2, 4\}$
+> $B - C = \{x \in B : x \notin C\}$. Checking each element of $B = \{2,4,6,8\}$ against $C = \{3,4,5,6\}$: $2 \notin C$ (keep), $4 \in C$ (drop), $6 \in C$ (drop), $8 \notin C$ (keep).
 >
-> $(B - C)' = U - \{2, 4\} = \{1, 3, 5, 6, 7, 8, 9\}$
+> $B - C = \{2, 8\}$
+>
+> $(B - C)' = U - \{2, 8\} = \{1, 3, 4, 5, 6, 7, 9\}$
 
 ---
 
@@ -842,6 +848,60 @@ $A \cup (A \cap B) = A$ (Absorption Law)
 
 > [!example] Answers — Part E
 > Q76: $U$ | Q77: $U$ | Q78: $A$ | Q79: $\phi$ | Q80: $8$
+
+---
+
+# PART F: GAP-FILL — MISCELLANEOUS EXERCISE ADDITIONS (New)
+
+*Two NCERT Miscellaneous Exercise questions with no prior equivalent in this bank.*
+
+---
+
+**Q81.** 🔴 Find sets $A$, $B$, and $C$ such that $A \cap B$, $B \cap C$, and $A \cap C$ are non-empty sets, but $A \cap B \cap C = \phi$. *(NCERT Miscellaneous Exercise, Q10)*
+
+> [!example] Solution
+> **Approach:** Arrange three pairwise overlaps that don't all share a common point — like three circles in a Venn diagram overlapping in pairs but with no central triple-overlap region.
+>
+> Let $A = \{1, 2\}$, $B = \{2, 3\}$, $C = \{1, 3\}$.
+>
+> - $A \cap B = \{2\} \neq \phi$ ✅
+> - $B \cap C = \{3\} \neq \phi$ ✅
+> - $A \cap C = \{1\} \neq \phi$ ✅
+> - $A \cap B \cap C$: an element would need to be in all three sets simultaneously. $1 \in A, C$ but $1 \notin B$. $2 \in A, B$ but $2 \notin C$. $3 \in B, C$ but $3 \notin A$. No element is in all three, so $A \cap B \cap C = \phi$ ✅
+>
+> **Check:** All four conditions hold, so this is a valid example. (Many other valid examples exist — this is not unique.)
+
+---
+
+**Q82.** 🟡 Determine whether each statement is true or false. If true, prove it; if false, give a counterexample. *(NCERT Miscellaneous Exercise, Q2)*
+
+(i) If $x \in A$ and $A \in B$, then $x \in B$.
+(ii) If $A \subset B$ and $B \in C$, then $A \in C$.
+(iii) If $A \subset B$ and $B \subset C$, then $A \subset C$.
+(iv) If $A \not\subset B$ and $B \not\subset C$, then $A \not\subset C$.
+(v) If $x \in A$ and $A \not\subset B$, then $x \in B$.
+(vi) If $A \subset B$ and $x \notin B$, then $x \notin A$.
+
+> [!example] Solution
+> **(i) False.** $\in$ is not transitive the way $\subset$ is. Counterexample: $A = \{1\}$, $B = \{\{1\}, 2\}$. Here $1 \in A$ and $A \in B$ (since $A = \{1\}$ is listed as an element of $B$), but $1 \notin B$ (the elements of $B$ are $\{1\}$ and $2$ — not $1$ itself).
+>
+> **(ii) False.** Counterexample: $A = \{1\}$, $B = \{1, 2\}$, $C = \{B, 3\} = \{\{1,2\}, 3\}$. Here $A \subset B$ (since $1 \in B$) and $B \in C$ (since $B = \{1,2\}$ is listed as an element of $C$), but $A \notin C$ — the elements of $C$ are $\{1,2\}$ and $3$, and $A = \{1\}$ is neither of these.
+>
+> **(iii) True.** This is ordinary transitivity of $\subseteq$. Let $x \in A$. Since $A \subset B$, $x \in B$. Since $B \subset C$, $x \in C$. So every element of $A$ is in $C$, i.e., $A \subset C$.
+>
+> **(iv) False.** Counterexample: $A = \{1, 2\}$, $B = \{4, 5\}$, $C = \{1, 2, 3\}$. Here $A \not\subset B$ (since $1 \in A$, $1 \notin B$) and $B \not\subset C$ (since $4 \in B$, $4 \notin C$), but $A \subset C$ (both $1, 2 \in C$) — so the conclusion "$A \not\subset C$" fails.
+>
+> **(v) False.** $A \not\subset B$ only means *some* element of $A$ is missing from $B$ — it says nothing about a *specific* $x$. Counterexample: $A = \{1, 2\}$, $B = \{1, 3\}$, $x = 2$. Here $x \in A$ and $A \not\subset B$ (since $2 \notin B$), but $x = 2 \notin B$.
+>
+> **(vi) True.** This is the contrapositive of the definition of subset. $A \subset B$ means $a \in A \Rightarrow a \in B$. Contrapositive: $a \notin B \Rightarrow a \notin A$. So if $x \notin B$, then $x \notin A$.
+>
+> [!warning] Why this question matters
+> Statements (i), (ii), (iv), (v) are exactly the trap of treating $\in$ like $\subset$, or treating "$A \not\subset B$" as if it says something about every element rather than just some element. See **Points to Ponder** in the Notes for the general pattern.
+
+---
+
+> [!example] Answers — Part F
+> Q81: see worked construction above (not unique) | Q82: (i) False (ii) False (iii) True (iv) False (v) False (vi) True
 
 ---
 

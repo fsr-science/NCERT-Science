@@ -29,7 +29,7 @@ flowchart TD
 
 ---
 
-## SECTION 1 — SETS AND THEIR REPRESENTATIONS
+## SECTION 1 — SETS AND THEIR REPRESENTATIONS ⭐
 
 ### 1.1 Definition of a Set
 
@@ -121,7 +121,7 @@ Read as: "A is the set of all x such that x satisfies property P."
 
 ---
 
-## SECTION 2 — TYPES OF SETS
+## SECTION 2 — TYPES OF SETS ⭐
 
 ### 2.1 The Empty Set
 
@@ -184,7 +184,7 @@ The **number of elements** in a finite set $S$ is denoted $n(S)$ (also called th
 
 ---
 
-## SECTION 3 — SUBSETS AND POWER SETS
+## SECTION 3 — SUBSETS AND POWER SETS ⭐⭐
 
 ### 3.1 Subsets
 
@@ -261,7 +261,7 @@ $n(P(A)) = 2^3 = 8$
 
 ---
 
-## SECTION 4 — INTERVALS AS SUBSETS OF $\mathbb{R}$
+## SECTION 4 — INTERVALS AS SUBSETS OF $\mathbb{R}$ ⭐
 
 Let $a, b \in \mathbb{R}$ with $a < b$. The **length** of any interval $(a, b)$ is $b - a$.
 
@@ -287,7 +287,7 @@ Let $a, b \in \mathbb{R}$ with $a < b$. The **length** of any interval $(a, b)$ 
 
 ---
 
-## SECTION 5 — UNIVERSAL SET AND VENN DIAGRAMS
+## SECTION 5 — UNIVERSAL SET AND VENN DIAGRAMS ⭐
 
 ### 5.1 Universal Set
 
@@ -313,7 +313,7 @@ Venn diagrams are especially useful for visualising union, intersection, differe
 
 ---
 
-## SECTION 6 — OPERATIONS ON SETS
+## SECTION 6 — OPERATIONS ON SETS ⭐⭐
 
 ### 6.1 Union of Sets
 
@@ -398,7 +398,7 @@ $$A - B = \{1, 3, 5\} \qquad B - A = \{8\}$$
 
 ---
 
-## SECTION 7 — COMPLEMENT OF A SET AND DE MORGAN'S LAWS
+## SECTION 7 — COMPLEMENT OF A SET AND DE MORGAN'S LAWS ⭐⭐⭐
 
 ### 7.1 Complement of a Set
 
@@ -465,7 +465,7 @@ $$A' = \{2, 4, 6, 8, 10\}$$
 
 ---
 
-## SECTION 8 — COMPLETE PROPERTIES SUMMARY
+## SECTION 8 — COMPLETE PROPERTIES SUMMARY ⭐⭐⭐
 
 ### 8.1 Subset Relations
 
@@ -485,7 +485,112 @@ $$A \subseteq B \iff A - B = \phi \iff A \cup B = B \iff A \cap B = A$$
 
 ---
 
-## SECTION 9 — BOARD AND JEE TIPS
+## SECTION 9 — WORKED EXAMPLES ⭐⭐
+
+Each example uses **Given / Find / Approach / Work / Check** and is labeled by source.
+
+### 9.1 Solved — Roster Form from a Condition (NCERT Example 2)
+
+- **Given:** The set $\{x : x \text{ is a positive integer and } x^2 < 40\}$.
+- **Find:** Its roster form.
+- **Approach:** Test successive positive integers in $x^2 < 40$ until the inequality first fails, listing every value that satisfies it.
+- **Work:**
+$$1^2=1,\ 2^2=4,\ 3^2=9,\ 4^2=16,\ 5^2=25,\ 6^2=36 \quad (\text{all} < 40); \qquad 7^2 = 49 \not< 40$$
+So the set is $\boxed{\{1,2,3,4,5,6\}}$.
+- **Check:** $49 > 40$ correctly excludes $7$, and no positive integer between $1$ and $6$ was skipped.
+
+---
+
+### 9.2 Solved — Set-Builder Form from a Pattern (NCERT Example 4)
+
+- **Given:** The set $\left\{\dfrac{1}{2}, \dfrac{2}{3}, \dfrac{3}{4}, \dfrac{4}{5}, \dfrac{5}{6}, \dfrac{6}{7}\right\}$.
+- **Find:** Its set-builder form.
+- **Approach:** Spot the pattern relating numerator and denominator, and the range of the numerator.
+- **Work:** Every numerator is one less than its denominator, and the numerator runs from $1$ to $6$:
+$$\boxed{\left\{x : x = \frac{n}{n+1},\ n \in \mathbb{N},\ 1 \leq n \leq 6\right\}}$$
+- **Check:** Substituting $n=1,\ldots,6$ regenerates exactly the six given fractions, with no extra terms produced outside that range.
+
+---
+
+### 9.3 Solved — Proving Two Sets Are Equal (NCERT Example 8(i))
+
+- **Given:** $X$ = set of letters in "ALLOY", $B$ = set of letters in "LOYAL".
+- **Find:** Whether $X = B$.
+- **Approach:** In roster form, repetition and order don't matter (Section 1.2) — list the *distinct* letters of each word and compare.
+- **Work:**
+$$X = \{A, L, L, O, Y\} = \{A, L, O, Y\}, \qquad B = \{L, O, Y, A, L\} = \{A, L, O, Y\}$$
+- **Check:** Every element of $X$ is in $B$ and every element of $B$ is in $X$ — the formal definition of set equality (Section 2.3) is satisfied, so $\boxed{X = B}$.
+
+---
+
+### 9.4 Solved — Listing a Power Set Systematically (NCERT Example 24)
+
+- **Given:** $A = \{-1, 0, 1\}$, so $n(A) = 3$.
+- **Find:** $P(A)$, the power set of $A$.
+- **Approach:** Enumerate by subset size (0 elements, 1 element, 2 elements, 3 elements) so nothing is missed or repeated. The total should come out to $2^{n(A)}$.
+- **Work:**
+
+| Size | Subsets |
+|:---:|:---|
+| 0 | $\phi$ |
+| 1 | $\{-1\}, \{0\}, \{1\}$ |
+| 2 | $\{-1,0\}, \{-1,1\}, \{0,1\}$ |
+| 3 | $\{-1,0,1\}$ |
+
+$$P(A) = \boxed{\{\phi,\ \{-1\},\ \{0\},\ \{1\},\ \{-1,0\},\ \{-1,1\},\ \{0,1\},\ \{-1,0,1\}\}}$$
+
+- **Check:** $1+3+3+1 = 8 = 2^3$ ✓, matching the formula from Section 3.3.
+
+---
+
+### 9.5 Solved — An $\in$-vs-$\subset$ Trap (NCERT Example 11)
+
+- **Given:** $A = \{1\}$, $B = \{\{1\}, 2\}$, $C = \{\{1\}, 2, 3\}$. Note $A \in B$ (since $A=\{1\}$ is itself listed as an element of $B$), and $B \subset C$.
+- **Find:** Does $A \in B$ together with $B \subset C$ force $A \subset C$?
+- **Approach:** Test the claim "$A \subset C$" directly against the definition of subset — every element of $A$ must be an element of $C$ — rather than assuming $\in$ chains like $\subset$ does.
+- **Work:** The only element of $A$ is the number $1$. Is $1 \in C$? The elements of $C = \{\{1\},2,3\}$ are the *set* $\{1\}$, the number $2$, and the number $3$ — the bare number $1$ is not among them. So $1 \notin C$, hence $A \not\subset C$.
+- **Check:** This confirms the answer is **no** — $A \in B$ and $B \subset C$ do *not* in general imply $A \subset C$. Contrast this with Section 3.2's warning that an element of a set can never be a subset of itself, and with the genuine transitivity of $\subset$ alone (if $A\subset B$ and $B \subset C$, then $A \subset C$ — proved in PQs Part F, Q82(iii)).
+
+---
+
+### 9.6 Solved — Verifying De Morgan's Law Numerically (NCERT Example 22)
+
+- **Given:** $U = \{1,2,3,4,5,6\}$, $A = \{2,3\}$, $B = \{3,4,5\}$.
+- **Find:** Confirm $(A \cup B)' = A' \cap B'$ for this instance.
+- **Approach:** Compute both sides independently from the definitions, then compare.
+- **Work:**
+$$A' = U - A = \{1,4,5,6\}, \qquad B' = U - B = \{1,2,6\} \implies A' \cap B' = \{1,6\}$$
+$$A \cup B = \{2,3,4,5\} \implies (A \cup B)' = U - \{2,3,4,5\} = \{1,6\}$$
+- **Check:** Both sides equal $\boxed{\{1,6\}}$ — De Morgan's Law 1 holds for this instance, consistent with the general proof in Section 7.2 and PQs Q53.
+
+---
+
+## POINTS TO PONDER ⭐⭐
+
+> [!warning] $\{0\}$, $\phi$, and $\{\phi\}$ are three different objects
+> $\phi$ has zero elements. $\{0\}$ has one element (the number $0$). $\{\phi\}$ also has one element — but that element is the empty set itself, not a number. Confusing these three costs marks in almost every question that touches the empty set.
+
+> [!warning] $\in$ is not $\subseteq$
+> $a \in A$ says $a$ is one of the objects inside $A$. $\{a\} \subseteq A$ says the *set* $\{a\}$ is a subset of $A$ — a different kind of statement, and an element of a set can never itself be a subset of that set (Section 3.2). Worked Example 9.5 shows exactly where this breaks a chain of reasoning.
+
+> [!warning] Difference is not commutative
+> $A - B$ and $B - A$ are generally different sets (Section 6.3), unlike union and intersection. Always compute both separately — never assume one from the other.
+
+> [!warning] De Morgan's sign trap
+> $(A \cup B)' = A' \cap B'$ — union flips to intersection under a complement, **not** the other way around. Writing $(A \cup B)' = A' \cup B'$ is the single most common error in this chapter (see REVISION MINDMAPS, Mind Map 5).
+
+> [!warning] Which subset-count formula do you actually need?
+> $2^n$ = all subsets. $2^n - 1$ = proper subsets **or** non-empty subsets (two different exclusions that happen to give the same count). $2^n - 2$ = non-empty *and* proper. Read the question carefully before picking a formula (Section 3.3).
+
+> [!warning] $\mathbb{N}$ does not include $0$ in this convention
+> Under the NCERT Class 11 convention used throughout this chapter, $0 \notin \mathbb{N}$. This silently changes roster-form answers to conditions like "$x \in \mathbb{N}, x < 1$" (empty set here, not $\{0\}$).
+
+> [!warning] $n(A \cup B) = n(A) + n(B)$ only when $A$ and $B$ are disjoint
+> The general formula always needs the $-\,n(A \cap B)$ correction (Section 7.3). Dropping it is the most common numerical slip in survey/counting word problems.
+
+---
+
+## SECTION 10 — BOARD AND JEE TIPS
 
 > [!tip] Board Exam Focus
 > - Know how to convert between roster and set-builder form
