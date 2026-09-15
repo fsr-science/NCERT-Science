@@ -976,33 +976,33 @@
           "children": [
             {
               "type": "folder",
-              "name": "CS01-COMPUTER_SYSTEM",
+              "name": "CS01-COMPUTER_SYSTEM_AND_ORGANISATION",
               "children": [
                 {
                   "type": "file",
-                  "name": "CS01-COMPUTER_SYSTEM-GLOSSARY.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM/CS01-COMPUTER_SYSTEM-GLOSSARY.md",
+                  "name": "CS01-COMPUTER_SYSTEM_AND_ORGANISATION-GLOSSARY.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM_AND_ORGANISATION/CS01-COMPUTER_SYSTEM_AND_ORGANISATION-GLOSSARY.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS01-COMPUTER_SYSTEM-NOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM/CS01-COMPUTER_SYSTEM-NOTES.md",
+                  "name": "CS01-COMPUTER_SYSTEM_AND_ORGANISATION-NOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM_AND_ORGANISATION/CS01-COMPUTER_SYSTEM_AND_ORGANISATION-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS01-COMPUTER_SYSTEM-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM/CS01-COMPUTER_SYSTEM-PQs.md",
+                  "name": "CS01-COMPUTER_SYSTEM_AND_ORGANISATION-PQs.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM_AND_ORGANISATION/CS01-COMPUTER_SYSTEM_AND_ORGANISATION-PQs.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS01-COMPUTER_SYSTEM-REVISION_MINDMAPS.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM/CS01-COMPUTER_SYSTEM-REVISION_MINDMAPS.md",
+                  "name": "CS01-COMPUTER_SYSTEM_AND_ORGANISATION-REVISION_MINDMAPS.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM_AND_ORGANISATION/CS01-COMPUTER_SYSTEM_AND_ORGANISATION-REVISION_MINDMAPS.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 }
@@ -1010,33 +1010,33 @@
             },
             {
               "type": "folder",
-              "name": "CS02-ENCODING_SCHEMES_AND_NUMBER_SYSTEM",
+              "name": "CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC",
               "children": [
                 {
                   "type": "file",
-                  "name": "CS02-ENCODING_SCHEMES_AND_NUMBER_SYSTEM-GLOSSARY.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-ENCODING_SCHEMES_AND_NUMBER_SYSTEM/CS02-ENCODING_SCHEMES_AND_NUMBER_SYSTEM-GLOSSARY.md",
+                  "name": "CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-GLOSSARY.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-GLOSSARY.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS02-ENCODING_SCHEMES_AND_NUMBER_SYSTEM-NOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-ENCODING_SCHEMES_AND_NUMBER_SYSTEM/CS02-ENCODING_SCHEMES_AND_NUMBER_SYSTEM-NOTES.md",
+                  "name": "CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-NOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS02-ENCODING_SCHEMES_AND_NUMBER_SYSTEM-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-ENCODING_SCHEMES_AND_NUMBER_SYSTEM/CS02-ENCODING_SCHEMES_AND_NUMBER_SYSTEM-PQs.md",
+                  "name": "CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-PQs.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-PQs.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS02-ENCODING_SCHEMES_AND_NUMBER_SYSTEM-REVISION_MINDMAPS.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-ENCODING_SCHEMES_AND_NUMBER_SYSTEM/CS02-ENCODING_SCHEMES_AND_NUMBER_SYSTEM-REVISION_MINDMAPS.md",
+                  "name": "CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-REVISION_MINDMAPS.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-REVISION_MINDMAPS.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 }
@@ -1044,33 +1044,33 @@
             },
             {
               "type": "folder",
-              "name": "CS03-EMERGING_TRENDS",
+              "name": "CS03-GETTING_STARTED_WITH_PYTHON",
               "children": [
                 {
                   "type": "file",
-                  "name": "CS03-EMERGING_TRENDS-GLOSSARY.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-EMERGING_TRENDS/CS03-EMERGING_TRENDS-GLOSSARY.md",
+                  "name": "CS03-GETTING_STARTED_WITH_PYTHON-GLOSSARY.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-GETTING_STARTED_WITH_PYTHON/CS03-GETTING_STARTED_WITH_PYTHON-GLOSSARY.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS03-EMERGING_TRENDS-NOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-EMERGING_TRENDS/CS03-EMERGING_TRENDS-NOTES.md",
+                  "name": "CS03-GETTING_STARTED_WITH_PYTHON-NOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-GETTING_STARTED_WITH_PYTHON/CS03-GETTING_STARTED_WITH_PYTHON-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS03-EMERGING_TRENDS-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-EMERGING_TRENDS/CS03-EMERGING_TRENDS-PQs.md",
+                  "name": "CS03-GETTING_STARTED_WITH_PYTHON-PQs.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-GETTING_STARTED_WITH_PYTHON/CS03-GETTING_STARTED_WITH_PYTHON-PQs.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS03-EMERGING_TRENDS-REVISION_MINDMAPS.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-EMERGING_TRENDS/CS03-EMERGING_TRENDS-REVISION_MINDMAPS.md",
+                  "name": "CS03-GETTING_STARTED_WITH_PYTHON-REVISION_MINDMAPS.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-GETTING_STARTED_WITH_PYTHON/CS03-GETTING_STARTED_WITH_PYTHON-REVISION_MINDMAPS.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 }
@@ -1078,33 +1078,33 @@
             },
             {
               "type": "folder",
-              "name": "CS04-PROBLEM_SOLVING",
+              "name": "CS04-PYTHON_PROGRAMMING_FUNDAMENTALS",
               "children": [
                 {
                   "type": "file",
-                  "name": "CS04-PROBLEM_SOLVING-GLOSSARY.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PROBLEM_SOLVING/CS04-PROBLEM_SOLVING-GLOSSARY.md",
+                  "name": "CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-GLOSSARY.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-GLOSSARY.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS04-PROBLEM_SOLVING-NOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PROBLEM_SOLVING/CS04-PROBLEM_SOLVING-NOTES.md",
+                  "name": "CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-NOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS04-PROBLEM_SOLVING-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PROBLEM_SOLVING/CS04-PROBLEM_SOLVING-PQs.md",
+                  "name": "CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-PQs.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-PQs.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS04-PROBLEM_SOLVING-REVISION_MINDMAPS.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PROBLEM_SOLVING/CS04-PROBLEM_SOLVING-REVISION_MINDMAPS.md",
+                  "name": "CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-REVISION_MINDMAPS.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-REVISION_MINDMAPS.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 }
@@ -1112,33 +1112,33 @@
             },
             {
               "type": "folder",
-              "name": "CS05-GETTING_STARTED_WITH_PYTHON",
+              "name": "CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS",
               "children": [
                 {
                   "type": "file",
-                  "name": "CS05-GETTING_STARTED_WITH_PYTHON-GLOSSARY.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-GETTING_STARTED_WITH_PYTHON/CS05-GETTING_STARTED_WITH_PYTHON-GLOSSARY.md",
+                  "name": "CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-GLOSSARY.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-GLOSSARY.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS05-GETTING_STARTED_WITH_PYTHON-NOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-GETTING_STARTED_WITH_PYTHON/CS05-GETTING_STARTED_WITH_PYTHON-NOTES.md",
+                  "name": "CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-NOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS05-GETTING_STARTED_WITH_PYTHON-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-GETTING_STARTED_WITH_PYTHON/CS05-GETTING_STARTED_WITH_PYTHON-PQs.md",
+                  "name": "CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-PQs.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-PQs.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS05-GETTING_STARTED_WITH_PYTHON-REVISION_MINDMAPS.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-GETTING_STARTED_WITH_PYTHON/CS05-GETTING_STARTED_WITH_PYTHON-REVISION_MINDMAPS.md",
+                  "name": "CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-REVISION_MINDMAPS.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-REVISION_MINDMAPS.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 }
@@ -1146,33 +1146,33 @@
             },
             {
               "type": "folder",
-              "name": "CS06-FLOW_OF_CONTROL",
+              "name": "CS06-STRINGS_IN_PYTHON",
               "children": [
                 {
                   "type": "file",
-                  "name": "CS06-FLOW_OF_CONTROL-GLOSSARY.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-FLOW_OF_CONTROL/CS06-FLOW_OF_CONTROL-GLOSSARY.md",
+                  "name": "CS06-STRINGS_IN_PYTHON-GLOSSARY.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-STRINGS_IN_PYTHON/CS06-STRINGS_IN_PYTHON-GLOSSARY.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS06-FLOW_OF_CONTROL-NOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-FLOW_OF_CONTROL/CS06-FLOW_OF_CONTROL-NOTES.md",
+                  "name": "CS06-STRINGS_IN_PYTHON-NOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-STRINGS_IN_PYTHON/CS06-STRINGS_IN_PYTHON-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS06-FLOW_OF_CONTROL-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-FLOW_OF_CONTROL/CS06-FLOW_OF_CONTROL-PQs.md",
+                  "name": "CS06-STRINGS_IN_PYTHON-PQs.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-STRINGS_IN_PYTHON/CS06-STRINGS_IN_PYTHON-PQs.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS06-FLOW_OF_CONTROL-REVISION_MINDMAPS.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-FLOW_OF_CONTROL/CS06-FLOW_OF_CONTROL-REVISION_MINDMAPS.md",
+                  "name": "CS06-STRINGS_IN_PYTHON-REVISION_MINDMAPS.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-STRINGS_IN_PYTHON/CS06-STRINGS_IN_PYTHON-REVISION_MINDMAPS.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 }
@@ -1180,33 +1180,33 @@
             },
             {
               "type": "folder",
-              "name": "CS07-FUNCTIONS",
+              "name": "CS07-LISTS_IN_PYTHON",
               "children": [
                 {
                   "type": "file",
-                  "name": "CS07-FUNCTIONS-GLOSSARY.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-FUNCTIONS/CS07-FUNCTIONS-GLOSSARY.md",
+                  "name": "CS07-LISTS_IN_PYTHON-GLOSSARY.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-LISTS_IN_PYTHON/CS07-LISTS_IN_PYTHON-GLOSSARY.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS07-FUNCTIONS-NOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-FUNCTIONS/CS07-FUNCTIONS-NOTES.md",
+                  "name": "CS07-LISTS_IN_PYTHON-NOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-LISTS_IN_PYTHON/CS07-LISTS_IN_PYTHON-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS07-FUNCTIONS-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-FUNCTIONS/CS07-FUNCTIONS-PQs.md",
+                  "name": "CS07-LISTS_IN_PYTHON-PQs.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-LISTS_IN_PYTHON/CS07-LISTS_IN_PYTHON-PQs.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS07-FUNCTIONS-REVISION_MINDMAPS.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-FUNCTIONS/CS07-FUNCTIONS-REVISION_MINDMAPS.md",
+                  "name": "CS07-LISTS_IN_PYTHON-REVISION_MINDMAPS.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-LISTS_IN_PYTHON/CS07-LISTS_IN_PYTHON-REVISION_MINDMAPS.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 }
@@ -1214,33 +1214,33 @@
             },
             {
               "type": "folder",
-              "name": "CS08-STRINGS",
+              "name": "CS08-TUPLES_AND_DICTIONARY",
               "children": [
                 {
                   "type": "file",
-                  "name": "CS08-STRINGS-GLOSSARY.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-STRINGS/CS08-STRINGS-GLOSSARY.md",
+                  "name": "CS08-TUPLES_AND_DICTIONARY-GLOSSARY.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-TUPLES_AND_DICTIONARY/CS08-TUPLES_AND_DICTIONARY-GLOSSARY.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS08-STRINGS-NOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-STRINGS/CS08-STRINGS-NOTES.md",
+                  "name": "CS08-TUPLES_AND_DICTIONARY-NOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-TUPLES_AND_DICTIONARY/CS08-TUPLES_AND_DICTIONARY-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS08-STRINGS-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-STRINGS/CS08-STRINGS-PQs.md",
+                  "name": "CS08-TUPLES_AND_DICTIONARY-PQs.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-TUPLES_AND_DICTIONARY/CS08-TUPLES_AND_DICTIONARY-PQs.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS08-STRINGS-REVISION_MINDMAPS.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-STRINGS/CS08-STRINGS-REVISION_MINDMAPS.md",
+                  "name": "CS08-TUPLES_AND_DICTIONARY-REVISION_MINDMAPS.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-TUPLES_AND_DICTIONARY/CS08-TUPLES_AND_DICTIONARY-REVISION_MINDMAPS.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 }
@@ -1248,33 +1248,33 @@
             },
             {
               "type": "folder",
-              "name": "CS09-LISTS",
+              "name": "CS09-INTRODUCTION_TO_PYTHON_MODULES",
               "children": [
                 {
                   "type": "file",
-                  "name": "CS09-LISTS-GLOSSARY.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-LISTS/CS09-LISTS-GLOSSARY.md",
+                  "name": "CS09-INTRODUCTION_TO_PYTHON_MODULES-GLOSSARY.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-INTRODUCTION_TO_PYTHON_MODULES/CS09-INTRODUCTION_TO_PYTHON_MODULES-GLOSSARY.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS09-LISTS-NOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-LISTS/CS09-LISTS-NOTES.md",
+                  "name": "CS09-INTRODUCTION_TO_PYTHON_MODULES-NOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-INTRODUCTION_TO_PYTHON_MODULES/CS09-INTRODUCTION_TO_PYTHON_MODULES-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS09-LISTS-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-LISTS/CS09-LISTS-PQs.md",
+                  "name": "CS09-INTRODUCTION_TO_PYTHON_MODULES-PQs.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-INTRODUCTION_TO_PYTHON_MODULES/CS09-INTRODUCTION_TO_PYTHON_MODULES-PQs.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS09-LISTS-REVISION_MINDMAPS.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-LISTS/CS09-LISTS-REVISION_MINDMAPS.md",
+                  "name": "CS09-INTRODUCTION_TO_PYTHON_MODULES-REVISION_MINDMAPS.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-INTRODUCTION_TO_PYTHON_MODULES/CS09-INTRODUCTION_TO_PYTHON_MODULES-REVISION_MINDMAPS.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 }
@@ -1282,67 +1282,33 @@
             },
             {
               "type": "folder",
-              "name": "CS10-TUPLES_AND_DICTIONARIES",
+              "name": "CS10-SOCIETY_LAW_AND_ETHICS",
               "children": [
                 {
                   "type": "file",
-                  "name": "CS10-TUPLES_AND_DICTIONARIES-GLOSSARY.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-TUPLES_AND_DICTIONARIES/CS10-TUPLES_AND_DICTIONARIES-GLOSSARY.md",
+                  "name": "CS10-SOCIETY_LAW_AND_ETHICS-GLOSSARY.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-SOCIETY_LAW_AND_ETHICS/CS10-SOCIETY_LAW_AND_ETHICS-GLOSSARY.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS10-TUPLES_AND_DICTIONARIES-NOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-TUPLES_AND_DICTIONARIES/CS10-TUPLES_AND_DICTIONARIES-NOTES.md",
+                  "name": "CS10-SOCIETY_LAW_AND_ETHICS-NOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-SOCIETY_LAW_AND_ETHICS/CS10-SOCIETY_LAW_AND_ETHICS-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS10-TUPLES_AND_DICTIONARIES-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-TUPLES_AND_DICTIONARIES/CS10-TUPLES_AND_DICTIONARIES-PQs.md",
+                  "name": "CS10-SOCIETY_LAW_AND_ETHICS-PQs.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-SOCIETY_LAW_AND_ETHICS/CS10-SOCIETY_LAW_AND_ETHICS-PQs.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS10-TUPLES_AND_DICTIONARIES-REVISION_MINDMAPS.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-TUPLES_AND_DICTIONARIES/CS10-TUPLES_AND_DICTIONARIES-REVISION_MINDMAPS.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-                  "mime": "text/markdown"
-                }
-              ]
-            },
-            {
-              "type": "folder",
-              "name": "CS11-SOCIETAL_IMPACTS",
-              "children": [
-                {
-                  "type": "file",
-                  "name": "CS11-SOCIETAL_IMPACTS-GLOSSARY.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS11-SOCIETAL_IMPACTS/CS11-SOCIETAL_IMPACTS-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS11-SOCIETAL_IMPACTS-NOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS11-SOCIETAL_IMPACTS/CS11-SOCIETAL_IMPACTS-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS11-SOCIETAL_IMPACTS-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS11-SOCIETAL_IMPACTS/CS11-SOCIETAL_IMPACTS-PQs.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS11-SOCIETAL_IMPACTS-REVISION_MINDMAPS.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS11-SOCIETAL_IMPACTS/CS11-SOCIETAL_IMPACTS-REVISION_MINDMAPS.md",
+                  "name": "CS10-SOCIETY_LAW_AND_ETHICS-REVISION_MINDMAPS.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-SOCIETY_LAW_AND_ETHICS/CS10-SOCIETY_LAW_AND_ETHICS-REVISION_MINDMAPS.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 }
