@@ -1533,11 +1533,6 @@
         },
         {
           "type": "folder",
-          "name": "PHYSICAL-EDUCATION",
-          "children": []
-        },
-        {
-          "type": "folder",
           "name": "PHYSICS",
           "children": [
             {
@@ -3068,11 +3063,6 @@
               "mime": "application/pdf"
             }
           ]
-        },
-        {
-          "type": "folder",
-          "name": "PHYSICAL-EDUCATION",
-          "children": []
         },
         {
           "type": "folder",
