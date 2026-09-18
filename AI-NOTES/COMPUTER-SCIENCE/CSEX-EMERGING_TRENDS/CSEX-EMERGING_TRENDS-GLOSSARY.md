@@ -1,4 +1,4 @@
-# Chapter 3 — Emerging Trends — Glossary
+# Computer Science | Chapter EX | EMERGING TRENDS | GLOSSARY
 
 Fast, unambiguous lookup — one entry, one meaning, no worked examples or reasoning (see `NOTES.md` for those). Every entry ends with a `§` back to the NOTES section it's drawn from. Entries marked *(Board book only)* don't appear in the NCERT text at all. Where a term has a known confusable pair, the one distinguishing fact is folded into the entry itself, not just a standalone description.
 

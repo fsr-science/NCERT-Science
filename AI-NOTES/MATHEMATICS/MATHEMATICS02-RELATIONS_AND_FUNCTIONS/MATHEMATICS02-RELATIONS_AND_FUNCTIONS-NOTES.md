@@ -1,4 +1,4 @@
-# Mathematics | Chapter 02 | Relations AND Functions Notes | NOTES
+# Mathematics | Chapter 02 | RELATIONS and FUNCTIONS | NOTES
 
 > Board / JEE-Foundation level. This chapter builds the language every later function-based topic (trigonometric functions, calculus, sequences) depends on: ordered pairs → Cartesian products → relations → the special relations called functions.
 

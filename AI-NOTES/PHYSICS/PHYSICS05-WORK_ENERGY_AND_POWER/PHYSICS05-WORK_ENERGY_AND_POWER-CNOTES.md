@@ -1,4 +1,4 @@
-# Physics | Chapter 05 | WORK Energy AND Power Cnotes | CNOTES
+# Physics | Chapter 05 | WORK ENERGY and POWER | CNOTES
 > **Work, Energy and Power** | Board · NEET · JEE
 
 ---

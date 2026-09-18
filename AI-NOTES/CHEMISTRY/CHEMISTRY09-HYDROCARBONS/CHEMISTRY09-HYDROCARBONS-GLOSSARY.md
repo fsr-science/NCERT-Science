@@ -1,4 +1,4 @@
-# Chemistry | Chapter 09 | Hydrocarbons Glossary | GLOSSARY
+# Chemistry | Chapter 09 | HYDROCARBONS | GLOSSARY
 
 ### Hydrocarbons
 

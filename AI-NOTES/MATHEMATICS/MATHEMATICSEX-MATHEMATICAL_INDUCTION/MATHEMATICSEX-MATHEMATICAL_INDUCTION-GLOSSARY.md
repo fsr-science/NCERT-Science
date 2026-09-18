@@ -1,5 +1,5 @@
 
-# Principle of Mathematical Induction — Glossary & Quick Reference
+# Mathematics | Chapter EX | MATHEMATICAL INDUCTION | GLOSSARY
 
 > Standalone reference sheet. Pairs with **PMI-NOTES** (worked derivations) and **PMI-REVISION-MINDMAP** (concept map + strategy flowcharts).
 

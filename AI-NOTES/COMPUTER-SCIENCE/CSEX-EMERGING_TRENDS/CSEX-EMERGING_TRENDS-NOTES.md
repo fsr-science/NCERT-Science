@@ -1,4 +1,4 @@
-# Chapter 3 — Emerging Trends
+# Computer Science | Chapter EX | EMERGING TRENDS | NOTES
 
 **Branch:** Society, Law & Ethics *(closest fit in the CS-generator branch list — this is a standalone descriptive survey chapter, not tied to Python syntax)*
 **Level:** Class XI (CBSE Computer Science)

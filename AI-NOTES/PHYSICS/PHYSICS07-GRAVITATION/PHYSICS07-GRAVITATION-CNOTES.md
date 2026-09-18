@@ -1,4 +1,4 @@
-# Physics | Chapter 07 | Gravitation Cnotes | CNOTES
+# Physics | Chapter 07 | GRAVITATION | CNOTES
 
 ### Gravitation
 

@@ -1,5 +1,5 @@
 
-# Mathematics | Chapter 13 | Statistics Notes | NOTES
+# Mathematics | Chapter 13 | STATISTICS | NOTES
 
 > How a single number can describe not just where data is centred, but how scattered it is — range, mean deviation, variance, and standard deviation, for raw, discrete, and continuous data.
 

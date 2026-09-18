@@ -1,5 +1,5 @@
 
-# Mathematics | Chapter 10 | Conic Sections Notes | NOTES
+# Mathematics | Chapter 10 | CONIC SECTIONS | NOTES
 
 *Level: Class 11 Board / JEE Foundation*
 

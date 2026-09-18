@@ -1,4 +1,4 @@
-# Physics | Chapter 04 | LAWS OF Motion Cnotes | CNOTES
+# Physics | Chapter 04 | LAWS of MOTION | CNOTES
 > **Laws of Motion** | Board · NEET · JEE
 
 ---

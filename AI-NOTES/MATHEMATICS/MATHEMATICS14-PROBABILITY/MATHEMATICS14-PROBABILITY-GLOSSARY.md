@@ -1,5 +1,5 @@
 
-# Mathematics | Chapter 14 | Probability Glossary | GLOSSARY
+# Mathematics | Chapter 14 | PROBABILITY | GLOSSARY
 
 > Quick-reference sheet: every term, set-notation correspondence, axiom, and formula from the chapter in one place, grouped by topic. For explanations and worked examples, see `NOTES-Probability.md`. For the concept map and problem-solving flowcharts, see `REVISION-MINDMAP-Probability.md`.
 

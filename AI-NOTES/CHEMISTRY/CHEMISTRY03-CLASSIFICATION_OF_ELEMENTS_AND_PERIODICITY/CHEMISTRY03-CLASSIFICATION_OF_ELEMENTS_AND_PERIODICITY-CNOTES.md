@@ -1,4 +1,4 @@
-# Chemistry | Chapter 03 | Classification OF Elements AND Periodicity Cnotes | CNOTES
+# Chemistry | Chapter 03 | CLASSIFICATION of ELEMENTS and PERIODICITY | CNOTES
 
 ### Classification of Elements and Periodicity in Properties
 

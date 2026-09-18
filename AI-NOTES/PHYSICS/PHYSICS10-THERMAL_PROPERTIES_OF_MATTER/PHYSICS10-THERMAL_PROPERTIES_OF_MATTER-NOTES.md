@@ -1,5 +1,5 @@
 
-# Physics | Chapter 10 | Thermal Properties OF Matter Notes | NOTES
+# Physics | Chapter 10 | THERMAL PROPERTIES of MATTER | NOTES
 ### Complete Study Notes | Board · NEET · JEE Layered
 
 ---

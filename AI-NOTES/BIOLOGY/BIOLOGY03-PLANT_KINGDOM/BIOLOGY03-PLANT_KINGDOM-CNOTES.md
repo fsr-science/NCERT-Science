@@ -1,5 +1,5 @@
 
-# Biology | Chapter 03 | Plant Kingdom Cnotes | CNOTES
+# Biology | Chapter 03 | PLANT KINGDOM | CNOTES
 
 ### *48-Hour Rapid Revision Vault | Pure Visual + Tabular Format*
 

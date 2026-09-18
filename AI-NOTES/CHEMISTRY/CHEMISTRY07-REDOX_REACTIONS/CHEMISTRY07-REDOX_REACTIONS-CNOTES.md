@@ -1,4 +1,4 @@
-# Chemistry | Chapter 07 | Redox Reactions Cnotes | CNOTES
+# Chemistry | Chapter 07 | REDOX REACTIONS | CNOTES
 
 ### Redox Reactions
 

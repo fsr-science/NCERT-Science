@@ -1,4 +1,4 @@
-# Chemistry | Chapter 03 | Classification OF Elements AND Periodicity Glossary | GLOSSARY
+# Chemistry | Chapter 03 | CLASSIFICATION of ELEMENTS and PERIODICITY | GLOSSARY
 
 ### Classification of Elements and Periodicity in Properties
 

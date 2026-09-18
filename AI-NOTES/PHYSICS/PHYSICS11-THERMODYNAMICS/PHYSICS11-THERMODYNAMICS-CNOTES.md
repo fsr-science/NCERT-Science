@@ -1,4 +1,4 @@
-# Physics | Chapter 11 | Thermodynamics Cnotes | CNOTES
+# Physics | Chapter 11 | THERMODYNAMICS | CNOTES
 
 ### Thermodynamics
 

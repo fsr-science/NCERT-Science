@@ -1,5 +1,5 @@
 
-# Mathematics | Chapter 08 | Sequences AND Series Glossary | GLOSSARY
+# Mathematics | Chapter 08 | SEQUENCES and SERIES | GLOSSARY
 
 > NCERT Class 11, Chapter 8 (2025–26 rationalized reprint). Standalone formula sheet for last-minute revision — see `NOTES-Sequences-and-Series.md` for derivations, worked examples, and diagrams.
 

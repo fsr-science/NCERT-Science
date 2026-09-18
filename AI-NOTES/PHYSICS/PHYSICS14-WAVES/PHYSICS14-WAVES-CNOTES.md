@@ -1,4 +1,4 @@
-# Physics | Chapter 14 | Waves Cnotes | CNOTES
+# Physics | Chapter 14 | WAVES | CNOTES
 
 ### Waves
 

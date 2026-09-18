@@ -1,5 +1,5 @@
 
-# Mathematics | Chapter 11 | Introduction TO 3D Geometry Cnotes | CNOTES
+# Mathematics | Chapter 11 | INTRODUCTION to 3D GEOMETRY | CNOTES
 
 > Pair this with the NOTES file (derivations, worked examples) and the GLOSSARY file (formula sheet). This file is for two things: seeing how the chapter's ideas connect, and knowing which procedure to reach for on a given problem.
 

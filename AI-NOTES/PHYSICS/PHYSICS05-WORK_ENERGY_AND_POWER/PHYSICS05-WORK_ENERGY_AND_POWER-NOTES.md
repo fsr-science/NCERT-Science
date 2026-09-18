@@ -1,4 +1,4 @@
-# Physics | Chapter 05 | WORK Energy AND Power Notes | NOTES
+# Physics | Chapter 05 | WORK ENERGY and POWER | NOTES
 > **Complete Study Notes** | Board · NEET · JEE Layered
 
 ---

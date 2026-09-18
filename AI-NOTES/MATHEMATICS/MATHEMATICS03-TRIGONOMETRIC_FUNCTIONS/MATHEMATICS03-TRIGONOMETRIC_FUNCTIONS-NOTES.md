@@ -1,4 +1,4 @@
-# Mathematics | Chapter 03 | Trigonometric Functions Notes | NOTES
+# Mathematics | Chapter 03 | TRIGONOMETRIC FUNCTIONS | NOTES
 
 ### NCERT Class 11 Mathematics — Chapter 3 · **Board / JEE Foundation**
 

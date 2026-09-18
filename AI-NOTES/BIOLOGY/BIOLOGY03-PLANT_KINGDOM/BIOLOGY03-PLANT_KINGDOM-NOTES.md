@@ -1,5 +1,5 @@
 
-# Biology | Chapter 03 | Plant Kingdom Notes | NOTES
+# Biology | Chapter 03 | PLANT KINGDOM | NOTES
 
 ### *Comprehensive Theory Notes | NCERT Chapter 3 | Board + NEET-UG Integrated*
 

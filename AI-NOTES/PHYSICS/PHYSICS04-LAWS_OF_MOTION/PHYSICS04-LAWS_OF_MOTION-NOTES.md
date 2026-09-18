@@ -1,4 +1,4 @@
-# Physics | Chapter 04 | LAWS OF Motion Notes | NOTES
+# Physics | Chapter 04 | LAWS of MOTION | NOTES
 > **Complete Study Notes** | Board · NEET · JEE Layered
 
 ---

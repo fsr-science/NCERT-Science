@@ -1,4 +1,4 @@
-# Computer Science | Chapter 06 | Strings IN Python Notes | NOTES
+# Computer Science | Chapter 06 | STRINGS in PYTHON | NOTES
 
 **Branch:** Strings, Lists, Tuples & Dictionaries · **Level:** Class XI (CBSE/NCERT) · **Python version assumed:** Python 3.x
 

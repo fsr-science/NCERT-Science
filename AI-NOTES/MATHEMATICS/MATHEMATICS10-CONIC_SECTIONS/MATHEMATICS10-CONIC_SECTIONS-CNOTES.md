@@ -1,5 +1,5 @@
 
-# Mathematics | Chapter 10 | Conic Sections Cnotes | CNOTES
+# Mathematics | Chapter 10 | CONIC SECTIONS | CNOTES
 
 *Companion to Conic-Sections-NOTES.md and Conic-Sections-GLOSSARY.md · NCERT Class 11 Mathematics, Chapter 10*
 

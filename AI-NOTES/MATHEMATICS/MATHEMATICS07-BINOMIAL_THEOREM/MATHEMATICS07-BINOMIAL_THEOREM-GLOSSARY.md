@@ -1,5 +1,5 @@
 
-# Mathematics | Chapter 07 | Binomial Theorem Glossary | GLOSSARY
+# Mathematics | Chapter 07 | BINOMIAL THEOREM | GLOSSARY
 
 *Target level: Board / Class 11 · Standalone Quick-Reference sheet — pair with NOTES.md for derivations*
 

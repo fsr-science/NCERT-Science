@@ -1,4 +1,4 @@
-# Chemistry | Chapter 02 | Structure OF ATOM Notes | NOTES
+# Chemistry | Chapter 02 | STRUCTURE of ATOM | NOTES
 
 ### Physical Chemistry | Complete Study Notes | Board · NEET · JEE Layered
 

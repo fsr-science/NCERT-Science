@@ -1,5 +1,5 @@
 
-# Principle of Mathematical Induction
+# Mathematics | Chapter EX | MATHEMATICAL INDUCTION | NOTES
 
 > NCERT Exemplar — Class 11, Chapter 4 (Board / JEE Foundation Level)
 

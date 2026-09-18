@@ -1,4 +1,4 @@
-# Physics | Chapter 01 | Units AND Measurements Cnotes | CNOTES
+# Physics | Chapter 01 | UNITS and MEASUREMENTS | CNOTES
 > **Units and Measurement** | Board · NEET · JEE
 
 ---

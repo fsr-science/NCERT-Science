@@ -1,4 +1,4 @@
-# Physics | Chapter 03 | Motion IN A Plane Cnotes | CNOTES
+# Physics | Chapter 03 | MOTION in a PLANE | CNOTES
 
 ### Motion in a Plane
 

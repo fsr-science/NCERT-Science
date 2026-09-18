@@ -1,4 +1,4 @@
-# Physics | Chapter 12 | Kinetic Theory Cnotes | CNOTES
+# Physics | Chapter 12 | KINETIC THEORY | CNOTES
 
 ### Kinetic Theory
 

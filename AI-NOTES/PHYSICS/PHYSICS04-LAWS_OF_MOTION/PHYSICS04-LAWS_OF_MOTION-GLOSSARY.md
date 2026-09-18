@@ -1,4 +1,4 @@
-# Physics | Chapter 04 | LAWS OF Motion Glossary | GLOSSARY
+# Physics | Chapter 04 | LAWS of MOTION | GLOSSARY
 > **Laws of Motion**
 
 ---

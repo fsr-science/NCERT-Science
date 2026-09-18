@@ -1,5 +1,5 @@
 
-# Mathematics | Chapter 14 | Probability Notes | NOTES
+# Mathematics | Chapter 14 | PROBABILITY | NOTES
 
 > **Level:** Board (CBSE Class 11) / JEE-foundation. This chapter builds the *axiomatic* definition of probability — the rigorous foundation on which conditional probability, independence, and the later probability chapters (Class 12) are built.
 

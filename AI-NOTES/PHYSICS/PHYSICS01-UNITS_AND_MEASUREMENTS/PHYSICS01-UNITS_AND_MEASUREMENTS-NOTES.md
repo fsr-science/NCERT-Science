@@ -1,4 +1,4 @@
-# Physics | Chapter 01 | Units AND Measurements Notes | NOTES
+# Physics | Chapter 01 | UNITS and MEASUREMENTS | NOTES
 > **Complete Study Notes** | Board · NEET · JEE Layered
 
 ---

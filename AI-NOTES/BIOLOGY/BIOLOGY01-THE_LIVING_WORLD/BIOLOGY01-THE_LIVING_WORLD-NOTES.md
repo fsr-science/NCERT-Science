@@ -1,5 +1,5 @@
 
-# Biology | Chapter 01 | THE Living World Notes | NOTES
+# Biology | Chapter 01 | THE LIVING WORLD | NOTES
 
 ### *Comprehensive Theory Notes | NCERT Chapter 1 | Board + NEET-UG Integrated*
 

@@ -1,5 +1,5 @@
 
-# Mathematics | Chapter 08 | Sequences AND Series Cnotes | CNOTES
+# Mathematics | Chapter 08 | SEQUENCES and SERIES | CNOTES
 
 > NCERT Class 11, Chapter 8. This file holds the chapter's concept roadmap and its problem-solving decision flows — for derivations and worked examples, see `NOTES-Sequences-and-Series.md`; for the formula sheet, see `GLOSSARY-Sequences-and-Series.md`.
 

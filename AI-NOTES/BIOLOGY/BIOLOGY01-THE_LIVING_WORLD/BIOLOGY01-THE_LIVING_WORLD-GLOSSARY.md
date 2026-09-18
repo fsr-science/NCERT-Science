@@ -1,5 +1,5 @@
 
-# Biology | Chapter 01 | THE Living World Glossary | GLOSSARY
+# Biology | Chapter 01 | THE LIVING WORLD | GLOSSARY
 
 ### *Terminology & Etymology Vault | Dictionary-Style Reference*
 

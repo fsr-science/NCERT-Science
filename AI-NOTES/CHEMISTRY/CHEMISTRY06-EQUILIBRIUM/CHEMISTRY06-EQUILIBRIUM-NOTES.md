@@ -1,4 +1,4 @@
-# Chemistry | Chapter 06 | Equilibrium Notes | NOTES
+# Chemistry | Chapter 06 | EQUILIBRIUM | NOTES
 
 ### Complete Study Notes | Board · NEET · JEE Layered
 

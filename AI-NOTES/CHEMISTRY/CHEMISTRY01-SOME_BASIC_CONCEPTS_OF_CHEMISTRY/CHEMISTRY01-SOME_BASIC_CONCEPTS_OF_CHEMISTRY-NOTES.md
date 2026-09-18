@@ -1,4 +1,4 @@
-# Chemistry | Chapter 01 | SOME Basic Concepts OF Chemistry Notes | NOTES
+# Chemistry | Chapter 01 | SOME BASIC CONCEPTS of CHEMISTRY | NOTES
 > **Complete Study Notes** | Board · NEET · JEE Layered
 
 ---

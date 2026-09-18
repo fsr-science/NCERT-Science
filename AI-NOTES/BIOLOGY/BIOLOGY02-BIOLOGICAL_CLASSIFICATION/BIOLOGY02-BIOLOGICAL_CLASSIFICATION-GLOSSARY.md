@@ -1,5 +1,5 @@
 
-# Biology | Chapter 02 | Biological Classification Glossary | GLOSSARY
+# Biology | Chapter 02 | BIOLOGICAL CLASSIFICATION | GLOSSARY
 
 ### *Terminology & Etymology Vault | Dictionary-Style Reference*
 

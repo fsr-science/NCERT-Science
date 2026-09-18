@@ -1,4 +1,4 @@
-# Physics | Chapter 03 | Motion IN A Plane Notes | NOTES
+# Physics | Chapter 03 | MOTION in a PLANE | NOTES
 > **Complete Study Notes** | Board · NEET · JEE Layered
 
 ---

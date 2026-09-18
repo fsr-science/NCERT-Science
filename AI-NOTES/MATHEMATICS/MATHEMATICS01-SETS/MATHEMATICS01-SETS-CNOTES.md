@@ -1,4 +1,4 @@
-# Mathematics | Chapter 01 | SETS Cnotes | CNOTES
+# Mathematics | Chapter 01 | SETS | CNOTES
 > **Sets** | Board · JEE
 
 ---

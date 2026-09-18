@@ -1,4 +1,4 @@
-# Physics | Chapter 06 | System OF Particles AND Rotational Motion Cnotes | CNOTES
+# Physics | Chapter 06 | SYSTEM of PARTICLES and ROTATIONAL MOTION | CNOTES
 
 ### Systems of Particles and Rotational Motion
 

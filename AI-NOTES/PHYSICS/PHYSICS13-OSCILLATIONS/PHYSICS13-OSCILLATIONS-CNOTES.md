@@ -1,4 +1,4 @@
-# Physics | Chapter 13 | Oscillations Cnotes | CNOTES
+# Physics | Chapter 13 | OSCILLATIONS | CNOTES
 
 ### Oscillations
 

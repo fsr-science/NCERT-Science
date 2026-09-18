@@ -1,4 +1,4 @@
-# Physics | Chapter 14 | Waves Glossary | GLOSSARY
+# Physics | Chapter 14 | WAVES | GLOSSARY
 
 ### Waves
 

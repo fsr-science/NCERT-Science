@@ -1,5 +1,5 @@
 
-# Mathematics | Chapter 12 | Limits AND Derivatives Glossary | GLOSSARY
+# Mathematics | Chapter 12 | LIMITS and DERIVATIVES | GLOSSARY
 
 *NCERT Class 11 Mathematics, Chapter 12 — companion to the NOTES and REVISION-MINDMAP files for this chapter.*
 

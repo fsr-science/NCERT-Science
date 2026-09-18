@@ -1,4 +1,4 @@
-# Chemistry | Chapter 01 | SOME Basic Concepts OF Chemistry Cnotes | CNOTES
+# Chemistry | Chapter 01 | SOME BASIC CONCEPTS of CHEMISTRY | CNOTES
 > **Some Basic Concepts of Chemistry** | Board · NEET · JEE
 
 ---

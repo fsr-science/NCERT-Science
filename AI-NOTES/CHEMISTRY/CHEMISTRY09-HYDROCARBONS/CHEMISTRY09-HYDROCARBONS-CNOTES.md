@@ -1,4 +1,4 @@
-# Chemistry | Chapter 09 | Hydrocarbons Cnotes | CNOTES
+# Chemistry | Chapter 09 | HYDROCARBONS | CNOTES
 
 ### Hydrocarbons
 

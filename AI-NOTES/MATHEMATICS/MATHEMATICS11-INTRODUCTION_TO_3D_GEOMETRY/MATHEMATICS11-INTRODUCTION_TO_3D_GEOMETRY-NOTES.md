@@ -1,5 +1,5 @@
 
-# Mathematics | Chapter 11 | Introduction TO 3D Geometry Notes | NOTES
+# Mathematics | Chapter 11 | INTRODUCTION to 3D GEOMETRY | NOTES
 
 > How do you pin down the *exact* location of a point that isn't confined to a flat sheet of paper — the tip of a hanging bulb, the blade-tip of a ceiling fan, an aircraft mid-flight? This chapter builds the coordinate system that answers that question in space.
 

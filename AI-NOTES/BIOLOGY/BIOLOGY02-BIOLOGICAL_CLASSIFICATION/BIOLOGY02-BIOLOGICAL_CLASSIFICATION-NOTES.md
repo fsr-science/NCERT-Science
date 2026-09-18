@@ -1,5 +1,5 @@
 
-# Biology | Chapter 02 | Biological Classification Notes | NOTES
+# Biology | Chapter 02 | BIOLOGICAL CLASSIFICATION | NOTES
 
 ### *Comprehensive Theory Notes | NCERT Chapter 2 | Board + NEET-UG Integrated*
 

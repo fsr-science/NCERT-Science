@@ -1,5 +1,5 @@
 
-# Mathematics | Chapter 08 | Sequences AND Series Notes | NOTES
+# Mathematics | Chapter 08 | SEQUENCES and SERIES | NOTES
 
 > **Level:** CBSE Class 11 (Board / JEE foundation) — NCERT Chapter 8, 2025–26 rationalized reprint
 
