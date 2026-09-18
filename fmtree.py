@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""Generate a repository-local files.json manifest.
-
-The manifest format intentionally remains compatible with the existing
-NoteBooks subject-tree consumer: folders contain ``type``, ``name``, and
-``children``; files additionally contain ``path``, ``sha``, and ``mime``.
-"""
+"""Generate a repository-local files.json manifest for document-like content only."""
 
 from __future__ import annotations
 
@@ -29,18 +24,59 @@ SKIP_DIRECTORIES = {
     ".ruff_cache",
     "node_modules",
     ".github",
-    ".vscode"
+    ".vscode",
 }
-SKIP_FILES = {
-    ".DS_Store", 
-    "files.json",
-    ".nojekyll",
-    "index.html",
-    "app.js",
-    "styles.css",
-    "fallback.html",
-    "favicon.png",
-    "fmtree.py"
+
+ALLOWED_FILE_SUFFIXES = {
+    ".md",
+    ".markdown",
+    ".txt",
+    ".rtf",
+    ".pdf",
+    ".doc",
+    ".docx",
+    ".ppt",
+    ".pptx",
+    ".xls",
+    ".xlsx",
+    ".csv",
+    ".odt",
+    ".odp",
+    ".ods",
+    ".epub",
+}
+
+SKIP_FILE_SUFFIXES = {
+    ".py",
+    ".pyw",
+    ".json",
+    ".yaml",
+    ".yml",
+    ".toml",
+    ".ini",
+    ".cfg",
+    ".lock",
+    ".js",
+    ".jsx",
+    ".ts",
+    ".tsx",
+    ".css",
+    ".scss",
+    ".sass",
+    ".html",
+    ".htm",
+    ".xml",
+    ".svg",
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".gif",
+    ".webp",
+    ".ico",
+    ".sh",
+    ".bash",
+    ".zsh",
+    ".ps1",
 }
 
 
@@ -68,7 +104,6 @@ def repository_name() -> str:
     if remote_name:
         return remote_name.group(1)
 
-    # SSH remotes use the form git@github.com:owner/repository.git.
     ssh_name = re.search(r":([^/:]+?)(?:\.git)?$", remote)
     return ssh_name.group(1) if ssh_name else ROOT.name
 
@@ -80,6 +115,11 @@ def blob_sha(path: Path) -> str:
 
 def relative_path(path: Path) -> str:
     return path.relative_to(ROOT).as_posix()
+
+
+def is_allowed_file(path: Path) -> bool:
+    suffix = path.suffix.lower()
+    return suffix in ALLOWED_FILE_SUFFIXES and suffix not in SKIP_FILE_SUFFIXES
 
 
 def file_entry(path: Path) -> dict[str, str]:
@@ -94,7 +134,11 @@ def file_entry(path: Path) -> dict[str, str]:
 
 
 def should_skip(path: Path, output_path: Path) -> bool:
-    if path.name in SKIP_DIRECTORIES or path.name in SKIP_FILES:
+    if path.name in SKIP_DIRECTORIES:
+        return True
+    if path.is_dir():
+        return False
+    if path.is_file() and not is_allowed_file(path):
         return True
     try:
         return path.resolve() == output_path
@@ -113,24 +157,18 @@ def iter_children(path: Path, output_path: Path) -> Iterable[Path]:
             continue
         try:
             if child.is_symlink():
-                # Symlinks can escape the repository or introduce cycles.
                 continue
             if child.is_dir():
                 yield child
-            elif child.is_file():
+            elif child.is_file() and is_allowed_file(child):
                 yield child
         except OSError as exc:
             raise RuntimeError(f"Unable to inspect path: {child}") from exc
 
 
-def build_tree(path: Path, output_path: Path, is_root: bool = False) -> list[dict]:
+def build_tree(path: Path, output_path: Path) -> list[dict]:
     children: list[dict] = []
     for child in iter_children(path, output_path):
-        # Preserve the existing subject-repository policy: root-level website
-        # implementation files are not content entries; README.md is retained.
-        if is_root and child.is_file() and child.name.casefold() != "readme.md":
-            continue
-
         if child.is_dir():
             children.append(
                 {
@@ -168,17 +206,26 @@ def write_manifest(output_path: Path, payload: dict) -> None:
 
 
 def main() -> int:
+    global ROOT
     parser = argparse.ArgumentParser(
         description="Generate a repository-local files.json manifest"
     )
     parser.add_argument(
+        "--root",
+        default=str(ROOT),
+        help="Repository root to scan (default: directory containing fmtree.py)",
+    )
+    parser.add_argument(
         "--out",
-        default=str(ROOT / "files.json"),
-        help="Output path for files.json (default: repository root/files.json)",
+        "--output",
+        dest="out",
+        default=None,
+        help="Output path for files.json (default: selected root/files.json)",
     )
     args = parser.parse_args()
 
-    output_path = Path(args.out).expanduser().resolve()
+    ROOT = Path(args.root).expanduser().resolve()
+    output_path = Path(args.out or (ROOT / "files.json")).expanduser().resolve()
     if output_path == ROOT:
         raise SystemExit("--out must identify a file, not the repository directory")
 
@@ -189,7 +236,7 @@ def main() -> int:
     payload = {
         "type": "folder",
         "name": name,
-        "children": build_tree(ROOT, output_path, is_root=True),
+        "children": build_tree(ROOT, output_path),
     }
     write_manifest(output_path, payload)
     print(f"files.json generated for {name} at {output_path}")
