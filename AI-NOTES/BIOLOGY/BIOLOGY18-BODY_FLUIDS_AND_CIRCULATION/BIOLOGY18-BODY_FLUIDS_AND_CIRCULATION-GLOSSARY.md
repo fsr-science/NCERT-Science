@@ -1,1 +1,1 @@
-# Biology | Chapter 18 | BODY FLUIDS and CIRCULATION | GLOSSARY
+# Biology | Chapter 18 | Body Fluids and Circulation | GLOSSARY

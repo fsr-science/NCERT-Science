@@ -1,4 +1,4 @@
-# Chemistry | Chapter 04 | CHEMICAL BONDING and MOLECULAR STRUCTURE | NOTES
+# Chemistry | Chapter 04 | Chemical Bonding and Molecular Structure | NOTES
 
 **Branch:** Physical / Inorganic bridge chapter · **Level:** Board · NEET · JEE
 *Upgraded NoteBooks-Framework edition — built from the NCERT Class 11 Chemistry Unit 4 PDF, reconciled with the existing handwritten-derived note. Diagrams added throughout: Mermaid roadmaps/decision logic, TikZ structural and orbital figures, and Desmos interactive graphs (marked where syntax is reviewed but not yet confirmed to render live — see the note before the first Desmos block in Section 8).*

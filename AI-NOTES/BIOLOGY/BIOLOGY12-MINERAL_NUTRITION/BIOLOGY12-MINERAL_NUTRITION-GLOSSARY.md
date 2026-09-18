@@ -1,1 +1,1 @@
-# Biology | Chapter 12 | MINERAL NUTRITION | GLOSSARY
+# Biology | Chapter 12 | Mineral Nutrition | GLOSSARY

@@ -1,4 +1,4 @@
-# Physics | Chapter 09 | MECHANICAL PROPERTIES of FLUIDS | CNOTES
+# Physics | Chapter 09 | Mechanical Properties of Fluids | CNOTES
 
 ### Mechanical Properties of Fluids
 

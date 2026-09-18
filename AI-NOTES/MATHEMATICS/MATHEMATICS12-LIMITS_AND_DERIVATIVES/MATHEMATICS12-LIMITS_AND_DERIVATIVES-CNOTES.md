@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter 12 | LIMITS and DERIVATIVES | CNOTES
+# Mathematics | Chapter 12 | Limits and Derivatives | CNOTES
 
 *NCERT Class 11 Mathematics, Chapter 12 — pairs with the GLOSSARY and NOTES files for this chapter.*
 

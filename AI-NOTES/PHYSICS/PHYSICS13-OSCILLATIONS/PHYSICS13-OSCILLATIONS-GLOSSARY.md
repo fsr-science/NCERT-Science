@@ -1,4 +1,4 @@
-# Physics | Chapter 13 | OSCILLATIONS | GLOSSARY
+# Physics | Chapter 13 | Oscillations | GLOSSARY
 
 ### Oscillations
 

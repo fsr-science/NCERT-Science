@@ -1,4 +1,4 @@
-# Physics | Chapter 07 | GRAVITATION | NOTES
+# Physics | Chapter 07 | Gravitation | NOTES
 
 ### Complete Study Notes | Board · NEET · JEE Layered
 

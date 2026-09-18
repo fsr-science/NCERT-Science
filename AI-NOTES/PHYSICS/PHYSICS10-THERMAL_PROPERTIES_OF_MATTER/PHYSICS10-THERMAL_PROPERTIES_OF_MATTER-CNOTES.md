@@ -1,4 +1,4 @@
-# Physics | Chapter 10 | THERMAL PROPERTIES of MATTER | CNOTES
+# Physics | Chapter 10 | Thermal Properties of Matter | CNOTES
 
 ### Thermal Properties of Matter
 

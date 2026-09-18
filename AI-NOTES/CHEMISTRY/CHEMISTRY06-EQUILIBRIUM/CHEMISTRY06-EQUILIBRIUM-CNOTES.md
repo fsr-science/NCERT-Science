@@ -1,4 +1,4 @@
-# Chemistry | Chapter 06 | EQUILIBRIUM | CNOTES
+# Chemistry | Chapter 06 | Equilibrium | CNOTES
 
 ### Equilibrium
 

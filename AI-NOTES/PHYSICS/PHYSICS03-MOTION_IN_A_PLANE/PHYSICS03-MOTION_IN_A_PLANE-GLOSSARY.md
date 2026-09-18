@@ -1,4 +1,4 @@
-# Physics | Chapter 03 | MOTION in a PLANE | GLOSSARY
+# Physics | Chapter 03 | Motion in a Plane | GLOSSARY
 
 ### Motion in a Plane
 

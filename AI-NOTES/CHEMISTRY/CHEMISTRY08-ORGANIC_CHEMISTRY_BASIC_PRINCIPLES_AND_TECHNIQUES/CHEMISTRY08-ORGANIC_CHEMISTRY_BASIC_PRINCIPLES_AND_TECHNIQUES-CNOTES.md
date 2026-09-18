@@ -1,4 +1,4 @@
-# Chemistry | Chapter 08 | ORGANIC CHEMISTRY BASIC PRINCIPLES and TECHNIQUES | CNOTES
+# Chemistry | Chapter 08 | Organic Chemistry Basic Principles and Techniques | CNOTES
 
 ### Organic Chemistry — Some Basic Principles and Techniques
 

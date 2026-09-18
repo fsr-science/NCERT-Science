@@ -1,1 +1,1 @@
-# Biology | Chapter 12 | MINERAL NUTRITION | NOTES
+# Biology | Chapter 12 | Mineral Nutrition | NOTES

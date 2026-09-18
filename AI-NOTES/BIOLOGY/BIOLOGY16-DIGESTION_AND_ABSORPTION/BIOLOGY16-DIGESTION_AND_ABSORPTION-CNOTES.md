@@ -1,1 +1,1 @@
-# Biology | Chapter 16 | DIGESTION and ABSORPTION | CNOTES
+# Biology | Chapter 16 | Digestion and Absorption | CNOTES

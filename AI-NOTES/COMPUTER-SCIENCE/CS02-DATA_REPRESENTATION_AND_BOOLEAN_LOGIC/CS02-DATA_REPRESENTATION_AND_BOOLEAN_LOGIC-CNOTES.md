@@ -1,4 +1,4 @@
-# Computer Science | Chapter 02 | DATA REPRESENTATION and BOOLEAN LOGIC | CNOTES
+# Computer Science | Chapter 02 | Data Representation and Boolean Logic | CNOTES
 
 **Level:** Class XI (CBSE) · **Source:** `CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-NOTES.md` · **Companion:** `CS02-...-GLOSSARY.md`
 

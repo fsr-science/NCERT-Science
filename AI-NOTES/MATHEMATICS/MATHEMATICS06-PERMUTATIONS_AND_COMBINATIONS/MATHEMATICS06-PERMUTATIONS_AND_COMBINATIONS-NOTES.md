@@ -1,4 +1,4 @@
-# Mathematics | Chapter 06 | PERMUTATIONS and COMBINATIONS | NOTES
+# Mathematics | Chapter 06 | Permutations and Combinations | NOTES
 
 > **Level:** CBSE/NCERT Board, JEE Main-foundational. This note explains how to count arrangements and selections *without listing every possibility*, and builds the two core formulas of combinatorics: \( {}^nP_r \) (order matters) and \( {}^nC_r \) (order doesn't).
 

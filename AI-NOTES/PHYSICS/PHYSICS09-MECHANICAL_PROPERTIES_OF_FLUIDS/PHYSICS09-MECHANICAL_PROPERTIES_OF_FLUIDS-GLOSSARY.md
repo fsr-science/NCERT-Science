@@ -1,4 +1,4 @@
-# Physics | Chapter 09 | MECHANICAL PROPERTIES of FLUIDS | GLOSSARY
+# Physics | Chapter 09 | Mechanical Properties of Fluids | GLOSSARY
 
 ### Mechanical Properties of Fluids
 

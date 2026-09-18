@@ -1,1 +1,1 @@
-# Biology | Chapter 15 | PLANT GROWTH and DEVELOPMENT | GLOSSARY
+# Biology | Chapter 15 | Plant Growth and Development | GLOSSARY

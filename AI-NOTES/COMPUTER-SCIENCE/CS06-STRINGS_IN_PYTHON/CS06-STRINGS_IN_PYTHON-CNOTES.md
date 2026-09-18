@@ -1,4 +1,4 @@
-# Computer Science | Chapter 06 | STRINGS in PYTHON | CNOTES
+# Computer Science | Chapter 06 | Strings in Python | CNOTES
 
 - Branch: Strings, Lists, Tuples & Dictionaries.
 - Level: Class XI (CBSE/NCERT).

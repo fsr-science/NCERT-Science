@@ -1,4 +1,4 @@
-# Physics | Chapter 07 | GRAVITATION | GLOSSARY
+# Physics | Chapter 07 | Gravitation | GLOSSARY
 
 ### Gravitation
 

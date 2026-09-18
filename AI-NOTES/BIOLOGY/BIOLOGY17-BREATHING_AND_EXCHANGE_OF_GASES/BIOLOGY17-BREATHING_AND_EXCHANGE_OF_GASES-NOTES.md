@@ -1,1 +1,1 @@
-# Biology | Chapter 17 | BREATHING and EXCHANGE of GASES | NOTES
+# Biology | Chapter 17 | Breathing and Exchange of Gases | NOTES

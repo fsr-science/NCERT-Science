@@ -1,1 +1,1 @@
-# Biology | Chapter 12 | MINERAL NUTRITION | CNOTES
+# Biology | Chapter 12 | Mineral Nutrition | CNOTES

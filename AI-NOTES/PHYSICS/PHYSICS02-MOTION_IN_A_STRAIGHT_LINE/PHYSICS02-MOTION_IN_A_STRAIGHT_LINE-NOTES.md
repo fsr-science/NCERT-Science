@@ -1,4 +1,4 @@
-# Physics | Chapter 02 | MOTION in a STRAIGHT LINE | NOTES
+# Physics | Chapter 02 | Motion in a Straight Line | NOTES
 > **Complete Study Notes** | Board · NEET · JEE Layered
 
 ---

@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter EX | MATHEMATICAL INDUCTION | CNOTES
+# Mathematics | Chapter EX | Mathematical Induction | CNOTES
 
 > Pairs with **PMI-NOTES** (full derivations) and **PMI-GLOSSARY** (formula sheet). This file is purely visual: a concept roadmap, then the proof-writing and technique-selection flowcharts for exam revision.
 

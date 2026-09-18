@@ -1,1 +1,1 @@
-# Biology | Chapter 05 | MORPHOLOGY of FLOWERING PLANTS | GLOSSARY
+# Biology | Chapter 05 | Morphology of Flowering Plants | GLOSSARY

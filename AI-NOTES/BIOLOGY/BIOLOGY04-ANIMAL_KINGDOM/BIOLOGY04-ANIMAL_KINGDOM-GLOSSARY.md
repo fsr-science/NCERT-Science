@@ -1,1 +1,1 @@
-# Biology | Chapter 04 | ANIMAL KINGDOM | GLOSSARY
+# Biology | Chapter 04 | Animal Kingdom | GLOSSARY

@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter 14 | PROBABILITY | CNOTES
+# Mathematics | Chapter 14 | Probability | CNOTES
 
 > Visual map of how the chapter's ideas connect, plus decision flowcharts for the problem types you'll actually meet. Pair this with `NOTES-Probability.md` for the reasoning behind each box, and `GLOSSARY-Probability.md` for the formula sheet.
 

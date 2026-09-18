@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter 11 | INTRODUCTION to 3D GEOMETRY | GLOSSARY
+# Mathematics | Chapter 11 | Introduction to 3D Geometry | GLOSSARY
 
 > Standalone last-minute revision sheet. Paired with the full NOTES file for derivations and worked examples, and the REVISION-MINDMAP file for the concept map and problem-solving flowcharts.
 

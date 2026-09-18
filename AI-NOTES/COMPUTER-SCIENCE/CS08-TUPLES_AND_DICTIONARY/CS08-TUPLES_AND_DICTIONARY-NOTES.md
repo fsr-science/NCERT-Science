@@ -1,1 +1,1 @@
-# Computer Science | Chapter 08 | TUPLES and DICTIONARY | NOTES
+# Computer Science | Chapter 08 | Tuples and Dictionary | NOTES

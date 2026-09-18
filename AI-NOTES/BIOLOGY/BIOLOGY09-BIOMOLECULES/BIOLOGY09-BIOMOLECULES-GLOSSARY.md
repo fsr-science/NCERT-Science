@@ -1,1 +1,1 @@
-# Biology | Chapter 09 | BIOMOLECULES | GLOSSARY
+# Biology | Chapter 09 | Biomolecules | GLOSSARY

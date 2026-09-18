@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter 04 | COMPLEX NUMBERS and QUADRATIC EQUATIONS | GLOSSARY
+# Mathematics | Chapter 04 | Complex Numbers and Quadratic Equations | GLOSSARY
 
 > **Level:** Class 11 Board (NCERT Ch. 4) — foundational for JEE
 > **Source:** *Complex Numbers and Quadratic Equations*, NCERT Mathematics (Reprint 2025-26), Sections 4.1–4.5 + Miscellaneous Examples/Exercise

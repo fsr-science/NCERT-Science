@@ -1,4 +1,4 @@
-# Chemistry | Chapter 04 | CHEMICAL BONDING and MOLECULAR STRUCTURE | GLOSSARY
+# Chemistry | Chapter 04 | Chemical Bonding and Molecular Structure | GLOSSARY
 
 ### Chemical Bonding and Molecular Structure
 

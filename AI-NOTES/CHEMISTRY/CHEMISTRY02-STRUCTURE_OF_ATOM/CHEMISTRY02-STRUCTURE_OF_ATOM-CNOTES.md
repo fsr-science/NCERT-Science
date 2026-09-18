@@ -1,4 +1,4 @@
-# Chemistry | Chapter 02 | STRUCTURE of ATOM | CNOTES
+# Chemistry | Chapter 02 | Structure of Atom | CNOTES
 
 ### Structure of Atom
 

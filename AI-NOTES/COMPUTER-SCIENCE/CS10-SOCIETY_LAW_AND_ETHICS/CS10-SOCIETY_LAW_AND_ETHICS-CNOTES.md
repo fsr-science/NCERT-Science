@@ -1,1 +1,1 @@
-# Computer Science | Chapter 10 | SOCIETY LAW and ETHICS | CNOTES
+# Computer Science | Chapter 10 | Society Law and Ethics | CNOTES

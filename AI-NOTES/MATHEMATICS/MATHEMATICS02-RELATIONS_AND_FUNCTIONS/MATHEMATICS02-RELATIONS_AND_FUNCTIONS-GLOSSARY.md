@@ -1,4 +1,4 @@
-# Mathematics | Chapter 02 | RELATIONS and FUNCTIONS | GLOSSARY
+# Mathematics | Chapter 02 | Relations and Functions | GLOSSARY
 
 ## Cartesian Products
 

@@ -1,5 +1,4 @@
-
-# Biology | Chapter 03 | PLANT KINGDOM | GLOSSARY
+# Biology | Chapter 03 | Plant Kingdom | GLOSSARY
 
 ### *Terminology & Etymology Vault | Dictionary-Style Reference*
 

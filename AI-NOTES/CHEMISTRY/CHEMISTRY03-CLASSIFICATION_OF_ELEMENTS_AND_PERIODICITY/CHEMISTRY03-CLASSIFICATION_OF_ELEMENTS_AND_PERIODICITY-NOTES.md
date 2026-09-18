@@ -1,4 +1,4 @@
-# Chemistry | Chapter 03 | CLASSIFICATION of ELEMENTS and PERIODICITY | NOTES
+# Chemistry | Chapter 03 | Classification of Elements and Periodicity | NOTES
 
 **Branch:** Inorganic Chemistry &nbsp;|&nbsp; **Level:** Board · NEET · JEE &nbsp;|&nbsp; **NCERT Unit 3** (Class XI)
 

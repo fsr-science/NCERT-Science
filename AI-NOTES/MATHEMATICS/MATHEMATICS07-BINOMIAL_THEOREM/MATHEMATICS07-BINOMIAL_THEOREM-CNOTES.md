@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter 07 | BINOMIAL THEOREM | CNOTES
+# Mathematics | Chapter 07 | Binomial Theorem | CNOTES
 
 *Pair with NOTES.md (derivations) and GLOSSARY.md (formula sheet)*
 

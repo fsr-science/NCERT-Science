@@ -1,1 +1,1 @@
-# Computer Science | Chapter 01 | COMPUTER SYSTEM and ORGANISATION | CNOTES
+# Computer Science | Chapter 01 | Computer System and Organisation | CNOTES

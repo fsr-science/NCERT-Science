@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter 03 | TRIGONOMETRIC FUNCTIONS | CNOTES
+# Mathematics | Chapter 03 | Trigonometric Functions | CNOTES
 
 ### NCERT Class 11 Mathematics, Chapter 3 — concept roadmap and problem-solving strategy
 

@@ -1,1 +1,1 @@
-# Biology | Chapter 07 | STRUCTURAL ORGANISATION in ANIMALS | NOTES
+# Biology | Chapter 07 | Structural Organisation in Animals | NOTES

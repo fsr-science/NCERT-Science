@@ -1,1 +1,1 @@
-# Biology | Chapter 10 | CELL CYCLE and CELL DIVISION | CNOTES
+# Biology | Chapter 10 | Cell Cycle and Cell Division | CNOTES

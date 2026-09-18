@@ -1,1 +1,1 @@
-# Computer Science | Chapter 10 | SOCIETY LAW and ETHICS | GLOSSARY
+# Computer Science | Chapter 10 | Society Law and Ethics | GLOSSARY

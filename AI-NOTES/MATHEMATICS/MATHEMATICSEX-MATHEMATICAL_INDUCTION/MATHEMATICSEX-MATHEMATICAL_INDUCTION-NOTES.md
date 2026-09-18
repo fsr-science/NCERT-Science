@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter EX | MATHEMATICAL INDUCTION | NOTES
+# Mathematics | Chapter EX | Mathematical Induction | NOTES
 
 > NCERT Exemplar — Class 11, Chapter 4 (Board / JEE Foundation Level)
 

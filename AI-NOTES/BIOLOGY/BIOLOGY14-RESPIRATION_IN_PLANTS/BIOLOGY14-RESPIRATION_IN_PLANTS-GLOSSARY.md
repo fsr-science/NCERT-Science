@@ -1,1 +1,1 @@
-# Biology | Chapter 14 | RESPIRATION in PLANTS | GLOSSARY
+# Biology | Chapter 14 | Respiration in Plants | GLOSSARY

@@ -1,5 +1,4 @@
-
-# Biology | Chapter 02 | BIOLOGICAL CLASSIFICATION | GLOSSARY
+# Biology | Chapter 02 | Biological Classification | GLOSSARY
 
 ### *Terminology & Etymology Vault | Dictionary-Style Reference*
 

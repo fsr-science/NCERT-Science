@@ -1,1 +1,1 @@
-# Computer Science | Chapter 09 | INTRODUCTION to PYTHON MODULES | NOTES
+# Computer Science | Chapter 09 | Introduction to Python Modules | NOTES

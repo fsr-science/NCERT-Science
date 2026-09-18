@@ -1,1 +1,1 @@
-# Biology | Chapter 15 | PLANT GROWTH and DEVELOPMENT | NOTES
+# Biology | Chapter 15 | Plant Growth and Development | NOTES

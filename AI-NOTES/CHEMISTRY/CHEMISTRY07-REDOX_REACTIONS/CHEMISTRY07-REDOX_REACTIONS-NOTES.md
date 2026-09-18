@@ -1,4 +1,4 @@
-# Chemistry | Chapter 07 | REDOX REACTIONS | NOTES
+# Chemistry | Chapter 07 | Redox Reactions | NOTES
 
 **Branch:** Physical Chemistry (Redox & Electrochemistry Foundations) · **Source:** NCERT Class XI Chemistry, Unit 7 · **Level:** Board · NEET · JEE
 

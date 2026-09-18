@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter 12 | LIMITS and DERIVATIVES | NOTES
+# Mathematics | Chapter 12 | Limits and Derivatives | NOTES
 
 *NCERT Class 11 Mathematics, Chapter 12 · CBSE Board / JEE-Foundation level*
 

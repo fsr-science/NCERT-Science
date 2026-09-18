@@ -1,1 +1,1 @@
-# Biology | Chapter 16 | DIGESTION and ABSORPTION | GLOSSARY
+# Biology | Chapter 16 | Digestion and Absorption | GLOSSARY

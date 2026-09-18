@@ -1,1 +1,1 @@
-# Computer Science | Chapter 09 | INTRODUCTION to PYTHON MODULES | GLOSSARY
+# Computer Science | Chapter 09 | Introduction to Python Modules | GLOSSARY

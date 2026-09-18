@@ -1,1 +1,1 @@
-# Biology | Chapter 06 | ANATOMY of FLOWERING PLANTS | GLOSSARY
+# Biology | Chapter 06 | Anatomy of Flowering Plants | GLOSSARY

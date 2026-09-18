@@ -1,4 +1,4 @@
-# Computer Science | Chapter 02 | DATA REPRESENTATION and BOOLEAN LOGIC | GLOSSARY
+# Computer Science | Chapter 02 | Data Representation and Boolean Logic | GLOSSARY
 
 **Level:** Class XI (CBSE) · **Companion files:** `CS02-...-NOTES.md` (explanations), `CS02-...-CNOTES.md` (self-test)
 

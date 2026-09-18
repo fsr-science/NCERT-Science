@@ -1,4 +1,4 @@
-# Physics | Chapter 05 | WORK ENERGY and POWER | GLOSSARY
+# Physics | Chapter 05 | Work Energy and Power | GLOSSARY
 
 ### Work, Energy and Power
 

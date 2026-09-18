@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter 07 | BINOMIAL THEOREM | NOTES
+# Mathematics | Chapter 07 | Binomial Theorem | NOTES
 
 ### NCERT Class 11, Chapter 7 — Board level (positive integral index only)
 

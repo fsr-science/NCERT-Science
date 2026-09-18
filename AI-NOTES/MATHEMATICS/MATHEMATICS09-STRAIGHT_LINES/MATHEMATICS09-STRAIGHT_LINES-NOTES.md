@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter 09 | STRAIGHT LINES | NOTES
+# Mathematics | Chapter 09 | Straight Lines | NOTES
 
 > The algebra of the simplest figure in geometry — how a *slope* and one known point (or two, or an intercept) pin down every point on a line, and how to measure a point's distance from it.
 

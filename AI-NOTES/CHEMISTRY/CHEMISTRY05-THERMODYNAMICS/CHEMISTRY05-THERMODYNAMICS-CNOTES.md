@@ -1,4 +1,4 @@
-# Chemistry | Chapter 05 | THERMODYNAMICS | CNOTES
+# Chemistry | Chapter 05 | Thermodynamics | CNOTES
 
 ### Thermodynamics
 

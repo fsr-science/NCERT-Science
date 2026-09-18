@@ -1,4 +1,4 @@
-# Mathematics | Chapter 06 | PERMUTATIONS and COMBINATIONS | CNOTES
+# Mathematics | Chapter 06 | Permutations and Combinations | CNOTES
 
 > A one-page visual recall aid. Use this *after* reading the full notes, not instead of them.
 

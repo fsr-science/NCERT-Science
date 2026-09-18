@@ -1,4 +1,4 @@
-# Physics | Chapter 08 | MECHANICAL PROPERTIES of SOLIDS | GLOSSARY
+# Physics | Chapter 08 | Mechanical Properties of Solids | GLOSSARY
 
 ### Mechanical Properties of Solids
 

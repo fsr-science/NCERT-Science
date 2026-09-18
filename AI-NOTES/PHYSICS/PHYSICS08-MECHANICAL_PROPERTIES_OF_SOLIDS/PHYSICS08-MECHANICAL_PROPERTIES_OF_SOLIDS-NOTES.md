@@ -1,4 +1,4 @@
-# Physics | Chapter 08 | MECHANICAL PROPERTIES of SOLIDS | NOTES
+# Physics | Chapter 08 | Mechanical Properties of Solids | NOTES
 
 ### Complete Study Notes | Board · NEET · JEE Layered
 

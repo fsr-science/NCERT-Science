@@ -1,4 +1,4 @@
-# Physics | Chapter 12 | KINETIC THEORY | GLOSSARY
+# Physics | Chapter 12 | Kinetic Theory | GLOSSARY
 
 ### Kinetic Theory
 

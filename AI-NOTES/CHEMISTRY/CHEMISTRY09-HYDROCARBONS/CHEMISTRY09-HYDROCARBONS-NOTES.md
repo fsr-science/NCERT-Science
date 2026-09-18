@@ -1,4 +1,4 @@
-# Chemistry | Chapter 09 | HYDROCARBONS | NOTES
+# Chemistry | Chapter 09 | Hydrocarbons | NOTES
 
 ### Complete Study Notes | Board · NEET · JEE Layered
 

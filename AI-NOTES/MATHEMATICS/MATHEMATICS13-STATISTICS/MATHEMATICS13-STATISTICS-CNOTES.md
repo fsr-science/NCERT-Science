@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter 13 | STATISTICS | CNOTES
+# Mathematics | Chapter 13 | Statistics | CNOTES
 
 *(NCERT Class 11 Mathematics, Chapter 13 — Measures of Dispersion)*
 

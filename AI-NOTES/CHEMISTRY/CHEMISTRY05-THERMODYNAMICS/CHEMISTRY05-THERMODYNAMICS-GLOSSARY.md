@@ -1,4 +1,4 @@
-# Chemistry | Chapter 05 | THERMODYNAMICS | GLOSSARY
+# Chemistry | Chapter 05 | Thermodynamics | GLOSSARY
 
 ### Thermodynamics
 

@@ -1,4 +1,4 @@
-# Computer Science | Chapter 03 | GETTING STARTED with PYTHON | CNOTES
+# Computer Science | Chapter 03 | Getting Started with Python | CNOTES
 
 - Covers NCERT Class XI Computer Science, Chapter 4 (Introduction to Problem Solving) and Chapter 5 (Getting Started with Python).
 - Supplementary source: *Computer Science with Python — XI*, single combined Chapter 4 ("Computational Thinking and Getting Started with Python"); content unique to it is labeled **(Supp.)**.

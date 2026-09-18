@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter 04 | COMPLEX NUMBERS and QUADRATIC EQUATIONS | NOTES
+# Mathematics | Chapter 04 | Complex Numbers and Quadratic Equations | NOTES
 
 **Target level:** Class 11 Board (CBSE/NCERT) — foundational for JEE
 

@@ -1,4 +1,4 @@
-# Mathematics | Chapter 05 | LINEAR INEQUALITIES | NOTES
+# Mathematics | Chapter 05 | Linear Inequalities | NOTES
 
 > Board-level foundation for JEE/NEET-adjacent inequality skills: comparing expressions with \(<, >, \le, \ge\) instead of \(=\), and tracking how the *solution set* changes with the domain (\(\mathbb{N}, \mathbb{Z}\), or \(\mathbb{R}\)).
 

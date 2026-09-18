@@ -1,4 +1,4 @@
-# Mathematics | Chapter 01 | SETS | GLOSSARY
+# Mathematics | Chapter 01 | Sets | GLOSSARY
 > **Sets** | All terms alphabetically arranged with precise mathematical definitions and exam relevance tags.
 
 ---

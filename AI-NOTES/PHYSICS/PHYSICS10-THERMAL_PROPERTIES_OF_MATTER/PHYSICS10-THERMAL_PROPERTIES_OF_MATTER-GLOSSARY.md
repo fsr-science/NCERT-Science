@@ -1,4 +1,4 @@
-# Physics | Chapter 10 | THERMAL PROPERTIES of MATTER | GLOSSARY
+# Physics | Chapter 10 | Thermal Properties of Matter | GLOSSARY
 
 ### Thermal Properties of Matter
 

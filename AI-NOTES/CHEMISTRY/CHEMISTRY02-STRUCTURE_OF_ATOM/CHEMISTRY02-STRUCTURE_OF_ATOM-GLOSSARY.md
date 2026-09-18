@@ -1,4 +1,4 @@
-# Chemistry | Chapter 02 | STRUCTURE of ATOM | GLOSSARY
+# Chemistry | Chapter 02 | Structure of Atom | GLOSSARY
 
 ### Structure of Atom
 

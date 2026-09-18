@@ -1,1 +1,1 @@
-# Biology | Chapter 13 | PHOTOSYNTHESIS in HIGHER PLANTS | GLOSSARY
+# Biology | Chapter 13 | Photosynthesis in Higher Plants | GLOSSARY

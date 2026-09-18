@@ -1,1 +1,1 @@
-# Computer Science | Chapter 08 | TUPLES and DICTIONARY | CNOTES
+# Computer Science | Chapter 08 | Tuples and Dictionary | CNOTES

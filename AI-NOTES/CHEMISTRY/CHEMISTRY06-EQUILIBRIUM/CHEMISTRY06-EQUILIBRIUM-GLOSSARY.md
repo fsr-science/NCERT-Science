@@ -1,4 +1,4 @@
-# Chemistry | Chapter 06 | EQUILIBRIUM | GLOSSARY
+# Chemistry | Chapter 06 | Equilibrium | GLOSSARY
 
 ### Equilibrium
 

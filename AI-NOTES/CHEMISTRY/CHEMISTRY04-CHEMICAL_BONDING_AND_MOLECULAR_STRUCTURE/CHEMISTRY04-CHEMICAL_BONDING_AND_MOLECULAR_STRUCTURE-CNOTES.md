@@ -1,4 +1,4 @@
-# Chemistry | Chapter 04 | CHEMICAL BONDING and MOLECULAR STRUCTURE | CNOTES
+# Chemistry | Chapter 04 | Chemical Bonding and Molecular Structure | CNOTES
 
 ### Chemical Bonding and Molecular Structure
 

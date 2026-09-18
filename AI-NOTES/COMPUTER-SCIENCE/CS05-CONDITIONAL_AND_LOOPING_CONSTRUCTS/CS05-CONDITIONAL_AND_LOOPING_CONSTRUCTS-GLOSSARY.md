@@ -1,1 +1,1 @@
-# Computer Science | Chapter 05 | CONDITIONAL and LOOPING CONSTRUCTS | GLOSSARY
+# Computer Science | Chapter 05 | Conditional and Looping Constructs | GLOSSARY

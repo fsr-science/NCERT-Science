@@ -1,1 +1,1 @@
-# Biology | Chapter 19 | EXCRETORY PRODUCTS and THEIR ELIMINATION | NOTES
+# Biology | Chapter 19 | Excretory Products and Their Elimination | NOTES

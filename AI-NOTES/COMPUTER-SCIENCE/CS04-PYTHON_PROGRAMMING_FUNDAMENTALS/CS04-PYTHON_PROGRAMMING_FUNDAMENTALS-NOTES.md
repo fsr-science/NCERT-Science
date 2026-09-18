@@ -1,4 +1,4 @@
-# Computer Science | Chapter 04 | PYTHON PROGRAMMING FUNDAMENTALS | NOTES
+# Computer Science | Chapter 04 | Python Programming Fundamentals | NOTES
 
 **Branches merged:** Python Fundamentals + Functions & Modules · **Level:** Class XI (CBSE Computer Science) · **Python version assumed:** Python 3.x
 **Source chapters:** NCERT Computer Science — Chapter 5 (Getting Started with Python) + Chapter 7 (Functions)

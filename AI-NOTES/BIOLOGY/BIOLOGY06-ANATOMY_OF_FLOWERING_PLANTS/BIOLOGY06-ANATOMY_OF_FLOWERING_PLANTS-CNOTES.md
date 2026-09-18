@@ -1,1 +1,1 @@
-# Biology | Chapter 06 | ANATOMY of FLOWERING PLANTS | CNOTES
+# Biology | Chapter 06 | Anatomy of Flowering Plants | CNOTES

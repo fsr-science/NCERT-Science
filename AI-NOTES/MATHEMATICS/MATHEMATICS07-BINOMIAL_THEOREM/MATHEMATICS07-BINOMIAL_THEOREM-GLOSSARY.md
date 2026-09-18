@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter 07 | BINOMIAL THEOREM | GLOSSARY
+# Mathematics | Chapter 07 | Binomial Theorem | GLOSSARY
 
 *Target level: Board / Class 11 · Standalone Quick-Reference sheet — pair with NOTES.md for derivations*
 

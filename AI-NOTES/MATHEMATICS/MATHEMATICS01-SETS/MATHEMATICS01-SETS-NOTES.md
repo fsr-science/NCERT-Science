@@ -1,4 +1,4 @@
-# Mathematics | Chapter 01 | SETS | NOTES
+# Mathematics | Chapter 01 | Sets | NOTES
 > **Complete Study Notes** | Board · JEE Layered
 
 ---

@@ -1,5 +1,4 @@
-
-# Mathematics | Chapter 13 | STATISTICS | GLOSSARY
+# Mathematics | Chapter 13 | Statistics | GLOSSARY
 
 *(NCERT Class 11 Mathematics, Chapter 13 — Measures of Dispersion)*
 

@@ -1,4 +1,4 @@
-# Chemistry | Chapter 01 | SOME BASIC CONCEPTS of CHEMISTRY | GLOSSARY
+# Chemistry | Chapter 01 | Some Basic Concepts of Chemistry | GLOSSARY
 > **Some Basic Concepts of Chemistry** | All terms alphabetically arranged with precise scientific definitions and exam relevance tags.
 
 ---

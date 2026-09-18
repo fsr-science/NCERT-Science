@@ -1,4 +1,4 @@
-# Computer Science | Chapter EX | EMERGING TRENDS | CNOTES
+# Computer Science | Chapter EX | Emerging Trends | CNOTES
 
 - Branch: Society, Law & Ethics — closest fit in the CS-generator branch list
 - This is a standalone descriptive survey chapter, not tied to Python syntax

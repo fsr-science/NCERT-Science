@@ -1,4 +1,4 @@
-# Physics | Chapter 11 | THERMODYNAMICS | GLOSSARY
+# Physics | Chapter 11 | Thermodynamics | GLOSSARY
 
 ### Thermodynamics
 

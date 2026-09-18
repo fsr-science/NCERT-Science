@@ -1,4 +1,4 @@
-# Physics | Chapter 08 | MECHANICAL PROPERTIES of SOLIDS | CNOTES
+# Physics | Chapter 08 | Mechanical Properties of Solids | CNOTES
 
 ### Mechanical Properties of Solids
 

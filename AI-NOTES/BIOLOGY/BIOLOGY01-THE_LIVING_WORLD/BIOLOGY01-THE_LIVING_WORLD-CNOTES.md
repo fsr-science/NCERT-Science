@@ -1,5 +1,4 @@
-
-# Biology | Chapter 01 | THE LIVING WORLD | CNOTES
+# Biology | Chapter 01 | The Living World | CNOTES
 
 ### *48-Hour Rapid Revision Vault | Pure Visual + Tabular Format*
 

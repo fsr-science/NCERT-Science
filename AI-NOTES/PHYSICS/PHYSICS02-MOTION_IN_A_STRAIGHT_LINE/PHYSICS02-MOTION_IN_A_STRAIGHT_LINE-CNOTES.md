@@ -1,4 +1,4 @@
-# Physics | Chapter 02 | MOTION in a STRAIGHT LINE | CNOTES
+# Physics | Chapter 02 | Motion in a Straight Line | CNOTES
 > **Motion in a Straight Line** | Board · NEET · JEE
 
 ---

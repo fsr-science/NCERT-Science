@@ -1,1 +1,1 @@
-# Biology | Chapter 10 | CELL CYCLE and CELL DIVISION | GLOSSARY
+# Biology | Chapter 10 | Cell Cycle and Cell Division | GLOSSARY
