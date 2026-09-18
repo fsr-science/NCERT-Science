@@ -1,5 +1,5 @@
 
-# Complex Numbers — Revision Mindmap
+# Mathematics | Chapter 04 | Complex Numbers AND Quadratic Equations Cnotes | CNOTES
 
 > **Level:** Class 11 Board (NCERT Ch. 4, §4.1–§4.5) — foundational for JEE
 > **Use this for:** a last-look-before-the-exam pass over how the chapter's ideas connect, and which technique to reach for on a given problem.

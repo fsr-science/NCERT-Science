@@ -1,5 +1,5 @@
 
-# REVISION MINDMAP — Probability (NCERT Class 11, Chapter 14)
+# Mathematics | Chapter 14 | Probability Cnotes | CNOTES
 
 > Visual map of how the chapter's ideas connect, plus decision flowcharts for the problem types you'll actually meet. Pair this with `NOTES-Probability.md` for the reasoning behind each box, and `GLOSSARY-Probability.md` for the formula sheet.
 

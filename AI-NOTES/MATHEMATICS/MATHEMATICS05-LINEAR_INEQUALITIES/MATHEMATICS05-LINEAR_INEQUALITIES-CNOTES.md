@@ -1,4 +1,4 @@
-# Linear Inequalities — Revision Mindmap (NCERT Chapter 5)
+# Mathematics | Chapter 05 | Linear Inequalities Cnotes | CNOTES
 
 > Visual revision aid: how the chapter's ideas connect, and a decision flow for approaching any inequality problem. Pairs with the NOTES and GLOSSARY files.
 

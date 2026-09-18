@@ -1,4 +1,4 @@
-# CHAPTER 10 — GLOSSARY & TERMINOLOGY
+# Physics | Chapter 10 | Thermal Properties OF Matter Glossary | GLOSSARY
 
 ### Thermal Properties of Matter
 

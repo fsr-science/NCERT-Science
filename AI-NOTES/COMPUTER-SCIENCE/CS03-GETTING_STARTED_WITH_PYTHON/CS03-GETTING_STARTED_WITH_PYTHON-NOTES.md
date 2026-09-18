@@ -1,4 +1,4 @@
-# Class XI Computer Science — Unit 1: Problem Solving & Python Fundamentals
+# Computer Science | Chapter 03 | Getting Started WITH Python Notes | NOTES
 
 > Two chapters, one thread: you cannot write a correct program until you can describe the solution precisely in words or pictures first. This note takes that thread from "what is a problem" all the way to "why did my Python program just crash."
 

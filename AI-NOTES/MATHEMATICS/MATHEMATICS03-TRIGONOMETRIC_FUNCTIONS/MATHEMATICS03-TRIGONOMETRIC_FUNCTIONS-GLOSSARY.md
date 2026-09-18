@@ -1,5 +1,5 @@
 
-# Trigonometric Functions — Quick Reference / Glossary
+# Mathematics | Chapter 03 | Trigonometric Functions Glossary | GLOSSARY
 
 ### NCERT Class 11 Mathematics, Chapter 3 — formula sheet for last-minute revision
 

@@ -1,4 +1,4 @@
-# CHAPTER 12 — RAPID REVISION + MIND MAPS
+# Physics | Chapter 12 | Kinetic Theory Cnotes | CNOTES
 
 ### Kinetic Theory
 

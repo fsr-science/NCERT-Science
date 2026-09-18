@@ -1,4 +1,4 @@
-# CHAPTER 7 — RAPID REVISION + MIND MAPS
+# Chemistry | Chapter 07 | Redox Reactions Cnotes | CNOTES
 
 ### Redox Reactions
 

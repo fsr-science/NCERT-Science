@@ -1,4 +1,4 @@
-# 📖 CHAPTER 1 — GLOSSARY & TERMINOLOGY
+# Physics | Chapter 01 | Units AND Measurements Glossary | GLOSSARY
 > **Units and Measurement** | All terms alphabetically arranged with precise scientific definitions, dimensional formulae, and exam relevance tags.
 
 ---

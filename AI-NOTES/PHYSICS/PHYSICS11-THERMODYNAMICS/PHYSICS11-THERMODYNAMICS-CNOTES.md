@@ -1,4 +1,4 @@
-# CHAPTER 11 — RAPID REVISION + MIND MAPS
+# Physics | Chapter 11 | Thermodynamics Cnotes | CNOTES
 
 ### Thermodynamics
 

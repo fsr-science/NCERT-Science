@@ -1,4 +1,4 @@
-# CHAPTER 14 — RAPID REVISION + MIND MAPS
+# Physics | Chapter 14 | Waves Cnotes | CNOTES
 
 ### Waves
 

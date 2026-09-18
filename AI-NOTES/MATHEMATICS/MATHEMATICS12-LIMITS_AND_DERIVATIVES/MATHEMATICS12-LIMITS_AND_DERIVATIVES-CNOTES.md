@@ -1,5 +1,5 @@
 
-# Limits and Derivatives — Revision Mind-Map
+# Mathematics | Chapter 12 | Limits AND Derivatives Cnotes | CNOTES
 
 *NCERT Class 11 Mathematics, Chapter 12 — pairs with the GLOSSARY and NOTES files for this chapter.*
 

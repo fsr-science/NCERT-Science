@@ -1,4 +1,4 @@
-# CHAPTER 7 — GLOSSARY & TERMINOLOGY
+# Chemistry | Chapter 07 | Redox Reactions Glossary | GLOSSARY
 
 ### Redox Reactions
 

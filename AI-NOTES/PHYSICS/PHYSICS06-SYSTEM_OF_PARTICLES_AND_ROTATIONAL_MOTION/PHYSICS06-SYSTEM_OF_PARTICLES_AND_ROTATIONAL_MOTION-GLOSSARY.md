@@ -1,4 +1,4 @@
-# CHAPTER 6 — GLOSSARY & TERMINOLOGY
+# Physics | Chapter 06 | System OF Particles AND Rotational Motion Glossary | GLOSSARY
 
 ### Systems of Particles and Rotational Motion
 

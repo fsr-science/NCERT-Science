@@ -1,4 +1,4 @@
-# Classification of Elements and Periodicity in Properties
+# Chemistry | Chapter 03 | Classification OF Elements AND Periodicity Notes | NOTES
 
 **Branch:** Inorganic Chemistry &nbsp;|&nbsp; **Level:** Board · NEET · JEE &nbsp;|&nbsp; **NCERT Unit 3** (Class XI)
 

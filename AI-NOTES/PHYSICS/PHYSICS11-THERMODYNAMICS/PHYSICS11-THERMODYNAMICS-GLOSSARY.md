@@ -1,4 +1,4 @@
-# CHAPTER 11 — GLOSSARY & TERMINOLOGY
+# Physics | Chapter 11 | Thermodynamics Glossary | GLOSSARY
 
 ### Thermodynamics
 

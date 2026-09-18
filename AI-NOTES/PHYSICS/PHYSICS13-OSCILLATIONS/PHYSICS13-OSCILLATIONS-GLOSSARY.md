@@ -1,4 +1,4 @@
-# CHAPTER 13 — GLOSSARY & TERMINOLOGY
+# Physics | Chapter 13 | Oscillations Glossary | GLOSSARY
 
 ### Oscillations
 

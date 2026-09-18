@@ -1,5 +1,5 @@
 
-# Conic Sections — GLOSSARY & Quick Reference
+# Mathematics | Chapter 10 | Conic Sections Glossary | GLOSSARY
 
 *Companion to Conic-Sections-NOTES.md · NCERT Class 11 Mathematics, Chapter 10*
 

@@ -1,5 +1,5 @@
 
-# Trigonometric Functions — Revision Mindmap
+# Mathematics | Chapter 03 | Trigonometric Functions Cnotes | CNOTES
 
 ### NCERT Class 11 Mathematics, Chapter 3 — concept roadmap and problem-solving strategy
 

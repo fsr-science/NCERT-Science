@@ -1,4 +1,4 @@
-# ⚡ CHAPTER 2 — RAPID REVISION + MIND MAPS
+# Physics | Chapter 02 | Motion IN A Straight LINE Cnotes | CNOTES
 > **Motion in a Straight Line** | Board · NEET · JEE
 
 ---

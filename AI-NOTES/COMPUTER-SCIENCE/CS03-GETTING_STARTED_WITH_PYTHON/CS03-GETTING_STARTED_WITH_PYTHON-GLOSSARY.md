@@ -1,4 +1,4 @@
-# Glossary — Problem Solving & Python Fundamentals (Class XI)
+# Computer Science | Chapter 03 | Getting Started WITH Python Glossary | GLOSSARY
 
 > Terms are grouped by chapter and alphabetized within each group. Every entry links back to a `§` section in `NOTES.md`. Built and audited under the **notes-triad** skill's airtightness checklist (no circularity, no silent dependency on an undefined term, discriminator stated for confusable pairs, polysemy flagged rather than hidden, one to two sentences per entry).
 >

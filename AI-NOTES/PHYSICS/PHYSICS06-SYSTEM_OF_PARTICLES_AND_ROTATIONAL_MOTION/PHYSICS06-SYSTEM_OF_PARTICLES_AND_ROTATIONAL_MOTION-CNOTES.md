@@ -1,4 +1,4 @@
-# CHAPTER 6 — PRACTICE QUESTION BANK
+# Physics | Chapter 06 | System OF Particles AND Rotational Motion Cnotes | CNOTES
 
 ### Systems of Particles and Rotational Motion
 

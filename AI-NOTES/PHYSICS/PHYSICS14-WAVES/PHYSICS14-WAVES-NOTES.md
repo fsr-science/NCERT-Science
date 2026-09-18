@@ -1,4 +1,4 @@
-# CHAPTER 14: WAVES
+# Physics | Chapter 14 | Waves Notes | NOTES
 
 ### Complete Study Notes | Board · NEET · JEE Layered
 

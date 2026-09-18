@@ -1,4 +1,4 @@
-# CHAPTER 13 — RAPID REVISION + MIND MAPS
+# Physics | Chapter 13 | Oscillations Cnotes | CNOTES
 
 ### Oscillations
 

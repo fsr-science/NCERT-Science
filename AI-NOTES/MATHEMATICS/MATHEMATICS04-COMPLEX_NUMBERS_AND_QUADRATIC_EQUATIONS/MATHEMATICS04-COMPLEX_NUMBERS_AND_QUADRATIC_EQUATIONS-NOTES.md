@@ -1,5 +1,5 @@
 
-# Complex Numbers and Quadratic Equations — Notes
+# Mathematics | Chapter 04 | Complex Numbers AND Quadratic Equations Notes | NOTES
 
 **Target level:** Class 11 Board (CBSE/NCERT) — foundational for JEE
 

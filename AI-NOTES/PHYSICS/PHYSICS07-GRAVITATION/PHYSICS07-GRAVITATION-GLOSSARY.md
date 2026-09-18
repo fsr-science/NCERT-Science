@@ -1,4 +1,4 @@
-# CHAPTER 7 — GLOSSARY & TERMINOLOGY
+# Physics | Chapter 07 | Gravitation Glossary | GLOSSARY
 
 ### Gravitation
 

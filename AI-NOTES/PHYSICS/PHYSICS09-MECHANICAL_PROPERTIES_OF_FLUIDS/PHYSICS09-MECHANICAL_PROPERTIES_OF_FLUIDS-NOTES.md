@@ -1,4 +1,4 @@
-# CHAPTER 9: MECHANICAL PROPERTIES OF FLUIDS
+# Physics | Chapter 09 | Mechanical Properties OF Fluids Notes | NOTES
 ### Complete Study Notes | Board · NEET · JEE Layered
 
 ---

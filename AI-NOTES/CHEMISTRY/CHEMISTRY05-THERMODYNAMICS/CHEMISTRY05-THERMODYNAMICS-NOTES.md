@@ -1,4 +1,4 @@
-# CHAPTER 5: THERMODYNAMICS
+# Chemistry | Chapter 05 | Thermodynamics Notes | NOTES
 
 ### Complete Study Notes | Board · NEET · JEE Layered
 

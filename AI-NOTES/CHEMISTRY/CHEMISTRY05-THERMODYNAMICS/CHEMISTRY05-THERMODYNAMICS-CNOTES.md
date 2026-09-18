@@ -1,4 +1,4 @@
-# CHAPTER 5 — RAPID REVISION + MIND MAPS
+# Chemistry | Chapter 05 | Thermodynamics Cnotes | CNOTES
 
 ### Thermodynamics
 

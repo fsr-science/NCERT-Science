@@ -1,4 +1,4 @@
-# CHAPTER 8: ORGANIC CHEMISTRY — SOME BASIC PRINCIPLES AND TECHNIQUES
+# Chemistry | Chapter 08 | Organic Chemistry Basic Principles AND Techniques Notes | NOTES
 
 ### Complete Study Notes | Board · NEET · JEE Layered
 

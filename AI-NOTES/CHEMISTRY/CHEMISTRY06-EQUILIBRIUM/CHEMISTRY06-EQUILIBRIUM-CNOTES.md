@@ -1,4 +1,4 @@
-# CHAPTER 6 — RAPID REVISION + MIND MAPS
+# Chemistry | Chapter 06 | Equilibrium Cnotes | CNOTES
 
 ### Equilibrium
 

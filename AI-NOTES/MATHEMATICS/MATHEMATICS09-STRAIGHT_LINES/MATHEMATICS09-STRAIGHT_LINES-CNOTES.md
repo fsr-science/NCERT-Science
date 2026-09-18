@@ -1,5 +1,5 @@
 
-# Straight Lines — Revision Mind Map
+# Mathematics | Chapter 09 | Straight Lines Cnotes | CNOTES
 
 > Two views for last-minute revision: (1) how the chapter's ideas depend on each other, and (2) which technique to reach for given what a problem hands you. Pairs with **STRAIGHT_LINES-NOTES.md** for the derivations these summarize.
 

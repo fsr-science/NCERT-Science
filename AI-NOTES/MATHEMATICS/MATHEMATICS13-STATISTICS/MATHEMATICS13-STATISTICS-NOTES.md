@@ -1,5 +1,5 @@
 
-# Statistics — Measures of Dispersion
+# Mathematics | Chapter 13 | Statistics Notes | NOTES
 
 > How a single number can describe not just where data is centred, but how scattered it is — range, mean deviation, variance, and standard deviation, for raw, discrete, and continuous data.
 

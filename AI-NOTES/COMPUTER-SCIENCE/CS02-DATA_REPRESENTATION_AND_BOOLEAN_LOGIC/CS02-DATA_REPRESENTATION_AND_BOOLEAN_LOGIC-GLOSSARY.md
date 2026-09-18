@@ -1,4 +1,4 @@
-# GLOSSARY — CS02: Data Representation, Encoding Schemes & Boolean Logic
+# Computer Science | Chapter 02 | DATA Representation AND Boolean Logic Glossary | GLOSSARY
 
 **Level:** Class XI (CBSE) · **Companion files:** `CS02-...-NOTES.md` (explanations), `CS02-...-CNOTES.md` (self-test)
 

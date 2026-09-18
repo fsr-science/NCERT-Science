@@ -1,4 +1,4 @@
-# CHAPTER 8 — GLOSSARY & TERMINOLOGY
+# Physics | Chapter 08 | Mechanical Properties OF Solids Glossary | GLOSSARY
 
 ### Mechanical Properties of Solids
 

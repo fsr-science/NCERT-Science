@@ -1,4 +1,4 @@
-# CNOTES — CS02: Data Representation, Encoding Schemes & Boolean Logic
+# Computer Science | Chapter 02 | DATA Representation AND Boolean Logic Cnotes | CNOTES
 
 **Level:** Class XI (CBSE) · **Source:** `CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-NOTES.md` · **Companion:** `CS02-...-GLOSSARY.md`
 

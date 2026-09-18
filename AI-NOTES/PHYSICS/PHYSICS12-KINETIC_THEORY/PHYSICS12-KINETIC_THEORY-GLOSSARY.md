@@ -1,4 +1,4 @@
-# CHAPTER 12 — GLOSSARY & TERMINOLOGY
+# Physics | Chapter 12 | Kinetic Theory Glossary | GLOSSARY
 
 ### Kinetic Theory
 

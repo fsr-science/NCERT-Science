@@ -1,4 +1,4 @@
-# CHAPTER 4 — RAPID REVISION + MIND MAPS
+# Chemistry | Chapter 04 | Chemical Bonding AND Molecular Structure Cnotes | CNOTES
 
 ### Chemical Bonding and Molecular Structure
 

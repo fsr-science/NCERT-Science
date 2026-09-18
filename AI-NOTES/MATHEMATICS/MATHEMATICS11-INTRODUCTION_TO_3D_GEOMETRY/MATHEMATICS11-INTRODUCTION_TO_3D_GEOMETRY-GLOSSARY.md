@@ -1,5 +1,5 @@
 
-# Glossary & Quick Reference — Introduction to Three-Dimensional Geometry (NCERT Ch. 11)
+# Mathematics | Chapter 11 | Introduction TO 3D Geometry Glossary | GLOSSARY
 
 > Standalone last-minute revision sheet. Paired with the full NOTES file for derivations and worked examples, and the REVISION-MINDMAP file for the concept map and problem-solving flowcharts.
 

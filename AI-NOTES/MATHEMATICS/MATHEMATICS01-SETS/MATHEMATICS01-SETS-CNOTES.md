@@ -1,4 +1,4 @@
-# ⚡ CHAPTER 1 — RAPID REVISION + MIND MAPS
+# Mathematics | Chapter 01 | SETS Cnotes | CNOTES
 > **Sets** | Board · JEE
 
 ---

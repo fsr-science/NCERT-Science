@@ -1,5 +1,5 @@
 
-# 🧬 BIOLOGY XI — THE LIVING WORLD
+# Biology | Chapter 01 | THE Living World Notes | NOTES
 
 ### *Comprehensive Theory Notes | NCERT Chapter 1 | Board + NEET-UG Integrated*
 

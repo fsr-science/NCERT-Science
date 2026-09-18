@@ -1,4 +1,4 @@
-# ⚡ CHAPTER 1 — RAPID REVISION + MIND MAPS
+# Physics | Chapter 01 | Units AND Measurements Cnotes | CNOTES
 > **Units and Measurement** | Board · NEET · JEE
 
 ---

@@ -1,4 +1,4 @@
-# ⚡ CHAPTER 5 — RAPID REVISION + MIND MAPS
+# Physics | Chapter 05 | WORK Energy AND Power Cnotes | CNOTES
 > **Work, Energy and Power** | Board · NEET · JEE
 
 ---

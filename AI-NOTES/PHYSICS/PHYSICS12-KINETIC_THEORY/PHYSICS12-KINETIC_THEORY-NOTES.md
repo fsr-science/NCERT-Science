@@ -1,4 +1,4 @@
-# CHAPTER 12: KINETIC THEORY
+# Physics | Chapter 12 | Kinetic Theory Notes | NOTES
 
 ### Complete Study Notes | Board · NEET · JEE Layered
 

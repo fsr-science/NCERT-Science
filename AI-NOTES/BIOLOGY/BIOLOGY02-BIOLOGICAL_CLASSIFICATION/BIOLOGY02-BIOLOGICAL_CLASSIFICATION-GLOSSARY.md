@@ -1,5 +1,5 @@
 
-# 📖 BIOLOGY XI — BIOLOGICAL CLASSIFICATION
+# Biology | Chapter 02 | Biological Classification Glossary | GLOSSARY
 
 ### *Terminology & Etymology Vault | Dictionary-Style Reference*
 

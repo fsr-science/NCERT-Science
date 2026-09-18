@@ -1,5 +1,5 @@
 
-# 📖 BIOLOGY XI — PLANT KINGDOM
+# Biology | Chapter 03 | Plant Kingdom Glossary | GLOSSARY
 
 ### *Terminology & Etymology Vault | Dictionary-Style Reference*
 

@@ -1,4 +1,4 @@
-# CHAPTER 9 — RAPID REVISION + MIND MAPS
+# Physics | Chapter 09 | Mechanical Properties OF Fluids Cnotes | CNOTES
 
 ### Mechanical Properties of Fluids
 

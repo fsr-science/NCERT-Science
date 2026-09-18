@@ -1,4 +1,4 @@
-# CHAPTER 5 — GLOSSARY & TERMINOLOGY
+# Physics | Chapter 05 | WORK Energy AND Power Glossary | GLOSSARY
 
 ### Work, Energy and Power
 

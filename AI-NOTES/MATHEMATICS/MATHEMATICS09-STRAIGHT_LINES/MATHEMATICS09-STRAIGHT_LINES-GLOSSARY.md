@@ -1,5 +1,5 @@
 
-# Straight Lines — Glossary & Quick Reference
+# Mathematics | Chapter 09 | Straight Lines Glossary | GLOSSARY
 
 > Standalone recall sheet: term definitions, then every formula from the chapter grouped by topic. Pairs with **STRAIGHT_LINES-NOTES.md** for the full derivations.
 

@@ -1,4 +1,4 @@
-# CHAPTER 8 — RAPID REVISION + MIND MAPS
+# Chemistry | Chapter 08 | Organic Chemistry Basic Principles AND Techniques Cnotes | CNOTES
 
 ### Organic Chemistry — Some Basic Principles and Techniques
 

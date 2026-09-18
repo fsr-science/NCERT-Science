@@ -1,4 +1,4 @@
-# CHAPTER 7 — RAPID REVISION + MIND MAPS
+# Physics | Chapter 07 | Gravitation Cnotes | CNOTES
 
 ### Gravitation
 

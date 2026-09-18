@@ -1,4 +1,4 @@
-# CHAPTER 8 — RAPID REVISION + MIND MAPS
+# Physics | Chapter 08 | Mechanical Properties OF Solids Cnotes | CNOTES
 
 ### Mechanical Properties of Solids
 

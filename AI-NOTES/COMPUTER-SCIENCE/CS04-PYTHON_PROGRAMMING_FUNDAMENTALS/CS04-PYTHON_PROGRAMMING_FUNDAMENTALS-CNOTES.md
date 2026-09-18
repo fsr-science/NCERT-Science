@@ -1,4 +1,4 @@
-# CNOTES — Python Programming Fundamentals
+# Computer Science | Chapter 04 | Python Programming Fundamentals Cnotes | CNOTES
 
 **Branches merged:** Python Fundamentals + Functions & Modules · **Level:** Class XI · Companion to `Python-Programming-Fundamentals-NOTES.md`
 **Source chapters:** NCERT Computer Science — Chapter 5 (Getting Started with Python) + Chapter 7 (Functions)

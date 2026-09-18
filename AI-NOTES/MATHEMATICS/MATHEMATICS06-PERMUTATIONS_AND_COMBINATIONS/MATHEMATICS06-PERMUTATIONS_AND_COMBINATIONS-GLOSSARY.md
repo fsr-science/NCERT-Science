@@ -1,4 +1,4 @@
-# Glossary — Permutations and Combinations (Chapter 6)
+# Mathematics | Chapter 06 | Permutations AND Combinations Glossary | GLOSSARY
 
 > Quick-lookup table of every term and formula introduced in this chapter.
 

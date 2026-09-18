@@ -1,4 +1,4 @@
-# 📖 CHAPTER 1 — GLOSSARY & TERMINOLOGY
+# Mathematics | Chapter 01 | SETS Glossary | GLOSSARY
 > **Sets** | All terms alphabetically arranged with precise mathematical definitions and exam relevance tags.
 
 ---

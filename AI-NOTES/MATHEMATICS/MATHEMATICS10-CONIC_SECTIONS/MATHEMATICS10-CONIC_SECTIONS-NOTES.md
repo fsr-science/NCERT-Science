@@ -1,5 +1,5 @@
 
-# Conic Sections — NCERT Class 11 Mathematics, Chapter 10
+# Mathematics | Chapter 10 | Conic Sections Notes | NOTES
 
 *Level: Class 11 Board / JEE Foundation*
 

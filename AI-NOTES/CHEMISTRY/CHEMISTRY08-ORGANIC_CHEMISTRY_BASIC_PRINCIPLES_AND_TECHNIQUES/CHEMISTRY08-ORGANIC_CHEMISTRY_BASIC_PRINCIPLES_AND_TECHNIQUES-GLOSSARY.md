@@ -1,4 +1,4 @@
-# CHAPTER 8 — GLOSSARY & TERMINOLOGY
+# Chemistry | Chapter 08 | Organic Chemistry Basic Principles AND Techniques Glossary | GLOSSARY
 
 ### Organic Chemistry — Some Basic Principles and Techniques
 

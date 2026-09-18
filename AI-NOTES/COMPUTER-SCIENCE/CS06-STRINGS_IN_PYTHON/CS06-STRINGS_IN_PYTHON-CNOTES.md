@@ -1,4 +1,4 @@
-# CNOTES — Strings in Python (CS08-STRINGS)
+# Computer Science | Chapter 06 | Strings IN Python Cnotes | CNOTES
 
 - Branch: Strings, Lists, Tuples & Dictionaries.
 - Level: Class XI (CBSE/NCERT).

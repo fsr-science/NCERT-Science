@@ -1,4 +1,4 @@
-# CHAPTER 5 — GLOSSARY & TERMINOLOGY
+# Chemistry | Chapter 05 | Thermodynamics Glossary | GLOSSARY
 
 ### Thermodynamics
 

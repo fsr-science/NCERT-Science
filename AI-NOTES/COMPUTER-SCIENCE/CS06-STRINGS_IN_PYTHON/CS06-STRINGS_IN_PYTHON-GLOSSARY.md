@@ -1,4 +1,4 @@
-# Glossary — Strings in Python (CS08-STRINGS)
+# Computer Science | Chapter 06 | Strings IN Python Glossary | GLOSSARY
 
 > Fast, unambiguous lookup only — one to two sentences per entry, every entry airtight on its own, no worked examples or reasoning (that's NOTES's job). `§` codes point back to `CS08-STRINGS-NOTES.md` using the numbering key defined at the top of that file. Audited against the five airtightness checks (no circularity, no undefined dependency, confusable-pair discriminators stated, polysemy flagged, one-two sentence limit) — see the Audit Log at the bottom for what changed and why.
 

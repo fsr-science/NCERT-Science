@@ -1,5 +1,5 @@
 
-# Conic Sections — REVISION MINDMAP
+# Mathematics | Chapter 10 | Conic Sections Cnotes | CNOTES
 
 *Companion to Conic-Sections-NOTES.md and Conic-Sections-GLOSSARY.md · NCERT Class 11 Mathematics, Chapter 10*
 

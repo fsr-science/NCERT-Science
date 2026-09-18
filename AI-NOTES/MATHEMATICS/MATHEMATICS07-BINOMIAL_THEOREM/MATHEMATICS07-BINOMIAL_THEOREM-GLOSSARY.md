@@ -1,5 +1,5 @@
 
-# GLOSSARY — Binomial Theorem (NCERT Ch. 7, Positive Integral Index)
+# Mathematics | Chapter 07 | Binomial Theorem Glossary | GLOSSARY
 
 *Target level: Board / Class 11 · Standalone Quick-Reference sheet — pair with NOTES.md for derivations*
 

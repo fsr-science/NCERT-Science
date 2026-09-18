@@ -1,5 +1,5 @@
 
-# 🧬 BIOLOGY XI — BIOLOGICAL CLASSIFICATION
+# Biology | Chapter 02 | Biological Classification Notes | NOTES
 
 ### *Comprehensive Theory Notes | NCERT Chapter 2 | Board + NEET-UG Integrated*
 

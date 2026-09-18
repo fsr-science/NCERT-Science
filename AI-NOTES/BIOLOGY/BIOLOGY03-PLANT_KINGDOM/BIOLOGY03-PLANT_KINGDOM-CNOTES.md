@@ -1,5 +1,5 @@
 
-# ⚡ BIOLOGY XI — PLANT KINGDOM
+# Biology | Chapter 03 | Plant Kingdom Cnotes | CNOTES
 
 ### *48-Hour Rapid Revision Vault | Pure Visual + Tabular Format*
 

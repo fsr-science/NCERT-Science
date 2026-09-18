@@ -1,4 +1,4 @@
-# CHAPTER 3 — RAPID REVISION + MIND MAPS
+# Chemistry | Chapter 03 | Classification OF Elements AND Periodicity Cnotes | CNOTES
 
 ### Classification of Elements and Periodicity in Properties
 

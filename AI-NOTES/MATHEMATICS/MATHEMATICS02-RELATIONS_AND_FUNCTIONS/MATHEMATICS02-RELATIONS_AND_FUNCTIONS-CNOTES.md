@@ -1,4 +1,4 @@
-# Relations and Functions — Revision Mindmap
+# Mathematics | Chapter 02 | Relations AND Functions Cnotes | CNOTES
 
 > This file holds the chapter's **Concept Roadmap** and its **Problem-Solving Strategy** flowcharts only — for definitions and worked examples see the NOTES file, and for the formula/quick-reference sheet see the GLOSSARY file. *(Upgrade note: this content previously lived under the wrong filename — a `-PQs.md` file that, despite its name, contained this roadmap rather than practice questions. It has been moved here, and `-PQs.md` now holds actual solved practice questions from NCERT Exercises 2.1–2.3 and the Miscellaneous Exercise.)*
 

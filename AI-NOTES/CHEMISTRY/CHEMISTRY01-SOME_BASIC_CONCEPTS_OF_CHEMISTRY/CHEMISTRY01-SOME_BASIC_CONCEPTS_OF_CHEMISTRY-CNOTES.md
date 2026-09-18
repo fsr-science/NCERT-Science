@@ -1,4 +1,4 @@
-# ⚡ CHAPTER 1 — RAPID REVISION + MIND MAPS
+# Chemistry | Chapter 01 | SOME Basic Concepts OF Chemistry Cnotes | CNOTES
 > **Some Basic Concepts of Chemistry** | Board · NEET · JEE
 
 ---

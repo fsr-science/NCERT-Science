@@ -1,4 +1,4 @@
-# ⚡ CHAPTER 11 — THERMODYNAMICS
+# Physics | Chapter 11 | Thermodynamics Notes | NOTES
 > **Complete Study Notes** | Board · NEET · JEE Layered
 
 ---

@@ -1,4 +1,4 @@
-# CHAPTER 3 — RAPID REVISION + MIND MAPS
+# Physics | Chapter 03 | Motion IN A Plane Cnotes | CNOTES
 
 ### Motion in a Plane
 

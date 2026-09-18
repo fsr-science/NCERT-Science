@@ -1,5 +1,5 @@
 
-# 🧬 BIOLOGY XI — PLANT KINGDOM
+# Biology | Chapter 03 | Plant Kingdom Notes | NOTES
 
 ### *Comprehensive Theory Notes | NCERT Chapter 3 | Board + NEET-UG Integrated*
 

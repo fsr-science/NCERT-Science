@@ -1,4 +1,4 @@
-# CHAPTER 9 — RAPID REVISION + MIND MAPS
+# Chemistry | Chapter 09 | Hydrocarbons Cnotes | CNOTES
 
 ### Hydrocarbons
 

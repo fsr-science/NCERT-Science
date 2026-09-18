@@ -1,4 +1,4 @@
-# CHAPTER 3 — GLOSSARY & TERMINOLOGY
+# Physics | Chapter 03 | Motion IN A Plane Glossary | GLOSSARY
 
 ### Motion in a Plane
 

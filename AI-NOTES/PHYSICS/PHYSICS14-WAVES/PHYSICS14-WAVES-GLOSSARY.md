@@ -1,4 +1,4 @@
-# CHAPTER 14 — GLOSSARY & TERMINOLOGY
+# Physics | Chapter 14 | Waves Glossary | GLOSSARY
 
 ### Waves
 

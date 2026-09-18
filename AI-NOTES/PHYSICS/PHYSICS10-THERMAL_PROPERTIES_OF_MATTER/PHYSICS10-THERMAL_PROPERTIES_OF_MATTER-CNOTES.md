@@ -1,4 +1,4 @@
-# CHAPTER 10 — RAPID REVISION + MIND MAPS
+# Physics | Chapter 10 | Thermal Properties OF Matter Cnotes | CNOTES
 
 ### Thermal Properties of Matter
 

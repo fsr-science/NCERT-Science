@@ -1,5 +1,5 @@
 
-# Statistics — Revision Mind-Map
+# Mathematics | Chapter 13 | Statistics Cnotes | CNOTES
 
 *(NCERT Class 11 Mathematics, Chapter 13 — Measures of Dispersion)*
 

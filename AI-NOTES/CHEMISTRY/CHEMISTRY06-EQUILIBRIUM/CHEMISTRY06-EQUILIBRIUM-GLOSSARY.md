@@ -1,4 +1,4 @@
-# CHAPTER 6 — GLOSSARY & TERMINOLOGY
+# Chemistry | Chapter 06 | Equilibrium Glossary | GLOSSARY
 
 ### Equilibrium
 

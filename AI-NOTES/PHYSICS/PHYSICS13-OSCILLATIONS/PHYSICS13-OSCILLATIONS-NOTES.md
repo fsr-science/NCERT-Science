@@ -1,4 +1,4 @@
-# CHAPTER 13: OSCILLATIONS
+# Physics | Chapter 13 | Oscillations Notes | NOTES
 
 ### Complete Study Notes | Board · NEET · JEE Layered
 

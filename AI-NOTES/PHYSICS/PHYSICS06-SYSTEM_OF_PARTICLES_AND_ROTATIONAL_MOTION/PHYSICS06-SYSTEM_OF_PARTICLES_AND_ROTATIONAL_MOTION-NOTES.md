@@ -1,4 +1,4 @@
-# CHAPTER 6: SYSTEMS OF PARTICLES AND ROTATIONAL MOTION
+# Physics | Chapter 06 | System OF Particles AND Rotational Motion Notes | NOTES
 
 ### Complete Study Notes | Board · NEET · JEE Layered
 

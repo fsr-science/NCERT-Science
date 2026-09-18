@@ -1,4 +1,4 @@
-# Linear Inequalities — Class 11 Mathematics (NCERT Chapter 5)
+# Mathematics | Chapter 05 | Linear Inequalities Notes | NOTES
 
 > Board-level foundation for JEE/NEET-adjacent inequality skills: comparing expressions with \(<, >, \le, \ge\) instead of \(=\), and tracking how the *solution set* changes with the domain (\(\mathbb{N}, \mathbb{Z}\), or \(\mathbb{R}\)).
 

@@ -1,4 +1,4 @@
-# ⚡ CHAPTER 4 — RAPID REVISION + MIND MAPS
+# Physics | Chapter 04 | LAWS OF Motion Cnotes | CNOTES
 > **Laws of Motion** | Board · NEET · JEE
 
 ---

@@ -1,5 +1,5 @@
 
-# REVISION MINDMAP — Binomial Theorem (NCERT Ch. 7)
+# Mathematics | Chapter 07 | Binomial Theorem Cnotes | CNOTES
 
 *Pair with NOTES.md (derivations) and GLOSSARY.md (formula sheet)*
 

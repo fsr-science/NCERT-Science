@@ -1,5 +1,5 @@
 
-# Probability — NCERT Class 11, Chapter 14
+# Mathematics | Chapter 14 | Probability Notes | NOTES
 
 > **Level:** Board (CBSE Class 11) / JEE-foundation. This chapter builds the *axiomatic* definition of probability — the rigorous foundation on which conditional probability, independence, and the later probability chapters (Class 12) are built.
 

@@ -1,4 +1,4 @@
-# CHAPTER 2 — RAPID REVISION + MIND MAPS
+# Chemistry | Chapter 02 | Structure OF ATOM Cnotes | CNOTES
 
 ### Structure of Atom
 

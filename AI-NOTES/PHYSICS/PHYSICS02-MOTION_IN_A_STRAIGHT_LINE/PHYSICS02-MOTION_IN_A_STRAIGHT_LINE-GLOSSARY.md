@@ -1,4 +1,4 @@
-# 📖 CHAPTER 2 — GLOSSARY & TERMINOLOGY
+# Physics | Chapter 02 | Motion IN A Straight LINE Glossary | GLOSSARY
 > **Motion in a Straight Line** | All terms alphabetically arranged with precise scientific definitions, dimensional formulae, and exam relevance tags.
 
 ---

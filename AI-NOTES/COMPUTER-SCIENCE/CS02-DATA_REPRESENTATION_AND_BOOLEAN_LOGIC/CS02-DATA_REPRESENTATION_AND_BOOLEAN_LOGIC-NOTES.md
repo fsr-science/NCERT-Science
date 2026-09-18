@@ -1,4 +1,4 @@
-# Data Representation, Encoding Schemes & Boolean Logic
+# Computer Science | Chapter 02 | DATA Representation AND Boolean Logic Notes | NOTES
 
 **Branch:** Boolean Algebra & Logic Gates (built on Number System foundations) · **Level:** Class XI (CBSE)
 **Companion files:** `CS02-...-GLOSSARY.md` (fast lookup), `CS02-...-CNOTES.md` (self-test before revision)

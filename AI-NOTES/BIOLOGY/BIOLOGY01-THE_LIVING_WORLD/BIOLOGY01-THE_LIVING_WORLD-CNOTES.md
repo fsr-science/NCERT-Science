@@ -1,5 +1,5 @@
 
-# ⚡ BIOLOGY XI — THE LIVING WORLD
+# Biology | Chapter 01 | THE Living World Cnotes | CNOTES
 
 ### *48-Hour Rapid Revision Vault | Pure Visual + Tabular Format*
 
