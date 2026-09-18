@@ -802,13 +802,6 @@
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM_AND_ORGANISATION/CS01-COMPUTER_SYSTEM_AND_ORGANISATION-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS01-COMPUTER_SYSTEM_AND_ORGANISATION-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM_AND_ORGANISATION/CS01-COMPUTER_SYSTEM_AND_ORGANISATION-PQs.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-                  "mime": "text/markdown"
                 }
               ]
             },
@@ -820,28 +813,21 @@
                   "type": "file",
                   "name": "CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-CNOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-CNOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "c2e84eca91bb65ae8d8976040cca7f8a32968b1e",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "4e85ffb39738d3d55c4b6980d2738832299da2d8",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-PQs.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "d209f683cc37d1c047b898f33d202e3f9842d6e3",
                   "mime": "text/markdown"
                 }
               ]
@@ -854,28 +840,21 @@
                   "type": "file",
                   "name": "CS03-GETTING_STARTED_WITH_PYTHON-CNOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-GETTING_STARTED_WITH_PYTHON/CS03-GETTING_STARTED_WITH_PYTHON-CNOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "48743da6cf4b722a316fd1ba082888c0b7321ef3",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "CS03-GETTING_STARTED_WITH_PYTHON-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-GETTING_STARTED_WITH_PYTHON/CS03-GETTING_STARTED_WITH_PYTHON-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "a37e1107d78e550cabc5c536078b9d659cc9f5f0",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "CS03-GETTING_STARTED_WITH_PYTHON-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-GETTING_STARTED_WITH_PYTHON/CS03-GETTING_STARTED_WITH_PYTHON-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS03-GETTING_STARTED_WITH_PYTHON-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-GETTING_STARTED_WITH_PYTHON/CS03-GETTING_STARTED_WITH_PYTHON-PQs.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "112c0beeb9b7353782ed1b38f9bdc9f47dadb354",
                   "mime": "text/markdown"
                 }
               ]
@@ -888,28 +867,21 @@
                   "type": "file",
                   "name": "CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-CNOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-CNOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "5b4007f4faa21a78fc54d742dcf1ba2f95869b09",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "b1670480c54f1a40c51097daaddef8a3f6fc2c3b",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-PQs.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "03e0240696959ca90cd0b2627c5c8ea124ddf2e2",
                   "mime": "text/markdown"
                 }
               ]
@@ -938,13 +910,6 @@
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-PQs.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-                  "mime": "text/markdown"
                 }
               ]
             },
@@ -956,28 +921,21 @@
                   "type": "file",
                   "name": "CS06-STRINGS_IN_PYTHON-CNOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-STRINGS_IN_PYTHON/CS06-STRINGS_IN_PYTHON-CNOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "55f2a8694b591526355ee76a0123f2b859ebcea7",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "CS06-STRINGS_IN_PYTHON-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-STRINGS_IN_PYTHON/CS06-STRINGS_IN_PYTHON-GLOSSARY.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "99576856bde7b03896237a2dffc8dd5d9de3df72",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "CS06-STRINGS_IN_PYTHON-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-STRINGS_IN_PYTHON/CS06-STRINGS_IN_PYTHON-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS06-STRINGS_IN_PYTHON-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-STRINGS_IN_PYTHON/CS06-STRINGS_IN_PYTHON-PQs.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "sha": "794d07face1eee45d7179a31f928bfbde143ba22",
                   "mime": "text/markdown"
                 }
               ]
@@ -1004,13 +962,6 @@
                   "type": "file",
                   "name": "CS07-LISTS_IN_PYTHON-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-LISTS_IN_PYTHON/CS07-LISTS_IN_PYTHON-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS07-LISTS_IN_PYTHON-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-LISTS_IN_PYTHON/CS07-LISTS_IN_PYTHON-PQs.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 }
@@ -1040,13 +991,6 @@
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-TUPLES_AND_DICTIONARY/CS08-TUPLES_AND_DICTIONARY-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS08-TUPLES_AND_DICTIONARY-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-TUPLES_AND_DICTIONARY/CS08-TUPLES_AND_DICTIONARY-PQs.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-                  "mime": "text/markdown"
                 }
               ]
             },
@@ -1072,13 +1016,6 @@
                   "type": "file",
                   "name": "CS09-INTRODUCTION_TO_PYTHON_MODULES-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-INTRODUCTION_TO_PYTHON_MODULES/CS09-INTRODUCTION_TO_PYTHON_MODULES-NOTES.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS09-INTRODUCTION_TO_PYTHON_MODULES-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-INTRODUCTION_TO_PYTHON_MODULES/CS09-INTRODUCTION_TO_PYTHON_MODULES-PQs.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
                 }
@@ -1108,12 +1045,32 @@
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-SOCIETY_LAW_AND_ETHICS/CS10-SOCIETY_LAW_AND_ETHICS-NOTES.md",
                   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
                   "mime": "text/markdown"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "CSEX-EMERGING_TRENDS",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "CSEX-EMERGING_TRENDS-CNOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CSEX-EMERGING_TRENDS/CSEX-EMERGING_TRENDS-CNOTES.md",
+                  "sha": "8cfaadc338addb5ad6ec51f8b3a6a9f3e6f7ebff",
+                  "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS10-SOCIETY_LAW_AND_ETHICS-PQs.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-SOCIETY_LAW_AND_ETHICS/CS10-SOCIETY_LAW_AND_ETHICS-PQs.md",
-                  "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                  "name": "CSEX-EMERGING_TRENDS-GLOSSARY.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CSEX-EMERGING_TRENDS/CSEX-EMERGING_TRENDS-GLOSSARY.md",
+                  "sha": "4540dd9035083ee60b3b5c750531f74b0e6d17d2",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "CSEX-EMERGING_TRENDS-NOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CSEX-EMERGING_TRENDS/CSEX-EMERGING_TRENDS-NOTES.md",
+                  "sha": "368529b5aae42f54e2dda7c7249f3af6847acfbb",
                   "mime": "text/markdown"
                 }
               ]
