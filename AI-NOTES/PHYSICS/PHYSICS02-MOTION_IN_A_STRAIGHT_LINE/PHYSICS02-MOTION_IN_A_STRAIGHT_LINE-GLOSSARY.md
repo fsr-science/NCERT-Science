@@ -1,309 +1,213 @@
 # Physics | Chapter 02 | Motion in a Straight Line | GLOSSARY
-> **Motion in a Straight Line** | All terms alphabetically arranged with precise scientific definitions, dimensional formulae, and exam relevance tags.
+> **Motion in a Straight Line** | Precise definitions for quick lookup | Board · NEET · JEE
+
+The number after each term (§) is the NOTES section that explains it.
 
 ---
 
 ## A
 
-> [!info] **Acceleration** *(All levels)*
-> The rate of change of velocity with respect to time.
+> [!note] **Acceleration** · §4
+> The rate at which velocity changes with time; a vector, so it can be positive, negative or zero. Its sign alone does not say whether speed is increasing (see *Deceleration*), and $v = 0$ at an instant does not imply $a = 0$.
 >
-> - Average acceleration: $\bar{a} = \Delta v / \Delta t = (v_2 - v_1)/(t_2 - t_1)$
-> - Instantaneous acceleration: $a = \lim_{\Delta t \to 0} \Delta v / \Delta t = dv/dt$
+> *SI unit: m s⁻² · Dimensional formula: $[M^0 L T^{-2}]$*
+
+> [!note] **a–t Graph** · §5, §9.3
+> A graph of acceleration (vertical axis) against time (horizontal axis). The area under it between two instants is the change in velocity, $\Delta v = \int a\,dt$, and a horizontal line means constant acceleration.
+
+> [!note] **Average Acceleration** · §4.1
+> The change in velocity divided by the time taken; on a v–t graph it is the slope of the chord joining the two points (see *Slope of a Graph*).
 >
-> SI unit: **m s⁻²** | Dimensional formula: $[M^0 L T^{-2}]$ | Vector quantity — can be positive, negative, or zero.
+> $$\bar{a} = \frac{\Delta v}{\Delta t} = \frac{v_2 - v_1}{t_2 - t_1}$$
 
----
-
-> [!note] **Average Acceleration** *(Board/NEET)*
-> The total change in velocity divided by the total time taken:
+> [!note] **Average Speed** · §3.2
+> The total path length divided by the total time; a scalar, always $\ge 0$. It is $\ge |\bar{v}|$, with equality only when the motion does not reverse.
 >
-> $$\bar{a} = \frac{v_2 - v_1}{t_2 - t_1}$$
->
-> On a v–t graph, it equals the **slope of the chord** connecting two points.
+> $$\text{average speed} = \frac{\text{total path length}}{\text{total time}}$$
 
----
-
-> [!note] **Average Speed** *(Board)*
-> The total path length (distance) divided by total time elapsed. Always a **scalar**, always $\geq 0$.
->
-> $$\text{Average speed} = \frac{\text{Total path length}}{\text{Total time}}$$
->
-> > ⚠️ Average speed $\geq$ |average velocity|; equality holds only for unidirectional motion.
-
----
-
-> [!important] **Average Velocity** *(All levels)*
-> The total displacement divided by total time:
+> [!note] **Average Velocity** · §3.1
+> The displacement divided by the time taken; a vector, so unlike average speed it is zero for any trip that returns to its start. On an x–t graph it is the slope of the chord joining the two points.
 >
 > $$\bar{v} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}$$
->
-> A **vector** quantity that can be positive, negative, or zero. Not the same as average speed when the object reverses direction.
-
----
-
-## C
-
-> [!note] **Calculus in Kinematics** *(NEET/JEE)*
-> The mathematical tool for handling variable acceleration. Key results:
->
-> - $v = dx/dt$
-> - $a = dv/dt = v(dv/dx)$
-> - Displacement: $x = \int v \, dt$
-> - Velocity change: $\Delta v = \int a \, dt$
->
-> Essential for JEE when acceleration is not constant.
 
 ---
 
 ## D
 
-> [!note] **Deceleration** *(Board)*
-> A non-standard (informal) term for **retardation** — acceleration that acts opposite to the direction of velocity, causing the object to slow down. Precisely described as "negative acceleration" when velocity is in the positive direction.
+> [!note] **Deceleration (Retardation)** · §4.3
+> An acceleration directed opposite to the velocity, so that speed decreases. It is defined by $a$ and $v$ having opposite signs, not by $a$ being negative: $a > 0$ with $v < 0$ is also a deceleration.
 
----
-
-> [!important] **Displacement** *(All levels)*
-> The **change in position** of an object:
+> [!note] **Displacement** · §2.2
+> The change in position of an object; a vector (positive, negative or zero) that depends only on the end positions, not on the route. Its magnitude is $\le$ the path length.
 >
 > $$\Delta x = x_2 - x_1$$
 >
-> A **vector** quantity with both magnitude and direction. Can be positive, negative, or zero.
+> *SI unit: m · Dimensional formula: $[M^0 L T^0]$*
+
+> [!note] **Displacement in the nth Second** ($s_n$) · §6.5
+> The displacement during the $n$-th second, from $t = n-1$ to $t = n$, not the total up to $n$ seconds. It equals the distance covered in that second only if the velocity does not change sign during it.
 >
-> SI unit: **m** | Dimensional formula: $[L]$
+> For constant acceleration ($n$ in seconds, $v_0$ in m s⁻¹, $a$ in m s⁻²):
+>
+> $$s_n = v_0 + \frac{a}{2}(2n - 1)$$
 
----
-
-> [!note] **Distance** *(All levels)*
-> See *Path Length*. The total length of the actual path traversed. A **scalar**, always $\geq 0$. For straight-line motion without reversal: path length = |displacement|.
+> [!note] **Distance** · §2.3
+> In this chapter, the path length: a scalar that can exceed the magnitude of the displacement. See *Path Length*.
 
 ---
 
 ## F
 
-> [!important] **Frame of Reference** *(Board)*
-> A coordinate system with respect to which motion is described. In one-dimensional kinematics, a single x-axis suffices. The choice of origin and positive direction is **arbitrary** — physical results are independent of this choice.
+> [!note] **Frame of Reference** · §1.2
+> A reference point (the origin), axes and a clock attached to an observer, with respect to which position and time are measured; one axis suffices for straight-line motion. The choice of origin and positive direction is arbitrary and does not change physical outcomes, whereas a frame moving relative to another measures different velocities (see *Relative Velocity*).
 
----
-
-> [!important] **Free Fall** *(Board/NEET)*
-> The motion of an object under the influence of **gravity alone**, with no air resistance. A case of uniformly accelerated motion with:
->
-> $$a = g = 9.8 \text{ m s}^{-2} \text{ (downward)}$$
->
-> Key results (taking upward as positive, from rest):
-> - $v = -gt$
-> - $y = -\frac{1}{2}gt^2$
-> - $v^2 = -2gy$
+> [!note] **Free Fall** · §7
+> Motion under gravity alone, with no air resistance or other force acting. The acceleration is then the same for all objects, $g = 9.8$ m s⁻² downward near Earth's surface, so $a = -g$ (upward positive) in the *Kinematic Equations*.
 
 ---
 
 ## G
 
-> [!info] **Galileo Galilei (1564–1642)** *(Historical/Board)*
-> Italian physicist who made the first quantitative studies of free fall. Established that all objects fall with the same acceleration (in absence of air resistance) and derived the law of odd numbers. Pioneered the use of mathematical description in physics.
-
----
-
-> [!important] **Galileo's Law of Odd Numbers** *(Board/NEET)*
-> The distances traversed by a body falling from rest during successive equal intervals of time are in the ratio:
->
-> $$1 : 3 : 5 : 7 : 9 \ldots$$
->
-> Total distance after $n$ equal intervals $\propto n^2$ (i.e., cumulative distances are in ratio $1 : 4 : 9 : 16 \ldots$).
+> [!note] **Galileo's Law of Odd Numbers** · §7.1
+> For motion from rest with constant acceleration, the distances covered in successive equal time intervals are in the ratio $1 : 3 : 5 : 7 \ldots$, so the total distances after $1, 2, 3, \ldots$ intervals are in the ratio $1 : 4 : 9 : 16 \ldots$. Free fall is the standard example.
 
 ---
 
 ## I
 
-> [!important] **Instantaneous Acceleration** *(NEET/JEE)*
-> Acceleration at a specific instant of time:
+> [!note] **Instantaneous Acceleration** · §4.2
+> The limit of the average acceleration as $\Delta t \to 0$; on a v–t graph it is the slope of the tangent at that instant (see *Slope of a Graph*).
 >
-> $$a = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} = \frac{dv}{dt}$$
+> $$a = \lim_{\Delta t \to 0}\frac{\Delta v}{\Delta t} = \frac{dv}{dt} = \frac{d^2x}{dt^2} = v\,\frac{dv}{dx}$$
+
+> [!note] **Instantaneous Speed** · §3.4
+> The magnitude of the instantaneous velocity, $|v|$. Unlike the averages, speed and $|v|$ are always equal at an instant.
+
+> [!note] **Instantaneous Velocity** · §3.3
+> The limit of the average velocity as $\Delta t \to 0$; on an x–t graph it is the slope of the tangent at that instant. For uniform motion it equals the average velocity over any interval.
 >
-> On a v–t graph: instantaneous acceleration = **slope of the tangent** at that point.
-
----
-
-> [!note] **Instantaneous Speed** *(All levels)*
-> The magnitude of instantaneous velocity. **Always equal** to |instantaneous velocity| — unlike average speed vs. average velocity. At a single instant, path length and displacement are infinitesimally identical.
-
----
-
-> [!important] **Instantaneous Velocity** *(All levels)*
-> The velocity at a specific instant:
->
-> $$v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt}$$
->
-> On an x–t graph: instantaneous velocity = **slope of the tangent** at that point. For uniform motion: instantaneous velocity = average velocity.
+> $$v = \lim_{\Delta t \to 0}\frac{\Delta x}{\Delta t} = \frac{dx}{dt}$$
 
 ---
 
 ## K
 
-> [!info] **Kinematics** *(Board)*
-> The branch of mechanics dealing with the description of motion **without** reference to the causes (forces) of motion. Concerned with position, displacement, velocity, and acceleration as functions of time. Causes are studied in Dynamics (Chapter 4).
+> [!note] **Kinematic Equations** · §6.1
+> Four relations for motion with **constant acceleration only**, obtained by integrating $dv/dt = a$ and $dx/dt = v$. Here $x$ is the displacement from the starting position at $t = 0$ (replace $x$ by $x - x_0$ if the object starts at $x_0$), and every quantity is signed.
+>
+> $$v = v_0 + at \qquad\quad x = v_0 t + \tfrac{1}{2}at^2$$
+>
+> $$v^2 = v_0^2 + 2ax \qquad\quad x = \tfrac{1}{2}(v + v_0)\,t$$
 
----
-
-> [!important] **Kinematic Equations** *(All levels — critical)*
-> The three equations of motion for **constant (uniform) acceleration**:
->
-> 1. $v = v_0 + at$
-> 2. $x = v_0 t + \frac{1}{2}at^2$
-> 3. $v^2 = v_0^2 + 2ax$
->
-> Also useful: $x = \frac{1}{2}(v_0 + v)t$ and $s_n = v_0 + a(n - \frac{1}{2})$
->
-> > ⚠️ Valid **only** when acceleration is constant in both magnitude and direction.
+> [!note] **Kinematics** · §1.1
+> The branch of mechanics that describes motion, through position, displacement, velocity and acceleration as functions of time, without reference to its causes. The causes (forces) are the subject of dynamics.
 
 ---
 
 ## M
 
-> [!note] **Motion** *(All levels)*
-> Change in **position** of an object with respect to time. In kinematics, described without reference to the cause of the change.
+> [!note] **Motion** · §1.1
+> The change in position of an object with time, relative to a frame of reference.
 
 ---
 
 ## O
 
-> [!note] **Origin** *(Board)*
-> The reference point from which positions are measured on a coordinate axis. The choice of origin is **arbitrary** — physical results are independent of this choice.
+> [!note] **Origin** · §1.2
+> The reference point on the axis from which position is measured, where $x = 0$. Shifting it changes $x$ but not displacement, velocity or acceleration.
 
 ---
 
 ## P
 
-> [!note] **Path Length** *(All levels)*
-> The actual length of the trajectory followed by an object. A **scalar** quantity. For straight-line motion without reversal: path length = |displacement|. Generally, path length $\geq$ |displacement|.
+> [!note] **Path Length** · §2.3
+> The total length of the path actually travelled; a scalar, always $\ge 0$ and never decreasing with time. It is $\ge |\text{displacement}|$, with equality only for motion in one direction without reversal.
+>
+> *SI unit: m · Dimensional formula: $[M^0 L T^0]$*
 
----
+> [!note] **Point Object** · §1.1
+> An object whose size is negligible compared with the distances it moves through, so that its position is given by a single coordinate.
 
-> [!note] **Point Object** *(Board)*
-> An idealisation where the size of an object is ignored because it is negligible compared to the distances involved. Valid approximation in many real-world situations.
-
----
-
-> [!note] **Position** *(All levels)*
-> The location of an object on the coordinate axis, measured from the origin. Symbol: $x$. SI unit: **m**.
+> [!note] **Position** · §2.1
+> The signed coordinate $x$ of an object along the axis, measured from the origin.
+>
+> *SI unit: m · Dimensional formula: $[M^0 L T^0]$*
 
 ---
 
 ## R
 
-> [!info] **Reaction Time** *(Board/NEET)*
-> The time elapsed between a stimulus (e.g., seeing an obstacle) and the initiation of a response (e.g., applying brakes). Measurable by the ruler-drop experiment:
+> [!note] **Reaction Time** · §7.4
+> The time between a stimulus and the start of the response to it. It is measured by the ruler drop, $t_r = \sqrt{2d/g}$, where $d$ is the distance the ruler, released from rest, falls before it is caught.
+
+> [!note] **Rectilinear Motion** · §1.1
+> Motion along a straight line, so that a single coordinate axis describes it.
+
+> [!note] **Relative Velocity** · §8.1
+> The velocity of A with respect to B, meaning as measured by an observer moving with B, where $v_A$ and $v_B$ are signed velocities in the same frame. It holds for every direction of motion; when A and B move in opposite directions the magnitudes add, $|v_{AB}| = |v_A| + |v_B|$.
 >
-> $$t_r = \sqrt{\frac{2d}{g}}$$
->
-> where $d$ is the distance the ruler falls before being caught.
+> $$v_{AB} = v_A - v_B = \frac{d(x_A - x_B)}{dt}$$
 
----
-
-> [!note] **Rectilinear Motion** *(All levels)*
-> Motion along a **straight line**. The subject of Chapter 2. Positions, velocities, and accelerations are described along a single axis.
-
----
-
-> [!important] **Relative Velocity** *(NEET/JEE)*
-> The velocity of one object as measured from the reference frame of another object.
->
-> $$v_{AB} = v_A - v_B$$
->
-> where $v_A$ and $v_B$ are velocities relative to the ground. For objects moving in opposite directions, the magnitude of relative velocity is $v_A + v_B$.
-
----
-
-> [!note] **Retardation** *(Board)*
-> See *Deceleration*. A common but informal term. Strictly, retardation is the magnitude of deceleration when an object slows down.
+> [!note] **Retardation** · §4.3
+> Synonym of *Deceleration*; in formulas such as stopping distance it denotes the magnitude of the deceleration, a positive number.
 
 ---
 
 ## S
 
-> [!note] **Scalar** *(All levels)*
-> A quantity having only magnitude, no direction. Examples in this chapter: distance, speed, time.
+> [!note] **Scalar** · §2.3
+> A quantity with magnitude only and no direction; in this chapter, path length (distance), speed and time.
 
----
+> [!note] **Slope of a Graph** (chord, tangent) · §3.1, §3.3, §4.1
+> The ratio $\Delta(\text{vertical quantity}) / \Delta(\text{horizontal quantity})$, carrying the units of that ratio; over a chord (the straight line joining two points of the curve) it is an average rate of change, and over the tangent (the line touching the curve at one point) it is the instantaneous rate at that point. On an x–t graph the slope is velocity, and on a v–t graph it is acceleration.
 
-> [!note] **Slope of a Graph** *(All levels)*
-> The tangent of the angle made by a line (or tangent to a curve) with the positive x-axis. In kinematics:
+> [!note] **Speed** · §3
+> The rate of change of path length with time; a scalar, always $\ge 0$. Instantaneous speed equals $|v|$, but average speed is not $|\bar{v}|$ when the motion reverses (see *Average Speed*).
 >
-> - Slope of x–t graph = velocity
-> - Slope of v–t graph = acceleration
+> *SI unit: m s⁻¹ · Dimensional formula: $[M^0 L T^{-1}]$*
 
----
-
-> [!note] **Speed** *(All levels)*
-> The magnitude of velocity. A **scalar** quantity. Instantaneous speed = |instantaneous velocity|; average speed $\geq$ |average velocity|.
-
----
-
-> [!important] **Stopping Distance** *(Board/NEET)*
-> The distance an object travels after brakes are applied before coming to rest:
+> [!note] **Stopping Distance** · §6.9
+> The distance travelled from the moment the brakes act until the vehicle stops, for constant retardation of magnitude $a$ and initial speed $v_0$. It is proportional to $v_0^2$, so doubling the speed quadruples it.
 >
 > $$d_s = \frac{v_0^2}{2a}$$
->
-> Stopping distance is **proportional to $v_0^2$** — doubling speed **quadruples** stopping distance. An important factor in road safety and speed limits.
 
 ---
 
 ## U
 
-> [!important] **Uniform Acceleration** *(All levels)*
-> Acceleration that is **constant** in both magnitude and direction throughout the motion. Only in this case are the three kinematic equations valid.
+> [!note] **Uniform Acceleration** · §6.1
+> Acceleration that is constant in both magnitude and direction; the condition for the *Kinematic Equations* to hold.
 
----
-
-> [!note] **Uniform Motion** *(Board)*
-> Motion with **zero acceleration** — constant velocity. The x–t graph is a straight line; v–t graph is a horizontal line. Instantaneous velocity = average velocity at all instants.
+> [!note] **Uniform Motion** · §4.4
+> Motion with constant velocity, that is, zero acceleration (rest is the case $v = 0$). Its x–t graph is a straight line and its v–t graph is a horizontal line.
 
 ---
 
 ## V
 
-> [!note] **Variable Acceleration** *(JEE)*
-> Acceleration that changes with time or position. Kinematic equations cannot be used; **calculus** (integration/differentiation) is required:
+> [!note] **Variable Acceleration** · §6.3
+> Acceleration that changes with time or position, for which the *Kinematic Equations* do not apply. The motion is found by integrating instead:
 >
-> $$v = \int a \, dt \qquad x = \int v \, dt$$
+> $$v = v_0 + \int a\,dt \qquad\quad x = x_0 + \int v\,dt$$
 
----
+> [!note] **Vector** · §2.2
+> A quantity with both magnitude and direction; in one dimension the direction is given by the sign. In this chapter: displacement, velocity and acceleration.
 
-> [!note] **Vector** *(All levels)*
-> A quantity having both magnitude and direction. Examples in this chapter: displacement, velocity, acceleration.
-
----
-
-> [!important] **Velocity** *(All levels)*
-> The rate of change of position with respect to time. A **vector** quantity.
+> [!note] **Velocity** · §3
+> The rate of change of position with time; a vector, so unlike speed it carries a sign that gives the direction of motion (see *Average Velocity*, *Instantaneous Velocity*).
 >
-> - Instantaneous velocity: $v = dx/dt$
-> - Average velocity: $\bar{v} = \Delta x / \Delta t$
->
-> SI unit: **m s⁻¹** | Dimensional formula: $[M^0 L T^{-1}]$
+> *SI unit: m s⁻¹ · Dimensional formula: $[M^0 L T^{-1}]$*
 
----
-
-> [!important] **v–t Graph (Velocity-Time Graph)** *(All levels — very important)*
-> A graph showing velocity on the y-axis and time on the x-axis.
->
-> - Slope of v–t graph = instantaneous acceleration
-> - Area under v–t graph between $t_1$ and $t_2$ = displacement in that interval
-> - Area using $|v|$ = total distance travelled
+> [!note] **v–t Graph** · §5, §9.2
+> A graph of velocity (vertical axis) against time (horizontal axis). Its slope is acceleration; the signed area between it and the time axis is displacement, and the area under $|v|$ is distance.
 
 ---
 
 ## X
 
-> [!important] **x–t Graph (Position-Time Graph)** *(All levels — very important)*
-> A graph showing position on the y-axis and time on the x-axis.
->
-> - Slope of tangent at any point = instantaneous velocity
-> - Straight line → uniform velocity (constant slope)
-> - Parabola → uniform acceleration
-> - Vertical line → **physically impossible** (object at two places at once)
+> [!note] **x–t Graph** · §4.4, §9.1
+> A graph of position (vertical axis) against time (horizontal axis), whose slope is velocity: a straight line means uniform velocity, and a parabola means constant acceleration, bending upward for $a > 0$ and downward for $a < 0$. A vertical line cannot occur, as an object cannot be at several positions at one instant.
 
 ---
 
-*Total terms defined: 34 | End of Glossary — Physics Ch. 2: Motion in a Straight Line*
+*End of Glossary — Physics Ch. 02: Motion in a Straight Line*
