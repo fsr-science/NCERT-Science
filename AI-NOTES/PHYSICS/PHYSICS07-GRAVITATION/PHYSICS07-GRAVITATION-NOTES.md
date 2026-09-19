@@ -4,6 +4,73 @@
 
 ---
 
+## Chapter Brief
+
+This chapter extends the circular-motion and angular-momentum ideas from rotational motion to the specific case of gravity, tracing how centuries of naked-eye astronomical data (culminating in Kepler's Laws) let Newton make the leap to a single force law governing both a falling apple and an orbiting Moon. It matters because that one law — inverse-square, universal, always attractive — is what then explains planetary orbits, satellite motion, and free fall as the same phenomenon at different scales. By the end of this chapter, a reader should be able to derive results from first principles rather than just recall them.
+
+**Prerequisites:** Circular motion and centripetal acceleration; conservation of angular momentum for a system with zero external torque; the work–energy theorem.
+
+**Key outcomes** — by the end of this chapter, you should be able to:
+- State and apply Kepler's three laws, and derive the perihelion–aphelion speed ratio from angular momentum conservation.
+- Derive Newton's Law of Gravitation from Kepler's Third Law, apply the superposition principle to systems of point masses, and use the two shell theorems for extended bodies.
+- Derive how g varies with height and with depth, and explain why the two formulas differ (and where each approximation breaks down).
+- Derive gravitational potential energy from work considerations, and explain how and why it differs from the near-surface $mgh$ approximation.
+- Derive escape speed and satellite orbital speed/time period, and correctly reason about the sign and behaviour of a bound satellite's total energy.
+- Explain weightlessness as free fall toward Earth, not the absence of gravity.
+
+**Scope note:** This chapter treats Earth (and, for planetary motion, the Sun) as spherically symmetric, non-rotating masses, and restricts satellite orbits to the circular case except where §9's Points to Ponder generalizes $E=-GM_Em/2a$ to ellipses. General-relativistic corrections and full N-body perturbation effects are outside CBSE/NEET/JEE scope and are not covered.
+
+## Table of Contents
+
+1. Introduction & Historical Background
+   - 1.1 Early Observations
+2. Kepler's Laws
+   - 2.1 Law of Orbits (First Law)
+   - 2.2 Law of Areas (Second Law)
+   - 2.3 Law of Periods (Third Law)
+   - 2.4 Solved Example 7.1 — Perihelion and Aphelion
+3. Universal Law of Gravitation
+   - 3.1 Newton's Reasoning (The Moon Test)
+   - 3.2 The Universal Law (Statement)
+   - 3.3 Principle of Superposition
+   - 3.4 Extended Bodies — Two Important Shell Theorems
+   - 3.5 Solved Example 7.2 — Three Masses at Triangle Vertices
+4. The Gravitational Constant G
+   - 4.1 Cavendish Experiment (1798)
+5. Acceleration Due to Gravity
+   - 5.1 At the Surface of Earth
+   - 5.2 At Height h Above Surface
+   - 5.3 At Depth d Below Surface
+   - 5.4 Summary — Variation of g
+6. Gravitational Potential Energy
+   - 6.1 Near the Surface (Approximation)
+   - 6.2 General Expression (Any Distance r from Centre)
+   - 6.3 Gravitational Potential (Field Concept)
+   - 6.4 Solved Example 7.3 — Four Masses at Corners of a Square
+7. Escape Speed
+   - 7.1 Derivation
+   - 7.2 Numerical Value
+   - 7.3 Key Properties of Escape Speed
+   - 7.4 Solved Example 7.4 — Neutral Point Between Two Spheres
+8. Earth Satellites
+   - 8.1 Orbital Speed
+   - 8.2 Time Period
+   - 8.3 Geostationary Satellite
+   - 8.4 Solved Example 7.5 — Mars and its Moons
+9. Energy of an Orbiting Satellite
+   - 9.1 Kinetic Energy
+   - 9.2 Potential Energy
+   - 9.3 Total Mechanical Energy
+   - 9.4 Binding Energy
+   - 9.5 Solved Example 7.8 — Changing Orbital Radius
+   - 9.6 Weightlessness
+10. "Weighing the Earth"
+    - 10.1 Solved Example 7.6 — Two Independent Methods for $M_E$
+
+*Closing reference material (unnumbered): Quick Reference, Points to Ponder, Key Historical Persons, Dimensional Formulae Summary.*
+
+---
+
 ## 🗺️ CONCEPT ROADMAP
 
 ```mermaid
@@ -46,6 +113,8 @@ flowchart TD
 
 ### 1.1 Early Observations
 
+Gravitation wasn't derived from first principles — it emerged from centuries of astronomers refining *how* planets move before anyone could explain *why*. The chronology below matters because Newton's law (§3.2) is the payoff of this observational chain, not a standalone postulate: each figure either supplied better data or reinterpreted the same data more correctly.
+
 - **Galileo (1564–1642):** Recognised that all bodies fall toward Earth with the **same constant acceleration**, irrespective of mass. Made public demonstrations; rolled bodies on inclined planes.
 - **Ptolemy (~150 AD):** Proposed **geocentric model** — Earth at centre, all celestial objects revolve around it. Only circular motion was considered possible; required complex circular-within-circular schemes.
 - **Indian astronomers (~550 AD):** Similar geocentric schemes were also advanced 400 years after Ptolemy.
@@ -86,6 +155,7 @@ timeline
 - **Perihelion (P):** Closest point of the orbit to the Sun.
 - **Aphelion (A):** Farthest point of the orbit from the Sun.
 - A **circle** is a special case of an ellipse (both foci merge into one; semi-major axis = radius).
+- **Eccentricity (e):** measures how elongated the ellipse is — $e = 0$ for a circle, $0 < e < 1$ for an ellipse, $e = 1$ for a parabola (open, not a bound orbit). For Earth's orbit, $e \approx 0.0167$ — nearly circular, consistent with the $b/a = 0.99986$ figure below.
 - This was a departure from the Copernican model, which allowed only **circular** orbits.
 
 > [!tip] For Earth: ratio of semi-minor to semi-major axis b/a = 0.99986 — nearly circular!
@@ -282,6 +352,8 @@ $$\mathbf{F}_1 = \frac{Gm_2 m_1}{r_{21}^2}\hat{r}_{21} + \frac{Gm_3 m_1}{r_{31}^
 
 ### 3.4 Extended Bodies — Two Important Shell Theorems
 
+Newton's law as stated applies to point masses, but Earth is an extended sphere. Newton proved (using integral calculus, not reproduced here) that a uniform spherical shell behaves in one of two very different ways depending on whether the point in question is outside or inside it — and this asymmetry is exactly what makes §5's derivation of g at height vs. depth work.
+
 | Point Mass Location | Gravitational Force |
 |:---|:---|
 | **Outside** a uniform spherical shell | As if entire mass concentrated at **centre** of shell |
@@ -386,6 +458,9 @@ Treating Earth as a sphere of uniform density with mass $M_E$ and radius $R_E$. 
 $$\boxed{g = \frac{GM_E}{R_E^2}} \qquad \text{...(7.12)}$$
 
 **Numerical values:** $g \approx 9.8$ m s⁻², $M_E \approx 5.97 \times 10^{24}$ kg, $R_E \approx 6.4 \times 10^6$ m.
+
+> [!note] Source Note — Two Values of $R_E$
+> This chapter uses $R_E = 6.4\times10^6$ m (NCERT's standard rounding) throughout, **except** in §9.5 and §10.1, where the source problem states $R_E=6.37\times10^6$ m explicitly. Both round to the same value at 2 significant figures — this isn't a contradiction, just two problems quoting Earth's radius to different precision.
 
 ### 5.2 At Height h Above Surface
 
@@ -576,6 +651,8 @@ $$v_e = \sqrt{2 \times 9.8 \times 6.4 \times 10^6} \approx \boxed{11.2 \text{ km
 
 ### 7.3 Key Properties of Escape Speed
 
+Four properties fall directly out of the derivation in §7.1, and exam questions target exactly these — usually by asserting one of them incorrectly.
+
 | Property | Details |
 |:---|:---|
 | Depends on mass of Earth? | **Yes** ($\propto \sqrt{M_E}$) |
@@ -662,7 +739,7 @@ $$T_0 = 2\pi\sqrt{\frac{R_E}{g}} \approx 85 \text{ minutes}$$
 ### 8.3 Geostationary Satellite
 
 A special case where T = 24 hours (same as Earth's rotation) and orbit is equatorial:
-- Height above surface ≈ 35,800 km (≈ 36,000 km)
+- Height above surface ≈ 35,800 km (rounded to ≈36,000 km in the diagrams/quick-reference in this chapter)
 - Appears stationary relative to Earth's surface
 - Used for telecommunications, weather satellites
 
@@ -735,11 +812,22 @@ The energy required to remove a satellite from its orbit to infinity $= |E| = GM
 > [!warning] Counterintuitive Result
 > To move to a higher orbit, you supply energy. But the satellite **slows down** (KE decreases). The energy goes into increasing PE (by $2|\Delta E|$), with half coming back as reduced KE.
 
+### 9.6 Weightlessness
+
+An astronaut orbiting Earth feels weightless — but gravity at ~400 km altitude is only about 10% weaker than at the surface ($g(h)$ from §5.2 confirms this), so "no gravity" cannot be the explanation. The real reason: both the spacecraft and the astronaut are in **free fall**, following the same curved path around Earth under the same acceleration $g(h)$. Since neither accelerates relative to the other, the spacecraft's floor exerts **no normal force** on the astronaut — and it's the normal force (not gravity) that a scale or your own body registers as "weight."
+
+> [!important] Weightlessness ≠ Zero Gravity
+> Weightlessness is a statement about the **absence of a supporting force**, caused by free fall — not a statement about the local value of $g$. This is the single most commonly misstated idea in this chapter.
+
 ---
 
 ## SECTION 10 — "WEIGHING THE EARTH" ⭐⭐
 
-### Solved Example 7.6
+Knowing G (§4) closes a loop: it lets $M_E$ itself be calculated, two independent ways, from measurements that have nothing to do with directly weighing the planet. Agreement between the two methods below is itself evidence that the underlying law is correct.
+
+### 10.1 Solved Example 7.6 — Two Independent Methods for $M_E$
+
+> [!note] This example uses $R_E = 6.37\times10^6$ m — the more precise NCERT source value — rather than the $6.4\times10^6$ m rounding used elsewhere in this chapter (§5.1). Both are the same figure to 3 significant digits; the extra precision here doesn't change which method is being demonstrated.
 
 > [!example] Example 7.6 — Given: g = 9.81 m s⁻², RE = 6.37×10⁶ m, moon distance R = 3.84×10⁸ m, T_moon = 27.3 days
 >
@@ -826,25 +914,25 @@ flowchart TD
 
 ## ⚡ POINTS TO PONDER (High-Yield for Exams)
 
-1. **g is maximum at Earth's surface.** It decreases both going up ($\propto 1/r^2$) and going down ($\propto r$). The formula is different above and below the surface.
+1. **g is maximum at Earth's surface.** It decreases both going up ($\propto 1/r^2$) and going down ($\propto r$). The formula is different above and below the surface. *(§5.4)*
 
-2. **Kepler's 2nd Law ↔ Conservation of Angular Momentum.** This holds for ANY central force (not just gravity) — the result is much more general.
+2. **Kepler's 2nd Law ↔ Conservation of Angular Momentum.** This holds for ANY central force (not just gravity) — the result is much more general. *(§2.2)*
 
-3. **Gravitational PE is negative** (with V = 0 at infinity). This is convention-based but very important. A satellite at any finite orbit has negative total energy.
+3. **Gravitational PE is negative** (with V = 0 at infinity). This is convention-based but very important. A satellite at any finite orbit has negative total energy. *(§6.2, §9.3)*
 
-4. **Weightlessness in satellites** is NOT because gravity is absent there. Both the astronaut and the satellite are in **free fall** toward Earth — hence no normal force between them.
+4. **Weightlessness in satellites** is NOT because gravity is absent there. Both the astronaut and the satellite are in **free fall** toward Earth — hence no normal force between them. *(§9.6)*
 
-5. **KE of satellite decreases when moved to higher orbit** — counterintuitive but true. Total energy is more negative at lower orbits. Higher orbit → less negative total energy → you added energy → but the satellite slows down (lower KE).
+5. **KE of satellite decreases when moved to higher orbit** — counterintuitive but true. Total energy is more negative at lower orbits. Higher orbit → less negative total energy → you added energy → but the satellite slows down (lower KE). *(§9.5)*
 
-6. **Escape speed vs. orbital speed:** $v_e = \sqrt{2gR_E}$, $V_0 = \sqrt{gR_E}$ → $v_e = \sqrt{2} \times V_0 \approx 1.414 \times 7.9 = 11.2$ km s⁻¹.
+6. **Escape speed vs. orbital speed:** $v_e = \sqrt{2gR_E}$, $V_0 = \sqrt{gR_E}$ → $v_e = \sqrt{2} \times V_0 \approx 1.414 \times 7.9 = 11.2$ km s⁻¹. *(§7.1, §8.1)*
 
-7. **Gravitational shielding is NOT possible** (unlike electrical shielding by a conductor). A spherical shell exerts zero force inside, but cannot prevent external masses from exerting force on a particle inside it.
+7. **Gravitational shielding is NOT possible** (unlike electrical shielding by a conductor). A spherical shell exerts zero force inside, but cannot prevent external masses from exerting force on a particle inside it. *(§3.4)*
 
-8. **The tidal effect** depends on the gradient of gravity (how rapidly g changes with distance), not just g itself. Although the Sun's gravitational pull on Earth is stronger than the Moon's, the Moon's tidal effect is greater because the Moon is much closer — the gradient is steeper.
+8. **The tidal effect** depends on the gradient of gravity (how rapidly g changes with distance), not just g itself. Although the Sun's gravitational pull on Earth is stronger than the Moon's, the Moon's tidal effect is greater because the Moon is much closer — the gradient is steeper. *(Not derived elsewhere in this chapter — stated here as a standalone high-yield fact.)*
 
-9. **For elliptical orbits**, the semi-major axis a replaces $(R_E + h)$ in all satellite energy formulas: $E = -GM_Em/2a$.
+9. **For elliptical orbits**, the semi-major axis a replaces $(R_E + h)$ in all satellite energy formulas: $E = -GM_Em/2a$. *(§9.3, extends beyond the circular-orbit scope stated in this chapter's Scope note)*
 
-10. **Linear momentum is NOT conserved** for a planet in orbit (direction of p changes). But angular momentum L IS conserved (central force → $\tau = 0$ about Sun).
+10. **Linear momentum is NOT conserved** for a planet in orbit (direction of p changes). But angular momentum L IS conserved (central force → $\tau = 0$ about Sun). *(§2.2)*
 
 ---
 
