@@ -1,20 +1,100 @@
 # Physics | Chapter 04 | Laws of Motion | NOTES
-> **Complete Study Notes** | Board · NEET · JEE Layered
+> **Complete Study Notes** | Board · NEET · JEE
 
 ---
 
-## 🗺️ CONCEPT ROADMAP
+## Chapter Brief
+
+Kinematics describes how bodies move; this chapter explains why their motion changes. Three laws connect force, momentum and acceleration, and a short list of real forces (gravity, contact forces, tension, spring force, friction) supplies the inputs to those laws. By the end, the reader can turn a physical set-up such as a block on an incline, a car on a curve or a lift in motion into a free-body diagram and then into equations of motion. The chapter builds directly on the kinematics of straight-line and planar motion.
+
+## At a Glance
+
+- **Prerequisites:** Kinematics (velocity, acceleration, uniform circular motion and its centripetal acceleration), resolution of vectors into components.
+- **Key outcomes:** By the end of this chapter you should be able to:
+  - Draw a correct free-body diagram for a body on a surface, on an incline or hung from strings.
+  - State the three laws and say what each does and does not imply.
+  - Apply $F = ma$, the impulse-momentum relation and conservation of momentum to collisions, recoil and explosions.
+  - Use static and kinetic friction, including the angle of repose, to decide whether a body slides and how fast it accelerates.
+  - Find the speed limits for a car on a level and on a banked curve.
+  - Solve lift and Atwood-machine problems.
+- **Scope note:** Motion is analysed in inertial frames only (pseudo-forces are mentioned, not used); rotational equilibrium, variable-mass systems and speeds close to that of light are not treated.
+
+---
+
+## Table of Contents
+
+More stars mean higher exam priority (⭐ to ⭐⭐⭐).
+
+- Concept Roadmap
+- 1. Aristotle's Fallacy and the Law of Inertia ⭐
+  - 1.1 Aristotle's View
+  - 1.2 Galileo's Correction: The Law of Inertia
+- 2. Newton's First Law of Motion ⭐
+  - 2.1 Statement
+  - 2.2 Implications
+  - 2.3 Examples of the First Law in Daily Life
+- 3. Momentum and Newton's Second Law ⭐⭐
+  - 3.1 Momentum
+  - 3.2 Newton's Second Law: Statement
+  - 3.3 Key Points About the Second Law
+  - 3.4 Impulse ⭐
+  - 3.5 Solved Examples
+- 4. Newton's Third Law of Motion ⭐⭐
+  - 4.1 Statement
+  - 4.2 Critical Features of the Third Law
+  - 4.3 Examples of the Third Law
+  - 4.4 Solved: Billiard Balls (NCERT Example 4.5)
+- 5. Conservation of Momentum ⭐⭐⭐
+  - 5.1 Derivation from the Second and Third Laws
+  - 5.2 Statement
+  - 5.3 Applications
+- 6. Equilibrium of a Particle ⭐
+  - 6.1 Definition
+  - 6.2 Conditions for Equilibrium
+  - 6.3 Free-Body Diagram (FBD) ⭐
+  - 6.4 Solved: Rope with a Horizontal Force (NCERT Example 4.6)
+  - 6.5 Solved: Weight Hung from Two Strings
+- 7. Common Forces in Mechanics ⭐⭐
+  - 7.1 Gravitational Force (Weight)
+  - 7.2 Normal Force ($N$) ⭐
+  - 7.3 Tension ($T$) ⭐
+  - 7.4 Spring Force (Hooke's Law)
+  - 7.5 Microscopic Origin of Contact Forces
+- 8. Friction ⭐⭐⭐
+  - 8.1 What is Friction?
+  - 8.2 Static Friction ($f_s$) ⭐⭐
+  - 8.3 Kinetic (Sliding) Friction ($f_k$) ⭐⭐
+  - 8.4 Comparison: Static vs Kinetic Friction
+  - 8.5 Angle of Friction and Angle of Repose
+  - 8.5a Block on an Incline: Rest, Limit and Sliding
+  - 8.6 Rolling Friction
+  - 8.7 Friction: Harmful and Essential
+  - 8.8 Solved Examples
+- 9. Circular Motion ⭐⭐⭐
+  - 9.1 Centripetal Force
+  - 9.2 Motion of a Car on a Level Road ⭐⭐
+  - 9.3 Motion of a Car on a Banked Road ⭐⭐⭐
+  - 9.4 Solved Examples
+- 10. Solving Problems in Mechanics ⭐⭐
+  - 10.1 Systematic Approach
+  - 10.2 Lift Problems
+  - 10.3 Connected Bodies: The Atwood Machine
+  - 10.4 Solved: Block and Iron Cylinder (NCERT Example 4.12)
+
+---
+
+## Concept Roadmap
 
 ```mermaid
 flowchart TD
-    A(["Chapter 3: Kinematics — Describing Motion"])
+    A(["Kinematics: describing motion"])
     A --> B["WHY does motion change? The answer: FORCE"]
     B --> C["Aristotle's Fallacy — corrected by Galileo"]
     C --> D["Law of Inertia"]
     D --> E["Newton's First Law: ΣF = 0 implies a = 0"]
     E --> F["Momentum: p = mv"]
     F --> G["Newton's Second Law: F = dp/dt = ma"]
-    G --> G1["Impulse = F times Δt = Δp"]
+    G --> G1["Impulse = ∫F dt = Δp"]
     G --> G2["1 N = 1 kg m s^-2"]
     G --> H["Newton's Third Law: F_AB = -F_BA"]
     H --> I["Conservation of Momentum: Σp = const when ΣF_ext = 0"]
@@ -25,10 +105,11 @@ flowchart TD
     K --> K3["Tension T (along string, away from body)"]
     K --> K4["Spring Force: F = -kx"]
     K --> K5["Friction: static fs, kinetic fk"]
-    K5 --> L["Circular Motion"]
+    K --> L["Circular Motion"]
     L --> L1["Centripetal Force: fc = mv^2/R"]
     L1 --> L2["Level Road: vmax = sqrt(μs R g)"]
     L1 --> L3["Banked Road: v0 = sqrt(R g tanθ)"]
+    L --> M["Problem solving: FBDs, lifts, Atwood machine"]
 
     style A fill:#1e3a5f,color:#e0f0ff,stroke:#4a9eff
     style E fill:#1a3d2e,color:#a8f0c6,stroke:#2ecc71
@@ -40,30 +121,32 @@ flowchart TD
     style L1 fill:#3d1a1a,color:#ffd0d0,stroke:#e74c3c
 ```
 
+Read the map top to bottom: the three laws (green and orange) are the core, the list of real forces feeds them, and friction and circular motion (red) are where they are applied most heavily.
+
 ---
 
-## SECTION 1 — ARISTOTLE'S FALLACY AND THE LAW OF INERTIA
+## 1. Aristotle's Fallacy and the Law of Inertia ⭐
 
-### 1.1 Aristotle's (Wrong) View
+Kinematics describes motion but not its cause. The first question dynamics must settle is what, if anything, is needed to keep a body moving, and for roughly two thousand years the everyday answer was wrong in an instructive way.
+
+### 1.1 Aristotle's View
 
 > **Aristotelian Law of Motion:** An external force is required to keep a body in motion.
 
-**Why it seems right:** A toy car comes to rest once you stop pushing it. A ball rolling on the floor slows down.
+The claim matches everyday experience: a toy car stops soon after the pushing stops, and a ball rolling on the floor slows and halts. Aristotle's error was to overlook the cause of the slowing. The car and ball decelerate because friction and air resistance act against their motion; remove those opposing forces and nothing is left to bring the body to rest.
 
-**Why it is wrong:** The car and ball slow down because of **friction and air resistance** — opposing forces. If these were absent, no force would be needed to sustain motion.
+> [!tip] Where Aristotle went wrong
+> He confused the force needed to *overcome friction* with the force needed to *sustain motion*. Friction is a separate, opposing force, and he did not account for it.
 
-> [!tip] Aristotle's Error
-> He confused the applied force needed to overcome friction with the force needed to sustain motion. He did not account for friction as a separate opposing force.
+### 1.2 Galileo's Correction: The Law of Inertia
 
-### 1.2 Galileo's Correction — The Law of Inertia
+Galileo studied balls on inclined planes and read the conclusion from how the motion changes with slope:
 
-Galileo studied motion on inclined planes and a double-inclined plane:
+- A ball rolling **down** an incline speeds up.
+- A ball rolling **up** an incline slows down.
+- On a **horizontal**, frictionless plane the ball would neither speed up nor slow down: its velocity stays constant.
 
-* A ball rolling **down** an incline: **accelerates**
-* A ball rolling **up** an incline: **decelerates**
-* Motion on a **horizontal** frictionless plane: **constant velocity** (neither accelerates nor decelerates)
-
-**Double inclined plane experiment:** A ball released from one incline rises to the same height on the other, regardless of the slope angle. As slope → 0 (horizontal), the ball travels an infinite distance — it never stops.
+The double-inclined-plane experiment joins these observations. A ball released from rest on one incline climbs the opposite incline to the same height, whatever that incline's slope, provided friction is absent. As the second slope is made gentler, the ball must travel farther to regain the height. In the limiting case of a horizontal plane it can never regain it, so it moves on indefinitely at constant velocity.
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -77,7 +160,7 @@ Galileo studied motion on inclined planes and a double-inclined plane:
     \fill[blue!70!black] (3.6,2) circle (2.5pt);
     \draw[->, red!75!black, line width=1.2pt, dashed] (0.35,1.85) to[bend right=20] (2.35,0.15);
     \draw[->, red!75!black, line width=1.2pt, dashed] (1.75,0.1) to[bend left=15] (3.35,1.85);
-    \node[below, font=\itshape\small, text=gray] at (1.8,-0.7) {(i) steep slope -- rises to nearly the same height};
+    \node[below, font=\itshape\small, text=gray] at (1.8,-0.7) {(i) steep slope -- rises to the same height};
   \end{scope}
 
   \begin{scope}[yshift=3.3cm]
@@ -106,31 +189,39 @@ Galileo studied motion on inclined planes and a double-inclined plane:
 \end{tikzpicture}
 ```
 
-As the second slope is made gentler (rows i → iii), the ball must travel farther to climb back to the same height — in the limiting horizontal case it never stops at all. This progression is the experimental seed of the law of inertia.
+Rows (i) to (iii) show the second slope flattening: the distance travelled grows without bound while the height reached stays the same. This progression is the experimental seed of the law of inertia.
 
-> [!important] Galileo's Conclusion — The Law of Inertia
-> The natural state of a body (rest OR uniform motion) does NOT require a net force to sustain it. A body resists any change in its state — this property is called **INERTIA**.
+> [!note] An idealisation
+> Real balls do come to rest, because friction and air resistance are never exactly zero. The experiment shows that the *smaller* the resistive forces, the *closer* the motion is to constant velocity.
+
+> [!important] Galileo's Conclusion: The Law of Inertia
+> A body needs no net force to *continue* at rest or in uniform motion; it resists any change in that state. This property is **inertia**.
 >
-> **Inertia** = the inherent tendency of a body to **resist any change** in its state of rest or of uniform motion.
+> **Inertia** — the property of a body by which it resists any change in its state of rest or of uniform motion in a straight line. Its measure is the body's **mass** (§3.2).
 
 ---
 
-## SECTION 2 — NEWTON'S FIRST LAW OF MOTION ⭐
+## 2. Newton's First Law of Motion ⭐
+
+Galileo's law of inertia becomes Newton's First Law once "state of motion" and "external cause" are stated precisely.
 
 ### 2.1 Statement
 
 > **Every body continues to be in its state of rest or of uniform motion in a straight line unless compelled by some external force to act otherwise.**
 
-**Equivalent simple form:**
+In symbols, for a body in an inertial frame (§2.2):
 
 $$\sum \mathbf{F} = 0 \implies \mathbf{a} = 0$$
 
 ### 2.2 Implications
 
-* State of rest (v = 0) and state of uniform motion (v = constant ≠ 0) are **physically equivalent** — both have zero acceleration, both require zero net force.
-* A body at rest is NOT in a "more natural" state than a body in uniform motion.
-* **First Law defines Force:** Force is that external cause which changes (or tends to change) the state of rest or uniform motion of a body.
-* **First Law defines Inertial Frame:** A reference frame in which the First Law holds is called an **inertial frame of reference**.
+Three ideas follow from the statement.
+
+- **Rest and uniform motion are equivalent states.** Both have zero acceleration and need zero net force; a body at rest is not in a "more natural" state than one moving at constant velocity.
+- **Force is identified qualitatively.** Force is the external agency that changes, or tends to change, a body's state of rest or uniform motion. The Second Law (§3) makes this quantitative.
+- **Inertial frames are identified.** An **inertial frame of reference** is one in which a body acted on by no net force moves with constant velocity. Any non-rotating frame moving with constant velocity relative to an inertial frame is also inertial, and the Earth's surface is inertial to good approximation for the motions in this chapter.
+
+Newton's laws in the form used here hold only in inertial frames. In a frame accelerating relative to an inertial one, the laws work only if extra *pseudo* (fictitious) forces are added; this chapter stays in inertial frames.
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -158,46 +249,50 @@ $$\sum \mathbf{F} = 0 \implies \mathbf{a} = 0$$
 \end{tikzpicture}
 ```
 
-In (a) the book has no motion at all; in (b) the car has plenty of motion but no *change* in velocity — by the First Law, both situations are governed by the same condition, $\Sigma F = 0$. In (b) that zero is not "no forces" but a cancellation: the engine's forward thrust (via friction, §4.9.1) exactly balances resistive friction and drag.
+In (a) the book has no motion at all; in (b) the car has plenty of motion but no *change* in velocity, so the First Law governs both through the same condition, $\Sigma F = 0$. In (b) that zero is not "no forces" but a cancellation: the driving force on the car (the road's static friction on the driven wheels, §8.7) balances air drag and rolling resistance.
 
-### 2.3 Examples of First Law in Daily Life
+> [!warning] The First Law is more than a special case of the Second
+> Setting $F = 0$ in $F = ma$ does give $a = 0$, but only *within an inertial frame*. What the First Law adds is the statement that such frames exist, and that is what gives the Second Law its meaning.
+
+### 2.3 Examples of the First Law in Daily Life
+
+Each case is the same statement at work: without a net force, the existing state of motion persists.
 
 | Situation | Explanation |
 |:---|:---|
-| Passenger thrown backward when bus starts | Passenger's body tends to remain at rest (inertia of rest) while floor moves forward |
-| Passenger thrown forward when bus brakes | Body tends to continue moving forward (inertia of motion) |
-| Tablecloth pulled away from dishes | Dishes tend to remain at rest (inertia) if pulled fast enough |
-| Coin falls into glass when card is flicked | Coin's inertia of rest keeps it stationary; card moves away |
-| Astronaut in deep space, rockets off | Continues with constant velocity (no net force) |
-
-> [!warning] Exam Note
-> The First Law is NOT merely a special case of the Second Law. It independently defines the concept of force and the concept of an inertial frame of reference.
+| Passenger thrown backward when a bus starts | The body tends to remain at rest (inertia of rest) while the floor moves forward |
+| Passenger thrown forward when a bus brakes | The body tends to keep moving forward (inertia of motion) |
+| Tablecloth pulled away from dishes | The dishes tend to stay at rest if the cloth is pulled fast enough |
+| Coin drops into a glass when the card under it is flicked | The coin's inertia of rest keeps it in place while the card moves away |
+| Astronaut in deep space after the engines shut off | Continues at constant velocity, since no net force acts |
 
 ---
 
-## SECTION 3 — MOMENTUM AND NEWTON'S SECOND LAW ⭐⭐
+## 3. Momentum and Newton's Second Law ⭐⭐
+
+The First Law says when velocity does not change; the Second Law says how it changes when a net force acts. The bridge between them is momentum, which combines how much matter a body has with how fast it moves.
 
 ### 3.1 Momentum
 
 > [!info] Definition
-> **Momentum (p)** of a body is the product of its **mass** and **velocity**.
+> **Momentum ($\mathbf{p}$)** of a body is the product of its **mass** and **velocity**.
 
-$$\mathbf{p} = m\mathbf{v} \quad \text{...(4.1)}$$
+$$\mathbf{p} = m\mathbf{v}$$
 
-* **Vector quantity** — same direction as velocity
-* SI unit: **kg m s⁻¹** = **N s**
-* Dimensional formula: **[MLT⁻¹]**
+- **Vector quantity**, in the direction of the velocity
+- SI unit: **kg m s⁻¹** = **N s**
+- Dimensional formula: **[MLT⁻¹]**
 
-**Why momentum matters — Common Experiences:**
+Everyday experience shows that both mass and speed matter in how hard a moving body is to stop:
 
 | Observation | What it shows |
 |:---|:---|
-| Truck harder to stop than bicycle at same speed | Mass matters |
-| Bullet easily pierces tissue at high speed; barely at low speed | Speed matters |
-| Cricketer pulls hands back to catch | Slower deceleration → less force |
-| Same force applied to heavy and light bodies for same time → same Δp | Momentum is the key quantity |
+| A truck is harder to stop than a bicycle at the same speed | Mass matters |
+| A bullet pierces tissue easily at high speed but barely at low speed | Speed matters |
+| A cricketer draws the hands back while catching | A slower stop needs less force |
+| The same force on a heavy and a light body for the same time gives the same $\Delta p$ | Momentum is the key quantity |
 
-**Momentum is a vector — force can change its direction even when its magnitude is fixed.** A stone whirled at uniform speed in a horizontal circle has constant $|\mathbf{p}| = mv$, yet the tension in the string is doing real work turning it: it redirects $\mathbf{p}$ continuously.
+Momentum is a vector, so a force can change it without changing its magnitude. A stone whirled at constant speed in a horizontal circle (gravity neglected or balanced) has constant $|\mathbf{p}| = mv$, yet its momentum vector rotates continuously. The string's tension supplies the force that rotates it; because the tension is always perpendicular to the velocity, it does no work and the speed does not change.
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -220,112 +315,156 @@ $$\mathbf{p} = m\mathbf{v} \quad \text{...(4.1)}$$
 \end{tikzpicture}
 ```
 
-$|\mathbf{p}_1| = |\mathbf{p}_2|$ (same speed), but $\mathbf{p}_1 \ne \mathbf{p}_2$ as vectors — the tension $T$ is what produces this rotation. This is exactly the observation Newton generalises: force is proportional to the rate of change of the momentum *vector*, not just of speed.
+$|\mathbf{p}_1| = |\mathbf{p}_2|$ (same speed), but $\mathbf{p}_1 \ne \mathbf{p}_2$ as vectors, and the tension $T$ is what produces the rotation. This is the observation Newton generalises: force is the rate of change of the momentum *vector*, not merely of the speed.
 
-### 3.2 Newton's Second Law — Statement
+### 3.2 Newton's Second Law: Statement
 
 > [!important] Newton's Second Law
-> The rate of change of momentum of a body is directly proportional to the applied force and takes place in the direction in which the force acts.
+> The rate of change of momentum of a body is directly proportional to the net external force applied and takes place in the direction in which the force acts.
 
-$$\mathbf{F} \propto \frac{\Delta \mathbf{p}}{\Delta t} \implies \mathbf{F} = k\frac{d\mathbf{p}}{dt}$$
+Writing the proportionality as an equation,
 
-Taking k = 1 (defines the SI unit of force):
+$$\mathbf{F} \propto \frac{d\mathbf{p}}{dt} \implies \mathbf{F} = k\frac{d\mathbf{p}}{dt}$$
 
-$$\boxed{\mathbf{F} = \frac{d\mathbf{p}}{dt} = m\mathbf{a}} \quad \text{...(4.5)}$$
+and choosing $k = 1$ (which is what defines the SI unit of force) gives, for a body of constant mass $m$:
 
-(for a body of fixed mass m)
+$$\boxed{\mathbf{F} = \frac{d\mathbf{p}}{dt} = \frac{d(m\mathbf{v})}{dt} = m\mathbf{a}}$$
 
-**SI Unit of Force:** 1 Newton (N) = force that produces an acceleration of 1 m s⁻² in a body of mass 1 kg.
+The last form shows why mass measures inertia: for the same force, the greater the mass, the smaller the acceleration.
 
-$$1 \text{ N} = 1 \text{ kg m s}^{-2} \quad \text{Dimensional formula: [MLT}^{-2}\text{]}$$
+**SI unit of force:** 1 newton (N) is the force that gives a body of mass 1 kg an acceleration of 1 m s⁻².
+
+$$1\ \text{N} = 1\ \text{kg m s}^{-2} \qquad \text{Dimensional formula: } [\text{MLT}^{-2}]$$
 
 ### 3.3 Key Points About the Second Law
 
-**1. Consistency with First Law:** $F = 0 \implies dp/dt = 0 \implies p = \text{const} \implies a = 0$. Fully consistent. ✓
+**1. It agrees with the First Law.** If $F = 0$ then $dp/dt = 0$, so $p$ is constant and (for constant mass) $a = 0$.
 
-**2. It is a Vector Law:** Equivalent to three scalar equations:
+**2. It is a vector law.** It is equivalent to three scalar equations:
 
-$$F_x = ma_x \qquad F_y = ma_y \qquad F_z = ma_z \quad \text{...(4.6)}$$
+$$F_x = ma_x \qquad F_y = ma_y \qquad F_z = ma_z$$
 
-A force along x changes only the x-component of velocity; y and z components remain unchanged. This is why horizontal velocity of a projectile stays constant under vertical gravity.
+A force along $x$ changes only the $x$-component of velocity; the $y$ and $z$ components are untouched. This is why the horizontal velocity of a projectile stays constant under vertical gravity.
 
-**3. It is a Local Relation:** Force F at a point **at a certain instant** determines acceleration a at that **same point at the same instant**. No "memory" of past motion.
+**3. It is a local relation.** The force at a point at a given instant fixes the acceleration at that same point and instant; the body carries no "memory" of past motion.
 
-> [!tip] Classic Example
-> The moment a stone is released from an accelerated train, it has no horizontal force (if air resistance neglected). Its past horizontal acceleration is irrelevant.
+> [!tip] Classic example
+> The moment a stone is released from an accelerating train, no horizontal force acts on it (air resistance neglected). Its earlier horizontal acceleration is irrelevant to what happens next.
 
-**4. F is the Net External Force:** F = vector sum of ALL external forces on the body. Internal forces do not count.
+**4. $\mathbf{F}$ is the net external force.** It is the vector sum of all external forces on the body; internal forces do not count.
 
-**5. Applicable to systems:** Law applies to a particle AND to a rigid body or system of particles, where F = total external force and a = acceleration of centre of mass.
+**5. It applies to systems.** For a rigid body or a system of particles of total mass $M$, $\mathbf{F}_{\text{ext}} = M\mathbf{a}_{\text{cm}}$, where $\mathbf{a}_{\text{cm}}$ is the acceleration of the centre of mass.
+
+Three common misreadings of $F = ma$:
+
+> [!warning] $ma$ is not a force
+> In $F = ma$, $ma$ is the *effect* of the net force, not a further force. Never draw it on a free-body diagram.
+
+> [!warning] $v = 0$ does not mean $F = 0$
+> At the top of a vertical throw $v = 0$, yet $F = mg$ and $a = g$. Force fixes acceleration, not velocity.
+
+> [!warning] Force need not point along the velocity
+> Force and acceleration are parallel to each other, but the velocity can point elsewhere (a projectile, a body in circular motion).
 
 ### 3.4 Impulse ⭐
 
-When a **large force** acts for a **very short time** (bat hitting ball, hammer striking nail):
+When a bat strikes a ball or a hammer strikes a nail, a large force acts for a very short time, and its value changes rapidly during that time. Neither the peak force nor the exact duration is easy to measure, but the resulting change in momentum is. Integrating the Second Law over the interval gives the relation that makes this useful.
 
-$$\text{Impulse} = \mathbf{F} \times \Delta t = \Delta \mathbf{p} \quad \text{...(4.7)}$$
+> [!info] Definition
+> **Impulse ($\mathbf{J}$)** is the integral of force over the time it acts, and it equals the change in momentum of the body (the impulse-momentum theorem).
 
-* SI unit: **N s** = **kg m s⁻¹**
-* Dimensional formula: **[MLT⁻¹]** (same as momentum)
-* **Impulse = Change in momentum** — measurable even when F and Δt are individually unknown
+$$\mathbf{J} = \int \mathbf{F}\,dt = \Delta\mathbf{p} \qquad \text{(constant or average force: } \mathbf{J} = \mathbf{F}\Delta t\text{)}$$
 
-> [!tip] Why a cricketer draws hands back while catching
-> By increasing Δt of contact, the same Δp (impulse) is achieved with a **smaller force** F. This prevents injury.
+- SI unit: **N s** = **kg m s⁻¹**
+- Dimensional formula: **[MLT⁻¹]**, the same as momentum and *not* the same as force
+- Measurable even when $F$ and $\Delta t$ are individually unknown, because only $\Delta\mathbf{p}$ is needed
 
-> [!warning] Impulsive Force
-> Impulsive force is NOT a new type of force. It is simply a large force acting for a short time. Newtonian mechanics treats it exactly like any other force.
+> [!tip] Why a cricketer draws the hands back while catching
+> Drawing the hands back lengthens the contact time $\Delta t$. For the same $\Delta p$, the average force $F = \Delta p/\Delta t$ falls, which protects the hands.
+
+> [!warning] Impulsive force is not a new kind of force
+> An **impulsive force** is a large force acting for a very short time. Impulse is defined for any force, but it is the natural measure of an impulsive one. Newtonian mechanics treats an impulsive force exactly like any other force.
 
 ### 3.5 Solved Examples
 
-> [!example] NCERT Example 4.2 — Bullet stopped in barrel
-> Bullet: $m = 0.04$ kg, $u = 90$ m s⁻¹, stopped in $d = 0.6$ m.
+> [!example] NCERT Example 4.2: Bullet stopped in a wooden block
+> **Given:** $m = 0.04$ kg, $u = 90$ m s⁻¹, final speed $0$, stopping distance $d = 0.6$ m.
 >
-> $$a = \frac{-u^2}{2s} = \frac{-(90)^2}{2 \times 0.6} = -6750 \text{ m s}^{-2}$$
+> **Find:** the average resistive force $F$.
 >
-> $$F = ma = 0.04 \times 6750 = \mathbf{270 \text{ N}} \text{ (average resistive force)}$$
+> **Model:** constant deceleration while the bullet is inside the block, so $v^2 = u^2 + 2as$ gives $a$ and the Second Law gives $F$.
+>
+> **Work:**
+>
+> $$a = \frac{0 - u^2}{2d} = \frac{-(90)^2}{2 \times 0.6} = -6750\ \text{m s}^{-2}$$
+>
+> $$F = ma = 0.04 \times 6750 = \mathbf{270\ N} \text{ (opposing the motion)}$$
+>
+> **Check:** the stopping time is $t = u/|a| = 90/6750 \approx 0.0133$ s, so the impulse is $Ft \approx 270 \times 0.0133 = 3.6$ N s, which matches $mu = 0.04 \times 90 = 3.6$ N s.
 
-> [!example] NCERT Example 4.4 — Batsman hits ball
-> Ball: $m = 0.15$ kg, velocity reversed from $-12$ m s⁻¹ to $+12$ m s⁻¹.
+> [!example] NCERT Example 4.4: Batsman hits the ball back
+> **Given:** $m = 0.15$ kg; taking the direction of the hit as positive, the velocity changes from $u = -12$ m s⁻¹ to $v = +12$ m s⁻¹.
 >
-> $$\text{Impulse} = \Delta p = m(v - u) = 0.15 \times (12 - (-12)) = \mathbf{3.6 \text{ N s}}$$
+> **Find:** the impulse imparted to the ball.
+>
+> **Model:** impulse equals the change in momentum.
+>
+> **Work:**
+>
+> $$J = \Delta p = m(v - u) = 0.15 \times \big(12 - (-12)\big) = \mathbf{3.6\ N\,s}$$
+>
+> **Check:** a complete reversal at speed $u$ changes the momentum by $2mu = 2 \times 0.15 \times 12 = 3.6$ N s, in the direction of the hit.
 
 ---
 
-## SECTION 4 — NEWTON'S THIRD LAW OF MOTION ⭐⭐
+## 4. Newton's Third Law of Motion ⭐⭐
+
+Forces do not come singly. Whenever one body pushes or pulls another, it is pushed or pulled back, and the Third Law makes this exact.
 
 ### 4.1 Statement
 
 > [!important] Newton's Third Law
 > To every action, there is always an equal and opposite reaction.
 >
-> More precisely: **Forces always occur in pairs. The force on body A by body B is equal and opposite to the force on body B by A.**
+> More precisely: **forces always occur in pairs. The force on body A by body B is equal in magnitude and opposite in direction to the force on body B by body A.**
 >
-> $$\mathbf{F}_{AB} = -\mathbf{F}_{BA} \quad \text{...(4.8)}$$
+> $$\mathbf{F}_{AB} = -\mathbf{F}_{BA}$$
+>
+> Here $\mathbf{F}_{AB}$ is the force *on* A *by* B.
 
 ### 4.2 Critical Features of the Third Law
 
-**1. "Action" and "Reaction" are forces:** The words are misleading — neither precedes the other. Both forces act **simultaneously**. No cause-effect relation is implied. Either force can be labelled action.
+**1. "Action" and "reaction" both mean forces.** The words mislead: neither force comes first and neither causes the other. The two act simultaneously, and either one may be called the action.
 
-**2. Action and Reaction act on DIFFERENT bodies:** They act on different bodies, so they **never cancel each other**. When considering the motion of body A, only $F_{BA}$ (force ON A by B) is relevant. Adding $F_{AB}$ to it is a conceptual error.
+**2. They act on different bodies**, so they never cancel each other. To find the motion of A, only $\mathbf{F}_{AB}$ (the force on A) matters; adding $\mathbf{F}_{BA}$ to it is a conceptual error.
 
-**3. Holds for all types of forces:** Contact forces (normal, friction, tension) AND non-contact forces (gravity, magnetic) all obey the Third Law.
+**3. They hold for the forces met in this chapter:** contact forces (normal, friction, tension, spring) and non-contact ones such as gravity and electrostatic attraction. (Forces between moving charges need the momentum of the electromagnetic field counted as well, which lies beyond this chapter.)
 
-**4. Internal forces cancel in pairs:** Within a system of particles, all action-reaction pairs between particles within the system sum to zero. The Second Law for the system uses only external forces.
+**4. Internal forces cancel in pairs.** Inside a system of particles, every action-reaction pair sums to zero, so the Second Law for the whole system involves only external forces.
 
-### 4.3 Examples of Third Law
+### 4.3 Examples of the Third Law
 
 | Action | Reaction |
 |:---|:---|
-| Earth pulls stone downward (gravity) | Stone pulls Earth upward (same magnitude, Earth barely moves) |
+| Earth pulls a stone downward (gravity) | Stone pulls Earth upward with the same magnitude (Earth barely accelerates) |
 | Horse pulls cart forward | Cart pulls horse backward |
-| Foot pushes ground backward | Ground pushes foot forward (friction → walking is possible) |
-| Rocket expels gas backward | Gas pushes rocket forward |
+| Foot pushes ground backward | Ground pushes foot forward (friction, which makes walking possible) |
+| Rocket pushes gas backward | Gas pushes rocket forward |
 | Compressed spring pushes hand | Hand pushes spring |
-| Gun exerts forward force on bullet | Bullet exerts backward force on gun (recoil) |
+| Gun pushes bullet forward | Bullet pushes gun backward (recoil) |
 
-> [!warning] Classic Misconception
-> "Action and reaction cancel → nothing can move." WRONG — they act on DIFFERENT bodies. For motion of any one body, only the force ON THAT BODY matters.
+> [!warning] Classic misconception
+> "Action and reaction cancel, so nothing could ever move." Wrong: they act on *different* bodies. For the motion of any one body, only the force on that body matters.
+
+The horse-and-cart case shows how motion still arises:
+
+- **Cart:** net forward force = horse's pull minus resistance on the cart, so it accelerates if the pull exceeds the resistance.
+- **Horse:** net forward force = ground's forward (static) friction on the hooves minus the cart's backward pull, so it accelerates if that friction exceeds the pull.
+- The two Third-Law partners (horse on cart, cart on horse) never appear together in the equation for either body.
 
 ### 4.4 Solved: Billiard Balls (NCERT Example 4.5)
+
+The wall is assumed smooth, so it can push only along its normal. Only the component of a ball's velocity *along the normal* then reverses on collision; the tangential component is untouched.
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -357,62 +496,75 @@ $$\text{Impulse} = \mathbf{F} \times \Delta t = \Delta \mathbf{p} \quad \text{..
 \end{tikzpicture}
 ```
 
-The instinctive guess — that the wall's force is tilted at 30° in case (b) — is wrong. Only the velocity *component along the normal* reverses on collision; the tangential component ($p_y$) is untouched, so the force (and impulse) stays normal to the wall in **both** cases. Only the *magnitude* of the impulse differs between (a) and (b), which is what the worked example below computes.
+The instinctive guess, that the wall's force is tilted at 30° in case (b), is wrong. Because $p_y$ is unchanged, the impulse (and so the force) stays normal to the wall in **both** cases; only the *magnitude* of the impulse differs, which the worked example computes.
 
-> [!example] NCERT Example 4.5 — Billiard balls hitting a wall
-> Two identical balls strike a rigid wall at different angles but same speed $u$, rebound without speed change.
+> [!example] NCERT Example 4.5: Billiard balls hitting a wall
+> **Given:** two identical balls of mass $m$ strike a rigid, smooth wall with the same speed $u$ and rebound with unchanged speed. Ball (a) strikes along the normal; ball (b) strikes at $30°$ to the normal.
 >
-> **Case (a): Normal incidence**
-> $x$-impulse on ball $= -2mu$; $y$-impulse $= 0$. Force on wall: normal to wall, in $+x$ direction.
+> **Find:** the direction of the force on the wall in each case, and the ratio of the impulses.
 >
-> **Case (b): Incidence at 30° to normal**
-> $x$-impulse on ball $= -2mu\cos 30°$; $y$-impulse $= 0$ ($p_y$ unchanged).
-> Force on wall: still **normal to wall** in $+x$ direction (NOT at 30°!)
+> **Model:** impulse on a ball equals its change in momentum. Take $+x$ along the wall's normal, pointing into the wall. By the Third Law, the force on the wall is opposite to the impulse on the ball.
 >
-> **Ratio of impulses (a):(b):**
+> **Work:**
 >
-> $$\frac{2mu}{2mu\cos 30°} = \frac{1}{\cos 30°} = \frac{2}{\sqrt{3}} \approx 1.15$$
+> Case (a): $p_x$ goes from $+mu$ to $-mu$, so the $x$-impulse on the ball is $-2mu$ and $y$-impulse is $0$.
+>
+> Case (b): $p_x$ goes from $+mu\cos 30°$ to $-mu\cos 30°$, so the $x$-impulse is $-2mu\cos 30°$; $p_y$ is unchanged, so the $y$-impulse is $0$.
+>
+> In both cases the force on the wall is along $+x$, normal to the wall (not at $30°$).
+>
+> $$\frac{J_a}{J_b} = \frac{2mu}{2mu\cos 30°} = \frac{1}{\cos 30°} = \frac{2}{\sqrt{3}} \approx 1.15$$
+>
+> **Check:** the more obliquely the ball strikes, the smaller the normal component and so the smaller the impulse; in the limit of grazing incidence the impulse tends to zero, consistent with a ratio greater than 1.
 
 ---
 
-## SECTION 5 — CONSERVATION OF MOMENTUM ⭐⭐⭐
+## 5. Conservation of Momentum ⭐⭐⭐
 
-### 5.1 Derivation from 2nd and 3rd Laws
+The Second and Third Laws together give one of the most useful results in mechanics: when bodies interact only with each other, their total momentum cannot change.
 
-Two bodies A and B interact for time $\Delta t$:
-* By 3rd Law: $\mathbf{F}_{AB} = -\mathbf{F}_{BA}$
-* By 2nd Law: $\mathbf{F}_{AB} \cdot \Delta t = \Delta\mathbf{p}_A$ and $\mathbf{F}_{BA} \cdot \Delta t = \Delta\mathbf{p}_B$
+### 5.1 Derivation from the Second and Third Laws
 
-Adding: $\Delta\mathbf{p}_A + \Delta\mathbf{p}_B = 0$
+Let bodies A and B interact for a time $\Delta t$, for instance in a collision, with no other external force acting on the pair. Let $\mathbf{F}_{AB}$ be the force on A by B. The Second Law in impulse form gives the change in momentum of each body, and the Third Law relates the two forces:
 
-$$\therefore \quad \mathbf{p}_A' + \mathbf{p}_B' = \mathbf{p}_A + \mathbf{p}_B \quad \text{...(4.9)}$$
+$$\Delta\mathbf{p}_A = \mathbf{F}_{AB}\,\Delta t \qquad \Delta\mathbf{p}_B = \mathbf{F}_{BA}\,\Delta t = -\mathbf{F}_{AB}\,\Delta t$$
+
+Adding the two equations, the right-hand sides cancel:
+
+$$\Delta\mathbf{p}_A + \Delta\mathbf{p}_B = 0 \implies \boxed{\mathbf{p}_A' + \mathbf{p}_B' = \mathbf{p}_A + \mathbf{p}_B}$$
+
+The momentum lost by one body is exactly gained by the other.
 
 ### 5.2 Statement
 
 > [!important] Conservation of Momentum
 > The total momentum of an isolated system of interacting particles is conserved.
 >
-> $$\sum \mathbf{p}_i = \text{constant} \quad \text{when } \sum \mathbf{F}_{ext} = 0$$
->
-> **Isolated system:** Net external force on the system is zero. This holds whether the collision is **elastic or inelastic**. In elastic collisions, kinetic energy is additionally conserved.
+> $$\sum \mathbf{p}_i = \text{constant} \quad \text{when } \sum \mathbf{F}_{\text{ext}} = 0$$
+
+- **Isolated system:** a system on which the net external force is zero.
+- **Component form:** momentum is conserved along any direction in which the net external force component is zero, even if forces act along other directions.
+- **Collisions:** momentum is conserved in **elastic and inelastic** collisions alike. Kinetic energy is additionally conserved only in elastic collisions.
 
 ### 5.3 Applications
 
-**Gun recoil:**
+**Gun recoil.** Before firing, gun and bullet are at rest, so their total momentum is zero and stays zero. With velocities measured relative to the ground:
 
-$$\text{Initial: } \mathbf{p}_{total} = 0$$
+$$m_{\text{gun}}\,v_{\text{gun}} + m_{\text{bullet}}\,v_{\text{bullet}} = 0 \implies v_{\text{gun}} = -\frac{m_{\text{bullet}}}{m_{\text{gun}}}\,v_{\text{bullet}}$$
 
-$$\therefore \; m_{gun} \cdot v_{gun} + m_{bullet} \cdot v_{bullet} = 0 \implies v_{gun} = -\frac{m_{bullet}}{m_{gun}} \cdot v_{bullet}$$
+The gun moves opposite to the bullet, and its speed is small because it is far heavier. (For a gun fired horizontally on a frictionless surface, gravity and the normal force cancel, so horizontal momentum is conserved.)
 
-**Explosion:** Total momentum before = total momentum after. If at rest initially, all fragment momenta sum to zero.
+**Explosion.** Total momentum just after equals total momentum just before. If the body was at rest, the momenta of all fragments sum to zero.
 
-**Collision:**
+**Collision.** For two bodies A and B:
 
 $$m_A \mathbf{v}_A + m_B \mathbf{v}_B = m_A \mathbf{v}_A' + m_B \mathbf{v}_B'$$
 
 ---
 
-## SECTION 6 — EQUILIBRIUM OF A PARTICLE ⭐
+## 6. Equilibrium of a Particle ⭐
+
+Many problems ask not how something accelerates but what forces hold it still. Equilibrium is the case $\mathbf{a} = 0$, and it is also where free-body diagrams first earn their keep.
 
 ### 6.1 Definition
 
@@ -421,43 +573,33 @@ $$m_A \mathbf{v}_A + m_B \mathbf{v}_B = m_A \mathbf{v}_A' + m_B \mathbf{v}_B'$$
 
 $$\sum \mathbf{F} = 0 \iff \mathbf{a} = 0$$
 
-The particle is either **at rest** (static equilibrium) or in **uniform linear motion** (dynamic equilibrium).
+The particle is either **at rest** (static equilibrium) or in **uniform linear motion** (dynamic equilibrium). Rotational equilibrium of extended bodies is not covered here.
 
-### 6.2 Conditions
+### 6.2 Conditions for Equilibrium
 
-For **two forces**: $F_1 = -F_2$ (equal and opposite)
+- **Two forces:** they must be equal and opposite, $\mathbf{F}_1 = -\mathbf{F}_2$.
+- **Three or more concurrent forces:** the vector sum vanishes. For three forces, $\mathbf{F}_1 + \mathbf{F}_2 + \mathbf{F}_3 = 0$, which is equivalent to two component equations:
 
-For **three concurrent forces**: $\mathbf{F}_1 + \mathbf{F}_2 + \mathbf{F}_3 = 0$, which gives:
+$$F_{1x} + F_{2x} + F_{3x} = 0 \qquad F_{1y} + F_{2y} + F_{3y} = 0$$
 
-$$F_{1x} + F_{2x} + F_{3x} = 0 \quad \text{and} \quad F_{1y} + F_{2y} + F_{3y} = 0 \quad \text{...(4.12)}$$
+- **Graphically:** drawn head to tail, the force vectors form a closed triangle (a closed polygon for $n$ forces).
 
-**Graphical:** Forces (as vectors) form a **closed triangle** (or closed polygon for n forces), all arrows in the same sense.
+### 6.3 Free-Body Diagram (FBD) ⭐
 
-### 6.3 Free-Body Diagram (FBD) — The Essential Tool ⭐
+A **free-body diagram** shows one chosen body in isolation together with every external force acting *on* it from outside; forces the body exerts on other bodies are not drawn. It is the tool that turns a physical set-up into equations, so every problem in this chapter starts with one.
 
-A **free-body diagram** shows:
-* The isolated body (system) of interest
-* ALL external forces acting ON it from outside the system
-* Forces the body exerts on others are NOT shown
+Procedure:
 
-**Steps:**
-1. Isolate the body of interest (draw it separately)
-2. Show all external forces: gravity ($mg$ ↓), normal ($N$ ⊥ surface), tension ($T$ along rope, away from body), friction ($f$ along surface, opposing impending/actual motion), applied forces
-3. Label knowns; leave unknowns as variables
-4. Apply $\Sigma F_x = ma_x$ and $\Sigma F_y = ma_y$
+1. Isolate the body (or system) of interest and draw it separately.
+2. Draw every external force on it: weight $mg$ (downward), normal force $N$ (perpendicular to the surface, pushing the body), tension $T$ (along the rope, pulling the body toward the rope), friction $f$ (along the surface, opposing actual or impending relative motion), and any applied forces.
+3. Choose axes convenient for the motion (along and perpendicular to an incline, for instance) and resolve the forces on them.
+4. Label the knowns and leave the unknowns as symbols.
+5. Apply $\sum F_x = ma_x$ and $\sum F_y = ma_y$ (or $\sum \mathbf{F} = 0$ in equilibrium).
 
-### 6.4 Solved: Rope with Horizontal Force (NCERT Example 4.6)
+> [!warning] Not on an FBD
+> Do not draw the forces the body exerts on others, the Third-Law partners of the forces shown, a separate "centripetal force" (§9.1), or "$ma$" (§3.3).
 
-> [!example] NCERT Example 4.6 — Rope with horizontal force at midpoint
-> 6 kg mass suspended from ceiling by 2 m rope; 50 N horizontal force at midpoint P.
->
-> **FBD of weight:** $T_2 = 6 \times 10 = 60$ N
->
-> **FBD at P** (three forces: $T_1$ upward-left, $T_2$ downward, 50 N rightward):
->
-> $$T_1 \cos\theta = 60 \text{ N} \qquad T_1 \sin\theta = 50 \text{ N}$$
->
-> $$\tan\theta = \frac{50}{60} = \frac{5}{6} \implies \theta = \tan^{-1}\!\left(\frac{5}{6}\right) \approx 40°$$
+### 6.4 Solved: Rope with a Horizontal Force (NCERT Example 4.6)
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -474,12 +616,26 @@ A **free-body diagram** shows:
 \end{tikzpicture}
 ```
 
-Note that $\theta$ doesn't depend on the rope's length or on where along it the 50 N force is applied — only on the ratio of the two known forces.
+> [!example] NCERT Example 4.6: Rope with a horizontal force at its midpoint
+> **Given:** a $6$ kg mass hangs from the ceiling on a light rope of length $2$ m; a horizontal force of $50$ N acts at the midpoint $P$ of the rope; $g = 10$ m s⁻².
+>
+> **Find:** the angle $\theta$ the upper half of the rope makes with the vertical in equilibrium.
+>
+> **Model:** the mass is in equilibrium under its weight and the tension in the lower half alone, so the lower half is vertical. The point $P$ is then in equilibrium under three forces: $T_1$ (upper half, up and to the left), $T_2$ (lower half, down) and the $50$ N push (to the right).
+>
+> **Work:**
+>
+> $$T_2 = mg = 6 \times 10 = 60\ \text{N}$$
+>
+> $$T_1 \cos\theta = 60\ \text{N} \qquad T_1 \sin\theta = 50\ \text{N}$$
+>
+> $$\tan\theta = \frac{50}{60} = \frac{5}{6} \implies \theta = \tan^{-1}\!\left(\frac{5}{6}\right) \approx 40°$$
+>
+> **Check:** $T_1 = \sqrt{60^2 + 50^2} \approx 78$ N closes the force triangle. The angle depends only on the ratio of the two known forces, not on the rope's length.
 
-### 6.5 Additional Practice: Two Strings at Different Angles *(New)*
+### 6.5 Solved: Weight Hung from Two Strings
 
-> [!example] Extension — a weight hung from two strings
-> A weight $W = 200$ N hangs from a point $P$, held by two strings: $T_1$ making $30°$ with the horizontal, $T_2$ making $45°$ with the horizontal on the other side. Find $T_1$ and $T_2$.
+The knot $P$ carries three concurrent forces:
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -496,63 +652,73 @@ Note that $\theta$ doesn't depend on the rope's length or on where along it the 
 \end{tikzpicture}
 ```
 
-**Method 1 — resolving components.** At $P$, three concurrent forces are in equilibrium, so horizontal and vertical components each sum to zero.
-
-$$T_1 \cos 30° = T_2 \cos 45° \qquad \text{(horizontal)}$$
-
-$$T_1 \sin 30° + T_2 \sin 45° = 200 \qquad \text{(vertical)}$$
-
-From the horizontal equation, express $T_2$ in terms of $T_1$:
-
-$$T_2 = T_1\frac{\cos 30°}{\cos 45°} = T_1\frac{\sqrt{3}/2}{\sqrt{2}/2} = \frac{T_1\sqrt{6}}{2}$$
-
-Substitute into the vertical equation:
-
-$$\frac{T_1}{2} + \frac{T_1\sqrt{6}}{2}\cdot\frac{\sqrt{2}}{2} = 200 \implies \frac{T_1}{2} + \frac{T_1\sqrt{3}}{2} = 200$$
-
-$$T_1\left(\frac{1+\sqrt{3}}{2}\right) = 200 \implies T_1 = \frac{400}{1+\sqrt{3}} = 200(\sqrt{3}-1)$$
-
-$$T_1 \approx \mathbf{146.4\text{ N}}, \qquad T_2 = \frac{T_1\sqrt{6}}{2} \approx \mathbf{179.3\text{ N}}$$
-
-**Method 2 — Lami's theorem (cross-check).** For three concurrent forces in equilibrium, each is proportional to the sine of the angle *between the other two*. Measuring each force's direction from the positive horizontal, $T_1$ points along $150°$, $T_2$ along $45°$, and $W$ along $270°$, so the included angles are:
-
-$$\angle(T_2,W)=135°, \qquad \angle(T_1,W)=120°, \qquad \angle(T_1,T_2)=105°$$
-
-$$135°+120°+105°=360° \quad \checkmark \ \text{(a genuine closed force triangle — a quick self-check on the angle bookkeeping)}$$
-
-$$\frac{T_1}{\sin 135°} = \frac{T_2}{\sin 120°} = \frac{W}{\sin 105°} = \frac{200}{\sin 105°} \approx 207.1\text{ N}$$
-
-$$T_1 = 207.1 \times \sin 135° \approx \mathbf{146.4\text{ N}}, \qquad T_2 = 207.1 \times \sin 120° \approx \mathbf{179.3\text{ N}}$$
-
-Both methods agree. Whenever you solve a three-concurrent-force problem, cross-checking with Lami's theorem this way is cheap insurance — if your three included angles don't add to $360°$, you've mislabeled one of them.
+> [!example] Weight supported by two strings
+> **Given:** a weight $W = 200$ N hangs from the knot $P$; string 1 makes $30°$ with the horizontal on one side, string 2 makes $45°$ with the horizontal on the other.
+>
+> **Find:** the tensions $T_1$ and $T_2$.
+>
+> **Model:** the knot is in equilibrium under three concurrent forces, so the horizontal components cancel and the vertical components together support $W$.
+>
+> **Work (resolving components):**
+>
+> $$T_1 \cos 30° = T_2 \cos 45° \qquad \text{(horizontal)}$$
+>
+> $$T_1 \sin 30° + T_2 \sin 45° = 200 \qquad \text{(vertical)}$$
+>
+> From the horizontal equation, $T_2$ in terms of $T_1$:
+>
+> $$T_2 = T_1\frac{\cos 30°}{\cos 45°} = T_1\frac{\sqrt{3}/2}{\sqrt{2}/2} = \frac{T_1\sqrt{6}}{2}$$
+>
+> Substituting into the vertical equation:
+>
+> $$\frac{T_1}{2} + \frac{T_1\sqrt{6}}{2}\cdot\frac{\sqrt{2}}{2} = \frac{T_1}{2} + \frac{T_1\sqrt{3}}{2} = 200 \implies T_1 = \frac{400}{1+\sqrt{3}} = 200(\sqrt{3}-1)$$
+>
+> $$T_1 \approx \mathbf{146.4\ N}, \qquad T_2 = \frac{T_1\sqrt{6}}{2} \approx \mathbf{179.3\ N}$$
+>
+> **Check (Lami's theorem):** for three concurrent forces in equilibrium, each force is proportional to the sine of the angle between the other two. Measuring directions from the positive horizontal, $T_1$ points along $150°$, $T_2$ along $45°$ and $W$ along $270°$, so the included angles are
+>
+> $$\angle(T_2,W)=135°, \qquad \angle(T_1,W)=120°, \qquad \angle(T_1,T_2)=105°$$
+>
+> and they add to $360°$, as they must. Then
+>
+> $$\frac{T_1}{\sin 135°} = \frac{T_2}{\sin 120°} = \frac{W}{\sin 105°} = \frac{200}{\sin 105°} \approx 207.1\ \text{N}$$
+>
+> $$T_1 = 207.1 \times \sin 135° \approx 146.4\ \text{N}, \qquad T_2 = 207.1 \times \sin 120° \approx 179.3\ \text{N}$$
+>
+> Both methods agree. If the three included angles do not add to $360°$, one has been mislabelled.
 
 ---
 
-## SECTION 7 — COMMON FORCES IN MECHANICS ⭐⭐
+## 7. Common Forces in Mechanics ⭐⭐
+
+To use $F = ma$ one must know which forces actually act on the body. This section covers the ones that are not friction: gravity, the normal force, tension and the spring force. Friction has a section of its own (§8).
 
 ### 7.1 Gravitational Force (Weight)
 
 $$\mathbf{W} = m\mathbf{g}$$
 
-* Acts **vertically downward** on every body near Earth's surface
-* **Non-contact force** — acts through empty space
-* $g \approx 9.8$ m s⁻² (use $g = 10$ m s⁻² in numericals unless stated)
-* Dimensional formula of weight: $[\text{MLT}^{-2}]$
+- Acts **vertically downward** on every body near the Earth's surface
+- **Non-contact force**: it acts through empty space
+- $g \approx 9.8$ m s⁻² (use $g = 10$ m s⁻² in numericals unless stated); it varies slightly with location
+- Dimensional formula of weight: $[\text{MLT}^{-2}]$
+- **Mass** is a property of the body (a measure of its inertia); **weight** is a force that depends on $g$
 
-### 7.2 Normal Force (N or R) ⭐
+### 7.2 Normal Force ($N$) ⭐
 
-* **Component of contact force perpendicular** to the surfaces in contact
-* Acts **away from the surface** onto the body (always a push, never a pull)
-* **Self-adjusting force** — adjusts to maintain equilibrium (up to breaking point of surface)
-* NOT always equal to $mg$
+- **Component of the contact force perpendicular** to the surfaces in contact
+- Acts **away from the surface** onto the body: always a push, never a pull
+- **Self-adjusting:** it takes whatever value keeps the surfaces from interpenetrating, up to the breaking point of the surface
+- **Not always equal to $mg$**
 
-| Situation | Normal Force |
+| Situation | Normal force |
 |:---|:---|
-| Body at rest on horizontal floor | $N = mg$ |
-| Body on incline at angle $\theta$ | $N = mg\cos\theta$ |
-| Body in lift accelerating up ($+a$) | $N = m(g + a)$ |
-| Body in lift accelerating down ($+a$) | $N = m(g - a)$ |
+| Body at rest on a horizontal floor | $N = mg$ |
+| Body on an incline at angle $\theta$ | $N = mg\cos\theta$ |
+| Body in a lift accelerating up | $N = m(g + a)$ |
+| Body in a lift accelerating down | $N = m(g - a)$ |
 | Free fall | $N = 0$ |
+
+The entries assume no other force acts along the normal; the lift cases are derived in §10.2.
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -571,26 +737,27 @@ $$\mathbf{W} = m\mathbf{g}$$
 \end{tikzpicture}
 ```
 
-$mg\cos\theta$ presses the block into the surface and is exactly balanced by $N$; $mg\sin\theta$ has nothing to balance it along the surface, so it's this component — not the full weight — that would accelerate the block down the slope in the absence of friction.
+$mg\cos\theta$ presses the block into the surface and is exactly balanced by $N$. $mg\sin\theta$ has nothing to balance it along the surface, so it is this component, not the full weight, that would accelerate the block down the slope in the absence of friction.
 
-> [!warning] Common Mistake
-> $mg$ and $N$ are NOT an action-reaction pair. They act on the SAME body. The true action-reaction pair is: N on body by floor ↔ N on floor by body.
+> [!warning] Common mistake
+> $mg$ and $N$ on a body are **not** a Third-Law pair: both act on the *same* body. The Third-Law partner of the normal force on the body is the force the body exerts on the surface; the partner of the weight is the body's gravitational pull on the Earth.
 
-### 7.3 Tension (T) ⭐
+### 7.3 Tension ($T$) ⭐
 
-* Force transmitted through a string, rope, chain, or cable under stretch
-* Acts along the string, **directed away from the body** toward the string (pull)
-* For a **massless, inextensible string** over a **smooth (frictionless) pulley**: T is the same throughout the string
-* For a string with mass: tension varies with position
+- Force transmitted through a string, rope, chain or cable under stretch
+- Acts **along the string** and pulls on the body attached to it, so it is directed from the body toward the string
+- A string can only pull, never push
+
+**Ideal string and pulley.** For a **massless** string over a **massless, frictionless** pulley, the tension is the same everywhere along the string. If the string has mass, the tension varies with position. If the string is also **inextensible**, bodies connected by it have the same speed and acceleration along the string; that is a statement about the motion, separate from the equality of tension.
 
 ### 7.4 Spring Force (Hooke's Law)
 
 $$F = -kx$$
 
-* **$k$** = spring constant, unit: N m⁻¹, Dimensional formula: **$[\text{MT}^{-2}]$**
-* **$x$** = extension (+) or compression (−) from natural length
-* Negative sign: force is a **restoring force** (opposes displacement)
-* Valid only for small displacements (elastic limit not exceeded)
+- $k$ is the **spring constant**, in N m⁻¹; dimensional formula $[\text{MT}^{-2}]$. A larger $k$ means a stiffer spring.
+- $x$ is the extension ($+$) or compression ($-$) from the natural length.
+- The negative sign marks a **restoring force**: it always opposes the displacement.
+- Valid only for small displacements, within the elastic limit.
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -618,26 +785,28 @@ $$F = -kx$$
 \end{tikzpicture}
 ```
 
-The minus sign in $F=-kx$ is doing real work here: whichever way you pull the block, the spring's force points back the other way — toward the natural length, never away from it. Compress the spring instead and every arrow in the second panel simply reverses.
+The minus sign in $F=-kx$ does real work: whichever way the block is displaced, the spring's force points back toward the natural length, never away from it. Compress the spring instead and every arrow in the lower panel reverses.
 
 ### 7.5 Microscopic Origin of Contact Forces
 
-> [!note] Key Fact
-> All contact forces ultimately arise from **electrical forces** between charged constituents (nuclei and electrons) of matter at the molecular level. At the macroscopic scale, we treat them empirically as normal force, friction, etc.
+> [!note] Key fact
+> All contact forces arise ultimately from **electrical forces** between the charged constituents (nuclei and electrons) of matter at the molecular level. At the macroscopic scale they are treated empirically as normal force, friction and so on.
 
 ---
 
-## SECTION 8 — FRICTION ⭐⭐⭐
+## 8. Friction ⭐⭐⭐
+
+Friction is the force that makes walking, driving and gripping possible, and also the one that wastes energy in machines. It behaves differently before and after sliding begins, and that difference drives most of the problems in this section.
 
 ### 8.1 What is Friction?
 
 > [!info] Definition
 > **Friction** is the **component of the contact force parallel to the surfaces in contact** that opposes relative motion (actual or impending) between them.
 
-> [!tip] Key Insight
-> Friction opposes **relative motion** between surfaces — not absolute motion. A box accelerating with a train has no relative motion with the train floor, so static friction accelerates it along with the train.
+> [!tip] Key insight
+> Friction opposes **relative** motion between the surfaces, not absolute motion. A box carried along by an accelerating train has no motion relative to the floor, so it is static friction that accelerates the box with the train.
 
-**Microscopic origin:** Surface irregularities interlock. Electrical forces between molecules at contact patches resist sliding. Rolling friction arises from deformation at the contact point.
+Real surfaces touch only at microscopic contact patches. Electrical forces between molecules at those patches, together with the deformation of the surfaces, resist sliding. Friction is therefore not a fundamental force, and the laws that describe it are **empirical**: approximate but practically useful.
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -665,55 +834,59 @@ The minus sign in $F=-kx$ is doing real work here: whichever way you pull the bl
 \end{tikzpicture}
 ```
 
-In (a) friction is a follower, not a fixed value — it copies $F$ exactly, up to its limit. In (b) it has *stopped following*: once sliding starts, friction locks to the constant value $\mu_kN$ regardless of how much harder you push, and the leftover force $F-f_k$ is what accelerates the block.
+In (a), friction follows the applied force $F$ exactly, up to its limit. In (b), once sliding starts, friction stops following $F$ and takes the constant value $\mu_k N$ however hard the block is pushed; the leftover force $F - f_k$ accelerates the block.
 
-### 8.2 Static Friction (fs) ⭐⭐
+### 8.2 Static Friction ($f_s$) ⭐⭐
 
-**Static friction** opposes **impending** relative motion.
+**Static friction** opposes **impending** relative motion. It acts whenever there is a *tendency* to slide, whether from an applied force or from what the situation demands.
 
-* Exists only when there is an applied force
-* Is **self-adjusting**: magnitude equals applied force, direction opposes impending motion
-* Has a **maximum value** beyond which body starts sliding
+- It is **self-adjusting**: it takes whatever value keeps the surfaces from sliding, which is $F$ for a simple push and $ma$ for a box riding an accelerating train.
+- Its value has a **maximum**, beyond which the body starts to slide.
 
-$$f_s \leq \mu_s N \quad \text{...(4.14)}$$
+$$f_s \leq \mu_s N \qquad\qquad (f_s)_\text{max} = \mu_s N$$
 
-$$(f_s)_\text{max} = \mu_s N \quad \text{...(4.13)}$$
+$\mu_s$, the **coefficient of static friction**, is dimensionless and depends on the nature and condition of the pair of surfaces, not on the area of contact. The maximum static friction $(f_s)_\text{max}$ is also called **limiting friction**.
 
-$\mu_s$ = coefficient of static friction (dimensionless, depends only on surface pair)
+### 8.3 Kinetic (Sliding) Friction ($f_k$) ⭐⭐
 
-### 8.3 Kinetic (Sliding) Friction (fk) ⭐⭐
+**Kinetic friction** opposes **actual** relative sliding motion:
 
-**Kinetic friction** opposes **actual** relative sliding motion.
+$$f_k = \mu_k N$$
 
-$$f_k = \mu_k N \quad \text{...(4.15)}$$
+$\mu_k$ is the **coefficient of kinetic friction**. Its empirical properties:
 
-$\mu_k$ = coefficient of kinetic friction
+- For a given pair of surfaces, $\mu_k$ is generally less than $\mu_s$
+- Independent of the area of contact
+- Nearly independent of the sliding speed (at moderate speeds)
 
-**Properties (empirical laws):**
-* $\mu_k < \mu_s$ (kinetic friction < maximum static friction)
-* Independent of area of contact
-* Nearly independent of velocity of sliding
-* These are **empirical relations** (approximate, but practically useful)
+For a block on a horizontal surface, the friction actually exerted, $f$, depends on the applied force $F$ like this:
 
-> [!note] Interactive graph — friction vs. applied force *(spec, not yet in confirmed fence syntax — see note below)*
-> **What it plots:** $f$ (friction actually exerted) against $F$ (applied force), as a piecewise function:
-> $$f(F) = \begin{cases} F & 0 \le F \le \mu_s N \\ \mu_k N & F > \mu_s N \end{cases}$$
-> **Sliders:** $\mu_s \in [0.1, 1.0]$, $\mu_k \in [0.05, \mu_s]$ (constrained below $\mu_s$), $N \in [1,50]$ N
-> **Window:** $F \in [0, 1.2\mu_s N \cdot \text{(max slider)}]$, $f \in [0, \mu_s N \cdot 1.1]$
-> **What to notice by dragging sliders:** the line $f=F$ (slope 1, the "self-adjusting" regime) runs up to the point $(\mu_sN,\ \mu_sN)$, then the graph **drops** to the constant plateau $f=\mu_kN$ — friction doesn't taper off smoothly, it steps down the instant sliding begins.
+$$f(F) = \begin{cases} F & 0 \le F \le \mu_s N \\ \mu_k N & F > \mu_s N \end{cases}$$
 
-I don't have your `obsidian-markdown-it.js` renderer's confirmed Desmos fence schema (the base skill only defines a text placeholder, not a real one, and I couldn't find your repo's source to check). The block above has the exact function, sliders, and bounds ready — once you confirm the fence syntax it renders in, this drops straight in.
+```desmos
+{
+  "expressions": [
+    { "id": "1", "latex": "m_{s}=0.6" },
+    { "id": "2", "latex": "m_{k}=0.4" },
+    { "id": "3", "latex": "N_{0}=20" },
+    { "id": "4", "latex": "y=\\left\\{0\\le x\\le m_{s}N_{0}:x,x>m_{s}N_{0}:m_{k}N_{0}\\right\\}", "color": "#2d70b3" },
+    { "id": "5", "latex": "\\left(m_{s}N_{0},m_{s}N_{0}\\right)", "color": "#c74440" }
+  ],
+  "graphSettings": { "xmin": -2, "xmax": 30, "ymin": -2, "ymax": 16 }
+}
+```
+
+The horizontal axis is the applied force $F$ and the vertical axis is the friction $f$. Here $m_s$ is $\mu_s$, $m_k$ is $\mu_k$ and $N_0$ is the normal force. Change the constants (keeping $m_k$ below $m_s$) and notice that the line $f = F$ (slope 1, the self-adjusting regime) runs up to the red point $(\mu_s N, \mu_s N)$, then the graph **drops** to the constant plateau $f = \mu_k N$: friction does not taper off smoothly but steps down the instant sliding begins.
 
 ### 8.4 Comparison: Static vs Kinetic Friction
 
-| Feature | Static Friction ($f_s$) | Kinetic Friction ($f_k$) |
+| Feature | Static friction ($f_s$) | Kinetic friction ($f_k$) |
 |:---|:---|:---|
-| Acts when | No relative sliding | Surfaces sliding |
+| Acts when | No relative sliding | Surfaces are sliding |
 | Opposes | Impending motion | Actual motion |
-| Magnitude | $0$ to $(f_s)_\text{max} = \mu_s N$ | Fixed $= \mu_k N$ |
-| Nature | Self-adjusting | Constant for given N |
-| Value vs other | $(f_s)_\text{max} > f_k$ | $f_k < (f_s)_\text{max}$ |
-| Coefficient | $\mu_s$ | $\mu_k < \mu_s$ |
+| Magnitude | Any value from $0$ to $(f_s)_\text{max} = \mu_s N$ | Fixed at $\mu_k N$ |
+| Nature | Self-adjusting | Constant for a given $N$ |
+| Coefficient | $\mu_s$ | $\mu_k$, generally less than $\mu_s$ |
 
 ```mermaid
 flowchart TD
@@ -721,7 +894,7 @@ flowchart TD
     A -->|"No -- at rest / impending motion"| B{"Is applied force F less than or equal to (fs)max = μsN ?"}
     A -->|"Yes -- actually sliding"| C["Kinetic friction acts: fk = μkN, opposes sliding, independent of F"]
     B -->|"Yes"| D["Static friction self-adjusts: fs = F, body stays at rest"]
-    B -->|"No -- F exceeds the max"| E["Body begins to slide -- friction drops from (fs)max to the lower fk"]
+    B -->|"No -- F exceeds the max"| E["Body begins to slide -- friction falls from (fs)max to fk"]
 
     style A fill:#1e3a5f,color:#e0f0ff,stroke:#4a9eff
     style B fill:#1e3a5f,color:#e0f0ff,stroke:#4a9eff
@@ -730,17 +903,17 @@ flowchart TD
     style E fill:#3d1a1a,color:#ffd0d0,stroke:#e74c3c
 ```
 
-The one branch students most often skip is the middle one: static friction is never just "read off $\mu_sN$" — it equals $F$ exactly, right up until $F$ hits that ceiling.
+The branch most often skipped is the middle one: static friction is never just "read off $\mu_s N$". It matches what the situation requires (here, $F$) right up to the ceiling $\mu_s N$.
 
 ### 8.5 Angle of Friction and Angle of Repose
 
-**Angle of friction ($\lambda$):** Angle between the resultant contact force and the normal to the surface.
+The **angle of friction ($\lambda$)** is the angle between the normal to the surface and the resultant contact force $R$, the vector sum of $N$ and the limiting static friction $(f_s)_\text{max}$:
 
-$$\tan\lambda = \frac{f_s}{N} = \mu_s$$
+$$\tan\lambda = \frac{(f_s)_\text{max}}{N} = \mu_s$$
 
-**Angle of repose ($\theta_r$):** The steepest angle of an incline on which a body rests without sliding.
+The **angle of repose ($\theta_r$)** is the steepest incline on which a body rests without sliding. To find it, resolve the forces on a block at rest on an incline of angle $\theta$: perpendicular to the surface $N = mg\cos\theta$, and along it $f_s = mg\sin\theta$. Dividing, $f_s/N = \tan\theta$. The block stays at rest only while $f_s \le \mu_s N$, that is, while $\tan\theta \le \mu_s$. At the limiting incline the equality holds:
 
-$$\mu_s = \tan\theta_r$$
+$$\boxed{\mu_s = \tan\theta_r}$$
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -757,222 +930,255 @@ $$\mu_s = \tan\theta_r$$
   \draw[->, blue!70!black, line width=2.0pt] (B) -- ++(0,1.8) node[above, font=\small] {$R$};
   \node[font=\small, text=gray] at (2.65,2.35) {$\lambda$};
   \node[font=\small] at (4.55,0.28) {$\theta$};
-  \node[below, font=\itshape\small, text=gray] at (2.2,-1.4) {$R=N+f_s$ exactly balances $mg$; at the critical angle, $\lambda=\theta=\theta_r$};
+  \node[below, font=\itshape\small, text=gray] at (2.2,-1.4) {$R=N+f_s$ balances $mg$; at the limiting angle, $\lambda=\theta=\theta_r$};
 \end{tikzpicture}
 ```
 
-This is the geometric heart of the result: $N$ and $f_s$ individually point in awkward directions, but their vector sum $R$ must point straight up (opposite to $mg$, since the block is in equilibrium) — and the angle that puts $R$ makes with $N$ is, by construction, exactly $\theta$. That's why $\lambda = \theta_r$ isn't a coincidence; it falls straight out of equilibrium.
+This is the geometric heart of the result: $N$ and $f_s$ individually point in awkward directions, but their vector sum $R$ must point straight up (opposite to $mg$, since the block is in equilibrium). The angle $R$ makes with $N$ is, by construction, the incline angle $\theta$. At the limiting condition that angle is both $\lambda$ and $\theta_r$, so $\lambda = \theta_r$ falls straight out of equilibrium.
 
-> [!important] Key Result
-> $\theta_r$ and $\lambda$ are equal: angle of repose = angle of friction.
-> If incline angle $\theta > \theta_r$, the body slides. $\theta_r$ is independent of the mass of the body.
+> [!important] Key result
+> The angle of repose equals the angle of friction, $\theta_r = \lambda = \tan^{-1}\mu_s$. If the incline angle $\theta > \theta_r$, the body slides. $\theta_r$ is independent of the mass of the body.
+
+### 8.5a Block on an Incline: Rest, Limit and Sliding
+
+The same resolution of forces shows what happens at any incline angle $\theta$, not just at $\theta_r$. Perpendicular to the incline the block does not accelerate, so $N = mg\cos\theta$ in every case. Along the incline the outcome depends on how $\theta$ compares with $\theta_r$:
+
+| Case | Friction | Motion |
+|:---|:---|:---|
+| $\theta < \theta_r$ | $f_s = mg\sin\theta$, less than $(f_s)_\text{max}$ | At rest |
+| $\theta = \theta_r$ | $f_s = (f_s)_\text{max} = \mu_s mg\cos\theta = mg\sin\theta$ | On the verge of sliding |
+| $\theta > \theta_r$ | $f_k = \mu_k mg\cos\theta$, up the incline | Slides down the incline |
+
+When the block slides, the net force down the incline is $mg\sin\theta - \mu_k mg\cos\theta$, so the Second Law gives
+
+$$a = g(\sin\theta - \mu_k\cos\theta) \quad \text{down the incline}$$
+
+The acceleration is independent of the mass, and it is positive because $\tan\theta > \tan\theta_r = \mu_s$ exceeds $\mu_k$.
 
 ### 8.6 Rolling Friction
 
-* Theoretically, a sphere/ring rolling without slipping has one point of contact — no relative sliding → no friction
-* In practice: small contact area due to deformation → small rolling friction exists
-* Rolling friction $\ll$ kinetic friction (2–3 orders of magnitude smaller)
-* **This is why wheels were invented.** Ball bearings and air cushions further reduce friction.
+A wheel rolling without slipping touches the surface at a point that is instantaneously at rest relative to the surface, so no sliding friction acts on it and none of its energy is dissipated as sliding heat. Static friction can still be present (a wheel that is speeding up or slowing down needs it). In practice, the wheel and the surface deform slightly at the contact, and this produces a small resistance to rolling called **rolling friction**. It is much smaller than kinetic (sliding) friction, which is why replacing sliding by rolling, as with wheels and ball bearings, reduces friction so effectively.
 
-### 8.7 Advantages and Disadvantages of Friction
+### 8.7 Friction: Harmful and Essential
 
-**Friction is harmful (in machines):** Dissipates energy as heat; wears out parts. Reduction methods: lubricants; ball bearings (rolling replaces sliding); air cushions.
+Friction can be a nuisance or a necessity, depending on the job.
 
-**Friction is essential:** Walking (foot pushes backward → friction pushes forward); car acceleration and braking; holding/gripping objects; brakes in vehicles and machines.
+- **Harmful in machines:** it dissipates energy as heat and wears out parts. It is reduced by lubricants, by ball bearings (rolling replaces sliding) and by air cushions (the surfaces are separated).
+- **Essential elsewhere:** walking (the foot pushes backward and friction pushes forward), starting, turning and braking vehicles, gripping and holding objects, and brakes in machines.
 
 ### 8.8 Solved Examples
 
-> [!example] NCERT 4.7 — Box in Accelerating Train
-> Maximum acceleration of train so box doesn't slide ($\mu_s = 0.15$):
+> [!example] NCERT Example 4.7: Box in an accelerating train
+> **Given:** a box rests on the floor of a train; $\mu_s = 0.15$ between box and floor; $g = 10$ m s⁻².
+>
+> **Find:** the maximum acceleration of the train for which the box does not slide.
+>
+> **Model:** the box accelerates with the train only if static friction supplies the force $ma$, and static friction cannot exceed $\mu_s N = \mu_s mg$.
+>
+> **Work:**
 >
 > $$ma = f_s \leq \mu_s N = \mu_s mg \implies a \leq \mu_s g$$
 >
-> $$a_\text{max} = 0.15 \times 10 = \mathbf{1.5 \text{ m s}^{-2}}$$
+> $$a_\text{max} = 0.15 \times 10 = \mathbf{1.5\ m\,s^{-2}}$$
+>
+> **Check:** the result does not depend on the mass of the box, and the units are those of acceleration. A faster-accelerating train would slide out from under the box.
 
-> [!example] NCERT 4.8 — Block on Incline
-> Incline gradually tilted; block just slides at $\theta = 15°$.
+> [!example] NCERT Example 4.8: Block on a tilting incline
+> **Given:** an incline is tilted gradually; the block just begins to slide at $\theta = 15°$.
+>
+> **Find:** the coefficient of static friction $\mu_s$.
+>
+> **Model:** the block is on the verge of sliding, so $\theta = \theta_r$ and $\mu_s = \tan\theta_r$.
+>
+> **Work:**
 >
 > $$\mu_s = \tan 15° \approx \mathbf{0.27}$$
+>
+> **Check:** the value is below $1$, as is typical for ordinary surface pairs, and the mass of the block plays no part.
 
 ---
 
-## SECTION 9 — CIRCULAR MOTION ⭐⭐⭐
+## 9. Circular Motion ⭐⭐⭐
+
+A body moving in a circle accelerates even at constant speed, because its velocity keeps changing direction. The Second Law then demands a force, and identifying which real force supplies it is the central skill of this section.
 
 ### 9.1 Centripetal Force
 
-In UCM, centripetal acceleration $= v^2/R$ (toward centre). Applying Second Law:
+In uniform circular motion of radius $R$ at speed $v$, the acceleration is $v^2/R$, directed toward the centre (from kinematics). Applying the Second Law gives the force required:
 
-$$\boxed{f_c = \frac{mv^2}{R}} \quad \text{...(4.16)}$$
+$$\boxed{f_c = \frac{mv^2}{R}}$$
 
-> [!warning] Critical — Centripetal Force is NOT a New Force
-> Centripetal force is simply a name for the **net radially inward force** in circular motion, which is ALWAYS provided by some real physical force. Never add "centripetal force" as a separate entity in a free-body diagram.
+> [!warning] Critical: centripetal force is not a new force
+> "Centripetal force" is the name for the **net radially inward force** in circular motion, and it is always provided by some real physical force. Never add it as a separate force in a free-body diagram.
 
-| Circular motion situation | Real force acting as centripetal force |
+| Circular-motion situation | Real force acting as the centripetal force |
 |:---|:---|
-| Stone on string, horizontal circle | Tension in string |
-| Planet orbiting Sun | Gravitational pull of Sun |
-| Car turning on level road | Static friction |
-| Car on banked road | Component of N + component of friction |
-| Electron around nucleus (Bohr model) | Electrostatic attraction |
-| Roller coaster at top of loop | Normal force + weight |
+| Stone on a string, horizontal circle | Tension in the string |
+| Planet orbiting the Sun | Gravitational pull of the Sun |
+| Car turning on a level road | Static friction |
+| Car on a banked road | Horizontal component of $N$ (plus a friction component when $v \ne v_0$) |
+| Electron around a nucleus (Bohr model) | Electrostatic attraction |
+| Roller coaster at the top of a loop | Normal force and weight together |
 
-### 9.2 Motion of Car on a Level Road ⭐⭐
+### 9.2 Motion of a Car on a Level Road ⭐⭐
 
-Three forces: $mg$ (down), $N$ (up), friction $f$ (inward, horizontal centripetal).
+Three forces act on the car: weight $mg$ (down), normal force $N$ (up) and friction $f$ (horizontal, toward the centre). The tyres roll without slipping sideways, so this friction is **static**, and its maximum is $\mu_s N$.
 
-Vertical: $N = mg$ ...(4.17)
+Vertically there is no acceleration, so $N = mg$. Horizontally, friction supplies the centripetal force:
 
-Centripetal: $f = mv^2/R \leq \mu_s N = \mu_s mg$
+$$f = \frac{mv^2}{R} \leq \mu_s N = \mu_s mg$$
 
-$$\boxed{v_\text{max} = \sqrt{\mu_s Rg}} \quad \text{...(4.18)}$$
+so the largest safe speed is
 
-> [!tip] Key Result
-> $v_\text{max}$ on a level circular road is **independent of the mass** of the vehicle.
+$$\boxed{v_\text{max}^{\text{level}} = \sqrt{\mu_s R g}}$$
 
-### 9.3 Motion of Car on a Banked Road ⭐⭐⭐
+> [!tip] Key result
+> $v_\text{max}^{\text{level}}$ is **independent of the mass** of the vehicle. Above this speed the car skids outward.
 
-Road banked at angle $\theta$. Forces: $mg$ (down), $N$ (perpendicular to banked surface), friction $f$ (along banked surface).
+### 9.3 Motion of a Car on a Banked Road ⭐⭐⭐
 
-**At optimum speed $v_0$** (friction not needed, $f = 0$):
+Banking tilts the road toward the centre of the curve (the outer edge is higher), so the normal force acquires a horizontal component pointing toward the centre. At the right speed this component alone supplies the centripetal force and no friction is needed.
+
+Let the road be banked at angle $\theta$, and let $f$ be the friction along the road surface, taken positive when it acts **down the slope** (toward the inner edge). Resolving the forces vertically and horizontally:
+
+$$N\cos\theta = mg + f\sin\theta \qquad N\sin\theta + f\cos\theta = \frac{mv^2}{R}$$
+
+Setting $f$ to its three limiting values gives the three characteristic speeds.
+
+**Optimum speed $v_0$ (friction not needed, $f = 0$):**
 
 $$N\cos\theta = mg \qquad N\sin\theta = \frac{mv_0^2}{R}$$
 
-$$\boxed{v_0 = \sqrt{Rg\tan\theta}} \quad \text{...(4.22)}$$
+Dividing the second by the first:
 
-At $v_0$: no friction needed → no tyre wear, optimal for fuel economy.
+$$\boxed{v_0 = \sqrt{Rg\tan\theta}}$$
 
-**At maximum speed** (friction acts DOWN the slope, $f = \mu_s N$):
+At $v_0$ no sideways friction is needed, so there is no lateral tyre wear.
 
-$$\boxed{v_\text{max} = \sqrt{Rg \cdot \frac{\tan\theta + \mu_s}{1 - \mu_s\tan\theta}}} \quad \text{...(4.21)}$$
+**Maximum speed (car on the verge of sliding outward, friction acts down the slope, $f = \mu_s N$):**
 
-**At minimum speed** (friction acts UP the slope, $f = \mu_s N$):
+$$N(\cos\theta - \mu_s\sin\theta) = mg \qquad N(\sin\theta + \mu_s\cos\theta) = \frac{mv^2}{R}$$
 
-$$v_\text{min} = \sqrt{Rg \cdot \frac{\tan\theta - \mu_s}{1 + \mu_s\tan\theta}}$$
+$$\boxed{v_\text{max}^{\text{banked}} = \sqrt{Rg\,\frac{\tan\theta + \mu_s}{1 - \mu_s\tan\theta}}}$$
 
-> [!important] Key Results — Banked Roads
-> $v_\text{max}$ (banked) $>$ $v_\text{max}$ (level road) for same $R$ and $\mu_s$. Banking is always beneficial.
-> For $\mu_s = 0$: car must travel at exactly $v_0$. Below or above, it slides.
+This is valid when $\mu_s\tan\theta < 1$. If $\mu_s\tan\theta \ge 1$, no speed makes the car slide outward, so there is no upper limit.
+
+**Minimum speed (car on the verge of sliding inward, friction acts up the slope, $f = -\mu_s N$):**
+
+$$v_\text{min}^{\text{banked}} = \sqrt{Rg\,\frac{\tan\theta - \mu_s}{1 + \mu_s\tan\theta}}$$
+
+This is valid when $\tan\theta > \mu_s$. If $\tan\theta \le \mu_s$, friction alone can hold the car on the slope at any speed, and the minimum speed is $0$.
+
+What friction does across the whole speed range:
+
+| Speed | Friction on the car | Outcome |
+|:---|:---|:---|
+| $v = v_0$ | None needed | Stays on the curve |
+| $v_0 < v \le v_\text{max}^{\text{banked}}$ | Acts down the slope | Stays on the curve |
+| $v_\text{min}^{\text{banked}} \le v < v_0$ | Acts up the slope | Stays on the curve |
+| $v > v_\text{max}^{\text{banked}}$ | Would exceed $\mu_s N$ | Slides outward and up the slope |
+| $v < v_\text{min}^{\text{banked}}$ | Would exceed $\mu_s N$ | Slides inward and down the slope |
+
+> [!important] Key results: banked roads
+> $v_\text{max}^{\text{banked}} > v_\text{max}^{\text{level}}$ for the same $R$ and $\mu_s$, so banking always raises the safe upper speed.
+> For $\mu_s = 0$ the car must travel at exactly $v_0$: below or above it, the car slides.
 
 ### 9.4 Solved Examples
 
-> [!example] NCERT Example 4.10 — Cyclist on circular turn
-> Cyclist at 18 km/h ($= 5$ m s⁻¹) on circular turn, $R = 3$ m, $\mu_s = 0.1$.
+> [!example] NCERT Example 4.10: Cyclist on a circular turn
+> **Given:** a cyclist at $18$ km/h ($= 5$ m s⁻¹) takes a level circular turn of radius $R = 3$ m; $\mu_s = 0.1$; $g = 10$ m s⁻².
 >
-> Check: $\mu_s Rg = 0.1 \times 3 \times 10 = 3$ m² s⁻², but $v^2 = 25$ m² s⁻²
+> **Find:** whether the cyclist slips.
 >
-> Since $v^2 > \mu_s Rg$, **the cyclist will slip.**
+> **Model:** on a level road static friction supplies the centripetal force, so the cyclist stays on the turn only if $v^2 \le \mu_s R g$.
+>
+> **Work:**
+>
+> $$\mu_s R g = 0.1 \times 3 \times 10 = 3\ \text{m}^2\,\text{s}^{-2}, \qquad v^2 = 25\ \text{m}^2\,\text{s}^{-2}$$
+>
+> Since $v^2 > \mu_s R g$, **the cyclist will slip.**
+>
+> **Check:** the largest safe speed is $\sqrt{3} \approx 1.7$ m s⁻¹ ($\approx 6$ km/h), far below $18$ km/h.
 
-> [!example] NCERT Example 4.11 — Racetrack banking
-> Racetrack: $R = 300$ m, $\theta = 15°$, $\mu_s = 0.2$.
+> [!example] NCERT Example 4.11: Racetrack banking
+> **Given:** a racetrack of radius $R = 300$ m banked at $\theta = 15°$; $\mu_s = 0.2$; $g = 9.8$ m s⁻².
 >
-> $$v_0 = \sqrt{300 \times 9.8 \times \tan 15°} = \mathbf{28.1 \text{ m s}^{-1}}$$
+> **Find:** the optimum speed $v_0$ and the maximum speed $v_\text{max}^{\text{banked}}$.
 >
-> $$v_\text{max} = \mathbf{38.1 \text{ m s}^{-1}}$$
+> **Model:** use the banked-road results of §9.3.
+>
+> **Work:**
+>
+> $$v_0 = \sqrt{300 \times 9.8 \times \tan 15°} \approx \mathbf{28.1\ m\,s^{-1}}$$
+>
+> $$v_\text{max}^{\text{banked}} = \sqrt{300 \times 9.8 \times \frac{\tan 15° + 0.2}{1 - 0.2\tan 15°}} \approx \mathbf{38.1\ m\,s^{-1}}$$
+>
+> **Check:** $\mu_s\tan\theta \approx 0.05 < 1$, so the maximum speed exists. The minimum speed is $\approx 13.8$ m s⁻¹, so $v_\text{min}^{\text{banked}} < v_0 < v_\text{max}^{\text{banked}}$ as it must be, and $v_\text{max}^{\text{banked}}$ exceeds the level-road value $\sqrt{\mu_s R g} \approx 24.2$ m s⁻¹.
 
 ---
 
-## SECTION 10 — SOLVING PROBLEMS IN MECHANICS ⭐⭐
+## 10. Solving Problems in Mechanics ⭐⭐
+
+The preceding sections supply the laws and the forces. This section shows how to combine them: one general procedure, then two standard set-ups (the lift and the Atwood machine) that recur constantly.
 
 ### 10.1 Systematic Approach
 
-1. **Draw schematic** of the entire assembly (bodies, strings, pulleys, inclines, etc.)
-2. **Choose your system** — the body or set of bodies whose motion you analyse
-3. **Draw Free-Body Diagram (FBD)** — isolate the system and show ALL external forces
-4. **Identify knowns and unknowns** — mark given magnitudes and directions
-5. **Apply Newton's Laws** — write $\Sigma F = ma$ along each axis
-6. **Use Third Law** — if force on A by B is known, force on B by A = equal magnitude, opposite direction
-7. **Solve simultaneous equations**
+1. **Draw a schematic** of the whole assembly (bodies, strings, pulleys, inclines).
+2. **Choose the system**: the body or set of bodies whose motion you analyse.
+3. **Draw the free-body diagram**, isolating the system and showing all external forces (§6.3).
+4. **Identify knowns and unknowns**, marking given magnitudes and directions.
+5. **Apply Newton's laws**: write $\sum F = ma$ along each axis.
+6. **Use the Third Law** where needed: if the force on A by B is known, the force on B by A has equal magnitude and opposite direction.
+7. **Solve the simultaneous equations.**
 
-### 10.2 Lift Problems (Standard Board/NEET Application)
+### 10.2 Lift Problems
 
-Person of mass $m$ in a lift (weighing scale reads Normal force $N$):
+A weighing scale in a lift reads the normal force $N$ that the scale exerts on the person. This reading is the **apparent weight**; it equals the true weight $mg$ only when the acceleration is zero. Taking upward as positive and applying the Second Law to a person of mass $m$:
 
 | Lift condition | Equation | Apparent weight $N$ | Sensation |
 |:---|:---|:---|:---|
 | Rest or constant velocity | $N = mg$ | $mg$ | Normal |
-| Accelerating upward ($a$) | $N - mg = ma$ | $m(g+a)$ | Heavier |
-| Accelerating downward ($a$) | $mg - N = ma$ | $m(g-a)$ | Lighter |
-| Free fall ($a = g$ down) | $mg - N = mg$ | $0$ | Weightless |
+| Accelerating upward ($a$) | $N - mg = ma$ | $m(g + a)$ | Heavier |
+| Accelerating downward ($a$) | $mg - N = ma$ | $m(g - a)$ | Lighter |
+| Free fall ($a = g$ downward) | $mg - N = mg$ | $0$ | Weightless |
 
-### 10.3 Connected Bodies — Atwood Machine
+> [!warning] Acceleration, not velocity, decides
+> Only the direction of the *acceleration* matters. A lift moving down but slowing has upward acceleration, so the reading is greater than $mg$.
 
-Two masses $m_1 > m_2$ over frictionless pulley, inextensible string:
+> [!note] Weightlessness
+> In free fall $N = 0$, yet gravity has not vanished: the person and the lift fall with the same acceleration $g$, so the floor has nothing to push against.
 
-For $m_1$ (going down): $m_1 g - T = m_1 a$
+### 10.3 Connected Bodies: The Atwood Machine
 
-For $m_2$ (going up): $T - m_2 g = m_2 a$
+Two masses $m_1 > m_2$ hang from a light, inextensible string passing over a light, frictionless pulley (§7.3), so the tension $T$ is the same on both sides and both masses have the same acceleration $a$.
 
-Adding: $(m_1 - m_2)g = (m_1 + m_2)a$
+For $m_1$ (moving down): $m_1 g - T = m_1 a$
+
+For $m_2$ (moving up): $T - m_2 g = m_2 a$
+
+Adding eliminates $T$: $(m_1 - m_2)g = (m_1 + m_2)a$. Substituting back for $T$:
 
 $$\boxed{a = \frac{(m_1 - m_2)g}{m_1 + m_2}} \qquad \boxed{T = \frac{2m_1 m_2 g}{m_1 + m_2}}$$
 
-### 10.4 Solved: Block on Floor + Iron Cylinder (NCERT Example 4.12)
+Sanity checks: if $m_1 = m_2$ then $a = 0$ and $T = mg$ (equilibrium); if $m_2 \to 0$ then $a \to g$ and $T \to 0$ (free fall).
 
-> [!example] NCERT Example 4.12 — Block and iron cylinder system
-> Block (2 kg) on floor; iron cylinder (25 kg) placed on block; both accelerate down at 0.1 m s⁻².
->
-> **(a) Before (equilibrium):** $R = 20$ N; action of block on floor $= 20$ N downward.
->
-> **(b) After:** System (27 kg) accelerating at 0.1 m s⁻² downward.
->
-> $$\Sigma F: \quad 270 - R' = 27 \times 0.1 = 2.7 \text{ N}$$
->
-> $$R' = \mathbf{267.3 \text{ N}} \text{ (action of system on floor, downward)}$$
+### 10.4 Solved: Block and Iron Cylinder (NCERT Example 4.12)
 
----
-
-## 📋 QUICK REFERENCE — All Laws and Formulas
-
-> [!important] Newton's Laws
+> [!example] NCERT Example 4.12: Block and iron cylinder on a floor
+> **Given:** a block of mass $2$ kg rests on a floor. An iron cylinder of mass $25$ kg is then placed on it, and the floor (that of a lift, say) speeds up downward, so the block and cylinder together accelerate downward at $0.1$ m s⁻². Take $g = 10$ m s⁻².
 >
-> **First Law:** $\displaystyle\sum \mathbf{F} = 0 \iff \mathbf{a} = 0$ (defines inertia; defines inertial frames)
+> **Find:** (a) the action of the block on the floor before the cylinder is added; (b) the action of the block-cylinder system on the floor during the downward acceleration.
 >
-> **Second Law:** $\displaystyle\mathbf{F} = \frac{d\mathbf{p}}{dt} = m\mathbf{a}$ where $1\text{ N} = 1\text{ kg m s}^{-2}$
+> **Model:** the floor's push on the body (normal force) and the body's push on the floor are a Third-Law pair, so finding one gives the other.
 >
-> **Third Law:** $\mathbf{F}_{AB} = -\mathbf{F}_{BA}$ (forces in pairs; act on different bodies)
-
-> [!important] Momentum and Impulse
+> **Work:**
 >
-> $$\mathbf{p} = m\mathbf{v} \quad [\text{MLT}^{-1}] \quad \text{SI: kg m s}^{-1}$$
+> (a) The block is in equilibrium: $N = mg = 2 \times 10 = 20$ N upward on the block, so the block pushes on the floor with **20 N downward**.
 >
-> $$\text{Impulse} = \mathbf{F}\Delta t = \Delta\mathbf{p} \quad [\text{MLT}^{-1}] \quad \text{SI: N s}$$
+> (b) Take the $27$ kg system, with downward as positive: $\text{weight} - N' = ma$.
 >
-> Conservation: $\mathbf{p}_\text{total} = \text{const}$ when $\Sigma\mathbf{F}_\text{ext} = 0$
-
-> [!important] Friction
+> $$270 - N' = 27 \times 0.1 = 2.7\ \text{N} \implies N' = \mathbf{267.3\ N}$$
 >
-> Static: $f_s \leq \mu_s N$; at limit: $(f_s)_\text{max} = \mu_s N$
+> By the Third Law, the system pushes on the floor with **267.3 N downward**.
 >
-> Kinetic: $f_k = \mu_k N$; always $\mu_k < \mu_s$
->
-> Angle of repose: $\tan\theta_r = \mu_s$
-
-> [!important] Circular Motion
->
-> Centripetal force: $f_c = mv^2/R$
->
-> Level road: $v_\text{max} = \sqrt{\mu_s Rg}$
->
-> Banked road (optimum): $v_0 = \sqrt{Rg\tan\theta}$
->
-> $$v_\text{max}\text{ (banked)} = \sqrt{Rg \cdot \frac{\tan\theta + \mu_s}{1 - \mu_s\tan\theta}}$$
-
----
-
-## ⚡ POINTS TO PONDER (High-Yield for Exams)
-
-1. **Force ≠ direction of motion.** Force (and acceleration) are parallel to each other, but need not be parallel to velocity.
-
-2. **v = 0 does NOT imply F = 0.** Ball at maximum height of throw: $v = 0$ but $F = mg$, $a = g$.
-
-3. **ma is NOT a force.** In $F = ma$, "$ma$" is the effect of force $F$, not another force.
-
-4. **Centripetal force is not a new kind of force.** Always identify the real force (tension, gravity, friction) acting as centripetal force.
-
-5. **$f_s = \mu_s N$ is WRONG in general.** Static friction equals the applied force up to a maximum of $\mu_s N$. Write $f_s = \mu_s N$ only at the limiting condition.
-
-6. **$mg = N$ only in equilibrium on a horizontal surface.** In a lift, on an incline, or during acceleration, they differ.
-
-7. **Third law forces act on different bodies.** They never cancel each other for motion of any single body.
-
-8. **Aristotle was wrong** — friction (not inertia) makes bodies come to rest. In the absence of friction, a body in motion remains in motion forever.
+> **Check:** the result is less than the true weight ($270$ N), as expected for a downward acceleration; it matches $m(g - a) = 27 \times 9.9 = 267.3$ N from the lift table in §10.2.

@@ -4,143 +4,134 @@
 
 ---
 
-> All terms arranged **alphabetically** with precise scientific definitions, dimensional formulae where applicable, and exam relevance tags.
+> All terms arranged **alphabetically** with precise scientific definitions, dimensional formulae where applicable, and `§` pointers back into NOTES. Exam-priority is carried by the ⭐ ratings on NOTES headings, not repeated per entry here.
 
 ---
 
 ## C
 
 **Coefficient of Restitution (e)**
-A dimensionless ratio that characterises the "bounciness" of a collision. Defined as the ratio of relative speed of separation to relative speed of approach along the line of impact: e = (v₂f − v₁f)/(v₁ᵢ − v₂ᵢ). For an elastic collision: e = 1. For a perfectly inelastic collision: e = 0. For real collisions: 0 < e < 1. *(NEET/JEE)*
+Dimensionless ratio of the relative speed of separation to the relative speed of approach along the line of impact: e = (v₂f − v₁f)/(v₁ᵢ − v₂ᵢ). Ranges from e = 1 (elastic) to e = 0 (perfectly inelastic) — see §12.4 and the Contrast Table below.
 
 **Conservative Force**
-A force for which the work done depends only on the initial and final positions, not on the path taken. Equivalently, work done over any closed path = 0. A potential energy function V(x) can be defined such that F(x) = −dV/dx. Examples: gravitational force, spring force, electrostatic force. Contrast with **non-conservative forces**. *(All levels — critical)*
+A force whose work depends only on the initial and final positions, not the path taken — equivalently, zero work over any closed path — which is what allows a potential energy function V(x) with F = −dV/dx to be defined (§7.3). Examples: gravity, springs, electrostatic force; contrast **Non-Conservative Force**.
 
 **Conservation of Mechanical Energy**
-The principle that the total mechanical energy (K + V) of a system remains constant if all forces doing work on it are conservative. Stated as: Ki + V(xi) = Kf + V(xf). Modified form with non-conservative forces: Ef − Ei = Wnc. *(All levels — critical)*
+The principle that K + V remains constant for a system on which only conservative forces do work: Kᵢ + V(xᵢ) = K_f + V(x_f) (§8.1). See **Non-Conservative Force** for the modified form when other forces (e.g. friction) are present.
 
 ---
 
 ## D
 
 **Dot Product (Scalar Product)**
-A mathematical operation on two vectors **A** and **B** that yields a scalar: **A·B** = AB cosθ, where θ is the angle between them. Equivalent to the product of the magnitude of one vector and the component of the other along it. Used in the definition of work: W = **F·d**. The dot product is commutative and distributive. Dimensional formula depends on the vectors. *(All levels)*
+An operation on two vectors **A** and **B** yielding the scalar **A·B** = AB cos θ (θ = angle between them) — equivalently, the magnitude of one vector times the component of the other along it (§1.1–1.2). Commutative and distributive; used to define work, W = **F·d** (§3.1).
 
 ---
 
 ## E
 
 **Elastic Collision**
-A collision in which both linear momentum and kinetic energy are conserved. The "compressed spring" analogy: the deformation is fully recovered after contact. Result for 1D elastic collision (m₂ at rest): v₁f = [(m₁−m₂)/(m₁+m₂)]v₁ᵢ; v₂f = [2m₁/(m₁+m₂)]v₁ᵢ. Coefficient of restitution e = 1. *(All levels — critical)*
+A collision in which both linear momentum and kinetic energy are conserved (e = 1); equivalent to full recovery of deformation, as in an idealized compressed-spring rebound. See §12.4–12.5 for the general and special-case velocity formulas.
 
 **Elastic Potential Energy**
-The potential energy stored in a deformed elastic body (spring, rubber, elastic cord) due to the work done against the restoring force. For an ideal spring: V(x) = ½kx². The spring force is conservative, so this energy is fully recoverable. *(All levels)*
+Potential energy stored in a deformed elastic body (spring, rubber, elastic cord) due to work done against its restoring force; for an ideal spring, V(x) = ½kx² (§9.2). Fully recoverable, since the spring force is conservative.
 
 **Energy**
-The capacity or ability to do work. A scalar quantity. SI unit: **Joule (J)**. Forms discussed in this chapter: kinetic energy (K = ½mv²) and potential energy (V). Total mechanical energy E = K + V. Dimensional formula: **[ML²T⁻²]**. *(All levels)*
+The scalar capacity to do work; SI unit joule (J), dimensional formula **[ML²T⁻²]**. This chapter covers two forms — kinetic (K) and potential (V) — whose sum is mechanical energy E (see **Kinetic Energy**, **Potential Energy**, **Mechanical Energy**).
 
 **erg**
-A CGS (centimetre-gram-second) unit of energy. 1 erg = 10⁻⁷ J. Rarely used in modern physics; occasionally appears in older textbooks. *(Board)*
-
----
-
-## F
-
-**Fault Lines**
-Discontinuities and dislocations in the Earth's crust. Mentioned in NCERT as an analogy for potential energy — fault lines store elastic potential energy ("like compressed springs") which is released as kinetic energy of seismic waves during an earthquake. *(Board — conceptual)*
+A CGS unit of energy: 1 erg = 10⁻⁷ J. Rarely used in modern physics; occasionally appears in older texts.
 
 ---
 
 ## G
 
 **Gravitational Potential Energy**
-The potential energy of a body of mass m at height h above a reference level (usually the ground): V(h) = mgh. The reference level (V = 0) is arbitrary. Near the Earth's surface, g is treated as constant. At height h, the body has "stored" the work done against gravity in lifting it; this energy converts to kinetic energy on release. Dimensional formula: **[ML²T⁻²]**. *(All levels — critical)*
+Potential energy of a mass m at height h above an arbitrarily-chosen reference level (commonly the ground): V(h) = mgh, using the near-Earth-surface approximation of constant g (§7.2). Dimensional formula **[ML²T⁻²]**.
 
 ---
 
 ## H
 
 **Head-On Collision (One-Dimensional Collision)**
-A collision where the initial and final velocities of both bodies lie along the same straight line. Occurs when the line of motion of the incoming body passes through the centre of the target. Simpler to analyse than 2D (glancing) collisions. *(Board/NEET)*
+A collision where the initial and final velocities of both bodies lie along the same straight line — occurs when the incoming body's line of motion passes through the target's centre. Simpler to analyse than a 2D glancing collision (§12.8).
 
 **Hooke's Law**
-The empirical law stating that the force exerted by a spring is proportional to its displacement from equilibrium: Fs = −kx. The negative sign indicates the force is restoring (directed toward equilibrium). Valid for small deformations. Real springs deviate from Hooke's Law at large extensions. Named after Robert Hooke (1635–1703). *(All levels — critical)*
+Empirical law stating a spring's restoring force is proportional to its displacement from equilibrium: Fs = −kx, valid only for small deformations (§9.1). Named after Robert Hooke (1635–1703); real springs deviate from it at large extensions.
 
 **Horse-Power (hp)**
-A non-SI unit of power. Defined as: 1 hp = 746 W. Still commonly used to rate engines (cars, motorbikes, pumps). Named for James Watt's comparison of engine output to the work rate of a horse. *(Board)*
+Non-SI unit of power: 1 hp = 746 W (§11.2); still used to rate engines (cars, pumps). Coined as James Watt's comparison of engine output to a horse's work rate.
 
 ---
 
 ## I
 
 **Inelastic Collision**
-A collision in which kinetic energy is NOT conserved (some is converted to heat, sound, or deformation). Linear momentum is still conserved. Coefficient of restitution 0 < e < 1. The most common type of real-world collision. *(All levels — critical)*
+A collision in which linear momentum is conserved but kinetic energy is not (0 < e < 1) — the lost energy converts to heat, sound, or deformation. The most common real-world collision type; see **Elastic Collision** and **Perfectly Inelastic Collision** for the two limiting cases.
 
 **Instantaneous Power**
-The power at a specific instant, defined as: P = dW/dt = **F·v**, where **v** is the instantaneous velocity. Relevant when force or speed is changing with time. *(Board/NEET)*
+The power at a specific instant: P = dW/dt = **F·v**, using the instantaneous velocity **v** (§11.1). Relevant whenever force or speed changes with time.
 
 ---
 
 ## J
 
 **Joule (J)**
-The SI unit of work and energy. Defined as: 1 J = 1 N m = 1 kg m² s⁻². Named after James Prescott Joule (1818–1889), British physicist known for his work on heat and energy equivalence. *(All levels)*
+SI unit of work and energy: 1 J = 1 N·m = 1 kg m² s⁻². Named after James Prescott Joule (1818–1889), noted for demonstrating the mechanical equivalent of heat.
 
 ---
 
 ## K
 
 **Kilowatt-hour (kWh)**
-A practical unit of **energy** (not power). 1 kWh = 1000 W × 3600 s = 3.6 × 10⁶ J. Used in electricity billing. 
-
-> ⚠️ **Common Exam Trap:** kWh is a unit of ENERGY, not power. "A 100 W bulb on for 10 hours uses 1 kWh." *(All levels)*
+A practical unit of energy, not power: 1 kWh = 1000 W × 3600 s = 3.6 × 10⁶ J, used in electricity billing — e.g. a 100 W bulb run for 10 hours uses 1 kWh.
 
 **Kinetic Energy (K)**
-The energy possessed by a body by virtue of its motion: K = ½mv² = p²/(2m). Always a non-negative scalar. Equals the work done on a body from rest to reach speed v. SI unit: J. Dimensional formula: **[ML²T⁻²]**. *(All levels — critical)*
+Energy a body possesses by virtue of its motion: K = ½mv² = p²/(2m) (§4.1) — always a non-negative scalar, equal to the work needed to bring it from rest to speed v. SI unit J; dimensional formula **[ML²T⁻²]**.
 
 ---
 
 ## L
 
 **Law of Conservation of Energy**
-The fundamental principle that the total energy of an isolated system remains constant; energy can be transformed from one form to another but cannot be created or destroyed. In mechanics: mechanical energy is conserved for conservative forces; otherwise, energy may convert to heat, sound, etc. The broader law is universal. *(All levels — critical)*
+The total energy of an isolated system is constant — energy converts between forms (mechanical, heat, sound, etc.) but is never created or destroyed. In mechanics, this reduces to **Conservation of Mechanical Energy** specifically when only conservative forces act.
 
 ---
 
 ## M
 
 **Mechanical Energy (E)**
-The sum of kinetic energy and potential energy of a body or system: E = K + V. Under conservative forces, E remains constant (conservation of mechanical energy). SI unit: J. Dimensional formula: **[ML²T⁻²]**. *(All levels)*
+Sum of a system's kinetic and potential energy: E = K + V; constant when only conservative forces act (§8, Conservation of Mechanical Energy). SI unit J, dimensional formula **[ML²T⁻²]**.
 
 **Moderator**
-In nuclear physics, a material (heavy water D₂O, graphite) used to slow down fast neutrons in a nuclear reactor via elastic collisions with light nuclei. NCERT uses elastic collision formulas (Ch. 5) to show that deuterium (m₂ = 2mₙ) transfers ~89% of a neutron's kinetic energy per collision. *(NEET/JEE — application)*
+A material (e.g. heavy water D₂O, graphite) used to slow fast neutrons in a nuclear reactor via elastic collisions with light nuclei. Deuterium (m₂ = 2mₙ) transfers about 89% of a neutron's kinetic energy per collision (§12.7).
 
 ---
 
 ## N
 
 **Non-Conservative Force**
-A force for which work done depends on the path taken and is non-zero for a closed path. No potential energy can be associated with it. Examples: friction, viscous drag, air resistance. With non-conservative forces: ΔE = Wnc (mechanical energy is not conserved). *(All levels — critical)*
+A force whose work depends on the path taken (non-zero over a closed path), so no potential energy function can be defined for it — e.g. friction, viscous drag, air resistance. When present, mechanical energy is not conserved: E_f − Eᵢ = W_nc (§10.1).
 
 ---
 
 ## P
 
 **Perfectly Inelastic Collision**
-A collision in which the two bodies stick together after impact and move with a common final velocity. Maximum kinetic energy is lost (though momentum is conserved). vf = m₁v₁ᵢ/(m₁+m₂). Coefficient of restitution e = 0. *(All levels — critical)*
+A collision in which the two bodies stick together and move with a common final velocity (e = 0); momentum is conserved but kinetic energy loss is maximal among all collision types. See §12.3 for the velocity formula, v_f = m₁v₁ᵢ/(m₁+m₂).
 
 **Potential Energy (V)**
-The energy stored in a body or system due to its configuration or position, which can be released as kinetic energy. Defined only for conservative forces: V is such that F = −dV/dx. Examples: gravitational PE (mgh), elastic PE (½kx²). The absolute value is indeterminate (reference-dependent); only changes in PE are physically meaningful. SI unit: J. Dimensional formula: **[ML²T⁻²]**. *(All levels — critical)*
+Energy stored due to a body's configuration or position, defined only for conservative forces via F = −dV/dx (§7.1–7.3) — only changes in V matter physically, since its zero reference is arbitrary. SI unit J, dimensional formula **[ML²T⁻²]**; see **Gravitational Potential Energy** and **Elastic Potential Energy** for this chapter's two forms.
 
 **Power (P)**
-The rate at which work is done or energy is transferred. Average power: P = W/t. Instantaneous power: P = dW/dt = **F·v**. Scalar quantity. SI unit: **Watt (W)** = J s⁻¹. Dimensional formula: **[ML²T⁻³]**. *(All levels — critical)*
+The rate at which work is done or energy is transferred; average power P = W/t (§11.1). SI unit watt (W) = J s⁻¹, dimensional formula **[ML²T⁻³]** — see **Instantaneous Power** for the F·v form.
 
 ---
 
 ## R
 
 **Restoring Force**
-A force that acts to return a displaced body toward its equilibrium position. Always directed opposite to displacement from equilibrium. Examples: spring force (Fs = −kx); the tension component in a pendulum. The defining characteristic of oscillatory systems. *(All levels)*
+A force that acts opposite to a body's displacement from equilibrium, returning it toward that position — e.g. spring force (Fs = −kx, §9.1) or the tension component in a pendulum. Defining characteristic of oscillatory systems.
 
 ---
 
@@ -150,30 +141,30 @@ A force that acts to return a displaced body toward its equilibrium position. Al
 See: **Dot Product**.
 
 **Scattering**
-An interaction between particles involving action at a distance rather than physical contact (e.g., alpha particle approaching a nucleus, comet deflected by the Sun's gravity). Treated using the same momentum and energy conservation principles as collisions, but through field forces. *(JEE)*
+An interaction between particles involving action at a distance rather than physical contact (e.g. an alpha particle approaching a nucleus, a comet deflected by the Sun's gravity) (§12.1). Treated with the same momentum/energy conservation principles as collisions, but through field forces.
 
 **Spring Constant (k)**
-The constant of proportionality in Hooke's Law: F = −kx. Measures the stiffness of a spring. Large k = stiff spring (large force per unit extension). SI unit: **N m⁻¹**. Dimensional formula: **[MT⁻²]**. The PE stored in a spring extended/compressed by x is V = ½kx². *(All levels — critical)*
+Constant of proportionality in Hooke's Law, F = −kx (§9.1); larger k means a stiffer spring (more force per unit extension). SI unit N m⁻¹, dimensional formula **[MT⁻²]** — see **Elastic Potential Energy** for the PE this stores.
 
 ---
 
 ## V
 
 **Variable Force**
-A force whose magnitude or direction changes with position or time. Work done by a variable force is calculated as the integral W = ∫F(x) dx (area under the F–x graph). The work-energy theorem still holds: Kf − Ki = Wnet. Example: spring force (F = −kx varies with extension). *(Board/NEET/JEE)*
+A force whose magnitude or direction changes with position or time; its work is W = ∫F(x) dx, the area under the F–x graph (§5.1). Example: spring force, F = −kx — the work–energy theorem (K_f − Kᵢ = W_net) still holds unchanged (§6).
 
 ---
 
 ## W
 
 **Watt (W)**
-The SI unit of power, named after James Watt (1736–1819). 1 W = 1 J s⁻¹ = 1 kg m² s⁻³. Common usage: rating of electrical appliances (100 W bulb, 1000 W microwave). *(All levels)*
+SI unit of power: 1 W = 1 J s⁻¹ = 1 kg m² s⁻³ (§11.1). Named after James Watt (1736–1819); used to rate appliances (a 100 W bulb, a 1000 W microwave).
 
 **Work (W)**
-The scalar quantity defined as the product of the component of force along the direction of displacement and the magnitude of that displacement: W = **F·d** = Fd cosθ. Work is **positive** when force aids motion, **negative** when force opposes motion, and **zero** when force is perpendicular to motion or displacement is zero. SI unit: J. Dimensional formula: **[ML²T⁻²]**. *(All levels — critical)*
+Product of the force component along a displacement and that displacement's magnitude: W = **F·d** = Fd cos θ (§3.1) — positive when force aids motion, negative when it opposes, zero when perpendicular or displacement is zero (§3.2–3.3). SI unit J, dimensional formula **[ML²T⁻²]**.
 
 **Work-Energy Theorem**
-The theorem stating that the net work done on a body equals the change in its kinetic energy: Wnet = Kf − Ki. Valid for constant and variable forces, and for curved paths (as a line integral). A scalar form of Newton's Second Law; it integrates force over displacement, losing instantaneous (directional) information. *(All levels — critical)*
+The net work done on a body equals its change in kinetic energy: W_net = K_f − Kᵢ (§2, extended to variable forces in §6) — holds for constant or variable forces, even along curved paths. A scalar form of Newton's second law: it integrates force over displacement, losing directional (instantaneous) information.
 
 ---
 
@@ -216,4 +207,4 @@ The theorem stating that the net work done on a body equals the change in its ki
 
 ---
 
-*Total terms defined: 35+ | End of Glossary — Physics Ch. 5*
+*Total terms defined: 30 | End of Glossary — Physics Ch. 5*
