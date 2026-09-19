@@ -4,153 +4,125 @@
 
 ---
 
-> All terms arranged **alphabetically** with precise scientific definitions, dimensional formulae where applicable, and exam relevance tags.
+> All terms arranged **alphabetically**, one to two sentences each, with dimensional formulae where applicable and a `§` back-reference to the NOTES section that derives them. For a term's exam priority, see the ⭐ rating on that NOTES section heading — it is the single priority signal for the chapter.
 
 ---
 
 ## A
 
-**Angular Acceleration (α)**
-The rate of change of angular velocity with respect to time. Defined as $\alpha = d\omega/dt$. For fixed-axis rotation, α is a scalar; in general, it is a vector along the axis. SI unit: rad s⁻² = [T⁻²]. It is the rotational analogue of linear acceleration. *(All levels — critical)*
+**Angular Acceleration (α)** — The rate of change of angular velocity, $\alpha = d\omega/dt$; a scalar for fixed-axis rotation, a vector along the axis in general. SI unit rad s⁻²; dimensional formula **[T⁻²]**. *(§5.2)*
 
-**Angular Displacement (θ)**
-The angle subtended at the centre of the circular path by the position vector of a rotating particle. Measured in radians (rad). The rotational analogue of linear displacement. Dimensionless (radian is a supplementary unit). *(All levels)*
+**Angular Displacement (θ)** — The angle subtended at the centre of a circular path by the position vector of a rotating particle, measured in radians. Dimensionless. *(§5.1)*
 
-**Angular Momentum (L or l)**
-The rotational analogue of linear momentum. For a single particle: $\mathbf{l} = \mathbf{r}\times\mathbf{p} = \mathbf{r}\times m\mathbf{v}$; magnitude $l = rp\sin\theta = r_\perp p = rp_\perp$. For a system: $\mathbf{L} = \sum\mathbf{l}_i$. For rotation about a symmetry axis: $L = I\omega$. SI unit: kg m² s⁻¹ (equivalently J s). Dimensional formula: **[ML²T⁻¹]**. *(All levels — critical)*
+**Angular Momentum (L, l)** — The rotational analogue of linear momentum: for a single particle, $\mathbf{l}=\mathbf{r}\times\mathbf{p}$, magnitude $l=rp\sin\theta$; for a system, $\mathbf{L}=\sum\mathbf{l}_i$, and $L=I\omega$ about a symmetry axis. SI unit kg m² s⁻¹; dimensional formula **[ML²T⁻¹]**. *(§6.2)*
 
-**Angular Velocity (ω)**
-The rate of change of angular displacement. $\omega = d\theta/dt$. A vector directed along the axis of rotation by the right-hand screw rule. SI unit: rad s⁻¹. Dimensional formula: **[T⁻¹]**. All particles of a rigid body share the same angular velocity at any instant. *(All levels — critical)*
+**Angular Velocity (ω)** — The rate of change of angular displacement, $\omega=d\theta/dt$, directed along the rotation axis by the right-hand rule; every particle of a rigid body shares the same $\omega$ at a given instant. SI unit rad s⁻¹; dimensional formula **[T⁻¹]**. *(§5.1)*
 
-**Axis of Rotation**
-The straight line about which a rigid body rotates. Particles on the axis have zero linear velocity. The axis may be fixed (ceiling fan) or moving (spinning top). For fixed-axis rotation, the angular velocity vector lies along this axis. *(All levels)*
+**Axis of Rotation** — The line about which a rigid body rotates; particles lying on it have zero linear velocity. May be fixed (a ceiling fan) or itself moving (a precessing top) — this chapter deals only with the fixed case. *(§1.3)*
 
 ---
 
 ## C
 
-**Centre of Gravity (CG)**
-The point of a body at which the total gravitational torque on the body is zero. Defined by: $\sum\mathbf{r}_i\times m_i\mathbf{g} = \mathbf{0}$. In a uniform gravitational field (g is the same everywhere), the CG coincides with the **centre of mass**. For very large bodies in non-uniform g, CG ≠ COM. *(Board/NEET)*
+**Centre of Gravity (CG)** — The point at which the total gravitational torque on a body is zero, $\sum\mathbf{r}_i\times m_i\mathbf{g}=\mathbf{0}$. Coincides with the centre of mass whenever $\mathbf g$ is uniform across the body — the only case this course considers. *(§7.5)*
 
-**Centre of Mass (COM)**
-The unique point of a system of particles whose position is defined as the mass-weighted mean position: $\mathbf{R} = \sum m_i\mathbf{r}_i/M$. The COM moves according to Newton's second law under external forces only: $M\mathbf{A} = \mathbf{F}_{ext}$. For uniform symmetric bodies, COM = geometric centre. The COM can lie outside the material of the body (e.g., ring, hollow sphere). SI unit: m. *(All levels — critical)*
+**Centre of Mass (COM)** — The mass-weighted mean position of a system of particles, $\mathbf{R}=\sum m_i\mathbf{r}_i/M$, which moves under external forces exactly as a single particle of mass $M$ would ($M\mathbf{A}=\mathbf{F}_{ext}$). For a uniform symmetric body it coincides with the geometric centre, but it can lie outside the body's material (a ring, a hollow sphere). *(§2.1, §3.1)*
 
-**Centroid**
-The geometric centre of a uniform lamina or figure; the point where the medians intersect for a triangle. For a uniform body, the centroid coincides with the COM. Not the same as COM for non-uniform bodies. *(Board)*
+**Centroid** — The geometric centre of a uniform lamina or figure — for a triangle, the point of concurrence of its medians. Coincides with the COM only when the body is uniform. *(§2.6)*
 
-**Couple**
-A pair of forces of equal magnitude, acting in opposite directions, with different lines of action (non-collinear). Net force of a couple = 0 (no translation). Net torque of a couple = $F\times d$ (perpendicular distance between lines of action), which is non-zero (rotation occurs). Torque of a couple is independent of the origin chosen. Examples: turning a bottle cap, compass needle in a magnetic field. *(All levels — critical)*
+**Couple** — A pair of equal, opposite, non-collinear forces: net force zero, net torque $F\times d\neq0$, so it produces rotation with no translation. The torque of a couple is independent of the point about which it is taken. *(§7.3)*
 
-**Cross Product**
-See: **Vector Product**.
+**Cross Product** — See **Vector Product**.
 
 ---
 
 ## E
 
-**Equilibrium (Mechanical)**
-A rigid body is in mechanical equilibrium when: (1) Translational equilibrium — net external force is zero: $\sum\mathbf{F}_i = \mathbf{0}$; and (2) Rotational equilibrium — net external torque is zero: $\sum\boldsymbol{\tau}_i = \mathbf{0}$. This means neither linear nor angular acceleration. *(All levels — critical)*
+**Equilibrium (Mechanical)** — The state of a rigid body with neither linear nor angular acceleration: translational equilibrium ($\sum\mathbf{F}_i=\mathbf{0}$) and rotational equilibrium ($\sum\boldsymbol{\tau}_i=\mathbf{0}$) hold independently of each other. *(§7.1)*
 
-**Extended Body**
-A body with finite size, as opposed to a point particle. Its motion can be decomposed into translation of the COM and rotation about the COM. *(All levels)*
+**Extended Body** — A body of finite size, as opposed to a point particle; its motion decomposes into translation of the COM plus rotation about the COM. *(§1.1)*
 
 ---
 
 ## F
 
-**Fixed Axis Rotation**
-Rotation in which the axis of rotation remains stationary in space. Each particle moves in a circle in a plane perpendicular to the axis. All particles share the same ω at any instant. Examples: ceiling fan, wheel spinning about its axle. *(All levels)*
+**Fixed-Axis Rotation** — Rotation in which the axis itself stays stationary in space, so every particle moves in a circle, in a plane perpendicular to the axis, sharing one common $\omega$. *(§1.3)*
 
-**Flywheel**
-A heavy disc-shaped body with large moment of inertia used in engines (steam, automobile) to resist sudden changes in angular speed. Because of its large I, the flywheel absorbs and releases rotational kinetic energy smoothly, preventing jerky motions. *(Board/NEET)*
+**Flywheel** — A heavy disc of deliberately large moment of inertia, used in engines to resist sudden changes in angular speed and so smooth out jerky motion. *(§8.8)*
 
-**Fulcrum**
-The pivot point of a lever. The reaction from the support acts at the fulcrum. For rotational equilibrium of a lever: load arm × load = effort arm × effort. *(Board)*
+**Fulcrum** — The pivot point of a lever, about which the support's reaction force acts. *(§7.4)*
 
 ---
 
 ## L
 
-**Lever**
-A rigid rod pivoted at a point (the fulcrum). The mechanical advantage (M.A.) = effort arm / load arm = $F_1/F_2$. When M.A. > 1, a small effort can lift a large load. Examples: seesaw, beam balance, scissors, wheelbarrow, human forearm. *(Board/NEET)*
+**Lever** — A rigid rod pivoted at a fulcrum; in equilibrium, load $\times$ load arm = effort $\times$ effort arm ($d_1F_1=d_2F_2$), so a mechanical advantage greater than 1 lets a small effort balance a large load. *(§7.4)*
 
-**Linear Momentum of a System**
-For a system of n particles: $\mathbf{P} = \sum m_i\mathbf{v}_i = M\mathbf{V}$, where **V** is the velocity of the COM and M is the total mass. Newton's second law for the system: $d\mathbf{P}/dt = \mathbf{F}_{ext}$. If $\mathbf{F}_{ext} = \mathbf{0}$, **P** is conserved (COM moves at constant velocity). *(All levels — critical)*
+**Linear Momentum of a System** — For $n$ particles, $\mathbf{P}=\sum m_i\mathbf{v}_i=M\mathbf{V}$, with $\mathbf V$ the COM velocity; obeys $d\mathbf{P}/dt=\mathbf{F}_{ext}$, so **P** is conserved when $\mathbf{F}_{ext}=\mathbf{0}$. *(§3.1)*
 
 ---
 
 ## M
 
-**Mechanical Advantage (M.A.)**
-The ratio of the load force to the effort force in a lever: M.A. $= F_1/F_2 = d_2/d_1$ (effort arm / load arm). A mechanical advantage > 1 means a small effort can balance a large load. *(Board)*
+**Mechanical Advantage (M.A.)** — The ratio of load force to effort force in a lever, $\text{M.A.}=F_1/F_2=d_2/d_1$; a value greater than 1 means a small effort balances a large load. *(§7.4)*
 
-**Moment of a Force**
-See: **Torque**.
+**Moment of a Force** — See **Torque**.
 
-**Moment of Inertia (I)**
-A measure of the rotational inertia of a rigid body — it resists angular acceleration ($\tau = I\alpha$), exactly as mass resists linear acceleration ($F = ma$). Defined as $I = \sum m_i r_i^2$, where $r_i$ is the perpendicular distance of the iᵗʰ particle from the axis. Depends on mass, mass distribution, and position/orientation of axis. SI unit: kg m². Dimensional formula: **[ML²]**. $I = Mk^2$, where k is the radius of gyration. *(All levels — critical)*
+**Moment of Inertia (I)** — A body's rotational analogue of mass — its resistance to angular acceleration ($\tau=I\alpha$) — defined as $I=\sum m_i r_i^2$, where $r_i$ is each particle's perpendicular distance from the axis. Depends on the mass, its distribution, and the axis chosen, so the same body has a different $I$ for every different axis. SI unit kg m²; dimensional formula **[ML²]**. *(§8.1)*
 
 ---
 
 ## P
 
-**Perpendicular Axis Theorem**
-For a planar body (lamina) in the xy plane: $I_z = I_x + I_y$ — the sum of moments about two perpendicular axes in the plane equals the moment about the axis perpendicular to the plane through the same point. Used to derive ring/disc diameter results. *(JEE)*
+**Parallel Axis Theorem** — For **any** rigid body and **any** pair of parallel axes, $I'=I_{cm}+Md^2$, where $d$ is the perpendicular distance between the given axis and a parallel axis through the COM. Unlike the perpendicular axis theorem, it places no restriction on the body's shape. *(§8.6)*
 
-**Precession**
-The motion of the axis of a spinning body (like a top) about a vertical line, sweeping out a cone. It occurs due to the torque of gravity about the contact point. The axis of the spinning top is not fixed during precession. *(Board — conceptual)*
+**Perpendicular Axis Theorem** — For a **planar (laminar) body only**, $I_z=I_x+I_y$: the moment of inertia about an axis perpendicular to the plane equals the sum of the moments about two mutually perpendicular in-plane axes through the same point. Does not apply to three-dimensional solids such as a sphere or solid cylinder. *(§8.7)*
 
-**Pure Rotation**
-Motion in which a rigid body rotates about a fixed axis with no translational motion. Every particle moves in a circle about the axis. *(All levels)*
+**Precession** — The slow sweep of a spinning body's axis (e.g. a top) about a vertical line, caused by the torque of gravity about the point of contact; unlike this chapter's fixed-axis treatment, the spin axis itself is not fixed during precession. *(§1.3)*
 
-**Pure Translation**
-Motion in which all particles of a rigid body have the same velocity at every instant. The body moves without rotating. *(All levels)*
+**Pure Rotation** — Motion of a rigid body about a fixed axis with no translation; every particle moves in a circle about that axis. *(§1.2)*
+
+**Pure Translation** — Motion in which every particle of a rigid body has the same velocity at every instant, so the body does not rotate. *(§1.2)*
 
 ---
 
 ## R
 
-**Radius of Gyration (k)**
-A geometric property of a body-axis system defined by $I = Mk^2$. The radius of gyration is the distance from the axis at which, if the entire mass M were concentrated, it would give the same moment of inertia I. Depends on the shape of the body and the axis. Unit: m. *(Board/NEET)*
+**Radius of Gyration (k)** — The distance from a given axis at which the body's entire mass, if concentrated as a point, would reproduce the same moment of inertia: $I=Mk^2$. Depends on both the body's shape and the axis chosen. SI unit m; dimensional formula **[L]**. *(§8.3)*
 
-**Rigid Body**
-Ideally, a body whose shape is perfectly definite and unchanging — the distances between all pairs of particles are fixed, regardless of forces. No real body is truly rigid, but many can be approximated as rigid when deformations are negligible. *(All levels)*
+**Rigid Body** — An idealized body whose shape is perfectly definite and unchanging — the distance between every pair of its particles stays fixed under any force. No real body is truly rigid, but deformation is often negligible enough to use this model. *(§1.1)*
 
-**Rolling Motion**
-A combination of translation and rotation. A wheel or cylinder rolls without slipping when $v = R\omega$ (linear speed of centre = angular speed × radius). Total KE $= \tfrac{1}{2}Mv_{cm}^2 + \tfrac{1}{2}I\omega^2$ (translational + rotational). *(Board/NEET)*
+**Rolling Motion** — Combined translation and rotation; a wheel rolls without slipping when $v=R\omega$, and its total kinetic energy is $\tfrac12Mv_{cm}^2+\tfrac12I\omega^2$ (translational plus rotational). *(§1.2)*
 
-**Rotational Equilibrium**
-Condition when the net external torque on a rigid body is zero: $\sum\boldsymbol{\tau}_i = \mathbf{0}$. Does not imply translational equilibrium. *(All levels)*
+**Rotational Equilibrium** — The condition that the net external torque on a rigid body is zero, $\sum\boldsymbol{\tau}_i=\mathbf{0}$; it does not by itself imply translational equilibrium. *(§7.1)*
+
+**Rotational Kinetic Energy ($K_{rot}$)** — The kinetic energy of a rotating rigid body, $K_{rot}=\tfrac12I\omega^2$, obtained by summing $\tfrac12m_iv_i^2$ over all particles with $v_i=r_i\omega$; the rotational counterpart of $K=\tfrac12Mv^2$. *(§8.2)*
 
 ---
 
 ## S
 
-**System of Particles**
-Any collection of particles (rigid body, deformable body, or independently moving particles) whose collective behaviour is studied. The COM concept is the key tool for analysing such systems. *(All levels)*
+**System of Particles** — Any collection of particles — rigid, deformable, or independently moving — whose collective behaviour is analysed through its centre of mass. *(§2.1)*
 
 ---
 
 ## T
 
-**Torque (τ)**
-The rotational analogue of force; the physical quantity that produces angular acceleration in a rigid body. Defined as $\boldsymbol{\tau} = \mathbf{r}\times\mathbf{F}$; magnitude $\tau = rF\sin\theta = r_\perp F = rF_\perp$. A vector perpendicular to both **r** and **F**. Also called moment of force. SI unit: N m. Dimensional formula: **[ML²T⁻²]** — same dimensions as work, but torque is a vector and work is a scalar. $\tau = 0$ when F passes through the origin, or F is parallel to r. *(All levels — critical)*
+**Torque (τ)** — The rotational analogue of force: $\boldsymbol{\tau}=\mathbf{r}\times\mathbf{F}$, magnitude $\tau=rF\sin\theta$, vanishing when $\mathbf F$'s line of action passes through the chosen origin. SI unit N m; dimensional formula **[ML²T⁻²]** — the same as energy, but torque is a vector (cross product) and energy is a scalar, so the two are never physically interchangeable. *(§6.1)*
 
-**Translational Equilibrium**
-Condition when the net external force on a rigid body is zero: $\sum\mathbf{F}_i = \mathbf{0}$. Does not imply rotational equilibrium. *(All levels)*
+**Translational Equilibrium** — The condition that the net external force on a rigid body is zero, $\sum\mathbf{F}_i=\mathbf{0}$; it does not by itself imply rotational equilibrium. *(§7.1)*
 
 ---
 
 ## V
 
-**Vector Product (Cross Product)**
-A mathematical operation on two vectors **a** and **b** yielding a vector **c** = **a** × **b** such that: (i) $|\mathbf{c}| = ab\sin\theta$; (ii) **c** is perpendicular to the plane of **a** and **b**; (iii) direction given by the right-hand screw rule. Key properties: anti-commutative ($\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}$), distributive, $\mathbf{a}\times\mathbf{a} = \mathbf{0}$. For unit vectors: $\hat{i}\times\hat{j} = \hat{k}$; $\hat{j}\times\hat{k} = \hat{i}$; $\hat{k}\times\hat{i} = \hat{j}$ (cyclic order). Critical applications: torque ($\boldsymbol{\tau} = \mathbf{r}\times\mathbf{F}$) and angular momentum ($\mathbf{l} = \mathbf{r}\times\mathbf{p}$). *(All levels — critical)*
+**Vector Product (Cross Product)** — An operation on vectors $\mathbf a$, $\mathbf b$ giving $\mathbf{c}=\mathbf{a}\times\mathbf{b}$ with magnitude $ab\sin\theta$, direction perpendicular to the plane of $\mathbf a$ and $\mathbf b$ by the right-hand rule; anti-commutative ($\mathbf a\times\mathbf b=-\mathbf b\times\mathbf a$) and zero for parallel vectors. Underlies both torque ($\boldsymbol\tau=\mathbf r\times\mathbf F$) and angular momentum ($\mathbf l=\mathbf r\times\mathbf p$). *(§4.2)*
 
 ---
 
-## Key Symbols Summary
+## Key Symbols
 
-| Symbol | Quantity | Unit |
+| Symbol | Quantity | SI Unit |
 |:---|:---|:---|
 | **R** | Position of COM | m |
 | M | Total mass of system | kg |
@@ -166,50 +138,4 @@ A mathematical operation on two vectors **a** and **b** yielding a vector **c** 
 
 ---
 
-## Contrast Table — Translation vs Rotation
-
-| Aspect | Translational Motion | Rotational Motion (fixed axis) |
-|:---|:---|:---|
-| Fundamental variable | Displacement $x$ | Angular displacement $\theta$ |
-| Rate quantity | Velocity $v$ | Angular velocity $\omega$ |
-| Rate of rate | Acceleration $a$ | Angular acceleration $\alpha$ |
-| Inertia measure | Mass $M$ | Moment of inertia $I$ |
-| Cause of change | Force $F = Ma$ | Torque $\tau = I\alpha$ |
-| Energy | KE $= \tfrac{1}{2}Mv^2$ | $K_{rot} = \tfrac{1}{2}I\omega^2$ |
-| Momentum | $p = Mv$ | $L = I\omega$ |
-| Work | $dW = F\,ds$ | $dW = \tau\,d\theta$ |
-| Power | $P = Fv$ | $P = \tau\omega$ |
-| 2nd Law | $F = dp/dt$ | $\tau = dL/dt$ |
-| Conservation | $F_{ext} = 0 \Rightarrow p =$ const | $\tau_{ext} = 0 \Rightarrow L =$ const |
-
----
-
-## Common Misconceptions Clarified
-
-| Misconception | Correct Understanding |
-|:---|:---|
-| COM always lies inside the body | COM can be outside (ring, hollow sphere, L-shape) |
-| Torque and work are the same (same dimensions) | Same dimensions [ML²T⁻²] but torque is a vector (cross product), work is a scalar (dot product) — entirely different physical quantities |
-| I is a fixed property of a body like mass | I depends on the axis of rotation; same body can have multiple values of I |
-| Angular momentum of a linearly moving particle is zero | $L = r_\perp mv \neq 0$ for a point not on the line of motion |
-| When a skater pulls in arms, energy is also conserved | $L = I\omega$ is conserved, but $KE = L^2/(2I)$ increases — extra energy comes from muscular work |
-| A couple has both zero force and zero torque | A couple has zero net force BUT non-zero torque — it causes rotation without translation |
-| Centre of gravity and centre of mass always coincide | They coincide only in uniform g; for very extended bodies in non-uniform g, they differ |
-
----
-
-## Important Numerical Values
-
-| Quantity | Value |
-|:---|:---|
-| I (solid sphere, diameter) | $2MR^2/5 = 0.4\,MR^2$ |
-| I (solid cylinder, own axis) | $MR^2/2 = 0.5\,MR^2$ |
-| I (thin ring, own axis) | $MR^2$ |
-| I (thin rod, perpendicular through midpoint) | $ML^2/12 \approx 0.083\,ML^2$ |
-| I (disc, diameter) | $MR^2/4 = 0.25\,MR^2$ |
-| 1 rpm | $2\pi/60$ rad s⁻¹ $\approx 0.1047$ rad s⁻¹ |
-| Angular momentum of Earth (spin) | $\approx 7.1\times 10^{33}$ kg m² s⁻¹ |
-
----
-
-*Total terms defined: 30+ | End of Glossary — Physics Ch. 6*
+*Terms defined: 34 | End of Glossary — Physics Ch. 6*

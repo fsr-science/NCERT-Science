@@ -4,6 +4,98 @@
 
 ---
 
+## Chapter Brief
+
+Every chapter up to this point treated a moving object as a single point particle. This chapter drops that simplification: it extends Newton's laws to systems of particles and extended rigid bodies, building the centre of mass, torque, and angular momentum as the tools needed to describe how a real, finite-sized body translates *and* rotates. It closes by developing a full rotational parallel to particle dynamics — moment of inertia standing in for mass, torque for force — culminating in the conservation of angular momentum. By the end, the reader should be able to move fluently between a linear-motion relation and its rotational counterpart, and know exactly when each applies.
+
+## Front Matter
+
+**Prerequisites:** Newton's laws of motion and their application to particle dynamics, linear momentum and its conservation, the work-energy theorem, and vector algebra including the dot product.
+
+**Key outcomes** — by the end of this chapter, the reader should be able to:
+- Locate the centre of mass of a discrete or continuous mass distribution, and show why it moves under external forces exactly like a single particle of the total mass.
+- Compute the vector (cross) product of two vectors and apply it to define torque and angular momentum.
+- Relate linear and angular kinematic quantities ($\mathbf v=\boldsymbol\omega\times\mathbf r$, $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$) for a rigid body rotating about a fixed axis.
+- State and apply the two conditions for mechanical equilibrium of a rigid body, including the special case of a couple and the principle of moments.
+- Calculate the moment of inertia of standard bodies about a given axis, and apply the parallel-axis and perpendicular-axis theorems to shift between axes.
+- Apply the rotational analogue of Newton's second law ($\tau=I\alpha$) and the conservation of angular momentum ($I\omega=\text{constant}$) to solve rotational-dynamics problems.
+
+**Scope note:** This chapter treats rigid-body rotation only about a *fixed* axis (or, for angular momentum conservation, a symmetry axis). General three-dimensional rotation about a freely changing axis and precession are mentioned only as a contrast (§1.3, §8's historical note); the full dynamics of rolling motion is previewed but deferred to the next chapter.
+
+## Table of Contents
+
+- **§1 Introduction: Rigid Bodies and Types of Motion**
+  - 1.1 What is a Rigid Body?
+  - 1.2 Types of Motion of a Rigid Body
+  - 1.3 Rotation About a Fixed Axis
+  - 1.4 Interactive — Why Different Points Have Different Speeds
+- **§2 Centre of Mass (COM)**
+  - 2.1 What Is the Centre of Mass?
+  - 2.2 Two-Particle System — Derivation
+  - 2.3 General Case — n Particles
+  - 2.4 Continuous Mass Distribution
+  - 2.5 COM of Regular Shapes
+  - 2.6 Solved Examples from NCERT
+- **§3 Motion of the Centre of Mass**
+  - 3.1 Derivation: The Centre of Mass Obeys Newton's Second Law
+  - 3.2 Consequence — Radioactive Decay and Binary Stars
+- **§4 Vector Product of Two Vectors**
+  - 4.1 Why We Need It
+  - 4.2 Definition
+  - 4.3 Key Properties
+  - 4.4 Unit Vector Rules
+  - 4.5 Component (Determinant) Form
+  - 4.6 Dot Product vs Cross Product — Quick Comparison
+- **§5 Angular Velocity and Its Relation with Linear Velocity**
+  - 5.1 Angular Velocity — Definition
+  - 5.2 Angular Acceleration
+  - 5.3 Tangential and Centripetal Acceleration in Rotation
+  - 5.4 Interactive 3D Model — Visualizing $\mathbf v=\boldsymbol\omega\times\mathbf r$ and $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$
+- **§6 Torque and Angular Momentum**
+  - 6.1 Moment of Force (Torque)
+  - 6.2 Angular Momentum of a Particle
+  - 6.3 Torque and Angular Momentum for a System of Particles
+  - 6.4 Solved Examples
+- **§7 Equilibrium of a Rigid Body**
+  - 7.1 Conditions for Mechanical Equilibrium
+  - 7.2 Partial Equilibrium
+  - 7.3 Couple
+  - 7.4 Principle of Moments (Lever)
+  - 7.5 Centre of Gravity (CG)
+  - 7.6 Solved Examples from NCERT
+- **§8 Moment of Inertia**
+  - 8.1 Definition
+  - 8.2 Kinetic Energy of Rotation
+  - 8.3 Radius of Gyration $k$
+  - 8.4 Standard Results — Moments of Inertia (Table 6.1)
+  - 8.4.1 See the Axis, Not Just the Formula — 3D Models for Every Row
+  - 8.5 Two Special Cases (NCERT derivations)
+  - 8.6 Parallel Axis Theorem
+  - 8.7 Perpendicular Axis Theorem
+  - 8.8 Flywheel — Practical Application
+- **§9 Kinematics of Rotational Motion About a Fixed Axis**
+  - 9.1 Equations of Motion (Uniform Angular Acceleration)
+  - 9.2 Derivation of Eq. (6.36)
+  - 9.3 Solved Example (NCERT 6.11) — Motor Wheel
+  - 9.4 Angular Velocity of a Clock's Minute Hand
+  - 9.5 Car Wheel Angular Retardation
+  - 9.6 Interactive Model — Explore the Kinematics Equations Yourself
+- **§10 Dynamics of Rotational Motion About a Fixed Axis**
+  - 10.1 Torque and Angular Acceleration
+  - 10.2 Work Done by a Torque and Rotational Power
+  - 10.3 Table of Analogies — Linear vs Rotational Motion
+  - 10.4 Solved Example (NCERT 6.12) — Flywheel and Cord
+- **§11 Angular Momentum in Case of Rotation About a Fixed Axis**
+  - 11.1 Setting Up: $L_z=I\omega$
+  - 11.2 Conservation of Angular Momentum
+  - 11.3 Earth Shrinks: Change in Day Length
+- Quick Reference
+- Points to Ponder
+- Key Historical Persons
+- Problem-Solving Strategy
+
+---
+
 ## 🗺️ CONCEPT ROADMAP
 
 ```mermaid
@@ -103,7 +195,7 @@ No real body is truly rigid; deformations exist but are often negligible (e.g., 
 - Particles **on the axis** have r = 0, so v = ωr = 0 → they remain **stationary**.
 - The axis of a spinning top is **not fixed** (it precesses) — our chapter mainly deals with fixed-axis rotation.
 
-### 1.4 Interactive — Why Different Points Have Different Speeds *(New)*
+### 1.4 Interactive — Why Different Points Have Different Speeds
 
 The TikZ figure above is a snapshot; this graph is the mechanism. Five points sit at different radii on the *same* rotating disc (same $\omega$ for all of them, exactly as the Key Principle box states). Drag $\omega$ and watch every arrow's length scale — **linearly with $r$**, never with anything else.
 
@@ -481,7 +573,7 @@ Since $\boldsymbol\omega$ lies along $OC$ (the axis) and $\mathbf{r} = \mathbf{O
 
 For **fixed-axis** rotation, $\boldsymbol\omega$'s *direction* never changes — only its magnitude can — so $\boldsymbol\alpha$ is also fixed in direction, and the vector equation collapses to the scalar one above.
 
-### 5.3 Tangential and Centripetal Acceleration in Rotation *(New)*
+### 5.3 Tangential and Centripetal Acceleration in Rotation
 
 A particle undergoing circular motion in a rotating rigid body has, in general, **two** perpendicular components of acceleration:
 
@@ -506,7 +598,7 @@ Slide $\omega_{now}$ to the right: the point on the flat line $a_{tan}(\omega)$ 
 > [!warning] Common Confusion
 > $a_t = \alpha r_\perp$ is only the **tangential** part. It vanishes when $\omega$ is constant ($\alpha = 0$) — but the particle is *still* accelerating centripetally, $a_c=\omega^2 r_\perp \neq 0$, as long as it keeps moving in a circle at all. "No angular acceleration" does **not** mean "no acceleration."
 
-### 5.4 Interactive 3D Model — Visualizing $\mathbf v=\boldsymbol\omega\times\mathbf r$ and $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ *(New)*
+### 5.4 Interactive 3D Model — Visualizing $\mathbf v=\boldsymbol\omega\times\mathbf r$ and $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$
 
 Section 5.1 asserted that $\boldsymbol\omega$ is a genuine **vector** lying along the rotation axis — that's the single hardest thing to picture from a flat page. The model below makes it concrete: $\boldsymbol\omega$ and $\boldsymbol\alpha$ literally point along the $z$-axis, $\mathbf r$ sweeps around in the $xy$-plane, and $\mathbf v$, $\mathbf a_{rad}$, $\mathbf a_{tan}$ are computed as genuine cross products — not just plugged into a memorised formula. Drag $t$ and watch every vector update live.
 
@@ -587,7 +679,7 @@ Torque vanishes if $r=0$, $F=0$, or if the line of action of $\mathbf F$ passes 
 
 If $\mathbf F$ is reversed, $\boldsymbol\tau$ reverses. If **both** $\mathbf r$ and $\mathbf F$ are reversed, $\boldsymbol\tau$ is unchanged (two sign flips cancel).
 
-**Interactive — the $\sin\theta$ dependence, isolated** *(New)*: hold $r$ and $F$ fixed and sweep only the angle between them. This is the reason pushing a door **near the hinge** barely turns it (small effective moment) while the same push at the door's outer edge, applied perpendicular, is maximally effective — it's not really about distance from the hinge at all, it's about $\sin\theta$.
+**Interactive — the $\sin\theta$ dependence, isolated**: hold $r$ and $F$ fixed and sweep only the angle between them. This is the reason pushing a door **near the hinge** barely turns it (small effective moment) while the same push at the door's outer edge, applied perpendicular, is maximally effective — it's not really about distance from the hinge at all, it's about $\sin\theta$.
 
 | Desmos variable | Meaning |
 |:---|:---|
@@ -621,7 +713,7 @@ $$\boxed{\frac{d\mathbf{L}}{dt} = \boldsymbol\tau} \qquad \text{...(6.27)}$$
 
 ($\mathbf v\times m\mathbf v = \mathbf 0$ because the cross product of any vector with itself — or a scalar multiple of itself — vanishes.) This is the exact rotational analogue of $\mathbf F = d\mathbf p/dt$.
 
-**Interactive 3D — $\mathbf L=\mathbf r\times\mathbf p$ for a particle going in a circle** *(New)*: this is the object Eq. (6.25a) actually is — not a formula, a vector. Here a particle of mass $m$ moves on a circle of radius $R$ in the $xy$-plane with angular speed $\omega$; $\mathbf r$ and $\mathbf p$ both sweep around together, yet their cross product $\mathbf L$ **never changes** — same direction ($+z$), same magnitude, every instant. That's Section 11's whole "$L=I\omega=$ constant" idea, seen a chapter early, from first principles.
+**Interactive 3D — $\mathbf L=\mathbf r\times\mathbf p$ for a particle going in a circle**: this is the object Eq. (6.25a) actually is — not a formula, a vector. Here a particle of mass $m$ moves on a circle of radius $R$ in the $xy$-plane with angular speed $\omega$; $\mathbf r$ and $\mathbf p$ both sweep around together, yet their cross product $\mathbf L$ **never changes** — same direction ($+z$), same magnitude, every instant. That's Section 11's whole "$L=I\omega=$ constant" idea, seen a chapter early, from first principles.
 
 ```desmos3d
 O_{rg}=\left(0,0,0\right)
@@ -681,7 +773,7 @@ $$\boxed{\frac{d\mathbf{L}}{dt} = \boldsymbol\tau_{ext}} \qquad \text{...(6.28b)
 >
 > $\mathbf l = \mathbf r\times m\mathbf v$, with magnitude $mvr\sin\theta = mv\,(OM)$, where $OM$ is the perpendicular distance from $O$ to the (straight) line of motion. Since the particle travels in a straight line at constant $\mathbf v$, this perpendicular distance $OM$ never changes — and neither does the direction of $\mathbf l$ (always perpendicular to the fixed plane containing $\mathbf r$ and $\mathbf v$). Hence $\mathbf l$ is constant throughout the motion. (Consistent with Eq. 6.28b: there is no torque on a free particle, so $\mathbf l$ cannot change.)
 
-> [!example] Example *(New)* — Reusing Example 6.4's numbers as a torque
+> [!example] Example — Reusing Example 6.4's numbers as a torque
 >
 > Example 6.4 already computed $\mathbf a\times\mathbf b$ for $\mathbf a = 3\hat\imath-4\hat\jmath+5\hat k$, $\mathbf b=-2\hat\imath+\hat\jmath+3\hat k$. If instead $\mathbf a$ is read as a position vector $\mathbf r$ and $\mathbf b$ as a force $\mathbf F$, the *identical* computation gives the torque directly:
 >
@@ -689,7 +781,7 @@ $$\boxed{\frac{d\mathbf{L}}{dt} = \boldsymbol\tau_{ext}} \qquad \text{...(6.28b)
 >
 > The lesson: $\mathbf r\times\mathbf F$, $\mathbf a\times\mathbf b$, and $\mathbf r\times\mathbf p$ are all the *same* mathematical operation — only the physical labels on the vectors change.
 
-> [!example] Example *(New)* — Same $\mathbf r$ as Example 6.5, different $\mathbf F$
+> [!example] Example — Same $\mathbf r$ as Example 6.5, different $\mathbf F$
 >
 > $\mathbf r = \hat\imath+\hat\jmath-\hat k$ (same as Example 6.5), but now $\mathbf F = 7\hat\imath-3\hat\jmath-5\hat k$ (both non-$\hat\imath$ signs flipped compared to Example 6.5).
 >
@@ -699,7 +791,7 @@ $$\boxed{\frac{d\mathbf{L}}{dt} = \boldsymbol\tau_{ext}} \qquad \text{...(6.28b)
 >
 > Compare with Example 6.5's $2\hat\imath+12\hat\jmath+10\hat k$: flipping two components of $\mathbf F$ changes the torque completely — there's no shortcut relating the two answers; each must be computed fresh.
 
-> [!example] Example *(New)* — Torque from a time-varying momentum
+> [!example] Example — Torque from a time-varying momentum
 >
 > A particle sits at the fixed position $\mathbf r = \hat\imath+\hat\jmath-\hat k$ while its momentum varies as $\mathbf p(t) = 5t\,\hat\imath + 9t^2\,\hat\jmath - 3\,\hat k$. Find the torque on it as a function of time.
 >
@@ -796,7 +888,7 @@ $$\text{Mechanical Advantage} = \frac{F_1}{F_2} = \frac{d_2}{d_1} \qquad \text{.
 
 If $d_2 > d_1$: M.A. $> 1$ → a **small effort lifts a large load**. Examples of levers: seesaw, beam balance, scissors, human forearm, pliers, a crowbar.
 
-**Interactive — find the balance point yourself** *(New)*: $F_1$ and $d_1$ are fixed (a known load, a known load arm); $d_2$ is a slider. $\text{Net}=d_1F_1-d_2F_2$ is plotted live — drag $d_2$ until it reads exactly zero, and you've re-derived Eq. (6.32a) by hand rather than being told it.
+**Interactive — find the balance point yourself**: $F_1$ and $d_1$ are fixed (a known load, a known load arm); $d_2$ is a slider. $\text{Net}=d_1F_1-d_2F_2$ is plotted live — drag $d_2$ until it reads exactly zero, and you've re-derived Eq. (6.32a) by hand rather than being told it.
 
 | Desmos variable | Meaning |
 |:---|:---|
@@ -935,7 +1027,7 @@ where $r_i$ is the **perpendicular distance** of the $i^{\text{th}}$ particle fr
 
 Notice how heavily $I$ weights **distance**, not just mass — a small mass far from the axis can contribute more to $I$ than a large mass close to it, because of the $r_i^2$ factor.
 
-**Interactive — same $M$, same $R$, wildly different $I$** *(New)*: four bodies, identical total mass $M$ and identical outer radius $R$, but with that mass distributed differently relative to the axis. The bar heights below are exactly the coefficients in Table 6.1 (§8.4) — this is *why* the table has different numbers for shapes that look similarly sized.
+**Interactive — same $M$, same $R$, wildly different $I$**: four bodies, identical total mass $M$ and identical outer radius $R$, but with that mass distributed differently relative to the axis. The bar heights below are exactly the coefficients in Table 6.1 (§8.4) — this is *why* the table has different numbers for shapes that look similarly sized.
 
 | Desmos variable | Meaning |
 |:---|:---|
@@ -982,7 +1074,7 @@ $$I = (mn)\left(\frac{\sum_i r_i^2}{n}\right)$$
 
 **Step 3 — identify the two factors:** $mn = M$ (total mass), and $\dfrac{\sum r_i^2}{n} = k^2$ (mean-square distance, by definition above):
 
-$$\boxed{I = Mk^2 \quad\Longrightarrow\quad k=\sqrt{I/M}} \qquad \text{...(new result)}$$
+$$\boxed{I = Mk^2 \quad\Longrightarrow\quad k=\sqrt{I/M}}$$
 
 | Body | Axis | $k$ |
 |:---|:---|:---|
@@ -1004,9 +1096,9 @@ $$\boxed{I = Mk^2 \quad\Longrightarrow\quad k=\sqrt{I/M}} \qquad \text{...(new r
 | Hollow cylinder, radius R | Axis of cylinder | $MR^2$ |
 | Solid cylinder, radius R | Axis of cylinder | $MR^2/2$ |
 | Solid sphere, radius R | Diameter | $2MR^2/5$ |
-| Thin rod, length L *(New — via §8.6)* | Perpendicular to rod, **at one end** | $ML^2/3$ |
+| Thin rod, length L | Perpendicular to rod, at one end (via §8.6) | $ML^2/3$ |
 
-### 8.4.1 See the Axis, Not Just the Formula — 3D Models for Every Row *(New)*
+### 8.4.1 See the Axis, Not Just the Formula — 3D Models for Every Row
 
 Every mix-up in the table above ("wait, is this the disc-about-its-axis one or the disc-about-diameter one?") comes from the same root cause: the axis is invisible in a formula. These four models make the rotation axis a literal, draggable vector in 3D — one per shape, with an **axis toggle slider** so you can watch the *same body* switch between rows of the table and see $I$ change as a direct consequence of which line it's spinning about.
 
@@ -1112,7 +1204,7 @@ All mass is at the same distance $R$ from the axis: $K=\tfrac12 Mv^2=\tfrac12M(R
 
 $$I = \frac{M}{2}\left(\frac{l}{2}\right)^2 + \frac{M}{2}\left(\frac{l}{2}\right)^2 = \frac{Ml^2}{4}$$
 
-### 8.6 Parallel Axis Theorem ⭐⭐⭐ *(New)*
+### 8.6 Parallel Axis Theorem ⭐⭐⭐
 
 > [!note] Statement
 > The moment of inertia of a body about **any** axis equals the moment of inertia about a **parallel axis through the centre of mass**, plus $Md^2$, where $d$ is the perpendicular distance between the two axes:
@@ -1133,7 +1225,7 @@ $$I = \frac{M}{2}\left(\frac{l}{2}\right)^2 + \frac{M}{2}\left(\frac{l}{2}\right
 \end{tikzpicture}
 ```
 
-**Interactive — watch $I'$ grow as the axis moves away** *(New)*: slide $d$ from $0$ (back at the centre) outward, and watch $I'=I_{cm}+Md^2$ trace out a parabola in $d$ — never a straight line. This is the same "quadratic, not linear" lesson as §5.3's $a_c=\omega^2r$ graph, showing up again in a completely different part of the chapter.
+**Interactive — watch $I'$ grow as the axis moves away**: slide $d$ from $0$ (back at the centre) outward, and watch $I'=I_{cm}+Md^2$ trace out a parabola in $d$ — never a straight line. This is the same "quadratic, not linear" lesson as §5.3's $a_c=\omega^2r$ graph, showing up again in a completely different part of the chapter.
 
 ```desmos
 I_{cm}=1
@@ -1156,7 +1248,7 @@ Because it's $Md^2$ and not $Md$, doubling $d$ **quadruples** the extra term —
 >
 > This is one of the most frequently tested single results in the whole chapter — memorise both $ML^2/12$ (centre) and $ML^2/3$ (end), and know how they're related.
 
-### 8.7 Perpendicular Axis Theorem ⭐⭐⭐ *(New)*
+### 8.7 Perpendicular Axis Theorem ⭐⭐⭐
 
 > [!note] Statement
 > For a **planar (laminar) body only**, the moment of inertia about an axis perpendicular to its plane equals the sum of the moments of inertia about any two mutually perpendicular axes **in its own plane**, all three axes intersecting at one point:
@@ -1235,7 +1327,7 @@ $\omega_0 = 2\pi \times 1200/60 = 40\pi$ rad s⁻¹; $\omega = 2\pi \times 3120/
 
 Number of revolutions $= 1152\pi/(2\pi) = \boxed{576 \text{ revolutions}}$
 
-### 9.4 Additional Practice — Angular Velocity of a Clock's Minute Hand *(New)*
+### 9.4 Angular Velocity of a Clock's Minute Hand
 
 > [!example] Find the angular velocity of the minute hand of a clock
 >
@@ -1243,7 +1335,7 @@ Number of revolutions $= 1152\pi/(2\pi) = \boxed{576 \text{ revolutions}}$
 >
 > $$\omega = \frac{2\pi}{T} = \frac{2\pi}{3600} = \frac{\pi}{1800} \approx \boxed{1.745\times10^{-3}\text{ rad/s}}$$
 
-### 9.5 Additional Practice — Car Wheel Angular Retardation *(New)*
+### 9.5 Car Wheel Angular Retardation
 
 > [!example] A car moves at 72 km/h; wheel diameter 0.5 m; brakes stop the wheel in 20 rotations. Find the angular retardation.
 >
@@ -1259,7 +1351,7 @@ Number of revolutions $= 1152\pi/(2\pi) = \boxed{576 \text{ revolutions}}$
 >
 > $$\boxed{\text{Angular retardation} = \frac{80}{\pi}\approx 25.5 \text{ rad/s}^2}$$
 
-### 9.6 Interactive Model — Explore the Kinematics Equations Yourself *(New)*
+### 9.6 Interactive Model — Explore the Kinematics Equations Yourself
 
 Everything derived in this section — $\theta=\theta_0+\omega_0t+\tfrac12\alpha t^2$, $\omega=\omega_0+\alpha t$ — plus the tangential/centripetal split from §5.3, is live below. Drag $t$ to watch time evolve, or change $u_{ang}$, $a_{ang}$, $\phi$, or $R$ and watch every vector update instantly.
 
@@ -1318,7 +1410,7 @@ $$\boxed{\tau = I\alpha} \qquad \text{...(6.41)}$$
 
 This is the exact rotational analogue of $F=ma$: torque produces angular acceleration, exactly as force produces linear acceleration, with $I$ playing the role of inertia.
 
-**Interactive — same torque, different $I$, very different response** *(New)*: exactly the same shape of relationship as §11.2's $\omega=L/I$ hyperbola, but now for *dynamics* rather than *conservation*. Hold $\tau$ fixed and drag $I$: a small $I$ (a light disc) snaps into fast rotation; a large $I$ (a heavy flywheel) barely budges under the same push. This is the entire reason a flywheel resists jerky speed changes (§8.8) — not a separate fact, but this exact curve.
+**Interactive — same torque, different $I$, very different response**: exactly the same shape of relationship as §11.2's $\omega=L/I$ hyperbola, but now for *dynamics* rather than *conservation*. Hold $\tau$ fixed and drag $I$: a small $I$ (a light disc) snaps into fast rotation; a large $I$ (a heavy flywheel) barely budges under the same push. This is the entire reason a flywheel resists jerky speed changes (§8.8) — not a separate fact, but this exact curve.
 
 ```desmos
 \tau=5
@@ -1452,7 +1544,7 @@ Watch $K_{now}=L^2/(2I_{now})$ climb as you drag $I_{now}$ down — this is the 
 
 A skater (or a person on a frictionless swivel chair) pulls their arms in: $I$ decreases sharply, so $\omega$ increases to conserve $L=I\omega$. Pulling arms back out reverses the effect. The kinetic energy $K=\tfrac12I\omega^2=\tfrac12L\omega$ actually **increases** when arms are pulled in (since $\omega$ increases while $L$ stays fixed) — that extra energy comes from the **muscular work** done pulling the arms inward against the effective outward pull, not from nowhere.
 
-### 11.3 Additional Practice — Earth Shrinks: Change in Day Length *(New)*
+### 11.3 Earth Shrinks: Change in Day Length
 
 > [!example] If the Earth's volume suddenly shrinks to $1/64$ of its original value (mass unchanged), find the new duration of the day.
 >

@@ -1,899 +1,611 @@
 # Physics | Chapter 06 | System of Particles and Rotational Motion | CNOTES
 
-### Systems of Particles and Rotational Motion
-
-#### 75+ Questions | Board · NEET · JEE Layered
+### Condensed Notes | Mirrors NOTES §1–§11 exactly
 
 ---
 
-> [!note] Level Tags
->
-> 🟢 Board | 🟡 NEET | 🔴 JEE
->
-> **Answers** provided at the end of each section.
+## §1 Introduction: Rigid Bodies and Types of Motion
+
+```mermaid
+mindmap
+  root(("Rigid Body Motion"))
+    Pure Translation
+      Every particle same velocity
+      No rotation
+    Pure Rotation
+      Fixed axis
+      Every particle same angular velocity omega
+      Points on axis stationary
+    Rolling Motion
+      Translation plus rotation combined
+```
+
+### 1.1 What is a Rigid Body?
+- **Rigid body** — perfectly definite, unchanging shape; distance between every pair of particles stays constant under any force.
+- No real body is truly rigid — deformation often negligible in practice.
+
+### 1.2 Types of Motion of a Rigid Body
+- **Pure translation** — every particle has the same velocity at every instant. Example: block sliding down an incline.
+- **Pure rotation** — body rotates about a fixed axis; particles move in circles. Example: ceiling fan, potter's wheel.
+- **Rolling motion** — translation + rotation combined. Example: cylinder rolling down an incline.
+- Pure translation → identical velocity for every particle.
+- Pure rotation about a fixed axis → identical angular velocity ω for every particle; linear speeds still differ with radius.
+
+### 1.3 Rotation About a Fixed Axis
+- Every particle moves in a circle in a plane perpendicular to the axis, centred on the axis.
+- Particle at perpendicular distance $r$ from the axis traces a circle of radius $r$.
+- Particles **on** the axis: $r=0 \Rightarrow v=\omega r=0$ — stationary.
+- Axis of a spinning top is **not fixed** — it precesses. This chapter treats fixed-axis rotation only.
+
+### 1.4 Why Different Points Have Different Speeds
+- $v_i=\omega r_i$ — Eq. (6.19).
+- Same $\omega$ for every point of a rotating body; linear speed scales linearly with radius from the axis.
 
 ---
 
-# PART A: MULTIPLE CHOICE QUESTIONS (MCQs)
+## §2 Centre of Mass (COM)
 
-## A1 — Easy Level (Board + NEET Foundation) 🟢
+```mermaid
+flowchart TD
+    A["Two particles: x_cm = m1 x1 plus m2 x2 over m1 plus m2"]
+    A --> B["n particles: X = Sum mi xi over M — vector form R"]
+    B --> C["Continuous body: X = one over M times Integral x dm"]
+    C --> D["Uniform symmetric body: COM = geometric centre"]
+    D --> E["Composite or irregular shape: mass-weighted average of sub-shapes"]
+```
 
----
+### 2.1 What Is the Centre of Mass?
+- **COM** — point that moves exactly as a single particle carrying the total mass $M$ would move under the same external force.
+- Trap: COM coincides with the geometric centre only for uniform, symmetric bodies — not in general.
 
-**Q1.** The centre of mass of a uniform circular ring lies:
+### 2.2 Two-Particle System — Derivation
+- $x_{cm}=\dfrac{m_1x_1+m_2x_2}{m_1+m_2}$ — Eq. (6.1).
+- Equal masses ($m_1=m_2$): $x_{cm}=\dfrac{x_1+x_2}{2}$ — midpoint.
+- $x_{cm}$ is the mass-weighted mean — pulled toward the heavier particle.
 
-- (a) On the ring
-- (b) At the centre of the ring (outside the material)
-- (c) At a point on the diameter, one-third from the centre
-- (d) At a point on the rim
+### 2.3 General Case — n Particles
+- $X=\dfrac{\sum m_ix_i}{M}$, similarly for $Y$, $Z$ — Eq. (6.4a–c).
+- Vector form: $\mathbf{R}=\dfrac{\sum m_i\mathbf{r}_i}{M}$ — Eq. (6.4d).
+- Origin chosen at the COM $\Rightarrow \sum m_i\mathbf{r}_i=\mathbf{0}$.
 
----
+### 2.4 Continuous Mass Distribution
+- $X=\frac1M\int x\,dm$, similarly for $Y,Z$ — Eq. (6.5a).
+- Uniform symmetric body: COM = geometric centre. Every element $dm$ at $\mathbf r$ is matched by an element at $-\mathbf r$.
 
-**Q2.** A uniform disc of radius R has its centre at the origin. Its centre of mass is at:
+### 2.5 COM of Regular Shapes
 
-- (a) (R, 0)
-- (b) (R/2, 0)
-- (c) (0, 0)
-- (d) (0, R/2)
+| Body | COM |
+|:---|:---|
+| Uniform rod | Midpoint |
+| Uniform ring | Centre |
+| Uniform disc | Centre |
+| Uniform sphere | Centre |
+| Uniform triangular lamina | Centroid |
+| L-shaped lamina (uniform) | Mass-weighted average of sub-shapes |
 
----
+- Trap: COM can lie outside the body's material — ring, hollow sphere.
 
-**Q3.** The SI unit of moment of inertia is:
-
-- (a) kg m⁻²
-- (b) kg m²
-- (c) N m²
-- (d) kg m² s⁻¹
-
----
-
-**Q4.** The dimensional formula of angular momentum is:
-
-- (a) [MLT⁻¹]
-- (b) [ML²T⁻²]
-- (c) [ML²T⁻¹]
-- (d) [ML²T⁻³]
-
----
-
-**Q5.** The moment of inertia of a thin ring of mass M and radius R about an axis through its centre perpendicular to its plane is:
-
-- (a) MR²/2
-- (b) MR²
-- (c) 2MR²
-- (d) MR²/4
+### 2.6 Solved Examples from NCERT
+- Example 6.1 — 3 unequal masses (100 g, 150 g, 200 g) at triangle vertices: $X=5/18$ m, $Y=1/(3\sqrt3)$ m.
+- Example 6.2 — uniform triangular lamina: COM = centroid, proved via the strip method (every strip's midpoint lies on a median).
+- Example 6.3 — L-lamina (3 kg, three 1 kg unit squares): COM at $(5/6,\,5/6)$ m.
 
 ---
 
-**Q6.** The moment of inertia of a solid cylinder of mass M and radius R about its own axis is:
+## §3 Motion of the Centre of Mass
 
-- (a) MR²
-- (b) MR²/2
-- (c) 2MR²/5
-- (d) MR²/4
+```mermaid
+flowchart TD
+    A["M R = Sum mi ri"]
+    A --> B["Differentiate once: M V = Sum mi vi — Eq 6.8"]
+    B --> C["Differentiate again: M A = Sum mi ai — Eq 6.9"]
+    C --> D["Apply Newtons 2nd law per particle: M A = Sum Fi — Eq 6.10"]
+    D --> E["Internal forces cancel in pairs — Newtons 3rd law"]
+    E --> F["M A = F external — Eq 6.11"]
+```
 
----
+### 3.1 Derivation: The Centre of Mass Obeys Newton's Second Law
+- $M\mathbf{V}=\sum m_i\mathbf{v}_i$ — Eq. (6.8), velocity of COM.
+- $M\mathbf{A}=\sum m_i\mathbf{a}_i$ — Eq. (6.9), acceleration of COM.
+- Each particle's force $\mathbf F_i$ includes both external and internal contributions.
+- Internal action–reaction pairs cancel exactly on summing (Newton's third law).
+- $M\mathbf{A}=\mathbf{F}_{ext}$ — Eq. (6.11): COM moves as if all mass were concentrated there and all external force applied there. True for any system, rigid or not.
+- Trap: internal forces (e.g. a mid-air explosion) never change the COM's path — only external force (gravity) does.
 
-**Q7.** The kinetic energy of a body rotating with angular velocity ω about an axis with moment of inertia I is:
-
-- (a) Iω
-- (b) 2Iω²
-- (c) ½Iω²
-- (d) Iω²
-
----
-
-**Q8.** Torque has the same dimensional formula as:
-
-- (a) Power
-- (b) Work
-- (c) Momentum
-- (d) Angular momentum
-
----
-
-**Q9.** The angular momentum of a system is conserved when:
-
-- (a) Net external force is zero
-- (b) Net external torque is zero
-- (c) Total energy is conserved
-- (d) Moment of inertia is constant
+### 3.2 Consequence — Radioactive Decay and Binary Stars
+- Radioactive decay: COM at rest before decay stays at rest — decay products fly apart back-to-back.
+- Binary stars: COM moves like a free particle. In the COM frame, the two stars orbit the COM, always diametrically opposite.
+- Problem-solving split: COM translation (external forces only) + motion relative to COM (internal dynamics).
 
 ---
 
-**Q10.** A couple consists of:
+## §4 Vector Product of Two Vectors
 
-- (a) Two parallel forces in the same direction
-- (b) Two equal and opposite forces with the same line of action
-- (c) Two equal and opposite forces with **different** lines of action
-- (d) A single force and its reaction
+```mermaid
+mindmap
+  root(("Vector Cross Product"))
+    Magnitude
+      ab sin theta
+    Direction
+      Perpendicular to plane of a and b
+      Right hand screw rule
+    Key Properties
+      Not commutative
+      Not associative
+      Distributive
+      Self product is zero
+      No sign change under reflection
+    Unit Vectors
+      i cross j equals k cyclic order positive
+      Reverse order negative
+```
 
----
+### 4.1 Why We Need It
+- Torque and angular momentum are both defined via the cross product.
 
-**Q11.** In pure rotational motion about a fixed axis, all particles of the body have the same:
+### 4.2 Definition
+- $\mathbf{c}=\mathbf{a}\times\mathbf{b}$: magnitude $ab\sin\theta$; direction ⟂ to the plane of $\mathbf a,\mathbf b$; sense by right-hand screw rule.
 
-- (a) Linear velocity
-- (b) Linear acceleration
-- (c) Angular velocity
-- (d) Kinetic energy
+### 4.3 Key Properties
 
----
+| Property | Statement |
+|:---|:---|
+| Not commutative | $\mathbf{a}\times\mathbf{b}=-\mathbf{b}\times\mathbf{a}$ |
+| Not associative | Order and grouping matter |
+| Distributive | $\mathbf{a}\times(\mathbf{b}+\mathbf{c})=\mathbf{a}\times\mathbf{b}+\mathbf{a}\times\mathbf{c}$ |
+| Self cross product | $\mathbf{a}\times\mathbf{a}=\mathbf{0}$ |
+| Under reflection | Does **not** change sign (unlike polar vectors) |
 
-**Q12.** For a body in mechanical equilibrium:
+### 4.4 Unit Vector Rules
+- $\hat\imath\times\hat\imath=\hat\jmath\times\hat\jmath=\hat k\times\hat k=\mathbf 0$.
+- $\hat\imath\times\hat\jmath=\hat k$, $\hat\jmath\times\hat k=\hat\imath$, $\hat k\times\hat\imath=\hat\jmath$ — cyclic order → positive.
+- Reversed order → negative: $\hat\jmath\times\hat\imath=-\hat k$, $\hat k\times\hat\jmath=-\hat\imath$, $\hat\imath\times\hat k=-\hat\jmath$.
 
-- (a) Only ΣF = 0
-- (b) Only Στ = 0
-- (c) Both ΣF = 0 and Στ = 0
-- (d) The body must be at rest
+### 4.5 Component (Determinant) Form
+- $\mathbf{a}\times\mathbf{b}=(a_yb_z-a_zb_y)\hat\imath+(a_zb_x-a_xb_z)\hat\jmath+(a_xb_y-a_yb_x)\hat{k}$.
+- Example 6.4 — $\mathbf a=3\hat\imath-4\hat\jmath+5\hat k$, $\mathbf b=-2\hat\imath+\hat\jmath+3\hat k$: $\mathbf a\cdot\mathbf b=5$; $\mathbf a\times\mathbf b=-17\hat\imath-19\hat\jmath-5\hat k$.
 
----
+### 4.6 Dot Product vs Cross Product — Quick Comparison
 
-**Q13.** A thin rod of mass M and length L is rotated about a perpendicular axis through its midpoint. Its moment of inertia is:
-
-- (a) ML²/3
-- (b) ML²/12
-- (c) ML²/4
-- (d) ML²/6
-
----
-
-**Q14.** The rotational analogue of mass (inertia) in linear motion is:
-
-- (a) Torque
-- (b) Angular momentum
-- (c) Moment of inertia
-- (d) Angular velocity
-
----
-
-**Q15.** The vector product **a** × **b** is zero when:
-
-- (a) **a** and **b** are perpendicular
-- (b) **a** and **b** are parallel (or anti-parallel)
-- (c) **a** and **b** are equal in magnitude
-- (d) **a** = **0** only
-
----
-
-### ✅ A1 ANSWERS
-
-| Q | Ans | Brief Reason |
+| | Dot Product | Cross Product |
 |:---|:---|:---|
-| 1 | (b) | For a uniform ring, by symmetry the COM is at the geometric centre — which is empty space, not on the ring itself. |
-| 2 | (c) | Uniform symmetric disc: COM at geometric centre = origin (0, 0). |
-| 3 | (b) | $I = \sum m_i r_i^2 \to$ kg × m² = kg m² |
-| 4 | (c) | $L = r\times p \to [L][MLT^{-1}] = [ML^2T^{-1}]$ |
-| 5 | (b) | All mass at distance R from axis: $I = MR^2$ |
-| 6 | (b) | Standard result: $I_{\text{solid cylinder}} = MR^2/2$ |
-| 7 | (c) | $K_{rot} = \tfrac{1}{2}I\omega^2$ (analogue of $\tfrac{1}{2}mv^2$) |
-| 8 | (b) | Torque: N m = [ML²T⁻²]; Work: N m = [ML²T⁻²]. Same dimensions, but different physical quantities. |
-| 9 | (b) | $dL/dt = \tau_{ext}$; if $\tau_{ext} = 0$, $L =$ constant |
-| 10 | (c) | Couple: equal magnitude, opposite directions, different lines of action → rotation without translation |
-| 11 | (c) | Rigid body rotation: same ω for all particles; linear $v = \omega r$ varies with r |
-| 12 | (c) | Mechanical equilibrium requires BOTH translational ($\sum F = 0$) AND rotational ($\sum\tau = 0$) |
-| 13 | (b) | Standard result: $I = ML^2/12$ for axis at midpoint |
-| 14 | (c) | Moment of inertia I appears in $\tau = I\alpha$ (analogous to $F = ma$), so I is the rotational analogue of mass |
-| 15 | (b) | $|\mathbf{a}\times\mathbf{b}| = ab\sin\theta = 0$ when $\sin\theta = 0$, i.e., θ = 0° or 180° (parallel or anti-parallel) |
+| Result | Scalar | Vector |
+| Formula | $ab\cos\theta$ | $ab\sin\theta$, direction ⟂ plane |
+| Commutative | Yes | No |
+| Zero when | $\theta=90°$ | $\theta=0°$ or $180°$ |
+| Examples | Work, Power | Torque, Angular momentum |
 
 ---
 
-## A2 — Medium Level (NEET) 🟡
+## §5 Angular Velocity and Its Relation with Linear Velocity
+
+```mermaid
+flowchart TD
+    A["Angular velocity omega = d theta by dt"]
+    A --> B["v = omega r — Eq 6.19"]
+    A --> C["Vector form: v = omega cross r — Eq 6.20"]
+    A --> D["Angular acceleration alpha = d omega by dt"]
+    D --> E["a tangential = alpha cross r"]
+    C --> F["Four rotational cross products: v, a tangential, L, tau"]
+```
+
+### 5.1 Angular Velocity — Definition
+- $\omega=d\theta/dt$; SI rad s⁻¹; $[T^{-1}]$.
+- $v_i=\omega r_i$ — Eq. (6.19); same $\omega$ for every particle of the body.
+- Vector form $\mathbf{v}=\boldsymbol\omega\times\mathbf{r}$ — Eq. (6.20), valid even for rotation about a single fixed point.
+- Four rotational cross-products: $\mathbf v=\boldsymbol\omega\times\mathbf r$ (velocity); $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ (tangential accel); $\mathbf L=\mathbf r\times\mathbf p$ (angular momentum, analogue of $\mathbf p=m\mathbf v$); $\boldsymbol\tau=\mathbf r\times\mathbf F$ (torque, analogue of $\mathbf F$).
+
+### 5.2 Angular Acceleration
+- $\boldsymbol\alpha=d\boldsymbol\omega/dt$, scalar form $\alpha=d\omega/dt$ — Eq. (6.21)/(6.22); SI rad s⁻²; $[T^{-2}]$.
+- Fixed-axis rotation: $\boldsymbol\omega$'s direction never changes — only magnitude.
+- $\boldsymbol\alpha$ is therefore also fixed in direction for fixed-axis rotation — the vector equation collapses to the scalar one.
+
+### 5.3 Tangential and Centripetal Acceleration in Rotation
+- $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$, $|a_t|=\alpha r_\perp$ — tangential acceleration, changes speed along the circle.
+- $a_c=\omega^2r_\perp=v^2/r_\perp$ — centripetal acceleration, always toward the axis, changes direction only.
+- $a_t$ vs $\omega$: straight line, independent of $\omega$. $a_c$ vs $\omega$: parabola, $\propto\omega^2$.
+- Trap: $\alpha=0$ (no angular acceleration) does **not** mean zero acceleration — $a_c=\omega^2r_\perp\neq0$ persists as long as the particle keeps moving in a circle.
+
+### 5.4 Vector Nature of ω and α
+- $\boldsymbol\omega$ and $\boldsymbol\alpha$ act as genuine 3-D vectors along the rotation axis, confirmed by both $\mathbf v=\boldsymbol\omega\times\mathbf r$ and $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ computed as real cross products, not just plugged-in formulas.
 
 ---
 
-**Q16.** Three particles of masses 1 kg, 2 kg, and 3 kg are placed at positions (1, 0), (2, 0) and (3, 0) m respectively. The x-coordinate of the centre of mass is:
+## §6 Torque and Angular Momentum
 
-- (a) 2.0 m
-- (b) 2.33 m
-- (c) 2.5 m
-- (d) 1.5 m
+```mermaid
+flowchart TD
+    A["L = r cross p"]
+    A --> B["Differentiate: dL by dt = tau — Eq 6.27 single particle"]
+    B --> C["System: tau = tau external plus tau internal — Eq 6.28a"]
+    C --> D["Newtons 3rd law AND forces collinear"]
+    D --> E["tau internal = 0"]
+    E --> F["dL by dt = tau external — Eq 6.28b"]
+    F --> G["tau external = 0 implies L constant — Eq 6.29a"]
+```
 
----
+### 6.1 Moment of Force (Torque)
+- $\boldsymbol{\tau}=\mathbf{r}\times\mathbf{F}$ — Eq. (6.23); SI N m; $[ML^2T^{-2}]$ — same dimension as energy, but torque is a vector and energy a scalar.
+- $\tau=rF\sin\theta=rF_\perp=r_\perp F$ — Eq. (6.24a–c).
+- $\tau=0$ if $r=0$, $F=0$, or the line of action of $\mathbf F$ passes through the origin ($\theta=0°$ or $180°$).
+- Reverse $\mathbf F$ alone → $\boldsymbol\tau$ reverses.
+- Reverse both $\mathbf r$ and $\mathbf F$ → $\boldsymbol\tau$ unchanged.
+- $\tau=rF\sin\theta$ peaks at $\theta=90°$ (force ⟂ to $\mathbf r$) — most effective angle; zero at $\theta=0°,180°$.
+- Trap: $\tau=r_\perp F=rF_\perp$ are equivalent — use whichever is more convenient for the geometry.
 
-**Q17.** Two particles of masses 2 kg and 8 kg are 10 m apart. The distance of the centre of mass from the 2 kg particle is:
+### 6.2 Angular Momentum of a Particle
+- $\mathbf{L}=\mathbf{r}\times\mathbf{p}$ — Eq. (6.25a); SI kg m² s⁻¹ (= J s); $[ML^2T^{-1}]$.
+- $L=rp\sin\theta=rp_\perp=r_\perp p$ — Eq. (6.26a,b).
+- $d\mathbf{L}/dt=\boldsymbol\tau$ — Eq. (6.27), single particle. Exact rotational analogue of $\mathbf F=d\mathbf p/dt$.
 
-- (a) 2 m
-- (b) 4 m
-- (c) 8 m
-- (d) 6 m
+### 6.3 Torque and Angular Momentum for a System of Particles
+- System: $\mathbf L=\sum\mathbf l_i=\sum\mathbf r_i\times\mathbf p_i$ — Eq. (6.25b).
+- $d\mathbf L/dt=\Sigma\boldsymbol\tau_i=\boldsymbol\tau_{ext}+\boldsymbol\tau_{int}$ — Eq. (6.28a).
+- Trap: $\boldsymbol\tau_{int}=\mathbf 0$ needs **two** conditions together — Newton's third law (equal & opposite) **and** the forces being collinear (central forces). Either alone is not enough.
+- With both conditions: $d\mathbf{L}/dt=\boldsymbol\tau_{ext}$ — Eq. (6.28b).
+- $\boldsymbol\tau_{ext}=\mathbf 0 \Rightarrow \mathbf L=$ constant — Eq. (6.29a), conservation of angular momentum.
 
----
-
-**Q18.** A solid sphere (I = 2MR²/5) and a hollow cylinder (I = MR²) have the same mass M and radius R. If equal torques are applied, the ratio of angular accelerations α_sphere : α_cylinder is:
-
-- (a) 5 : 2
-- (b) 2 : 5
-- (c) 5 : 4
-- (d) 4 : 5
-
----
-
-**Q19.** A wheel starts from rest and reaches an angular speed of 40π rad s⁻¹ in 20 s with uniform angular acceleration. The number of revolutions made is:
-
-- (a) 100
-- (b) 200
-- (c) 400
-- (d) 800
-
----
-
-**Q20.** A particle of mass 2 kg moves with velocity 3 m s⁻¹ along a line parallel to the x-axis at y = 4 m. Its angular momentum about the origin is:
-
-- (a) 6 kg m² s⁻¹
-- (b) 12 kg m² s⁻¹
-- (c) 24 kg m² s⁻¹
-- (d) 8 kg m² s⁻¹
+### 6.4 Solved Examples
+- Example 6.5 — $\mathbf r=\hat\imath-\hat\jmath+\hat k$, $\mathbf F=7\hat\imath+3\hat\jmath-5\hat k$ → $\boldsymbol\tau=2\hat\imath+12\hat\jmath+10\hat k$ N m.
+- Example 6.6 — particle moving at constant $\mathbf v$: angular momentum about any fixed point $O$ stays constant. Perpendicular distance from $O$ to the line of motion is fixed; consistent with zero torque on a free particle.
+- Method — torque from a time-varying momentum: build $\mathbf L(t)=\mathbf r\times\mathbf p(t)$, then differentiate component-wise to get $\boldsymbol\tau(t)=d\mathbf L/dt$.
 
 ---
 
-**Q21.** A disc (I = MR²/2) of mass 2 kg and radius 0.5 m rotates at 60 rpm. Its kinetic energy is:
+## §7 Equilibrium of a Rigid Body
 
-- (a) π² J
-- (b) 2π² J
-- (c) 0.5π² J
-- (d) π²/2 J
+```mermaid
+mindmap
+  root(("Rigid Body Equilibrium"))
+    Translational Only
+      Sum F equals zero
+      Couple case: forces reversed
+    Rotational Only
+      Sum tau equals zero
+      Two parallel equal forces same direction
+    Both Conditions
+      Full mechanical equilibrium
+    Couple
+      Equal opposite non collinear forces
+    Lever
+      Principle of moments d1 F1 equals d2 F2
+    Centre of Gravity
+      Total gravitational torque zero
+```
 
----
+### 7.1 Conditions for Mechanical Equilibrium
+- Mechanical equilibrium: $\sum\mathbf{F}_i=\mathbf{0}$ (translational) — Eq. (6.30a); $\sum\boldsymbol{\tau}_i=\mathbf{0}$ (rotational) — Eq. (6.30b).
+- Rotational equilibrium condition is independent of the origin chosen, provided translational equilibrium also holds.
 
-**Q22.** A force **F** = (2î + 3ĵ) N acts at a point **r** = (4î − 2ĵ) m. The torque about the origin is:
+### 7.2 Partial Equilibrium
+- Rotational only, not translational: two equal parallel forces, same direction, at a rod's two ends. Moments about the midpoint cancel; net force $=2F\neq0$.
+- Translational only, not rotational: reverse one of those forces. Net force $=0$; the pair now forms a couple — pure rotation, no translation.
 
-- (a) −16k̂ N m
-- (b) +16k̂ N m
-- (c) −16 N m
-- (d) (4î + 6ĵ) N m
+### 7.3 Couple
+- **Couple** — equal magnitude, opposite direction, different (parallel) lines of action; produces rotation with no translation.
+- Torque of a couple $=\mathbf{AB}\times\mathbf F$ — independent of the origin chosen (a distinguishing feature).
+- Examples of couples: turning a bottle cap, a compass needle in Earth's magnetic field.
+- Trap: a couple has zero net force **but** non-zero torque — translational and rotational equilibrium are independent conditions.
 
----
+### 7.4 Principle of Moments (Lever)
+- **Lever** — load $F_1$ at load arm $d_1$; effort $F_2$ at effort arm $d_2$; pivot at the fulcrum.
+- Translational equilibrium of a lever: $R-F_1-F_2=0$.
+- Rotational equilibrium about the fulcrum: $d_1F_1=d_2F_2$ — Eq. (6.32a).
+- Mechanical advantage: $\text{M.A.}=F_1/F_2=d_2/d_1$ — Eq. (6.32b). $d_2>d_1 \Rightarrow \text{M.A.}>1$: small effort lifts large load.
+- Lever examples: seesaw, beam balance, scissors, human forearm, pliers, crowbar.
 
-**Q23.** The mechanical advantage of a lever is 4. If the effort arm is 2 m, the load arm is:
+### 7.5 Centre of Gravity (CG)
+- **Centre of Gravity (CG)** — point where total gravitational torque is zero: $\sum\mathbf r_i\times m_i\mathbf g=\mathbf 0$ — Eq. (6.33).
+- $\mathbf g$ uniform across the body $\Rightarrow$ CG = COM (always true in this course).
+- Finding CG experimentally: suspend the body from a point, drop a plumb line; repeat from a second point; the intersection locates the CG.
 
-- (a) 8 m
-- (b) 0.5 m
-- (c) 2 m
-- (d) 0.25 m
-
----
-
-**Q24.** A child sits at 1 m from the pivot of a seesaw. At what distance from the pivot must a person (mass twice the child's mass) sit to balance the seesaw?
-
-- (a) 2 m on the other side
-- (b) 0.5 m on the other side
-- (c) 1 m on the other side
-- (d) 1.5 m on the other side
-
----
-
-**Q25.** A skater with moment of inertia I₁ = 4 kg m² is spinning at ω₁ = 10 rad s⁻¹. She pulls her arms in so that I₂ = 1 kg m². Her new angular speed is:
-
-- (a) 2.5 rad s⁻¹
-- (b) 10 rad s⁻¹
-- (c) 40 rad s⁻¹
-- (d) 20 rad s⁻¹
-
----
-
-**Q26.** The kinetic energy of the skater in Q25 changes from K₁ to K₂. The ratio K₂/K₁ is:
-
-- (a) 1/4
-- (b) 4
-- (c) 1
-- (d) 16
-
----
-
-**Q27.** A particle of mass m at a position **r** = (3î + 4ĵ) m has momentum **p** = (5ĵ) kg m s⁻¹. Its angular momentum about the origin is:
-
-- (a) 15k̂ kg m² s⁻¹
-- (b) −15k̂ kg m² s⁻¹
-- (c) (15î − 15ĵ)
-- (d) 25k̂ kg m² s⁻¹
+### 7.6 Solved Examples from NCERT
+- Example 6.8 — bar (70 cm, 4 kg) on two knife edges with a 6 kg load: $R_1\approx54.88$ N, $R_2\approx43.12$ N.
+- Example 6.9 — ladder (3 m, 20 kg) against a frictionless wall, foot 1 m from the wall: $N=196$ N, $F_1\approx34.6$ N (wall), floor friction $\approx34.6$ N, net floor force $\approx199.0$ N at $\approx80°$ to horizontal.
 
 ---
 
-**Q28.** Which of the following bodies, all of equal mass M and radius R, has the largest moment of inertia about an axis through its centre?
+## §8 Moment of Inertia
 
-- (a) Solid sphere (diameter axis)
-- (b) Solid cylinder (own axis)
-- (c) Circular disc (own axis)
-- (d) Thin circular ring (own axis)
+```mermaid
+mindmap
+  root(("Moment of Inertia by Shape"))
+    Ring
+      Central axis MR^2
+      Diameter MR^2 over 2
+    Rod length L
+      Midpoint ML^2 over 12
+      One end ML^2 over 3
+    Disc
+      Central axis MR^2 over 2
+      Diameter MR^2 over 4
+    Cylinder
+      Hollow MR^2
+      Solid MR^2 over 2
+    Sphere
+      Diameter 2 MR^2 over 5
+```
 
----
+### 8.1 Definition
+- $I=\sum m_ir_i^2$ — Eq. (6.34); $r_i$ = perpendicular distance from the axis. SI kg m²; $[ML^2]$.
+- $I$ depends on mass, its distribution, and the axis chosen — unlike mass, $I$ is **not** a fixed property of a body.
+- $I$ weights distance heavily ($r^2$ factor) — a small mass far from the axis can out-contribute a large mass close to it.
 
-**Q29.** A torque of 2 N m produces an angular acceleration of 5 rad s⁻² in a body. The moment of inertia of the body is:
+### 8.2 Kinetic Energy of Rotation
+- $K_{rot}=\tfrac12I\omega^2$ — Eq. (6.35), derived from summing $\tfrac12m_iv_i^2$ with $v_i=r_i\omega$.
+- $I$ is the rotational analogue of mass; $\omega$ of $v$.
 
-- (a) 10 kg m²
-- (b) 0.4 kg m²
-- (c) 2.5 kg m²
-- (d) 7 kg m²
+### 8.3 Radius of Gyration $k$
+- **Radius of gyration** $k$ — distance at which the entire mass, concentrated as a point, reproduces the same $I$; RMS distance of all particles from the axis.
+- $I=Mk^2 \Rightarrow k=\sqrt{I/M}$. SI m; $[L]$.
 
----
+| Body / Axis | $k$ |
+|:---|:---|
+| Thin rod, midpoint | $L/\sqrt{12}$ |
+| Ring, central axis | $R$ |
+| Disc, central axis | $R/\sqrt2$ |
+| Disc, diameter | $R/2$ |
+| Solid sphere, diameter | $R\sqrt{2/5}$ |
 
-**Q30.** A body is projected as a projectile. If it explodes in mid-air, the centre of mass of the fragments:
+### 8.4 Standard Results — Moments of Inertia (Table 6.1)
 
-- (a) Stops at the point of explosion
-- (b) Continues along the same parabolic trajectory
-- (c) Falls vertically after explosion
-- (d) Moves horizontally after explosion
-
----
-
-### ✅ A2 ANSWERS
-
-| Q | Ans | Brief Reason |
+| Body | Axis | $I$ |
 |:---|:---|:---|
-| 16 | (b) | $X = (1\times1 + 2\times2 + 3\times3)/(1+2+3) = 14/6 \approx \mathbf{2.33}$ m |
-| 17 | (c) | $X_{CM}$ from 2 kg: $X = (2\times0 + 8\times10)/(10) = 80/10 = \mathbf{8}$ m |
-| 18 | (a) | $\alpha = \tau/I$; ratio $= I_{cyl}/I_{sph} = MR^2/(2MR^2/5) = 5/2$; ratio = **5:2** |
-| 19 | (b) | $\omega_0=0$, $\omega=40\pi$, $t=20$ s; $\alpha=2\pi$ rad s⁻²; $\theta=\tfrac{1}{2}\alpha t^2=400\pi$ rad; revolutions $=400\pi/(2\pi)$ = **200** |
-| 20 | (c) | $L = r_\perp \times p = y\times mv = 4\times2\times3 = \mathbf{24}$ kg m² s⁻¹ |
-| 21 | (a) | $\omega = 60$ rpm $= 2\pi$ rad s⁻¹; $I = \tfrac{1}{2}\times2\times0.25 = 0.25$ kg m²; $K = \tfrac{1}{2}I\omega^2 = \tfrac{1}{2}\times0.25\times4\pi^2 = \boldsymbol{\pi^2}$ J |
-| 22 | (b) | $\tau_z = r_x F_y - r_y F_x = 4\times3 - (-2)\times2 = 12+4 = \mathbf{+16}$; so $\boldsymbol{\tau} = +16\hat{k}$ N m |
-| 23 | (b) | M.A. $= d_2/d_1 = 4$; $d_2=2$ m $\Rightarrow d_1 = 2/4 = \mathbf{0.5}$ m |
-| 24 | (b) | Balancing: $m\times1 = 2m\times d \Rightarrow d = \mathbf{0.5}$ m |
-| 25 | (c) | $I_1\omega_1 = I_2\omega_2 \Rightarrow 4\times10 = 1\times\omega_2 \Rightarrow \omega_2 = \mathbf{40}$ rad s⁻¹ |
-| 26 | (b) | $K = L^2/2I$; L conserved $\Rightarrow K_2/K_1 = I_1/I_2 = 4/1 = \mathbf{4}$ (energy increases — from muscular work) |
-| 27 | (a) | $\mathbf{l} = (3\hat{i}+4\hat{j})\times(5\hat{j}) = 15(\hat{i}\times\hat{j}) + 20(\hat{j}\times\hat{j}) = 15\hat{k} + 0 = \mathbf{15\hat{k}}$ kg m² s⁻¹ |
-| 28 | (d) | $I_{ring} = MR^2$ (largest); $I_{disc} = MR^2/2$; $I_{cyl} = MR^2/2$; $I_{sphere} = 2MR^2/5$ (smallest) |
-| 29 | (b) | $\tau = I\alpha \Rightarrow I = \tau/\alpha = 2/5 = \mathbf{0.4}$ kg m² |
-| 30 | (b) | Explosion forces are internal; gravity (external) unchanged → COM continues on same **parabolic trajectory** |
+| Thin ring, radius $R$ | ⟂ to plane, centre | $MR^2$ |
+| Thin ring, radius $R$ | Diameter | $MR^2/2$ |
+| Thin rod, length $L$ | ⟂, midpoint | $ML^2/12$ |
+| Thin rod, length $L$ | ⟂, one end (via §8.6) | $ML^2/3$ |
+| Disc, radius $R$ | ⟂ to disc, centre | $MR^2/2$ |
+| Disc, radius $R$ | Diameter | $MR^2/4$ |
+| Hollow cylinder, radius $R$ | Axis of cylinder | $MR^2$ |
+| Solid cylinder, radius $R$ | Axis of cylinder | $MR^2/2$ |
+| Solid sphere, radius $R$ | Diameter | $2MR^2/5$ |
+
+- Trap: hollow cylinder = ring ($MR^2$); solid cylinder = disc ($MR^2/2$); solid sphere $=2MR^2/5$. Always specify the axis — the same body has a different $I$ per row above.
+
+### 8.4.1 Axis Choice, Not Shape Alone, Sets I
+- The same body gives a different $I$ for each different axis — Table 6.1's rod, ring, and disc rows each list two axes for exactly this reason.
+
+### 8.5 Two Special Cases (NCERT derivations)
+- Thin ring about its own axis: all mass at distance $R \Rightarrow I=MR^2$, via comparing $K=\tfrac12Mv^2$ with $K=\tfrac12I\omega^2$.
+- Massless rod, point masses $M/2$ at each end, axis ⟂ through centre: $I=Ml^2/4$.
+
+### 8.6 Parallel Axis Theorem
+- $I'=I_{cm}+Md^2$ — for **any** rigid body and **any** pair of parallel axes, $d$ = perpendicular distance between them.
+- Doubling $d$ quadruples the $Md^2$ term — quadratic growth, not linear.
+- Worked: rod about one end — $I_{end}=\dfrac{ML^2}{12}+M\left(\dfrac L2\right)^2=\dfrac{ML^2}{3}$.
+
+### 8.7 Perpendicular Axis Theorem
+- $I_z=I_x+I_y$ — **planar (laminar) bodies only**, three mutually ⟂ axes meeting at one point.
+- Trap: does **not** apply to 3-D solids (sphere, solid cylinder) — planar bodies only.
+- Worked: disc about a diameter from disc about centre — $I_z=MR^2/2$, $I_x=I_y$ by symmetry $\Rightarrow I_x=I_z/2=MR^2/4$.
+- Worked: ring about a diameter — $I_z=MR^2 \Rightarrow I_x=I_y=MR^2/2$.
+
+### 8.8 Flywheel — Practical Application
+- **Flywheel** — heavy disc, large $I$, used in engines. Resists sudden changes in angular speed, giving smooth motion despite fluctuating driving torque.
 
 ---
 
-## A3 — Hard Level (JEE) 🔴
+## §9 Kinematics of Rotational Motion About a Fixed Axis
+
+```mermaid
+flowchart TD
+    A["alpha constant — uniform angular acceleration"]
+    A --> B["Integrate once: omega = omega0 plus alpha t — Eq 6.36"]
+    B --> C["Integrate again: theta = theta0 plus omega0 t plus half alpha t^2 — Eq 6.37"]
+    C --> D["Eliminate t: omega^2 = omega0^2 plus 2 alpha delta theta — Eq 6.38"]
+```
+
+### 9.1 Equations of Motion (Uniform Angular Acceleration)
+- $\omega=\omega_0+\alpha t$ — Eq. (6.36).
+- $\theta=\theta_0+\omega_0t+\tfrac12\alpha t^2$ — Eq. (6.37).
+- $\omega^2=\omega_0^2+2\alpha(\theta-\theta_0)$ — Eq. (6.38).
+- Valid only when angular acceleration $\alpha$ is constant.
+
+### 9.2 Derivation of Eq. (6.36)
+- $\alpha=d\omega/dt=$ const → integrate → $\omega=\omega_0+\alpha t$.
+- Integrate again → $\theta=\theta_0+\omega_0t+\tfrac12\alpha t^2$.
+- rpm → rad/s: $\omega=\dfrac{\pi N}{30}$.
+
+### 9.3 Solved Example (NCERT 6.11) — Motor Wheel
+- Motor wheel, 1200 → 3120 rpm in 16 s: $\alpha=4\pi$ rad s⁻².
+- $\theta=1152\pi$ rad → 576 revolutions.
+
+### 9.4 Angular Velocity of a Clock's Minute Hand
+- Minute hand: one revolution in 3600 s. $\omega=2\pi/3600\approx1.745\times10^{-3}$ rad/s.
+
+### 9.5 Car Wheel Angular Retardation
+- Car wheel (72 km/h, diameter 0.5 m) stops in 20 rotations: angular retardation $=80/\pi\approx25.5$ rad/s².
+
+### 9.6 Kinematics Equations, Tied to the Vector Picture
+- Tangential/centripetal decomposition (§5.3) combines with the $\theta,\omega,\alpha$ kinematics of §9.1 in one unified vector picture of circular motion.
 
 ---
 
-**Q31.** A uniform rod of mass M and length L is pivoted at one end. It is held horizontal and released. The angular acceleration at the instant of release is:
+## §10 Dynamics of Rotational Motion About a Fixed Axis
 
-- (a) 3g/(2L)
-- (b) g/L
-- (c) 2g/L
-- (d) g/2L
+```mermaid
+flowchart TD
+    A["tau = I alpha — Eq 6.41"]
+    A --> B["Small I: large alpha, fast response"]
+    A --> C["Large I: small alpha, sluggish response — why a flywheel resists jerks"]
+    A --> D["dW = tau d theta — Eq 6.39"]
+    D --> E["P = tau omega — Eq 6.40"]
+```
 
-*(Hint: I about end = ML²/3; τ = Mg·L/2)*
+### 10.1 Torque and Angular Acceleration
+- $\tau=I\alpha$ — Eq. (6.41), the rotational analogue of $F=ma$; $I$ plays the role of inertia.
+- Fixed $\tau$, small $I$ (light disc) → large $\alpha$, fast response.
+- Fixed $\tau$, large $I$ (heavy flywheel) → small $\alpha$, sluggish response — the mechanism behind a flywheel resisting jerky speed changes (§8.8).
 
----
+### 10.2 Work Done by a Torque and Rotational Power
+- $dW=\tau\,d\theta$ — Eq. (6.39).
+- $P=\tau\omega$ — Eq. (6.40).
 
-**Q32.** A disc (mass M, radius R) and a ring (mass M, radius R) start from rest and roll down an identical inclined plane without slipping. At the bottom, which has a greater speed?
+### 10.3 Table of Analogies — Linear vs Rotational Motion
 
-- (a) Ring
-- (b) Disc
-- (c) Both have the same speed
-- (d) Cannot be determined
+| Linear | Rotational |
+|:---|:---|
+| Displacement $x$ | Angular displacement $\theta$ |
+| Velocity $v=dx/dt$ | Angular velocity $\omega=d\theta/dt$ |
+| Acceleration $a=dv/dt$ | Angular acceleration $\alpha=d\omega/dt$ |
+| Mass $M$ | Moment of inertia $I$ |
+| Force $F=Ma$ | Torque $\tau=I\alpha$ |
+| Work $dW=F\,ds$ | Work $dW=\tau\,d\theta$ |
+| KE $=Mv^2/2$ | KE $=I\omega^2/2$ |
+| Power $P=Fv$ | Power $P=\tau\omega$ |
+| Momentum $p=Mv$ | Angular momentum $L=I\omega$ |
 
-*(Hint: Use energy conservation; rolling: $v = R\omega$; $K_{total} = \tfrac{1}{2}mv^2 + \tfrac{1}{2}I\omega^2$)*
-
----
-
-**Q33.** A particle moves in a circle of radius R with constant angular velocity ω. The magnitude of its angular momentum about the centre is:
-
-- (a) mR²ω
-- (b) mRω
-- (c) mω/R
-- (d) mR/ω
-
----
-
-**Q34.** The vector **a** = 3î + 4ĵ and **b** = 4î − 3ĵ. The magnitude of **a** × **b** is:
-
-- (a) 25
-- (b) 0
-- (c) 7
-- (d) 5√2
-
----
-
-**Q35.** A solid cylinder (I = MR²/2) is connected by a string over a massless pulley to a hanging block of mass m. If the cylinder is free to rotate and the string does not slip, the acceleration of the block is:
-
-- (a) mg/(M + m)
-- (b) 2mg/(M + 2m)
-- (c) mg/(M/2 + m)
-- (d) 2mg/(2M + m)
+### 10.4 Solved Example (NCERT 6.12) — Flywheel and Cord
+- Flywheel ($M=20$ kg, $R=20$ cm), cord pulled with $F=25$ N: $\tau=FR=5.0$ N m; $I=MR^2/2=0.4$ kg m²; $\alpha=\tau/I=12.5$ rad/s².
+- 2 m of cord unwound: $W=F\times d=50$ J; $\theta=d/R=10$ rad; $\omega^2=2\alpha\theta=250\,(\text{rad/s})^2$; $K=\tfrac12I\omega^2=50$ J.
+- Work done equals kinetic energy gained (50 J = 50 J), frictionless bearings — confirms the rotational work–energy theorem.
 
 ---
 
-**Q36.** A sphere (I = 2MR²/5) of mass 1 kg and radius 0.1 m is rotating at 20 rad s⁻¹. A net braking torque of 0.1 N m is applied. How long before it stops?
+## §11 Angular Momentum in Case of Rotation About a Fixed Axis
 
-- (a) 0.8 s
-- (b) 8 s
-- (c) 0.4 s
-- (d) 4 s
+```mermaid
+flowchart TD
+    A["tau external = 0"]
+    A --> B["L = I omega = constant — Eq 6.44"]
+    B --> C["I decreases: arms pulled in"]
+    C --> D["omega increases to keep I omega fixed"]
+    D --> E["K = L^2 over 2I increases — extra energy from muscular work"]
+```
 
----
+### 11.1 Setting Up: $L_z=I\omega$
+- $L=I\omega$ — Eq. (6.42d), valid for a body symmetric about the rotation axis (true for every body in Table 6.1).
+- $\dfrac{d}{dt}(I\omega)=\tau_{ext}$; if $I$ is constant this reduces to $\tau=I\alpha$ — Eq. (6.41).
+- Trap: $\mathbf L$ and $\boldsymbol\omega$ are **not** always parallel — for a body not symmetric about its rotation axis, $\mathbf L=I\boldsymbol\omega$ (as vectors) is a special-case convenience, not a universal law.
 
-**Q37.** The centre of mass of a system of two particles divides the line joining them in the inverse ratio of their:
+### 11.2 Conservation of Angular Momentum
+- $\tau_{ext}=0$, $I$ allowed to change $\Rightarrow L_z=I\omega=$ constant — Eq. (6.44).
+- $I$ decreases $\Rightarrow \omega$ increases, and vice versa.
+- Skater: arms pulled in → $I$ decreases sharply → $\omega$ increases to conserve $L$.
+- Kinetic energy $K=\tfrac12I\omega^2=\tfrac12L\omega$ **increases** when arms are pulled in. Extra energy comes from muscular work done pulling the arms in, not from nowhere.
+- $K\propto1/I$ while $\omega\propto1/I$ too — halving $I$ quadruples $K$, not just doubles it.
 
-- (a) Velocities
-- (b) Accelerations
-- (c) Masses
-- (d) Kinetic energies
-
----
-
-**Q38.** A uniform disc of radius R has a circular hole of radius R/2 removed, centred at (R/2, 0) from the disc centre. The centre of mass of the remaining body is at:
-
-- (a) (−R/6, 0)
-- (b) (R/6, 0)
-- (c) (−R/4, 0)
-- (d) (R/3, 0)
-
-*(Hint: Mass of hole = M/4 since area ∝ r². Use COM formula for composite bodies.)*
-
----
-
-**Q39.** A man of mass M stands at the centre of a turntable (moment of inertia $I_t$) rotating at ω₀. He walks to the edge (radius R). The final angular velocity is:
-
-- (a) $I_t\omega_0/(I_t + MR^2)$
-- (b) $(I_t + MR^2)\omega_0/I_t$
-- (c) ω₀ (unchanged)
-- (d) $I_t\omega_0/(I_t + MR^2/2)$
+### 11.3 Earth Shrinks: Change in Day Length
+- Earth shrinks to $1/64$ its volume, mass unchanged: $V\propto R^3 \Rightarrow R'=R/4$.
+- No external torque during the shrink $\Rightarrow L$ conserved.
+- Treating Earth as a uniform solid sphere ($I=\tfrac25MR^2$): $R^2/T=R'^2/T' \Rightarrow T'=T/16=1.5$ hours.
 
 ---
 
-**Q40.** The torque of a force **F** = αî + βĵ about the origin, if the force acts at **r** = aĵ, is:
+## Points to Ponder
 
-- (a) aαk̂
-- (b) −aαk̂
-- (c) aβk̂
-- (d) −aβk̂
-
----
-
-### ✅ A3 ANSWERS
-
-| Q | Ans | Brief Reason |
-|:---|:---|:---|
-| 31 | (a) | $I_{end} = ML^2/3$; $\tau = Mg(L/2)$; $\alpha = \tau/I = Mg(L/2)/(ML^2/3) = 3g/(2L)$ |
-| 32 | (b) | Energy: $mgh = \tfrac{1}{2}mv^2(1 + I/mR^2)$; larger I → smaller v. $I_{disc}/mR^2 = 1/2$; $I_{ring}/mR^2 = 1$. Disc has smaller I ratio → **larger v**. |
-| 33 | (a) | $l = r\times p = R\times mv = R\times m(R\omega) = \mathbf{mR^2\omega}$ |
-| 34 | (a) | $\mathbf{a}\times\mathbf{b} = (3\hat{i}+4\hat{j})\times(4\hat{i}-3\hat{j}) = -9\hat{k} + 16(-\hat{k}) = -25\hat{k}$; magnitude = **25** |
-| 35 | (b) | Block: $mg - T = ma$; Cylinder: $TR = I\alpha = (MR^2/2)(a/R) \Rightarrow T = Ma/2$; $mg = ma + Ma/2 \Rightarrow a = \mathbf{2mg/(M+2m)}$ |
-| 36 | (a) | $I = 2\times1\times0.01/5 = 0.004$ kg m²; $\alpha = \tau/I = 0.1/0.004 = 25$ rad s⁻²; $t = \omega/\alpha = 20/25 = \mathbf{0.8}$ s |
-| 37 | (c) | $X = (m_1x_1+m_2x_2)/(m_1+m_2)$; COM divides line in ratio $m_2:m_1$ — **inverse ratio of masses** |
-| 38 | (a) | Mass of hole $= M(R/2)^2/R^2 = M/4$; $M\times0 = (3M/4)\times X + (M/4)\times(R/2) \Rightarrow X = -MR/8\times4/(3M) = \mathbf{-R/6}$ |
-| 39 | (a) | Initial $L = I_t\omega_0$ (man at centre contributes 0); Final $L = (I_t + MR^2)\omega_f$; Conservation: $\omega_f = \mathbf{I_t\omega_0/(I_t + MR^2)}$ |
-| 40 | (b) | $\boldsymbol{\tau} = (a\hat{j})\times(\alpha\hat{i}+\beta\hat{j}) = a\alpha(\hat{j}\times\hat{i}) + a\beta(\hat{j}\times\hat{j}) = a\alpha(-\hat{k}) + 0 = \mathbf{-a\alpha\hat{k}}$ |
+- Trap: COM ≠ geometric centre for non-uniform bodies — coincide only for uniform, symmetric bodies. §2.1
+- Trap: COM can lie outside the body — ring, hollow sphere, L-shape. §2.5
+- Trap: internal forces never affect COM motion — only external forces (e.g. gravity) determine it. §3.1
+- Trap: torque and work share dimensions $[ML^2T^{-2}]$ but are different quantities — torque is a vector (cross product), work a scalar (dot product). §6.1
+- Trap: a couple has zero net force but non-zero torque — translational and rotational equilibrium are independent conditions. §7.3
+- Trap: internal torques cancel only when **both** Newton's third law and collinearity hold — drop either assumption and cancellation fails. §6.3
+- Trap: total torque about a point depends on that point's choice unless net external force is zero; rotational equilibrium alone is origin-independent only together with translational equilibrium. §7.1
+- Trap: moment of inertia depends on the axis — the same body has different $I$ values for different axes; always specify the axis. §8.1
+- Trap: $I_{cm}$ is the smallest $I$ among all parallel axes, since the Parallel Axis Theorem only ever adds $Md^2\geq0$. §8.6
+- Trap: Perpendicular Axis Theorem applies **only** to flat, planar (2-D) bodies — never to a 3-D solid like a sphere or solid cylinder. §8.7
+- Trap: CG coincides with COM only if $g$ doesn't vary across the body — always true in this course, not true for astronomically large bodies. §7.5
+- Trap: in the skater effect, $L=I\omega$ stays constant but kinetic energy $K=L^2/2I$ increases — the extra energy comes from muscular work, not from nowhere. §11.2
+- Trap: rolling motion (previewed, full treatment in the next chapter) — total KE $=\tfrac12Mv^2+\tfrac12I\omega^2$; rolling without slipping requires $v=R\omega$. §1.2
+- Trap: $\tau=r_\perp F=rF_\perp$ are equivalent forms — use whichever suits the geometry. §6.1
+- Trap: a particle moving in a straight line has non-zero angular momentum about any point not on its line of motion; that angular momentum stays constant since no torque acts on a free particle. §6.4 (Example 6.6)
+- Trap: $\mathbf L$ and $\boldsymbol\omega$ are parallel only when the rotation axis is a symmetry axis of the body — $L=I\omega$ works cleanly for every body in Table 6.1, but is not a universally true vector relation. §11.1
 
 ---
 
-# PART B: ASSERTION-REASON QUESTIONS ⭐
+## Key Historical Persons
 
-> [!note] Instructions
->
-> (a) Both A and R are true, and R is the correct explanation of A
->
-> (b) Both A and R are true, but R is NOT the correct explanation of A
->
-> (c) A is true but R is false
->
-> (d) A is false but R is true
+| Person | Contribution |
+|:---|:---|
+| Isaac Newton (1643–1727) | Laws of motion — foundation for all rotational mechanics |
+| Leonhard Euler (1707–1783) | Developed rotational dynamics; Euler's equations of motion |
+| Christiaan Huygens (1629–1695) | First correct derivation of the moment of inertia of a pendulum; co-namesake of the Huygens–Steiner (Parallel Axis) theorem |
+| Jakob Steiner (1796–1863) | Co-namesake of the Parallel Axis / Huygens–Steiner theorem |
+| James Watt (1736–1819) | Flywheel concept for steam engines — practical application of $I$ |
 
 ---
 
-**Q41.**
-**Assertion (A):** The centre of mass of a body necessarily lies inside the body.
+## Problem-Solving Strategy
 
-**Reason (R):** The centre of mass is the point where the resultant of all external forces is assumed to act.
+**Type A — Centre of Mass**
+1. Identify discrete system or continuous body.
+2. Discrete: list every $(m_i,x_i,y_i)$ from the origin, apply $X=\sum m_ix_i/M$.
+3. Continuous, uniform, symmetric: COM = geometric centre — skip the integral.
+4. Composite shape: split into sub-shapes; treat each sub-shape's mass as concentrated at its own COM; apply the discrete formula to those points.
 
----
+**Type B — Equilibrium (levers, ladders, beams)**
+1. Draw a free-body diagram — mark every force with its point of application.
+2. Translational equations: $\sum F_x=0$, $\sum F_y=0$.
+3. Choose a pivot where the maximum number of unknown forces act — those forces drop out of the moment equation.
+4. Rotational equation about that pivot: $\sum\tau=0$.
+5. Solve the resulting system simultaneously.
 
-**Q42.**
-**Assertion (A):** A uniform ring and a uniform disc of equal mass M and radius R have different moments of inertia about an axis through their centres perpendicular to their planes.
+**Type C — Moment of Inertia and Axis Theorems**
+1. Identify the body's shape; check Table 6.1 for $I$ about the natural (central) axis.
+2. Target axis parallel to the natural axis → Parallel Axis Theorem, $I'=I_{cm}+Md^2$.
+3. Planar body, axis ⟂ to plane, or splitting $I_z$ into in-plane components → Perpendicular Axis Theorem, $I_z=I_x+I_y$.
+4. Composite body: find $I$ of each piece about the same axis, then add.
 
-**Reason (R):** Moment of inertia depends on the distribution of mass relative to the axis of rotation.
+**Type D — Combined Kinematics + Dynamics**
+1. Find $\tau$ (from forces) and $I$ (from geometry/mass) separately.
+2. $\alpha=\tau/I$.
+3. Feed $\alpha$ into Eq. (6.36)–(6.38) for $\omega$, $\theta$, or $t$.
+4. Cross-check: work done by external torque should equal kinetic energy gained (no friction).
 
----
-
-**Q43.**
-**Assertion (A):** When a rotating body (like an ice skater) pulls its arms inward, its angular speed increases.
-
-**Reason (R):** The angular momentum of the body is conserved when no net external torque acts on it; reducing I causes ω to increase.
-
----
-
-**Q44.**
-**Assertion (A):** The dimensions of torque and work are the same ([ML²T⁻²]).
-
-**Reason (R):** Torque and work are the same physical quantity as both are products of force and distance.
-
----
-
-**Q45.**
-**Assertion (A):** When a projectile explodes in mid-air, the centre of mass of the fragments follows the same parabolic path that the intact projectile would have followed.
-
-**Reason (R):** Internal forces within the projectile do not affect the motion of the centre of mass; only external forces (gravity) determine the COM trajectory.
-
----
-
-**Q46.**
-**Assertion (A):** A couple can produce rotation but not translation.
-
-**Reason (R):** A couple consists of two equal and opposite forces whose resultant is zero, so there is no net force to cause translation.
+**Type E — Angular Momentum Conservation**
+1. Confirm $\tau_{ext}=0$ about the axis — internal reconfiguration only, no outside twist.
+2. Write $I_1\omega_1=I_2\omega_2$.
+3. Compute $I_1$, $I_2$ from geometry before and after.
+4. Solve for the unknown $\omega$. If asked about energy: $K$ is generally **not** conserved even though $L$ is — any change in $K$ is accounted for by real work done changing the configuration.
 
 ---
 
-**Q47.**
-**Assertion (A):** The moment of inertia of a solid sphere about its diameter is less than that of a solid cylinder of the same mass and radius about its own axis.
+## Rapid Reference
 
-**Reason (R):** In a solid sphere, more mass is concentrated near the axis compared to the periphery.
-
----
-
-**Q48.**
-**Assertion (A):** The centre of gravity and centre of mass of a body always coincide.
-
-**Reason (R):** For a body in a uniform gravitational field, the CG coincides with the COM.
-
----
-
-**Q49.**
-**Assertion (A):** For rotation about a fixed axis, the angular velocity of all particles of a rigid body is the same, but their linear velocities are different.
-
-**Reason (R):** The linear velocity of a particle at perpendicular distance r from the axis is v = ωr, which varies with r.
-
----
-
-**Q50.**
-**Assertion (A):** A particle moving with constant velocity has zero angular momentum about any point.
-
-**Reason (R):** For a particle in uniform translational motion, the torque acting on it is zero.
-
----
-
-### ✅ B ANSWERS (Assertion-Reason)
-
-| Q | Ans | Explanation |
-|:---|:---|:---|
-| 41 | (d) | **A is false** — COM can lie outside the body (ring, hollow sphere, L-shape). R is true but not the reason for A. |
-| 42 | (a) | Both true. $I_{ring} = MR^2$; $I_{disc} = MR^2/2$. R correctly explains A: disc mass is distributed throughout (closer to axis on average), ring mass is all at distance R. |
-| 43 | (a) | Both true, R correctly explains A. $I\omega =$ constant; if I decreases, ω must increase. |
-| 44 | (c) | A is true (same dimensions [ML²T⁻²]). R is **false** — torque is a vector (cross product $\boldsymbol{\tau} = \mathbf{r}\times\mathbf{F}$), work is a scalar (dot product $W = \mathbf{F}\cdot\mathbf{d}$). Same dimensions does not mean same quantity. |
-| 45 | (a) | Both true, R correctly explains A. The explosion is internal; gravity (external) acts at COM → COM continues the same parabola. |
-| 46 | (a) | Both true, R correctly explains A. Net force of couple = $\mathbf{F} + (-\mathbf{F}) = \mathbf{0}$ → no translation. Non-zero torque → rotation. |
-| 47 | (a) | Both true, R correctly explains A. $I_{sphere} = 2MR^2/5 = 0.4MR^2 < I_{cyl} = MR^2/2 = 0.5MR^2$. More mass near centre → smaller I. |
-| 48 | (c) | A is **false** (they coincide only in uniform g, not generally). R is true — for uniform g, CG = COM. |
-| 49 | (a) | Both true, R correctly explains A. ω same for all particles (rigid body). $v = \omega r$ increases with r, so outer particles move faster. |
-| 50 | (c) | A is **false** — a particle with constant velocity CAN have non-zero angular momentum about a point not on its line of motion ($l = mvr_\perp \neq 0$ if $r_\perp \neq 0$). R is true (zero torque → l is constant, but not necessarily zero). |
-
----
-
-# PART C: CASE-BASED / PASSAGE-BASED QUESTIONS ⭐
-
-## Case 1 — The Figure Skater (Conservation of Angular Momentum) 🟡
-
-**Passage:** A figure skater begins a spin with her arms extended. In this position, she has moment of inertia I₁ = 3.6 kg m² and angular velocity ω₁ = 5 rad s⁻¹. She then pulls her arms close to her body, reducing her moment of inertia to I₂ = 0.9 kg m². (Neglect friction with ice.)
+| Fact | Value |
+|:---|:---|
+| Two-particle COM | $x_{cm}=(m_1x_1+m_2x_2)/(m_1+m_2)$ |
+| $n$-particle COM (vector) | $\mathbf R=\sum m_i\mathbf r_i/M$ |
+| COM equation of motion | $M\mathbf A=\mathbf F_{ext}$ |
+| System momentum | $\mathbf P=M\mathbf V$; conserved if $\mathbf F_{ext}=0$ |
+| Cross product magnitude | $\|\mathbf a\times\mathbf b\|=ab\sin\theta$ |
+| Cyclic unit-vector rule | $\hat\imath\times\hat\jmath=\hat k$, $\hat\jmath\times\hat k=\hat\imath$, $\hat k\times\hat\imath=\hat\jmath$ |
+| Linear–angular velocity | $v=\omega r$ (6.19); $\mathbf v=\boldsymbol\omega\times\mathbf r$ (6.20) |
+| Angular acceleration | $\alpha=d\omega/dt$; SI rad s⁻²; $[T^{-2}]$ |
+| Tangential / centripetal accel. | $a_t=\alpha r_\perp$; $a_c=\omega^2r_\perp=v^2/r_\perp$ |
+| Torque | $\boldsymbol\tau=\mathbf r\times\mathbf F$; SI N m; $[ML^2T^{-2}]$ |
+| Angular momentum (particle) | $\mathbf L=\mathbf r\times\mathbf p$; SI kg m² s⁻¹; $[ML^2T^{-1}]$ |
+| Torque–angular momentum link | $d\mathbf L/dt=\boldsymbol\tau_{ext}$; conserved if $\boldsymbol\tau_{ext}=0$ |
+| Translational equilibrium | $\sum\mathbf F_i=\mathbf 0$ |
+| Rotational equilibrium | $\sum\boldsymbol\tau_i=\mathbf 0$ |
+| Couple torque | $\mathbf{AB}\times\mathbf F$, origin-independent |
+| Lever principle of moments | $d_1F_1=d_2F_2$; M.A. $=F_1/F_2=d_2/d_1$ |
+| Centre of gravity condition | $\sum\mathbf r_i\times m_i\mathbf g=\mathbf 0$; CG = COM if $g$ uniform |
+| Moment of inertia | $I=\sum m_ir_i^2$; SI kg m²; $[ML^2]$ |
+| Rotational KE | $K_{rot}=\tfrac12I\omega^2$ |
+| Radius of gyration | $I=Mk^2$; SI m; $[L]$ |
+| Ring — centre / diameter | $MR^2$ / $MR^2/2$ |
+| Disc — centre / diameter | $MR^2/2$ / $MR^2/4$ |
+| Hollow / solid cylinder | $MR^2$ / $MR^2/2$ |
+| Solid sphere (diameter) | $2MR^2/5$ |
+| Thin rod — midpoint / end | $ML^2/12$ / $ML^2/3$ |
+| Parallel Axis Theorem | $I'=I_{cm}+Md^2$ — any body, any parallel axes |
+| Perpendicular Axis Theorem | $I_z=I_x+I_y$ — planar bodies only |
+| Rotational kinematics | $\omega=\omega_0+\alpha t$; $\theta=\theta_0+\omega_0t+\tfrac12\alpha t^2$; $\omega^2=\omega_0^2+2\alpha\Delta\theta$ |
+| rpm → rad/s | $\omega=\pi N/30$ |
+| Rotational Newton's 2nd law | $\tau=I\alpha$ |
+| Work / power by torque | $dW=\tau\,d\theta$; $P=\tau\omega$ |
+| Angular momentum (fixed axis) | $L=I\omega$; conserved if $\tau_{ext}=0$ |
+| Motor wheel (NCERT 6.11) | $\alpha=4\pi$ rad/s²; 576 revolutions |
+| Clock minute hand $\omega$ | $\approx1.745\times10^{-3}$ rad/s |
+| Car wheel angular retardation | $\approx25.5$ rad/s² |
+| Flywheel and cord (NCERT 6.12) | $\alpha=12.5$ rad/s²; $W=K=50$ J |
+| Ladder example | $N=196$ N; $F_1\approx34.6$ N; net floor force $\approx199.0$ N |
+| Bar-on-knife-edges example | $R_1\approx54.88$ N; $R_2\approx43.12$ N |
+| Earth-shrinks example | New day length $=1.5$ hours |
+| Angular momentum of Earth (spin) | $\approx7.1\times10^{33}$ kg m² s⁻¹ |
 
 ---
 
-**Q51.** The angular momentum of the skater in the initial position is:
-
-- (a) 0.72 kg m² s⁻¹
-- (b) 18 kg m² s⁻¹
-- (c) 4 kg m² s⁻¹
-- (d) 36 kg m² s⁻¹
-
----
-
-**Q52.** The angular velocity of the skater after pulling in her arms is:
-
-- (a) 1.25 rad s⁻¹
-- (b) 5 rad s⁻¹
-- (c) 20 rad s⁻¹
-- (d) 10 rad s⁻¹
-
----
-
-**Q53.** The initial kinetic energy of the skater is:
-
-- (a) 18 J
-- (b) 45 J
-- (c) 9 J
-- (d) 90 J
-
----
-
-**Q54.** The ratio of final kinetic energy to initial kinetic energy (K₂/K₁) is:
-
-- (a) 1 (conserved)
-- (b) 1/4
-- (c) 4
-- (d) 2
-
----
-
-**Q55.** The additional kinetic energy comes from:
-
-- (a) The gravitational potential energy of the skater
-- (b) The thermal energy of the ice
-- (c) The work done by the skater's muscles in pulling her arms in against the centrifugal tendency
-- (d) Conservation of energy — no additional energy is needed
-
----
-
-> [!example] Case 1 Answers
->
-> | Q | Ans | Working |
-> |:---|:---|:---|
-> | 51 | (b) | $L = I_1\omega_1 = 3.6\times5 = \mathbf{18}$ kg m² s⁻¹ |
-> | 52 | (c) | L conserved: $I_2\omega_2 = 18$; $\omega_2 = 18/0.9 = \mathbf{20}$ rad s⁻¹ |
-> | 53 | (b) | $K_1 = \tfrac{1}{2}I_1\omega_1^2 = \tfrac{1}{2}\times3.6\times25 = \mathbf{45}$ J |
-> | 54 | (c) | $K_2 = \tfrac{1}{2}I_2\omega_2^2 = \tfrac{1}{2}\times0.9\times400 = 180$ J; $K_2/K_1 = 180/45 = \mathbf{4}$ |
-> | 55 | (c) | Energy increases because the skater's muscles do work pulling arms inward against the centrifugal tendency — this internal work converts to rotational KE. |
-
----
-
-## Case 2 — Equilibrium of a Ladder 🟡🔴
-
-**Passage:** A uniform ladder of mass 15 kg and length 5 m leans against a smooth (frictionless) vertical wall. The foot of the ladder is 3 m from the wall on a rough horizontal floor. g = 10 m s⁻².
-
----
-
-**Q56.** The height at which the top of the ladder touches the wall is:
-
-- (a) 5 m
-- (b) 3 m
-- (c) 4 m
-- (d) 2 m
-
----
-
-**Q57.** The normal reaction from the floor (N) is:
-
-- (a) 50 N
-- (b) 150 N
-- (c) 100 N
-- (d) 75 N
-
----
-
-**Q58.** The reaction from the wall (F₁) is found using rotational equilibrium. Taking moments about the foot of the ladder, F₁ equals:
-
-- (a) 56.25 N
-- (b) 37.5 N
-- (c) 112.5 N
-- (d) 28.1 N
-
----
-
-**Q59.** The minimum coefficient of friction between the floor and the ladder is:
-
-- (a) 0.375
-- (b) 0.75
-- (c) 0.25
-- (d) 0.5
-
----
-
-**Q60.** If the wall were also rough (both surfaces with friction), compared to the frictionless wall case, the friction required at the floor to prevent slipping would:
-
-- (a) Increase
-- (b) Decrease
-- (c) Remain the same
-- (d) Become zero
-
----
-
-> [!example] Case 2 Answers
->
-> | Q | Ans | Working |
-> |:---|:---|:---|
-> | 56 | (c) | $h = \sqrt{5^2-3^2} = \sqrt{16} = \mathbf{4}$ m (Pythagoras) |
-> | 57 | (b) | Vertical equilibrium: $N = Mg = 15\times10 = \mathbf{150}$ N |
-> | 58 | (b) | Moments about foot A; $4\times F_1 = 15\times10\times(3/2) = 225$; $F_1 = 225/6 = \mathbf{37.5}$ N |
-> | 59 | (a) | Horizontal: $f = F_1 = 37.5$ N; $\mu_{min} = f/N = 37.5/150 = \mathbf{0.375}$ |
-> | 60 | (b) | A rough wall provides an upward friction component, reducing the floor friction required to prevent sliding — floor friction **decreases**. |
-
----
-
-## Case 3 — Rotational Dynamics of a Flywheel 🟡🔴
-
-**Passage:** A flywheel of mass 40 kg and radius 0.5 m (solid disc, I = MR²/2) is initially at rest. A tangential force of 50 N is applied at its rim for 10 seconds. Neglect bearing friction.
-
----
-
-**Q61.** The moment of inertia of the flywheel is:
-
-- (a) 10 kg m²
-- (b) 20 kg m²
-- (c) 5 kg m²
-- (d) 2.5 kg m²
-
----
-
-**Q62.** The torque applied is:
-
-- (a) 100 N m
-- (b) 50 N m
-- (c) 25 N m
-- (d) 10 N m
-
----
-
-**Q63.** The angular acceleration of the flywheel is:
-
-- (a) 10 rad s⁻²
-- (b) 5 rad s⁻²
-- (c) 2 rad s⁻²
-- (d) 4 rad s⁻²
-
----
-
-**Q64.** After 10 seconds, the kinetic energy of the flywheel is:
-
-- (a) 25000 J
-- (b) 12500 J
-- (c) 6250 J
-- (d) 2500 J
-
----
-
-**Q65.** The work done by the applied force in 10 seconds is:
-
-- (a) 12500 J
-- (b) 25000 J
-- (c) 6250 J
-- (d) It cannot equal the KE since some energy is wasted
-
----
-
-> [!example] Case 3 Answers
->
-> | Q | Ans | Working |
-> |:---|:---|:---|
-> | 61 | (c) | $I = MR^2/2 = 40\times0.25/2 = \mathbf{5}$ kg m² |
-> | 62 | (c) | $\tau = F\times R = 50\times0.5 = \mathbf{25}$ N m |
-> | 63 | (b) | $\alpha = \tau/I = 25/5 = \mathbf{5}$ rad s⁻² |
-> | 64 | (c) | $\omega = 0 + 5\times10 = 50$ rad s⁻¹; $K = \tfrac{1}{2}\times5\times50^2 = \tfrac{1}{2}\times5\times2500 = \mathbf{6250}$ J |
-> | 65 | (c) | $\theta = \tfrac{1}{2}\alpha t^2 = \tfrac{1}{2}\times5\times100 = 250$ rad; $W = \tau\theta = 25\times250 = \mathbf{6250}$ J. Since no friction, $W = \Delta K$ ✓ |
-
----
-
-## Case 4 — Centre of Mass Motion 🟢🟡
-
-**Passage:** Two particles, A (mass 3 kg) and B (mass 1 kg), are at positions (2, 0) m and (6, 0) m respectively at time t = 0. Particle A moves with velocity (4î) m s⁻¹ and particle B moves with velocity (−2î) m s⁻¹. No external forces act on the system.
-
----
-
-**Q66.** The initial position of the centre of mass of the system is:
-
-- (a) (3, 0) m
-- (b) (4, 0) m
-- (c) (3.5, 0) m
-- (d) (4.5, 0) m
-
----
-
-**Q67.** The velocity of the centre of mass is:
-
-- (a) 1 m s⁻¹ (in +x direction)
-- (b) 2.5 m s⁻¹ (in +x direction)
-- (c) 3 m s⁻¹ (in +x direction)
-- (d) 2 m s⁻¹ (in +x direction)
-
----
-
-**Q68.** After 2 seconds, the position of the centre of mass is:
-
-- (a) (7, 0) m
-- (b) (6, 0) m
-- (c) (5, 0) m
-- (d) (8, 0) m
-
----
-
-**Q69.** The total linear momentum of the system is:
-
-- (a) 8 kg m s⁻¹
-- (b) 14 kg m s⁻¹
-- (c) 10 kg m s⁻¹
-- (d) 4 kg m s⁻¹
-
----
-
-**Q70.** If the two particles collide and stick together (perfectly inelastic), the velocity of the combined mass is:
-
-- (a) 3.5 m s⁻¹
-- (b) 2.5 m s⁻¹
-- (c) 1 m s⁻¹
-- (d) 4 m s⁻¹
-
----
-
-> [!example] Case 4 Answers
->
-> | Q | Ans | Working |
-> |:---|:---|:---|
-> | 66 | (a) | $X_{cm} = (3\times2 + 1\times6)/4 = 12/4 = \mathbf{3}$ m; position = **(3, 0) m** |
-> | 67 | (b) | $V_{cm} = (3\times4 + 1\times(-2))/4 = 10/4 = \mathbf{2.5}$ m s⁻¹ |
-> | 68 | (d) | $X_{cm}(t=2) = 3 + 2.5\times2 = 3+5 = \mathbf{8}$ m → option **(d)** |
-> | 69 | (c) | $P = MV_{cm} = 4\times2.5 = \mathbf{10}$ kg m s⁻¹; OR $P = 3\times4 + 1\times(-2) = 10$ kg m s⁻¹ |
-> | 70 | (b) | $v_f = P/M_{total} = 10/4 = \mathbf{2.5}$ m s⁻¹ (COM velocity unchanged — no external force) |
-
----
-
-# PART D: NUMERICAL PRACTICE (Short Answer) ⭐
-
----
-
-**Q71.** 🟢 Find the centre of mass of a system of three particles of masses 1 kg, 2 kg, and 3 kg placed at the vertices of an equilateral triangle of side 2 m. (Take one vertex at origin, another at (2, 0).)
-
-> [!example] Answer
->
-> Third vertex at (1, √3).
->
-> $X = (1\times0 + 2\times2 + 3\times1)/6 = 7/6$ m
->
-> $Y = (1\times0 + 2\times0 + 3\times\sqrt{3})/6 = 3\sqrt{3}/6 = \sqrt{3}/2$ m
->
-> **COM = (7/6, √3/2) m ≈ (1.17, 0.87) m**
-
----
-
-**Q72.** 🟢 A torque of 8 N m is applied to a body with moment of inertia 4 kg m². Find (a) the angular acceleration, and (b) the angular velocity after 5 s from rest.
-
-> [!example] Answer
->
-> (a) $\alpha = \tau/I = 8/4 = \mathbf{2}$ rad s⁻²
->
-> (b) $\omega = \omega_0 + \alpha t = 0 + 2\times5 = \mathbf{10}$ rad s⁻¹
-
----
-
-**Q73.** 🟢 Calculate the angular momentum of the Earth about its own axis, given: mass = 6×10²⁴ kg, radius = 6.4×10⁶ m, angular velocity = 7.27×10⁻⁵ rad s⁻¹. (Use I = 2MR²/5 for solid sphere.)
-
-> [!example] Answer
->
-> $I = \frac{2}{5}\times6\times10^{24}\times(6.4\times10^6)^2 = \frac{2}{5}\times2.458\times10^{38} = 9.83\times10^{37}$ kg m²
->
-> $L = I\omega = 9.83\times10^{37}\times7.27\times10^{-5} \approx \mathbf{7.15\times10^{33}}$ kg m² s⁻¹
-
----
-
-**Q74.** 🟡 A rod of mass 2 kg and length 1 m is pivoted at its centre. A force of 10 N is applied perpendicular to the rod at one end. Find (a) the torque, (b) the angular acceleration.
-
-> [!example] Answer
->
-> (a) $\tau = F\times d = 10\times0.5 = \mathbf{5}$ N m (perpendicular distance from pivot = L/2 = 0.5 m)
->
-> (b) $I = ML^2/12 = 2\times1/12 = 1/6$ kg m²; $\alpha = \tau/I = 5\div(1/6) = \mathbf{30}$ rad s⁻²
-
----
-
-**Q75.** 🟡 A turbine blade (I = 0.5 kg m²) is spinning at 600 rpm. A braking torque of 5 N m is applied. How long does the blade take to stop?
-
-> [!example] Answer
->
-> $\omega_0 = 600\text{ rpm} = 600\times2\pi/60 = 20\pi$ rad s⁻¹
->
-> $\alpha = \tau/I = 5/0.5 = 10$ rad s⁻² (decelerating)
->
-> $t = \omega_0/\alpha = 20\pi/10 = \mathbf{2\pi \approx 6.28}$ s
-
----
-
-**Q76.** 🔴 A solid sphere (I = 2MR²/5) of mass 5 kg and radius 0.2 m is rotating at 10 rad s⁻¹ about its diameter. A torque is applied and the rotation stops in 4 s. Find (a) the angular deceleration, (b) the braking torque, and (c) the angle rotated in stopping.
-
-> [!example] Answer
->
-> (a) $\alpha = (\omega - \omega_0)/t = (0 - 10)/4 = \mathbf{-2.5}$ rad s⁻²
->
-> (b) $I = (2/5)\times5\times0.04 = \mathbf{0.08}$ kg m²; $\tau = I|\alpha| = 0.08\times2.5 = \mathbf{0.2}$ N m
->
-> (c) $\theta = \omega_0 t + \tfrac{1}{2}\alpha t^2 = 10\times4 + \tfrac{1}{2}(-2.5)(16) = 40-20 = \mathbf{20}$ rad
-
----
-
-**Q77.** 🔴 A man stands on a frictionless rotating platform with moment of inertia 200 kg m² (including man with arms out, masses at 1.5 m from axis). He holds two 2 kg masses at arm's length (each at 1.5 m from axis). He pulls both masses to 0.3 m from axis. If initial angular speed is 1 rad s⁻¹, find the final angular speed.
-
-> [!example] Answer
->
-> $I_1 = 200$ kg m² (includes masses at 1.5 m)
->
-> $I_{man\,only} = 200 - 2\times2\times1.5^2 = 200 - 9 = 191$ kg m²
->
-> $I_2 = 191 + 2\times2\times0.3^2 = 191 + 0.36 = 191.36$ kg m²
->
-> L conserved: $\omega_2 = I_1\omega_1/I_2 = 200\times1/191.36 \approx \mathbf{1.045}$ rad s⁻¹
-
----
-
-*Total Questions: 77 | End of Question Bank — Physics Ch. 6*
+*End of CNOTES — Physics Ch. 6*
