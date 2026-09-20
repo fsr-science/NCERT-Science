@@ -135,17 +135,21 @@ def is_allowed_file(path: Path) -> bool:
 
 
 def manifest_name(name: str) -> str:
-    upper_name = name.upper()
+    suffix = Path(name).suffix
+    stem = name[: -len(suffix)] if suffix else name
+    upper_stem = stem.upper()
     for label, emoji in SECTION_EMOJI.items():
-        if upper_name == label or upper_name.endswith(f"-{label}") or upper_name.endswith(f"_{label}"):
+        if upper_stem == label or upper_stem.endswith(f"-{label}") or upper_stem.endswith(f"_{label}"):
             return f"{emoji} {name}"
     return name
 
 
 def child_sort_key(path: Path) -> tuple[int, str]:
-    upper_name = path.name.upper()
+    suffix = path.suffix
+    stem = path.name[: -len(suffix)] if suffix else path.name
+    upper_stem = stem.upper()
     for label, index in SECTION_ORDER.items():
-        if upper_name == label or upper_name.endswith(f"-{label}") or upper_name.endswith(f"_{label}"):
+        if upper_stem == label or upper_stem.endswith(f"-{label}") or upper_stem.endswith(f"_{label}"):
             return (index, path.name.casefold())
     return (len(SECTION_ORDER), path.name.casefold())
 

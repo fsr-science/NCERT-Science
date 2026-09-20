@@ -16,23 +16,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY01-THE_LIVING_WORLD-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY01-THE_LIVING_WORLD/BIOLOGY01-THE_LIVING_WORLD-CNOTES.md",
-                  "sha": "8f5a83a2508b0a16de94f114b5b021a0f34b22d3",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY01-THE_LIVING_WORLD-GLOSSARY.md",
+                  "name": "📒 BIOLOGY01-THE_LIVING_WORLD-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY01-THE_LIVING_WORLD/BIOLOGY01-THE_LIVING_WORLD-GLOSSARY.md",
                   "sha": "ce7f703df7182291d95d8ee81044b3197984f0cd",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY01-THE_LIVING_WORLD-NOTES.md",
+                  "name": "📓 BIOLOGY01-THE_LIVING_WORLD-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY01-THE_LIVING_WORLD/BIOLOGY01-THE_LIVING_WORLD-NOTES.md",
                   "sha": "72aa9623dc20ba857858af6f806deb0cc440ffa7",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY01-THE_LIVING_WORLD-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY01-THE_LIVING_WORLD/BIOLOGY01-THE_LIVING_WORLD-CNOTES.md",
+                  "sha": "8f5a83a2508b0a16de94f114b5b021a0f34b22d3",
                   "mime": "text/markdown"
                 }
               ]
@@ -43,23 +43,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY02-BIOLOGICAL_CLASSIFICATION-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY02-BIOLOGICAL_CLASSIFICATION/BIOLOGY02-BIOLOGICAL_CLASSIFICATION-CNOTES.md",
-                  "sha": "1b359ce3676d22a8613046842dad504058e66ea5",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY02-BIOLOGICAL_CLASSIFICATION-GLOSSARY.md",
+                  "name": "📒 BIOLOGY02-BIOLOGICAL_CLASSIFICATION-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY02-BIOLOGICAL_CLASSIFICATION/BIOLOGY02-BIOLOGICAL_CLASSIFICATION-GLOSSARY.md",
                   "sha": "1c8563c7cb6d736b38ac40c1146ec105de6bc9dc",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY02-BIOLOGICAL_CLASSIFICATION-NOTES.md",
+                  "name": "📓 BIOLOGY02-BIOLOGICAL_CLASSIFICATION-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY02-BIOLOGICAL_CLASSIFICATION/BIOLOGY02-BIOLOGICAL_CLASSIFICATION-NOTES.md",
                   "sha": "c4ca8892b60a442e0a76a82e6e3528f9e91e0954",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY02-BIOLOGICAL_CLASSIFICATION-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY02-BIOLOGICAL_CLASSIFICATION/BIOLOGY02-BIOLOGICAL_CLASSIFICATION-CNOTES.md",
+                  "sha": "1b359ce3676d22a8613046842dad504058e66ea5",
                   "mime": "text/markdown"
                 }
               ]
@@ -70,23 +70,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY03-PLANT_KINGDOM-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY03-PLANT_KINGDOM/BIOLOGY03-PLANT_KINGDOM-CNOTES.md",
-                  "sha": "73d757e8fecbc220f337eb54baaba218049cabd8",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY03-PLANT_KINGDOM-GLOSSARY.md",
+                  "name": "📒 BIOLOGY03-PLANT_KINGDOM-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY03-PLANT_KINGDOM/BIOLOGY03-PLANT_KINGDOM-GLOSSARY.md",
                   "sha": "487a349eb80849da9523a3b5c44df1aaa678110b",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY03-PLANT_KINGDOM-NOTES.md",
+                  "name": "📓 BIOLOGY03-PLANT_KINGDOM-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY03-PLANT_KINGDOM/BIOLOGY03-PLANT_KINGDOM-NOTES.md",
                   "sha": "5d8538e07eb1b51bd6881f1be5e602fa9af60e98",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY03-PLANT_KINGDOM-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY03-PLANT_KINGDOM/BIOLOGY03-PLANT_KINGDOM-CNOTES.md",
+                  "sha": "73d757e8fecbc220f337eb54baaba218049cabd8",
                   "mime": "text/markdown"
                 }
               ]
@@ -97,23 +97,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY04-ANIMAL_KINGDOM-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY04-ANIMAL_KINGDOM/BIOLOGY04-ANIMAL_KINGDOM-CNOTES.md",
-                  "sha": "9a65e2bd60ebefb0fac5cadc00eafb605a3f182a",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY04-ANIMAL_KINGDOM-GLOSSARY.md",
+                  "name": "📒 BIOLOGY04-ANIMAL_KINGDOM-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY04-ANIMAL_KINGDOM/BIOLOGY04-ANIMAL_KINGDOM-GLOSSARY.md",
                   "sha": "ebd4a20791a1d8e82aeebb0858c447ae0c222a06",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY04-ANIMAL_KINGDOM-NOTES.md",
+                  "name": "📓 BIOLOGY04-ANIMAL_KINGDOM-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY04-ANIMAL_KINGDOM/BIOLOGY04-ANIMAL_KINGDOM-NOTES.md",
                   "sha": "03d0730822de43f49ef04e3f52483e8dd53c1eda",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY04-ANIMAL_KINGDOM-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY04-ANIMAL_KINGDOM/BIOLOGY04-ANIMAL_KINGDOM-CNOTES.md",
+                  "sha": "9a65e2bd60ebefb0fac5cadc00eafb605a3f182a",
                   "mime": "text/markdown"
                 }
               ]
@@ -124,23 +124,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS/BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS-CNOTES.md",
-                  "sha": "607dd69a855c3a1c7603e21d5bfbf96da2d67e32",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS-GLOSSARY.md",
+                  "name": "📒 BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS/BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS-GLOSSARY.md",
                   "sha": "b3d08247876d9936abc2a5eced62b4cef6af4789",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS-NOTES.md",
+                  "name": "📓 BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS/BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS-NOTES.md",
                   "sha": "63d93751c29fbd4f3afbf3ddfb845a163a818a14",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS/BIOLOGY05-MORPHOLOGY_OF_FLOWERING_PLANTS-CNOTES.md",
+                  "sha": "607dd69a855c3a1c7603e21d5bfbf96da2d67e32",
                   "mime": "text/markdown"
                 }
               ]
@@ -151,23 +151,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS/BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS-CNOTES.md",
-                  "sha": "3f35a3c35736803413dea70801795dcd41293dd3",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS-GLOSSARY.md",
+                  "name": "📒 BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS/BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS-GLOSSARY.md",
                   "sha": "a15c7e6d4452f67bbc35296c3980af4a7aaa0dc0",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS-NOTES.md",
+                  "name": "📓 BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS/BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS-NOTES.md",
                   "sha": "31339750f06ad44b46d2ac971fe36f29c8e9dbd1",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS/BIOLOGY06-ANATOMY_OF_FLOWERING_PLANTS-CNOTES.md",
+                  "sha": "3f35a3c35736803413dea70801795dcd41293dd3",
                   "mime": "text/markdown"
                 }
               ]
@@ -178,23 +178,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS/BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS-CNOTES.md",
-                  "sha": "a650a6869c84f8fd739324ea6699324922e69a28",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS-GLOSSARY.md",
+                  "name": "📒 BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS/BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS-GLOSSARY.md",
                   "sha": "e0e6559b2c471df9463ca5a3fc73510799ad4876",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS-NOTES.md",
+                  "name": "📓 BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS/BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS-NOTES.md",
                   "sha": "8de1b572c67b50db74dfbc8591ee4545ca7f95ff",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS/BIOLOGY07-STRUCTURAL_ORGANISATION_IN_ANIMALS-CNOTES.md",
+                  "sha": "a650a6869c84f8fd739324ea6699324922e69a28",
                   "mime": "text/markdown"
                 }
               ]
@@ -205,23 +205,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY08-CELL_THE_UNIT_OF_LIFE-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY08-CELL_THE_UNIT_OF_LIFE/BIOLOGY08-CELL_THE_UNIT_OF_LIFE-CNOTES.md",
-                  "sha": "2984fdfb353c05a8bbf6c90c20e100e0781e4305",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY08-CELL_THE_UNIT_OF_LIFE-GLOSSARY.md",
+                  "name": "📒 BIOLOGY08-CELL_THE_UNIT_OF_LIFE-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY08-CELL_THE_UNIT_OF_LIFE/BIOLOGY08-CELL_THE_UNIT_OF_LIFE-GLOSSARY.md",
                   "sha": "a7578f2500406d924bb1533ed5c729c578808445",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY08-CELL_THE_UNIT_OF_LIFE-NOTES.md",
+                  "name": "📓 BIOLOGY08-CELL_THE_UNIT_OF_LIFE-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY08-CELL_THE_UNIT_OF_LIFE/BIOLOGY08-CELL_THE_UNIT_OF_LIFE-NOTES.md",
                   "sha": "d4bce4c840a302fd58eb21c4cd0412dff0da90ae",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY08-CELL_THE_UNIT_OF_LIFE-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY08-CELL_THE_UNIT_OF_LIFE/BIOLOGY08-CELL_THE_UNIT_OF_LIFE-CNOTES.md",
+                  "sha": "2984fdfb353c05a8bbf6c90c20e100e0781e4305",
                   "mime": "text/markdown"
                 }
               ]
@@ -232,23 +232,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY09-BIOMOLECULES-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY09-BIOMOLECULES/BIOLOGY09-BIOMOLECULES-CNOTES.md",
-                  "sha": "09d33de152c65018e8431bef31d3c8d4cee5279d",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY09-BIOMOLECULES-GLOSSARY.md",
+                  "name": "📒 BIOLOGY09-BIOMOLECULES-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY09-BIOMOLECULES/BIOLOGY09-BIOMOLECULES-GLOSSARY.md",
                   "sha": "41e17747933f079f9aa0bf3c5aadd5be6188b4fc",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY09-BIOMOLECULES-NOTES.md",
+                  "name": "📓 BIOLOGY09-BIOMOLECULES-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY09-BIOMOLECULES/BIOLOGY09-BIOMOLECULES-NOTES.md",
                   "sha": "c5ad69d7e0593ce576751b9be068cabf874beeb0",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY09-BIOMOLECULES-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY09-BIOMOLECULES/BIOLOGY09-BIOMOLECULES-CNOTES.md",
+                  "sha": "09d33de152c65018e8431bef31d3c8d4cee5279d",
                   "mime": "text/markdown"
                 }
               ]
@@ -259,23 +259,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION/BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION-CNOTES.md",
-                  "sha": "0a2a99a31c7a153f15c10ac3d92c7e566d94c38e",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION-GLOSSARY.md",
+                  "name": "📒 BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION/BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION-GLOSSARY.md",
                   "sha": "8bcc256687f4e13f4d677cc2bb3284cdab90a2be",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION-NOTES.md",
+                  "name": "📓 BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION/BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION-NOTES.md",
                   "sha": "e1f0e10524bc878f41f2b1d518f4d0570cef567b",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION/BIOLOGY10-CELL_CYCLE_AND_CELL_DIVISION-CNOTES.md",
+                  "sha": "0a2a99a31c7a153f15c10ac3d92c7e566d94c38e",
                   "mime": "text/markdown"
                 }
               ]
@@ -286,23 +286,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY11-TRANSPORT_IN_PLANTS-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY11-TRANSPORT_IN_PLANTS/BIOLOGY11-TRANSPORT_IN_PLANTS-CNOTES.md",
-                  "sha": "1a24e7d1fd903dc8e517d91f1bbfc6563bafd92c",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY11-TRANSPORT_IN_PLANTS-GLOSSARY.md",
+                  "name": "📒 BIOLOGY11-TRANSPORT_IN_PLANTS-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY11-TRANSPORT_IN_PLANTS/BIOLOGY11-TRANSPORT_IN_PLANTS-GLOSSARY.md",
                   "sha": "596787e680f16a893d568953390f0f92524743d7",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY11-TRANSPORT_IN_PLANTS-NOTES.md",
+                  "name": "📓 BIOLOGY11-TRANSPORT_IN_PLANTS-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY11-TRANSPORT_IN_PLANTS/BIOLOGY11-TRANSPORT_IN_PLANTS-NOTES.md",
                   "sha": "8354e41f511d099f72e23b4b9ca5e7d28f22391f",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY11-TRANSPORT_IN_PLANTS-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY11-TRANSPORT_IN_PLANTS/BIOLOGY11-TRANSPORT_IN_PLANTS-CNOTES.md",
+                  "sha": "1a24e7d1fd903dc8e517d91f1bbfc6563bafd92c",
                   "mime": "text/markdown"
                 }
               ]
@@ -313,23 +313,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY12-MINERAL_NUTRITION-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY12-MINERAL_NUTRITION/BIOLOGY12-MINERAL_NUTRITION-CNOTES.md",
-                  "sha": "db2d3b6a52be0e49c0fc7570e08713087e1511fd",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY12-MINERAL_NUTRITION-GLOSSARY.md",
+                  "name": "📒 BIOLOGY12-MINERAL_NUTRITION-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY12-MINERAL_NUTRITION/BIOLOGY12-MINERAL_NUTRITION-GLOSSARY.md",
                   "sha": "92f96de67a4aa0772aa281b8d7d9741bef559043",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY12-MINERAL_NUTRITION-NOTES.md",
+                  "name": "📓 BIOLOGY12-MINERAL_NUTRITION-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY12-MINERAL_NUTRITION/BIOLOGY12-MINERAL_NUTRITION-NOTES.md",
                   "sha": "ae7c1e6e92a4642e95a4aa2240bf7539c61f6d6e",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY12-MINERAL_NUTRITION-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY12-MINERAL_NUTRITION/BIOLOGY12-MINERAL_NUTRITION-CNOTES.md",
+                  "sha": "db2d3b6a52be0e49c0fc7570e08713087e1511fd",
                   "mime": "text/markdown"
                 }
               ]
@@ -340,23 +340,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS/BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS-CNOTES.md",
-                  "sha": "7ca590fd655f320e097b3972eaa1a4d56b508a31",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS-GLOSSARY.md",
+                  "name": "📒 BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS/BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS-GLOSSARY.md",
                   "sha": "181528e4fee9a788eaf406d1a564ab66f330cce2",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS-NOTES.md",
+                  "name": "📓 BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS/BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS-NOTES.md",
                   "sha": "9e40633558e5babb658b146f4cded3bdb55e5559",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS/BIOLOGY13-PHOTOSYNTHESIS_IN_HIGHER_PLANTS-CNOTES.md",
+                  "sha": "7ca590fd655f320e097b3972eaa1a4d56b508a31",
                   "mime": "text/markdown"
                 }
               ]
@@ -367,23 +367,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY14-RESPIRATION_IN_PLANTS-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY14-RESPIRATION_IN_PLANTS/BIOLOGY14-RESPIRATION_IN_PLANTS-CNOTES.md",
-                  "sha": "0d46b17d8838c1236409f919fb2678d07dfaa40e",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY14-RESPIRATION_IN_PLANTS-GLOSSARY.md",
+                  "name": "📒 BIOLOGY14-RESPIRATION_IN_PLANTS-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY14-RESPIRATION_IN_PLANTS/BIOLOGY14-RESPIRATION_IN_PLANTS-GLOSSARY.md",
                   "sha": "4ce3063ebd737fbce11efcc5bfe7af3a2c70148f",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY14-RESPIRATION_IN_PLANTS-NOTES.md",
+                  "name": "📓 BIOLOGY14-RESPIRATION_IN_PLANTS-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY14-RESPIRATION_IN_PLANTS/BIOLOGY14-RESPIRATION_IN_PLANTS-NOTES.md",
                   "sha": "e422162d162c8dd6c83391a2eb8a727b4b3ff99e",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY14-RESPIRATION_IN_PLANTS-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY14-RESPIRATION_IN_PLANTS/BIOLOGY14-RESPIRATION_IN_PLANTS-CNOTES.md",
+                  "sha": "0d46b17d8838c1236409f919fb2678d07dfaa40e",
                   "mime": "text/markdown"
                 }
               ]
@@ -394,23 +394,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT/BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT-CNOTES.md",
-                  "sha": "fc990d1cd8261435f15b34b91e0238593cf72318",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT-GLOSSARY.md",
+                  "name": "📒 BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT/BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT-GLOSSARY.md",
                   "sha": "4363219307d54252dd2c0112575859306bc963e1",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT-NOTES.md",
+                  "name": "📓 BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT/BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT-NOTES.md",
                   "sha": "5e9c27540a32c6f890c83e4454a7113730ad4d47",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT/BIOLOGY15-PLANT_GROWTH_AND_DEVELOPMENT-CNOTES.md",
+                  "sha": "fc990d1cd8261435f15b34b91e0238593cf72318",
                   "mime": "text/markdown"
                 }
               ]
@@ -421,23 +421,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY16-DIGESTION_AND_ABSORPTION-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY16-DIGESTION_AND_ABSORPTION/BIOLOGY16-DIGESTION_AND_ABSORPTION-CNOTES.md",
-                  "sha": "240c0ff7c3f89bc4a01b0b703a98a95e5ea4dea7",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY16-DIGESTION_AND_ABSORPTION-GLOSSARY.md",
+                  "name": "📒 BIOLOGY16-DIGESTION_AND_ABSORPTION-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY16-DIGESTION_AND_ABSORPTION/BIOLOGY16-DIGESTION_AND_ABSORPTION-GLOSSARY.md",
                   "sha": "4123916ebefad14db657ac141dcaf1b46d4a8a26",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY16-DIGESTION_AND_ABSORPTION-NOTES.md",
+                  "name": "📓 BIOLOGY16-DIGESTION_AND_ABSORPTION-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY16-DIGESTION_AND_ABSORPTION/BIOLOGY16-DIGESTION_AND_ABSORPTION-NOTES.md",
                   "sha": "1aabcd8d5e5cba946e5515b8c7c867bd8af4557e",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY16-DIGESTION_AND_ABSORPTION-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY16-DIGESTION_AND_ABSORPTION/BIOLOGY16-DIGESTION_AND_ABSORPTION-CNOTES.md",
+                  "sha": "240c0ff7c3f89bc4a01b0b703a98a95e5ea4dea7",
                   "mime": "text/markdown"
                 }
               ]
@@ -448,23 +448,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES/BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES-CNOTES.md",
-                  "sha": "e7b95ea7295c02df109ade70585989b3dc5335f4",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES-GLOSSARY.md",
+                  "name": "📒 BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES/BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES-GLOSSARY.md",
                   "sha": "19f7ab14861dab738e0f86909b49330eabd1f8db",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES-NOTES.md",
+                  "name": "📓 BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES/BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES-NOTES.md",
                   "sha": "403207c7748badd339978d3b4c0f232b72d1b29a",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES/BIOLOGY17-BREATHING_AND_EXCHANGE_OF_GASES-CNOTES.md",
+                  "sha": "e7b95ea7295c02df109ade70585989b3dc5335f4",
                   "mime": "text/markdown"
                 }
               ]
@@ -475,23 +475,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION/BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION-CNOTES.md",
-                  "sha": "7012fe767ce2332b0933773440709982a2e97b60",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION-GLOSSARY.md",
+                  "name": "📒 BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION/BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION-GLOSSARY.md",
                   "sha": "7f4a597823dcb3a2390228bccedbe0c10e78c8e3",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION-NOTES.md",
+                  "name": "📓 BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION/BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION-NOTES.md",
                   "sha": "5450776f67ab3ce75a8fe3135d9d7de684c2f966",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION/BIOLOGY18-BODY_FLUIDS_AND_CIRCULATION-CNOTES.md",
+                  "sha": "7012fe767ce2332b0933773440709982a2e97b60",
                   "mime": "text/markdown"
                 }
               ]
@@ -502,23 +502,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION-CNOTES.md",
-                  "path": "AI-NOTES/BIOLOGY/BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION/BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION-CNOTES.md",
-                  "sha": "84a14933af6e959253618577e2b7d6e07cebb04e",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION-GLOSSARY.md",
+                  "name": "📒 BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION-GLOSSARY.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION/BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION-GLOSSARY.md",
                   "sha": "06c3138e2eea1b8886a9797009544b8ee66c9581",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION-NOTES.md",
+                  "name": "📓 BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION-NOTES.md",
                   "path": "AI-NOTES/BIOLOGY/BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION/BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION-NOTES.md",
                   "sha": "e40bde12ee48a1309dab09d0515d92b743b004fc",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION-CNOTES.md",
+                  "path": "AI-NOTES/BIOLOGY/BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION/BIOLOGY19-EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION-CNOTES.md",
+                  "sha": "84a14933af6e959253618577e2b7d6e07cebb04e",
                   "mime": "text/markdown"
                 }
               ]
@@ -535,23 +535,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY-CNOTES.md",
-                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY/CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY-CNOTES.md",
-                  "sha": "73adae15c987e71baf3dc4a2011a03e5ebe6a51c",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY-GLOSSARY.md",
+                  "name": "📒 CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY-GLOSSARY.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY/CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY-GLOSSARY.md",
                   "sha": "1c06475d367f9283cfe8589d98fd640379c0894e",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY-NOTES.md",
+                  "name": "📓 CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY/CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY-NOTES.md",
                   "sha": "0ce63a0da1d8caf73fbd04bcc315774c1d399a8d",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY-CNOTES.md",
+                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY/CHEMISTRY01-SOME_BASIC_CONCEPTS_OF_CHEMISTRY-CNOTES.md",
+                  "sha": "73adae15c987e71baf3dc4a2011a03e5ebe6a51c",
                   "mime": "text/markdown"
                 }
               ]
@@ -562,23 +562,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CHEMISTRY02-STRUCTURE_OF_ATOM-CNOTES.md",
-                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY02-STRUCTURE_OF_ATOM/CHEMISTRY02-STRUCTURE_OF_ATOM-CNOTES.md",
-                  "sha": "d605346ee9686d6be99f161c12a35eecb7abdad4",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CHEMISTRY02-STRUCTURE_OF_ATOM-GLOSSARY.md",
+                  "name": "📒 CHEMISTRY02-STRUCTURE_OF_ATOM-GLOSSARY.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY02-STRUCTURE_OF_ATOM/CHEMISTRY02-STRUCTURE_OF_ATOM-GLOSSARY.md",
                   "sha": "77ea1a81728e0d9451a5fb22942c528c8e3657f2",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CHEMISTRY02-STRUCTURE_OF_ATOM-NOTES.md",
+                  "name": "📓 CHEMISTRY02-STRUCTURE_OF_ATOM-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY02-STRUCTURE_OF_ATOM/CHEMISTRY02-STRUCTURE_OF_ATOM-NOTES.md",
                   "sha": "4506207e66d3419e5d5452c5d1f98efb481e72dc",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CHEMISTRY02-STRUCTURE_OF_ATOM-CNOTES.md",
+                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY02-STRUCTURE_OF_ATOM/CHEMISTRY02-STRUCTURE_OF_ATOM-CNOTES.md",
+                  "sha": "d605346ee9686d6be99f161c12a35eecb7abdad4",
                   "mime": "text/markdown"
                 }
               ]
@@ -589,23 +589,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-CNOTES.md",
-                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY/CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-CNOTES.md",
-                  "sha": "4e7e0e59cde3296183b4bc962cc7c4022f614ecd",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-GLOSSARY.md",
+                  "name": "📒 CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-GLOSSARY.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY/CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-GLOSSARY.md",
                   "sha": "c6b4512b0eedd3a588e965394e9eb98f4eb45e68",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-NOTES.md",
+                  "name": "📓 CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY/CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-NOTES.md",
                   "sha": "54a66b7300a6145b469f340d74097b802fbd738d",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-CNOTES.md",
+                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY/CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-CNOTES.md",
+                  "sha": "4e7e0e59cde3296183b4bc962cc7c4022f614ecd",
                   "mime": "text/markdown"
                 }
               ]
@@ -616,23 +616,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE-CNOTES.md",
-                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE/CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE-CNOTES.md",
-                  "sha": "f602b16c05b4a3b9486c5c91585cd5502097aee9",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE-GLOSSARY.md",
+                  "name": "📒 CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE-GLOSSARY.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE/CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE-GLOSSARY.md",
                   "sha": "ccce6bb977711aeb7d28b531bb5c911ed72c8672",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE-NOTES.md",
+                  "name": "📓 CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE/CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE-NOTES.md",
                   "sha": "8c7cb6100d17600d66de61fea73330be5d677a1c",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE-CNOTES.md",
+                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE/CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE-CNOTES.md",
+                  "sha": "f602b16c05b4a3b9486c5c91585cd5502097aee9",
                   "mime": "text/markdown"
                 }
               ]
@@ -643,23 +643,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CHEMISTRY05-THERMODYNAMICS-CNOTES.md",
-                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY05-THERMODYNAMICS/CHEMISTRY05-THERMODYNAMICS-CNOTES.md",
-                  "sha": "c863cc1593e2700070c14a18987f821e55db1bc6",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CHEMISTRY05-THERMODYNAMICS-GLOSSARY.md",
+                  "name": "📒 CHEMISTRY05-THERMODYNAMICS-GLOSSARY.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY05-THERMODYNAMICS/CHEMISTRY05-THERMODYNAMICS-GLOSSARY.md",
                   "sha": "bb6053a8171d2674f9df42b542cd64532b9760f1",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CHEMISTRY05-THERMODYNAMICS-NOTES.md",
+                  "name": "📓 CHEMISTRY05-THERMODYNAMICS-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY05-THERMODYNAMICS/CHEMISTRY05-THERMODYNAMICS-NOTES.md",
                   "sha": "a837e3f8557d30c8127ec77264d45cdcb37ca2f5",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CHEMISTRY05-THERMODYNAMICS-CNOTES.md",
+                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY05-THERMODYNAMICS/CHEMISTRY05-THERMODYNAMICS-CNOTES.md",
+                  "sha": "c863cc1593e2700070c14a18987f821e55db1bc6",
                   "mime": "text/markdown"
                 }
               ]
@@ -670,23 +670,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CHEMISTRY06-EQUILIBRIUM-CNOTES.md",
-                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY06-EQUILIBRIUM/CHEMISTRY06-EQUILIBRIUM-CNOTES.md",
-                  "sha": "b1f279bc33cd1a73f3d78ccf46a8c8580e6a9f7e",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CHEMISTRY06-EQUILIBRIUM-GLOSSARY.md",
+                  "name": "📒 CHEMISTRY06-EQUILIBRIUM-GLOSSARY.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY06-EQUILIBRIUM/CHEMISTRY06-EQUILIBRIUM-GLOSSARY.md",
                   "sha": "d70606b4ffbe83a865a14aadd067282d5b345d9d",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CHEMISTRY06-EQUILIBRIUM-NOTES.md",
+                  "name": "📓 CHEMISTRY06-EQUILIBRIUM-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY06-EQUILIBRIUM/CHEMISTRY06-EQUILIBRIUM-NOTES.md",
                   "sha": "3498d1688fdc3c05d8cb341c6b8fe395288ff7fe",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CHEMISTRY06-EQUILIBRIUM-CNOTES.md",
+                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY06-EQUILIBRIUM/CHEMISTRY06-EQUILIBRIUM-CNOTES.md",
+                  "sha": "b1f279bc33cd1a73f3d78ccf46a8c8580e6a9f7e",
                   "mime": "text/markdown"
                 }
               ]
@@ -697,23 +697,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CHEMISTRY07-REDOX_REACTIONS-CNOTES.md",
-                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY07-REDOX_REACTIONS/CHEMISTRY07-REDOX_REACTIONS-CNOTES.md",
-                  "sha": "be0762d4ad7621926a2cbafd723fc3eb3d9be76f",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CHEMISTRY07-REDOX_REACTIONS-GLOSSARY.md",
+                  "name": "📒 CHEMISTRY07-REDOX_REACTIONS-GLOSSARY.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY07-REDOX_REACTIONS/CHEMISTRY07-REDOX_REACTIONS-GLOSSARY.md",
                   "sha": "ee3d423a37d9e668430c78078fda9dbe4427344a",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CHEMISTRY07-REDOX_REACTIONS-NOTES.md",
+                  "name": "📓 CHEMISTRY07-REDOX_REACTIONS-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY07-REDOX_REACTIONS/CHEMISTRY07-REDOX_REACTIONS-NOTES.md",
                   "sha": "272563c49835fbbd790599ac1d4dd3e95c3c095a",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CHEMISTRY07-REDOX_REACTIONS-CNOTES.md",
+                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY07-REDOX_REACTIONS/CHEMISTRY07-REDOX_REACTIONS-CNOTES.md",
+                  "sha": "be0762d4ad7621926a2cbafd723fc3eb3d9be76f",
                   "mime": "text/markdown"
                 }
               ]
@@ -724,23 +724,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES-CNOTES.md",
-                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES/CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES-CNOTES.md",
-                  "sha": "5e4fc286a143afaa212ed2992d9a9adf24a8d205",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES-GLOSSARY.md",
+                  "name": "📒 CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES-GLOSSARY.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES/CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES-GLOSSARY.md",
                   "sha": "3f091faaa59c4f1a8f781113f9aa726c28482d89",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES-NOTES.md",
+                  "name": "📓 CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES/CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES-NOTES.md",
                   "sha": "013ba42fb65b19bd777eab276a2678195ee26705",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES-CNOTES.md",
+                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES/CHEMISTRY08-ORGANIC_CHEMISTRY_BASIC_PRINCIPLES_AND_TECHNIQUES-CNOTES.md",
+                  "sha": "5e4fc286a143afaa212ed2992d9a9adf24a8d205",
                   "mime": "text/markdown"
                 }
               ]
@@ -751,23 +751,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CHEMISTRY09-HYDROCARBONS-CNOTES.md",
-                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY09-HYDROCARBONS/CHEMISTRY09-HYDROCARBONS-CNOTES.md",
-                  "sha": "9de95d080c78e8ea5a6a7584faa98f10a7b653be",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CHEMISTRY09-HYDROCARBONS-GLOSSARY.md",
+                  "name": "📒 CHEMISTRY09-HYDROCARBONS-GLOSSARY.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY09-HYDROCARBONS/CHEMISTRY09-HYDROCARBONS-GLOSSARY.md",
                   "sha": "8d7edbfbb08e55198c0e1f4b359dbd96d4e5baa8",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CHEMISTRY09-HYDROCARBONS-NOTES.md",
+                  "name": "📓 CHEMISTRY09-HYDROCARBONS-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY09-HYDROCARBONS/CHEMISTRY09-HYDROCARBONS-NOTES.md",
                   "sha": "45757611abca106c3d257986c845704cd987a83d",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CHEMISTRY09-HYDROCARBONS-CNOTES.md",
+                  "path": "AI-NOTES/CHEMISTRY/CHEMISTRY09-HYDROCARBONS/CHEMISTRY09-HYDROCARBONS-CNOTES.md",
+                  "sha": "9de95d080c78e8ea5a6a7584faa98f10a7b653be",
                   "mime": "text/markdown"
                 }
               ]
@@ -784,23 +784,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CS01-COMPUTER_SYSTEM_AND_ORGANISATION-CNOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM_AND_ORGANISATION/CS01-COMPUTER_SYSTEM_AND_ORGANISATION-CNOTES.md",
-                  "sha": "0da4cc50779557d4ec0a72694f282beab607704e",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS01-COMPUTER_SYSTEM_AND_ORGANISATION-GLOSSARY.md",
+                  "name": "📒 CS01-COMPUTER_SYSTEM_AND_ORGANISATION-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM_AND_ORGANISATION/CS01-COMPUTER_SYSTEM_AND_ORGANISATION-GLOSSARY.md",
                   "sha": "ddc5bd90ec9aa0c17568d51edcd27418c2357a9e",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS01-COMPUTER_SYSTEM_AND_ORGANISATION-NOTES.md",
+                  "name": "📓 CS01-COMPUTER_SYSTEM_AND_ORGANISATION-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM_AND_ORGANISATION/CS01-COMPUTER_SYSTEM_AND_ORGANISATION-NOTES.md",
                   "sha": "7b3f8be5242d516c9ef6a3c6ef0b9bd99c5b768f",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CS01-COMPUTER_SYSTEM_AND_ORGANISATION-CNOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS01-COMPUTER_SYSTEM_AND_ORGANISATION/CS01-COMPUTER_SYSTEM_AND_ORGANISATION-CNOTES.md",
+                  "sha": "0da4cc50779557d4ec0a72694f282beab607704e",
                   "mime": "text/markdown"
                 }
               ]
@@ -811,23 +811,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-CNOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-CNOTES.md",
-                  "sha": "a1a3aa6bd2460f01c3ec9f1aa31f361012c253b7",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-GLOSSARY.md",
+                  "name": "📒 CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-GLOSSARY.md",
                   "sha": "933b6abc4dab9e8f45e856217edc3994ea526c5c",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-NOTES.md",
+                  "name": "📓 CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-NOTES.md",
                   "sha": "e3df58e87412bf6b410741930cbf5b51fdac35c3",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-CNOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC/CS02-DATA_REPRESENTATION_AND_BOOLEAN_LOGIC-CNOTES.md",
+                  "sha": "a1a3aa6bd2460f01c3ec9f1aa31f361012c253b7",
                   "mime": "text/markdown"
                 }
               ]
@@ -838,23 +838,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CS03-GETTING_STARTED_WITH_PYTHON-CNOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-GETTING_STARTED_WITH_PYTHON/CS03-GETTING_STARTED_WITH_PYTHON-CNOTES.md",
-                  "sha": "89b097b6b68b3323ce5aec7feed42c180701836e",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS03-GETTING_STARTED_WITH_PYTHON-GLOSSARY.md",
+                  "name": "📒 CS03-GETTING_STARTED_WITH_PYTHON-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-GETTING_STARTED_WITH_PYTHON/CS03-GETTING_STARTED_WITH_PYTHON-GLOSSARY.md",
                   "sha": "7a26bb16913761caf211d6fc707224c5ddee22fe",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS03-GETTING_STARTED_WITH_PYTHON-NOTES.md",
+                  "name": "📓 CS03-GETTING_STARTED_WITH_PYTHON-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-GETTING_STARTED_WITH_PYTHON/CS03-GETTING_STARTED_WITH_PYTHON-NOTES.md",
                   "sha": "52660ee886d0fba035d2b47ddcdcb20088e02006",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CS03-GETTING_STARTED_WITH_PYTHON-CNOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS03-GETTING_STARTED_WITH_PYTHON/CS03-GETTING_STARTED_WITH_PYTHON-CNOTES.md",
+                  "sha": "89b097b6b68b3323ce5aec7feed42c180701836e",
                   "mime": "text/markdown"
                 }
               ]
@@ -865,23 +865,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-CNOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-CNOTES.md",
-                  "sha": "a480e98b748b9e22641e7906e0678ba06bf5d571",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-GLOSSARY.md",
+                  "name": "📒 CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-GLOSSARY.md",
                   "sha": "b3749d6242cbe1656cceb03558969df408e75fcf",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-NOTES.md",
+                  "name": "📓 CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-NOTES.md",
                   "sha": "a48628a42104ad9c1779fe40f619b0712492f201",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-CNOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS/CS04-PYTHON_PROGRAMMING_FUNDAMENTALS-CNOTES.md",
+                  "sha": "a480e98b748b9e22641e7906e0678ba06bf5d571",
                   "mime": "text/markdown"
                 }
               ]
@@ -892,23 +892,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-CNOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-CNOTES.md",
-                  "sha": "6284104ee9cc0a8f6a7a467ab995d7f07d6eb5d0",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-GLOSSARY.md",
+                  "name": "📒 CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-GLOSSARY.md",
                   "sha": "8af3cb1f9381f20bdf2510e55d45426bb0abc69b",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-NOTES.md",
+                  "name": "📓 CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-NOTES.md",
                   "sha": "ef14016c3ad51f2a70d9803d89a9d3287898790d",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-CNOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS/CS05-CONDITIONAL_AND_LOOPING_CONSTRUCTS-CNOTES.md",
+                  "sha": "6284104ee9cc0a8f6a7a467ab995d7f07d6eb5d0",
                   "mime": "text/markdown"
                 }
               ]
@@ -919,23 +919,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CS06-STRINGS_IN_PYTHON-CNOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-STRINGS_IN_PYTHON/CS06-STRINGS_IN_PYTHON-CNOTES.md",
-                  "sha": "9d875fe931c6834f6f20fa4b7dadd204239f26a9",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS06-STRINGS_IN_PYTHON-GLOSSARY.md",
+                  "name": "📒 CS06-STRINGS_IN_PYTHON-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-STRINGS_IN_PYTHON/CS06-STRINGS_IN_PYTHON-GLOSSARY.md",
                   "sha": "a96a7deeb0fb4cfbec9e9ee4094f9781f571d3ad",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS06-STRINGS_IN_PYTHON-NOTES.md",
+                  "name": "📓 CS06-STRINGS_IN_PYTHON-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-STRINGS_IN_PYTHON/CS06-STRINGS_IN_PYTHON-NOTES.md",
                   "sha": "772a2cda6bd34bfcb30f87d3c39bbb10347ccce9",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CS06-STRINGS_IN_PYTHON-CNOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS06-STRINGS_IN_PYTHON/CS06-STRINGS_IN_PYTHON-CNOTES.md",
+                  "sha": "9d875fe931c6834f6f20fa4b7dadd204239f26a9",
                   "mime": "text/markdown"
                 }
               ]
@@ -946,23 +946,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CS07-LISTS_IN_PYTHON-CNOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-LISTS_IN_PYTHON/CS07-LISTS_IN_PYTHON-CNOTES.md",
-                  "sha": "e825a623e6900c26895d3b78c4febef3bf32f92a",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS07-LISTS_IN_PYTHON-GLOSSARY.md",
+                  "name": "📒 CS07-LISTS_IN_PYTHON-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-LISTS_IN_PYTHON/CS07-LISTS_IN_PYTHON-GLOSSARY.md",
                   "sha": "e22ea7935fccf7e0f2058fda6a8096b3c2cc6c5b",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS07-LISTS_IN_PYTHON-NOTES.md",
+                  "name": "📓 CS07-LISTS_IN_PYTHON-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-LISTS_IN_PYTHON/CS07-LISTS_IN_PYTHON-NOTES.md",
                   "sha": "8432e56d1dac32847674e206a4de323cfe816b39",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CS07-LISTS_IN_PYTHON-CNOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS07-LISTS_IN_PYTHON/CS07-LISTS_IN_PYTHON-CNOTES.md",
+                  "sha": "e825a623e6900c26895d3b78c4febef3bf32f92a",
                   "mime": "text/markdown"
                 }
               ]
@@ -973,23 +973,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CS08-TUPLES_AND_DICTIONARY-CNOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-TUPLES_AND_DICTIONARY/CS08-TUPLES_AND_DICTIONARY-CNOTES.md",
-                  "sha": "6487b71c4db19a2a266b39e8c8f6fdec250fbe55",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS08-TUPLES_AND_DICTIONARY-GLOSSARY.md",
+                  "name": "📒 CS08-TUPLES_AND_DICTIONARY-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-TUPLES_AND_DICTIONARY/CS08-TUPLES_AND_DICTIONARY-GLOSSARY.md",
                   "sha": "e8574d8da4aef4b3532eb7a8ac617adce8c4f949",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS08-TUPLES_AND_DICTIONARY-NOTES.md",
+                  "name": "📓 CS08-TUPLES_AND_DICTIONARY-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-TUPLES_AND_DICTIONARY/CS08-TUPLES_AND_DICTIONARY-NOTES.md",
                   "sha": "b9441e571071d549c9120a37cf17fc5a09c60a49",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CS08-TUPLES_AND_DICTIONARY-CNOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-TUPLES_AND_DICTIONARY/CS08-TUPLES_AND_DICTIONARY-CNOTES.md",
+                  "sha": "6487b71c4db19a2a266b39e8c8f6fdec250fbe55",
                   "mime": "text/markdown"
                 }
               ]
@@ -1000,23 +1000,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CS09-INTRODUCTION_TO_PYTHON_MODULES-CNOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-INTRODUCTION_TO_PYTHON_MODULES/CS09-INTRODUCTION_TO_PYTHON_MODULES-CNOTES.md",
-                  "sha": "abdd9673ff015554badb2a71f6d7ce9ef6ace096",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS09-INTRODUCTION_TO_PYTHON_MODULES-GLOSSARY.md",
+                  "name": "📒 CS09-INTRODUCTION_TO_PYTHON_MODULES-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-INTRODUCTION_TO_PYTHON_MODULES/CS09-INTRODUCTION_TO_PYTHON_MODULES-GLOSSARY.md",
                   "sha": "865cbdd379449940e83832087a91415e50f358be",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS09-INTRODUCTION_TO_PYTHON_MODULES-NOTES.md",
+                  "name": "📓 CS09-INTRODUCTION_TO_PYTHON_MODULES-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-INTRODUCTION_TO_PYTHON_MODULES/CS09-INTRODUCTION_TO_PYTHON_MODULES-NOTES.md",
                   "sha": "a9b0db50750bdd66d9f572e59e6404380569fc20",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CS09-INTRODUCTION_TO_PYTHON_MODULES-CNOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS09-INTRODUCTION_TO_PYTHON_MODULES/CS09-INTRODUCTION_TO_PYTHON_MODULES-CNOTES.md",
+                  "sha": "abdd9673ff015554badb2a71f6d7ce9ef6ace096",
                   "mime": "text/markdown"
                 }
               ]
@@ -1027,23 +1027,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CS10-SOCIETY_LAW_AND_ETHICS-CNOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-SOCIETY_LAW_AND_ETHICS/CS10-SOCIETY_LAW_AND_ETHICS-CNOTES.md",
-                  "sha": "c36a6dc91d053ade57c5b2a91c4cb90c4357e545",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CS10-SOCIETY_LAW_AND_ETHICS-GLOSSARY.md",
+                  "name": "📒 CS10-SOCIETY_LAW_AND_ETHICS-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-SOCIETY_LAW_AND_ETHICS/CS10-SOCIETY_LAW_AND_ETHICS-GLOSSARY.md",
                   "sha": "1fa4cefbed3808ff47e91b4c1a07e158f8ddacc3",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CS10-SOCIETY_LAW_AND_ETHICS-NOTES.md",
+                  "name": "📓 CS10-SOCIETY_LAW_AND_ETHICS-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-SOCIETY_LAW_AND_ETHICS/CS10-SOCIETY_LAW_AND_ETHICS-NOTES.md",
                   "sha": "114737367f52e8db7c0c52a1382ab3badf09474a",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CS10-SOCIETY_LAW_AND_ETHICS-CNOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-SOCIETY_LAW_AND_ETHICS/CS10-SOCIETY_LAW_AND_ETHICS-CNOTES.md",
+                  "sha": "c36a6dc91d053ade57c5b2a91c4cb90c4357e545",
                   "mime": "text/markdown"
                 }
               ]
@@ -1054,23 +1054,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "CSEX-EMERGING_TRENDS-CNOTES.md",
-                  "path": "AI-NOTES/COMPUTER-SCIENCE/CSEX-EMERGING_TRENDS/CSEX-EMERGING_TRENDS-CNOTES.md",
-                  "sha": "a6a028f611c560ca6f3e3b84636677f6a30a5e40",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "CSEX-EMERGING_TRENDS-GLOSSARY.md",
+                  "name": "📒 CSEX-EMERGING_TRENDS-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CSEX-EMERGING_TRENDS/CSEX-EMERGING_TRENDS-GLOSSARY.md",
                   "sha": "9fb385332c6d52a34adf72a3315dbb24023c8b90",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "CSEX-EMERGING_TRENDS-NOTES.md",
+                  "name": "📓 CSEX-EMERGING_TRENDS-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CSEX-EMERGING_TRENDS/CSEX-EMERGING_TRENDS-NOTES.md",
                   "sha": "094974830c1ee63631fd096fff4ce46b51e27cdf",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CSEX-EMERGING_TRENDS-CNOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CSEX-EMERGING_TRENDS/CSEX-EMERGING_TRENDS-CNOTES.md",
+                  "sha": "a6a028f611c560ca6f3e3b84636677f6a30a5e40",
                   "mime": "text/markdown"
                 }
               ]
@@ -1087,23 +1087,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS01-SETS-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS01-SETS/MATHEMATICS01-SETS-CNOTES.md",
-                  "sha": "16efbfe2062a48bec9824c29816068592a389276",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS01-SETS-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS01-SETS-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS01-SETS/MATHEMATICS01-SETS-GLOSSARY.md",
                   "sha": "634f9e155000c2c6080df3437e96cd3fb97611db",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS01-SETS-NOTES.md",
+                  "name": "📓 MATHEMATICS01-SETS-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS01-SETS/MATHEMATICS01-SETS-NOTES.md",
                   "sha": "8f55f6cd6f0fcf35f84a785834d9d10e8f6b6429",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS01-SETS-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS01-SETS/MATHEMATICS01-SETS-CNOTES.md",
+                  "sha": "16efbfe2062a48bec9824c29816068592a389276",
                   "mime": "text/markdown"
                 }
               ]
@@ -1114,23 +1114,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS02-RELATIONS_AND_FUNCTIONS-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS-CNOTES.md",
-                  "sha": "b891806db966b72735c80589839fdf6825cbbbda",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS02-RELATIONS_AND_FUNCTIONS-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS02-RELATIONS_AND_FUNCTIONS-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS-GLOSSARY.md",
                   "sha": "c481bcb35794dbc00004afa45f8db051a69fd8cd",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS02-RELATIONS_AND_FUNCTIONS-NOTES.md",
+                  "name": "📓 MATHEMATICS02-RELATIONS_AND_FUNCTIONS-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS-NOTES.md",
                   "sha": "1a2211f7cf6cbcc31909ed0d383de18a11cc1b02",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS02-RELATIONS_AND_FUNCTIONS-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS/MATHEMATICS02-RELATIONS_AND_FUNCTIONS-CNOTES.md",
+                  "sha": "b891806db966b72735c80589839fdf6825cbbbda",
                   "mime": "text/markdown"
                 }
               ]
@@ -1141,23 +1141,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-CNOTES.md",
-                  "sha": "ad440088b744145c396a3a5467bf1ba7f71245a8",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-GLOSSARY.md",
                   "sha": "015c8a7c29b85816fcabe0abd23412d3e034b461",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-NOTES.md",
+                  "name": "📓 MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-NOTES.md",
                   "sha": "26867a2f420fd44c805628d06f79624494d24822",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS/MATHEMATICS03-TRIGONOMETRIC_FUNCTIONS-CNOTES.md",
+                  "sha": "ad440088b744145c396a3a5467bf1ba7f71245a8",
                   "mime": "text/markdown"
                 }
               ]
@@ -1168,23 +1168,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-CNOTES.md",
-                  "sha": "e0e926c5fbf9a19b2066f31492d4a4d3610ba06c",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-GLOSSARY.md",
                   "sha": "1c74355ccf4eb7963d054e6a134914ef5722b9fa",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-NOTES.md",
+                  "name": "📓 MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-NOTES.md",
                   "sha": "98afbdc13b3afd7c658a5cbae9b9ec7cb9c807b1",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS/MATHEMATICS04-COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS-CNOTES.md",
+                  "sha": "e0e926c5fbf9a19b2066f31492d4a4d3610ba06c",
                   "mime": "text/markdown"
                 }
               ]
@@ -1195,23 +1195,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS05-LINEAR_INEQUALITIES-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS05-LINEAR_INEQUALITIES/MATHEMATICS05-LINEAR_INEQUALITIES-CNOTES.md",
-                  "sha": "c010627bc15f08224b5c1c7cc60b63d69105b026",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS05-LINEAR_INEQUALITIES-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS05-LINEAR_INEQUALITIES-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS05-LINEAR_INEQUALITIES/MATHEMATICS05-LINEAR_INEQUALITIES-GLOSSARY.md",
                   "sha": "7cdf131905a0034b2f3bd3b8f4969fe857cde0d7",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS05-LINEAR_INEQUALITIES-NOTES.md",
+                  "name": "📓 MATHEMATICS05-LINEAR_INEQUALITIES-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS05-LINEAR_INEQUALITIES/MATHEMATICS05-LINEAR_INEQUALITIES-NOTES.md",
                   "sha": "8a1e587fca0363cddb75bf4e2c5067ca6dcc051a",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS05-LINEAR_INEQUALITIES-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS05-LINEAR_INEQUALITIES/MATHEMATICS05-LINEAR_INEQUALITIES-CNOTES.md",
+                  "sha": "c010627bc15f08224b5c1c7cc60b63d69105b026",
                   "mime": "text/markdown"
                 }
               ]
@@ -1222,23 +1222,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-CNOTES.md",
-                  "sha": "d188246619836229bb70509b603987c901103630",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-GLOSSARY.md",
                   "sha": "e2b72a4fadcc22d0b4eb4cb63a43404cf35d7c16",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-NOTES.md",
+                  "name": "📓 MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-NOTES.md",
                   "sha": "df4e05c1877d6e8ca0f287fbc563ae49a0b4a2e8",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS/MATHEMATICS06-PERMUTATIONS_AND_COMBINATIONS-CNOTES.md",
+                  "sha": "d188246619836229bb70509b603987c901103630",
                   "mime": "text/markdown"
                 }
               ]
@@ -1249,23 +1249,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS07-BINOMIAL_THEOREM-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS07-BINOMIAL_THEOREM/MATHEMATICS07-BINOMIAL_THEOREM-CNOTES.md",
-                  "sha": "b320bd1ec386c24bf97b036e466fe3c089d29096",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS07-BINOMIAL_THEOREM-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS07-BINOMIAL_THEOREM-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS07-BINOMIAL_THEOREM/MATHEMATICS07-BINOMIAL_THEOREM-GLOSSARY.md",
                   "sha": "b2d40ae831557e0ce82194f5c99d234a46b1ff7f",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS07-BINOMIAL_THEOREM-NOTES.md",
+                  "name": "📓 MATHEMATICS07-BINOMIAL_THEOREM-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS07-BINOMIAL_THEOREM/MATHEMATICS07-BINOMIAL_THEOREM-NOTES.md",
                   "sha": "58ad8166d2bca3a076a1934c894c1a22b8df2cda",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS07-BINOMIAL_THEOREM-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS07-BINOMIAL_THEOREM/MATHEMATICS07-BINOMIAL_THEOREM-CNOTES.md",
+                  "sha": "b320bd1ec386c24bf97b036e466fe3c089d29096",
                   "mime": "text/markdown"
                 }
               ]
@@ -1276,23 +1276,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS08-SEQUENCES_AND_SERIES-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS08-SEQUENCES_AND_SERIES/MATHEMATICS08-SEQUENCES_AND_SERIES-CNOTES.md",
-                  "sha": "09a07d65621da8ad6f1ef47b10cbb8670646276f",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS08-SEQUENCES_AND_SERIES-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS08-SEQUENCES_AND_SERIES-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS08-SEQUENCES_AND_SERIES/MATHEMATICS08-SEQUENCES_AND_SERIES-GLOSSARY.md",
                   "sha": "b5edcaf699559ff447c13f9053499fb29c05b367",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS08-SEQUENCES_AND_SERIES-NOTES.md",
+                  "name": "📓 MATHEMATICS08-SEQUENCES_AND_SERIES-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS08-SEQUENCES_AND_SERIES/MATHEMATICS08-SEQUENCES_AND_SERIES-NOTES.md",
                   "sha": "79e46250d3fecd7df32b83ec08659388251290fc",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS08-SEQUENCES_AND_SERIES-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS08-SEQUENCES_AND_SERIES/MATHEMATICS08-SEQUENCES_AND_SERIES-CNOTES.md",
+                  "sha": "09a07d65621da8ad6f1ef47b10cbb8670646276f",
                   "mime": "text/markdown"
                 }
               ]
@@ -1303,23 +1303,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS09-STRAIGHT_LINES-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS09-STRAIGHT_LINES/MATHEMATICS09-STRAIGHT_LINES-CNOTES.md",
-                  "sha": "e827144403490fc6163960b683a87aadf096bac6",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS09-STRAIGHT_LINES-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS09-STRAIGHT_LINES-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS09-STRAIGHT_LINES/MATHEMATICS09-STRAIGHT_LINES-GLOSSARY.md",
                   "sha": "51397ba43f774fd001fabb7d381f2a414033810d",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS09-STRAIGHT_LINES-NOTES.md",
+                  "name": "📓 MATHEMATICS09-STRAIGHT_LINES-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS09-STRAIGHT_LINES/MATHEMATICS09-STRAIGHT_LINES-NOTES.md",
                   "sha": "acae99abe5110576c9b23e37a4710e7540f9fbd6",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS09-STRAIGHT_LINES-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS09-STRAIGHT_LINES/MATHEMATICS09-STRAIGHT_LINES-CNOTES.md",
+                  "sha": "e827144403490fc6163960b683a87aadf096bac6",
                   "mime": "text/markdown"
                 }
               ]
@@ -1330,23 +1330,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS10-CONIC_SECTIONS-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS10-CONIC_SECTIONS/MATHEMATICS10-CONIC_SECTIONS-CNOTES.md",
-                  "sha": "41f0f9a47143116b495d2b99aa115213c6119767",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS10-CONIC_SECTIONS-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS10-CONIC_SECTIONS-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS10-CONIC_SECTIONS/MATHEMATICS10-CONIC_SECTIONS-GLOSSARY.md",
                   "sha": "3518f419f80586ae1a878b8f130473c4f4e00d70",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS10-CONIC_SECTIONS-NOTES.md",
+                  "name": "📓 MATHEMATICS10-CONIC_SECTIONS-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS10-CONIC_SECTIONS/MATHEMATICS10-CONIC_SECTIONS-NOTES.md",
                   "sha": "8e7625f08db7e011263ee73a8bd7f9187e6f725f",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS10-CONIC_SECTIONS-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS10-CONIC_SECTIONS/MATHEMATICS10-CONIC_SECTIONS-CNOTES.md",
+                  "sha": "41f0f9a47143116b495d2b99aa115213c6119767",
                   "mime": "text/markdown"
                 }
               ]
@@ -1357,23 +1357,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-CNOTES.md",
-                  "sha": "13dda05c43254f4d07843c7f4399ec7d6ebdf168",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-GLOSSARY.md",
                   "sha": "8cd13a6ddf9040cda45cf4bfe8b397be41693bbe",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-NOTES.md",
+                  "name": "📓 MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-NOTES.md",
                   "sha": "09db9e783ef932d53d3ed2d85eb694b634d154a2",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY/MATHEMATICS11-INTRODUCTION_TO_3D_GEOMETRY-CNOTES.md",
+                  "sha": "13dda05c43254f4d07843c7f4399ec7d6ebdf168",
                   "mime": "text/markdown"
                 }
               ]
@@ -1384,23 +1384,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS12-LIMITS_AND_DERIVATIVES-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS12-LIMITS_AND_DERIVATIVES/MATHEMATICS12-LIMITS_AND_DERIVATIVES-CNOTES.md",
-                  "sha": "5f327d1159080ad2a62f0b523265fdd6b46be8c0",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS12-LIMITS_AND_DERIVATIVES-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS12-LIMITS_AND_DERIVATIVES-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS12-LIMITS_AND_DERIVATIVES/MATHEMATICS12-LIMITS_AND_DERIVATIVES-GLOSSARY.md",
                   "sha": "cb5b716d2ba87387e09d7fdef915b7c8dba4fe47",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS12-LIMITS_AND_DERIVATIVES-NOTES.md",
+                  "name": "📓 MATHEMATICS12-LIMITS_AND_DERIVATIVES-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS12-LIMITS_AND_DERIVATIVES/MATHEMATICS12-LIMITS_AND_DERIVATIVES-NOTES.md",
                   "sha": "e89a53db444e2ee31b281388edb61b28159f740f",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS12-LIMITS_AND_DERIVATIVES-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS12-LIMITS_AND_DERIVATIVES/MATHEMATICS12-LIMITS_AND_DERIVATIVES-CNOTES.md",
+                  "sha": "5f327d1159080ad2a62f0b523265fdd6b46be8c0",
                   "mime": "text/markdown"
                 }
               ]
@@ -1411,23 +1411,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS13-STATISTICS-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS13-STATISTICS/MATHEMATICS13-STATISTICS-CNOTES.md",
-                  "sha": "2333d11f14eef4af79974190524d264eecdec710",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS13-STATISTICS-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS13-STATISTICS-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS13-STATISTICS/MATHEMATICS13-STATISTICS-GLOSSARY.md",
                   "sha": "15802420eb39e7a8411a52803fe991c33b82a11d",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS13-STATISTICS-NOTES.md",
+                  "name": "📓 MATHEMATICS13-STATISTICS-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS13-STATISTICS/MATHEMATICS13-STATISTICS-NOTES.md",
                   "sha": "9b40b8bd328801a616000c8393b5e8d2afeb512e",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS13-STATISTICS-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS13-STATISTICS/MATHEMATICS13-STATISTICS-CNOTES.md",
+                  "sha": "2333d11f14eef4af79974190524d264eecdec710",
                   "mime": "text/markdown"
                 }
               ]
@@ -1438,23 +1438,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICS14-PROBABILITY-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS14-PROBABILITY/MATHEMATICS14-PROBABILITY-CNOTES.md",
-                  "sha": "d8905030479f1a846cc33e41c210f63a5ee05f78",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICS14-PROBABILITY-GLOSSARY.md",
+                  "name": "📒 MATHEMATICS14-PROBABILITY-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS14-PROBABILITY/MATHEMATICS14-PROBABILITY-GLOSSARY.md",
                   "sha": "889dba038aa86fb141f973c84f1b980671a7048e",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICS14-PROBABILITY-NOTES.md",
+                  "name": "📓 MATHEMATICS14-PROBABILITY-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS14-PROBABILITY/MATHEMATICS14-PROBABILITY-NOTES.md",
                   "sha": "c24c6a3b17b467754d010c411768c88e4d5bb235",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICS14-PROBABILITY-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICS14-PROBABILITY/MATHEMATICS14-PROBABILITY-CNOTES.md",
+                  "sha": "d8905030479f1a846cc33e41c210f63a5ee05f78",
                   "mime": "text/markdown"
                 }
               ]
@@ -1465,23 +1465,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "MATHEMATICSEX-MATHEMATICAL_INDUCTION-CNOTES.md",
-                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICSEX-MATHEMATICAL_INDUCTION/MATHEMATICSEX-MATHEMATICAL_INDUCTION-CNOTES.md",
-                  "sha": "c0e14bd57122311b1870ed2bab7f87626ca13e22",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "MATHEMATICSEX-MATHEMATICAL_INDUCTION-GLOSSARY.md",
+                  "name": "📒 MATHEMATICSEX-MATHEMATICAL_INDUCTION-GLOSSARY.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICSEX-MATHEMATICAL_INDUCTION/MATHEMATICSEX-MATHEMATICAL_INDUCTION-GLOSSARY.md",
                   "sha": "6082845b5242b4fba53138f10adc1081f293c66a",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "MATHEMATICSEX-MATHEMATICAL_INDUCTION-NOTES.md",
+                  "name": "📓 MATHEMATICSEX-MATHEMATICAL_INDUCTION-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICSEX-MATHEMATICAL_INDUCTION/MATHEMATICSEX-MATHEMATICAL_INDUCTION-NOTES.md",
                   "sha": "cb068bf7bac19fd2ce9e370857beb1a5e800b993",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 MATHEMATICSEX-MATHEMATICAL_INDUCTION-CNOTES.md",
+                  "path": "AI-NOTES/MATHEMATICS/MATHEMATICSEX-MATHEMATICAL_INDUCTION/MATHEMATICSEX-MATHEMATICAL_INDUCTION-CNOTES.md",
+                  "sha": "c0e14bd57122311b1870ed2bab7f87626ca13e22",
                   "mime": "text/markdown"
                 }
               ]
@@ -1503,23 +1503,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS01-UNITS_AND_MEASUREMENTS-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS01-UNITS_AND_MEASUREMENTS/PHYSICS01-UNITS_AND_MEASUREMENTS-CNOTES.md",
-                  "sha": "8c04fdd7ce00587aee0d74a7496027e8969b857a",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS01-UNITS_AND_MEASUREMENTS-GLOSSARY.md",
+                  "name": "📒 PHYSICS01-UNITS_AND_MEASUREMENTS-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS01-UNITS_AND_MEASUREMENTS/PHYSICS01-UNITS_AND_MEASUREMENTS-GLOSSARY.md",
                   "sha": "2b73eb34d9c8e8e6f53b2e858ccaad4aa584f73e",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS01-UNITS_AND_MEASUREMENTS-NOTES.md",
+                  "name": "📓 PHYSICS01-UNITS_AND_MEASUREMENTS-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS01-UNITS_AND_MEASUREMENTS/PHYSICS01-UNITS_AND_MEASUREMENTS-NOTES.md",
                   "sha": "c810d671b0d1629bd566d5d47017fc97621b34d8",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS01-UNITS_AND_MEASUREMENTS-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS01-UNITS_AND_MEASUREMENTS/PHYSICS01-UNITS_AND_MEASUREMENTS-CNOTES.md",
+                  "sha": "8c04fdd7ce00587aee0d74a7496027e8969b857a",
                   "mime": "text/markdown"
                 }
               ]
@@ -1530,23 +1530,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-CNOTES.md",
-                  "sha": "c678b73de6c1c8945a0877be3807b6cb17dcb273",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-GLOSSARY.md",
+                  "name": "📒 PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-GLOSSARY.md",
                   "sha": "da9e23ccf48b737d33228435dc4d765bcb2d39a3",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-NOTES.md",
+                  "name": "📓 PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-NOTES.md",
                   "sha": "7ff3dcc4a699495b103c1c081ba5c0b55540110b",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-CNOTES.md",
+                  "sha": "c678b73de6c1c8945a0877be3807b6cb17dcb273",
                   "mime": "text/markdown"
                 }
               ]
@@ -1557,23 +1557,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS03-MOTION_IN_A_PLANE-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS03-MOTION_IN_A_PLANE/PHYSICS03-MOTION_IN_A_PLANE-CNOTES.md",
-                  "sha": "52faf184956bb83dc1812c605eba9b4e0fd8b2fd",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS03-MOTION_IN_A_PLANE-GLOSSARY.md",
+                  "name": "📒 PHYSICS03-MOTION_IN_A_PLANE-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS03-MOTION_IN_A_PLANE/PHYSICS03-MOTION_IN_A_PLANE-GLOSSARY.md",
                   "sha": "6a4f8bbb6d92e2c333ddfa60e87cd7a4011bce61",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS03-MOTION_IN_A_PLANE-NOTES.md",
+                  "name": "📓 PHYSICS03-MOTION_IN_A_PLANE-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS03-MOTION_IN_A_PLANE/PHYSICS03-MOTION_IN_A_PLANE-NOTES.md",
                   "sha": "085e71b6464b6f436a911b2b1efe83540bb6e914",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS03-MOTION_IN_A_PLANE-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS03-MOTION_IN_A_PLANE/PHYSICS03-MOTION_IN_A_PLANE-CNOTES.md",
+                  "sha": "52faf184956bb83dc1812c605eba9b4e0fd8b2fd",
                   "mime": "text/markdown"
                 }
               ]
@@ -1584,23 +1584,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS04-LAWS_OF_MOTION-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS04-LAWS_OF_MOTION/PHYSICS04-LAWS_OF_MOTION-CNOTES.md",
-                  "sha": "dcd8fe81735bd430a63370e946ecbb4f8226b2cd",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS04-LAWS_OF_MOTION-GLOSSARY.md",
+                  "name": "📒 PHYSICS04-LAWS_OF_MOTION-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS04-LAWS_OF_MOTION/PHYSICS04-LAWS_OF_MOTION-GLOSSARY.md",
                   "sha": "59b285ac3f29b826f5fd1333dc272b787df39676",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS04-LAWS_OF_MOTION-NOTES.md",
+                  "name": "📓 PHYSICS04-LAWS_OF_MOTION-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS04-LAWS_OF_MOTION/PHYSICS04-LAWS_OF_MOTION-NOTES.md",
                   "sha": "c4172f48b294a7fc4e4cfeb0e4a0e2f9d096fcbc",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS04-LAWS_OF_MOTION-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS04-LAWS_OF_MOTION/PHYSICS04-LAWS_OF_MOTION-CNOTES.md",
+                  "sha": "dcd8fe81735bd430a63370e946ecbb4f8226b2cd",
                   "mime": "text/markdown"
                 }
               ]
@@ -1611,22 +1611,22 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS05-WORK_ENERGY_AND_POWER-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS05-WORK_ENERGY_AND_POWER/PHYSICS05-WORK_ENERGY_AND_POWER-CNOTES.md",
-                  "sha": "cd4074f64fe0d9f948fc146364565703a31f6962",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS05-WORK_ENERGY_AND_POWER-GLOSSARY.md",
+                  "name": "📒 PHYSICS05-WORK_ENERGY_AND_POWER-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS05-WORK_ENERGY_AND_POWER/PHYSICS05-WORK_ENERGY_AND_POWER-GLOSSARY.md",
                   "sha": "4a32069297540237037afd25e05f06cff7cd95cf",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS05-WORK_ENERGY_AND_POWER-NOTES.md",
+                  "name": "📓 PHYSICS05-WORK_ENERGY_AND_POWER-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS05-WORK_ENERGY_AND_POWER/PHYSICS05-WORK_ENERGY_AND_POWER-NOTES.md",
+                  "sha": "cd4074f64fe0d9f948fc146364565703a31f6962",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS05-WORK_ENERGY_AND_POWER-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS05-WORK_ENERGY_AND_POWER/PHYSICS05-WORK_ENERGY_AND_POWER-CNOTES.md",
                   "sha": "cd4074f64fe0d9f948fc146364565703a31f6962",
                   "mime": "text/markdown"
                 }
@@ -1638,23 +1638,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-CNOTES.md",
-                  "sha": "fae00c8e7fbd8c7c299a6f7ff8c5b3f7db4e3137",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-GLOSSARY.md",
+                  "name": "📒 PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-GLOSSARY.md",
                   "sha": "5626cc63b16254b8fe279c484bc661ccc0cf6de0",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-NOTES.md",
+                  "name": "📓 PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-NOTES.md",
                   "sha": "a3bee461864d76fc88f294fc4e22941d845241a0",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-CNOTES.md",
+                  "sha": "fae00c8e7fbd8c7c299a6f7ff8c5b3f7db4e3137",
                   "mime": "text/markdown"
                 }
               ]
@@ -1665,23 +1665,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS07-GRAVITATION-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS07-GRAVITATION/PHYSICS07-GRAVITATION-CNOTES.md",
-                  "sha": "3a451982fb0a3bd88c19234193ccfd50f4da44b2",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS07-GRAVITATION-GLOSSARY.md",
+                  "name": "📒 PHYSICS07-GRAVITATION-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS07-GRAVITATION/PHYSICS07-GRAVITATION-GLOSSARY.md",
                   "sha": "0ead2bd911d6b8ab1442c96c408d902c6ee82798",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS07-GRAVITATION-NOTES.md",
+                  "name": "📓 PHYSICS07-GRAVITATION-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS07-GRAVITATION/PHYSICS07-GRAVITATION-NOTES.md",
                   "sha": "4af21769a55c64aea8861a05eae9ce5b188a5218",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS07-GRAVITATION-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS07-GRAVITATION/PHYSICS07-GRAVITATION-CNOTES.md",
+                  "sha": "3a451982fb0a3bd88c19234193ccfd50f4da44b2",
                   "mime": "text/markdown"
                 }
               ]
@@ -1692,23 +1692,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS/PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS-CNOTES.md",
-                  "sha": "53895789681737f061733c0ac2d5b0b1e3511d85",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS-GLOSSARY.md",
+                  "name": "📒 PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS/PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS-GLOSSARY.md",
                   "sha": "d5991559a55000d34a623712778de1cf6cde7744",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS-NOTES.md",
+                  "name": "📓 PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS/PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS-NOTES.md",
                   "sha": "da487882d6a7c0ef619a93f36969f5d100f8381d",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS/PHYSICS08-MECHANICAL_PROPERTIES_OF_SOLIDS-CNOTES.md",
+                  "sha": "53895789681737f061733c0ac2d5b0b1e3511d85",
                   "mime": "text/markdown"
                 }
               ]
@@ -1719,23 +1719,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS/PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS-CNOTES.md",
-                  "sha": "5ccae60d643635fc3e7f4a5a3ab894c95059ffdc",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS-GLOSSARY.md",
+                  "name": "📒 PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS/PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS-GLOSSARY.md",
                   "sha": "68f05035097996779cb89243604b3e925079658a",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS-NOTES.md",
+                  "name": "📓 PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS/PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS-NOTES.md",
                   "sha": "04c2f423fd5f99de946fea096109424b4adfc352",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS/PHYSICS09-MECHANICAL_PROPERTIES_OF_FLUIDS-CNOTES.md",
+                  "sha": "5ccae60d643635fc3e7f4a5a3ab894c95059ffdc",
                   "mime": "text/markdown"
                 }
               ]
@@ -1746,23 +1746,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS10-THERMAL_PROPERTIES_OF_MATTER-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS10-THERMAL_PROPERTIES_OF_MATTER/PHYSICS10-THERMAL_PROPERTIES_OF_MATTER-CNOTES.md",
-                  "sha": "9ec7c40453ea2fa8eebbf498acfe743407baf8c5",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS10-THERMAL_PROPERTIES_OF_MATTER-GLOSSARY.md",
+                  "name": "📒 PHYSICS10-THERMAL_PROPERTIES_OF_MATTER-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS10-THERMAL_PROPERTIES_OF_MATTER/PHYSICS10-THERMAL_PROPERTIES_OF_MATTER-GLOSSARY.md",
                   "sha": "cd01694d3d115e4d354c12b17ba8c905a39dad48",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS10-THERMAL_PROPERTIES_OF_MATTER-NOTES.md",
+                  "name": "📓 PHYSICS10-THERMAL_PROPERTIES_OF_MATTER-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS10-THERMAL_PROPERTIES_OF_MATTER/PHYSICS10-THERMAL_PROPERTIES_OF_MATTER-NOTES.md",
                   "sha": "0146af2e17082b0a8b8ffd421ee5e56af81cec3c",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS10-THERMAL_PROPERTIES_OF_MATTER-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS10-THERMAL_PROPERTIES_OF_MATTER/PHYSICS10-THERMAL_PROPERTIES_OF_MATTER-CNOTES.md",
+                  "sha": "9ec7c40453ea2fa8eebbf498acfe743407baf8c5",
                   "mime": "text/markdown"
                 }
               ]
@@ -1773,23 +1773,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS11-THERMODYNAMICS-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS11-THERMODYNAMICS/PHYSICS11-THERMODYNAMICS-CNOTES.md",
-                  "sha": "39725e237517d40c440c9247481e0348841ab01a",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS11-THERMODYNAMICS-GLOSSARY.md",
+                  "name": "📒 PHYSICS11-THERMODYNAMICS-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS11-THERMODYNAMICS/PHYSICS11-THERMODYNAMICS-GLOSSARY.md",
                   "sha": "49f73a735066ababacd759bad7822a177c940cde",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS11-THERMODYNAMICS-NOTES.md",
+                  "name": "📓 PHYSICS11-THERMODYNAMICS-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS11-THERMODYNAMICS/PHYSICS11-THERMODYNAMICS-NOTES.md",
                   "sha": "f4a7fea101773dda764a57e876c5938b600a1821",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS11-THERMODYNAMICS-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS11-THERMODYNAMICS/PHYSICS11-THERMODYNAMICS-CNOTES.md",
+                  "sha": "39725e237517d40c440c9247481e0348841ab01a",
                   "mime": "text/markdown"
                 }
               ]
@@ -1800,23 +1800,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS12-KINETIC_THEORY-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS12-KINETIC_THEORY/PHYSICS12-KINETIC_THEORY-CNOTES.md",
-                  "sha": "c739816aedf4788029661d74b3067844622c9fb8",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS12-KINETIC_THEORY-GLOSSARY.md",
+                  "name": "📒 PHYSICS12-KINETIC_THEORY-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS12-KINETIC_THEORY/PHYSICS12-KINETIC_THEORY-GLOSSARY.md",
                   "sha": "9094f500622897e61a3e4542d4a0c95c808c459d",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS12-KINETIC_THEORY-NOTES.md",
+                  "name": "📓 PHYSICS12-KINETIC_THEORY-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS12-KINETIC_THEORY/PHYSICS12-KINETIC_THEORY-NOTES.md",
                   "sha": "45d8dd20a22b86b75419c8f121971c840efc6fb7",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS12-KINETIC_THEORY-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS12-KINETIC_THEORY/PHYSICS12-KINETIC_THEORY-CNOTES.md",
+                  "sha": "c739816aedf4788029661d74b3067844622c9fb8",
                   "mime": "text/markdown"
                 }
               ]
@@ -1827,23 +1827,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS13-OSCILLATIONS-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS13-OSCILLATIONS/PHYSICS13-OSCILLATIONS-CNOTES.md",
-                  "sha": "34ad3e3904788d1cebf7796bfadf7136e6b25f8d",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS13-OSCILLATIONS-GLOSSARY.md",
+                  "name": "📒 PHYSICS13-OSCILLATIONS-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS13-OSCILLATIONS/PHYSICS13-OSCILLATIONS-GLOSSARY.md",
                   "sha": "78b409afcfaefd2dfd203249112c2416f6e0946b",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS13-OSCILLATIONS-NOTES.md",
+                  "name": "📓 PHYSICS13-OSCILLATIONS-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS13-OSCILLATIONS/PHYSICS13-OSCILLATIONS-NOTES.md",
                   "sha": "c8bc4295804b92fe765ef58a23e3107375e35e84",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS13-OSCILLATIONS-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS13-OSCILLATIONS/PHYSICS13-OSCILLATIONS-CNOTES.md",
+                  "sha": "34ad3e3904788d1cebf7796bfadf7136e6b25f8d",
                   "mime": "text/markdown"
                 }
               ]
@@ -1854,23 +1854,23 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "PHYSICS14-WAVES-CNOTES.md",
-                  "path": "AI-NOTES/PHYSICS/PHYSICS14-WAVES/PHYSICS14-WAVES-CNOTES.md",
-                  "sha": "09da6f9b0269cf2bc725101b68d148bc134b137e",
-                  "mime": "text/markdown"
-                },
-                {
-                  "type": "file",
-                  "name": "PHYSICS14-WAVES-GLOSSARY.md",
+                  "name": "📒 PHYSICS14-WAVES-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS14-WAVES/PHYSICS14-WAVES-GLOSSARY.md",
                   "sha": "b8d378908b1ef54a8244edaee236ba09196fde18",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
-                  "name": "PHYSICS14-WAVES-NOTES.md",
+                  "name": "📓 PHYSICS14-WAVES-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS14-WAVES/PHYSICS14-WAVES-NOTES.md",
                   "sha": "00daf195d3b77828085fe6dcf3a8c872129c8a21",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 PHYSICS14-WAVES-CNOTES.md",
+                  "path": "AI-NOTES/PHYSICS/PHYSICS14-WAVES/PHYSICS14-WAVES-CNOTES.md",
+                  "sha": "09da6f9b0269cf2bc725101b68d148bc134b137e",
                   "mime": "text/markdown"
                 }
               ]
