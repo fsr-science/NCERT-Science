@@ -4,7 +4,7 @@
   "children": [
     {
       "type": "folder",
-      "name": "AI-NOTES",
+      "name": "📓 AI-NOTES",
       "children": [
         {
           "type": "folder",
@@ -1490,6 +1490,11 @@
         },
         {
           "type": "folder",
+          "name": "PHYSICAL-EDUCATION",
+          "children": []
+        },
+        {
+          "type": "folder",
           "name": "PHYSICS",
           "children": [
             {
@@ -1500,21 +1505,21 @@
                   "type": "file",
                   "name": "PHYSICS01-UNITS_AND_MEASUREMENTS-CNOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS01-UNITS_AND_MEASUREMENTS/PHYSICS01-UNITS_AND_MEASUREMENTS-CNOTES.md",
-                  "sha": "43527750ed9bfb5a4e1524ffd102be98f94fb62c",
+                  "sha": "8c04fdd7ce00587aee0d74a7496027e8969b857a",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "PHYSICS01-UNITS_AND_MEASUREMENTS-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS01-UNITS_AND_MEASUREMENTS/PHYSICS01-UNITS_AND_MEASUREMENTS-GLOSSARY.md",
-                  "sha": "bd157b2f9e9319e734059ab720588af1665c3e88",
+                  "sha": "2b73eb34d9c8e8e6f53b2e858ccaad4aa584f73e",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "PHYSICS01-UNITS_AND_MEASUREMENTS-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS01-UNITS_AND_MEASUREMENTS/PHYSICS01-UNITS_AND_MEASUREMENTS-NOTES.md",
-                  "sha": "2c9a2a749b05aff9538cffb8c20a4e7704c0e02d",
+                  "sha": "c810d671b0d1629bd566d5d47017fc97621b34d8",
                   "mime": "text/markdown"
                 }
               ]
@@ -1527,14 +1532,14 @@
                   "type": "file",
                   "name": "PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-CNOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-CNOTES.md",
-                  "sha": "55ff57838513f89016ea3c4c08f90a8569630564",
+                  "sha": "c678b73de6c1c8945a0877be3807b6cb17dcb273",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-GLOSSARY.md",
-                  "sha": "db0335474e14803be00cb27f1cb1e1f6dcff027c",
+                  "sha": "da9e23ccf48b737d33228435dc4d765bcb2d39a3",
                   "mime": "text/markdown"
                 },
                 {
@@ -1554,14 +1559,14 @@
                   "type": "file",
                   "name": "PHYSICS03-MOTION_IN_A_PLANE-CNOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS03-MOTION_IN_A_PLANE/PHYSICS03-MOTION_IN_A_PLANE-CNOTES.md",
-                  "sha": "8fb1fbcbd641d84749f12b33e20df0326c347253",
+                  "sha": "52faf184956bb83dc1812c605eba9b4e0fd8b2fd",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "PHYSICS03-MOTION_IN_A_PLANE-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS03-MOTION_IN_A_PLANE/PHYSICS03-MOTION_IN_A_PLANE-GLOSSARY.md",
-                  "sha": "ccd219620cb7ba149ed462a30cd35caab3f1bf23",
+                  "sha": "6a4f8bbb6d92e2c333ddfa60e87cd7a4011bce61",
                   "mime": "text/markdown"
                 },
                 {
@@ -1615,14 +1620,14 @@
                   "type": "file",
                   "name": "PHYSICS05-WORK_ENERGY_AND_POWER-GLOSSARY.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS05-WORK_ENERGY_AND_POWER/PHYSICS05-WORK_ENERGY_AND_POWER-GLOSSARY.md",
-                  "sha": "3a3adcb4c86a86c6226ad64c91a01d9dfe9cd88d",
+                  "sha": "4a32069297540237037afd25e05f06cff7cd95cf",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "PHYSICS05-WORK_ENERGY_AND_POWER-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS05-WORK_ENERGY_AND_POWER/PHYSICS05-WORK_ENERGY_AND_POWER-NOTES.md",
-                  "sha": "2285e41ea6a0f25d0ab3ee73d3ebc2b2cd2f7078",
+                  "sha": "cd4074f64fe0d9f948fc146364565703a31f6962",
                   "mime": "text/markdown"
                 }
               ]
@@ -3020,6 +3025,11 @@
               "mime": "application/pdf"
             }
           ]
+        },
+        {
+          "type": "folder",
+          "name": "PHYSICAL-EDUCATION",
+          "children": []
         },
         {
           "type": "folder",

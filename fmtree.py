@@ -46,6 +46,18 @@ ALLOWED_FILE_SUFFIXES = {
     ".epub",
 }
 
+SECTION_ORDER = {
+    "GLOSSARY": 0,
+    "NOTES": 1,
+    "CNOTES": 2,
+}
+
+SECTION_EMOJI = {
+    "GLOSSARY": "📒",
+    "NOTES": "📓",
+    "CNOTES": "📔",
+}
+
 SKIP_FILE_SUFFIXES = {
     ".py",
     ".pyw",
@@ -122,11 +134,27 @@ def is_allowed_file(path: Path) -> bool:
     return suffix in ALLOWED_FILE_SUFFIXES and suffix not in SKIP_FILE_SUFFIXES
 
 
+def manifest_name(name: str) -> str:
+    upper_name = name.upper()
+    for label, emoji in SECTION_EMOJI.items():
+        if upper_name == label or upper_name.endswith(f"-{label}") or upper_name.endswith(f"_{label}"):
+            return f"{emoji} {name}"
+    return name
+
+
+def child_sort_key(path: Path) -> tuple[int, str]:
+    upper_name = path.name.upper()
+    for label, index in SECTION_ORDER.items():
+        if upper_name == label or upper_name.endswith(f"-{label}") or upper_name.endswith(f"_{label}"):
+            return (index, path.name.casefold())
+    return (len(SECTION_ORDER), path.name.casefold())
+
+
 def file_entry(path: Path) -> dict[str, str]:
     mime, _ = mimetypes.guess_type(path.name)
     return {
         "type": "file",
-        "name": path.name,
+        "name": manifest_name(path.name),
         "path": relative_path(path),
         "sha": blob_sha(path),
         "mime": mime or "application/octet-stream",
@@ -148,7 +176,7 @@ def should_skip(path: Path, output_path: Path) -> bool:
 
 def iter_children(path: Path, output_path: Path) -> Iterable[Path]:
     try:
-        children = sorted(path.iterdir(), key=lambda item: item.name.casefold())
+        children = sorted(path.iterdir(), key=child_sort_key)
     except OSError as exc:
         raise RuntimeError(f"Unable to read directory: {path}") from exc
 
@@ -173,7 +201,7 @@ def build_tree(path: Path, output_path: Path) -> list[dict]:
             children.append(
                 {
                     "type": "folder",
-                    "name": child.name,
+                    "name": manifest_name(child.name),
                     "children": build_tree(child, output_path),
                 }
             )
