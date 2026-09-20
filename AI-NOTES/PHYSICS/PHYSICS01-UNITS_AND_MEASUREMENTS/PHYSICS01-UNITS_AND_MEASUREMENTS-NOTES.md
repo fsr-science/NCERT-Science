@@ -852,7 +852,7 @@ Every conversion in this chapter follows this path; only the exponents and the u
 > **Concept:** Velocity $[LT^{-1}]$, so $a = 0$, $b = 1$, $c = -1$.
 > **Work:**
 > $$1 \text{ km h}^{-1} = 1 \times \frac{1000 \text{ m}}{3600 \text{ s}} = \boxed{\tfrac{5}{18} \text{ m s}^{-1} \approx 0.278 \text{ m s}^{-1}}$$
-> **Check:** a car at $36 \text{ km h}^{-1}$ covers $10 \text{ m}$ each second, consistent with $36 \times \tfrac{5}{18} = 10$.
+> **Check:** a car at $36 \text{ km h}^{-1}$ covers $10 \text{ m}$ each second, consistent with $36 \times \tfrac{5}{18} = 10$. The inverse is $1 \text{ m s}^{-1} = \tfrac{18}{5} \text{ km h}^{-1} = 3.6 \text{ km h}^{-1}$.
 
 > [!example] Example 5.4.2 — Convert $1$ joule to erg
 > **Given:** $1 \text{ J} = 1 \text{ kg m}^2\text{s}^{-2}$; the CGS system uses g, cm, s.

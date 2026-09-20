@@ -40,7 +40,7 @@ Potential energy stored in a deformed elastic body (spring, rubber, elastic cord
 The scalar capacity to do work; SI unit joule (J), dimensional formula **[ML²T⁻²]**. This chapter covers two forms — kinetic (K) and potential (V) — whose sum is mechanical energy E (see **Kinetic Energy**, **Potential Energy**, **Mechanical Energy**).
 
 **erg**
-A CGS unit of energy: 1 erg = 10⁻⁷ J. Rarely used in modern physics; occasionally appears in older texts.
+A CGS unit of energy (§3.4): 1 erg = 10⁻⁷ J. Rarely used in modern physics; occasionally appears in older texts.
 
 ---
 
@@ -77,14 +77,14 @@ The power at a specific instant: P = dW/dt = **F·v**, using the instantaneous v
 ## J
 
 **Joule (J)**
-SI unit of work and energy: 1 J = 1 N·m = 1 kg m² s⁻². Named after James Prescott Joule (1818–1889), noted for demonstrating the mechanical equivalent of heat.
+SI unit of work and energy (§3.1): 1 J = 1 N·m = 1 kg m² s⁻². Named after James Prescott Joule (1818–1889), noted for demonstrating the mechanical equivalent of heat.
 
 ---
 
 ## K
 
 **Kilowatt-hour (kWh)**
-A practical unit of energy, not power: 1 kWh = 1000 W × 3600 s = 3.6 × 10⁶ J, used in electricity billing — e.g. a 100 W bulb run for 10 hours uses 1 kWh.
+A practical unit of energy, not power (§11.2): 1 kWh = 1000 W × 3600 s = 3.6 × 10⁶ J, used in electricity billing — e.g. a 100 W bulb run for 10 hours uses 1 kWh.
 
 **Kinetic Energy (K)**
 Energy a body possesses by virtue of its motion: K = ½mv² = p²/(2m) (§4.1) — always a non-negative scalar, equal to the work needed to bring it from rest to speed v. SI unit J; dimensional formula **[ML²T⁻²]**.

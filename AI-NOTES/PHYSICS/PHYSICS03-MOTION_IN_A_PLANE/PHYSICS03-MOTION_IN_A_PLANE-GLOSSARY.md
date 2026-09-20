@@ -4,218 +4,223 @@
 
 ---
 
-> All terms arranged **alphabetically** with precise scientific definitions, dimensional formulae where applicable, and exam relevance tags.
+> Terms are arranged **alphabetically**. Each entry gives the definition with its defining relation, unit and dimension where they apply, and points to the NOTES section (§) that develops it.
+>
+> **Symbol note:** $R$ is the horizontal range in §8, the radius of the circular path in §9, and the magnitude of a resultant in §3; $T$ is the time period in §9 and the time of flight from a height in §8.12. Each entry says which it means.
 
 ---
 
 ## A
 
-**Angular Displacement (Δθ)**
-The angle subtended at the centre of a circular path by the arc traced by a moving object. Unit: **radian (rad)**. A dimensionless quantity ([M⁰L⁰T⁰]). In uniform circular motion, Δθ = Δs/R where Δs is the arc length and R the radius. *(Board/NEET)*
+**Acceleration due to Gravity ($g$)**
+The constant downward acceleration of a body moving under gravity alone near the Earth's surface, $g = 9.8$ m s⁻² here (dimension $[LT^{-2}]$). In projectile motion it is the whole acceleration, $a_x = 0$ and $a_y = -g$ with $y$ upward. *(§8.2, §8.3)*
 
-**Angular Speed (ω)**
-The rate of change of angular displacement with time: ω = Δθ/Δt. For uniform circular motion: ω = 2π/T = 2πν. SI unit: **rad s⁻¹**. Dimensional formula: **[T⁻¹]** = [M⁰L⁰T⁻¹]. A scalar in the context of this chapter (treated as a magnitude). *(Board/NEET/JEE)*
+**Angle of Projection ($\theta_0$)**
+The angle above the horizontal at which a projectile is launched with initial speed $v_0$, so the launch velocity has horizontal component $v_0\cos\theta_0$ and vertical component $v_0\sin\theta_0$. A horizontal launch has $\theta_0 = 0$, a vertical launch $\theta_0 = 90^\circ$, and a downward throw $\theta_0 < 0$. *(§8.3, §8.12)*
 
-**Associative Law (of vector addition)**
-The property that (A + B) + C = A + (B + C). Vector addition obeys the associative law. This means vectors can be grouped and added in any order. *(Board)*
+**Angular Displacement ($\Delta\theta$)**
+The angle swept by the radius joining a moving object to the centre of its circular path, $\Delta\theta = \Delta s/R$ with $\Delta s$ the arc length and $R$ the radius (SI unit radian). It is a ratio of two lengths, so it is dimensionless. *(§9.3)*
 
-**Average Acceleration (2D)**
-The change in velocity vector divided by the time interval: **ā** = Δ**v**/Δt. A **vector** quantity. Direction is the same as that of Δ**v**. SI unit: **m s⁻²**. *(All levels)*
+**Angular Speed ($\omega$)**
+The rate of change of angular displacement, $\omega = \Delta\theta/\Delta t = 2\pi/T = 2\pi\nu$, constant in uniform circular motion (SI unit rad s⁻¹, dimension $[T^{-1}]$). It gives the linear speed as $v = R\omega$, and it differs from the frequency $\nu$ by the factor $2\pi$ although both have dimension $[T^{-1}]$. *(§9.3)*
 
-**Average Velocity (2D)**
-The total displacement vector divided by total time: **v̄** = Δ**r**/Δt. A **vector** quantity. Direction is the same as that of Δ**r** (the displacement). SI unit: **m s⁻¹**. *(All levels)*
+**Associative Law (of Vector Addition)**
+$(\mathbf{A}+\mathbf{B})+\mathbf{C} = \mathbf{A}+(\mathbf{B}+\mathbf{C})$, so the grouping of vectors in a sum does not change the result. With the commutative law it allows any number of vectors to be added in any order. *(§3.2)*
+
+**Average Acceleration**
+The change in velocity divided by the time interval, $\bar{\mathbf{a}} = \Delta\mathbf{v}/\Delta t$, a vector along $\Delta\mathbf{v}$ (SI unit m s⁻², dimension $[LT^{-2}]$). It is nonzero whenever the velocity vector changes, even if only its direction does. *(§6.4)*
+
+**Average Speed**
+The path length travelled divided by the time taken, a scalar (SI unit m s⁻¹, dimension $[LT^{-1}]$). Because the path length is at least $|\Delta\mathbf{r}|$, it is at least the magnitude of the average velocity, with equality only for straight-line motion without reversal. *(§6.2)*
+
+**Average Velocity**
+The displacement divided by the time interval, $\bar{\mathbf{v}} = \Delta\mathbf{r}/\Delta t$, a vector along $\Delta\mathbf{r}$ (SI unit m s⁻¹, dimension $[LT^{-1}]$). It depends only on the end points, so it is zero for a motion that returns to its start, where the average speed is not. *(§6.2)*
 
 ---
 
 ## C
 
-**Centripetal Acceleration (aₒ)**
-The acceleration of an object in uniform circular motion, always directed **toward the centre** of the circle. Magnitude: aₒ = v²/R = ω²R. Dimensional formula: **[LT⁻²]**. SI unit: **m s⁻²**. NOT a constant vector (magnitude is constant; direction changes). The term "centripetal" means "centre-seeking". *(All levels — critical)*
+**Centripetal Acceleration ($a_c$)**
+The inward radial acceleration of a particle on a circle of radius $R$, $a_c = v^2/R = \omega^2R = 4\pi^2R/T^2$ (SI unit m s⁻², dimension $[LT^{-2}]$); in uniform circular motion it is the whole acceleration. Its magnitude is constant there but its direction rotates with the particle, so it is not a constant vector and the constant-acceleration equations do not apply. *(§9.2, §9.7)*
 
-**Christiaan Huygens (1629–1695)**
-Dutch physicist who published the first thorough analysis of centripetal acceleration in **1673**, in his work *Horologium Oscillatorium*. Newton was also aware of these results around the same time. *(Historical/Board)*
-
-**Commutative Law (of vector addition)**
-A + B = B + A. Vector addition is commutative — the order of addition does not affect the resultant. Note: Vector **subtraction** is NOT commutative: A − B ≠ B − A. *(Board)*
+**Commutative Law (of Vector Addition)**
+$\mathbf{A}+\mathbf{B} = \mathbf{B}+\mathbf{A}$, so the order of addition does not change the resultant. Subtraction is not commutative, since $\mathbf{B}-\mathbf{A} = -(\mathbf{A}-\mathbf{B})$. *(§3.2)*
 
 **Component of a Vector**
-The projection of a vector along a specified direction. A component is a **scalar** (e.g., Aₓ, Aᵧ). However, the **component vector** (e.g., Aₓ**î**) is a vector. For **A** at angle θ to x-axis: Aₓ = A cosθ, Aᵧ = A sinθ. Components can be positive, negative, or zero. *(All levels)*
+The signed scalar showing how much of a vector lies along an axis, $A_x = A\cos\theta$ and $A_y = A\sin\theta$ for $\mathbf{A}$ at angle $\theta$ to the $x$-axis, which may be positive, negative or zero. The component vector $A_x\hat{i}$ is a vector along the axis, not the scalar $A_x$. *(§4.3)*
 
 ---
 
 ## D
 
 **Direction Cosines**
-The cosines of the angles (α, β, γ) that a vector **A** makes with the x-, y-, and z-axes respectively: Aₓ = A cosα, Aᵧ = A cosβ, Aᵤ = A cosγ. Useful in 3D vector problems. *(JEE)*
+The cosines of the angles $\alpha$, $\beta$, $\gamma$ that a vector $\mathbf{A}$ makes with the $x$, $y$ and $z$ axes, so that $A_x = A\cos\alpha$, $A_y = A\cos\beta$ and $A_z = A\cos\gamma$. They satisfy $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$. *(§4.4)*
 
-**Displacement Vector (Δr)**
-The change in position vector of a particle: Δ**r** = **r′** − **r**. A **vector** quantity. Directed from the initial to the final position. Independent of the actual path taken. Dimensional formula: **[L]**. SI unit: **m**. *(All levels)*
+**Displacement Vector ($\Delta\mathbf{r}$)**
+The change in position, $\Delta\mathbf{r} = \mathbf{r}' - \mathbf{r}$, the vector from the initial to the final position (SI unit m, dimension $[L]$). It depends only on the end points and not on the route, so $|\Delta\mathbf{r}|$ is at most the path length. *(§1.4)*
+
+**Distributive Law (for Vectors)**
+Multiplication by a scalar distributes over vector addition, $\lambda(\mathbf{A}+\mathbf{B}) = \lambda\mathbf{A}+\lambda\mathbf{B}$ and $(\lambda+\mu)\mathbf{A} = \lambda\mathbf{A}+\mu\mathbf{A}$, and so do the dot and cross products. It is what allows components to be added axis by axis. *(§3.2, §5.1)*
 
 ---
 
 ## E
 
 **Equality of Vectors**
-Two vectors **A** and **B** are equal (A = B) if and only if they have the **same magnitude** AND the **same direction**. Equal magnitude but different direction → NOT equal. *(Board)*
+Two vectors are equal, $\mathbf{A} = \mathbf{B}$, when they have the same magnitude and the same direction, wherever they are drawn. Equal magnitudes alone do not make them equal, since $|\mathbf{A}| = |\mathbf{B}|$ leaves the directions free. *(§1.5)*
 
 ---
 
 ## F
 
-**Free Vectors**
-Vectors that can be translated (shifted parallel to themselves) without changing their identity. In this chapter, position and displacement vectors are treated as free vectors. Contrast with **localised vectors** (where the point of application matters, e.g., in torque). *(JEE/advanced)*
-
-**Frequency (ν)**
-The number of complete revolutions per unit time. SI unit: **Hz (hertz)** = s⁻¹. Dimensional formula: **[T⁻¹]**. Related to time period T by: ν = 1/T. Related to angular speed: ω = 2πν. *(All levels)*
-
----
-
-## G
-
-**Galileo Galilei (1564–1642)**
-Italian physicist who first stated (in 1632, in his *Dialogue on the Great World Systems*) that the **horizontal and vertical components of projectile motion are independent** of each other. This is the foundational principle of projectile motion analysis. *(Historical/Board)*
+**Frequency ($\nu$)**
+The number of revolutions per unit time, $\nu = 1/T = \omega/2\pi$ (SI unit hertz, Hz = s⁻¹, dimension $[T^{-1}]$). It counts revolutions and not radians, so $\omega = 2\pi\nu$. *(§9.4)*
 
 ---
 
 ## H
 
 **Head-to-Tail Method**
-A graphical method of vector addition. Place the **tail of B** at the **head of A**; the resultant **R** = **A** + **B** goes from the tail of **A** to the head of **B**. Also called the **triangle method** of vector addition. *(Board)*
+The graphical way to add vectors by placing the tail of each at the head of the one before, so that the sum runs from the first tail to the last head. For two vectors it is the triangle law and for three or more the polygon law. *(§3.1, §3.6)*
 
-**Horizontal Range (R)**
-The horizontal distance covered by a projectile from launch to landing (when it returns to the same horizontal level). Formula: R = v₀² sin2θ₀/g. Maximum at θ₀ = 45°: R_max = v₀²/g. *(All levels — critical)*
+**Horizontal Range ($R$)**
+The horizontal distance a projectile covers from launch to landing at the launch level, $R = v_0^2\sin 2\theta_0/g$, greatest at $\theta_0 = 45^\circ$ where $R_{\max} = v_0^2/g$. The angles $\theta_0$ and $90^\circ - \theta_0$ give the same range but different heights and flight times, and for a landing below the launch level the formula does not apply (§8.12). *(§8.9, §8.10)*
 
 ---
 
 ## I
 
-**Instantaneous Acceleration (2D)**
-The limiting value of average acceleration as Δt → 0: **a** = d**v**/dt = aₓ**î** + aᵧ**ĵ**. Each component: aₓ = dvₓ/dt, aᵧ = dvᵧ/dt. In 2D/3D, velocity and acceleration may have any angle between 0° and 180° between them. *(All levels)*
+**Instantaneous Acceleration**
+The limit of the average acceleration as the interval shrinks to zero, $\mathbf{a} = d\mathbf{v}/dt = d^2\mathbf{r}/dt^2 = a_x\hat{i} + a_y\hat{j}$ (SI unit m s⁻², dimension $[LT^{-2}]$). Its component along the velocity changes the speed, and its component perpendicular to the velocity changes only the direction. *(§6.5)*
 
-**Instantaneous Velocity (2D)**
-The limiting value of average velocity as Δt → 0: **v** = d**r**/dt. In component form: **v** = vₓ**î** + vᵧ**ĵ** where vₓ = dx/dt, vᵧ = dy/dt. Its direction is always **tangent to the path** in the direction of motion. *(All levels)*
+**Instantaneous Velocity**
+The limit of the average velocity as the interval shrinks to zero, $\mathbf{v} = d\mathbf{r}/dt = v_x\hat{i} + v_y\hat{j}$ (SI unit m s⁻¹, dimension $[LT^{-1}]$). It is always tangent to the path in the direction of motion, and its magnitude is the speed. *(§6.3)*
 
 ---
 
 ## L
 
-**Law of Cosines (Vectors)**
-Gives the magnitude of the resultant of two vectors **A** and **B** with angle θ between them: R = √(A² + B² + 2AB cosθ). Named after the general law of cosines in trigonometry. *(NEET/JEE)*
+**Law of Cosines (for Vectors)**
+For vectors $\mathbf{A}$ and $\mathbf{B}$ with angle $\theta$ between them, measured with their tails together, the resultant has magnitude $R = \sqrt{A^2 + B^2 + 2AB\cos\theta}$ and makes an angle $\alpha$ with $\mathbf{A}$ where $\tan\alpha = B\sin\theta/(A + B\cos\theta)$. The angle inside a head-to-tail triangle is $180^\circ - \theta$, which is why the cross term is $+2AB\cos\theta$. *(§3.8)*
 
-**Law of Sines (Vectors)**
-Relates the resultant R to the individual vectors using sines: R/sinθ = A/sinβ = B/sinα. Used to find the direction of the resultant. *(NEET/JEE)*
-
-**Localised Vectors**
-Vectors for which the point of application matters (e.g., torque, force applied at a specific point). Contrasts with free vectors. *(JEE/advanced)*
+**Law of Sines (for Vectors)**
+For the resultant $\mathbf{R}$ of $\mathbf{A}$ and $\mathbf{B}$ with angle $\theta$ between them, $R/\sin\theta = A/\sin\beta = B/\sin\alpha$, where $\alpha$ is the angle between $\mathbf{R}$ and $\mathbf{A}$ and $\beta$ the angle between $\mathbf{R}$ and $\mathbf{B}$. Each side of the triangle is proportional to the sine of the angle opposite it, and the angle opposite $R$ is $180^\circ - \theta$, whose sine is $\sin\theta$. *(§3.8)*
 
 ---
 
 ## M
 
-**Maximum Height (hₘ)**
-The greatest vertical distance reached by a projectile above its launch point. Formula: hₘ = (v₀ sinθ₀)²/(2g). Depends on the **vertical component** of initial velocity. *(All levels)*
+**Magnitude of a Vector**
+The non-negative scalar length of a vector, written $|\mathbf{A}| = A$ and equal to $\sqrt{A_x^2 + A_y^2 + A_z^2}$. It has the unit and dimension of the vector but no direction. *(§1.3, §4.4)*
+
+**Maximum Height ($h_m$)**
+The greatest height a projectile reaches above its launch point, $h_m = (v_0\sin\theta_0)^2/2g$, attained at $t_m = v_0\sin\theta_0/g$ when the vertical velocity is zero. The horizontal velocity $v_0\cos\theta_0$ is not zero there, so the speed at the highest point is $v_0\cos\theta_0$. *(§8.6, §8.8)*
 
 **Motion in a Plane**
-Motion of an object that is confined to a two-dimensional surface (a plane). Described using two perpendicular coordinate axes (x and y). The key insight is that motion in x and y can be treated **independently** when acceleration is constant. *(All levels)*
+Motion of a particle whose position needs two coordinates, so that its position, velocity and acceleration are vectors in the plane. Under constant acceleration it separates into independent one-dimensional motions along perpendicular axes, linked only through time. *(§6, §7.2)*
 
 ---
 
 ## N
 
+**Non-Uniform Circular Motion**
+Motion on a circle with changing speed, whose acceleration has a radial part $v^2/R$ toward the centre and a tangential part $dv/dt$ along the velocity. The radial part always points inward, but the total acceleration points at the centre only in uniform circular motion. *(§9.7)*
+
 **Null Vector (Zero Vector)**
-A vector with **zero magnitude**. Result of adding **A** and **−A**. Its direction is **undefined**. Properties: **A** + **0** = **A**; λ**0** = **0**; 0**A** = **0**. Physical example: displacement when an object returns to its starting point. *(Board)*
+The vector $\mathbf{0}$ of zero magnitude and undefined direction, the result of $\mathbf{A} + (-\mathbf{A})$, with $\mathbf{A} + \mathbf{0} = \mathbf{A}$, $\lambda\mathbf{0} = \mathbf{0}$ and $0\,\mathbf{A} = \mathbf{0}$. Vectors whose head-to-tail polygon closes add to it, and it is the only vector without a direction. *(§3.3, §3.6)*
 
 ---
 
 ## P
 
 **Parallelogram Law of Vector Addition**
-Bring tails of **A** and **B** to a common origin; complete the parallelogram; the diagonal from the origin gives the resultant **R** = **A** + **B**. Equivalent to the triangle law. *(Board)*
+If two vectors are drawn from a common tail as adjacent sides of a parallelogram, the diagonal from that tail is their resultant. It is the triangle law redrawn, since the opposite side is the second vector shifted to the head of the first. *(§3.5)*
 
 **Path Length**
-The actual length of the trajectory (curved or straight) traced by an object. A **scalar**, always ≥ 0. In 2D motion: path length ≥ |displacement|. *(Board)*
+The length of the route actually travelled, a scalar that is never negative. It is at least $|\Delta\mathbf{r}|$, with equality only for straight-line motion without reversal, so it can be positive when the displacement is zero. *(§1.4)*
 
-**Point Object**
-An idealisation in which the size of the object is ignored. Valid when dimensions of object are negligible compared to the distances involved. *(Board)*
+**Polygon Law of Vector Addition**
+Vectors placed head to tail in sequence have as their resultant the arrow from the first tail to the last head, in whatever order they are taken. If the polygon closes, the resultant is the null vector. *(§3.6)*
 
-**Position Vector (r)**
-The vector from the origin O to the current position P of a particle. In 2D: **r** = x**î** + y**ĵ**. Dimension: **[L]**, SI unit: m. *(All levels)*
+**Position Vector ($\mathbf{r}$)**
+The vector from the chosen origin to the particle, $\mathbf{r} = x\hat{i} + y\hat{j} + z\hat{k}$ (SI unit m, dimension $[L]$). Unlike a displacement it is anchored at the origin, so it cannot be shifted. *(§1.4, §4.5)*
 
 **Projectile**
-Any object that is **in flight after being projected** (thrown, launched, hit, etc.) and is subject only to gravity (no air resistance in this chapter). Examples: ball, bullet, stone, football. *(All levels)*
+An object in flight after being projected, whose only acceleration is that due to gravity. Air resistance is neglected, so the acceleration is $g$ downward at every instant of the flight. *(§8.1, §8.2)*
 
 **Projectile Motion**
-The motion of a projectile, consisting of **two independent simultaneous 1D motions**: (1) uniform horizontal motion (aₓ = 0), and (2) uniformly accelerated vertical motion (aᵧ = −g). The trajectory is a **parabola**. *(All levels — critical)*
+The motion of a projectile, made up of uniform horizontal motion ($a_x = 0$) and uniformly accelerated vertical motion ($a_y = -g$) that proceed independently. Its path is a parabola, except for a vertical launch, where it is a straight line. *(§8.4, §8.5)*
 
 ---
 
 ## R
 
-**Resolution of Vectors**
-Expressing a single vector as the sum of two (or more) component vectors along specified directions. Most commonly done along **mutually perpendicular** axes using unit vectors **î**, **ĵ**, **k̂**. *(All levels)*
+**Relative Velocity**
+The velocity of $A$ as seen from $B$, $\mathbf{v}_{AB} = \mathbf{v}_A - \mathbf{v}_B$, with both velocities measured in the same frame, such as the ground. It reverses when the roles swap, $\mathbf{v}_{BA} = -\mathbf{v}_{AB}$, and is zero when the two velocities are equal. *(§6.7)*
+
+**Resolution of a Vector**
+Expressing a vector as the sum of component vectors along chosen directions, most usefully along perpendicular axes as $\mathbf{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}$. It is the parallelogram law run backwards. *(§4.1, §4.3)*
 
 **Resultant Vector**
-The single vector that has the same effect as two or more vectors combined. For **A** and **B**: **R** = **A** + **B**. Magnitude: √(A² + B² + 2AB cosθ). *(All levels)*
+The vector sum of two or more vectors, $\mathbf{R} = \mathbf{A} + \mathbf{B}$, obtained by the triangle, parallelogram or polygon law. For two vectors its magnitude is generally not $A + B$ but lies between $|A - B|$ and $A + B$. *(§3.1, §3.8)*
+
+**Right-Hand Rule**
+The rule that fixes the direction of $\mathbf{A}\times\mathbf{B}$: curl the fingers of the right hand from $\mathbf{A}$ toward $\mathbf{B}$ through the smaller angle, and the thumb points along the product. Reversing the order reverses the thumb, which is why the cross product is anti-commutative. *(§11.1, §11.3)*
 
 ---
 
 ## S
 
-**Scalar Quantity**
-A quantity with **magnitude only**, no direction. Obeys rules of ordinary algebra. Examples in this chapter: distance, speed, angular speed, time period, frequency, kinetic energy. *(All levels)*
+**Scalar (Dot) Product**
+The scalar $\mathbf{A}\cdot\mathbf{B} = AB\cos\theta = A_xB_x + A_yB_y + A_zB_z$, with $\theta$ the angle between the vectors with tails together. It is zero for perpendicular vectors or a null vector, positive below $90^\circ$ and negative above, and, unlike the cross product, it is commutative. *(§10.1, §10.2)*
 
-**Speed (in 2D)**
-The magnitude of the velocity vector at any instant. In 2D: speed = |**v**| = √(vₓ² + vᵧ²). A **scalar** quantity, always ≥ 0. *(All levels)*
+**Scalar Multiplication of a Vector**
+Multiplying a vector $\mathbf{A}$ by a real number $\lambda$ gives a vector of magnitude $|\lambda|A$, in the direction of $\mathbf{A}$ if $\lambda > 0$ and opposite to it if $\lambda < 0$. It never turns the vector, $\lambda = 0$ gives the null vector, and if $\lambda$ has dimensions the product has dimension $[\lambda][\mathbf{A}]$. *(§2.1, §2.2, §2.3)*
+
+**Scalar Quantity**
+A quantity with magnitude only, combining by the ordinary rules of algebra, such as distance, speed, time and energy. Speed is the magnitude of velocity and so a scalar, while velocity, which has a direction, is not. *(§1.1)*
+
+**Speed (Instantaneous)**
+The magnitude of the instantaneous velocity, $v = \sqrt{v_x^2 + v_y^2}$, a non-negative scalar (SI unit m s⁻¹, dimension $[LT^{-1}]$). It has no direction, so it is unchanged by a change of direction alone, as in uniform circular motion. *(§6.3)*
 
 **Subtraction of Vectors**
-Defined as: **A** − **B** = **A** + (−**B**). Add **A** and the negative of **B**. Note: **A** − **B** ≠ **B** − **A** (subtraction is NOT commutative). *(All levels)*
+$\mathbf{A} - \mathbf{B} = \mathbf{A} + (-\mathbf{B})$, the sum of $\mathbf{A}$ and the vector of the same length as $\mathbf{B}$ pointing the opposite way, with $|\mathbf{A} - \mathbf{B}| = \sqrt{A^2 + B^2 - 2AB\cos\theta}$. It is not commutative, since $\mathbf{B} - \mathbf{A} = -(\mathbf{A} - \mathbf{B})$. *(§3.4, §3.8)*
 
 ---
 
 ## T
 
-**Time of Flight (Tƒ)**
-The total time a projectile is in the air, from launch to landing (at the same horizontal level). Formula: Tƒ = 2v₀ sinθ₀/g = 2tₘ (twice the time to maximum height). Depends only on the **vertical component** of initial velocity. *(All levels)*
+**Tangential Acceleration**
+The component of the acceleration along the velocity in circular motion, $dv/dt$, which changes the speed. It is zero in uniform circular motion, where the whole acceleration is the radial centripetal part. *(§9.7)*
 
-**Time Period (T)**
-The time taken for one complete revolution in circular motion. SI unit: **s**. Dimensional formula: **[T]**. Related to frequency by T = 1/ν, and to angular speed by T = 2π/ω. *(All levels)*
+**Time of Flight ($T_f$)**
+The time a projectile is in the air, $T_f = 2v_0\sin\theta_0/g = 2t_m$ when it lands at the launch level; for a launch from height $H$ the flight time $T$ is the positive root of $\tfrac{1}{2}gT^2 - (v_0\sin\theta_0)T - H = 0$. It depends on the launch velocity only through its vertical component. *(§8.7, §8.12)*
+
+**Time Period ($T$)**
+The time for one complete revolution in circular motion, $T = 2\pi/\omega = 1/\nu$ (SI unit s, dimension $[T]$). In one period the particle covers $2\pi R$, so $v = 2\pi R/T$. *(§9.4)*
 
 **Trajectory**
-The path traced by a moving object. For projectile motion: the trajectory is a **parabola** described by y = (tanθ₀)x − gx²/[2(v₀cosθ₀)²]. *(All levels)*
+The path traced by a moving object; for a projectile it is the parabola $y = (\tan\theta_0)\,x - gx^2/[2(v_0\cos\theta_0)^2]$, or the vertical line $x = 0$ for $\theta_0 = 90^\circ$. The equation follows from eliminating the time between the two position equations of §8.4. *(§8.5)*
 
 **Triangle Law of Vector Addition**
-See *Head-to-Tail Method*. The two vectors and their resultant form the three sides of a triangle. *(Board)*
+The vector sum $\mathbf{A} + \mathbf{B}$ is the arrow from the tail of $\mathbf{A}$ to the head of $\mathbf{B}$ when the tail of $\mathbf{B}$ is placed at the head of $\mathbf{A}$, the single displacement equivalent to $\mathbf{A}$ followed by $\mathbf{B}$. Its magnitude is not $|\mathbf{A}| + |\mathbf{B}|$ unless the two vectors point the same way. *(§3.1)*
 
 ---
 
 ## U
 
 **Uniform Circular Motion (UCM)**
-Motion of an object along a **circular path at constant speed**. Key features: speed = constant; velocity direction changes continuously; centripetal acceleration = v²/R directed toward centre; |aₒ| = constant but aₒ is not a constant vector; v ⊥ aₒ always. *(All levels — critical)*
+Motion along a circle at constant speed, in which the velocity is always tangent to the circle and turns continuously, so the particle accelerates toward the centre with $a_c = v^2/R$. The speed is constant but the velocity is not, and $\mathbf{v}$ is perpendicular to $\mathbf{a}$ at every instant. *(§9.1, §9.2)*
 
-**Unit Vector (n̂)**
-A vector of **magnitude 1** that specifies a direction. Has **no dimension and no unit**. Obtained by dividing a vector by its magnitude: n̂ = **A**/|**A**|. Standard unit vectors: **î** (x-axis), **ĵ** (y-axis), **k̂** (z-axis). |**î**| = |**ĵ**| = |**k̂**| = 1. *(All levels)*
+**Unit Vector ($\hat{n}$)**
+A vector of magnitude 1 that specifies a direction, $\hat{n} = \mathbf{A}/|\mathbf{A}|$, with no dimension and no unit. The standard unit vectors $\hat{i}$, $\hat{j}$, $\hat{k}$ are mutually perpendicular and point along $+x$, $+y$, $+z$. *(§4.2)*
 
 ---
 
 ## V
 
+**Vector (Cross) Product**
+The vector $\mathbf{A}\times\mathbf{B} = AB\sin\theta\,\hat{n}$, with $\hat{n}$ perpendicular to both vectors in the right-hand-rule direction and the magnitude equal to the area of the parallelogram on $\mathbf{A}$ and $\mathbf{B}$. It is zero for parallel vectors, greatest for perpendicular ones, and, unlike the dot product, anti-commutative. *(§11.1, §11.3)*
+
 **Vector Quantity**
-A quantity having **both magnitude and direction** that obeys the **triangle (parallelogram) law of addition**. Examples: displacement, velocity, acceleration, force, momentum. *(All levels)*
-
-**Velocity (2D/3D)**
-The rate of change of position vector: **v** = d**r**/dt. In 2D: **v** = vₓ**î** + vᵧ**ĵ**. Direction: always tangent to the path. SI unit: **m s⁻¹**. Dimensional formula: **[LT⁻¹]**. *(All levels)*
-
----
-
-## Key Historical Persons (Chapter 3)
-
-| Person | Contribution | Year |
-|---|---|---|
-| **Galileo Galilei** (1564–1642) | Independence of horizontal & vertical components of projectile motion | 1632 |
-| **Isaac Newton** (1643–1727) | Named centripetal acceleration; derived centripetal force | ~1660s |
-| **Christiaan Huygens** (1629–1695) | First published thorough analysis of centripetal acceleration | 1673 |
-
----
-
-*Total terms defined: 40+ | End of Glossary — Physics Ch. 3*
+A quantity with both magnitude and direction that adds by the triangle law, such as displacement, velocity, acceleration and force. Having a direction is not enough, since the addition rule is part of the definition: finite rotations have a direction but do not add like arrows. *(§1.2)*
