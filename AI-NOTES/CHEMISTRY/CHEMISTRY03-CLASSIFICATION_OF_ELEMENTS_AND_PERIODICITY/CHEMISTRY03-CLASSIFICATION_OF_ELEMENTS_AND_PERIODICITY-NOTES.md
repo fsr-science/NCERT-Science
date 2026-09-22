@@ -2,9 +2,6 @@
 
 **Branch:** Inorganic Chemistry | **Level:** Board · NEET · JEE | **NCERT Unit 3** (Class XI)
 
-> [!info] How this note is built
-> This note reconciles the **NCERT textbook** (Unit 3) with a student's **handwritten coaching notes** on the same chapter. Content found only in the coaching notes (achievements/drawbacks of Mendeleev's table, the Beryllium atomic-weight correction, van der Waals vs metallic vs covalent radius ordering, the metallic-conductance aside) is marked *(Coaching)*. Everything else follows the NCERT numbering (§3.1–§3.7) so it lines up with your textbook and with NCERT Problems 3.1–3.10 and Exercises 3.1–3.40.
-
 > [!warning] Element count depends on the printing
 > Some NCERT printings state "114 elements are known" in §3.1, but by the time §3.4 discusses Z > 100, elements up to **Z = 118 (Oganesson)** are already named — all 118 elements through Og have been officially discovered and IUPAC-named since 2016. Use **118** as the current total.
 
