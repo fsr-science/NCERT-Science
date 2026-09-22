@@ -1,5 +1,5 @@
 # Chemistry | Chapter 01 | Some Basic Concepts of Chemistry | NOTES
-> **Complete Study Notes** | Board · NEET · JEE Layered
+> **Complete Study Notes** | Board · NEET · JEE
 
 ---
 
@@ -1068,4 +1068,4 @@ flowchart TD
 
 ---
 
-*End of Core Notes — Ch. 1: Some Basic Concepts of Chemistry*
+*End of Complete Notes — Chemistry Ch. 1: Some Basic Concepts of Chemistry*
