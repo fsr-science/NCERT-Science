@@ -1,7 +1,46 @@
 # Chemistry | Chapter 04 | Chemical Bonding and Molecular Structure | NOTES
 
 **Branch:** Physical / Inorganic bridge chapter · **Level:** Board · NEET · JEE
-*Upgraded NoteBooks-Framework edition — built from the NCERT Class 11 Chemistry Unit 4 PDF, reconciled with the existing handwritten-derived note. Diagrams added throughout: Mermaid roadmaps/decision logic, TikZ structural and orbital figures, and Desmos interactive graphs (marked where syntax is reviewed but not yet confirmed to render live — see the note before the first Desmos block in Section 8).*
+
+Atoms rarely exist alone — this chapter builds up, from first principles, *why* they bond and what determines the resulting shape, strength, and behaviour of the molecule. It starts with the simplest possible picture (Kössel–Lewis electron counting) and progressively replaces it with more powerful ones — VSEPR for geometry, valence bond theory for orbital-level bonding, and molecular orbital theory for the cases VB theory gets wrong — so that by the end you have four different lenses on the same underlying question and know which one to reach for. This chapter is foundational for every later topic that depends on molecular shape or bond strength, from reaction mechanisms to coordination chemistry.
+
+**Prerequisites:** electronic configuration and the Aufbau/Pauli/Hund rules, periodic trends in electronegativity and atomic/ionic radius.
+
+**Key outcomes** — by the end of this chapter you should be able to:
+- Draw a correct Lewis dot structure for a given molecule or ion, including formal charges and the best resonance structure(s).
+- Recognise and explain the three families of octet-rule exceptions.
+- Predict molecular geometry from VSEPR and cross-check it against the hybridisation of the central atom.
+- Explain, using MO theory, a magnetic behaviour (e.g. O₂'s paramagnetism) that VB theory cannot.
+- Rank bond length, bond enthalpy, and dipole moment trends across a set of related molecules.
+
+**Scope note:** this chapter treats ionic, covalent, and hydrogen bonding in depth; metallic bonding and coordinate (dative) bonding are introduced only in passing where a worked example needs them, and are developed fully in later chapters (metallic bonding in solid state chemistry, coordinate bonding in coordination compounds).
+
+## Table of Contents
+- §1 — Kössel-Lewis Approach to Chemical Bonding
+  - §1.1 Background and Lewis Symbols · §1.2 Kössel's Observations
+- §2 — Octet Rule and Covalent Bonds
+  - §2.1 The Octet Rule · §2.2 Covalent Bond (Lewis–Langmuir) · §2.3 Writing Lewis Dot Structures · §2.4 Formal Charge
+- §3 — Limitations of the Octet Rule
+  - §3.1 Incomplete Octet · §3.2 Odd-Electron Molecules · §3.3 Expanded Octet · §3.4 Other Drawbacks
+- §4 — Ionic (Electrovalent) Bond
+  - §4.1 Conditions Favouring Ionic Bonds · §4.2 Nature of Ionic Compounds · §4.3 Lattice Enthalpy · §4.4 Fajans' Rules
+- §5 — Bond Parameters
+  - §5.1 Bond Length · §5.2 Bond Angle · §5.3 Bond Enthalpy · §5.4 Bond Order · §5.5 Resonance Structures
+- §6 — Polarity of Bonds and Dipole Moment
+  - §6.1 Polar vs Non-Polar Bonds · §6.2 Dipole Moment · §6.3 NH₃ vs NF₃
+- §7 — VSEPR Theory
+  - §7.1 Introduction · §7.2 Postulates · §7.3 Key Repulsion Order · §7.4–7.5 Molecular Geometries · §7.6 Worked Explanations
+- §8 — Valence Bond (VB) Theory
+  - §8.1 Introduction · §8.2 Formation of H₂ · §8.3 Orbital Overlap · §8.4 Types of Covalent Bonds · §8.5 Why Overlap Alone Fails
+- §9 — Hybridisation
+  - §9.1 Introduction · §9.2–9.6 sp / sp² / sp³ / sp³d / sp³d²
+- §10 — Molecular Orbital (MO) Theory
+  - §10.1–10.2 Introduction · §10.3 LCAO · §10.4 Types of MOs · §10.5 Energy-Level Order · §10.6 Bond Order · §10.7 Electronic Configurations · §10.8 Properties from MO Theory
+- §11 — Hydrogen Bonding
+  - §11.1 Introduction · §11.2 Cause of Formation · §11.3 Types
+- §12 — Key Distinctions
+- §13 — Worked Solutions
+- Quick Reference · Points to Ponder · Problem-Solving Strategy
 
 ---
 
@@ -315,6 +354,8 @@ Elements from the **third period onward** have 3d orbitals comparable in energy 
 
 ### 4.1 Conditions Favouring Ionic Bond Formation
 
+An ionic bond forms when giving up or taking on electrons is *easy* for the two atoms involved, and when the resulting ions pay that cost back with interest once they lock into a crystal lattice. Three conditions make this favourable:
+
 1. **Low ionization enthalpy** of the metal (electron loss is easy).
 2. **Highly negative electron gain enthalpy** of the non-metal (electron gain is easy).
 3. **High lattice enthalpy** of the resulting solid (the payoff that makes the whole process worthwhile).
@@ -604,11 +645,15 @@ Both molecules are pyramidal with one lone pair on N — yet \(\mu(\text{NH}_3) 
 
 ### 7.1 Introduction
 
+Everything up to this point — Lewis structures, formal charge, resonance — tells you *how atoms are connected*, but says nothing about the *3-D arrangement* those atoms actually take up in space. VSEPR (Valence Shell Electron Pair Repulsion) theory fills exactly that gap:
+
 * Proposed by **Sidgwick and Powell (1940)**, refined by **Nyholm and Gillespie (1957)**.
 * Explains and *predicts* **molecular shape** — something the Lewis approach cannot do.
 * Does **not** explain the energetics of bond formation (that needs VB/MO theory, Sections 8–10).
 
 ### 7.2 Postulates of VSEPR Theory
+
+The theory's predictive power rests on a simple electrostatic picture: treat every electron pair around the central atom, bonded or lone, as a small negatively charged cloud, and let those clouds push each other as far apart as geometry allows.
 
 1. Molecular shape depends on the number of **valence-shell electron pairs** (bonded or lone) around the central atom.
 2. Electron pairs **repel** one another (their clouds are negatively charged).
@@ -1096,9 +1141,6 @@ From the **third period onward**, 3d orbitals are close enough in energy to 3s/3
 
 ## SECTION 10 — MOLECULAR ORBITAL (MO) THEORY ⭐⭐⭐ `[Board · NEET · JEE]`
 
-> [!warning] Not in the handwritten/coaching notes for this chapter
-> This section only exists in the NCERT source, not in supplementary coaching notes — so there is no second source to reconcile it against. Everything below is reconstructed directly and carefully from the textbook's own worked electronic configurations (Section 4.7–4.8 of the source), with diagrams added to make the electron-filling logic visible rather than just tabulated.
-
 ### 10.1–10.2 Introduction and Salient Features
 
 Developed by **F. Hund and R. S. Mulliken (1932)**. Unlike VB theory (bonds localised between two atoms), MO theory treats **all** electrons in a molecule as occupying **molecular orbitals** spread over the *entire* molecule.
@@ -1262,6 +1304,7 @@ flowchart LR
 | He₂ | \((\sigma1s)^2(\sigma^*1s)^2\) | 0 | — | Does **not exist** |
 | Li₂ | KK\((\sigma2s)^2\) | 1 | Diamagnetic | Exists in vapour phase |
 | Be₂ | KK\((\sigma2s)^2(\sigma^*2s)^2\) | 0 | — | Does **not exist** |
+| B₂ | KK\((\sigma2s)^2(\sigma^*2s)^2(\pi2p_x^1=\pi2p_y^1)\) | 1 | **Paramagnetic** | Hund's rule half-fills the degenerate π2p pair before pairing — same logic as O₂, one period earlier |
 | C₂ | KK\((\sigma2s)^2(\sigma^*2s)^2(\pi2p_x^2=\pi2p_y^2)\) | 2 | Diamagnetic | **Both** bonds of the double bond are π (unusual — most double bonds are 1σ+1π) |
 | N₂ | KK\((\sigma2s)^2(\sigma^*2s)^2(\pi2p_x^2=\pi2p_y^2)(\sigma2p_z)^2\) | 3 | Diamagnetic | 946 kJ mol⁻¹ — very strong |
 | O₂ | KK\((\sigma2s)^2(\sigma^*2s)^2(\sigma2p_z)^2(\pi2p_x^2=\pi2p_y^2)(\pi^*2p_x^1=\pi^*2p_y^1)\) | 2 | **Paramagnetic** | Confirms MO theory experimentally |
@@ -1352,6 +1395,8 @@ When H bonds to a strongly electronegative atom X (F, O, N), the shared electron
 
 ## SECTION 12 — KEY DISTINCTIONS ⭐⭐⭐ `[Board · NEET · JEE]`
 
+Four pairs of concepts from this chapter are routinely confused under exam pressure because each pair *sounds* similar on the surface. Laid out side by side, on the same axes, the actual discriminator becomes obvious:
+
 | Feature | Ionic bond | Covalent bond |
 | --- | --- | --- |
 | Formation | Electron transfer | Electron sharing |
@@ -1402,7 +1447,7 @@ When H bonds to a strongly electronegative atom X (F, O, N), the shared electron
 > **Check:** 110 pm < 115 pm < 121 pm — the experimental value sits correctly between the two limiting canonical bond lengths. ✓
 
 > [!example]
-> ### 13.3 Additional Practice — VSEPR shapes of BeCl₂, BCl₃, SiCl₄, AsF₅, H₂S, PH₃ (New, from NCERT Exercise 4.7)
+> ### 13.3 Additional Practice — VSEPR shapes of BeCl₂, BCl₃, SiCl₄, AsF₅, H₂S, PH₃ (NCERT Exercise 4.7)
 > **Given:** six species to classify by VSEPR.
 > **Find:** the shape of each.
 > **Concept:** count electron domains (bond pairs + lone pairs) on the central atom, then apply Section 7.3's repulsion order if lone pairs are present.
@@ -1418,7 +1463,7 @@ When H bonds to a strongly electronegative atom X (F, O, N), the shared electron
 > **Check:** H₂S and PH₃ follow the same AB₂E₂/AB₃E pattern as H₂O and NH₃ — but because S and P are larger, less electronegative, and hybridise with *more* p-character than O and N, their actual bond angles (H–S–H ≈ 92°, H–P–H ≈ 93.5°) sit noticeably **below** the water/ammonia values (104.5°/107°) — still bent/pyramidal, just more compressed. NCERT does not give these exact angles; they are cited here as well-known extensions, not textbook data.
 
 > [!example]
-> ### 13.4 Additional Practice — Electron transfer between atoms (New, from NCERT Exercise 4.14)
+> ### 13.4 Additional Practice — Electron transfer between atoms (NCERT Exercise 4.14)
 > **Given:** three atom pairs — (a) K, S (b) Ca, O (c) Al, N.
 > **Find:** the ionic products of electron transfer.
 > **Concept:** each metal loses electrons to reach its nearest noble-gas configuration; each non-metal gains electrons to reach *its* nearest noble-gas configuration; combine in whatever ratio balances total charge.
@@ -1431,7 +1476,7 @@ When H bonds to a strongly electronegative atom X (F, O, N), the shared electron
 > **Check:** in each product, total positive charge = total negative charge (e.g. \(2\times(+1) = 1\times(-2)\) for K₂S). ✓
 
 > [!example]
-> ### 13.5 Additional Practice — Ranking ionic character (New, from NCERT Exercise 4.19)
+> ### 13.5 Additional Practice — Ranking ionic character (NCERT Exercise 4.19)
 > **Given:** LiF, K₂O, N₂, SO₂, ClF₃.
 > **Find:** arrange in order of *increasing* ionic character.
 > **Concept:** ionic character tracks the electronegativity difference between the bonded atoms — the larger the gap, the more ionic the bond.
@@ -1442,7 +1487,7 @@ When H bonds to a strongly electronegative atom X (F, O, N), the shared electron
 > **Check:** N₂ (identical atoms) must be the purely covalent extreme, and LiF (an alkali metal + halogen, the largest possible electronegativity gap on this list) must be the most ionic — the ranking's two ends are consistent with chemical intuition, and the two closely-spaced middle values (ClF₃, SO₂) come from their genuinely close electronegativity differences. ✓
 
 > [!example]
-> ### 13.6 Additional Practice — Hybridisation change on adduct formation (New, from NCERT Exercises 4.25–4.26)
+> ### 13.6 Additional Practice — Hybridisation change on adduct formation (NCERT Exercises 4.25–4.26)
 > **Given:** (a) \(\text{AlCl}_3 + \text{Cl}^- \rightarrow \text{AlCl}_4^-\); (b) \(\text{BF}_3 + \text{NH}_3 \rightarrow \text{F}_3\text{B}{\cdot}\text{NH}_3\).
 > **Find:** whether the central atom's hybridisation changes.
 > **Concept:** accepting a new coordinate (dative) bond adds one more electron domain to the central atom — recount domains and reassign hybridisation.
@@ -1450,7 +1495,7 @@ When H bonds to a strongly electronegative atom X (F, O, N), the shared electron
 > **Check:** both group-13 central atoms (Al, B) genuinely have too few electrons for an octet as free trihalides (Section 3.1) — accepting a lone pair to complete an octet, and re-hybridising \(sp^2\to sp^3\) to accommodate it, is exactly the expected fix. ✓
 
 > [!example]
-> ### 13.7 Additional Practice — Identifying the overlap that is NOT sigma (New, from NCERT Exercise 4.29)
+> ### 13.7 Additional Practice — Identifying the overlap that is NOT sigma (NCERT Exercise 4.29)
 > **Given:** x-axis as the internuclear axis; four orbital pairs — (a) 1s & 1s (b) 1s & \(2p_x\) (c) \(2p_y\) & \(2p_y\) (d) 1s & 2s.
 > **Find:** which pair does **not** form a σ bond, and why.
 > **Concept:** a σ bond requires **head-on** overlap directly along the internuclear axis; any orbital lobe oriented **perpendicular** to that axis can only overlap sideways (giving π character, not σ).
@@ -1461,7 +1506,7 @@ When H bonds to a strongly electronegative atom X (F, O, N), the shared electron
 > **Check:** this is the same logic used throughout Section 8.4 — σ needs axial alignment, π needs perpendicular, parallel p orbitals. ✓
 
 > [!example]
-> ### 13.8 Additional Practice — Bond order, stability, and magnetism of the O₂ family (New, from NCERT Exercises 4.36 and 4.40)
+> ### 13.8 Additional Practice — Bond order, stability, and magnetism of the O₂ family (NCERT Exercises 4.36 and 4.40)
 > **Given:** N₂, O₂, O₂⁺ (dioxygenyl cation), O₂⁻ (superoxide), O₂²⁻ (peroxide).
 > **Find:** bond order of each, and the relative stability/magnetic nature of the O₂ family.
 > **Concept:** fill MOs by the O₂/F₂/Ne₂ order (Section 10.5); each extra electron added to (or removed from) neutral O₂ goes into/out of the degenerate π\*2p level.
@@ -1568,4 +1613,3 @@ When H bonds to a strongly electronegative atom X (F, O, N), the shared electron
 ---
 
 *End of Core Notes — Ch. 4: Chemical Bonding and Molecular Structure.*
-*Diagram inventory: 6 Mermaid diagrams (roadmap, 2 classification/decision trees, 2 VSEPR/hybridisation decision flowcharts, 1 bond-order-stability flow, 1 resonance relationship) · ~30 TikZ figures (Lewis structures, ionic lattice, Born–Haber-style energy diagram, bond-length trend ladder, dipole vector comparisons, 11 VSEPR wedge-dash geometries, orbital-overlap sign diagrams, σ/π overlap and bonding/antibonding electron-cloud diagrams, 5 hybrid-orbital lobe diagrams, ethene/ethyne σ+π diagrams, 2 fully-filled MO energy-level diagrams, 2 hydrogen-bonding diagrams) · 2 Desmos interactive graphs (bent-AB₂ dipole vs bond angle; H₂ Morse-potential bond-formation curve — both syntax-reviewed but not yet confirmed live-rendering, per the warning in Section 6.2/8.2).*
