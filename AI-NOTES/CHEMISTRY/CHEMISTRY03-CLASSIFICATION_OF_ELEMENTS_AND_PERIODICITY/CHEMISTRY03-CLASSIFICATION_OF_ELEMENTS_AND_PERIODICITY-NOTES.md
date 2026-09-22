@@ -1,12 +1,61 @@
 # Chemistry | Chapter 03 | Classification of Elements and Periodicity | NOTES
 
-**Branch:** Inorganic Chemistry &nbsp;|&nbsp; **Level:** Board · NEET · JEE &nbsp;|&nbsp; **NCERT Unit 3** (Class XI)
+**Branch:** Inorganic Chemistry | **Level:** Board · NEET · JEE | **NCERT Unit 3** (Class XI)
 
 > [!info] How this note is built
-> This note reconciles the **NCERT textbook** (Unit 3) with a student's **handwritten coaching notes** on the same chapter. Content found only in the coaching notes (achievements/drawbacks of Mendeleev's table, the Beryllium atomic-weight correction, van der Waals vs metallic vs covalent radius ordering, the metallic-conductance aside) is marked **(Coaching)**. Everything else follows the NCERT numbering (§3.1–§3.7) so it lines up with your textbook and with NCERT Problems 3.1–3.10 and Exercises 3.1–3.40.
+> This note reconciles the **NCERT textbook** (Unit 3) with a student's **handwritten coaching notes** on the same chapter. Content found only in the coaching notes (achievements/drawbacks of Mendeleev's table, the Beryllium atomic-weight correction, van der Waals vs metallic vs covalent radius ordering, the metallic-conductance aside) is marked *(Coaching)*. Everything else follows the NCERT numbering (§3.1–§3.7) so it lines up with your textbook and with NCERT Problems 3.1–3.10 and Exercises 3.1–3.40.
 
-> [!warning] Element count — an edition artifact
-> §3.1 of NCERT (older printings) states "114 elements are known." By the time §3.4 discusses Z > 100, elements up to **Z = 118 (Oganesson)** are already named — all 118 elements through Og have been officially discovered and IUPAC-named since 2016. Use **118** as the current total; "114" is a holdover from an earlier edition.
+> [!warning] Element count depends on the printing
+> Some NCERT printings state "114 elements are known" in §3.1, but by the time §3.4 discusses Z > 100, elements up to **Z = 118 (Oganesson)** are already named — all 118 elements through Og have been officially discovered and IUPAC-named since 2016. Use **118** as the current total.
+
+## Chapter Brief
+
+This chapter traces how chemists moved from grouping a handful of similar elements by trial and error (Döbereiner, Newlands) to Mendeleev's atomic-weight-based Periodic Law, and then to the Modern Periodic Law once Moseley showed atomic number, not atomic mass, is the fundamental ordering property. That single correction — mass to Z — is what makes the rest of the chapter work: electronic configuration is periodic in Z, so every physical trend covered later (atomic and ionic radius, ionization enthalpy, electron gain enthalpy, electronegativity) can be explained by one mechanism, effective nuclear charge and shielding, rather than memorized separately. By the end, the same $Z_{eff}$ argument should let you predict a trend's direction, name its exceptions, and explain *why* those exceptions occur rather than just recalling them.
+
+**Prerequisites:** electronic configuration, quantum numbers, and orbital-filling order (Aufbau, Hund's rule, Pauli exclusion) from the preceding Structure of the Atom chapter.
+
+**Key outcomes** — by the end of this chapter you should be able to:
+1. State Mendeleev's Periodic Law and the Modern Periodic Law, and explain what Moseley's experiment specifically fixed.
+2. Place any element into its correct block (s/p/d/f), period, and group from its atomic number or electronic configuration.
+3. Predict the direction of atomic radius, ionic radius, ionization enthalpy, electron gain enthalpy, and electronegativity across a period and down a group, using $Z_{eff}$/shielding as the reasoning, not rote recall.
+4. Identify and explain the standard anomalies (B < Be and O < N in ionization enthalpy; F less negative than Cl in electron gain enthalpy; the Group 13 ionization-enthalpy zig-zag).
+5. Predict a binary compound's formula from group valence, and assign oxidation states by comparing electronegativities.
+6. Classify an oxide as basic, acidic, amphoteric, or neutral from the parent element's position in the periodic table.
+
+**Scope note:** this chapter covers trends at the level of the isolated atom or ion. Bonding consequences (lattice energy, the degree of covalent character in a bond) and full descriptive block chemistry beyond the trends themselves are developed in later chapters.
+
+## Table of Contents
+
+- §3.1 [Why Do We Need to Classify Elements?](#section-31--why-do-we-need-to-classify-elements-)
+- §3.2 [Genesis of Periodic Classification](#section-32--genesis-of-periodic-classification-)
+  - §3.2.1 Döbereiner's Triads
+  - §3.2.2 de Chancourtois' Telluric Screw
+  - §3.2.3 Newlands' Law of Octaves
+  - §3.2.4 Lothar Meyer and Mendeleev
+- §3.3 [Modern Periodic Law and the Long Form](#section-33--modern-periodic-law-and-the-long-form-)
+  - §3.3.1 Moseley's X-ray Experiment
+  - §3.3.2 Modern Periodic Law
+  - §3.3.3 Long Form of the Periodic Table
+- §3.4 [IUPAC Nomenclature for Z > 100](#section-34--iupac-nomenclature-for-z--100-)
+- §3.5 [Electronic Configurations and the Periodic Table](#section-35--electronic-configurations-and-the-periodic-table-)
+  - §3.5.1 Configurations in Periods
+  - §3.5.2 Configurations Down a Group
+  - §3.5.3 The Periodic Table by Block — a Schematic
+- §3.6 [s-, p-, d-, f-Block Elements; Metals, Non-metals, Metalloids](#section-36--s--p--d--f-block-elements-metals-non-metals-metalloids-)
+  - §3.6.1 s-Block Elements
+  - §3.6.2 p-Block Elements
+  - §3.6.3 d-Block Elements (Transition Elements)
+  - §3.6.4 f-Block Elements (Inner-Transition Elements)
+  - §3.6.5 Metals, Non-metals, Metalloids
+- §3.7 [Periodic Trends in Properties](#section-37--periodic-trends-in-properties-)
+  - §3.7.1(a) Atomic Radius
+  - §3.7.1(b) Ionic Radius
+  - §3.7.1(c) Ionization Enthalpy
+  - §3.7.1(d) Electron Gain Enthalpy
+  - §3.7.1(e) Electronegativity
+  - §3.7.2 Periodic Trends in Chemical Properties
+  - §3.7.3 Periodic Trends and Chemical Reactivity
+- [Quick Reference](#quick-reference) · [Points to Ponder](#points-to-ponder) · [Problem-Solving Strategy](#problem-solving-strategy) · [Exercise Answer Key](#exercise-answer-key-ncert-31340--quick-revision)
 
 ---
 
@@ -99,13 +148,13 @@ Working independently, both plotted physical/chemical properties against atomic 
 
 > **Why Mendeleev, not Lothar Meyer, gets the credit:** he published the law *first*, made *quantitative* predictions that were later confirmed almost exactly, and had the scientific courage to leave gaps rather than force elements into the wrong slot.
 
-**Achievements of Mendeleev's table (Coaching):**
+**Achievements of Mendeleev's table** *(Coaching)*:
 1. First systematic arrangement placing similar-property elements in the same group.
 2. Left gaps for undiscovered elements and predicted their properties correctly (table above).
 3. **Corrected wrongly-assigned atomic weights** using the periodicity itself — the standout example being beryllium.
 
 > [!example]
-> ### Solved (Coaching) — Mendeleev's correction of beryllium's atomic weight
+> ### Solved — Mendeleev's correction of beryllium's atomic weight *(Coaching)*
 > **Given:** Be was originally assigned atomic weight ≈ 13.5 on the assumption that its valency = 3 (by analogy with Al, i.e. an oxide formulated as Be₂O₃). Its experimentally measured **equivalent weight** was 4.5.
 > **Concept:** for any element, $\text{Atomic weight} = \text{Valency} \times \text{Equivalent weight}$.
 > **Work:** placing Be (at. wt. 13.5) between Li (7) and B (11) broke the periodicity of properties — Be at 13.5 resembled Al far too closely to also fit snugly between Li and B. Mendeleev reasoned Be's true valency must be **2** (like Mg, Ca — its actual family), not 3.
@@ -114,7 +163,7 @@ Working independently, both plotted physical/chemical properties against atomic 
 > \]
 > **Check:** 9 sits correctly between Li (7) and B (11); Be's actual atomic weight is 9.01 — Mendeleev's periodicity-driven correction was right.
 
-**Drawbacks of Mendeleev's table (Coaching):**
+**Drawbacks of Mendeleev's table** *(Coaching)*:
 
 | # | Drawback |
 |---|---|
@@ -178,7 +227,7 @@ This is the *general* law; Mendeleev's atomic-weight version is the historical s
 > **Check:** matches Rb (Z=37) through Xe (Z=54): $54-37+1=18$. ✓
 
 > [!example]
-> ### Worked Example 2 — Why does period 6 have 32 elements? (NCERT Exercise 3.4, gap-filled)
+> ### Worked Example 2 — Why does period 6 have 32 elements? (NCERT Exercise 3.4)
 > **Concept:** same rule, $n=6$: filling order $6s<4f<5d<6p$, giving $l=0,1,2,3$ → orbitals $1+7+5+3=16$.
 > \[
 > \text{Elements} = 2\times16 = \boxed{32}
@@ -411,7 +460,7 @@ flowchart LR
 | Malleable/ductile | Yes | No — brittle | Intermediate |
 | Conductivity | Good | Poor | Intermediate (semiconductors) |
 
-> **(Coaching) Aside:** metallic conductance actually *decreases* as temperature rises — increased lattice vibration obstructs electron flow through the metal. (Contrast with semiconductors/metalloids, whose conductivity *rises* with temperature — a fact you'll meet again in solid-state chemistry.)
+> **Aside** *(Coaching)*: metallic conductance actually *decreases* as temperature rises — increased lattice vibration obstructs electron flow through the metal. (Contrast with semiconductors/metalloids, whose conductivity *rises* with temperature — a fact you'll meet again in solid-state chemistry.)
 
 > [!example]
 > ### Worked Example 5 — Increasing metallic character (NCERT Problem 3.4)
@@ -449,7 +498,7 @@ flowchart TD
     C -.->|"for the same element, r always comes out largest here"| C
 ```
 
-> **(Coaching) Size ordering for the same element:**
+> **Size ordering for the same element** *(Coaching)*:
 > \[
 > \boxed{r_{\text{van der Waals}} > r_{\text{metallic}} > r_{\text{covalent}}}
 > \]
@@ -558,7 +607,7 @@ $$\text{Na (186 pm)} \longrightarrow \text{Na}^+ \text{(95 pm)} \qquad\qquad \te
 > \]
 
 > [!example]
-> ### Worked Example 8 — Isoelectronic ions (NCERT Exercise 3.11) *(New)*
+> ### Worked Example 8 — Isoelectronic ions (NCERT Exercise 3.11)
 > **Find** a species isoelectronic with (i) F⁻ (ii) Ar (iii) Mg²⁺ (iv) Rb⁺.
 > **Work:** count electrons for each target, then find a same-electron-count neighbour.
 > * F⁻ (10 e⁻) → **Na⁺** (or Mg²⁺, O²⁻, N³⁻)
@@ -658,7 +707,7 @@ P_{point}=\left(Z,f\left(Z\right)\right)
 > **Check:** actual value is 577 kJ/mol — essentially exact.
 
 > [!example]
-> ### Worked Example 10 — Ionization enthalpy of atomic hydrogen (NCERT Exercise 3.15) *(New)*
+> ### Worked Example 10 — Ionization enthalpy of atomic hydrogen (NCERT Exercise 3.15)
 > **Given:** ground-state electron energy of H $=-2.18\times10^{-18}\,\text{J}$ (per atom); energy at infinite separation $=0$.
 > **Find:** $\Delta_iH$ in J mol⁻¹.
 > **Concept:** $\Delta_iH = E(\infty) - E(\text{ground}) = -E_{\text{ground}}$, then scale one atom → one mole via Avogadro's number $N_A = 6.022\times10^{23}\,\text{mol}^{-1}$.
@@ -674,7 +723,7 @@ P_{point}=\left(Z,f\left(Z\right)\right)
 > **Check:** matches the standard reference value for hydrogen's ionization enthalpy (1312–1318 kJ/mol across sources) — physically sensible, positive, right order of magnitude.
 
 > [!example]
-> ### Worked Example 11 — Na vs Mg: $\Delta_iH_1$ lower but $\Delta_iH_2$ higher (NCERT Exercise 3.17) *(New)*
+> ### Worked Example 11 — Na vs Mg: $\Delta_iH_1$ lower but $\Delta_iH_2$ higher (NCERT Exercise 3.17)
 > **Given:** $\text{Na}: 1s^22s^22p^63s^1 \to \text{Na}^+: 1s^22s^22p^6$; $\text{Mg}: 1s^22s^22p^63s^2 \to \text{Mg}^+:1s^22s^22p^63s^1$.
 > **Concept:** compare which electron is being removed and what configuration results at each step.
 > **Work:** for $\Delta_iH_1$, Na loses its *only* 3s electron to reach a stable, filled-shell Ne-core (Na⁺), a low-energy, easy step — hence lower than Mg, which must break into a half-filled-feeling 3s¹ configuration.
@@ -703,7 +752,7 @@ P_{point}=\left(Z,f\left(Z\right)\right)
 ```
 
 > [!example]
-> ### Worked Example 12 — Explain the Group 13 IE zig-zag (NCERT Exercise 3.19) *(New)*
+> ### Worked Example 12 — Explain the Group 13 IE zig-zag (NCERT Exercise 3.19)
 > **Given:** $\Delta_iH_1$ (kJ/mol): B 801, Al 577, Ga 579, In 558, Tl 589.
 > **Concept:** shielding effectiveness of a *filled inner subshell* isn't uniform — $d$ and $f$ electrons shield far more poorly than $s$/$p$ electrons of the same shell.
 > **Work:** B→Al drops normally (new shell, better shielding, as usual). Ga, however, follows a filled $3d^{10}$ subshell that shields the $4p$ valence electron poorly, so Ga's $Z_{eff}$ is higher than a naive extrapolation from Al would predict — $\Delta_iH_1$(Ga) edges *above* Al despite being one period lower. The same logic repeats In→Tl: Tl follows both a filled $4f^{14}$ and $5d^{10}$, so its $Z_{eff}$ — and hence $\Delta_iH_1$ — rises again.
@@ -752,7 +801,7 @@ X(g) + e^- \rightarrow X^-(g) \qquad \Delta_{eg}H
 > (P is additionally stabilised by its half-filled $3p^3$ configuration, making it reluctant to accept a fourth $3p$ electron.)
 
 > [!example]
-> ### Worked Example 14 — Sign of the second electron gain enthalpy of oxygen (NCERT Exercise 3.20/3.21) *(New)*
+> ### Worked Example 14 — Sign of the second electron gain enthalpy of oxygen (NCERT Exercise 3.20/3.21)
 > **Given:** $\text{O}(g)+e^- \to \text{O}^-(g)$, $\Delta_{eg}H_1 = -141$ kJ/mol (exothermic); $\text{O}^-(g)+e^-\to\text{O}^{2-}(g)$, $\Delta_{eg}H_2 = ?$
 > **Concept:** the second electron is being forced onto a species that is *already negatively charged*.
 > **Work:** an incoming electron is now **electrostatically repelled** by O⁻ rather than attracted by a neutral atom — energy must be *supplied* to overcome that repulsion, on top of whatever stabilisation the new electron might otherwise gain.
@@ -834,7 +883,7 @@ For representative elements, valence = number of valence electrons, **or** $8 -$
 > **Na₂O:** O (more electronegative than Na) → O is $\boxed{-2}$; Na, having lost its one valence electron, is $\boxed{+1}$.
 
 > [!example]
-> ### Worked Example 17 — Oxidation state vs covalency of Al (NCERT Problem 3.9) *(New)*
+> ### Worked Example 17 — Oxidation state vs covalency of Al (NCERT Problem 3.9)
 > **Given:** $[\text{AlCl(H}_2\text{O})_5]^{2+}$. **Find:** are oxidation state and covalency the same here?
 > **Work:** Al's oxidation state is fixed by its electron loss (+3, as always for Al); covalency counts *all* the bonds Al is making — one to Cl, five to the water O atoms = 6 total.
 > \[
@@ -842,7 +891,7 @@ For representative elements, valence = number of valence electrons, **or** $8 -$
 > \]
 
 > [!example]
-> ### Worked Example 18 — Predict formulas for six pairs (NCERT Exercise 3.32) *(New)*
+> ### Worked Example 18 — Predict formulas for six pairs (NCERT Exercise 3.32)
 > | Pair | Valences | Formula |
 > |---|---|---|
 > | Li + O | 1, 2 | $\text{Li}_2\text{O}$ |
@@ -908,7 +957,7 @@ flowchart LR
 
 
 > [!example]
-> ### Worked Example 20 — Identify six elements from IE/EGE data (NCERT Exercise 3.31) *(New)*
+> ### Worked Example 20 — Identify six elements from IE/EGE data (NCERT Exercise 3.31)
 > **Given:**
 >
 > | Element | $\Delta_iH_1$ | $\Delta_iH_2$ | $\Delta_{eg}H$ |
@@ -1009,25 +1058,25 @@ flowchart LR
 
 | # | Answer | # | Answer |
 |---|---|---|---|
-| 3.1 | Electronic configuration (periodicity of properties with $Z$) | 3.21 | $\Delta_{eg}H_2$(O) is positive — repulsion with O⁻ (⭐3.12) |
+| 3.1 | Electronic configuration (periodicity of properties with $Z$) | 3.21 | $\Delta_{eg}H_2$(O) is positive — repulsion with O⁻ (see Worked Example 14) |
 | 3.2 | Atomic weight; no — he reordered Te/I by property | 3.22 | $\Delta_{eg}H$ = isolated-atom quantity; electronegativity = in-compound, comparative only |
 | 3.3 | Weight-based (special case) vs number-based (general law) | 3.23 | False — electronegativity varies with the compound/hybridisation, not fixed at 3.0 |
-| 3.4 | $2\times16=32$ orbitals argument (⭐3.5) | 3.24 | (a) gains e⁻ → size increases (repulsion↑, $Z_{eff}$/e⁻ ↓) (b) loses e⁻ → size decreases |
+| 3.4 | $2\times16=32$ orbitals argument (see Worked Example 2) | 3.24 | (a) gains e⁻ → size increases (repulsion↑, $Z_{eff}$/e⁻ ↓) (b) loses e⁻ → size decreases |
 | 3.5 | Group 14, Period 7 | 3.25 | Same — IE depends on nuclear charge/electron config, not mass; isotopes have identical Z |
 | 3.6 | $Z=17$ (Cl) | 3.26 | See §3.6.5 comparison table |
 | 3.7 | (i) Rf — Rutherfordium (ii) Sg — Seaborgium | 3.27 | (a) $ns^2np^5$ → any halogen, e.g. Cl (b) any Gp 2 metal (c) any Gp 16 nonmetal (d) Gp 17 — F/Cl gases, Br liquid, I a metallic-looking solid |
 | 3.8 | Same valence-shell configuration ⇒ same chemistry | 3.28 | Gp 1: IE↓ down ⇒ reactivity↑; Gp 17: $\Delta_{eg}H$ less −ve down ⇒ reactivity↓ |
 | 3.9 | See §3.7.1(a) definitions table | 3.29 | $s$: $ns^{1-2}$; $p$: $ns^2np^{1-6}$; $d$: $(n-1)d^{1-10}ns^{0-2}$; $f$: $(n-2)f^{1-14}(n-1)d^{0-1}ns^2$ |
 | 3.10 | Decreases →, increases ↓ ($Z_{eff}$/shielding) | 3.30 | (i) Gp 16, Period 3 (S) (ii) Gp 4, Period 4 (Ti) (iii) Gp 3, Period 6, $f$-block (Gd) |
-| 3.11 | See ⭐3.8 above | 3.31 | See ⭐3.15 above (He, K, F, I, Mg, Li) |
-| 3.12 | (a) all 10 e⁻ (b) $\text{Al}^{3+}<\text{Mg}^{2+}<\text{Na}^+<\text{F}^-<\text{O}^{2-}<\text{N}^{3-}$ | 3.32 | See ⭐3.14 above |
+| 3.11 | See Worked Example 8 above | 3.31 | See Worked Example 20 above (He, K, F, I, Mg, Li) |
+| 3.12 | (a) all 10 e⁻ (b) $\text{Al}^{3+}<\text{Mg}^{2+}<\text{Na}^+<\text{F}^-<\text{O}^{2-}<\text{N}^{3-}$ | 3.32 | See Worked Example 18 above |
 | 3.13 | Same $Z$, fewer e⁻ (cation) → less repulsion, tighter pull | 3.33 | (c) principal quantum number |
 | 3.14 | Comparison requires a fixed reference state (isolated, unbonded, ground state) | 3.34 | (b) is incorrect — $d$-block has **10** columns, not 8 |
-| 3.15 | See ⭐3.9 above (1312.8 kJ/mol) | 3.35 | (c) nuclear mass — irrelevant to valence-shell chemistry |
+| 3.15 | See Worked Example 10 above (1312.8 kJ/mol) | 3.35 | (c) nuclear mass — irrelevant to valence-shell chemistry |
 | 3.16 | (i) 2s penetrates more than 2p (ii) O's paired $2p^4$ repulsion | 3.36 | (a) nuclear charge — the only variable across an isoelectronic series |
-| 3.17 | See ⭐3.10 above | 3.37 | (a) is incorrect — the increase is *not* uniform (jumps at shell closure) |
+| 3.17 | See Worked Example 11 above | 3.37 | (a) is incorrect — the increase is *not* uniform (jumps at shell closure) |
 | 3.18 | Increasing radius + increasing shielding (both work the same direction) | 3.38 | (d) K > Mg > Al > B |
-| 3.19 | See ⭐3.11 above | 3.39 | (c) F > N > C > B > Si |
+| 3.19 | See Worked Example 12 above | 3.39 | (c) F > N > C > B > Si |
 | 3.20 | (i) F (ii) Cl — both more negative than their partner | 3.40 | (b) F > O > Cl > N |
 
 ---
