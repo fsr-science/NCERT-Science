@@ -4,8 +4,53 @@
 
 *"Where there is oxidation, there is always reduction — Chemistry is essentially a study of redox systems."*
 
-> [!info] How this note was built
-> This note reconciles three sources: the NCERT textbook (Unit 7), your handwritten coaching notes, and an earlier draft of these notes. Where the handwritten notes go beyond the textbook (the full metal activity series, extra balancing examples) or where a calculation needed to be redone, that is flagged explicitly rather than silently merged in.
+---
+
+## Chapter Brief
+
+Redox reactions cover every chemical process in which electrons move between species — as familiar as rusting or combustion, and as engineered as a battery. This chapter builds the same idea through three lenses of increasing generality: the classical oxygen/hydrogen-transfer picture, the electron-transfer picture, and the oxidation-number bookkeeping that makes electron transfer trackable even in covalent compounds. By the end, a reader should be able to classify a redox reaction, balance it by either standard method, and use standard electrode potentials to predict whether a reaction runs as written.
+
+**Prerequisites:** atomic structure, electronegativity, chemical bonding, basic stoichiometry.
+
+**Key outcomes** — by the end of this chapter, a reader should be able to:
+- Identify which species is oxidised and which is reduced, under all three definitions (classical, electronic, oxidation-number)
+- Assign oxidation numbers to every atom in a compound or ion, including the exceptions (peroxides, superoxides, metal hydrides, O–F compounds)
+- Classify a redox reaction as combination, decomposition, displacement, or disproportionation, and recognise when a reaction of that shape is *not* redox
+- Balance a redox equation in acidic or basic medium, by both the oxidation-number method and the half-reaction (ion-electron) method
+- Use standard electrode potentials to predict whether a given redox reaction is spontaneous under standard conditions
+
+**Scope note:** this chapter stays at standard-conditions (1 M, 1 atm, 298 K) electrode potentials. Concentration-dependent potentials (the Nernst equation) and electrolytic cells belong to Class XII Electrochemistry and sit outside this chapter's scope; they are previewed only where the chapter's own feasibility rule needs the caveat.
+
+## Table of Contents
+
+- [Chemistry | Chapter 07 | Redox Reactions | NOTES](#chemistry--chapter-07--redox-reactions--notes)
+  - [Chapter Brief](#chapter-brief)
+  - [Table of Contents](#table-of-contents)
+  - [Concept Roadmap](#concept-roadmap)
+  - [7.1 The Classical Idea of Redox Reactions ⭐](#71-the-classical-idea-of-redox-reactions-)
+    - [7.1.1 Oxidation — The Classical View](#711-oxidation--the-classical-view)
+    - [7.1.2 Reduction — The Classical View](#712-reduction--the-classical-view)
+    - [7.1.3 The Simultaneous Nature — Why "Redox"](#713-the-simultaneous-nature--why-redox)
+  - [7.2 Redox Reactions in Terms of Electron Transfer ⭐⭐](#72-redox-reactions-in-terms-of-electron-transfer-)
+    - [7.2.1 The Electronic Interpretation](#721-the-electronic-interpretation)
+    - [7.2.2 Competitive Electron Transfer Reactions](#722-competitive-electron-transfer-reactions)
+  - [7.3 Oxidation Number ⭐⭐⭐](#73-oxidation-number-)
+    - [7.3.1 Rules for Assigning Oxidation Number](#731-rules-for-assigning-oxidation-number)
+    - [7.3.2 Stock Notation](#732-stock-notation)
+    - [7.3.3 Redox Definitions Using Oxidation Number](#733-redox-definitions-using-oxidation-number)
+    - [7.3.4 Fractional Oxidation Numbers](#734-fractional-oxidation-numbers)
+    - [7.3.5 Types of Redox Reactions ⭐⭐](#735-types-of-redox-reactions-)
+    - [7.3.6 Balancing of Redox Reactions ⭐⭐⭐](#736-balancing-of-redox-reactions-)
+      - [Method 1 — Oxidation Number Method (steps)](#method-1--oxidation-number-method-steps)
+      - [Method 2 — Half-Reaction (Ion-Electron) Method (steps)](#method-2--half-reaction-ion-electron-method-steps)
+    - [Acidic vs Basic Medium — Quick Rules](#acidic-vs-basic-medium--quick-rules)
+    - [7.3.7 Redox Reactions as the Basis for Titrations ⭐⭐](#737-redox-reactions-as-the-basis-for-titrations-)
+    - [7.3.8 Limitations of the Oxidation Number Concept ⭐](#738-limitations-of-the-oxidation-number-concept-)
+  - [7.4 Redox Reactions and Electrode Processes ⭐⭐⭐](#74-redox-reactions-and-electrode-processes-)
+    - [7.4.1 From Direct to Indirect Electron Transfer — The Daniell Cell](#741-from-direct-to-indirect-electron-transfer--the-daniell-cell)
+    - [7.4.2 Electrode Potential, Standard Electrode Potential \& SHE](#742-electrode-potential-standard-electrode-potential--she)
+    - [7.4.3 Standard Electrode Potentials and Feasibility](#743-standard-electrode-potentials-and-feasibility)
+  - [Points to Ponder ⭐⭐⭐](#points-to-ponder-)
 
 ---
 
@@ -16,19 +61,21 @@ flowchart TD
     P1["Prerequisite: atomic structure, electronegativity, chemical bonding"] --> C1["7.1 Classical idea -- O/H transfer"]
     C1 --> C2["7.2 Electron-transfer definition -- OIL RIG"]
     C2 --> C3["7.3 Oxidation number rules"]
-    C3 --> C4["7.3.1 Types -- combination, decomposition, displacement, disproportionation"]
-    C3 --> C5["7.3.2 Balancing -- oxidation-number & ion-electron methods"]
-    C5 --> A1["7.3.3 Application -- redox titrations (KMnO4, K2Cr2O7, iodometry)"]
+    C3 --> C4["7.3.5 Types -- combination, decomposition, displacement, disproportionation"]
+    C3 --> C5["7.3.6 Balancing -- oxidation-number & ion-electron methods"]
+    C5 --> A1["7.3.7 Application -- redox titrations (KMnO4, K2Cr2O7, iodometry)"]
     C2 --> C6["7.4 Electrode potential & redox couples"]
     C6 --> A2["Application -- Daniell cell, electrochemical series"]
     A2 --> A3["Leads into Class XII Electrochemistry -- Nernst equation, EMF, batteries"]
 ```
 
-*Every later idea in this chapter -- oxidation number, balancing, titrations, electrode potential -- is one of two things stacked on top of each other: the classical O/H-transfer picture, or the electron-transfer picture. Keep asking "which of these two lenses am I using right now?" and the chapter stops feeling like a pile of disconnected rules.*
+*Every later idea in this chapter — oxidation number, balancing, titrations, electrode potential — is one of two things stacked on top of each other: the classical O/H-transfer picture, or the electron-transfer picture. Keep asking "which of these two lenses am I using right now?" and the chapter stops feeling like a pile of disconnected rules.*
 
 ---
 
 ## 7.1 The Classical Idea of Redox Reactions ⭐
+
+This section builds the oldest, narrowest definition of oxidation and reduction, then widens it in three deliberate steps until it covers reactions that don't obviously involve oxygen at all. The widening steps matter more than the final boxed definitions — they are what §7.2 leans on to motivate why an electron-based definition was needed.
 
 ### 7.1.1 Oxidation — The Classical View
 
@@ -40,7 +87,7 @@ flowchart TD
 | \( \text{S(s)} + \text{O}_2\text{(g)} \to \text{SO}_2\text{(g)} \) | S is oxidised (O₂ added) |
 | \( \text{CH}_4\text{(g)} + 2\text{O}_2\text{(g)} \to \text{CO}_2\text{(g)} + 2\text{H}_2\text{O(l)} \) | C–H oxidised (O₂ added, H removed) |
 
-**The definition was broadened** in three stages, each one a generalisation of the last:
+**The definition was broadened** in three stages, each a generalisation of the last:
 
 1. **Removal of hydrogen**: \( 2\text{H}_2\text{S(g)} + \text{O}_2\text{(g)} \to 2\text{S(s)} + 2\text{H}_2\text{O(l)} \) — H₂S is oxidised even though nothing here is a hydrocarbon.
 2. **Addition of any electronegative element**, not just oxygen: \( \text{Mg(s)} + \text{F}_2\text{(g)} \to \text{MgF}_2\text{(s)} \); \( \text{Mg(s)} + \text{Cl}_2\text{(g)} \to \text{MgCl}_2\text{(s)} \); \( \text{Mg(s)} + \text{S(s)} \to \text{MgS(s)} \).
@@ -69,25 +116,25 @@ flowchart TD
 
 ### 7.1.3 The Simultaneous Nature — Why "Redox"
 
-In the last reaction above, HgCl₂ is reduced (it gains an Hg partner) **while SnCl₂ is simultaneously oxidised** to SnCl₄ (Cl, electronegative, is added to it). Re-examining every reaction in 7.1.1–7.1.2 the same way shows oxidation and reduction never occur alone — hence the portmanteau **"redox."**
+In the last reaction above, HgCl₂ is reduced (it gains an Hg partner) **while SnCl₂ is simultaneously oxidised** to SnCl₄ (Cl, electronegative, is added to it). Re-examining every reaction in §7.1.1–7.1.2 the same way shows oxidation and reduction never occur alone — hence the portmanteau **"redox."**
 
 > [!warning] The trap: reactions with only one *visible* change
-> A reaction can look like "just an oxidation" if you only watch one reactant. \( 2\text{HgCl}_2 + \text{SnCl}_2 \to \text{Hg}_2\text{Cl}_2 + \text{SnCl}_4 \) is the textbook's own example of this — always check *both* reactants before concluding only one has changed.
+> A reaction can look like "just an oxidation" if only one reactant is watched. \( 2\text{HgCl}_2 + \text{SnCl}_2 \to \text{Hg}_2\text{Cl}_2 + \text{SnCl}_4 \) is the textbook's own example of this — always check *both* reactants before concluding only one has changed.
 
-#### Worked Example — Identifying oxidised/reduced species (NCERT Problem 7.1)
-
+**Worked Example — Identifying oxidised/reduced species**
 **Given:** (i) \( \text{H}_2\text{S(g)} + \text{Cl}_2\text{(g)} \to 2\text{HCl(g)} + \text{S(s)} \) (ii) \( 3\text{Fe}_3\text{O}_4\text{(s)} + 8\text{Al(s)} \to 9\text{Fe(s)} + 4\text{Al}_2\text{O}_3\text{(s)} \) (iii) \( 2\text{Na(s)} + \text{H}_2\text{(g)} \to 2\text{NaH(s)} \)
 **Find:** which species is oxidised, which is reduced, in each.
-**Concept:** classical addition/removal rules from 7.1.1–7.1.2.
+**Concept:** classical addition/removal rules from §7.1.1–7.1.2.
 **Work:**
 (i) H₂S is oxidised (electronegative Cl added to H — equivalently, H removed from S). Cl₂ is reduced (H added to it).
 (ii) Al is oxidised (O added). Fe₃O₄ is reduced (O removed).
 (iii) Na is oxidised (forms Na⁺ in the ionic solid NaH). H₂ is reduced (H goes from neutral to H⁻, i.e. an electropositive element — Na — has been *added* to it).
-**Check:** every pair has one oxidation and one reduction — consistent with 7.1.3.
+**Check:** every pair has one oxidation and one reduction — consistent with §7.1.3.
 
-#### Worked Example — Justifying 2Na(s) + H₂(g) → 2NaH(s) is redox (NCERT Problem 7.2)
-
-**Concept:** NaH is ionic, better written Na⁺H⁻(s), so it splits into two half-reactions.
+**Worked Example — Justifying 2Na(s) + H₂(g) → 2NaH(s) is redox**
+**Given:** NaH is ionic, better written Na⁺H⁻(s).
+**Find:** show this reaction is redox even though no oxygen or classical electronegative element appears anywhere in it.
+**Concept:** split the reaction into two half-reactions and track electrons directly, rather than atoms.
 **Work:**
 \[
 \begin{aligned}
@@ -95,7 +142,7 @@ In the last reaction above, HgCl₂ is reduced (it gains an Hg partner) **while 
 \text{Reduction half:}&\quad \text{H}_2\text{(g)} + 2e^- \to 2\text{H}^-\text{(g)}
 \end{aligned}
 \]
-Splitting the reaction this way shows sodium is oxidised and hydrogen is reduced — the reaction is redox even though no O or classic electronegative element is anywhere in sight. This is exactly the case that motivates Section 7.2: the classical definition needs an electron-based backbone to handle reactions like this cleanly.
+**Check:** sodium is oxidised and hydrogen is reduced — confirmed redox despite no O or classical electronegative element in sight. This is exactly the case that motivates §7.2: the classical definition needs an electron-based backbone to handle reactions like this cleanly.
 
 ---
 
@@ -145,7 +192,7 @@ flowchart LR
     Zn2 -. "the same 2 electrons, transferred" .-> Cu2
 ```
 
-*The two half-reactions are not independent facts to memorise separately — they are one electron-counting exercise seen from two ends. Whatever number of electrons the oxidation half releases, the reduction half must absorb, or the equation isn't balanced (Section 7.3.2 turns this into a formal method).*
+*The two half-reactions are not independent facts to memorise separately — they are one electron-counting exercise seen from two ends. Whatever number of electrons the oxidation half releases, the reduction half must absorb, or the equation isn't balanced (§7.3.6 turns this into a formal method).*
 
 ### 7.2.2 Competitive Electron Transfer Reactions
 
@@ -157,16 +204,14 @@ Three experiments build the case for ranking metals by how readily they give up 
 | Cu rod in AgNO₃(aq) | \( \text{Cu(s)} + 2\text{Ag}^+(aq) \to \text{Cu}^{2+}(aq) + 2\text{Ag(s)} \) | Solution turns blue, Ag deposits on the rod. **Greatly favours products.** |
 | Co strip in NiSO₄(aq) | \( \text{Co(s)} + \text{Ni}^{2+}(aq) \to \text{Co}^{2+}(aq) + \text{Ni(s)} \) | Both Ni²⁺(aq) and Co²⁺(aq) persist at **moderate, comparable concentrations** — neither side is strongly favoured. |
 
-> **Key idea:** competition for electrons between metals is directly analogous to competition for protons between acids. Comparing enough of these experiments builds a table of metals ranked by electron-releasing tendency: \( \text{Zn} > \text{Cu} > \text{Ag} \). Extending this to as many metals as possible gives the **metal activity series (electrochemical series)** — the same ranking that, quantified, becomes the standard electrode potentials of Section 7.4.
-
-**The full activity series** (most to least reactive), as commonly tabulated for quick recall:
+**Key idea:** competition for electrons between metals is directly analogous to competition for protons between acids. Comparing enough of these experiments builds a table of metals ranked by electron-releasing tendency: \( \text{Zn} > \text{Cu} > \text{Ag} \). Extending this comparison to as many metals as possible, by direct displacement experiments, gives the conventional **metal activity series**:
 
 \[
 \text{K} > \text{Na} > \text{Ca} > \text{Mg} > \text{Al} > \text{Zn} > \text{Fe} > \text{Pb} > \text{H} > \text{Cu} > \text{Hg} > \text{Ag} > \text{Au} > \text{Pt}
 \]
 
-> [!warning] A gap worth closing
-> A shorter version of this list sometimes circulates without **Ag** between Cu and Hg. Check it against Table 7.1's standard reduction potentials (Section 7.4): Ag⁺/Ag sits at +0.80 V, correctly between Cu²⁺/Cu (+0.34 V) and 2Hg²⁺/Hg₂²⁺ (+0.92 V) — so Ag belongs in the list exactly where shown above.
+> [!warning] Activity series vs. electrochemical series — not the same list
+> The activity series above ranks *metals* by displacement behaviour, built from experiments like the ones in this section. The **electrochemical series** (§7.4.3) instead ranks **half-reactions** (redox couples, including non-metals) by their quantitative standard electrode potential \(E^\circ\). They agree closely for common metals but are not the same object — the electrochemical series is the more general, quantitative tool, and it is what §7.4.3 formalises.
 
 The oxidation-number picture in the next section is what lets this competitive-electron-transfer idea be applied to reactions involving covalent (not just ionic) compounds, where "who loses/gains an electron" is not visually obvious the way it is for Na⁺Cl⁻.
 
@@ -196,14 +241,16 @@ The oxidation-number picture in the next section is what lets this competitive-e
 
 Applying this to \( 2\text{H}_2\text{(g)} + \text{O}_2\text{(g)} \to 2\text{H}_2\text{O(l)} \): H is visualised as going from a neutral state to \(+1\), and O from neutral to \(-2\) — even though the real electron shift is partial, not a complete transfer.
 
-### Rules for Assigning Oxidation Number
+### 7.3.1 Rules for Assigning Oxidation Number
+
+The single electronegativity assumption above expands into six concrete rules, applied in the order given whenever they conflict (a fixed rule like "F = –1" always wins over the general sum rule):
 
 1. **Free/uncombined element** → oxidation number = **0**. (H₂, O₂, Cl₂, O₃, P₄, S₈, Na, Mg, Al are all 0.)
 2. **Monoatomic ion** → oxidation number = **charge on the ion**. (Na⁺ = +1, Mg²⁺ = +2, Fe³⁺ = +3, Cl⁻ = –1, O²⁻ = –2.)
 3. **Oxygen** = **–2** in most compounds. Exceptions: peroxides (H₂O₂, Na₂O₂) → **–1**; superoxides (KO₂, RbO₂) → **–½**; bonded to fluorine (OF₂ → **+2**, O₂F₂ → **+1**) — the only case where O is positive.
 4. **Hydrogen** = **+1**, except in **metal hydrides** (binary compounds with metals): LiH, NaH, CaH₂ → H = **–1**.
 5. **Fluorine** = always **–1** (most electronegative element — cannot go positive). Other halogens (Cl, Br, I) = –1 as halide ions, but take **positive** values in oxoacids/oxoanions (combined with O).
-6. **Sum of oxidation numbers** in a neutral compound = **0**; in a polyatomic ion = **charge on the ion**. If an element appears more than once (e.g. in Na₂S₂O₃ or Cr₂O₇²⁻), the number obtained is the **average** across all atoms of that element.
+6. **Sum of oxidation numbers** in a neutral compound = **0**; in a polyatomic ion = **charge on the ion**. If an element appears more than once and bonding does not distinguish the atoms (e.g. Na₂SO₄), the number obtained by this sum is the **average** across all atoms of that element — an atom-by-atom split, when the atoms genuinely differ, needs the compound's actual structure (§7.3.4).
 
 | Element | Usual O.N. | Exception / range |
 |---------|------------|-------------------|
@@ -227,7 +274,25 @@ Applying this to \( 2\text{H}_2\text{(g)} + \text{O}_2\text{(g)} \to 2\text{H}_2
 > \boxed{\text{Highest oxidation number increases across a period}}
 > \]
 
-### Stock Notation
+**Worked Example — Average oxidation numbers by direct calculation**
+**Given:** N in (NH₄)₂SO₄; S in Na₂SO₄; S (average) in Na₂S₄O₆; S (average) in Na₂S₂O₃.
+**Find:** the oxidation number of the indicated atom in each species.
+**Concept:** Rule 6 — the algebraic sum of oxidation numbers equals 0 for a neutral compound, or the ionic charge for an ion.
+**Work:**
+
+| Species | Setting up | Result |
+|---|---|---|
+| N in (NH₄)₂SO₄ | NH₄⁺ is a unit charge +1: N + 4(+1) = +1 | **N = –3** |
+| S in Na₂SO₄ | 2(+1) + S + 4(–2) = 0 | **S = +6** |
+| S (average) in Na₂S₄O₆ | 2(+1) + 4S + 6(–2) = 0 → 4S = 10 | **S = +2.5** |
+| S (average) in Na₂S₂O₃ | 2(+1) + 2S + 3(–2) = 0 → 2S = 4 | **S = +2** |
+
+**Check:** each result satisfies rule 6 exactly (sum of O.N. × count = 0 for the neutral formula unit).
+
+> [!warning] Where sources disagree — thiosulphate's *individual* sulphurs
+> The average (+2) is unambiguous, but the two sulphurs' individual states depend on which of thiosulphate's two resonance-adjacent bonding pictures is used. Applying rule 3's electronegativity convention consistently — each S–S bond splits its shared pair equally between two identical S atoms, contributing 0 to each, while S–O bonds assign both electrons to O — gives the central S a **+5** environment (three O neighbours, one S neighbour) and the terminal S a **–1** environment (one S neighbour only), averaging to +2. A shortcut sometimes used treats thiosulphate as sulphate with one O replaced by S, giving **+6** and **–2**; this shortcut does not follow rule 3's own electronegativity assignment, since it silently treats the replacing S as if it still had oxygen's electronegativity. Use **+5/–1** for the individual states if a question asks for them, and the **average of +2** as the safe, universally examinable fact either way.
+
+### 7.3.2 Stock Notation
 
 Alfred Stock's convention writes the oxidation number as a **Roman numeral in parentheses** after the metal symbol.
 
@@ -243,12 +308,13 @@ Alfred Stock's convention writes the oxidation number as a **Roman numeral in pa
 | Hg₂Cl₂ | Hg₂(I)Cl₂ — mercury(I) chloride | mercurous chloride |
 
 > [!warning] High-yield edge case: "mercurous" is *not* HgCl
-> The Hg(I) ion is the **dimeric** \( \text{Hg}_2^{2+} \), never a monomeric Hg⁺. That is why mercurous chloride is written **Hg₂Cl₂**, not "HgCl" — two Hg per formula unit, average oxidation number +1 each, but bonded to *each other* as a Hg–Hg unit. The textbook makes the same point the other way: \( \text{Hg}_2(\text{I})\text{Cl}_2 \) is described as *the reduced form of* Hg(II)Cl₂, i.e. \( 2\text{HgCl}_2 + \text{SnCl}_2 \to \text{Hg}_2\text{Cl}_2 + \text{SnCl}_4 \) reduces Hg(II) to Hg(I), not to Hg(0).
+> The Hg(I) ion is the **dimeric** \( \text{Hg}_2^{2+} \), never a monomeric Hg⁺. That is why mercurous chloride is written **Hg₂Cl₂**, not "HgCl" — two Hg per formula unit, average oxidation number +1 each, but bonded to *each other* as a Hg–Hg unit. §7.1.2's reaction \( 2\text{HgCl}_2 + \text{SnCl}_2 \to \text{Hg}_2\text{Cl}_2 + \text{SnCl}_4 \) reduces Hg(II) to Hg(I), not to Hg(0).
 
-#### Additional Practice — Stock notation from formulas (NCERT Problem 7.3)
-
+**Worked Example — Stock notation from formulas**
 **Given:** HAuCl₄, Tl₂O, FeO, Fe₂O₃, CuI, CuO, MnO, MnO₂.
-**Work (rule 6, solving for the metal's O.N.):**
+**Find:** the Stock name for each compound.
+**Concept:** rule 6, solving for the metal's oxidation number.
+**Work:**
 
 | Compound | O.N. of metal | Stock name |
 |---|---|---|
@@ -261,7 +327,11 @@ Alfred Stock's convention writes the oxidation number as a **Roman numeral in pa
 | MnO | Mn = +2 | Mn(II)O |
 | MnO₂ | Mn = +4 | Mn(IV)O₂ |
 
-### Redox Definitions Using Oxidation Number
+**Check:** each metal O.N. satisfies rule 6 against the fixed O.N. of the non-metal partner (I = –1, O = –2, Cl = –1).
+
+### 7.3.3 Redox Definitions Using Oxidation Number
+
+Oxidation number gives a third definition of oxidation and reduction, general enough to apply even where electron transfer is only partial (covalent bonds):
 
 > \[
 > \boxed{\textbf{Oxidation} = \text{increase in O.N.} \qquad \textbf{Reduction} = \text{decrease in O.N.}}
@@ -270,7 +340,7 @@ Alfred Stock's convention writes the oxidation number as a **Roman numeral in pa
 > \boxed{\textbf{Oxidising agent} = \text{causes O.N. increase in another; its own O.N. decreases} \qquad \textbf{Reducing agent} = \text{causes O.N. decrease in another; its own O.N. increases}}
 > \]
 
-### The Paradox of Fractional Oxidation Numbers
+### 7.3.4 Fractional Oxidation Numbers
 
 Averaging (rule 6) can produce a **fraction** when the same element occupies more than one real oxidation state in a molecule:
 
@@ -294,34 +364,21 @@ Averaging (rule 6) can produce a **fraction** when the same element occupies mor
   \node[above, font=\small] at (-1.5,0.35) {$+2$};
   \node[above, font=\small, text=red!70!black] at (0,0.35) {$0$};
   \node[above, font=\small] at (1.5,0.35) {$+2$};
-  \node[below, font=\itshape\small, text=gray] at (0,-1.0) {Carbon suboxide C$_3$O$_2$: real oxidation states are $+2, 0, +2$ -- the textbook's "average" of $4/3$ is a book-keeping artefact, not a physical state};
+  \node[below, font=\itshape\small, text=gray] at (0,-1.0) {Carbon suboxide C$_3$O$_2$: real oxidation states are $+2, 0, +2$ -- the "average" of $4/3$ is a book-keeping artefact, not a physical state};
 \end{tikzpicture}
 ```
 
 > \[
-> \boxed{\text{A fractional oxidation number is always an average -- the real molecule has that element in more than one whole-number state, revealed only by its structure.}}
+> \boxed{\text{A fractional oxidation number is an average over every atom of that element in the species — either because the real molecule holds that element in more than one whole-number state (structural asymmetry), or, more rarely, because the species itself has a genuinely fractional electron count.}}
 > \]
 
-Other genuine mixed-oxide examples: Fe₃O₄ (a 1:2 mixture of Fe²⁺:Fe³⁺ giving average +8/3), Mn₃O₄, Pb₃O₄ (used again in Problem 7.7 below). Genuinely fractional (not an average of integers) exceptions exist too: \( \text{O}_2^+ \) (O = +½) and \( \text{O}_2^- \) (O = –½).
+Other genuine mixed-oxide examples: Fe₃O₄ (a 1:2 mixture of Fe²⁺:Fe³⁺ giving average +8/3), Mn₃O₄, Pb₃O₄ (used again below). The genuinely fractional (not an average of whole-number structural positions) exceptions are the dioxygenyl and superoxide ions: \( \text{O}_2^+ \) (O = +½, one electron short of neutral O₂ overall) and \( \text{O}_2^- \) (O = –½, one electron in excess).
 
-#### Additional Practice — Average oxidation numbers by direct calculation (New)
-
-Using rule 6 (\(\sum \text{O.N.} = 0\) for a neutral compound, or the ionic charge for an ion):
-
-| Species | Setting up | Result |
-|---|---|---|
-| N in (NH₄)₂SO₄ | NH₄⁺ is a unit charge +1: N + 4(+1) = +1 | **N = –3** |
-| S in Na₂SO₄ | 2(+1) + S + 4(–2) = 0 | **S = +6** |
-| S (average) in Na₂S₄O₆ | 2(+1) + 4S + 6(–2) = 0 → 4S = 10 | **S = +2.5**, matching Table above |
-| S (average) in Na₂S₂O₃ | 2(+1) + 2S + 3(–2) = 0 → 2S = 4 | **S = +2** |
-
-> [!warning] Where sources disagree — thiosulfate's *individual* sulfurs
-> The average (+2) is unambiguous, but the two sulfurs' individual states are reported differently across references. One common teaching device treats thiosulfate as sulfate (SO₄²⁻) with one O replaced by S: the central S stays at its sulfate-like **+6**, and the replacing S is assigned **–2** (mimicking the oxygen it replaced), averaging to +2. A structural formal-charge analysis instead often gives **+5** (sulfonate-type central S) and **–1** (terminal sulfido S), which also averages to +2. Both are used in different coaching resources — treat the **average of +2 as the safe, examinable fact**, and don't commit to one individual split unless a question's structural diagram forces it.
-
-#### Worked Example — Redox justification via O.N. (NCERT Problem 7.4)
-
+**Worked Example — Redox justification via O.N.**
 **Given:** \( 2\text{Cu}_2\text{O(s)} + \text{Cu}_2\text{S(s)} \to 6\text{Cu(s)} + \text{SO}_2\text{(g)} \)
-**Work:** assign O.N. to every atom:
+**Find:** which reactant is the oxidant, which is the reductant.
+**Concept:** assign O.N. to every atom (§7.3.1), then apply §7.3.3.
+**Work:**
 
 ```
  +1 –2      +1 –2       0      +4 –2
@@ -329,12 +386,12 @@ Using rule 6 (\(\sum \text{O.N.} = 0\) for a neutral compound, or the ionic char
 ```
 
 Cu goes +1 → 0 (**reduced**, so Cu₂O is the **oxidant**). S goes –2 → +4 (**oxidised**, so Cu₂S is the **reductant**).
-**Check:** total electrons gained by Cu — 4 Cu atoms (2 from each Cu₂O, ×2 formula units) each gain 1e⁻ = 4e⁻ gained. Total electrons lost by S: 1 S atom loses 6e⁻ (–2 → +4). ✓ 4 electrons gained across 4 Cu atoms is not equal to 6 lost by one S atom at first glance — but Cu₂S also contributes 2 Cu atoms that are reduced (+1→0, 2e⁻), so total Cu reduced = (4 from Cu₂O) + (2 from Cu₂S) = 6 Cu atoms × 1e⁻ = 6e⁻ gained, matching the 6e⁻ lost by S. Electrons lost = electrons gained. ✓
+**Check:** total electrons gained by Cu — 4 Cu atoms from the two Cu₂O formula units, each gaining 1e⁻, give 4e⁻; the 2 Cu atoms in Cu₂S also go +1 → 0, adding 2e⁻ more, for 6e⁻ gained across all 6 Cu atoms. Electrons lost by S: 1 S atom loses 6e⁻ (–2 → +4). 6e⁻ gained = 6e⁻ lost. ✓
 
-#### Worked Example — Disproportionation screening (NCERT Problem 7.5)
-
-**Given:** ClO⁻, ClO₂⁻, ClO₃⁻, ClO₄⁻ — which does *not* disproportionate, and why?
-**Concept:** disproportionation needs an *intermediate* oxidation state with room to go both up and down (Section 7.3.1 below states this formally).
+**Worked Example — Disproportionation screening**
+**Given:** ClO⁻, ClO₂⁻, ClO₃⁻, ClO₄⁻.
+**Find:** which of these does *not* disproportionate, and why.
+**Concept:** disproportionation needs an *intermediate* oxidation state with room to go both up and down (§7.3.5 states this formally).
 **Work:** Cl oxidation numbers are +1, +3, +5, +7 respectively.
 
 \[
@@ -345,22 +402,38 @@ Cu goes +1 → 0 (**reduced**, so Cu₂O is the **oxidant**). S goes –2 → +4
 \end{aligned}
 \]
 
-**ClO₄⁻ does not disproportionate** — Cl is already at +7, its maximum possible oxidation state (Cl is in group 17, highest O.N. = 17 – 10 = 7), so it has nowhere higher to go.
+**Check:** **ClO₄⁻ does not disproportionate** — Cl is already at +7, its maximum possible oxidation state (Cl is in group 17, highest O.N. = 17 – 10 = 7), so it has nowhere higher to go.
 
-#### Additional Practice — Classifying four redox reactions (NCERT Problem 7.6)
+**Worked Example — Classifying four redox reactions**
+**Given:** \( \text{N}_2\text{(g)} + \text{O}_2\text{(g)} \to 2\text{NO(g)} \); \( 2\text{Pb(NO}_3)_2\text{(s)} \to 2\text{PbO(s)} + 4\text{NO}_2\text{(g)} + \text{O}_2\text{(g)} \); \( \text{NaH(s)} + \text{H}_2\text{O(l)} \to \text{NaOH}(aq) + \text{H}_2\text{(g)} \); \( 2\text{NO}_2\text{(g)} + 2\text{OH}^-(aq) \to \text{NO}_2^-(aq) + \text{NO}_3^-(aq) + \text{H}_2\text{O(l)} \).
+**Find:** the redox classification of each.
+**Concept:** §7.3.5's four-way classification, applied ahead of that section's formal treatment.
+**Work:**
 
 | Reaction | Classification | Why |
 |---|---|---|
-| \( \text{N}_2\text{(g)} + \text{O}_2\text{(g)} \to 2\text{NO(g)} \) | Combination | Two elements → one compound |
-| \( 2\text{Pb(NO}_3)_2\text{(s)} \to 2\text{PbO(s)} + 4\text{NO}_2\text{(g)} + \text{O}_2\text{(g)} \) | Decomposition | One compound → three products |
-| \( \text{NaH(s)} + \text{H}_2\text{O(l)} \to \text{NaOH}(aq) + \text{H}_2\text{(g)} \) | Displacement | H of water displaced by hydride ion into H₂ |
-| \( 2\text{NO}_2\text{(g)} + 2\text{OH}^-(aq) \to \text{NO}_2^-(aq) + \text{NO}_3^-(aq) + \text{H}_2\text{O(l)} \) | Disproportionation | N (+4) splits into +3 and +5 |
+| N₂ + O₂ → 2NO | Combination | Two elements → one compound |
+| 2Pb(NO₃)₂ → 2PbO + 4NO₂ + O₂ | Decomposition | One compound → three products |
+| NaH + H₂O → NaOH + H₂ | Displacement | H of water displaced by hydride ion into H₂ |
+| 2NO₂ + 2OH⁻ → NO₂⁻ + NO₃⁻ + H₂O | Disproportionation | N (+4) splits into +3 and +5 |
 
-*(This table previews Section 7.3.1's four-way classification — worth returning to after reading it.)*
+**Check:** each classification is confirmed once oxidation numbers are assigned atom-by-atom, exactly as §7.3.5 formalises next.
 
----
+**Worked Example — Why identical-formula Pb₃O₄ reacts differently with HCl vs HNO₃**
+**Given:** \( \text{Pb}_3\text{O}_4 + 8\text{HCl} \to 3\text{PbCl}_2 + \text{Cl}_2 + 4\text{H}_2\text{O} \) but \( \text{Pb}_3\text{O}_4 + 4\text{HNO}_3 \to 2\text{Pb(NO}_3)_2 + \text{PbO}_2 + 2\text{H}_2\text{O} \).
+**Find:** why the same compound gives a redox reaction with one acid and not the other.
+**Concept:** Pb₃O₄ is not a single compound with Pb at an average +8/3 — it is a **stoichiometric mixture of 2 mol PbO (Pb²⁺, basic oxide) and 1 mol PbO₂ (Pb⁴⁺, an oxidant)**.
+**Work:** splitting the HCl reaction:
+\[
+\begin{aligned}
+2\text{PbO} + 4\text{HCl} &\to 2\text{PbCl}_2 + 2\text{H}_2\text{O} &&\text{(acid–base, not redox)}\\
+\text{PbO}_2 + 4\text{HCl} &\to \text{PbCl}_2 + \text{Cl}_2 + 2\text{H}_2\text{O} &&\text{(redox: Pb}^{4+}\to\text{Pb}^{2+}\text{, Cl}^-\to\text{Cl}_2\text{)}
+\end{aligned}
+\]
+PbO₂ oxidises Cl⁻ to Cl₂ because Pb⁴⁺ is unstable relative to the more stable Pb²⁺. HNO₃, however, is *itself already an oxidising agent* — it cannot be oxidised further by PbO₂, so PbO₂ stays passive against HNO₃, and only the acid–base reaction \( 2\text{PbO} + 4\text{HNO}_3 \to 2\text{Pb(NO}_3)_2 + 2\text{H}_2\text{O} \) proceeds.
+**Check:** treating Pb₃O₄ as a genuine mixture (not a fractional-O.N. compound, contrast §7.3.4) is the only picture that explains both reactions — this is the chapter's clearest illustration that "same formula" does not mean "same chemistry."
 
-### 7.3.1 Types of Redox Reactions ⭐⭐
+### 7.3.5 Types of Redox Reactions ⭐⭐
 
 ```mermaid
 flowchart TD
@@ -371,12 +444,12 @@ flowchart TD
     Disp --> DispN["Non-metal displacement"]
     DispN --> DispH["Hydrogen displacement -- reactive metal + water/acid"]
     DispN --> DispX["Halogen displacement -- oxidising power F2 > Cl2 > Br2 > I2"]
-    R --> Disprop["Disproportionation -- same element oxidised AND reduced (needs an intermediate O.N., >=3 states total)"]
+    R --> Disprop["Disproportionation -- one element, one starting state, split into a higher AND a lower O.N. (needs an intermediate O.N., >=3 states total)"]
 ```
 
-*Every redox reaction in this chapter fits exactly one branch of this tree. If a reaction doesn't obviously fit, assign oxidation numbers to every atom first (Section 7.3) — the classification usually becomes obvious once the changes are visible.*
+Most redox reactions in this chapter fit one of these four shapes. The **elemental-reactant/product test** below is a fast first check, not the definitive one — the definitive test is always whether any oxidation number actually changes (§7.3.1). If a reaction doesn't obviously fit a shape, assign oxidation numbers to every atom first — the classification usually becomes obvious once the changes are visible.
 
-**Combination reactions** (\( A + B \to C \)): at least one of A, B must be elemental. All combustion reactions using elemental O₂ qualify.
+**Combination reactions** (\( A + B \to C \)): commonly, at least one of A, B is elemental — all combustion reactions using elemental O₂ qualify this way.
 
 ```
 0    0       +4 –2
@@ -386,10 +459,10 @@ C(s) + O₂(g) →   CO₂(g)
 3Mg(s) + N₂(g) →  Mg₃N₂(s)
 ```
 
-> [!warning] Not every combination reaction is redox
-> \( \text{CaO(s)} + \text{CO}_2\text{(g)} \to \text{CaCO}_3\text{(s)} \) — Ca stays +2, C stays +4, O stays –2 throughout. No oxidation number changes, so this is **not** a redox reaction despite fitting the A + B → C pattern.
+> [!warning] The elemental-reactant test is a shortcut, not the rule
+> \( \text{CaO(s)} + \text{CO}_2\text{(g)} \to \text{CaCO}_3\text{(s)} \) fits the A + B → C shape but is **not** redox — Ca stays +2, C stays +4, O stays –2 throughout, so no oxidation number changes. Conversely, a combination reaction can be redox with **no** elemental reactant at all if two compounds exchange electrons on combining — always confirm with oxidation numbers, never the shape alone.
 
-**Decomposition reactions**: the reverse — a compound breaks into ≥2 components, at least one elemental.
+**Decomposition reactions**: the reverse — a compound breaks into ≥2 components, commonly with at least one elemental.
 
 ```
 +1 –2           0    0
@@ -400,11 +473,11 @@ C(s) + O₂(g) →   CO₂(g)
 ```
 
 > [!warning] Not every decomposition reaction is redox
-> \( \text{CaCO}_3\text{(s)} \to \text{CaO(s)} + \text{CO}_2\text{(g)} \) — Ca, C, O all keep their oxidation states. Not redox.
+> \( \text{CaCO}_3\text{(s)} \to \text{CaO(s)} + \text{CO}_2\text{(g)} \) — Ca, C, O all keep their oxidation states. Not redox, for the same reason as the CaO + CO₂ counter-example above.
 
 **Displacement reactions** (\( X + YZ \to XZ + Y \)):
 
-*Metal displacement* — a more active metal (per the activity series of 7.2.2) displaces a less active one from its salt:
+*Metal displacement* — a more active metal (per §7.2.2's activity series) displaces a less active one from its salt:
 
 ```
 +2+6–2    0       0    +2+6–2
@@ -414,14 +487,14 @@ CuSO₄(aq) + Zn(s) →  Cu(s) + ZnSO₄(aq)
 Cr₂O₃(s) + 2Al(s) → Al₂O₃(s) + 2Cr(s)
 ```
 
-*Non-metal displacement — hydrogen*: very active metals (alkali metals, Ca, Sr, Ba) displace H from **cold water**; less active metals (Mg, Fe) need **steam**; many metals (including Zn, Fe) displace H from **acids**:
+*Non-metal displacement — hydrogen*: reactivity toward water and acid divides the common lab metals into three bands.
 
-```
-2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g)
-Zn(s) + 2HCl(aq) → ZnCl₂(aq) + H₂(g)
-```
+- Very active metals (alkali metals, Ca, Sr, Ba) displace H from **cold water**: \( 2\text{Na(s)} + 2\text{H}_2\text{O(l)} \to 2\text{NaOH}(aq) + \text{H}_2\text{(g)} \)
+- Less active metals (Mg, Fe) need **steam**
+- Many metals, including Zn and Fe, displace H from **acids**: \( \text{Zn(s)} + 2\text{HCl}(aq) \to \text{ZnCl}_2(aq) + \text{H}_2\text{(g)} \)
+- Ag, Au don't react even with HCl — consistent with their position at the bottom of the activity series
 
-Rate of H₂ evolution tracks reactivity (Mg fastest, Fe slowest among the common lab metals); Ag, Au don't react even with HCl — consistent with their position at the bottom of the activity series.
+Rate of H₂ evolution tracks reactivity (Mg fastest, Fe slowest among the common lab metals).
 
 *Non-metal displacement — halogens*: oxidising power decreases \( \text{F}_2 > \text{Cl}_2 > \text{Br}_2 > \text{I}_2 \).
 
@@ -431,10 +504,10 @@ Cl₂(g) + 2KI(aq)  → 2KCl(aq) + I₂(s)
 ```
 
 > **Layer Test:** Br₂ and I₂ are coloured and dissolve in CCl₄ — used to identify Br⁻/I⁻ in the lab.
-> **F₂ is exceptional**: it is so reactive it attacks water itself, \( 2\text{H}_2\text{O(l)} + 2\text{F}_2\text{(g)} \to 4\text{HF}(aq) + \text{O}_2\text{(g)} \), so F₂ halogen-displacement reactions are never run in aqueous solution.
-> **F⁻ → F₂** cannot be achieved by any chemical oxidant (F₂ is already the strongest one available) — only **electrolysis** works.
+> **F₂ is exceptional**: it is so reactive it attacks the water itself before it can displace a halide from solution, \( 2\text{H}_2\text{O(l)} + 2\text{F}_2\text{(g)} \to 4\text{HF}(aq) + \text{O}_2\text{(g)} \), so halogen-displacement reactions using F₂ are never run in aqueous solution.
+> **F⁻ → F₂** has no common aqueous chemical oxidant, since F₂ is already the strongest one available in this chapter's scope — in the school-chemistry context, only **electrolysis** achieves it.
 
-**Disproportionation reactions**: the same element, in one oxidation state, is *simultaneously* oxidised and reduced. Requires the element to have **at least three accessible oxidation states**, with the reactant sitting at the **intermediate** one.
+**Disproportionation reactions**: one element, starting from a **single oxidation state**, ends up **simultaneously oxidised and reduced** in the products. Requires the element to have **at least three accessible oxidation states**, with the reactant sitting at the **intermediate** one.
 
 ```
 +1 –1             +1 –2    0
@@ -442,28 +515,15 @@ Cl₂(g) + 2KI(aq)  → 2KCl(aq) + I₂(s)
 
   0                +1         –1
 Cl₂(g) + 2OH⁻(aq) → ClO⁻(aq) + Cl⁻(aq) + H₂O(l)     [household bleach — ClO⁻ oxidises stains]
+
+  0                          –3         +1
+P₄(s) + 3OH⁻(aq) + 3H₂O(l) → PH₃(g) + 3H₂PO₂⁻(aq)   [alkaline hydrolysis of white phosphorus]
 ```
 
 > [!warning] Fluorine cannot disproportionate
-> \( 2\text{F}_2\text{(g)} + 2\text{OH}^-(aq) \to 2\text{F}^-(aq) + \text{OF}_2\text{(g)} + \text{H}_2\text{O(l)} \) looks similar to the chlorine reaction above but is **not** disproportionation: F₂ is only reduced (0 → –1); it is oxygen that gets oxidised (–2 in OH⁻ → +2 in OF₂, since O bonded to F is the one exception to O = –2). Fluorine, being the most electronegative element of all, **can never show a positive oxidation state**, so it can never be the species that gets oxidised — hence it never disproportionates.
+> \( 2\text{F}_2\text{(g)} + 2\text{OH}^-(aq) \to 2\text{F}^-(aq) + \text{OF}_2\text{(g)} + \text{H}_2\text{O(l)} \) looks similar to the chlorine reaction above but is **not** disproportionation of fluorine: F₂ is only reduced (0 → –1); it is oxygen that gets oxidised (–2 in OH⁻ → +2 in OF₂, the one exception where O bonded to F is positive, §7.3.1 rule 3). Fluorine, being the most electronegative element of all, **can never show a positive oxidation state**, so it can never be the species that gets oxidised — hence it never disproportionates.
 
-#### Worked Example — Why identical-formula Pb₃O₄ reacts differently with HCl vs HNO₃ (NCERT Problem 7.7)
-
-**Given:** \( \text{Pb}_3\text{O}_4 + 8\text{HCl} \to 3\text{PbCl}_2 + \text{Cl}_2 + 4\text{H}_2\text{O} \) but \( \text{Pb}_3\text{O}_4 + 4\text{HNO}_3 \to 2\text{Pb(NO}_3)_2 + \text{PbO}_2 + 2\text{H}_2\text{O} \).
-**Concept:** Pb₃O₄ is not a single compound with Pb at an average +8/3 — it is a **stoichiometric mixture of 2 mol PbO (Pb²⁺, basic oxide) and 1 mol PbO₂ (Pb⁴⁺, an oxidant)**.
-**Work:** Splitting the HCl reaction:
-\[
-\begin{aligned}
-2\text{PbO} + 4\text{HCl} &\to 2\text{PbCl}_2 + 2\text{H}_2\text{O} &&\text{(acid–base, not redox)}\\
-\text{PbO}_2 + 4\text{HCl} &\to \text{PbCl}_2 + \text{Cl}_2 + 2\text{H}_2\text{O} &&\text{(redox: Pb}^{4+}\to\text{Pb}^{2+}\text{, Cl}^-\to\text{Cl}_2\text{)}
-\end{aligned}
-\]
-PbO₂ oxidises Cl⁻ to Cl₂ because Pb⁴⁺ is unstable relative to the more stable Pb²⁺. But HNO₃ is *itself already an oxidising agent* — it cannot be oxidised further by PbO₂, so PbO₂ stays passive against HNO₃, and only the acid–base reaction (\( 2\text{PbO} + 4\text{HNO}_3 \to 2\text{Pb(NO}_3)_2 + 2\text{H}_2\text{O} \)) proceeds.
-**Check:** this is the single best illustration in the whole chapter that "same formula" does not mean "same chemistry" — Pb₃O₄'s reactivity is entirely explained by treating it as a *mixture*, not a compound with a fractional oxidation state (contrast with the genuinely fractional/averaged species of the previous section).
-
----
-
-### 7.3.2 Balancing of Redox Reactions ⭐⭐⭐
+### 7.3.6 Balancing of Redox Reactions ⭐⭐⭐
 
 Two methods exist — same physics, different bookkeeping. Both are in active use; which one to reach for is mostly personal preference, with one exception (basic medium is easier to track cleanly with the half-reaction method).
 
@@ -481,7 +541,7 @@ flowchart TD
     HRM --> Check
 ```
 
-*Whichever path you take through this flowchart, the final "Verify" step is not optional — a redox equation that balances atoms but not charge (or vice versa) is wrong, not "almost done."*
+*Whichever path is taken through this flowchart, the final "Verify" step is not optional — a redox equation that balances atoms but not charge (or vice versa) is wrong, not "almost done."*
 
 #### Method 1 — Oxidation Number Method (steps)
 
@@ -491,8 +551,11 @@ flowchart TD
 4. In aqueous solution, add H⁺ (acidic) or OH⁻ (basic) so ionic charge balances on both sides.
 5. Add H₂O to balance H atoms; check O atoms balance as a final confirmation.
 
-**Worked Example — K₂Cr₂O₇ + Na₂SO₃ in acid (NCERT Problem 7.8)**
-
+**Worked Example — K₂Cr₂O₇ + Na₂SO₃ in acid**
+**Given:** Cr₂O₇²⁻(aq) + SO₃²⁻(aq) → Cr³⁺(aq) + SO₄²⁻(aq), acidic medium.
+**Find:** the balanced ionic equation.
+**Concept:** oxidation number method (steps above).
+**Work:**
 \[
 \begin{aligned}
 &\text{Step 1:}\quad \text{Cr}_2\text{O}_7^{2-}(aq) + \text{SO}_3^{2-}(aq) \to \text{Cr}^{3+}(aq) + \text{SO}_4^{2-}(aq) \\[4pt]
@@ -508,6 +571,8 @@ flowchart TD
 \boxed{\text{Cr}_2\text{O}_7^{2-}(aq) + 3\text{SO}_3^{2-}(aq) + 8\text{H}^+(aq) \to 2\text{Cr}^{3+}(aq) + 3\text{SO}_4^{2-}(aq) + 4\text{H}_2\text{O(l)}}
 \]
 
+**Check:** atoms — Cr 2=2, S 3=3, O 7+9=16=12+4, H 8=8 ✓. Charge — left \(-2-6+8=0\); right \(6-6+0=0\) ✓.
+
 #### Method 2 — Half-Reaction (Ion-Electron) Method (steps)
 
 1. Write the unbalanced ionic equation.
@@ -518,8 +583,11 @@ flowchart TD
 6. Multiply each half so electron counts match; add the halves and cancel electrons.
 7. Verify atoms and total charge on both sides.
 
-**Worked Example — Fe²⁺ + Cr₂O₇²⁻ in acid (NCERT, Eqs. 7.50–7.58)**
-
+**Worked Example — Fe²⁺ + Cr₂O₇²⁻ in acid**
+**Given:** Fe²⁺(aq) + Cr₂O₇²⁻(aq) → Fe³⁺(aq) + Cr³⁺(aq), acidic medium.
+**Find:** the balanced ionic equation.
+**Concept:** half-reaction method (steps above).
+**Work:**
 \[
 \begin{aligned}
 &\text{Step 1:}\quad \text{Fe}^{2+}(aq) + \text{Cr}_2\text{O}_7^{2-}(aq) \to \text{Fe}^{3+}(aq) + \text{Cr}^{3+}(aq) \\[4pt]
@@ -536,9 +604,11 @@ flowchart TD
 
 **Check:** atoms — Fe 6=6, Cr 2=2, O 7=7, H 14=14 ✓. Charge — left \(6(+2)+(-2)+14(+1)=12-2+14=24\); right \(6(+3)+2(+3)=18+6=24\) ✓.
 
-#### Worked Example — MnO₄⁻ + Br⁻ in basic medium (NCERT Problem 7.9)
-
-Skeletal: \( \text{MnO}_4^-(aq) + \text{Br}^-(aq) \to \text{MnO}_2\text{(s)} + \text{BrO}_3^-(aq) \). Mn: +7→+4 (gain 3e⁻); Br: –1→+5 (lose 6e⁻), so multiply the Mn half by 2 to equalise 6e⁻ each side. After balancing O with H₂O, H with H⁺, then converting to basic by adding OH⁻ to both sides:
+**Worked Example — MnO₄⁻ + Br⁻ in basic medium**
+**Given:** MnO₄⁻(aq) + Br⁻(aq) → MnO₂(s) + BrO₃⁻(aq), basic medium.
+**Find:** the balanced ionic equation.
+**Concept:** half-reaction method, basic-medium variant of step 4.
+**Work:** Mn: +7→+4 (gain 3e⁻); Br: –1→+5 (lose 6e⁻), so the Mn half is multiplied by 2 to equalise 6e⁻ on each side. After balancing O with H₂O, H with H⁺, then converting to basic by adding OH⁻ to both sides:
 
 \[
 \boxed{2\text{MnO}_4^-(aq) + \text{Br}^-(aq) + \text{H}_2\text{O(l)} \to 2\text{MnO}_2\text{(s)} + \text{BrO}_3^-(aq) + 2\text{OH}^-(aq)}
@@ -546,9 +616,11 @@ Skeletal: \( \text{MnO}_4^-(aq) + \text{Br}^-(aq) \to \text{MnO}_2\text{(s)} + \
 
 **Check:** O: \(8+1=9\) left, \(4+3+2=9\) right ✓. H: 2 left, 2 right ✓. Charge: left \(-2-1=-3\); right \(-1-2=-3\) ✓.
 
-#### Worked Example — MnO₄⁻ + I⁻ in basic medium (NCERT Problem 7.10)
-
-Skeletal: \( \text{MnO}_4^-(aq) + \text{I}^-(aq) \to \text{MnO}_2\text{(s)} + \text{I}_2\text{(s)} \). Mn: +7→+4 (gain 3e⁻ each, ×2 for electron count); I: –1→0 (lose 1e⁻ each, ×6 for two I⁻ per I₂, ×3 sets):
+**Worked Example — MnO₄⁻ + I⁻ in basic medium**
+**Given:** MnO₄⁻(aq) + I⁻(aq) → MnO₂(s) + I₂(s), basic medium.
+**Find:** the balanced ionic equation.
+**Concept:** half-reaction method, basic-medium variant.
+**Work:** Mn: +7→+4 (gain 3e⁻ each, ×2 for electron count); I: –1→0 (lose 1e⁻ each, ×6 for two I⁻ per I₂, ×3 sets):
 
 \[
 \boxed{6\text{I}^-(aq) + 2\text{MnO}_4^-(aq) + 4\text{H}_2\text{O(l)} \to 3\text{I}_2\text{(s)} + 2\text{MnO}_2\text{(s)} + 8\text{OH}^-(aq)}
@@ -556,10 +628,11 @@ Skeletal: \( \text{MnO}_4^-(aq) + \text{I}^-(aq) \to \text{MnO}_2\text{(s)} + \t
 
 **Check:** O: \(8+4=12\) left, \(4+8=12\) right ✓. H: 8 left, 8 right ✓. Charge: left \(-6-2=-8\); right \(-8\) ✓.
 
-#### Additional Practice — Mg + dilute HNO₃ → N₂O (New)
-
-**Given (skeletal, as encountered in dilute-acid metal reactions):** \( \text{Mg} + \text{HNO}_3 \to \text{Mg(NO}_3)_2 + \text{N}_2\text{O} + \text{H}_2\text{O} \)
-**Work — oxidation number method:** Mg: 0 → +2 (loses 2e⁻ per atom). N: +5 (in HNO₃) → +1 (in N₂O, since \(2N + (-2) = 0 \Rightarrow N=+1\)), a gain of 4e⁻ per N, and N₂O carries **two** N atoms, so each "unit" of N₂O absorbs 8e⁻ total. To equalise, 4 Mg atoms (4×2e⁻ = 8e⁻ lost) must accompany 1 N₂O (8e⁻ gained):
+**Worked Example — Mg + dilute HNO₃ → N₂O**
+**Given (skeletal):** Mg + HNO₃ → Mg(NO₃)₂ + N₂O + H₂O.
+**Find:** the balanced equation.
+**Concept:** oxidation number method.
+**Work:** Mg: 0 → +2 (loses 2e⁻ per atom). N: +5 (in HNO₃) → +1 (in N₂O, since \(2N + (-2) = 0 \Rightarrow N=+1\)), a gain of 4e⁻ per N, and N₂O carries **two** N atoms, so each unit of N₂O absorbs 8e⁻ total. To equalise, 4 Mg atoms (4×2e⁻ = 8e⁻ lost) must accompany 1 N₂O (8e⁻ gained):
 
 \[
 \boxed{4\text{Mg(s)} + 10\text{HNO}_3(aq) \to 4\text{Mg(NO}_3)_2(aq) + \text{N}_2\text{O(g)} + 5\text{H}_2\text{O(l)}}
@@ -567,13 +640,10 @@ Skeletal: \( \text{MnO}_4^-(aq) + \text{I}^-(aq) \to \text{MnO}_2\text{(s)} + \t
 
 **Check:** Mg 4=4. N: left 10, right \(4\times2+2=10\) ✓. H: left 10, right \(5\times2=10\) ✓. O: left \(10\times3=30\), right \(4\times6+1+5=24+1+5=30\) ✓. Electrons: 8 lost (Mg) = 8 gained (N₂O) ✓.
 
-#### Additional Practice — Cr(OH)₃ + IO₃⁻ in basic medium (New — corrected)
-
-**Given (skeletal):** chromium(III) hydroxide reacts with iodate ion in basic solution to give chromate ion and iodide ion: \( \text{Cr(OH)}_3 + \text{IO}_3^- \to \text{CrO}_4^{2-} + \text{I}^- \)
-
-> [!warning] A placement error worth flagging
-> An earlier draft of this reaction had "+4OH⁻" written after the products. Re-deriving it from the half-reactions (below) shows the four hydroxide ions belong on the **reactant** side, not the product side — the correction matters because misplacing OH⁻ silently breaks both the atom and charge balance.
-
+**Worked Example — Cr(OH)₃ + IO₃⁻ in basic medium**
+**Given (skeletal):** \( \text{Cr(OH)}_3 + \text{IO}_3^- \to \text{CrO}_4^{2-} + \text{I}^- \), basic medium.
+**Find:** the balanced ionic equation.
+**Concept:** half-reaction method; the four hydroxide ions belong on the **reactant** side, not the product side — placing them on the wrong side breaks both the atom and charge balance.
 **Work:**
 \[
 \begin{aligned}
@@ -600,35 +670,33 @@ Converting to basic medium — add 4 OH⁻ to **both** sides, combining the 4H�
 | **Acidic** | H₂O | H⁺ | H⁺ |
 | **Basic** | H₂O | H⁺, then add equal OH⁻ to *both* sides | OH⁻ |
 
----
+### 7.3.7 Redox Reactions as the Basis for Titrations ⭐⭐
 
-### 7.3.3 Redox Reactions as the Basis for Titrations ⭐⭐
+Just as acid–base titrations use a pH-sensitive indicator, redox titrations use a **redox-sensitive signal** to find the equivalence point. Three distinct mechanisms are used in practice, summarised together since they are frequently confused with each other:
 
-Just as acid–base titrations use a pH-sensitive indicator, redox titrations use a **redox-sensitive indicator** to find the equivalence point.
-
-| Indicator type | Example | How the endpoint shows |
+| Titration type | Titrant / indicator | How the endpoint shows |
 |---|---|---|
-| **Self-indicator** | \( \text{MnO}_4^- \) (intensely purple) | The reagent itself is coloured; the first lasting pink tinge appears once the last reductant (Fe²⁺, C₂O₄²⁻) is consumed, detectable at concentrations as low as \(10^{-6}\ \text{mol L}^{-1}\) — a minimal colour "overshoot" past equivalence. |
-| **External indicator** | \( \text{Cr}_2\text{O}_7^{2-} \) with **diphenylamine** | Cr₂O₇²⁻ itself doesn't self-indicate; diphenylamine is oxidised just after equivalence, producing an intense blue colour. |
-| **Iodometric (indirect)** | Cu(II) estimation | \( 2\text{Cu}^{2+}(aq) + 4\text{I}^-(aq) \to \text{Cu}_2\text{I}_2\text{(s)} + \text{I}_2(aq) \), then \( \text{I}_2(aq) + 2\text{S}_2\text{O}_3^{2-}(aq) \to 2\text{I}^-(aq) + \text{S}_4\text{O}_6^{2-}(aq) \). Starch turns intensely blue with I₂; the colour vanishes the instant thiosulfate consumes the last of the liberated iodine — a very sharp endpoint. |
+| Self-indicating | \( \text{MnO}_4^- \) (intensely purple) titrant | The reagent itself is coloured; the first lasting pink tinge appears once the last reductant (Fe²⁺, C₂O₄²⁻) is consumed, detectable at concentrations as low as \(10^{-6}\ \text{mol L}^{-1}\) — a minimal colour "overshoot" past equivalence. |
+| External-indicator | \( \text{Cr}_2\text{O}_7^{2-} \) titrant with **diphenylamine** indicator | Cr₂O₇²⁻ itself doesn't self-indicate; diphenylamine is oxidised just after equivalence, producing an intense blue colour. |
+| Iodometric (indirect) | Cu(II) estimation via liberated I₂, titrated against thiosulphate | \( 2\text{Cu}^{2+}(aq) + 4\text{I}^-(aq) \to \text{Cu}_2\text{I}_2\text{(s)} + \text{I}_2(aq) \), then \( \text{I}_2(aq) + 2\text{S}_2\text{O}_3^{2-}(aq) \to 2\text{I}^-(aq) + \text{S}_4\text{O}_6^{2-}(aq) \). Starch turns intensely blue with I₂; the colour vanishes the instant thiosulphate consumes the last of the liberated iodine — a very sharp endpoint. |
 
-### 7.3.4 Limitations of the Oxidation Number Concept ⭐
+### 7.3.8 Limitations of the Oxidation Number Concept ⭐
 
 The textbook's own note: in recent understanding, **oxidation is reframed as a decrease in electron density**, and **reduction as an increase in electron density**, around the atom(s) involved — a softer, more physically honest picture than "complete" electron transfer.
 
 > [!example] Why the O.N. concept eventually strains
-> - **It assumes an ionic bonding model.** In genuinely covalent bonds electrons are *shared*, so O.N. rarely represents literal atomic charge (this is exactly the H–Cl figure earlier in Section 7.3).
+> - **It assumes an ionic bonding model.** In genuinely covalent bonds electrons are *shared*, so O.N. rarely represents literal atomic charge (the H–Cl figure in §7.3 makes this concrete).
 > - **Resonance structures make a single O.N. arbitrary.** When more than one resonance form is reasonable, forcing one oxidation number onto an atom can be misleading.
 > - **It doesn't describe electron transfer well in complex coordination compounds, radicals, or large organic molecules**, where bonding is delocalised or the "more electronegative atom" rule breaks down.
-> - **Some genuine electron-transfer (redox) processes show *no* net change in oxidation number.** The clearest example is a **self-exchange reaction**, e.g. \( \text{Fe}^{2+} + {}^*\text{Fe}^{3+} \rightleftharpoons \text{Fe}^{3+} + {}^*\text{Fe}^{2+} \) (the asterisk marks an isotopically labelled atom): an electron genuinely moves between two iron centres, yet the bulk oxidation-number bookkeeping shows +2 and +3 present before *and* after. These reactions (central to Marcus theory, beyond NCERT/JEE syllabus) are real evidence that "electron transfer" is the deeper, more general idea, and "change in oxidation number" is a useful but imperfect proxy for it.
+> - **Some genuine electron-transfer (redox) processes show *no* net change in oxidation number.** The clearest example is a **self-exchange reaction**, e.g. \( \text{Fe}^{2+} + {}^*\text{Fe}^{3+} \rightleftharpoons \text{Fe}^{3+} + {}^*\text{Fe}^{2+} \) (the asterisk marks an isotopically labelled atom): an electron genuinely moves between two iron centres, yet the bulk oxidation-number bookkeeping shows +2 and +3 present before *and* after — real evidence that "electron transfer" is the deeper idea, and "change in oxidation number" a useful but imperfect proxy for it.
 
 ---
 
 ## 7.4 Redox Reactions and Electrode Processes ⭐⭐⭐
 
-### From Direct to Indirect Electron Transfer
+### 7.4.1 From Direct to Indirect Electron Transfer — The Daniell Cell
 
-Dipping a Zn rod directly into CuSO₄(aq) (Section 7.2.2) transfers electrons **directly**, atom to atom, releasing the energy as heat. Separating the two half-reactions physically — Zn in ZnSO₄(aq), Cu in CuSO₄(aq), connected by a wire and a salt bridge — forces the *same* electrons to travel through an external circuit instead, which is what makes the energy extractable as **electricity**. This setup is the **Daniell cell**.
+Dipping a Zn rod directly into CuSO₄(aq) (§7.2.2) transfers electrons **directly**, atom to atom, releasing the energy as heat. Separating the two half-reactions physically — Zn in ZnSO₄(aq), Cu in CuSO₄(aq), connected by a wire and a salt bridge — forces the *same* electrons to travel through an external circuit instead, which is what makes the energy extractable as **electricity**. This setup is the **Daniell cell**.
 
 ```tikz
 \usetikzlibrary{arrows.meta}
@@ -671,18 +739,27 @@ Dipping a Zn rod directly into CuSO₄(aq) (Section 7.2.2) transfers electrons *
 > \boxed{\textbf{Redox couple} = \text{the oxidised and reduced forms of a species written as Oxidised/Reduced, e.g. } \text{Zn}^{2+}/\text{Zn},\ \text{Cu}^{2+}/\text{Cu}}
 > \]
 
-### Electrode Potential and Standard Electrode Potential
+### 7.4.2 Electrode Potential, Standard Electrode Potential & SHE
 
-**Electrode potential** is the potential associated with each electrode — a measure of how strongly the active species there "wants" to stay oxidised or reduced.
+**Electrode potential** is the potential associated with each electrode — a measure of how strongly the active species there "wants" to stay oxidised or reduced. It cannot be measured for a single electrode in isolation; every value is measured **relative to a reference electrode**.
+
+The universal reference is the **Standard Hydrogen Electrode (SHE)**: a platinum wire dipped in 1 M H⁺(aq), with H₂ gas at 1 atm bubbled over it, realising the half-reaction \( 2\text{H}^+(aq) + 2e^- \rightleftharpoons \text{H}_2\text{(g)} \). By convention, \(E^\circ_{\text{H}^+/\text{H}_2} = 0.00\ \text{V}\) exactly. Every other standard electrode potential in §7.4.3 is the potential of that couple measured against a SHE under standard conditions.
 
 > \[
 > \boxed{\textbf{Standard Electrode Potential } (E^\circ):\ \text{measured at 298 K, unit concentration (1 M) of every species, 1 atm for any gas; reference } E^\circ_{\text{H}^+/\text{H}_2} = 0.00\ \text{V}}
 > \]
+
+Because every tabulated \(E^\circ\) is a **reduction** potential, its sign describes the reduced/oxidised pair directly: a couple with negative \(E^\circ\) has a reduced form (e.g. Li metal) that is a stronger reducing agent than H₂; a couple with positive \(E^\circ\) has an oxidised form (e.g. F₂) that is a stronger oxidising agent than H⁺.
+
 > \[
-> \boxed{E^\circ < 0 \Rightarrow \text{stronger reducing agent than H}_2 \qquad E^\circ > 0 \Rightarrow \text{weaker reducing agent than H}_2\ (\text{i.e. a better oxidising agent})}
+> \boxed{E^\circ < 0 \Rightarrow \text{the couple's reduced form is a stronger reducing agent than H}_2 \qquad E^\circ > 0 \Rightarrow \text{the couple's oxidised form is a stronger oxidising agent than H}^+}
 > \]
 
-### Standard Electrode Potentials (298 K) — Selected Values
+### 7.4.3 Standard Electrode Potentials and Feasibility
+
+Tabulating \(E^\circ\) for many couples against the same SHE reference (§7.4.2) turns "which species wins the competition for electrons" — the question §7.2.2 answered only qualitatively for metals — into a single sortable number that works for non-metals and complex ions too. This table **is** the electrochemical series referenced in §7.2.2's warning.
+
+**Standard Electrode Potentials (298 K) — Selected Values**
 
 | Half-reaction (reduction) | \(E^\circ\)/V |
 |---|---|
@@ -690,6 +767,7 @@ Dipping a Zn rod directly into CuSO₄(aq) (Section 7.2.2) transfers electrons *
 | \( \text{MnO}_4^- + 8\text{H}^+ + 5e^- \to \text{Mn}^{2+} + 4\text{H}_2\text{O} \) | +1.51 |
 | \( \text{Cl}_2\text{(g)} + 2e^- \to 2\text{Cl}^- \) | +1.36 |
 | \( \text{Cr}_2\text{O}_7^{2-} + 14\text{H}^+ + 6e^- \to 2\text{Cr}^{3+} + 7\text{H}_2\text{O} \) | +1.33 |
+| \( \text{Br}_2(l) + 2e^- \to 2\text{Br}^- \) | +1.09 |
 | \( 2\text{Hg}^{2+} + 2e^- \to \text{Hg}_2^{2+} \) | +0.92 |
 | \( \text{Ag}^+ + e^- \to \text{Ag(s)} \) | +0.80 |
 | \( \text{Fe}^{3+} + e^- \to \text{Fe}^{2+} \) | +0.77 |
@@ -736,133 +814,44 @@ Dipping a Zn rod directly into CuSO₄(aq) (Section 7.2.2) transfers electrons *
 ```
 
 > \[
-> \boxed{\textbf{Feasibility rule: } E^\circ_{\text{cell}} = E^\circ_{\text{cathode (reduced)}} - E^\circ_{\text{anode (oxidised)}} > 0 \Rightarrow \text{reaction is spontaneous as written}}
+> \boxed{\textbf{Feasibility rule: } E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}} > 0 \Rightarrow \text{reaction is spontaneous as written}}
 > \]
+> Both \(E^\circ_{\text{cathode}}\) and \(E^\circ_{\text{anode}}\) are read **directly from the reduction-potential table above, with their tabulated sign** — the cathode couple is the one being reduced (gaining electrons) and the anode couple is the one being oxidised (losing electrons); no sign is flipped separately before the subtraction.
+
+Applying this to the Daniell cell of §7.4.1: \( E^\circ_{\text{cell}} = E^\circ_{\text{Cu}^{2+}/\text{Cu}} - E^\circ_{\text{Zn}^{2+}/\text{Zn}} = (+0.34) - (-0.76) = +1.10\ \text{V} \) — positive, consistent with the direction already established there (Zn oxidised at the anode, Cu²⁺ reduced at the cathode).
 
 > [!warning] Sign-convention trap
-> "Negative \(E^\circ\)" means *stronger reducing agent than H₂* — it does **not** mean "weak" in any absolute sense. Li at –3.05 V is a ferociously strong reducing agent, not a weak one. Read the sign relative to the H⁺/H₂ reference, never as a plain "good/bad" label.
+> "Negative \(E^\circ\)" means the couple's *reduced form* is a stronger reducing agent than H₂ — it does **not** mean "weak" in any absolute sense. Li at –3.05 V is a ferociously strong reducing agent, not a weak one. Read the sign relative to the H⁺/H₂ reference, never as a plain "good/bad" label.
 
-> [!info] Syntax reviewed, not executed
-> The Desmos block below was checked against the syntax rules (exact fence tag, no `\theta` assignment, balanced brackets) but has not been run in a live renderer in this session — confirm it actually appears before relying on it further; fall back to the ladder figure above if it doesn't.
+**Worked Example — Predicting five reaction feasibilities from the table**
+**Given:** five candidate reactions, each pairing two couples from the table above.
+**Find:** whether each is feasible (spontaneous) as written.
+**Concept:** \(E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}}\), both values read directly from the table.
+**Work:**
 
-```desmos
-E_{cat}=0.80
-E_{an}=-0.76
-E_{cell}=E_{cat}-E_{an}
-y=x
-P=\left(E_{an},\ E_{cat}\right)
-```
-*Legend:* \(E_{cat}\) = standard reduction potential of the cathode (reduction) couple, in V (slider); \(E_{an}\) = standard reduction potential of the anode (oxidation) couple, in V (slider); \(E_{cell}=E_{cat}-E_{an}\); the line \(y=x\) is the feasibility boundary.
-*Try this:* the default values reproduce Zn + 2Ag⁺ → Zn²⁺ + 2Ag (\(E_{cat}=+0.80\), \(E_{an}=-0.76\), point \(P\) sits well above \(y=x\), \(E_{cell}=+1.56\) V — strongly spontaneous). Drag \(E_{an}\) upward past +0.80 and watch \(P\) cross below the line — that's the point the reaction as written stops being spontaneous.
-
-#### Additional Practice — Predicting five reaction feasibilities from Table 7.1 (NCERT Exercise 7.26)
-
-| Pair | Cathode candidate (reduced) | Anode candidate (oxidised) | \(E^\circ_{\text{cell}}\) | Feasible? |
+| Pair | Cathode couple (reduced) | Anode couple (oxidised) | \(E^\circ_{\text{cell}}\) | Feasible? |
 |---|---|---|---|---|
-| (a) Fe³⁺(aq) + I⁻(aq) | Fe³⁺/Fe²⁺, +0.77 V | I₂/I⁻ reversed, –0.54 V | +0.23 V | **Yes** — Fe³⁺ oxidises I⁻ to I₂ (basis of an iodometric method for Fe³⁺) |
-| (b) Ag⁺(aq) + Cu(s) | Ag⁺/Ag, +0.80 V | Cu²⁺/Cu reversed, –0.34 V | +0.46 V | **Yes** — the classic "silver mirror on copper" reaction |
-| (c) Fe³⁺(aq) + Cu(s) | Fe³⁺/Fe²⁺, +0.77 V | Cu²⁺/Cu reversed, –0.34 V | +0.43 V | **Yes** — this is literally how FeCl₃ solution etches copper PCBs |
-| (d) Ag(s) + Fe³⁺(aq) | Fe³⁺/Fe²⁺, +0.77 V | Ag⁺/Ag reversed, –0.80 V | **–0.03 V** | **No** — narrowly non-spontaneous; Ag does not reduce Fe³⁺ under standard conditions |
-| (e) Br₂(aq) + Fe²⁺(aq) | Br₂/Br⁻, +1.09 V | Fe³⁺/Fe²⁺ reversed, –0.77 V | +0.32 V | **Yes** — Br₂ oxidises Fe²⁺ to Fe³⁺ |
+| (a) Fe³⁺(aq) + I⁻(aq) | Fe³⁺/Fe²⁺, +0.77 V | I₂/I⁻, +0.54 V | +0.23 V | **Yes** — Fe³⁺ oxidises I⁻ to I₂ (basis of an iodometric method for Fe³⁺) |
+| (b) Ag⁺(aq) + Cu(s) | Ag⁺/Ag, +0.80 V | Cu²⁺/Cu, +0.34 V | +0.46 V | **Yes** — the classic "silver mirror on copper" reaction |
+| (c) Fe³⁺(aq) + Cu(s) | Fe³⁺/Fe²⁺, +0.77 V | Cu²⁺/Cu, +0.34 V | +0.43 V | **Yes** — this is literally how FeCl₃ solution etches copper PCBs |
+| (d) Ag(s) + Fe³⁺(aq) | Fe³⁺/Fe²⁺, +0.77 V | Ag⁺/Ag, +0.80 V | **–0.03 V** | **No** — narrowly non-spontaneous; Ag does not reduce Fe³⁺ under standard conditions |
+| (e) Br₂(aq) + Fe²⁺(aq) | Br₂/Br⁻, +1.09 V | Fe³⁺/Fe²⁺, +0.77 V | +0.32 V | **Yes** — Br₂ oxidises Fe²⁺ to Fe³⁺ |
 
-**Check:** every "yes" pairs a couple with a higher (more positive) \(E^\circ\) as the reduction step against a lower one as the (reversed) oxidation step, consistent with the boxed feasibility rule above — and (d) shows how close "feasible" and "not feasible" can sit (0.03 V), which is exactly why real Nernst-equation corrections for non-standard concentrations (next box) can occasionally flip a close call like this one.
-
-> [!info] Bonus / beyond NCERT Class XI — Nernst equation preview (for JEE aspirants)
-> Every \(E^\circ\) value above assumes 1 M concentrations. Class XII's **Nernst equation**, \( E = E^\circ - \dfrac{0.0591}{n}\log_{10}Q \) at 298 K, is how that assumption gets relaxed. The block below previews it — syntax-reviewed, not executed, same caveat as above.
-
-```desmos
-E^\circ=0.34
-n=2
-Q=1
-f\left(Q\right)=E^\circ-\frac{0.0591}{n}\log_{10}\left(Q\right)
-P=\left(Q,\ f\left(Q\right)\right)
-```
-*Legend:* \(E^\circ\) = standard electrode potential, V (slider); \(n\) = electrons transferred (slider); \(Q\) = reaction quotient / concentration ratio (slider); \(f(Q)\) = actual electrode potential at that \(Q\).
-*Try this:* at \(Q=1\), \(f(Q)=E^\circ\) exactly — drag \(Q\) away from 1 and watch the potential shift, showing why "feasible at standard conditions" (Exercise 7.26 above) is not the same statement as "feasible at every concentration."
-
----
-
-## Quick Reference
-
-### Formula & Rule Sheet
-
-\[
-\boxed{
-\begin{aligned}
-&\text{Free element: O.N.} = 0 \qquad \text{Monoatomic ion: O.N.} = \text{charge}\\
-&\text{O} = -2\ (\text{usual}); -1\ (\text{peroxide}); -\tfrac12\ (\text{superoxide}); +2/+1\ (\text{bonded to F})\\
-&\text{H} = +1\ (\text{usual}); -1\ (\text{metal hydrides}) \qquad \text{F} = -1\ \text{always}\\
-&\textstyle\sum \text{O.N.} = 0\ (\text{neutral compound})\ \text{or charge}\ (\text{ion})\\
-&E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}} > 0 \Rightarrow \text{spontaneous}
-\end{aligned}}
-\]
-
-### Reaction / Equation Sheet
-
-| Category | General form |
-|---|---|
-| Combination | \( A + B \to C \) (≥1 elemental) |
-| Decomposition | \( C \to A + B \) (≥1 product elemental) |
-| Displacement | \( X + YZ \to XZ + Y \) |
-| Disproportionation | intermediate O.N. \(\to\) one higher + one lower O.N. |
-| Oxidation half | reactant \(\to\) product \( + ne^- \) |
-| Reduction half | reactant \( + ne^- \to \) product |
-
-### Facts & Trends Table
-
-| Fact | Value / trend |
-|---|---|
-| Reactivity series (most → least reactive) | K > Na > Ca > Mg > Al > Zn > Fe > Pb > H > Cu > Hg > Ag > Au > Pt |
-| Halogen oxidising power | F₂ > Cl₂ > Br₂ > I₂ |
-| Highest O.N., Period 3 | increases left→right: Na +1 … Cl +7 |
-| Disproportionation requirement | ≥3 accessible O.N.s; reactant at the intermediate one |
-| F₂, ClO₄⁻ | never disproportionate (already at their extreme O.N.) |
-| Self-indicator | MnO₄⁻ (purple → colourless) |
-| External indicator | Cr₂O₇²⁻ + diphenylamine (→ blue at endpoint) |
+**Check:** every "yes" pairs a higher-\(E^\circ\) couple as the cathode against a lower-\(E^\circ\) couple as the anode — consistent with the boxed feasibility rule. Case (d) shows how close "feasible" and "not feasible" can sit (0.03 V); real concentrations away from the standard 1 M can shift a call this close via the Nernst equation (Class XII, outside this chapter's scope).
 
 ---
 
 ## Points to Ponder ⭐⭐⭐
 
 > [!warning] Traps that actually cost marks
-> - **Fractional oxidation number is always an average**, never a real per-atom state — always check the structure (C₃O₂, Br₃O₈, S₄O₆²⁻) before assuming every atom of that element is identical.
-> - **"Mercurous" is the dimeric Hg₂²⁺**, not a monomeric Hg⁺ — Hg₂Cl₂, not "HgCl."
-> - **F₂ and ClO₄⁻ cannot disproportionate** — both are already at their most extreme accessible oxidation state (F is always –1 with no positive state possible; Cl in ClO₄⁻ is at its ceiling of +7).
-> - **Same formula, different chemistry** — Pb₃O₄ is a *mixture* of PbO and PbO₂, not a single compound with Pb at +8/3; that's why it reacts differently with HCl (redox) than with HNO₃ (acid–base only).
-> - **Negative \(E^\circ\) ≠ "weak."** It means "stronger reducing agent than H₂" — Li at –3.05 V is about as strong a reductant as exists.
-> - **Basic-medium balancing:** add OH⁻ to *both* sides first (mirroring the H⁺ count from the acidic-form intermediate), *then* cancel/combine — adding it to only one side (as an earlier draft mistakenly did for the Cr(OH)₃/IO₃⁻ example above) silently breaks the balance.
-> - **Not every combination or decomposition reaction is redox** — always check oxidation numbers before classifying; CaCO₃ ⇌ CaO + CO₂ is a textbook counter-example on both sides.
-> - **AgF₂ is unstable and a ferociously strong oxidant** (NCERT Exercise 7.10) precisely *because* Ag(II) is an unusual oxidation state for silver — it "wants" to drop back to the far more stable Ag(I), oxidising whatever is nearby in the process. Unusual oxidation states are almost always strong oxidants (if unusually high) or strong reductants (if unusually low), for exactly this reason.
-
----
-
-## Problem-Solving Strategy
-
-**1. Assigning an oxidation number quickly**
-1. Elemental form or monoatomic ion? → done by rules 1–2.
-2. Otherwise, fix the "reliable" atoms first: F = –1, O = –2 (check for peroxide/superoxide/O–F exceptions), H = +1 (check for metal hydride).
-3. Solve the unknown from \(\sum\text{O.N.} = 0\) (or ionic charge).
-4. If the same element appears more than once, the number found is an *average* — sanity-check whether the real structure needs individual (non-averaged) states.
-
-**2. Classifying a redox reaction**
-1. Is it \(A+B\to C\) with ≥1 element? → combination (check it's actually redox).
-2. Is it \(C\to A+B\) with ≥1 element product? → decomposition (check it's actually redox).
-3. Does one element/ion replace another in a compound? → displacement (metal or non-metal).
-4. Does the *same* element show up both oxidised and reduced in the products? → disproportionation (confirm ≥3 accessible states and an intermediate starting point).
-
-**3. Balancing a redox equation (ion-electron method)**
-1. Write the skeletal ionic equation.
-2. Split into oxidation/reduction halves; balance non-O/H atoms.
-3. Balance O with H₂O, then H with H⁺.
-4. If basic, add one OH⁻ per H⁺ to *both* sides and combine same-side H⁺/OH⁻ into H₂O.
-5. Add electrons to balance charge in each half; scale to equalise electron count.
-6. Add the halves, cancel electrons, and verify atoms *and* charge.
-
-**4. Predicting feasibility from \(E^\circ\)**
-1. Identify which couple is reduced (cathode) and which is oxidised (anode, use the reverse of its tabulated reduction value's sign in the subtraction).
-2. Compute \(E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}}\).
-3. Positive → spontaneous as written; negative → not spontaneous as written (the reverse reaction is spontaneous instead).
-4. Remember this is a *standard-conditions* prediction — real concentrations shift it via the Nernst equation (Class XII).
+> - **Fractional oxidation number is always an average**, never a real per-atom state — always check the structure (C₃O₂, Br₃O₈, S₄O₆²⁻) before assuming every atom of that element is identical (§7.3.4).
+> - **"Mercurous" is the dimeric Hg₂²⁺**, not a monomeric Hg⁺ — Hg₂Cl₂, not "HgCl" (§7.3.2).
+> - **F₂ and ClO₄⁻ cannot disproportionate** — both are already at their most extreme accessible oxidation state (F is always –1 with no positive state possible; Cl in ClO₄⁻ is at its ceiling of +7) (§7.3.5, §7.3.4).
+> - **Same formula, different chemistry** — Pb₃O₄ is a *mixture* of PbO and PbO₂, not a single compound with Pb at +8/3; that's why it reacts differently with HCl (redox) than with HNO₃ (acid–base only) (§7.3.4).
+> - **Negative \(E^\circ\) ≠ "weak."** It means the couple's reduced form is a stronger reducing agent than H₂ — Li at –3.05 V is about as strong a reductant as exists (§7.4.3).
+> - **Basic-medium balancing:** add OH⁻ to *both* sides first (mirroring the H⁺ count from the acidic-form intermediate), *then* cancel/combine — adding it to only one side silently breaks the balance (§7.3.6).
+> - **Not every combination or decomposition reaction is redox** — always check oxidation numbers before classifying; CaCO₃ ⇌ CaO + CO₂ is a counter-example on both sides (§7.3.5).
+> - **AgF₂ is unstable and a ferociously strong oxidant** precisely *because* Ag(II) is an unusual oxidation state for silver — it "wants" to drop back to the far more stable Ag(I), oxidising whatever is nearby in the process. Unusual oxidation states are almost always strong oxidants (if unusually high) or strong reductants (if unusually low), for exactly this reason (§7.3.1).
 
 ---
 
