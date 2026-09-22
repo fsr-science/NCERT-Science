@@ -1,618 +1,786 @@
-# Chemistry | Chapter 01 | Some Basic Concepts of Chemistry | CNOTES
-> **Condensed Revision Notes** | Board · NEET · JEE — mirrors NOTES section numbers (§) for cross-reference
+# Chemistry | Chapter 02 | Structure of Atom | CNOTES
+
+### Condensed Notes — mirrors NOTES §1–§14 exactly, one heading per NOTES subsection
 
 ---
 
-# 🗺️ Big Picture of Chapter 1
+## SECTION 1 — DISCOVERY OF SUB-ATOMIC PARTICLES
 
-
----
 ```mermaid
-flowchart TD
-    ROOT(["SOME BASIC CONCEPTS OF CHEMISTRY"])
-
-    ROOT --> MAT["MATTER"]
-    ROOT --> MEA["MEASUREMENT"]
-    ROOT --> QCH["QUANTITATIVE CHEMISTRY"]
-
-    MAT --> S1["States — Solid, Liquid, Gas"]
-    MAT --> S2["Classification"]
-    S2 --> S2A["Mixture — variable composition"]
-    S2 --> S2B["Pure Substance — fixed composition"]
-    S2B --> S2C["Element — one atom type"]
-    S2B --> S2D["Compound — two or more elements"]
-
-    MEA --> M1["SI Units — 7 base units"]
-    MEA --> M2["Uncertainty in Measurement"]
-    M2 --> M2A["Scientific Notation"]
-    M2 --> M2B["Significant Figures"]
-    M2 --> M2C["Dimensional Analysis"]
-    M2 --> M2D["Precision vs Accuracy"]
-
-    QCH --> Q1["Mole Concept"]
-    Q1 --> Q1A["n = m/M = N/Na = V/22.7"]
-    QCH --> Q2["Stoichiometry"]
-    Q2 --> Q2A["Balanced equations"]
-    Q2 --> Q2B["Limiting Reagent"]
-    QCH --> Q3["Solutions"]
-    Q3 --> Q3A["Molarity — Molality"]
-    Q3 --> Q3B["Mole fraction — Mass%"]
-
-    style ROOT fill:#2c3e50,color:#ecf0f1,stroke:#3498db,stroke-width:2px
-    style MAT fill:#1e3a5f,color:#aed6f1,stroke:#2980b9
-    style MEA fill:#1a3d2e,color:#a9dfbf,stroke:#27ae60
-    style QCH fill:#3d2a1a,color:#f0d0a8,stroke:#e67e22
+flowchart LR
+    A["Faraday 1830: electrolysis suggests electricity is particulate"] --> B["Cathode ray tube: electron found, Thomson 1897"]
+    B --> C["Canal rays: proton characterised, 1919"]
+    C --> D["Be + alpha bombardment: neutron found, Chadwick 1932"]
 ```
 
+### §1.1 — Cathode Ray Discharge Tube Experiments
+
+- Setup: two electrodes in a glass tube at ~10⁻⁴ atm, high voltage, ZnS fluorescent screen behind the anode
+- Rays travel cathode → anode, in straight lines
+- Not visible themselves; detected only via fluorescence/phosphorescence
+- Deflect toward the +ve plate in electric/magnetic fields → negatively charged
+- Properties independent of electrode material and of the gas used
+- **Conclusion:** all matter contains electrons — a fundamental constituent of every atom
+
+### §1.2 — Thomson's Measurement of e/mₑ Ratio
+
+- J.J. Thomson (1897) · Nobel Prize in Physics, 1906
+- Balanced electric field (E) and magnetic field (B), both perpendicular to the beam and to each other
+- **e/mₑ = 1.758820 × 10¹¹ C kg⁻¹**
+- Trap: larger e/m ratio → lighter particle for the same charge
+
+### §1.3 — Millikan's Oil Drop Experiment
+
+- R.A. Millikan (1906–14)
+- Oil droplets ionised by X-rays; charge measured from the balance of gravity and an applied electric force
+- Charge always **q = ne** (an integral multiple of a basic unit)
+- Charge on electron: **e = −1.602176 × 10⁻¹⁹ C**
+- Mass of electron (combining with Thomson's e/mₑ): **mₑ = e ÷ (e/mₑ) = 9.1094 × 10⁻³¹ kg**
+
+### §1.4 — Discovery of Protons — Canal Rays
+
+- Holes bored in the cathode → rays flow *backward* through them = **canal rays** (positively charged)
+
+| Property | Cathode Rays | Canal Rays |
+|---|---|---|
+| Charge | Negative | Positive |
+| Mass | Same regardless of gas | Depends on gas used |
+| e/m ratio | Constant | Varies with gas |
+| Deflection in E/B field | Toward +ve plate | Toward −ve plate |
+
+- Lightest positive ion, from hydrogen gas → the **proton**, characterised **1919**
+
+### §1.5 — Discovery of Neutrons — Chadwick (1932)
+
+- α-particles + ⁹₄Be → ¹²₆C + ¹₀n
+- Electrically neutral particle, mass slightly greater than the proton → **neutron**
+- Memory: Electron (1897, Thomson) → Proton (1919, Rutherford) → Neutron (1932, Chadwick)
+
+### §1.6 — Properties of Fundamental Particles
+
+| Particle | Symbol | Relative Charge | Mass (kg) | Mass (u) |
+|---|---|---|---|---|
+| Electron | e | −1 | 9.109382 × 10⁻³¹ | 0.00054 |
+| Proton | p | +1 | 1.672622 × 10⁻²⁷ | 1.00727 |
+| Neutron | n | 0 | 1.674927 × 10⁻²⁷ | 1.00867 |
+
+- Proton ≈ neutron ≈ 1836× the mass of an electron
+
 ---
 
-## §1 — Development of Chemistry
-
-### §1.1 Historical Origins
-- Sought for two purposes: **Philosopher's Stone** (base metal → gold), **Elixir of Life** (immortality)
-- Developed as **Alchemy** and **Iatrochemistry** (1300–1600 CE)
-- Modern chemistry took shape in **18th century Europe**
-
-### §1.2 Ancient Indian Contributions ⭐ *(Frequently Tested — Board/NEET)*
-> Acharya Kanda conceptualised atomic theory **~2500 years before Dalton**. Paramānu = eternal, indestructible, spherical, in motion.
-
-| Source | Contribution |
-|:---|:---|
-| Acharya Kanda (600 BCE), *Vaiseshika Sutras* | First atomic theory; particles named **Paramānu** |
-| Rasayan Shastra / Rasvidya | Indian term for chemistry — metallurgy, medicine, cosmetics, glass, dyes |
-| Mohenjodaro & Harappa | Baked bricks, glazed pottery, gypsum cement, faience (early glass) |
-| Harappans | Worked lead, silver, gold, copper; hardened copper with tin/arsenic |
-| Rigveda (1000–400 BCE) | Leather tanning, cotton dyeing |
-| Kautilya's Arthashastra | Salt production from sea |
-| Charaka Samhita | Oldest Ayurvedic text; H₂SO₄, HNO₃, metal oxides; bhasma (nanoparticles) |
-| Sushruta Samhita | Importance of alkalies |
-| Rasopanishada | Gunpowder preparation |
-| Nagarjuna, *Rasratnakar* | Mercury compounds; extraction of Au, Ag, Sn, Cu |
-| Chakrapani | Mercury sulphide; credited with soap |
-| Varāhmihir, *Brihat Samhita* (6th c. CE) | Perfumes, cosmetics, hair dyes, wall preparations |
-
-### §1.3 Glass and Ink
-- Glass: Maski (1000–900 BCE), Hastinapur & Taxila (1000–200 BCE); coloured with metal oxides
-- Ink used since **4th century** (Taxila); paper known in India by the **17th century** (I-tsing's account)
-
----
-
-## §2 — Importance of Chemistry
-
-> Studies composition, structure, properties, and interactions of matter at the atomic/molecular level.
-
-| Field | Chemistry's role |
-|:---|:---|
-| Food & Agriculture | Fertilisers, pesticides, insecticides |
-| Healthcare | Cisplatin & Taxol (cancer), AZT (AIDS) |
-| Industry | Acids, alkalis, dyes, polymers, metals, alloys |
-| Advanced Materials | Superconducting ceramics, conducting polymers, optical fibres |
-| Environment | CFC alternatives (ozone depletion); CH₄/CO₂ management |
-| Biochemistry | Enzymes for large-scale chemical production |
-
----
-
-## §3 — Nature of Matter
-
-### §3.1 Definition
-Matter = anything with **mass** and that **occupies space** (has volume).
-
-### §3.2 States of Matter
-| State | Shape | Volume | Compressibility |
-|:---:|:---:|:---:|:---:|
-| Solid | Fixed | Fixed | Negligible |
-| Liquid | Takes container shape | Fixed | Very low |
-| Gas | Takes container shape | Takes container volume | High |
-
-### §3.3 Classification of Matter
+## SECTION 2 — ATOMIC MODELS
 
 ```mermaid
 flowchart TD
-    ROOT(["MATTER"])
-
-    ROOT --> MIX["MIXTURE — variable composition"]
-    ROOT --> PURE["PURE SUBSTANCE — fixed composition"]
-
-    MIX --> HOM["HOMOGENEOUS — uniform"]
-    MIX --> HET["HETEROGENEOUS — non-uniform"]
-
-    PURE --> EL["ELEMENT — one atom type"]
-    PURE --> COM["COMPOUND — 2+ elements, fixed ratio"]
-
-    HOM --> HOM1["Examples: air, salt solution, vinegar, alloys"]
-    HOM --> HOM2["Separated by physical methods — distillation, filtration"]
-
-    HET --> HET1["Examples: soil, sand + dirt, oil + water"]
-    HET --> HET2["Separated by physical methods — hand-picking, filtration"]
-
-    EL --> EL1["Atomic: Na, Cu, Fe, Au"]
-    EL --> EL2["Molecular: H2, O2, N2, Cl2"]
-
-    COM --> COM1["Examples: H2O, NaCl, CO2, NH3, C6H12O6"]
-    COM --> COM2["Separated only by chemical methods"]
-
-    style ROOT fill:#2c3e50,color:#ecf0f1,stroke:#3498db
-    style MIX fill:#1e3a5f,color:#aed6f1
-    style PURE fill:#1a3d2e,color:#a9dfbf
-    style HOM fill:#1a2a3d,color:#cce5ff
-    style HET fill:#1a2a3d,color:#cce5ff
-    style EL fill:#3d2a1a,color:#f0d0a8
-    style COM fill:#3d1a3a,color:#f0a8e0
+    A["Thomson 1898: plum pudding model"] -->|"failed alpha-scattering test"| B["Rutherford 1911: nuclear model"]
+    B -->|"unstable, no line spectra, §2.6"| C["Bohr 1913, see Section 6"]
 ```
 
----
+### §2.1 — Thomson's Model of Atom (1898) — "Plum Pudding"
 
-## §4 — Properties of Matter and Their Measurement
+- Atom = uniform sphere of positive charge (radius ≈ 10⁻¹⁰ m)
+- Electrons embedded throughout, like plums in a pudding
+- Mass uniformly distributed
+- ✓ Explained overall electrical neutrality
+- ✗ Failed: could not explain Rutherford's α-particle scattering results (§2.2)
 
-### §4.1 Physical vs Chemical Properties
-| Physical | Chemical |
-|:---|:---|
-| Observed without changing the substance | Requires a chemical change to observe |
-| Colour, odour, m.p./b.p., density | Acidity, combustibility, reactivity with acids |
+### §2.2 — Rutherford's α-Particle Scattering Experiment (1911)
 
-### §4.2 The SI System
-Established **1960**, 11th CGPM, based on the Metre Convention (Paris, 1875). India: **NPL, New Delhi**.
+- Source: α-particles (He²⁺); target: ultra-thin gold foil (~100 nm ≈ 1000 atoms thick); detector: circular ZnS screen
 
-| Quantity | Symbol | SI Unit | Unit Symbol |
-|:---|:---:|:---:|:---:|
-| Length | *l* | metre | m |
-| Mass | *m* | kilogram | kg |
-| Time | *t* | second | s |
-| Electric current | *I* | ampere | A |
-| Thermodynamic temperature | *T* | kelvin | K |
-| Amount of substance | *n* | mole | mol |
-| Luminous intensity | *Iᵥ* | candela | cd |
+| Observation | Inference |
+|---|---|
+| Most α-particles pass straight through | Atom is mostly empty space |
+| Small fraction deflect at small angles | Positive charge concentrated somewhere small |
+| ~1 in 20,000 bounce back (~180°) | Extremely small, dense, positive nucleus |
 
-> [!warning] JEE Note — only 7 base units; everything else (speed, force, energy) is derived
+- Scale: if nucleus = a cricket ball, atom radius ≈ 5 km — nucleus is 10⁵× smaller in radius, 10¹⁵× smaller in volume
 
-| Multiple | Prefix | Symbol | | Multiple | Prefix | Symbol |
-|:---:|:---:|:---:|---|:---:|:---:|:---:|
-| $10^{-12}$ | pico | p | | $10^{3}$ | kilo | k |
-| $10^{-9}$ | nano | n | | $10^{6}$ | mega | M |
-| $10^{-6}$ | micro | μ | | $10^{9}$ | giga | G |
-| $10^{-3}$ | milli | m | | $10^{12}$ | tera | T |
-| $10^{-2}$ | centi | c | | $10^{-1}$ | deci | d |
+### §2.3 — Rutherford's Nuclear Model of Atom
 
-### §4.3 Mass and Weight
-| | Mass | Weight |
-|:---|:---:|:---:|
-| Definition | Amount of matter | Gravitational force on it |
-| Constant everywhere? | ✅ Yes | ❌ No |
-| SI Unit | kg | N |
-| Instrument | Analytical balance | Spring balance |
+- Tiny, dense, positively charged nucleus at the centre
+- Electrons revolve around it in circular orbits at high speed ("solar system" picture)
+- Nucleus + electrons held by electrostatic attraction
 
-Lab unit: gram (g), 1 kg = 1000 g.
+### §2.4 — Atomic Number (Z) and Mass Number (A)
 
-### §4.4 Volume
-- SI unit **m³**; lab units **cm³, dm³, mL, L**
-- **1 L = 1000 mL = 1000 cm³ = 1 dm³**; **1 m³ = 10⁶ cm³ = 1000 L**
-- Instruments: graduated cylinder, burette, pipette, volumetric flask
+- **Z** = number of protons = number of electrons (neutral atom)
+- **A** = Z + number of neutrons
+- Number of neutrons = **A − Z** (always true, ion or not)
+- Notation: ᴬ_Z X (A = superscript left, Z = subscript left)
+- Ions: cation electrons = Z − charge; anion electrons = Z + charge
+- Worked: ⁸⁰₃₅Br → protons = electrons = 35; neutrons = 80 − 35 = 45
 
-### §4.5 Density
-$$\text{Density} = \frac{\text{Mass}}{\text{Volume}}$$
-SI: kg m⁻³ | Lab: g cm⁻³ / g mL⁻¹ | Higher density = particles more closely packed
+### §2.5 — Isobars and Isotopes
 
-### §4.6 Temperature Scales
-$$K = °C + 273.15 \qquad °F = \frac{9}{5}(°C) + 32$$
+| Term | Definition | Example |
+|---|---|---|
+| Isotopes | Same Z, different A | ¹H, ²H, ³H |
+| Isobars | Different Z, same A | ¹⁴₆C and ¹⁴₇N |
 
-| Scale | Freezing pt. | Boiling pt. |
-|:---|:---:|:---:|
-| Celsius | 0 | 100 |
-| Fahrenheit | 32 | 212 |
-| Kelvin | 273.15 | 373.15 |
+- Hydrogen isotopes: ¹H protium (0n, 99.985%) · ²H deuterium (1n, 0.015%) · ³H tritium (2n, trace)
+- Carbon isotopes: ¹²C (6n) · ¹³C (7n) · ¹⁴C (8n)
+- Chlorine isotopes: ³⁵Cl (18n) · ³⁷Cl (20n)
+- Isotopes share chemical properties (same electron count/configuration); differ in physical properties (mass)
 
-> [!warning] Negative values exist in °C, **never in K** (Kelvin ≥ 0; SI unit)
+### §2.6 — Drawbacks of Rutherford's Model ⭐
+
+- **Drawback 1 (instability):** Maxwell's theory says an accelerating charge radiates energy — a circling electron is always accelerating (changing direction), so it should radiate continuously, lose energy, and spiral into the nucleus in ~10⁻⁸ s. Real atoms are stable — direct contradiction.
+- **Drawback 2 (no spectra explanation):** the same spiral-in picture predicts a continuous spectrum; real atoms emit line spectra (discrete frequencies) instead
+- **Drawback 3 (no electron distribution info):** model is silent on how electrons are arranged, their energies, or their behaviour
+- Trap: resembles the solar system but cannot explain atomic stability — the most commonly tested limitation
 
 ---
 
-## §5 — Uncertainty in Measurement
+## SECTION 3 — ELECTROMAGNETIC RADIATION
 
-### §5.1 Scientific Notation
-$N \times 10^n$ where $1 \leq N < 10$. Used for very large/small numbers and to make sig-fig count unambiguous.
+```mermaid
+mindmap
+  root((EM Spectrum))
+    Radio 10 to 6 Hz
+    Microwave 10 to 10 Hz
+    Infrared 10 to 13 Hz
+    Visible 10 to 15 Hz
+      Violet 400 nm
+      Red 750 nm
+    Ultraviolet 10 to 16 Hz
+    X ray 10 to 18 Hz
+    Gamma ray 10 to 24 Hz
+```
 
-### §5.2 Significant Figures (Sig Figs)
-> All digits known with certainty **+ one final estimated digit**.
+### §3.1 — Wave Nature of EM Radiation
 
-| Type of digit | Significant? | Example | SF |
-|:---|:---:|:---:|:---:|
-| All non-zero digits | ✅ | 285 | 3 |
-| Zeros between non-zero digits | ✅ | 2005 | 4 |
-| Trailing zeros **with** decimal | ✅ | 1.200 | 4 |
-| Leading zeros | ❌ | 0.0052 | 2 |
-| Trailing zeros, **no** decimal | ❌ | 1200 | 2 |
-| Scientific notation coefficient | ✅ all digits | $4.700\times10^3$ | 4 |
+- Maxwell (1870): an accelerating charged particle produces alternating E and B fields, transmitted as EM waves
+- E and B fields are perpendicular to each other and to the direction of propagation
+- No medium required — travels through vacuum
+- Speed in vacuum: **c = 3.0 × 10⁸ m s⁻¹**
+- **c = νλ**; wavenumber **ν̄ = 1/λ** (unit m⁻¹, commonly cm⁻¹)
 
-> [!tip] Add/Subtract → match **decimal places** of least precise value. Multiply/Divide → match **SF count** of least precise value.
+### §3.2 — The Electromagnetic Spectrum
 
-**Rounding Off:**
-| Digit to drop | Action |
-|:---:|:---|
-| > 5 | Raise preceding digit |
-| < 5 | Leave unchanged |
-| = 5, preceding even | Leave unchanged |
-| = 5, preceding odd | Raise by 1 |
+- Increasing frequency/energy order: Radio → Microwave → Infrared → Visible → UV → X-ray → γ-ray
+- Visible region: ~4.0 × 10¹⁴ Hz (red) to 7.5 × 10¹⁴ Hz (violet); wavelength 400 nm (violet) to 750 nm (red)
+
+| Region | Frequency | Use |
+|---|---|---|
+| Radio (AM) | ~10⁶ Hz | Broadcasting |
+| Microwave | ~10¹⁰ Hz | Radar, cooking |
+| Infrared | ~10¹³ Hz | Heating, spectroscopy |
+| Visible | ~10¹⁵ Hz | Vision |
+| Ultraviolet | ~10¹⁶ Hz | Sun's radiation |
+| X-rays | ~10¹⁸ Hz | Medical imaging |
+| γ-rays | ~10²⁴ Hz | Nuclear processes |
+
+- Memory: ROYGBIV = increasing frequency/energy within the visible range
+
+---
+
+## SECTION 4 — PLANCK'S QUANTUM THEORY & PHOTOELECTRIC EFFECT
 
 ```mermaid
 flowchart TD
-    START(["Is the digit in question a ZERO?"])
-
-    START -->|"NO — non-zero digit"| NZ["ALWAYS SIGNIFICANT"]
-    NZ --> NZX["e.g. 285.3 has 4 SF"]
-
-    START -->|"YES — it is a zero"| Z1{"Where is the zero?"}
-
-    Z1 -->|"Between two non-zero digits"| BETWEEN["SIGNIFICANT — e.g. 2005 has 4 SF"]
-
-    Z1 -->|"Before first non-zero digit"| LEADING["NOT SIGNIFICANT — leading zero"]
-    LEADING --> LEADX["e.g. 0.0023 has 2 SF"]
-
-    Z1 -->|"After last non-zero digit"| TRAILING{"Does the number have a decimal point?"}
-
-    TRAILING -->|"YES"| TRAIL_DEC["SIGNIFICANT — trailing zero with decimal"]
-    TRAIL_DEC --> TRAIL_DECX["e.g. 3.500 has 4 SF"]
-
-    TRAILING -->|"NO"| TRAIL_NODEC["NOT SIGNIFICANT — trailing zero, no decimal"]
-    TRAIL_NODEC --> TRAIL_NODECX["e.g. 2500 has 2 SF"]
-
-    TRAILING -->|"Scientific Notation"| SCI["ALL digits in coefficient are SIGNIFICANT"]
-    SCI --> SCIX["e.g. 4.700 x 10^3 has 4 SF"]
-
-    style START fill:#2c3e50,color:#ecf0f1
-    style NZ fill:#1a3d2e,color:#a8f0c6,stroke:#27ae60
-    style BETWEEN fill:#1a3d2e,color:#a8f0c6,stroke:#27ae60
-    style TRAIL_DEC fill:#1a3d2e,color:#a8f0c6,stroke:#27ae60
-    style SCI fill:#1a3d2e,color:#a8f0c6,stroke:#27ae60
-    style LEADING fill:#3d1a1a,color:#f0a8a8,stroke:#e74c3c
-    style TRAIL_NODEC fill:#3d1a1a,color:#f0a8a8,stroke:#e74c3c
+    A["Black body radiation: wave theory fails"] --> B["Planck 1900: energy quantised, E = nh(nu)"]
+    B --> C["Photon concept: E = h(nu)"]
+    C --> D["Einstein 1905: photoelectric equation"]
+    D --> E["Light shows both wave and particle behaviour"]
 ```
 
-### §5.3 Precision vs Accuracy
-| | Precision | Accuracy |
-|:---|:---|:---|
-| Asks | Do repeats agree with **each other**? | Does it agree with the **true value**? |
-| Independent? | Neither guarantees the other — a systematic error can be precise yet inaccurate; a scattered set can average near the true value without being precise | |
+### §4.1 — Black Body Radiation & Planck's Quantum Theory
 
-### §5.4 Dimensional Analysis (Factor Label / Unit Factor Method)
-Multiply by **unit factors** (ratios = 1) to cancel unwanted units.
-- $3 \text{ in} \times \dfrac{2.54 \text{ cm}}{1 \text{ in}} = 7.62 \text{ cm}$
-- $2 \text{ L} \times \dfrac{1000\text{ cm}^3}{1\text{ L}} \times \left(\dfrac{1\text{ m}}{100\text{ cm}}\right)^3 = 2\times10^{-3}\text{ m}^3$
-- $2 \text{ days} \times 24 \times 60 \times 60 = 172{,}800 \text{ s}$
+- Black body: absorbs and emits radiation of all frequencies uniformly
+- At fixed T: intensity rises with λ, peaks, then falls
+- As T increases: peak shifts to *shorter* wavelength (higher energy) — iron rod: dull red → bright red → white → blue
+- Classical wave theory failed to explain this; Planck (1900) succeeded by quantising energy
+- Quantum = smallest discrete packet of energy emitted/absorbed
+- **E = nhν**, n = 0, 1, 2, 3… (energy levels like stairs, not a ramp)
+- **h = Planck's constant = 6.626 × 10⁻³⁴ J·s**
+
+### §4.2 — The Photoelectric Effect ⭐
+
+- Observed by Hertz (1887); explained by Einstein (1905) using Planck's quantum idea
+
+| Observation | Wave theory predicts | Quantum explanation |
+|---|---|---|
+| Electrons ejected instantly | Should take time | Photon transfers energy in one instant collision |
+| Number of e⁻ ejected ∝ intensity | Same | More photons → more electrons |
+| KE of e⁻ ∝ frequency, not intensity | KE should depend on brightness | Each photon carries hν; excess over W₀ becomes KE |
+| Below threshold ν₀ → no emission | Should emit given enough intensity | Photon must individually carry ≥ hν₀ |
+
+- Einstein's equation: **hν = hν₀ + ½mₑv²**; hν₀ = W₀ = work function (minimum energy to eject an electron)
+
+| Metal | W₀ (eV) |
+|---|---|
+| Li | 2.42 |
+| Na | 2.30 |
+| K | 2.25 |
+| Mg | 3.70 |
+| Cu | 4.80 |
+| Ag | 4.30 |
+
+- Trap: intensity ↑ → more electrons ejected, NOT higher KE; only frequency ↑ raises KE; ν < ν₀ → no emission ever, at any intensity
+
+### §4.3 — Dual Nature of Electromagnetic Radiation
+
+| Phenomenon | Explained by |
+|---|---|
+| Diffraction, interference | Wave nature |
+| Photoelectric effect, black body radiation | Particle nature (photons) |
+
+- Photon: carries energy E = hν and momentum p = h/λ
+- Conclusion: light shows wave-particle duality — which nature is observed depends on the experiment
 
 ---
 
-## §6 — Laws of Chemical Combination
+## SECTION 5 — ATOMIC SPECTRA
 
-| # | Law | Proposer | Statement |
-|:---:|:---|:---|:---|
-| 1 | Conservation of Mass | Lavoisier, 1789 | Mass of reactants = mass of products; matter never created/destroyed |
-| 2 | Definite Proportions | Proust | A given compound always has the same element ratio by mass |
-| 3 | Multiple Proportions | Dalton, 1803 | Two elements → multiple compounds → masses of one element (fixed mass of other) in small whole-number ratio |
-| 4 | Gay Lussac's (Gaseous Volumes) | Gay Lussac, 1808 | Gases combine/form in simple volume ratios at same T, P |
-| 5 | Avogadro's Law | Avogadro, 1811 | Equal volumes of gases (same T, P) = equal number of molecules |
+```mermaid
+mindmap
+  root((Atomic Spectra))
+    Continuous
+      all wavelengths present
+    Emission
+      bright lines on dark
+      element fingerprint
+    Absorption
+      dark lines on bright
+      complementary to emission
+```
+
+### §5.1 — Types of Spectra
+
+- **Continuous:** white light through a prism → unbroken band of colours (ROYGBIV), all wavelengths present
+- **Emission (line):** energy supplied (heat/discharge) excites atoms → discrete bright lines on a dark background; each element's pattern is a unique fingerprint
+- **Absorption:** white light through unexcited gas → specific wavelengths absorbed → dark lines on a continuous bright background, complementary to emission
+- Application: spectroscopy identified Rb, Cs, Tl, In, Ga, Sc; helium was discovered in the sun by spectroscopy
+
+### §5.2 — Line Spectrum of Hydrogen
+
+- Electric discharge through H₂ → dissociation → excited H atoms emit radiation at discrete frequencies
+- Balmer (1885), empirical, visible lines only: ν̄ = 109,677(1/2² − 1/n²) cm⁻¹, n = 3, 4, 5…
+- Rydberg, general formula for all series: **ν̄ = 109,677(1/n₁² − 1/n₂²) cm⁻¹**, n₁ = 1,2,3…, n₂ = n₁+1, n₁+2…
+- **R_H = 109,677 cm⁻¹ = 1.09677 × 10⁷ m⁻¹**
+
+### §5.3 — Spectral Series of Hydrogen
+
+| Series | n₁ | n₂ | Region |
+|---|---|---|---|
+| Lyman | 1 | 2, 3, 4… | Ultraviolet |
+| Balmer | 2 | 3, 4, 5… | Visible |
+| Paschen | 3 | 4, 5, 6… | Infrared |
+| Brackett | 4 | 5, 6, 7… | Infrared |
+| Pfund | 5 | 6, 7, 8… | Infrared |
+
+- Memory: "Lazy Boys Play Basketball Far" → Lyman, Balmer, Paschen, Brackett, Pfund
+- Balmer is the ONLY series in the visible region
+- Level spacing shrinks as n increases (Eₙ ∝ −1/n²) — every downward transition is one spectral line
+
+### §5.4 — Counting the Number of Spectral Lines ⭐
+
+- A cascade through every intermediate level, not a single jump, produces one line per pair of levels passed through
+- **Max spectral lines = Δn(Δn + 1)/2**, Δn = n₂ − n₁
+- Special case, cascade to ground state (n₁ = 1): reduces to **n(n − 1)/2**
+- Worked: n = 6 → ground state: Δn = 5 → (5×6)/2 = **15 lines**
+- Worked: n = 5 → n = 2: Δn = 3 → (3×4)/2 = **6 lines**
+- Trap: this counts the *entire cascade* — a single named transition ("n=5 to n=2") is only ONE line, found via the Rydberg equation directly, not this formula
+
+---
+
+## SECTION 6 — BOHR'S MODEL FOR HYDROGEN ATOM
 
 ```mermaid
 flowchart TD
-    ROOT(["LAWS OF CHEMICAL COMBINATION"])
-
-    ROOT --> L1["1. Conservation of Mass"]
-    ROOT --> L2["2. Definite Proportions"]
-    ROOT --> L3["3. Multiple Proportions"]
-    ROOT --> L4["4. Gay Lussac's Law"]
-    ROOT --> L5["5. Avogadro's Law"]
-
-    L1 --> L1A["Lavoisier 1789"]
-    L1A --> L1B["Mass of products = mass of reactants"]
-    L1B --> L1C["Basis for balancing equations"]
-
-    L2 --> L2A["Proust"]
-    L2A --> L2B["Same compound — same element ratio always"]
-    L2B --> L2C["Confirmed by cupric carbonate experiments"]
-
-    L3 --> L3A["Dalton 1803"]
-    L3A --> L3B["Two elements form multiple compounds"]
-    L3B --> L3C["Example: H2O vs H2O2 — O ratio = 1:2"]
-
-    L4 --> L4A["Gay Lussac 1808"]
-    L4A --> L4B["Gases combine in simple volume ratios"]
-    L4B --> L4C["Example: H2:O2:H2O = 2:1:2"]
-
-    L5 --> L5A["Avogadro 1811"]
-    L5A --> L5B["Equal volumes at same T and P = equal molecules"]
-    L5B --> L5C["Explained Gay Lussac's Law"]
-    L5C --> L5D["Led to Dalton's Atomic Theory"]
-
-    style ROOT fill:#2c3e50,color:#ecf0f1,stroke:#3498db
-    style L1 fill:#1e3a5f,color:#aed6f1
-    style L2 fill:#1a3d2e,color:#a9dfbf
-    style L3 fill:#3d2a1a,color:#f0d0a8
-    style L4 fill:#3d1a1a,color:#f5b7b1
-    style L5 fill:#1a1a3d,color:#d0d0ff
+    A["Postulate 1: fixed circular stationary orbits"] --> B["Postulate 2: energy constant within an orbit"]
+    B --> C["Postulate 3: frequency rule, nu = delta E / h"]
+    C --> D["Postulate 4: quantised angular momentum, mvr = nh/2pi"]
+    D --> E["Result: only certain radii and energies allowed"]
 ```
+
+### §6.1 — Bohr's Four Postulates (1913) ⭐
+
+- **P1 (stationary orbits):** electron moves in circular orbits of fixed radius and energy, concentric around the nucleus
+- **P2 (energy constancy):** energy doesn't change with time in an orbit; absorbed only on jumping to a higher orbit, emitted only on falling to a lower one — never continuous
+- **P3 (frequency rule):** ν = ΔE/h = (E₂ − E₁)/h
+- **P4 (quantised angular momentum):** mₑvr = nh/2π, n = 1, 2, 3…
+- Context: fixes Rutherford's instability problem (§2.6) by borrowing Planck's quantisation (§4.1)
+
+### §6.2 — Key Equations from Bohr's Model
+
+- Radius: **rₙ = n²a₀** (a₀ = 52.9 pm = 0.529 Å); r₁ = 52.9 pm, r₂ = 211.6 pm, r₃ = 476.1 pm
+- Energy: **Eₙ = −R_H/n²** J (R_H = 2.18 × 10⁻¹⁸ J)
+
+| n | Energy (J) | State |
+|---|---|---|
+| 1 | −2.18 × 10⁻¹⁸ | Ground state |
+| 2 | −0.545 × 10⁻¹⁸ | First excited |
+| 3 | −0.242 × 10⁻¹⁸ | Second excited |
+| ∞ | 0 | Ionised |
+
+- Why negative: energy measured relative to a free electron (0 at infinity); bound → negative; more negative = more stable = lower n
+- H-like species (He⁺, Li²⁺, Be³⁺…): **Eₙ = −2.18×10⁻¹⁸(Z²/n²) J**; **rₙ = 52.9n²/Z pm**
+- Transition energy: **ΔE = R_H(1/nᵢ² − 1/n_f²)**; n_f > nᵢ → absorbed (energy positive); n_f < nᵢ → emitted
+- Trap: formula gives magnitude only — always check direction (absorption = going up, emission = coming down) physically
+
+### §6.3 — Limitations of Bohr's Model ⭐
+
+- Fails for multi-electron atoms (ignores electron–electron repulsion)
+- Cannot explain fine structure (doublet/triplet lines under high resolution)
+- Cannot explain the Zeeman effect (magnetic-field line splitting)
+- Cannot explain the Stark effect (electric-field line splitting)
+- Cannot explain chemical bonding
+- Ignores the wave nature of the electron
+- Contradicts the Heisenberg Uncertainty Principle (assumes simultaneous exact position and velocity)
 
 ---
 
-## §7 — Dalton's Atomic Theory (1808)
+## SECTION 7 — TOWARDS QUANTUM MECHANICAL MODEL
 
 ```mermaid
 flowchart TD
-    ROOT(["DALTON'S ATOMIC THEORY 1808"])
-
-    ROOT --> POST["POSTULATES"]
-    ROOT --> SUC["EXPLAINED"]
-    ROOT --> FAIL["FAILED TO EXPLAIN"]
-
-    POST --> P1["Atoms are indivisible"]
-    POST --> P2["Same element = same mass"]
-    POST --> P3["Fixed ratio of atoms forms compounds"]
-    POST --> P4["Atoms rearrange in reactions — not created or destroyed"]
-
-    SUC --> S1["Conservation of Mass"]
-    SUC --> S2["Definite Proportions"]
-    SUC --> S3["Multiple Proportions"]
-
-    FAIL --> F1["Gay Lussac's Law of Gaseous Volumes"]
-    FAIL --> F2["Isotopes — same element, different mass"]
-    FAIL --> F3["Isobars — different elements, same mass"]
-    FAIL --> F4["Why atoms combine — valence not explained"]
-    FAIL --> F5["Atoms are NOT truly indivisible"]
-
-    style ROOT fill:#2c3e50,color:#ecf0f1,stroke:#3498db
-    style POST fill:#1e3a5f,color:#aed6f1
-    style SUC fill:#1a3d2e,color:#a9dfbf,stroke:#27ae60
-    style FAIL fill:#3d1a1a,color:#f5b7b1,stroke:#e74c3c
+    A["de Broglie 1924: matter has wave nature"] --> C["Electron treated as a standing wave"]
+    B["Heisenberg 1927: position and momentum cannot both be exact"] --> D["A defined orbit is physically impossible"]
+    C --> E["Bohr's postulate 4 derived, not assumed"]
+    D --> F["Bohr's whole orbit picture must be abandoned"]
 ```
 
+### §7.1 — de Broglie's Hypothesis — Dual Behaviour of Matter (1924) ⭐
+
+- Logic: light (wave) has particle properties (photon) — does matter (particle) have wave properties?
+- **λ = h/mv = h/p**
+
+| Object | Mass | Speed | λ |
+|---|---|---|---|
+| Ball (0.1 kg) | 0.1 kg | 10 m/s | 6.626 × 10⁻³⁴ m — unmeasurable |
+| Electron | 9.1 × 10⁻³¹ kg | ~10⁶ m/s | ~10⁻¹⁰ m — measurable, X-ray scale |
+
+- Significant only for microscopic particles; confirmed via electron diffraction; basis of the electron microscope (~15 million× magnification)
+- **Derivation of Bohr's postulate 4:** model the orbit as a standing wave — the circumference must hold a whole number of wavelengths, 2πr = nλ. Substituting λ = h/mv gives **mvr = nh/2π** — exactly Bohr's fourth postulate, now derived rather than assumed. Frequently asked as a 2–3 mark question.
+
+### §7.2 — Heisenberg's Uncertainty Principle (1927)
+
+- Cannot simultaneously know the exact position AND exact momentum/velocity of a microscopic particle
+- **Δx·Δpₓ ≥ h/4π**; equivalently **Δx·Δvₓ ≥ h/4πm**
+- Milligram object: Δv·Δx ≈ 10⁻²⁸ m²s⁻¹ — negligible
+- Electron: Δv·Δx ≈ 10⁻⁴ m²s⁻¹ — enormous, very real constraint
+- Why Bohr fails: a defined orbit needs both exact position and exact velocity at every instant — physically impossible per this principle
+- Not an instrument limitation — a fundamental property of nature at the quantum scale
+
 ---
 
-## §8 — Atomic and Molecular Masses
+## SECTION 8 — QUANTUM MECHANICAL MODEL OF ATOM
 
-### §8.1 Atomic Mass Unit (u / amu)
-$$1 \text{ u} = \frac{1}{12}\text{ mass of one } {}^{12}\text{C atom} = 1.66056\times10^{-24}\text{ g}$$
-'u' is the modern preferred symbol; 'amu' is the older equivalent. Mass of H atom ≈ **1.008 u**.
+```mermaid
+mindmap
+  root((Quantum Mechanical Model))
+    Schrodinger equation
+      H psi = E psi
+    Wave function psi
+      no direct physical meaning
+    Probability density psi squared
+      always positive
+    Atomic orbital
+      region of high probability
+    Nodes
+      zero probability regions
+```
 
-### §8.2 Average Atomic Mass
-Weighted average over all naturally occurring isotopes:
-$$\bar{A} = \sum_i(\text{fractional abundance}_i \times \text{atomic mass}_i)$$
-- Carbon: $(0.98892)(12) + (0.01108)(13.00335) = 12.011$ u
-- Chlorine (³⁵Cl : ³⁷Cl = 3 : 1): $0.75(35) + 0.25(37) = 35.5$ u
+### §8.1 — Schrödinger Wave Equation (1926)
 
-### §8.3 Molecular Mass
-Sum of atomic masses of all atoms in **one molecule** — used for covalent compounds with discrete molecules.
+- Developed independently by Heisenberg and Schrödinger
+- **ĤΨ = EΨ**: Ĥ = Hamiltonian operator (KE + PE), Ψ = wave function, E = total energy
+- Ψ itself has no direct physical meaning — purely mathematical
+- This equation is the mathematical resolution of both Bohr's failure (§6.3) and the wave-particle synthesis (§7)
 
-### §8.4 Formula Mass
-Used for **ionic compounds** (lattice, no discrete molecule) — sum of atomic masses over one formula unit.
-- NaCl: $23.0 + 35.5 = \boxed{58.5 \text{ u}}$
-> [!note] Formula mass, not molecular mass — because an ionic lattice has no isolated "molecule" to weigh, only a repeating ratio
+### §8.2 — Wave Function (Ψ) and Probability Density (Ψ²)
+
+- Born's interpretation: **|Ψ|² at a point = probability density of finding the electron there** (always positive)
+- |Ψ|² × small volume element = probability of finding the electron in that volume
+- Atomic orbital = the Ψ for one electron; region of ~90% probability
+
+### §8.3 — Important Features of Quantum Mechanical Model
+
+- Energy is quantised — electrons take only specific values
+- Quantised levels are a direct result of the electron's wave-like properties
+- Exact position and velocity cannot both be known (Heisenberg) → no definite path exists
+- Atomic orbital = Ψ for an electron; all information about it is stored in Ψ
+- |Ψ|² = probability density → predicts where the electron is most likely found
+- An orbital can hold a maximum of two electrons
+
+### §8.4 — Nodes — Regions of Zero Probability
+
+- Node: region where |Ψ|² = 0 → zero probability
+- **Radial nodes** (spherical surfaces, ψ = 0) = **n − l − 1**
+- **Angular nodes** (planes through the nucleus, ψ = 0) = **l**
+- **Total nodes = n − 1**
+
+| Orbital | n | l | Radial | Angular | Total |
+|---|---|---|---|---|---|
+| 1s | 1 | 0 | 0 | 0 | 0 |
+| 2s | 2 | 0 | 1 | 0 | 1 |
+| 2p | 2 | 1 | 0 | 1 | 1 |
+| 3s | 3 | 0 | 2 | 0 | 2 |
+| 3p | 3 | 1 | 1 | 1 | 2 |
+| 3d | 3 | 2 | 0 | 2 | 2 |
+
+- For ns orbitals specifically: radial nodes = n − 1 (since l = 0)
 
 ---
 
-## §9 — Mole Concept and Molar Masses
+## SECTION 9 — QUANTUM NUMBERS
 
-### §9.1 The Mole — Definition
-1 mole = $N_A = 6.02214076\times10^{23}$ entities (atoms, molecules, ions — entity must be stated).
+```mermaid
+mindmap
+  root((Quantum Numbers))
+    Principal n
+      shell size and energy
+    Azimuthal l
+      subshell and shape
+    Magnetic m sub l
+      orbital orientation
+    Spin ms
+      plus half or minus half
+```
 
-### §9.2 Interconversions
+### §9.1 — Principal Quantum Number (n)
+
+- n = 1, 2, 3, 4… (positive integer); identifies the shell; determines size and energy
+- For H: Eₙ ∝ −1/n²; larger n → larger orbital, farther from nucleus, higher energy
+
+| n | Shell | Max e⁻ (2n²) | Orbitals (n²) |
+|---|---|---|---|
+| 1 | K | 2 | 1 |
+| 2 | L | 8 | 4 |
+| 3 | M | 18 | 9 |
+| 4 | N | 32 | 16 |
+
+### §9.2 — Azimuthal Quantum Number (l)
+
+- Also called orbital angular momentum / subsidiary quantum number; defines orbital shape
+- For given n: l = 0, 1, 2 … (n − 1)
+
+| l | Subshell | Shape | Max e⁻ |
+|---|---|---|---|
+| 0 | s | Spherical | 2 |
+| 1 | p | Dumbbell | 6 |
+| 2 | d | Cloverleaf | 10 |
+| 3 | f | Complex | 14 |
+
+- Notation = n + subshell letter, e.g. n=2,l=0 → 2s; n=3,l=2 → 3d; n=4,l=3 → 4f
+
+### §9.3 — Magnetic Orbital Quantum Number (mₗ)
+
+- Gives spatial orientation of the orbital
+- For given l: mₗ = −l … 0 … +l → **(2l+1)** values
+
+| l | Subshell | mₗ values | Orbitals |
+|---|---|---|---|
+| 0 | s | 0 | 1 |
+| 1 | p | −1, 0, +1 | 3 |
+| 2 | d | −2,−1,0,+1,+2 | 5 |
+| 3 | f | −3…+3 | 7 |
+
+- Total orbitals in a subshell = (2l+1); total orbitals in a shell = n²
+
+### §9.4 — Spin Quantum Number (ms)
+
+- Proposed by Uhlenbeck and Goudsmit (1925); describes intrinsic electron spin
+- Only two values: **ms = +½** (↑) or **−½** (↓)
+- Two electrons with opposite spin in the same orbital = spin-paired
+
+### §9.5 — Master Quantum Number Summary ⭐
+
+| QN | Symbol | Determines | Values |
+|---|---|---|---|
+| Principal | n | Shell, size, energy | 1, 2, 3… |
+| Azimuthal | l | Subshell, shape | 0 to n−1 |
+| Magnetic | mₗ | Orientation | −l to +l |
+| Spin | ms | Spin direction | +½ or −½ |
+
+- Impossible sets (Board/NEET trap): n=0 ✗ · n=1,l=1 ✗ (max l=0) · n=3,l=3 ✗ (max l=2) · l=2,mₗ=3 ✗ (range −2 to +2) · ms=+1 ✗ (only ±½ allowed)
+
+---
+
+## SECTION 10 — SHAPES OF ATOMIC ORBITALS
+
+```mermaid
+mindmap
+  root((Orbital Shapes))
+    s orbital
+      sphere
+      one orbital
+    p orbital
+      dumbbell
+      three orbitals
+    d orbital
+      cloverleaf mostly
+      five orbitals
+      d z squared is unique
+```
+
+### §10.1 — s Orbitals (l = 0)
+
+- Spherically symmetric; one orbital per subshell (mₗ = 0 only)
+- Size increases with n: 4s > 3s > 2s > 1s
+- 1s: max density at nucleus, decreases monotonically, 0 radial nodes
+- 2s: 1 radial node then a small secondary hump
+- 2p (for contrast): zero density AT the nucleus (that's an angular node), single hump, 0 radial nodes
+
+### §10.2 — p Orbitals (l = 1)
+
+- Dumbbell shape — two lobes on either side of a nodal plane through the nucleus
+- Three orbitals (mₗ = −1,0,+1): 2pₓ, 2p_y, 2p_z — equal size/shape/energy, differ only in orientation
+- One angular node (the nodal plane itself); size increases 4p > 3p > 2p
+
+### §10.3 — d Orbitals (l = 2)
+
+- Five orbitals (mₗ = −2…+2): d_xy, d_yz, d_xz, d_x²−y², d_z²
+- Minimum n = 3 (since l ≤ n−1, and l=2 needs n≥3)
+- d_xy, d_yz, d_xz, d_x²−y²: cloverleaf, 4 lobes each
+- d_z²: unique — two lobes along z-axis plus a torus (donut) in the xy-plane
+- All five 3d orbitals degenerate (same energy) in an isolated atom; 2 angular nodes each
+
+| d Orbital | Lobes | Nodal planes |
+|---|---|---|
+| d_xy | Between x,y axes | xz, yz |
+| d_xz | Between x,z axes | xy, yz |
+| d_yz | Between y,z axes | xy, xz |
+| d_x²−y² | Along x,y axes | — |
+| d_z² | Along z-axis + torus | — |
+
+---
+
+## SECTION 11 — ENERGIES OF ORBITALS
 
 ```mermaid
 flowchart TD
-    AMU["1 amu = 1/12 x mass of C-12"] --> ATMAS["ATOMIC MASS (u)"]
-    ATMAS --> ATMAS2["Average accounts for isotopes"]
-    ATMAS2 --> MOLMAS["MOLAR MASS (M)"]
-    MOLMAS --> MOLMAS2["g/mol numerically = u"]
-
-    MOLMAS2 --> MOLES["MOLES (n) — the central unit"]
-
-    MOLES --> MASS["MASS (m)"]
-    MASS --> MASSA["m = n x M"]
-    MASS --> MASSB["n = m / M"]
-
-    MOLES --> NUM["NUMBER OF PARTICLES (N)"]
-    NUM --> NUMA["N = n x Na"]
-    NUM --> NUMB["n = N / Na"]
-
-    MOLES --> VOL["VOLUME of gases at STP"]
-    VOL --> VOLA["V = n x 22.7 L"]
-
-    MOLES --> CONC["CONCENTRATION"]
-    CONC --> CONCA["Molarity M = n/V"]
-    CONC --> CONCB["Molality m = n/kg"]
-    CONC --> CONCC["Mole fraction"]
-
-    MOLES --> FORM["% COMPOSITION and FORMULA"]
-    FORM --> FORMA["Empirical Formula"]
-    FORMA --> FORMB["Molecular Formula"]
-
-    style MOLES fill:#1a3d2e,color:#a9dfbf,stroke:#27ae60,stroke-width:2px
-    style MASS fill:#1e3a5f,color:#aed6f1
-    style NUM fill:#3d2a1a,color:#f0d0a8
-    style VOL fill:#2c3e50,color:#ecf0f1
-    style CONC fill:#3d1a3a,color:#f0a8e0
-    style FORM fill:#1a1a3d,color:#d0d0ff
+    A["One electron: Hydrogen"] --> B["Energy depends on n only, subshells degenerate"]
+    C["Many electrons: shielding and repulsion"] --> D["Energy splits by both n and l, s less than p less than d"]
 ```
 
-$$n = \frac{m}{M} = \frac{N}{N_A} = \frac{V(\text{gas at STP})}{22.7 \text{ L}}$$
+### §11.1 — Hydrogen Atom — Energy Depends on n Only
 
-> [!warning] STP source conflict — 22.4 L mol⁻¹ (old STP / NTP, 1 atm) vs **22.7 L mol⁻¹** (current IUPAC STP, 1 bar). Default to 22.7 L unless a question says NTP or is from older material — state which one you used.
+- All subshells of the same n are degenerate: 1s < 2s = 2p < 3s = 3p = 3d < 4s = 4p = 4d = 4f < …
 
-### §9.3 Molar Mass
-Mass of 1 mole, g mol⁻¹ — numerically equal to atomic/molecular/formula mass in u.
-Derivation: $N_A = 12 \text{ g mol}^{-1} \div 1.992648\times10^{-23}\text{ g} = 6.0221367\times10^{23}\text{ mol}^{-1}$
+### §11.2 — Multi-electron Atoms — Energy Depends on Both n and l
 
----
+- Electron–electron repulsion and shielding split subshells of the same n
+- Shielding effectiveness (same n): s > p > d — s electrons spend more time near the nucleus, so shield better
+- **(n+l) rule:** lower (n+l) → lower energy; tie in (n+l) → lower n wins
 
-## §10 — Percentage Composition
+| Orbital | n+l | Note |
+|---|---|---|
+| 2p | 3 | — |
+| 3s | 3 | Same (n+l) as 2p, but n=3>2 → 3s > 2p |
+| 3d | 5 | Same (n+l) as 4p, but n=3<4 → **3d < 4p** |
+| 4p | 5 | — |
 
-$$\text{Mass \% of element} = \frac{\text{Mass of element in 1 mol}}{\text{Molar mass of compound}} \times 100$$
-
-*(Check: all element percentages must sum to ≈100%)*
-
-| Compound | Result |
-|:---|:---|
-| Ethanol, C₂H₅OH (M = 46.068) | %C = 52.14, %H = 13.13, %O = 34.73 |
-| Copper pyrites, CuFeS₂ (M = 183.3) | %Cu = 34.6, %Fe = 30.4, %S = 34.9 |
-| Urea, CO(NH₂)₂ (M = 60) | %N = 46.67, %H = 6.67, %C = 20, %O = 26.67 |
+- Critical result: **4s < 3d** and **5s < 4d** — a lower-n orbital fills first even with higher (n+l) tie-breaking; this is why 4s fills before 3d in K and Ca
 
 ---
 
-## §11 — Empirical and Molecular Formula
+## SECTION 12 — FILLING OF ORBITALS IN ATOMS
+
+```mermaid
+mindmap
+  root((Filling Rules))
+    Aufbau
+      order of filling
+      n plus l rule
+    Pauli Exclusion
+      max two per orbital
+      opposite spins
+    Hunds Rule
+      singly occupy first
+      then pair
+```
+
+### §12.1 — Aufbau Principle
+
+- German: "building up" — fill orbitals in order of increasing energy, lowest first
+- Order: 1s 2s 2p 3s 3p 4s 3d 4p 5s 4d 5p 6s 4f 5d 6p 7s 5f 6d 7p
+- Governed by the (n+l) rule (§11.2): lower (n+l) fills first; ties broken by lower n
+
+### §12.2 — Pauli Exclusion Principle
+
+- No two electrons share the same set of all four quantum numbers
+- Equivalently: max 2 electrons per orbital, with opposite spins
+- **Max e⁻ per subshell = 2(2l+1)**; **max e⁻ per shell n = 2n²**
+
+| Subshell | Orbitals | Max e⁻ |
+|---|---|---|
+| s | 1 | 2 |
+| p | 3 | 6 |
+| d | 5 | 10 |
+| f | 7 | 14 |
+
+### §12.3 — Hund's Rule of Maximum Multiplicity
+
+- Degenerate orbitals are singly occupied, with parallel spins, before any pairing occurs
+- Pairing begins only once every orbital in the subshell has one electron
+- Basis: parallel spins allow maximum exchange energy → lower energy → greater stability
+- Example — Carbon (2p²): ↑ ↑ □ (two separate orbitals), NOT ↑↓ □ □
+
+---
+
+## SECTION 13 — ELECTRONIC CONFIGURATIONS
 
 ```mermaid
 flowchart TD
-    S1(["Given: % composition by mass"])
-
-    S1 --> S2["STEP 1 — Assume 100 g sample"]
-    S2 --> S2A["% values become gram values directly"]
-
-    S2A --> S3["STEP 2 — Convert grams to moles"]
-    S3 --> S3A["Moles = Mass / Atomic Mass"]
-
-    S3A --> S4["STEP 3 — Find molar ratios"]
-    S4 --> S4A["Divide all mole values by smallest mole value"]
-
-    S4A --> S5["STEP 4 — Make ratios whole numbers"]
-    S5 --> S5A["If ratio = 1.5 or 2.5, multiply all by 2"]
-    S5 --> S5B["If ratio = 1.33, multiply all by 3"]
-
-    S5B --> S6["STEP 5 — Write Empirical Formula"]
-    S5A --> S6
-
-    S6 --> S7["STEP 6 — Find Molecular Formula"]
-    S7 --> S7A["n = Molar Mass / EF mass"]
-    S7A --> S7B["Molecular Formula = n x Empirical Formula"]
-
-    style S1 fill:#1e3a5f,color:#aed6f1
-    style S6 fill:#1a3d2e,color:#a9dfbf,stroke:#27ae60
-    style S7B fill:#1a3d2e,color:#a9dfbf,stroke:#27ae60
+    A["Writing a configuration"] --> B{"Neutral atom, cation, or anion?"}
+    B -->|Neutral| C["Follow Aufbau: fill lowest energy orbital first, n+l rule"]
+    B -->|"Cation, e.g. Fe2+"| D["Start from neutral config, remove from HIGHEST n subshell first: ns before (n-1)d"]
+    B -->|"Anion, e.g. F-"| E["Add electrons to the next available orbital, same as Aufbau"]
 ```
 
-$$n_{\text{(EF} \to \text{MF)}} = \frac{\text{Molar Mass}}{\text{EF mass}} \quad\Rightarrow\quad \text{Molecular Formula} = n \times \text{EF}$$
+### §13.1 — Notation System
 
-**Worked-example results** *(method only — full working in NOTES §11)*:
-- EF = CH₂Cl (EF mass 49.48), molar mass 98.96 → n = 2 → Molecular formula **C₂H₄Cl₂**
-- Combustion analysis → EF **Fe₂O₃** (mass check: $2(56)+3(16)=160$)
-- EF = CH (EF mass 13), molar mass 78 → n = 6 → Molecular formula **C₆H₆** (benzene)
-- EF mass 83, molar mass = 2 × 83 = 166 → n = 2 → Molecular formula **C₈H₆O₄**
-- Combustion of 3.38 g CO₂ + 0.690 g H₂O → %C = 92.3%, %H = 7.7%
-- Vapour density method: $M = \dfrac{\text{mass}}{\text{vol}}\times22.4$ → M = 26.0 g mol⁻¹ → n = 2 → Molecular formula **C₂H₂** (acetylene)
+- Subshell notation: (n)(letter)^(count) — e.g. Carbon: 1s²2s²2p²
+- Core notation: noble-gas symbol for filled inner shells — e.g. Na: [Ne]3s¹
 
-> [!tip] Vapour density method: $\text{Molar mass} = 2 \times \text{vapour density}$
+### §13.2 — Electronic Configurations of Elements (Z = 1–30) ⭐
 
----
+| Z | Element | Config | Z | Element | Config |
+|---|---|---|---|---|---|
+| 1 | H | 1s¹ | 16 | S | [Ne]3s²3p⁴ |
+| 2 | He | 1s² | 17 | Cl | [Ne]3s²3p⁵ |
+| 3 | Li | [He]2s¹ | 18 | Ar | [Ne]3s²3p⁶ |
+| 4 | Be | [He]2s² | 19 | K | [Ar]4s¹ |
+| 5 | B | [He]2s²2p¹ | 20 | Ca | [Ar]4s² |
+| 6 | C | [He]2s²2p² | 21 | Sc | [Ar]3d¹4s² |
+| 7 | N | [He]2s²2p³ | 22 | Ti | [Ar]3d²4s² |
+| 8 | O | [He]2s²2p⁴ | 23 | V | [Ar]3d³4s² |
+| 9 | F | [He]2s²2p⁵ | **24** | **Cr** ⭐ | **[Ar]3d⁵4s¹** |
+| 10 | Ne | [He]2s²2p⁶ | 25 | Mn | [Ar]3d⁵4s² |
+| 11 | Na | [Ne]3s¹ | 26 | Fe | [Ar]3d⁶4s² |
+| 12 | Mg | [Ne]3s² | 27 | Co | [Ar]3d⁷4s² |
+| 13 | Al | [Ne]3s²3p¹ | 28 | Ni | [Ar]3d⁸4s² |
+| 14 | Si | [Ne]3s²3p² | **29** | **Cu** ⭐ | **[Ar]3d¹⁰4s¹** |
+| 15 | P | [Ne]3s²3p³ | 30 | Zn | [Ar]3d¹⁰4s² |
 
-## §12 — Stoichiometry and Stoichiometric Calculations
+- Cr (Z=24): expected [Ar]3d⁴4s² → actual **[Ar]3d⁵4s¹**
+- Cu (Z=29): expected [Ar]3d⁹4s² → actual **[Ar]3d¹⁰4s¹**
+- Reason: half-filled (d⁵) / fully-filled (d¹⁰) subshells are extra stable (§14.1) — one electron shifts from 4s to 3d
 
-### §12.1 Definition
-Stoichiometry (Gk. *stoicheion* = element, *metron* = measure) = quantitative relationships between reactants/products in a balanced equation.
+### §13.3 — Electronic Configurations of Ions ⭐
 
-### §12.2 Reading a Balanced Equation
-Coefficients represent **both** molecules and moles.
-
-Example, CH₄ + 2O₂ → CO₂ + 2H₂O:
-
-| | CH₄ | 2O₂ | CO₂ | 2H₂O |
-|:---|:---:|:---:|:---:|:---:|
-| Moles | 1 | 2 | 1 | 2 |
-| Mass | 16 g | 64 g | 44 g | 36 g |
-| Volume at STP | 22.7 L | 45.4 L | 22.7 L | 45.4 L |
-
-### §12.3 Balancing Equations
-> [!warning] Only **coefficients** change to balance; **subscripts never change** (Law of Conservation of Mass)
-
-Result: $\boxed{C_3H_8(g) + 5O_2(g) \rightarrow 3CO_2(g) + 4H_2O(l)}$
-
-### §12.4 Limiting Reagent
-**Method:** (1) convert all reactant masses to moles (2) divide by stoichiometric coefficient (3) **smallest quotient = limiting reagent**
-
-> [!warning] Comparing raw masses/moles directly (without dividing by coefficients) gives the wrong answer whenever coefficients differ
-
-- N₂ + 3H₂ → 2NH₃, 50.0 kg N₂ + 10.0 kg H₂: N₂ quotient 1786, H₂ quotient 1653 → **H₂ limiting**, NH₃ produced = 56.2 kg
-- Same reaction, 2.00×10³ g N₂ + 1.00×10³ g H₂ → **N₂ limiting**, 2428.6 g NH₃ produced, 571.4 g H₂ left over (confirms: which mass is larger tells you nothing — always divide by coefficients)
-- Generic A + B₂ → AB₂ (1:1:1): limiting reagent is whichever of A, B₂ has the smaller mole count; equal moles → no limiting reagent, both fully consumed
-
-### §12.5 Mole-Mass-Volume Interconversions
-Same §9.2 wheel, run once per substance:
-$$n(\text{B}) = n(\text{A}) \times \frac{\text{coefficient of B}}{\text{coefficient of A}}$$
-
-### §12.6 Practice — Purity, Reverse Stoichiometry, Careful Reading
-- 2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O: 1 mol NaOH → **0.5 mol Na₂SO₄**
-- 40 g limestone, 20% pure CaCO₃ → strip impurity first (8 g pure) → **3.52 g CO₂**
-- 224 L O₂ at NTP needed from 2Pb(NO₃)₂ → 2PbO + 4NO₂ + O₂ → **20 mol Pb(NO₃)₂**
-- 50% (by mass) H₂SO₄ needed to decompose 25 g CaCO₃ → pure acid 24.5 g → **49 g of the 50% solution**
+- Rule: electrons are removed from the **highest n subshell first** — for a transition-metal cation, ns empties before (n−1)d, even though ns filled first going in
+- Worked: Fe (Z=26) = [Ar]3d⁶4s² → remove 2 from 4s → **Fe²⁺ = [Ar]3d⁶**
+- Worked: Cu (Z=29) = [Ar]3d¹⁰4s¹ → remove the single 4s electron → **Cu⁺ = [Ar]3d¹⁰**
+- Worked: Cu²⁺ → 4s already empty after removing 1 electron, so the 2nd comes from 3d → **Cu²⁺ = [Ar]3d⁹**
+- Trap: filling order ≠ emptying order — "3d was added last, remove it last" is backwards; highest n *always* leaves first
 
 ---
 
-## §13 — Concentration of Solutions
-
-### §13.1 Mass Per Cent (w/w %)
-$$\text{Mass \%} = \frac{\text{mass of solute}}{\text{mass of solution}} \times 100$$
-Example: 2 g solute in 18 g water → **10%**
-
-### §13.2 Mole Fraction (χ)
-$$\chi_i = \frac{n_i}{\sum_j n_j}, \qquad \chi_A + \chi_B = 1$$
-Example (water/methanol/acetic acid, 25 g/25 g/50 g): χ_water = **0.46**, χ_methanol = **0.26**, χ_acetic acid = **0.28**
-
-### §13.3 Molarity (M)
-$$M = \frac{n(\text{solute})}{V(\text{solution, L})} \qquad \text{Dilution: } M_1V_1 = M_2V_2$$
-- Glucose example: n = 20/342 = 0.0585 mol → M = **0.0292 mol L⁻¹**
-- Dilution: 18 M stock → 0.50 M, 250 mL final → V₁ = **6.94 mL stock**, then dilute **up to** the 250 mL mark (not "add 243 mL water" — final volumes aren't strictly additive)
-
-### §13.4 Molality (m)
-$$m = \frac{n(\text{solute})}{\text{mass(solvent, kg)}}$$
-Example: n = M×V = 0.625 mol from a 20 g sample, density 0.793 g mL⁻¹ → volume = **25.2 mL**
-
-### §13.5 Master Comparison Table
+## SECTION 14 — STABILITY OF COMPLETELY FILLED AND HALF-FILLED SUBSHELLS
 
 ```mermaid
-flowchart TD
-    ROOT(["CONCENTRATION OF SOLUTIONS"])
-
-    ROOT --> MASP["MASS PERCENT (w/w%)"]
-    ROOT --> MOL["MOLARITY (M)"]
-    ROOT --> MOLAL["MOLALITY (m)"]
-    ROOT --> MOLF["MOLE FRACTION (chi)"]
-
-    MASP --> MP1["mass of solute / mass of solution x 100"]
-    MASP --> MP2["Temperature INDEPENDENT"]
-
-    MOL --> MO1["mol solute / volume of solution (L)"]
-    MOL --> MO2["Temperature DEPENDENT"]
-    MOL --> MO3["Dilution: M1V1 = M2V2"]
-
-    MOLAL --> ML1["mol solute / mass of solvent (kg)"]
-    MOLAL --> ML2["Temperature INDEPENDENT"]
-    MOLAL --> ML3["Preferred for colligative properties"]
-
-    MOLF --> MF1["nA / (nA + nB)"]
-    MOLF --> MF2["Dimensionless"]
-    MOLF --> MF3["chi-A + chi-B = 1 always"]
-
-    style ROOT fill:#2c3e50,color:#ecf0f1,stroke:#3498db
-    style MASP fill:#1e3a5f,color:#aed6f1
-    style MOL fill:#3d1a1a,color:#f5b7b1,stroke:#e74c3c
-    style MOLAL fill:#1a3d2e,color:#a9dfbf,stroke:#27ae60
-    style MOLF fill:#3d2a1a,color:#f0d0a8
+mindmap
+  root((Extra Stability))
+    Symmetry
+      equal shielding
+      same Zeff
+    Exchange energy
+      parallel spins
+      maximum when half or fully filled
 ```
 
-| Type | Formula | Temperature-dependent? |
-|:---|:---|:---:|
-| Molarity (M) | $n(\text{solute})/V(\text{L})$ | **YES** ⚠️ |
-| Molality (m) | $n(\text{solute})/\text{mass(kg solvent)}$ | NO |
-| Mole fraction (χ) | $n_A/(n_A+n_B)$ | NO |
-| Mass % | mass(solute)/mass(solution) × 100 | NO |
+### §14.1 — Extra Stable Configurations
 
-> [!warning] Only **Molarity** changes with temperature (volume changes) — Molality, mole fraction, mass% do not.
+- Extra-stable configurations: p³, p⁶, d⁵, d¹⁰, f⁷, f¹⁴
+- **Reason 1 — symmetry:** half-/fully-filled subshells have symmetrical electron distribution → each orbital equally shielded → same Zeff → more stable
+- **Reason 2 — exchange energy:** same-spin electrons in degenerate orbitals can exchange positions, releasing exchange energy; this is maximum when the subshell is half- or fully-filled
+- For 5 electrons, all parallel spin (d⁵): the maximum possible number of pairwise exchanges is C(5,2) = 4+3+2+1 = **10** — exactly why d⁵ is extra stable
 
----
+### §14.2 — Core vs Valence Electrons
 
-## Quick Formula Reference
-
-$$n = \frac{m}{M} = \frac{N}{N_A} = \frac{V(\text{gas at STP})}{22.7 \text{ L}} \qquad n_{\text{EF}\to\text{MF}} = \frac{\text{Molar Mass}}{\text{EF mass}}$$
-
-$$\rho = \frac{m}{V} \qquad K = °C+273.15 \qquad °F = \tfrac{9}{5}(°C)+32$$
-
-$$M = \frac{n(\text{solute})}{V(\text{L})} \qquad m = \frac{n(\text{solute})}{\text{mass(kg)}} \qquad \chi_A = \frac{n_A}{n_A+n_B} \qquad M_1V_1 = M_2V_2$$
+- **Core electrons:** in completely filled inner shells (e.g. the [Ne] core within Na)
+- **Valence electrons:** in the outermost shell (highest n); determine chemical properties
+- Na = [Ne]3s¹ → 1 valence electron, 10 core electrons
 
 ---
 
-*End of Condensed Notes — Chemistry Ch. 1: Some Basic Concepts of Chemistry*
-*Exam Tags: Board · NEET · JEE Mains · JEE Advanced*
+## CONCEPTUAL DISTINCTIONS — HIGH-YIELD COMPARISONS
+
+| Orbit (Bohr) | Orbital (Quantum Mechanics) |
+|---|---|
+| Circular, well-defined path | 3D region of space (wave function) |
+| Exact position known | Only probability known |
+| Contradicts Heisenberg | Consistent with Heisenberg |
+| 2D concept, defined by n only | 3D concept, defined by n, l, mₗ |
+| Disproved | Currently accepted |
+
+| Emission Spectrum | Absorption Spectrum |
+|---|---|
+| Atom loses energy → photon emitted | Atom gains energy → photon absorbed |
+| Bright lines on dark background | Dark lines on bright background |
+| Excited state → ground state | Ground state → excited state |
+
+- Trap: subshells in shell n = n, but orbitals in shell n = n² — don't answer "3" for the orbital count when n=3 asks for orbitals; it's 9 *(§9.1)*
+- Trap: radial nodes = n−l−1, angular nodes = l; the two formulas can be swapped by mistake and the total (n−1) will still look plausible *(§8.4)*
+- Trap: larger threshold frequency ν₀ (bigger work function) means *smaller* threshold wavelength λ₀ = c/ν₀ — easy to flip mid-calculation *(§4.2)*
+- Trap: frequency controls whether electrons are ejected at all, and their KE; intensity only controls how many come out — intensity never belongs in a KE calculation *(§4.2)*
+- Trap: orbital degeneracy (2s = 2p) is a hydrogen-only privilege *(§11.1)* — the moment there's more than one electron, shielding splits them and 2s < 2p *(§11.2)*
+- Trap: filling order ≠ emptying order — 4s fills before 3d going in, but 4s empties before 3d coming out *(§13.3)*
+- Trap: isotopes share Z, isobars share A, isotones share (A−Z) — all three are tested as "identify the pair" questions *(§2.5)*
+- Trap: mass number (A) is a whole number for one nuclide; atomic mass on the periodic table is the isotope-weighted *average* — why chlorine's atomic mass (35.45) isn't an integer *(§2.4, §2.5)*
+
+---
+
+## PROBLEM-SOLVING STRATEGY
+
+- **p/n/e⁻ from ᴬZX or an ion** *(§2.4)*: protons = Z; electrons = Z ∓ ion charge; neutrons = A − Z always
+- **Photon energy ↔ wavelength ↔ frequency** *(§3.1, §4.1)*: pick the equation linking given → wanted (E=hν, c=νλ); convert units (nm→m, eV→J) before substituting
+- **Rydberg equation, forward and backward** *(§5.2)*: forward — given nᵢ,n_f find ΔE/λ/ν̄; backward — given λ, solve for n (should come out a clean integer)
+- **"Maximum spectral lines" vs a single named transition** *(§5.4)*: cascade (Δn(Δn+1)/2) if it says "drops from an excited state"; one line via Rydberg if it names a direct transition
+- **Bohr radius/energy for H-like species** *(§6.2)*: check for Z ≠ 1 — forgetting to square Z in energy, or scale by 1/Z in radius, is the most common slip
+- **de Broglie wavelength** *(§7.1)*: λ = h/mv — settle momentum first; is v given, or does it need K.E. = ½mv² first?
+- **Heisenberg uncertainty** *(§7.2)*: Δx·Δp ≥ h/4π — decide upfront whether solving for Δx, Δv, or Δp
+- **Validating a quantum-number set** *(§9.5)*: check all three constraints (l < n; mₗ in range; ms = ±½ only), not just one
+- **Counting nodes for a given (n,l)** *(§8.4)*: compute radial, angular, AND total as a self-check that they add up
+- **Writing an electronic configuration** *(§12, §13)*: neutral → Aufbau + (n+l) rule, check Cr/Cu exceptions; ion → start from neutral, then add/remove using ns-before-(n−1)d for cations
+
+---
+
+## RAPID REFERENCE
+
+| Fact | Value |
+|---|---|
+| Speed of light (c) | 3.0 × 10⁸ m s⁻¹ |
+| Planck's constant (h) | 6.626 × 10⁻³⁴ J·s |
+| Charge on electron (e) | 1.602 × 10⁻¹⁹ C |
+| Mass of electron (mₑ) | 9.109 × 10⁻³¹ kg |
+| Mass of proton (mₚ) | 1.673 × 10⁻²⁷ kg |
+| Mass of neutron (mₙ) | 1.675 × 10⁻²⁷ kg |
+| e/mₑ ratio | 1.758820 × 10¹¹ C kg⁻¹ |
+| Bohr radius (a₀) | 52.9 pm |
+| Rydberg constant, energy (R_H) | 2.18 × 10⁻¹⁸ J |
+| Rydberg constant, wavenumber (R_H) | 1.09677 × 10⁷ m⁻¹ = 109,677 cm⁻¹ |
+| Wave-speed relation | c = νλ |
+| Photon energy | E = hν = hc/λ |
+| Wavenumber | ν̄ = 1/λ |
+| Photoelectric equation | hν = hν₀ + ½mₑv² |
+| Work function | W₀ = hν₀ |
+| Rydberg equation | ν̄ = R_H(1/n₁² − 1/n₂²) |
+| Bohr radius, nth orbit (H) | rₙ = n²a₀ |
+| Bohr radius (H-like) | rₙ = 52.9(n²/Z) pm |
+| Bohr energy (H) | Eₙ = −R_H/n² |
+| Bohr energy (H-like) | Eₙ = −2.18×10⁻¹⁸(Z²/n²) J |
+| Transition energy | ΔE = R_H(1/nᵢ² − 1/n_f²) |
+| Max spectral lines (cascade) | Δn(Δn+1)/2 |
+| Max spectral lines (to ground state) | n(n−1)/2 |
+| de Broglie wavelength | λ = h/mv = h/p |
+| Heisenberg uncertainty | Δx·Δp ≥ h/4π |
+| Angular momentum (Bohr) | mₑvr = nh/2π |
+| Radial nodes | n − l − 1 |
+| Angular nodes | l |
+| Total nodes | n − 1 |
+| Max e⁻ per orbital | 2 |
+| Max e⁻ per subshell | 2(2l+1) |
+| Max e⁻ per shell | 2n² |
+| Orbitals per shell | n² |
+| Orbitals per subshell | 2l + 1 |
+| Visible light range | 400 nm (violet) – 750 nm (red) |
+| Work function: Li / Na / K / Mg / Cu / Ag | 2.42 / 2.30 / 2.25 / 3.70 / 4.80 / 4.30 eV |
+
+---
+
+*End of CNOTES — Ch. 2: Structure of Atom*
