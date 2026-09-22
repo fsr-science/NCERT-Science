@@ -145,13 +145,13 @@ Working independently, both plotted physical/chemical properties against atomic 
 
 > **Why Mendeleev, not Lothar Meyer, gets the credit:** he published the law *first*, made *quantitative* predictions that were later confirmed almost exactly, and had the scientific courage to leave gaps rather than force elements into the wrong slot.
 
-**Achievements of Mendeleev's table** *(Coaching)*:
+**Achievements of Mendeleev's table:**
 1. First systematic arrangement placing similar-property elements in the same group.
 2. Left gaps for undiscovered elements and predicted their properties correctly (table above).
 3. **Corrected wrongly-assigned atomic weights** using the periodicity itself — the standout example being beryllium.
 
 > [!example]
-> ### Solved — Mendeleev's correction of beryllium's atomic weight *(Coaching)*
+> ### Solved — Mendeleev's correction of beryllium's atomic weight
 > **Given:** Be was originally assigned atomic weight ≈ 13.5 on the assumption that its valency = 3 (by analogy with Al, i.e. an oxide formulated as Be₂O₃). Its experimentally measured **equivalent weight** was 4.5.
 > **Concept:** for any element, $\text{Atomic weight} = \text{Valency} \times \text{Equivalent weight}$.
 > **Work:** placing Be (at. wt. 13.5) between Li (7) and B (11) broke the periodicity of properties — Be at 13.5 resembled Al far too closely to also fit snugly between Li and B. Mendeleev reasoned Be's true valency must be **2** (like Mg, Ca — its actual family), not 3.
@@ -160,7 +160,7 @@ Working independently, both plotted physical/chemical properties against atomic 
 > \]
 > **Check:** 9 sits correctly between Li (7) and B (11); Be's actual atomic weight is 9.01 — Mendeleev's periodicity-driven correction was right.
 
-**Drawbacks of Mendeleev's table** *(Coaching)*:
+**Drawbacks of Mendeleev's table:**
 
 | # | Drawback |
 |---|---|
@@ -457,7 +457,7 @@ flowchart LR
 | Malleable/ductile | Yes | No — brittle | Intermediate |
 | Conductivity | Good | Poor | Intermediate (semiconductors) |
 
-> **Aside** *(Coaching)*: metallic conductance actually *decreases* as temperature rises — increased lattice vibration obstructs electron flow through the metal. (Contrast with semiconductors/metalloids, whose conductivity *rises* with temperature — a fact you'll meet again in solid-state chemistry.)
+> **Aside:** metallic conductance actually *decreases* as temperature rises — increased lattice vibration obstructs electron flow through the metal. (Contrast with semiconductors/metalloids, whose conductivity *rises* with temperature — a fact you'll meet again in solid-state chemistry.)
 
 > [!example]
 > ### Worked Example 5 — Increasing metallic character (NCERT Problem 3.4)
@@ -495,7 +495,7 @@ flowchart TD
     C -.->|"for the same element, r always comes out largest here"| C
 ```
 
-> **Size ordering for the same element** *(Coaching)*:
+> **Size ordering for the same element:**
 > \[
 > \boxed{r_{\text{van der Waals}} > r_{\text{metallic}} > r_{\text{covalent}}}
 > \]
