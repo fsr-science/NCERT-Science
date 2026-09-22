@@ -35,9 +35,6 @@ flowchart TD
     style K fill:#1a1a3d,color:#d0d0ff,stroke:#9b59b6
 ```
 
-> [!note] What changed in this upgrade
-> Added: a TikZ precision/accuracy target (§5.3) and a TikZ ionic-lattice diagram (§8.4); a decision flowchart for picking the right concentration term (§13); ~20 additional worked examples pulled from the handwritten problem set, each recomputed from scratch rather than copied — this caught a handful of small errors in the original working (a decimal-place slip in a metric-tonne mole calculation, a units slip in a density-based dilution, and a mismatched question/answer pair in a limestone-purity problem), all corrected below and flagged where it matters. Desmos was deliberately **not** used here — this chapter is mostly definitional/computational rather than curve-based, so an interactive graph wouldn't teach more than the tables already do, and Desmos rendering on this note-taking platform hasn't been confirmed to work yet anyway.
-
 ---
 
 ## SECTION 1 — DEVELOPMENT OF CHEMISTRY
@@ -343,7 +340,11 @@ Any number expressed as: **N × 10ⁿ** where **1.000… ≤ N ≤ 9.999…**
 \end{tikzpicture}
 ```
 
-The two ideas are independent: precision only asks whether repeated measurements agree with *each other*; accuracy asks whether they agree with the *true value*. A systematic error (a badly calibrated balance, say) can make an entire cluster precise yet consistently off-target — exactly Student A above.
+> [!note] Why the two are independent
+> - **Precision** asks only whether repeated measurements agree with **each other**
+> - **Accuracy** asks whether they agree with the **true value**
+> - A systematic error (e.g. a badly calibrated balance) can make an entire cluster precise yet consistently off-target — exactly Student A above
+> - Neither one guarantees the other: a tight cluster can sit off-target (precise, not accurate), and a scattered set can still average out near the true value (not precise, arguably accurate on average)
 
 ### 5.4 Dimensional Analysis (Factor Label Method / Unit Factor Method)
 
@@ -462,7 +463,9 @@ $$
 - Current symbol: **u** (unified mass) replaces 'amu'
 
 > [!note] Calculation
-> Mass of H atom in amu = (1.6736 × 10⁻²⁴ g) / (1.66056 × 10⁻²⁴ g) = **1.0078 u ≈ 1.008 u**
+> $$
+> \text{Mass of H atom in u} = \frac{1.6736 \times 10^{-24} \text{ g}}{1.66056 \times 10^{-24} \text{ g}} = 1.0078 \text{ u} \approx 1.008 \text{ u}
+> $$
 
 > [!example] Worked Example — What is the mass of one ¹²C atom, in grams? (NCERT Exercise 1.30)
 > **Given:** 1 mole of ¹²C = 12 g = $6.022 \times 10^{23}$ atoms.
@@ -522,7 +525,7 @@ $$
 | C₆H₁₂O₆ (glucose) | 6(12.011) + 12(1.008) + 6(16.00) | **180.162 u** |
 | NH₃ | 14.01 + 3(1.008) | **17.034 u** |
 
-> [!example] Practice Set — Mass of a single atom or molecule (handwritten problem set)
+> [!example] Practice Set — Mass of a single atom or molecule
 > Same pattern every time: **mass of one entity = molar mass ÷ 6.022 × 10²³**.
 >
 > | Entity | Molar mass | Mass of one entity |
@@ -557,7 +560,10 @@ Used for **ionic compounds** that do NOT exist as discrete molecules (exist as 3
 \end{tikzpicture}
 ```
 
-This is exactly *why* NaCl gets a **formula mass**, not a molecular mass — there is no single, isolated "NaCl molecule" sitting in the solid to weigh. The formula unit is just the smallest repeating ratio (1 Na⁺ to 1 Cl⁻) that the whole 3D grid is built from.
+> [!note] Why "formula mass" and not "molecular mass"
+> - There is no single, isolated "NaCl molecule" sitting in the solid to weigh — the lattice is one continuous 3D grid of ions
+> - The **formula unit** (1 Na⁺ : 1 Cl⁻) is just the smallest repeating ratio the whole grid is built from
+> - "Formula mass" is the sum of atomic masses over that ratio, not over a discrete molecule
 
 ---
 
@@ -613,7 +619,7 @@ flowchart LR
 >
 > Both are "correct" — they're just two different reference pressures. Always check which convention a problem is using before reaching for 22.4 or 22.7, and state which one you used in your working. The worked examples below use whichever value the *source problem* specified, labelled each time.
 
-> [!example] Practice Set — Particles from a given volume of gas (handwritten problem set, using the 22.4 L mol⁻¹ convention)
+> [!example] Practice Set — Particles from a given volume of gas (using the 22.4 L mol⁻¹ convention)
 > | Given | Moles | Result |
 > |:---|:---:|:---|
 > | 11.2 L of O₂ at NTP | 11.2/22.4 = 0.5 mol | $3.01 \times 10^{23}$ molecules, $6.02 \times 10^{23}$ **atoms** (O₂ is diatomic) |
@@ -647,9 +653,23 @@ flowchart LR
 
 **Deriving Avogadro's Number:**
 
-- 1 mole ¹²C = 12 g
-- Mass of 1 ¹²C atom (by mass spectrometry) = 1.992648 × 10⁻²³ g
-- $N_A = 12 \text{ g/mol} \div 1.992648 \times 10^{-23} \text{ g} = 6.0221367 \times 10^{23} \text{ mol}^{-1}$
+By definition, 1 mole of ¹²C has a mass of exactly 12 g:
+
+$$
+1 \text{ mol } {}^{12}\text{C} = 12 \text{ g}
+$$
+
+Mass spectrometry independently gives the mass of one ¹²C atom:
+
+$$
+\text{mass of 1 } {}^{12}\text{C atom} = 1.992648 \times 10^{-23} \text{ g}
+$$
+
+Dividing the molar mass by the mass of one atom gives the number of atoms per mole — Avogadro's constant:
+
+$$
+N_A = \frac{12 \text{ g mol}^{-1}}{1.992648 \times 10^{-23} \text{ g}} = 6.0221367 \times 10^{23} \text{ mol}^{-1}
+$$
 
 ---
 
@@ -661,11 +681,17 @@ $$
 
 **Example: Ethanol (C₂H₅OH), Molar mass = 46.068 g mol⁻¹**
 
-- %C = (24.02 / 46.068) × 100 = **52.14%**
-- %H = (6.048 / 46.068) × 100 = **13.13%**
-- %O = (16.00 / 46.068) × 100 = **34.73%**
+Mass percent of each element, using the formula above:
 
-Check: 52.14 + 13.13 + 34.73 = **100%** ✓
+$$
+\%\text{C} = \frac{24.02}{46.068} \times 100 = 52.14\%, \qquad \%\text{H} = \frac{6.048}{46.068} \times 100 = 13.13\%, \qquad \%\text{O} = \frac{16.00}{46.068} \times 100 = 34.73\%
+$$
+
+Check — the three percentages must sum to 100%:
+
+$$
+52.14 + 13.13 + 34.73 = 100\% \ \checkmark
+$$
 
 > [!example] Worked Example — Copper pyrites, CuFeS₂
 > **Given:** CuFeS₂; atomic masses Cu = 63.5, Fe = 55.8, S = 32.
@@ -774,7 +800,7 @@ $$
 > Empirical formula = C₄H₃O₂, EF mass = $4(12)+3(1)+2(16) = 83$ g mol⁻¹.
 > $$\text{Molar mass} = 2 \times 83 = 166 \text{ g mol}^{-1} \implies n = 166/83 = 2 \implies \text{Molecular formula} = \boxed{\text{C}_8\text{H}_6\text{O}_4}$$
 
-> [!example] Worked Example — Combining combustion analysis with gas density (NCERT Exercise 1.34, the most demanding version of this problem type)
+> [!example] Worked Example — Combining combustion analysis with gas density (NCERT Exercise 1.34)
 > **Given:** a welding fuel gas contains only C and H. Burning a small sample gives 3.38 g CO₂ and 0.690 g H₂O. Separately, 10.0 L of the gas (at STP, 22.4 L convention) weighs 11.6 g.
 > **Find:** (i) empirical formula, (ii) molar mass, (iii) molecular formula.
 > **Concept:** the % composition isn't handed to you this time — it has to be *derived* from how much CO₂ and H₂O the combustion produced, using the fact that all the C in the sample ends up in the CO₂ and all the H ends up in the H₂O.
@@ -878,7 +904,13 @@ flowchart TD
 
 ### 12.5 Mole-Mass-Volume Interconversions
 
-Stoichiometry is really just the mole-interconversion wheel from §9.2, run once *per substance* in a balanced equation, with the equation's coefficients converting moles of one substance to moles of another in between. See that wheel for the mass ↔ moles ↔ particles ↔ volume relationships — nothing new is needed here except the extra step of multiplying by a mole ratio from the balanced equation.
+> [!note] Stoichiometry = the §9.2 mole wheel, run once per substance
+> - The mass ↔ moles ↔ particles ↔ volume relationships are exactly the ones in §9.2 — nothing new to learn there
+> - The only addition: convert moles of **one substance** to moles of **another** using the balanced equation's coefficients as a mole ratio
+
+$$
+n(\text{substance B}) = n(\text{substance A}) \times \frac{\text{coefficient of B}}{\text{coefficient of A}}
+$$
 
 ### 12.6 Practice: Purity, Reverse Stoichiometry, and Reading a Question Carefully
 
