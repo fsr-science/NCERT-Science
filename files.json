@@ -1490,6 +1490,47 @@
         },
         {
           "type": "folder",
+          "name": "PHYSICAL-EDUCATION",
+          "children": [
+            {
+              "type": "file",
+              "name": "PED01-CHANGING_TRENDS_AND_CAREER.md",
+              "path": "AI-NOTES/PHYSICAL-EDUCATION/PED01-CHANGING_TRENDS_AND_CAREER.md",
+              "sha": "59ee47da9468c80610eb297643b97c75e0e937f1",
+              "mime": "text/markdown"
+            },
+            {
+              "type": "file",
+              "name": "PED02-OLYMPIC_VALUE_EDUCATION.md",
+              "path": "AI-NOTES/PHYSICAL-EDUCATION/PED02-OLYMPIC_VALUE_EDUCATION.md",
+              "sha": "785428af736e1fd3d3db2cceb20a6e590d0f4659",
+              "mime": "text/markdown"
+            },
+            {
+              "type": "file",
+              "name": "PED03-YOGA.md",
+              "path": "AI-NOTES/PHYSICAL-EDUCATION/PED03-YOGA.md",
+              "sha": "642ce850da22b1a1874285c79ff0f8da8847d021",
+              "mime": "text/markdown"
+            },
+            {
+              "type": "file",
+              "name": "PED04-PHYSICAL_EDUCATION_AND_SPORTS_FOR_CWSN.md",
+              "path": "AI-NOTES/PHYSICAL-EDUCATION/PED04-PHYSICAL_EDUCATION_AND_SPORTS_FOR_CWSN.md",
+              "sha": "16371ee1d2efa418b947d8575c700def64e2140e",
+              "mime": "text/markdown"
+            },
+            {
+              "type": "file",
+              "name": "PED05-PHYSICAL_FITNESS_HEALTH_AND_WELLNESS.md",
+              "path": "AI-NOTES/PHYSICAL-EDUCATION/PED05-PHYSICAL_FITNESS_HEALTH_AND_WELLNESS.md",
+              "sha": "19fea9ee0ff9a1253f373946b282aadaccbf4b0f",
+              "mime": "text/markdown"
+            }
+          ]
+        },
+        {
+          "type": "folder",
           "name": "PHYSICS",
           "children": [
             {
