@@ -571,7 +571,7 @@
                   "type": "file",
                   "name": "📓 CHEMISTRY02-STRUCTURE_OF_ATOM-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY02-STRUCTURE_OF_ATOM/CHEMISTRY02-STRUCTURE_OF_ATOM-NOTES.md",
-                  "sha": "1bd2b8b74bd63027b1a40c9b6937288294042ff5",
+                  "sha": "fd2611cb95d3c6a3c49ea213800afbfd602cc0d0",
                   "mime": "text/markdown"
                 },
                 {
@@ -598,7 +598,7 @@
                   "type": "file",
                   "name": "📓 CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY/CHEMISTRY03-CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY-NOTES.md",
-                  "sha": "73ff0d8955f3498f2ff5fe602fe32ca27d2aff7f",
+                  "sha": "2f9a8a2dccfead3ca13d82d5a92b6421cd54739c",
                   "mime": "text/markdown"
                 },
                 {
@@ -625,7 +625,7 @@
                   "type": "file",
                   "name": "📓 CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE-NOTES.md",
                   "path": "AI-NOTES/CHEMISTRY/CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE/CHEMISTRY04-CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE-NOTES.md",
-                  "sha": "a56c0a4549d47a3cea60da45cf49a5bb228706bd",
+                  "sha": "88657c7d09d5682e6b5f24faa3058535bd1b10d2",
                   "mime": "text/markdown"
                 },
                 {
@@ -1204,7 +1204,7 @@
                   "type": "file",
                   "name": "📓 MATHEMATICS05-LINEAR_INEQUALITIES-NOTES.md",
                   "path": "AI-NOTES/MATHEMATICS/MATHEMATICS05-LINEAR_INEQUALITIES/MATHEMATICS05-LINEAR_INEQUALITIES-NOTES.md",
-                  "sha": "8a1e587fca0363cddb75bf4e2c5067ca6dcc051a",
+                  "sha": "5ccc6fa89ac604ad62de5b838e347470f8112ea6",
                   "mime": "text/markdown"
                 },
                 {
@@ -1548,7 +1548,7 @@
                   "type": "file",
                   "name": "📓 PHYSICS01-UNITS_AND_MEASUREMENTS-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS01-UNITS_AND_MEASUREMENTS/PHYSICS01-UNITS_AND_MEASUREMENTS-NOTES.md",
-                  "sha": "c810d671b0d1629bd566d5d47017fc97621b34d8",
+                  "sha": "3df9e7f61c214bbc88bc2d3511392b6b83e5ff00",
                   "mime": "text/markdown"
                 },
                 {
@@ -1575,7 +1575,7 @@
                   "type": "file",
                   "name": "📓 PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE/PHYSICS02-MOTION_IN_A_STRAIGHT_LINE-NOTES.md",
-                  "sha": "7ff3dcc4a699495b103c1c081ba5c0b55540110b",
+                  "sha": "8bf511e04d0c4e76a22aa993b81efcd430742600",
                   "mime": "text/markdown"
                 },
                 {
@@ -1602,7 +1602,7 @@
                   "type": "file",
                   "name": "📓 PHYSICS03-MOTION_IN_A_PLANE-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS03-MOTION_IN_A_PLANE/PHYSICS03-MOTION_IN_A_PLANE-NOTES.md",
-                  "sha": "085e71b6464b6f436a911b2b1efe83540bb6e914",
+                  "sha": "fce30ce7378e1ef1ce434b6d8f1279d357b9e717",
                   "mime": "text/markdown"
                 },
                 {
@@ -1629,7 +1629,7 @@
                   "type": "file",
                   "name": "📓 PHYSICS04-LAWS_OF_MOTION-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS04-LAWS_OF_MOTION/PHYSICS04-LAWS_OF_MOTION-NOTES.md",
-                  "sha": "c4172f48b294a7fc4e4cfeb0e4a0e2f9d096fcbc",
+                  "sha": "5b061ea596cc8f2edff9ce3e908c8c0ded6cb869",
                   "mime": "text/markdown"
                 },
                 {
@@ -1683,7 +1683,7 @@
                   "type": "file",
                   "name": "📓 PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION/PHYSICS06-SYSTEM_OF_PARTICLES_AND_ROTATIONAL_MOTION-NOTES.md",
-                  "sha": "a3bee461864d76fc88f294fc4e22941d845241a0",
+                  "sha": "0f2480cf211132c0ca07e490537c5da010e34fe9",
                   "mime": "text/markdown"
                 },
                 {
@@ -1710,7 +1710,7 @@
                   "type": "file",
                   "name": "📓 PHYSICS07-GRAVITATION-NOTES.md",
                   "path": "AI-NOTES/PHYSICS/PHYSICS07-GRAVITATION/PHYSICS07-GRAVITATION-NOTES.md",
-                  "sha": "4af21769a55c64aea8861a05eae9ce5b188a5218",
+                  "sha": "41fce006c8be3cb4260af8855756d5dfa7f591cb",
                   "mime": "text/markdown"
                 },
                 {
@@ -3061,11 +3061,6 @@
               "mime": "application/pdf"
             }
           ]
-        },
-        {
-          "type": "folder",
-          "name": "PHYSICAL-EDUCATION",
-          "children": []
         },
         {
           "type": "folder",
