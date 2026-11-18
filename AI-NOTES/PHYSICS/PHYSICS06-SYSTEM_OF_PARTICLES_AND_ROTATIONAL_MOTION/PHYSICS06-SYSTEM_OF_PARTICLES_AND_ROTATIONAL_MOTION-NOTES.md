@@ -200,31 +200,26 @@ No real body is truly rigid; deformations exist but are often negligible (e.g., 
 The TikZ figure above is a snapshot; this graph is the mechanism. Five points sit at different radii on the *same* rotating disc (same $\omega$ for all of them, exactly as the Key Principle box states). Drag $\omega$ and watch every arrow's length scale — **linearly with $r$**, never with anything else.
 
 ```desmos
-\omega=1.4
-r_{1}=0.6
-r_{2}=1.2
-r_{3}=1.8
-r_{4}=2.4
-r_{5}=3.0
-t=0
-\sigma=\omega t
-P_{1}=r_{1}\left(\cos\sigma,\sin\sigma\right)
-P_{2}=r_{2}\left(\cos\sigma,\sin\sigma\right)
-P_{3}=r_{3}\left(\cos\sigma,\sin\sigma\right)
-P_{4}=r_{4}\left(\cos\sigma,\sin\sigma\right)
-P_{5}=r_{5}\left(\cos\sigma,\sin\sigma\right)
-V_{1}=\omega r_{1}\left(-\sin\sigma,\cos\sigma\right)
-V_{2}=\omega r_{2}\left(-\sin\sigma,\cos\sigma\right)
-V_{3}=\omega r_{3}\left(-\sin\sigma,\cos\sigma\right)
-V_{4}=\omega r_{4}\left(-\sin\sigma,\cos\sigma\right)
-V_{5}=\omega r_{5}\left(-\sin\sigma,\cos\sigma\right)
-v_{1}=\operatorname{vector}\left(P_{1},P_{1}+V_{1}\right)
-v_{2}=\operatorname{vector}\left(P_{2},P_{2}+V_{2}\right)
-v_{3}=\operatorname{vector}\left(P_{3},P_{3}+V_{3}\right)
-v_{4}=\operatorname{vector}\left(P_{4},P_{4}+V_{4}\right)
-v_{5}=\operatorname{vector}\left(P_{5},P_{5}+V_{5}\right)
-x^{2}+y^{2}=r_{5}^{2}
-speed_{table}=\left[\left|V_{1}\right|,\left|V_{2}\right|,\left|V_{3}\right|,\left|V_{4}\right|,\left|V_{5}\right|\right]
+%view x=(-4,4) y=(-4,4)
+@angularSpeed [slider=(0.2,3,0.1)]: w=1.4
+r_1=0.6
+r_2=1.2
+r_3=1.8
+r_4=2.4
+r_5=3
+q=0.4
+s=wq
+P_1=\left(r_1\cos s,r_1\sin s\right)
+P_2=\left(r_2\cos s,r_2\sin s\right)
+P_3=\left(r_3\cos s,r_3\sin s\right)
+P_4=\left(r_4\cos s,r_4\sin s\right)
+P_5=\left(r_5\cos s,r_5\sin s\right)
+@velocity1 [parametricDomain=(0,1), color=#c74440]: \left(r_1\cos s-twr_1\sin s,r_1\sin s+twr_1\cos s\right)
+@velocity2 [parametricDomain=(0,1), color=#c74440]: \left(r_2\cos s-twr_2\sin s,r_2\sin s+twr_2\cos s\right)
+@velocity3 [parametricDomain=(0,1), color=#c74440]: \left(r_3\cos s-twr_3\sin s,r_3\sin s+twr_3\cos s\right)
+@velocity4 [parametricDomain=(0,1), color=#c74440]: \left(r_4\cos s-twr_4\sin s,r_4\sin s+twr_4\cos s\right)
+@velocity5 [parametricDomain=(0,1), color=#c74440]: \left(r_5\cos s-twr_5\sin s,r_5\sin s+twr_5\cos s\right)
+x^2+y^2=r_5^2
 ```
 
 Every arrow points along its own tangent — none of them parallel — but the ratio $|V_i|/r_i$ is the **same number** ($=\omega$) for all five points, every single frame. That ratio being constant *is* the content of Eq. (6.19), $v_i=\omega r_i$.
@@ -584,66 +579,55 @@ $$\boxed{a_c = \omega^2 r_\perp = \frac{v^2}{r_\perp}} \quad \text{(centripetal 
 **How $a_t$ and $a_c$ actually scale — plotted, not just stated:** $a_t=\alpha r$ is a **straight line** against $\omega$ (it doesn't even depend on $\omega$!), while $a_c=\omega^2 r$ is a **parabola**. This is easy to state and easy to forget — plotting both against the same axis makes the quadratic growth of $a_c$ impossible to un-see.
 
 ```desmos
-a_{tan}\left(\omega\right)=\alpha r
-a_{cen}\left(\omega\right)=\omega^{2}r
-r=2
-\alpha=1.5
-\omega_{now}=1.8
-P_{tan}=\left(\omega_{now},a_{tan}\left(\omega_{now}\right)\right)
-P_{cen}=\left(\omega_{now},a_{cen}\left(\omega_{now}\right)\right)
+%view x=(0,4) y=(0,20)
+@radius [slider=(0.5,4,0.1)]: r=2
+@angularAcceleration [slider=(0,3,0.1)]: a=1.5
+@angularSpeed [slider=(0.2,4,0.1)]: w=1.8
+y=ar
+y=x^2r
+P=(w,ar)
+Q=(w,w^2r)
 ```
 
-Slide $\omega_{now}$ to the right: the point on the flat line $a_{tan}(\omega)$ barely moves, but the point on $a_{cen}(\omega)$ shoots upward — double $\omega$ and $a_c$ quadruples, not doubles.
+Slide the angular-speed slider $w$ to the right: the point on the flat line $a r$ barely moves, but the point on $x^2r$ shoots upward — double $w$ and $a_c$ quadruples, not doubles.
 
 > [!warning] Common Confusion
 > $a_t = \alpha r_\perp$ is only the **tangential** part. It vanishes when $\omega$ is constant ($\alpha = 0$) — but the particle is *still* accelerating centripetally, $a_c=\omega^2 r_\perp \neq 0$, as long as it keeps moving in a circle at all. "No angular acceleration" does **not** mean "no acceleration."
 
 ### 5.4 Interactive 3D Model — Visualizing $\mathbf v=\boldsymbol\omega\times\mathbf r$ and $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$
 
-Section 5.1 asserted that $\boldsymbol\omega$ is a genuine **vector** lying along the rotation axis — that's the single hardest thing to picture from a flat page. The model below makes it concrete: $\boldsymbol\omega$ and $\boldsymbol\alpha$ literally point along the $z$-axis, $\mathbf r$ sweeps around in the $xy$-plane, and $\mathbf v$, $\mathbf a_{rad}$, $\mathbf a_{tan}$ are computed as genuine cross products — not just plugged into a memorised formula. Drag $t$ and watch every vector update live.
+Section 5.1 asserted that $\boldsymbol\omega$ is a genuine **vector** lying along the rotation axis — that's the single hardest thing to picture from a flat page. The model below makes it concrete: $\boldsymbol\omega$ and $\boldsymbol\alpha$ point along the $z$-axis, $\mathbf r$ sweeps around in the $xy$-plane, and the velocity and acceleration vectors are drawn from their component formulas. Drag the time slider $q$ and watch every vector update live.
 
 | Desmos variable | Meaning | Matches this note's notation |
 |:---|:---|:---|
-| $\sigma$ | angular position | $\theta$ |
-| $\omega_0,\ \omega$ | initial / instantaneous angular velocity | $\omega_0,\ \omega$ |
-| $\alpha$ | angular acceleration | $\alpha$ |
-| $r_{head}$ | tip of the position vector | $\mathbf r$ |
-| $\omega_{head},\ \alpha_{head}$ | $(0,0,\omega)$, $(0,0,\alpha)$ — $\boldsymbol\omega,\boldsymbol\alpha$ as real 3-vectors | $\boldsymbol\omega,\ \boldsymbol\alpha$ |
-| $v_{head}=\omega_{head}\times r_{head}$ | velocity, via genuine cross product | $\mathbf v=\boldsymbol\omega\times\mathbf r$ (Eq. 6.20) |
-| $a_{tan}=\alpha_{head}\times r_{head}$ | tangential acceleration | $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ (§5.3) |
-| $a_{rad}$ | centripetal (radial) acceleration | $a_c=-\omega^2\mathbf r$ (§5.3) |
+| $q$ | elapsed time (slider) | $t$ |
+| $w_0,\ w$ | initial / instantaneous angular velocity | $\omega_0,\ \omega$ |
+| $a$ | angular acceleration | $\alpha$ |
+| $R,\ s$ | radius and angular position | $r,\ \theta$ |
+| $P$ | particle position on the circle | tip of $\mathbf r$ |
+| velocity vector | $(-wR\sin s,\ wR\cos s,\ 0)$ | $\mathbf v=\boldsymbol\omega\times\mathbf r$ (Eq. 6.20) |
+| radial acceleration | $(-Rw^2\cos s,\ -Rw^2\sin s,\ 0)$ | $a_c=-\omega^2\mathbf r$ (§5.3) |
+| tangential acceleration | $(-aR\sin s,\ aR\cos s,\ 0)$ | $\mathbf a_t=\boldsymbol\alpha\times\mathbf r$ (§5.3) |
 
 ```desmos3d
-O_{rg}\ =\ \left(0,0,0\right)
-\sigma=\omega_{0}t+\frac{1}{2}\alpha t^{2}\ +\ \sigma_{0}
-\omega=\omega_{0}+\alpha t
-r_{head}=R\left(\cos\sigma,\sin\sigma,0\right)
-\omega_{head}=\left(0,0,\omega\right)
-v_{head}\ =\ \omega_{head}\times r_{head}
-v_{body}=v_{head}+\ r_{head}
-\alpha_{head}=\left(0,0,\alpha\right)
-a_{rad}=-R\omega^{2}\left(\frac{r_{head}}{R}\right)
-a_{radbody}=a_{rad}+r_{head}
-a_{tan}\ =\alpha_{head}\times r_{head}
-a_{tanbody}=a_{tan}+r_{head}
-a_{net}=a_{rad}+a_{tan}
-a_{netbody}=a_{net}+r_{head}
-x^{2}+y^{2}=R^{2}
-r_{vec}=\operatorname{vector}\left(O_{rg},r_{head}\right)
-\omega_{vec}=\operatorname{vector}\left(O_{rg},\omega_{head}\right)
-\alpha_{vec}=\operatorname{vector}\left(O_{rg},\alpha_{head}\right)
-v_{vec}=\operatorname{vector}\left(r_{head},v_{body}\right)
-a_{radvec}=\operatorname{vector}\left(r_{head},a_{radbody}\right)
-a_{tanvec}=\operatorname{vector}\left(r_{head},a_{tanbody}\right)
-a_{netvec}=\operatorname{vector}\left(r_{head},a_{netbody}\right)
-\sigma_{0}=0
-\omega_{0}=-1.53
-\alpha=1.1
-R=3.3
-t=2.541
+%view x=(-5,5) y=(-5,5) z=(-5,8)
+@time [slider=(0,6,0.1)]: q=2.541
+@initialAngularSpeed [slider=(-3,3,0.1)]: w_0=-1.53
+@angularAcceleration [slider=(-2,2,0.1)]: a=1.1
+@radius [slider=(1,5,0.1)]: R=3.3
+s=w_0q+0.5aq^2
+w=w_0+aq
+%point3 P at=(R\cos s,R\sin s,0) [color=red, pointSize=8, showLabel]
+%vector position [color=blue, showLabel] from=(0,0,0) to=(R\cos s,R\sin s,0)
+%vector angularVelocity [color=purple, showLabel] dir=(0,0,w)
+%vector tangentialVelocity [color=green, showLabel] at=(R\cos s,R\sin s,0) dir=(-wR\sin s,wR\cos s,0)
+%vector radialAcceleration [color=orange] at=(R\cos s,R\sin s,0) dir=(-Rw^2\cos s,-Rw^2\sin s,0)
+%vector tangentialAcceleration [color=red] at=(R\cos s,R\sin s,0) dir=(-aR\sin s,aR\cos s,0)
+%vector netAcceleration [color=black] at=(R\cos s,R\sin s,0) dir=(-Rw^2\cos s-aR\sin s,-Rw^2\sin s+aR\cos s,0)
+x^2+y^2=R^2
 ```
 
-Try setting $\alpha=0$: the $\vec\alpha$ arrow and $\mathbf a_{tan}$ both vanish, but $\mathbf a_{rad}$ stays put — a direct, hands-on confirmation of the §5.3 warning above.
+Try setting $a=0$: the tangential acceleration arrow vanishes, but the radial acceleration remains — a direct, hands-on confirmation of the §5.3 warning above.
 
 ---
 
@@ -684,18 +668,19 @@ If $\mathbf F$ is reversed, $\boldsymbol\tau$ reverses. If **both** $\mathbf r$ 
 | Desmos variable | Meaning |
 |:---|:---|
 | $r, F$ | fixed magnitudes of $\mathbf r$ and $\mathbf F$ |
-| $\phi$ | angle between them — **drag this one** (kept as $\phi$, not $\theta$ — Desmos reserves $\theta$ for polar mode) |
-| $tau(\phi)$ | $rF\sin\phi$, plotted as a function of $\phi$ |
+| $q$ | angle between them — **drag this one** |
+| $y(x)$ | $rF\sin x$, plotted as a function of the angle |
 
 ```desmos
+%view x=(0,3.2) y=(0,11)
 r=2
 F=5
-\phi=1.2
-tau\left(x\right)=rF\sin\left(x\right)
-P=\left(\phi,tau\left(\phi\right)\right)
+@angle [slider=(0,3.14,0.05)]: q=1.2
+y=rF\sin x
+P=\left(q,rF\sin q\right)
 ```
 
-Drag $\phi$ from $0$ to $\pi$: $tau$ starts at zero, peaks exactly at $\phi=\pi/2$ (force perpendicular to $\mathbf r$ — the most effective angle possible), then falls back to zero at $\phi=\pi$ (force now anti-parallel to $\mathbf r$, along the same line — no turning effect at all, matching the "vanishes if the line of action passes through the origin" rule above).
+Drag the angle slider $q$ from $0$ to $\pi$: the torque starts at zero, peaks exactly at $q=\pi/2$ (force perpendicular to $\mathbf r$ — the most effective angle possible), then falls back to zero at $q=\pi$ (force now anti-parallel to $\mathbf r$, along the same line — no turning effect at all, matching the "vanishes if the line of action passes through the origin" rule above).
 
 ### 6.2 Angular Momentum of a Particle
 
@@ -716,25 +701,21 @@ $$\boxed{\frac{d\mathbf{L}}{dt} = \boldsymbol\tau} \qquad \text{...(6.27)}$$
 **Interactive 3D — $\mathbf L=\mathbf r\times\mathbf p$ for a particle going in a circle**: this is the object Eq. (6.25a) actually is — not a formula, a vector. Here a particle of mass $m$ moves on a circle of radius $R$ in the $xy$-plane with angular speed $\omega$; $\mathbf r$ and $\mathbf p$ both sweep around together, yet their cross product $\mathbf L$ **never changes** — same direction ($+z$), same magnitude, every instant. That's Section 11's whole "$L=I\omega=$ constant" idea, seen a chapter early, from first principles.
 
 ```desmos3d
-O_{rg}=\left(0,0,0\right)
-R=2.5
-\omega=1.2
-m=1
-t=0.7
-\sigma=\omega t
-r_{head}=R\left(\cos\sigma,\sin\sigma,0\right)
-v_{head}=\omega\left(0,0,1\right)\times r_{head}
-p_{head}=m\cdot v_{head}
-L_{head}=r_{head}\times p_{head}
-r_{vec}=\operatorname{vector}\left(O_{rg},r_{head}\right)
-p_{vec}=\operatorname{vector}\left(r_{head},r_{head}+p_{head}\right)
-L_{vec}=\operatorname{vector}\left(O_{rg},O_{rg}+L_{head}\right)
-x^{2}+y^{2}=R^{2}
-L_{magnitude}=\left|L_{head}\right|
-L_{expected}=m\omega R^{2}
+%view x=(-4,4) y=(-4,4) z=(-2,8)
+@radius [slider=(1,4,0.1)]: R=2.5
+@angularSpeed [slider=(0.2,3,0.1)]: w=1.2
+@mass [slider=(0.5,4,0.1)]: m=1
+@time [slider=(0,6.28,0.1)]: q=0.7
+s=wq
+%point3 P at=(R\cos s,R\sin s,0) [color=red, pointSize=8, showLabel]
+%vector position [color=blue, showLabel] from=(0,0,0) to=(R\cos s,R\sin s,0)
+%vector momentum [color=green, showLabel] at=(R\cos s,R\sin s,0) dir=(-mwR\sin s,mwR\cos s,0)
+%vector angularMomentum [color=purple, showLabel] dir=(0,0,mwR^2)
+x^2+y^2=R^2
+L=mwR^2
 ```
 
-Drag $t$ through a full revolution: $\vec r$ and $\vec p$ both rotate in the $xy$-plane, but $\vec L$ stands **perfectly still**, pointing along $+z$, with $L_{magnitude}$ locked to $m\omega R^2$ throughout — exactly the invariance Example 6.6 proves algebraically for a straight-line particle, now shown for a circular one.
+Drag $q$ through a full revolution: $\vec r$ and $\vec p$ both rotate in the $xy$-plane, but $\vec L$ stands **perfectly still**, pointing along $+z$, with its magnitude fixed at $mwR^2$ throughout — exactly the invariance Example 6.6 proves algebraically for a straight-line particle, now shown for a circular one.
 
 ### 6.3 Torque and Angular Momentum for a System of Particles
 
@@ -898,15 +879,17 @@ If $d_2 > d_1$: M.A. $> 1$ → a **small effort lifts a large load**. Examples o
 | Net | $d_1F_1-d_2F_2$ — the rotational-equilibrium condition, live |
 
 ```desmos
+%view x=(0,6) y=(-20,25)
 F_{1}=10
 d_{1}=2
 F_{2}=5
-d_{2}=3
-Net=d_{1}F_{1}-d_{2}F_{2}
-MA=\frac{F_{1}}{F_{2}}
+@effortArm [slider=(0,6,0.1)]: d_{2}=3
+y=d_{1}F_{1}-xF_{2}
+P=\left(d_{2},d_{1}F_{1}-d_{2}F_{2}\right)
+m=\frac{F_{1}}{F_{2}}
 ```
 
-At $d_1=2,F_1=10,F_2=5$: balance requires $d_2=4$. Slide $d_2$ toward $4$ and watch $Net\to0$ — overshoot it and $Net$ flips sign, telling you which way the lever would actually tip.
+At $d_1=2,F_1=10,F_2=5$: balance requires $d_2=4$. Slide $d_2$ toward $4$ and watch point $P$ reach the zero-torque line — overshoot it and the net torque changes sign, telling you which way the lever would actually tip. The displayed $m$ is the mechanical advantage $F_1/F_2$.
 
 ### 7.5 Centre of Gravity (CG)
 
@@ -1037,12 +1020,18 @@ Notice how heavily $I$ weights **distance**, not just mass — a small mass far 
 | $I_{sphere}$ | mass spread through the whole volume (solid sphere) |
 
 ```desmos
-M=2
-R=1.5
-I_{point}=MR^{2}
-I_{disc}=0.5MR^{2}
-I_{sphere}=0.4MR^{2}
-bars=\left[I_{point},I_{disc},I_{sphere}\right]
+%view x=(0,4) y=(0,12)
+@mass [slider=(0.5,4,0.1)]: M=2
+@radius [slider=(0.5,3,0.1)]: R=1.5
+I_1=MR^2
+I_2=0.5MR^2
+I_3=0.4MR^2
+@pointMassBar [parametricDomain=(0,1), color=#c74440]: \left(1,tI_1\right)
+@discBar [parametricDomain=(0,1), color=#2d70b3]: \left(2,tI_2\right)
+@sphereBar [parametricDomain=(0,1), color=#388c46]: \left(3,tI_3\right)
+@pointMass [color=#c74440, label="Point mass / ring", showLabel]: \left(1,I_1\right)
+@disc [color=#2d70b3, label="Disc", showLabel]: \left(2,I_2\right)
+@sphere [color=#388c46, label="Solid sphere", showLabel]: \left(3,I_3\right)
 ```
 
 Drag $R$ upward: all three bars grow, but $I_{point}$ always grows **fastest**, because every last bit of its mass sits at the maximum possible distance $R$; $I_{sphere}$ always trails, because most of a sphere's mass sits well inside its outer radius, closer to the axis than $R$.
@@ -1107,71 +1096,64 @@ Every mix-up in the table above ("wait, is this the disc-about-its-axis one or t
 | Desmos variable | Meaning |
 |:---|:---|
 | $L$ | rod length |
-| $piv$ | $0$ = pivot at midpoint, $1$ = pivot at end — **drag/toggle this** |
-| $P_{ivot}$ | the actual pivot point, switches with $piv$ |
-| $\sigma$ | sweep angle, driven by $t$ |
+| $q$ | $0$ = pivot at midpoint, $1$ = pivot at end — **drag/toggle this** |
+| $P$ | the actual pivot point, switches with $q$ |
 
 ```desmos3d
+%view x=(-3,3) y=(-3,3) z=(-3,3)
 L=3
 M=1
-piv=0
-t=0
-\omega=1
-\sigma=\omega t
-P_{ivot}=\left(-\frac{L}{2}\cdot piv,0,0\right)
-end_{1}=\left(-\frac{L}{2},0,0\right)
-end_{2}=\left(\frac{L}{2},0,0\right)
-rod_{vec}=\operatorname{vector}\left(end_{1},end_{2}\right)
-axis_{vec}=\operatorname{vector}\left(\left(0,0,-1.5\right),\left(0,0,1.5\right)\right)
-I_{now}=\frac{1}{12}ML^{2}+piv\cdot M\left(\frac{L}{2}\right)^{2}
+@axisToggle [slider=(0,1,1)]: q=0
+%point3 P at=(-Lq/2,0,0) [color=red, showLabel]
+%vector rod [color=blue, lineWidth=4] from=(-L/2,0,0) to=(L/2,0,0)
+%vector axis [color=purple, lineWidth=3] from=(-Lq/2,0,-1.5) to=(-Lq/2,0,1.5)
+I=\frac{1}{12}ML^2+qM\left(\frac{L}{2}\right)^2
 ```
 
-Slide $piv$ from $0\to1$: the vertical **axis vector jumps from the rod's centre to its end**, and $I_{now}$ jumps from $L^2/12$ straight to $L^2/3$ — no smooth transition, because these are two genuinely different axes, not two points on a continuum.
+Slide the axis toggle $q$ from $0\to1$: the vertical **axis jumps from the rod's centre to its end**, and $I$ jumps from $L^2/12$ straight to $L^2/3$ — no smooth transition, because these are two genuinely different axes, not two points on a continuum.
 
 **Ring** — toggle between the **central axis** (perpendicular to the ring's plane, $MR^2$) and a **diameter** (in-plane, $MR^2/2$):
 
 | Desmos variable | Meaning |
 |:---|:---|
 | $R$ | ring radius |
-| $axmode$ | $0$ = central axis, $1$ = diameter |
-| $r_{ing}$ | a representative point on the ring, sweeping around |
+| $q$ | $0$ = central axis, $1$ = diameter |
+| $P$ | a representative point on the ring |
 
 ```desmos3d
+%view x=(-3,3) y=(-3,3) z=(-3,3)
 R=2
 M=1
-axmode=0
-t=0
-\omega=1
-\sigma=\omega t
-r_{ing}=R\left(\cos\sigma,\sin\sigma,0\right)
-axis_{dir}=\left(axmode,0,1-axmode\right)
-axis_{vec}=\operatorname{vector}\left(-1.5axis_{dir},1.5axis_{dir}\right)
-I_{now}=MR^{2}-axmode\cdot0.5MR^{2}
+@axisToggle [slider=(0,1,1)]: q=0
+@angle [slider=(0,6.28,0.1)]: s=0
+%point3 P at=(R\cos s,R\sin s,0) [color=orange, showLabel]
+%vector radius [color=green] from=(0,0,0) to=(R,0,0)
+%vector axis [color=purple, lineWidth=3] from=(-1.5q,0,-1.5(1-q)) to=(1.5q,0,1.5(1-q))
+I=MR^2-0.5qMR^2
 ```
 
-At $axmode=0$ the axis vector stands straight up through the centre (perpendicular to the ring) and $I_{now}=MR^2$; flip to $axmode=1$ and the axis vector **lies flat in the ring's own plane** and $I_{now}$ halves — same ring, same radius, half the moment of inertia, purely because the axis rotated $90°$.
+At $q=0$ the axis stands straight up through the centre (perpendicular to the ring) and $I=MR^2$; flip to $q=1$ and the axis **lies flat in the ring's own plane** and $I$ halves — same ring, same radius, half the moment of inertia, purely because the axis rotated $90°$.
 
 **Disc / Solid Cylinder** — toggle between the **central axis** ($MR^2/2$, this is also "axis of cylinder" from the table) and a **diameter** ($MR^2/4$):
 
 | Desmos variable | Meaning |
 |:---|:---|
 | $R$ | disc/cylinder radius |
-| $axmode$ | $0$ = central axis, $1$ = diameter |
+| $q$ | $0$ = central axis, $1$ = diameter |
 
 ```desmos3d
+%view x=(-3,3) y=(-3,3) z=(-3,3)
 R=2
 M=1
-axmode=0
-t=0
-\omega=1
-\sigma=\omega t
-r_{edge}=R\left(\cos\sigma,\sin\sigma,0\right)
-axis_{dir}=\left(axmode,0,1-axmode\right)
-axis_{vec}=\operatorname{vector}\left(-1.5axis_{dir},1.5axis_{dir}\right)
-I_{now}=0.5MR^{2}-axmode\cdot0.25MR^{2}
+@axisToggle [slider=(0,1,1)]: q=0
+@angle [slider=(0,6.28,0.1)]: s=0
+%point3 P at=(R\cos s,R\sin s,0) [color=orange, showLabel]
+%vector radius [color=green] from=(0,0,0) to=(R,0,0)
+%vector axis [color=purple, lineWidth=3] from=(-1.5q,0,-1.5(1-q)) to=(1.5q,0,1.5(1-q))
+I=0.5MR^2-0.25qMR^2
 ```
 
-This is exactly the Perpendicular Axis Theorem application from §8.7 ($I_z=2I_x$ for a disc) made draggable: at $axmode=1$, $I_{now}$ is precisely **half** of its value at $axmode=0$.
+This is exactly the Perpendicular Axis Theorem application from §8.7 ($I_z=2I_x$ for a disc) made draggable: at $q=1$, $I$ is precisely **half** of its value at $q=0$.
 
 **Solid Sphere** — only one axis worth showing (a diameter, $\tfrac25MR^2$) since every diameter of a sphere gives the same $I$ by symmetry — the model demonstrates *that* symmetry directly, by letting you spin the axis itself:
 
@@ -1181,15 +1163,15 @@ This is exactly the Perpendicular Axis Theorem application from §8.7 ($I_z=2I_x
 | $\phi$ | tilts which diameter is the axis — **drag this** |
 
 ```desmos3d
+%view x=(-3,3) y=(-3,3) z=(-3,3)
 R=2
 M=1
-\phi=0.6
-axis_{dir}=\left(\sin\phi,0,\cos\phi\right)
-axis_{vec}=\operatorname{vector}\left(-1.5axis_{dir},1.5axis_{dir}\right)
-I_{now}=0.4MR^{2}
+@axisAngle [slider=(0,3.14,0.05)]: q=0.6
+%vector axis [color=purple, lineWidth=3] from=(-1.5\sin q,0,-1.5\cos q) to=(1.5\sin q,0,1.5\cos q)
+I=0.4MR^2
 ```
 
-Drag $\phi$ through a full range — the axis vector visibly tilts to point in a completely different direction, but $I_{now}$ **never moves**. That constancy is the whole reason Table 6.1 only needs to list "diameter" once for a sphere, unlike the ring and disc, which each need two separate rows.
+Drag the axis-angle slider $q$ through a full range — the axis vector visibly tilts to point in a completely different direction, but $I$ **never moves**. That constancy is the whole reason Table 6.1 only needs to list "diameter" once for a sphere, unlike the ring and disc, which each need two separate rows.
 
 > [!warning] Exam Trap
 > Hollow cylinder = Ring ($MR^2$). Solid cylinder = Disc ($MR^2/2$). Solid sphere = $2MR^2/5$. Always specify the axis — the same body has a *different* $I$ for each row above.
@@ -1388,12 +1370,11 @@ y_{v}=\ -\cot\left(A\right)\left(x-r.x\right)\ +r.y\ \ \left\{\left(x-r.x\right)
 y_{rad}=\tan\left(A\right)\left(x-r.x\right)+r.y\ \left\{\left(x-r.x\right)^{2}\le\left(a_{rad}.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(a_{rad}.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
 y_{tan}=-\cot\left(A\right)\left(x-r.x\right)+r.y\ \left\{\left(x-r.x\right)^{2\ }\le\left(a_{tan}.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(a_{tan}.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
 y_{net}=\tan\left(\arctan\left(-\frac{Ra_{ang}}{R\left(v_{ang}\right)^{2}}\right)+A\right)\left(x-r.x\right)+r.y\left\{\left(x-r.x\right)^{2\ }\le\left(a_{net}.x\right)^{2}\right\}\left\{\operatorname{sgn}\left(a_{net}.x\right)=\operatorname{sgn}\left(x-r.x\right)\right\}
-R=3.54
-u_{ang}=1.72
-\phi=0.8
-a_{ang}=-0.48
-t\ =0
-R_{ext}=0
+@radius [slider=(1,5,0.1)]: R=3.54
+@initialAngularSpeed [slider=(0,4,0.1)]: u_{ang}=1.72
+@initialAngle [slider=(0,6.28,0.05)]: \phi=0.8
+@angularAcceleration [slider=(-2,2,0.1)]: a_{ang}=-0.48
+@elapsedTime [slider=(0,6,0.1)]: t=0
 ```
 
 Try setting $a_{ang}=0$ and dragging $t$: the point still moves (constant $\omega$), $a_{tan}$ disappears, but $a_{rad}$ never does — this is the same §5.3 warning, now something you can drag instead of just read.
@@ -1413,14 +1394,13 @@ This is the exact rotational analogue of $F=ma$: torque produces angular acceler
 **Interactive — same torque, different $I$, very different response**: exactly the same shape of relationship as §11.2's $\omega=L/I$ hyperbola, but now for *dynamics* rather than *conservation*. Hold $\tau$ fixed and drag $I$: a small $I$ (a light disc) snaps into fast rotation; a large $I$ (a heavy flywheel) barely budges under the same push. This is the entire reason a flywheel resists jerky speed changes (§8.8) — not a separate fact, but this exact curve.
 
 ```desmos
-\tau=5
-I_{now}=2
-\alpha_{now}=\frac{\tau}{I_{now}}
-f\left(x\right)=\frac{\tau}{x}
-P=\left(I_{now},\alpha_{now}\right)
+T=5
+@momentOfInertia [slider=(0.5,8,0.1)]: I=2
+y=\frac{T}{x}
+P=\left(I,\frac{T}{I}\right)
 ```
 
-Drag $I_{now}$ down toward $0.5$ and $\alpha_{now}$ spikes; drag it up toward $8$ and $\alpha_{now}$ barely registers — the same fixed torque, wildly different outcomes, purely because of how the mass is distributed.
+Drag $I$ down toward $0.5$ and the angular acceleration $T/I$ spikes; drag it up toward $8$ and it barely registers — the same fixed torque, wildly different outcomes, purely because of how the mass is distributed.
 
 ### 10.2 Work Done by a Torque and Rotational Power
 
@@ -1533,14 +1513,14 @@ So if $I$ **decreases**, $\omega$ must **increase** to keep $I\omega$ fixed, and
 
 ```desmos
 L=5
-I_{now}=2.2
-\omega_{now}=\frac{L}{I_{now}}
-K_{now}=\frac{L^{2}}{2I_{now}}
-f\left(I\right)=\frac{L}{I}
-P=\left(I_{now},\omega_{now}\right)
+@momentOfInertia [slider=(0.5,5,0.1)]: I=2.2
+w=\frac{L}{I}
+K=\frac{L^{2}}{2I}
+y=\frac{L}{x}
+P=\left(I,w\right)
 ```
 
-Watch $K_{now}=L^2/(2I_{now})$ climb as you drag $I_{now}$ down — this is the "kinetic energy increases" claim below, made concrete: halving $I_{now}$ doesn't just double $K_{now}$, it **quadruples** it, because $K\propto 1/I$ while $\omega\propto 1/I$ too.
+Watch $K=L^2/(2I)$ climb as you drag $I$ down — this is the "kinetic energy increases" claim below, made concrete: halving $I$ doesn't just double $K$, it **quadruples** it, because $K\propto 1/I$ while $\omega\propto 1/I$ too.
 
 A skater (or a person on a frictionless swivel chair) pulls their arms in: $I$ decreases sharply, so $\omega$ increases to conserve $L=I\omega$. Pulling arms back out reverses the effect. The kinetic energy $K=\tfrac12I\omega^2=\tfrac12L\omega$ actually **increases** when arms are pulled in (since $\omega$ increases while $L$ stays fixed) — that extra energy comes from the **muscular work** done pulling the arms inward against the effective outward pull, not from nowhere.
 

@@ -671,15 +671,15 @@ flowchart TD
 The graph below plots $x = v_0 t + \tfrac{1}{2}at^2$ and $v = v_0 + at$ against time, so the link between the two curves is visible as the sliders move. The horizontal axis is time $t$ (s).
 
 ```desmos
-v_{0}=0
-a=2
-y=v_{0}x+\frac{1}{2}ax^{2}\left\{x\ge0\right\}
-y=v_{0}+ax\left\{x\ge0\right\}
-T_{turn}=\left(-\frac{v_{0}}{a},0\right)\left\{-\frac{v_{0}}{a}\ge0\right\}
+%view x=(0,10) y=(-10,30)
+@initialVelocity [slider=(-20,20,1)]: u=0
+@acceleration [slider=(-5,5,0.5)]: a=2
+y=ux+\frac{1}{2}ax^{2}\left\{x\ge0\right\}
+y=u+ax\left\{x\ge0\right\}
 ```
 
-*Legend:* `v_0` = initial velocity (slider), `a` = acceleration (slider), the parabola = position $x(t)$ in m, the straight line = velocity $v(t)$ in m s⁻¹, `T_turn` = the time at which $v = 0$ (shown only when it lies at $t \ge 0$).
-*Try this:* drag `a` and watch the parabola bend upward for $a > 0$ and downward for $a < 0$, while the straight line's slope equals $a$. Set $v_0 < 0$ with $a > 0$: the parabola dips, reaches its lowest point at the same time the straight line crosses zero, and `T_turn` sits at that time.
+*Legend:* `u` = initial velocity (slider), `a` = acceleration (slider), the parabola = position $x(t)$ in m, and the straight line = velocity $v(t)$ in m s⁻¹.
+*Try this:* drag `a` and watch the parabola bend upward for $a > 0$ and downward for $a < 0$, while the straight line's slope equals $a$. Set $u < 0$ with $a > 0$: the parabola dips, reaches its lowest point at the same time the straight line crosses zero.
 
 ### 6.9 Stopping Distance
 

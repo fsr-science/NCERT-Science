@@ -864,16 +864,12 @@ For a block on a horizontal surface, the friction actually exerted, $f$, depends
 $$f(F) = \begin{cases} F & 0 \le F \le \mu_s N \\ \mu_k N & F > \mu_s N \end{cases}$$
 
 ```desmos
-{
-  "expressions": [
-    { "id": "1", "latex": "m_{s}=0.6" },
-    { "id": "2", "latex": "m_{k}=0.4" },
-    { "id": "3", "latex": "N_{0}=20" },
-    { "id": "4", "latex": "y=\\left\\{0\\le x\\le m_{s}N_{0}:x,x>m_{s}N_{0}:m_{k}N_{0}\\right\\}", "color": "#2d70b3" },
-    { "id": "5", "latex": "\\left(m_{s}N_{0},m_{s}N_{0}\\right)", "color": "#c74440" }
-  ],
-  "graphSettings": { "xmin": -2, "xmax": 30, "ymin": -2, "ymax": 16 }
-}
+%view x=(-2,30) y=(-2,16)
+@staticCoefficient [slider=(0.1,1,0.01)]: m_{s}=0.6
+@kineticCoefficient [slider=(0.1,0.9,0.01)]: m_{k}=0.4
+@normalForce [slider=(0,40,1)]: N_{0}=20
+@friction [color=#2d70b3]: y=\left\{0\le x\le m_{s}N_{0}:x,x>m_{s}N_{0}:m_{k}N_{0}\right\}
+@transition [color=#c74440, showLabel, label="Maximum static friction"]: \left(m_{s}N_{0},m_{s}N_{0}\right)
 ```
 
 The horizontal axis is the applied force $F$ and the vertical axis is the friction $f$. Here $m_s$ is $\mu_s$, $m_k$ is $\mu_k$ and $N_0$ is the normal force. Change the constants (keeping $m_k$ below $m_s$) and notice that the line $f = F$ (slope 1, the self-adjusting regime) runs up to the red point $(\mu_s N, \mu_s N)$, then the graph **drops** to the constant plateau $f = \mu_k N$: friction does not taper off smoothly but steps down the instant sliding begins.

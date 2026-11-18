@@ -332,17 +332,13 @@ Very large and very small numbers are written as a coefficient times a power of 
 > The cut-off $N = 5$ is the NCERT convention. Strict rounding on a logarithmic scale would switch at $\sqrt{10} \approx 3.16$; exam problems use 5.
 
 ```desmos
-{
-  "expressions": [
-    { "id": "1", "latex": "y=0", "color": "#888888" },
-    { "id": "2", "latex": "a=3" },
-    { "id": "3", "latex": "(\\log_{10}(a),0.35)", "label": "N = a (drag me)", "color": "#f39c12" },
-    { "id": "4", "latex": "x=\\log_{10}(5)", "color": "#e74c3c" },
-    { "id": "5", "latex": "(\\log_{10}(1.28)+7,-0.35)", "label": "Earth's diameter, order 10^7", "color": "#2ecc71" },
-    { "id": "6", "latex": "(\\log_{10}(1.06)-10,-0.35)", "label": "H atom diameter, order 10^{-10}", "color": "#4a9eff" }
-  ],
-  "graphSettings": { "xmin": -12, "xmax": 9, "ymin": -1.5, "ymax": 1.5 }
-}
+%view x=(-12,9) y=(-1.5,1.5)
+@baseline [color=#888888]: y=0
+@coefficient [slider=(1,9,1)]: a=3
+@order [color=#f39c12, label="N = a (drag me)", showLabel]: \left(\log_{10}(a),0.35\right)
+@threshold [color=#e74c3c]: x=\log_{10}(5)
+@earth [color=#2ecc71, label="Earth diameter, order 10^7", showLabel]: \left(\log_{10}(1.28)+7,-0.35\right)
+@hydrogen [color=#4a9eff, label="H atom diameter, order 10^{-10}", showLabel]: \left(\log_{10}(1.06)-10,-0.35\right)
 ```
 
 Drag the slider $a$ (the coefficient $N$): the orange point moves along the log scale and crosses the red threshold at $a = 5$. Left of the line the order of magnitude is $n$; right of it, $n + 1$. The green and blue points place Earth's diameter and the hydrogen atom's diameter on the same scale, 17 units apart.
@@ -461,14 +457,10 @@ The same absolute error matters less when the measured value is larger, and rela
 | 9.89 g | ±0.01 g | ≈ 0.0010 | **≈ 0.1%** |
 
 ```desmos
-{
-  "expressions": [
-    { "id": "1", "latex": "y=\\frac{0.01}{x}\\cdot100", "color": "#4a9eff" },
-    { "id": "2", "latex": "(1.02,\\frac{0.01}{1.02}\\cdot100)", "label": "1.02 g \u2192 ~1%", "color": "#e74c3c" },
-    { "id": "3", "latex": "(9.89,\\frac{0.01}{9.89}\\cdot100)", "label": "9.89 g \u2192 ~0.1%", "color": "#2ecc71" }
-  ],
-  "graphSettings": { "xmin": 0.2, "xmax": 12, "ymin": -0.3, "ymax": 3 }
-}
+%view x=(0.2,12) y=(-0.3,3)
+@percentageError [color=#4a9eff]: y=\frac{0.01}{x}\cdot100
+@oneGram [color=#e74c3c, label="1.02 g -> about 1%", showLabel]: \left(1.02,\frac{0.01}{1.02}\cdot100\right)
+@tenGram [color=#2ecc71, label="9.89 g -> about 0.1%", showLabel]: \left(9.89,\frac{0.01}{9.89}\cdot100\right)
 ```
 
 For a fixed absolute error $\Delta = 0.01$ g, percentage error $= (\Delta / x) \times 100\%$ falls sharply as the measured value $x$ grows: the same $\pm 0.01$ g is $\pm 1\%$ at 1.02 g and only $\pm 0.1\%$ at 9.89 g.

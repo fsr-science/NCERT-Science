@@ -265,20 +265,16 @@ $$\boxed{T^2 \propto a^3} \qquad \text{or} \qquad \frac{T^2}{a^3} = \text{consta
 > [!tip] The constant $T^2/a^3$ is **the same for all planets** — confirming the law. This equals $K_S = 4\pi^2/GM_S$ (derived in Section 8 for satellites).
 
 ```desmos
-{
-  "expressions": [
-    { "id": "1", "latex": "(0.763,-0.620)", "label": "Mercury", "color": "#2ca02c" },
-    { "id": "2", "latex": "(1.033,-0.211)", "label": "Venus", "color": "#2ca02c" },
-    { "id": "3", "latex": "(1.176,0.000)", "label": "Earth", "color": "#2ca02c" },
-    { "id": "4", "latex": "(1.358,0.274)", "label": "Mars", "color": "#2ca02c" },
-    { "id": "5", "latex": "(1.891,1.076)", "label": "Jupiter", "color": "#2ca02c" },
-    { "id": "6", "latex": "(2.155,1.470)", "label": "Saturn", "color": "#2ca02c" },
-    { "id": "7", "latex": "(2.458,1.924)", "label": "Uranus", "color": "#2ca02c" },
-    { "id": "8", "latex": "(2.653,2.218)", "label": "Neptune", "color": "#2ca02c" },
-    { "id": "9", "latex": "y=1.5x-1.764", "color": "#1f77b4" }
-  ],
-  "graphSettings": { "xmin": 0, "xmax": 3, "ymin": -1, "ymax": 2.5 }
-}
+%view x=(0,3) y=(-1,2.5)
+@mercury [color=#2ca02c, label="Mercury", showLabel]: \left(0.763,-0.620\right)
+@venus [color=#2ca02c, label="Venus", showLabel]: \left(1.033,-0.211\right)
+@earth [color=#2ca02c, label="Earth", showLabel]: \left(1.176,0\right)
+@mars [color=#2ca02c, label="Mars", showLabel]: \left(1.358,0.274\right)
+@jupiter [color=#2ca02c, label="Jupiter", showLabel]: \left(1.891,1.076\right)
+@saturn [color=#2ca02c, label="Saturn", showLabel]: \left(2.155,1.470\right)
+@uranus [color=#2ca02c, label="Uranus", showLabel]: \left(2.458,1.924\right)
+@neptune [color=#2ca02c, label="Neptune", showLabel]: \left(2.653,2.218\right)
+@fit [color=#1f77b4]: y=1.5x-1.764
 ```
 *Fig 2.3 — $\log_{10}(a)$ (x-axis) vs $\log_{10}(T)$ (y-axis) for all 8 planets from Table 7.1. They fall on a straight line of slope $\mathbf{3/2}$, which is exactly what $T \propto a^{3/2}$ (i.e. $T^2 \propto a^3$) predicts — the log-log trick compresses Neptune's huge orbit and Mercury's tiny one onto the same readable line.*
 
@@ -526,14 +522,10 @@ $$\boxed{g(d) = g\left(1 - \frac{d}{R_E}\right)} \qquad \text{...(7.19)}$$
 > $g$ decreases going **both** up (above surface) and going down (below surface). Maximum $g$ is at the surface. The rate of decrease above is twice the rate below (for small displacements).
 
 ```desmos
-{
-  "expressions": [
-    { "id": "1", "latex": "y=\\{x<1: 9.8x, 9.8/x^{2}\\}", "color": "#d62728" },
-    { "id": "2", "latex": "x=1", "color": "#888888" },
-    { "id": "3", "latex": "(1,9.8)", "label": "surface, g maximum", "color": "#1f77b4" }
-  ],
-  "graphSettings": { "xmin": 0, "xmax": 4, "ymin": 0, "ymax": 11 }
-}
+%view x=(0,4) y=(0,11)
+@gravityProfile [color=#d62728]: y=\left\{x<1:9.8x,9.8/x^{2}\right\}
+@surface [color=#888888]: x=1
+@surfaceGravity [color=#1f77b4, label="Surface gravity maximum", showLabel]: \left(1,9.8\right)
 ```
 *Fig 5.2 — $g$ (y-axis, m s⁻²) vs distance from Earth's centre in units of $R_E$ (x-axis). Linear rise inside ($g\propto r$), sharp peak of 9.8 m s⁻² exactly at $r=R_E$, then inverse-square fall outside ($g\propto 1/r^2$). This single curve is the whole of Section 5 in one picture.*
 
@@ -563,14 +555,10 @@ $$\boxed{V(r) = -\frac{GM_E m}{r}} \qquad \text{...(7.25), valid for } r > R_E$$
 > We set $V = 0$ at infinity. Moving a mass from infinity toward Earth, gravity does positive work — so PE decreases from 0, becoming negative. A negative PE means the mass is in a **bound state** (must supply energy to escape to infinity).
 
 ```desmos
-{
-  "expressions": [
-    { "id": "1", "latex": "y=-1/x\\{x\\ge1\\}", "color": "#1f77b4", "label": "exact V(r)" },
-    { "id": "2", "latex": "y=x-2\\{0.7\\le x\\le1.6\\}", "color": "#d62728", "label": "mgh approximation" },
-    { "id": "3", "latex": "(1,-1)", "label": "Earth's surface", "color": "#2ca02c" }
-  ],
-  "graphSettings": { "xmin": 0.5, "xmax": 4, "ymin": -2, "ymax": 0.5 }
-}
+%view x=(0.5,4) y=(-2,0.5)
+@exactPotential [color=#1f77b4, label="Exact V(r)", showLabel]: y=-1/x\left\{x\ge1\right\}
+@linearApproximation [color=#d62728, label="mgh approximation", showLabel]: y=x-2\left\{0.7\le x\le1.6\right\}
+@earthSurface [color=#2ca02c, label="Earth surface", showLabel]: \left(1,-1\right)
 ```
 *Fig 6.1 — Blue: exact $V(r)=-GM_Em/r$ in units of $GM_Em/R_E$, plotted against $r/R_E$. Red: the linear $mgh$ approximation, which is the **tangent line at the surface**. They agree only very close to $r=R_E$ — the further you move away, the more the straight-line approximation overshoots.*
 
@@ -782,14 +770,10 @@ $$\boxed{E = KE + PE = -\frac{GM_E m}{2(R_E+h)}} \qquad \text{...(7.42)}$$
 > [!tip] Virial Theorem in action: For a bound gravitational system, $KE = -\tfrac{1}{2} \times PE = -E$. Total energy is always **negative** for a bound (closed-orbit) system. If $E \geq 0$, the object escapes.
 
 ```desmos
-{
-  "expressions": [
-    { "id": "1", "latex": "y=1/(2x)", "color": "#2ca02c", "label": "KE" },
-    { "id": "2", "latex": "y=-1/x", "color": "#d62728", "label": "PE" },
-    { "id": "3", "latex": "y=-1/(2x)", "color": "#1f77b4", "label": "E (total)" }
-  ],
-  "graphSettings": { "xmin": 1, "xmax": 5, "ymin": -1, "ymax": 0.6 }
-}
+%view x=(1,5) y=(-1,0.6)
+@kineticEnergy [color=#2ca02c, label="KE", showLabel]: y=\frac{1}{2x}
+@potentialEnergy [color=#d62728, label="PE", showLabel]: y=-\frac{1}{x}
+@totalEnergy [color=#1f77b4, label="Total energy", showLabel]: y=-\frac{1}{2x}
 ```
 *Fig 9.1 — KE (green), PE (red), and total E (blue) vs orbital radius $(R_E+h)/R_E$, all in units of $GM_Em/R_E$. Notice PE is always exactly twice the magnitude of E, and KE is always exactly $-E$ — and that KE (the satellite's speed) genuinely falls as the orbit climbs, which is Points to Ponder #5.*
 

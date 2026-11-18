@@ -550,14 +550,14 @@ flowchart TD
 
 ```desmos
 k=280
-sigma=2
-Z=6
-Z_{eff}=Z-sigma
-f\left(Z\right)=\frac{k}{Z-sigma}
-P_{point}=\left(Z,f\left(Z\right)\right)
+@shielding [slider=(0,4,0.1)]: s=2
+@atomicNumber [slider=(3,9,1)]: z=6
+z_{1}=z-s
+f\left(x\right)=\frac{k}{x-s}
+P=\left(z,f\left(z\right)\right)
 ```
-*Legend:* `k` = scaling constant (pm·charge units), `sigma` = shielding by the same-shell/inner core (slider), `Z` = atomic number (slider, try 3 to 9 for Li→F), `f(Z)` = modelled atomic radius $\propto 1/Z_{eff}$.
-*Try this:* drag `Z` from 3 to 9 and watch the point slide down the curve — mimicking the real Li→F contraction (152→64 pm). Then drag `sigma` up (more shielding) at fixed `Z` and see the radius jump back up — this is exactly why radius *increases* down a group even though `Z` also increases: shielding wins.
+*Legend:* `k` = scaling constant (pm·charge units), `s` = shielding by the same-shell/inner core (slider), `z` = atomic number (slider, try 3 to 9 for Li→F), `f(z)` = modelled atomic radius $\propto 1/(z-s)$.
+*Try this:* drag `z` from 3 to 9 and watch the point slide down the curve — mimicking the real Li→F contraction (152→64 pm). Then drag `s` up (more shielding) at fixed `z` and see the radius jump back up — this is exactly why radius *increases* down a group even though `z` also increases: shielding wins.
 
 
 ### 3.7.1(b) Ionic Radius ⭐⭐⭐
@@ -672,15 +672,15 @@ X^+(g) \rightarrow X^{2+}(g) + e^- \qquad \Delta_iH_2 \text{ (second IE)}
 
 ```desmos
 k=1312
-sigma=2
-n=2
-Z=6
-Z_{eff}=Z-sigma
-f\left(Z\right)=k\cdot\frac{Z_{eff}^{2}}{n^{2}}
-P_{point}=\left(Z,f\left(Z\right)\right)
+@shielding [slider=(0,4,0.1)]: s=2
+@shell [slider=(1,5,1)]: n=2
+@atomicNumber [slider=(3,18,1)]: z=6
+z_{1}=z-s
+f\left(x\right)=k\cdot\frac{(x-s)^{2}}{n^{2}}
+P=\left(z,f\left(z\right)\right)
 ```
-*Legend:* `k` = 1312 kJ mol⁻¹ (the H-atom IE constant, i.e. $13.6\text{ eV}\times96.5$), `sigma` = shielding constant (slider), `n` = principal quantum number of the valence shell (slider — set to 2 for period 2, 3 for period 3), `Z` = atomic number (slider), `Z_eff = Z − sigma`.
-*Try this:* fix `n=2`, `sigma=2`, and drag `Z` from 3 (Li) to 9 (F) — the point climbs steeply, mirroring the real rise from 520 to 1681 kJ mol⁻¹. Now jump to `n=3` at the same `Z` range — the whole curve drops, showing why period-3 elements ionise more easily than their period-2 counterparts at equal $Z_{eff}$.
+*Legend:* `k` = 1312 kJ mol⁻¹ (the H-atom IE constant, i.e. $13.6\text{ eV}\times96.5$), `s` = shielding constant (slider), `n` = principal quantum number of the valence shell (slider — set to 2 for period 2, 3 for period 3), `z` = atomic number (slider), `z_1 = z − s`.
+*Try this:* fix `n=2`, `s=2`, and drag `z` from 3 (Li) to 9 (F) — the point climbs steeply, mirroring the real rise from 520 to 1681 kJ mol⁻¹. Now jump to `n=3` at the same `z` range — the whole curve drops, showing why period-3 elements ionise more easily than their period-2 counterparts at equal $z_1$.
 > [!warning] This model is a smoothed approximation
 > It captures the *overall* period/group slope from $Z_{eff}$ and $n$ alone — it will **not** reproduce the B<Be or O<N anomalies below, which come from orbital penetration and electron-pairing effects the simple Bohr formula doesn't contain.
 
@@ -825,9 +825,9 @@ X(g) + e^- \rightarrow X^-(g) \qquad \Delta_{eg}H
 
 ```desmos
 k=64
-r=1.5
-f\left(r\right)=\frac{k}{r}
-P_{point}=\left(r,f\left(r\right)\right)
+@atomicRadius [slider=(0.6,2.6,0.1)]: r=1.5
+f\left(x\right)=\frac{k}{x}
+P=\left(r,f\left(r\right)\right)
 ```
 *Legend:* `k` = proportionality constant, `r` = atomic radius in Å (slider, try 0.6 to 2.6 — the real range across periods 2–3), `f(r)` = modelled electronegativity $\propto 1/r$.
 *Try this:* drag `r` down toward 0.6 Å (small atom, e.g. F) and watch electronegativity shoot up; drag it up toward 2.6 Å (large atom, e.g. Cs) and watch it fall toward zero — the same inverse relationship NCERT states qualitatively in §3.7.1(e).

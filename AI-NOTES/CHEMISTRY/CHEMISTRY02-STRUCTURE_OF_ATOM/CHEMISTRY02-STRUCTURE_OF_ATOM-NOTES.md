@@ -435,8 +435,8 @@ The wave picture of radiation from §3 explains interference and diffraction per
 
 ```desmos
 c_{2}=1.4388\times10^{7}
-T_{1}=4000
-T_{2}=6000
+@lowerTemperature [slider=(3000,5000,100)]: T_{1}=4000
+@higherTemperature [slider=(6000,10000,100)]: T_{2}=6000
 f\left(\lambda\right)=\frac{1}{\lambda^{5}\left(e^{\frac{c_{2}}{\lambda T_{1}}}-1\right)}
 g\left(\lambda\right)=\frac{1}{\lambda^{5}\left(e^{\frac{c_{2}}{\lambda T_{2}}}-1\right)}
 ```
@@ -502,12 +502,12 @@ Where:
 
 ```desmos
 k=0.4136
-n_{0}=5
-f\left(n\right)=k\left(n-n_{0}\right)\left\{n\ge n_{0}\right\}
-n_{now}=7
-P=\left(n_{now},f\left(n_{now}\right)\right)
+@thresholdFrequency [slider=(2,7,0.1)]: n_{0}=5
+f\left(x\right)=k\left(x-n_{0}\right)\left\{x\ge n_{0}\right\}
+@incidentFrequency [slider=(3,8,0.1)]: q=7
+P=\left(q,f\left(q\right)\right)
 ```
-*Legend:* `n` = frequency of incident light in units of 10¹⁴ Hz, `n_0` = threshold frequency (slider; default 5 matches NCERT's own potassium example, ν₀ = 5.0×10¹⁴ Hz), `k` = Planck's constant expressed as eV per unit of `n`, i.e. `h × 10¹⁴ = 0.4136 eV`, `f(n)` = photoelectron kinetic energy in eV (undefined/zero below threshold), `P` = a draggable point (`n_now`) to read off K.E. at a chosen frequency.
+*Legend:* `x` = frequency of incident light in units of 10¹⁴ Hz, `n_0` = threshold frequency (slider; default 5 matches NCERT's own potassium example, ν₀ = 5.0×10¹⁴ Hz), `k` = Planck's constant expressed as eV per unit of frequency, i.e. `h × 10¹⁴ = 0.4136 eV`, `f(x)` = photoelectron kinetic energy in eV (undefined/zero below threshold), `P` = the point at the selected incident frequency `q`.
 *Try this:* drag `n_0` to the right (a metal with a larger work function) and watch the whole line's x-intercept move right with it — nothing is emitted until `n` catches up; drag `n_now` past the intercept and read the linear K.E. growth directly, which is Einstein's equation `hν = hν₀ + K.E.` traced out as a straight line of slope `h`.
 
 **Work Function Values (important for NEET):**

@@ -594,16 +594,16 @@ In HF, the shared pair shifts toward F; H becomes \(\delta^+\) and F becomes \(\
 \]
 At \(A = 180^\circ\) (linear): \(\cos(90^\circ) = 0 \Rightarrow \mu_{net}=0\) — matches CO₂ and BeF₂ exactly. At \(A = 104.5^\circ\) (water's bond angle): \(\cos(52.25^\circ)\approx 0.61\), giving a sizeable net dipole — matches H₂O's non-zero, bent-molecule dipole.
 
-> [!warning] Reviewed, not executed
-> Desmos syntax below was reviewed against the renderer contract (exact fence tag, no `\theta` assignment, balanced parentheses) but **not run against the live NoteBooks renderer** — confirm it actually appears before relying on more Desmos blocks in this note. If it fails to render, the TikZ bond-length ladder style above (Section 5.1) is the fallback pattern for any static curve.
+> [!note] Interactive model
+> This curve uses explicit slider bounds for the bond dipole and bond angle; the rendered expressions are read-only while both sliders remain interactive.
 
 ```desmos
-mu_{bond}=1.5
-A=104.5
-f\left(x\right)=2\mu_{bond}\cos\left(\frac{x}{2}\cdot\frac{\pi}{180}\right)
+@bondDipole [slider=(0.5,3,0.1)]: b=1.5
+@bondAngle [slider=(90,180,1)]: A=104.5
+f\left(x\right)=2b\cos\left(\frac{x\pi}{360}\right)
 P=\left(A,f\left(A\right)\right)
 ```
-*Legend:* `mu_bond` = magnitude of a single bond dipole in D (slider — NCERT does not disclose an exact individual O–H bond-dipole value, so treat this as illustrative, not a quoted textbook number), `A` = bond angle in degrees (slider), `f(x)` = net dipole moment of a bent AB₂ molecule as a function of bond angle.
+*Legend:* `b` = magnitude of a single bond dipole in D (slider — NCERT does not disclose an exact individual O–H bond-dipole value, so treat this as illustrative, not a quoted textbook number), `A` = bond angle in degrees (slider), `f(x)` = net dipole moment of a bent AB₂ molecule as a function of bond angle.
 *Try this:* drag `A` from 180° down toward 90° — the net dipole grows from zero (linear, cancelling) to a maximum, showing *why* bending a molecule is precisely what turns cancelling bond dipoles into a measurable net dipole moment.
 
 ### 6.3 NH₃ vs NF₃ — the Classic Counterintuitive Comparison ⭐⭐ `[NEET · JEE]`
@@ -902,19 +902,19 @@ Experimentally, the new attractive forces **outweigh** the new repulsive forces,
 \text{H}_2(g) + 435.8 \text{ kJ mol}^{-1} \rightarrow \text{H}(g) + \text{H}(g)
 \]
 
-> [!warning] Reviewed, not executed
-> The Desmos block below models this well with a Morse-type potential; its syntax was checked against the rules (exact fence tag, no `\theta`, balanced parentheses) but not run against the live renderer. The static TikZ curve above is the confirmed fallback.
+> [!note] Interactive model
+> The Desmos block below models this well with a Morse-type potential; the parameters and current distance are sliders.
 
 ```desmos
-D_{e}=4.36
-a=1.9
-r_{e}=0.74
+@wellDepth [slider=(1,8,0.1)]: D_{e}=4.36
+@wellWidth [slider=(0.5,4,0.1)]: a=1.9
+@equilibriumDistance [slider=(0.5,2,0.01)]: r_{e}=0.74
 V\left(r\right)=D_{e}\left(1-e^{-a\left(r-r_{e}\right)}\right)^{2}-D_{e}
-r_{now}=0.74
-P=\left(r_{now},V\left(r_{now}\right)\right)
+@currentDistance [slider=(0.3,2,0.01)]: r_{1}=0.74
+P=\left(r_{1},V\left(r_{1}\right)\right)
 ```
 *Legend:* `D_e` = well depth, a stand-in for bond dissociation energy (arbitrary units, slider), `a` = a curve-width parameter (slider), `r_e` = equilibrium bond length (slider, in Å-like units, 0.74 ≈ H₂'s 74 pm), `V(r)` = the Morse-potential energy as a function of internuclear distance `r`.
-*Try this:* drag `D_e` up — the well gets deeper, modelling a *stronger* bond; drag `r_e` — the whole well shifts sideways, modelling a *longer or shorter* equilibrium bond length. This is the general-shape idea behind every bond-formation energy curve in this chapter, not just H₂'s.
+*Try this:* drag `D_e` up — the well gets deeper, modelling a *stronger* bond; drag `r_e` — the whole well shifts sideways, modelling a *longer or shorter* equilibrium bond length. Drag `r_1` to move the point that marks the molecule's current separation.
 
 ### 8.3 Orbital Overlap Concept
 

@@ -524,17 +524,13 @@ $$|\mathbf{A} - \mathbf{B}| = \sqrt{A^2 + B^2 - 2AB\cos\theta}$$
 > For two vectors of equal length, $R = 2A\cos(\theta/2)$, not $2A\cos\theta$.
 
 ```desmos
-{
-  "expressions": [
-    { "id": "1", "latex": "A=5" },
-    { "id": "2", "latex": "B=3" },
-    { "id": "3", "latex": "y=\\sqrt{A^{2}+B^{2}+2AB\\cos\\left(\\frac{\\pi x}{180}\\right)}", "color": "#2d70b3" },
-    { "id": "4", "latex": "\\left(0,A+B\\right)", "color": "#c74440" },
-    { "id": "5", "latex": "\\left(90,\\sqrt{A^{2}+B^{2}}\\right)", "color": "#388c46" },
-    { "id": "6", "latex": "\\left(180,\\left|A-B\\right|\\right)", "color": "#6042a6" }
-  ],
-  "graphSettings": { "xmin": -10, "xmax": 190, "ymin": -1, "ymax": 12 }
-}
+%view x=(-10,190) y=(-1,12)
+@magnitudeA [slider=(0,10,0.1)]: A=5
+@magnitudeB [slider=(0,10,0.1)]: B=3
+@resultant [color=#2d70b3]: y=\sqrt{A^{2}+B^{2}+2AB\cos\left(\frac{\pi x}{180}\right)}
+@parallel [color=#c74440, showLabel, label="Same direction"]: \left(0,A+B\right)
+@perpendicular [color=#388c46, showLabel, label="Perpendicular"]: \left(90,\sqrt{A^{2}+B^{2}}\right)
+@opposite [color=#6042a6, showLabel, label="Opposite directions"]: \left(180,\left|A-B\right|\right)
 ```
 
 *The curve is $R$ against the angle $\theta$ in degrees; the three marked points are the maximum $A + B$, the perpendicular case $\sqrt{A^2 + B^2}$, and the minimum $|A - B|$. Changing $A$ and $B$ moves the curve but never takes it outside those bounds, and $R$ falls steadily as $\theta$ grows from $0^\circ$ to $180^\circ$.*
@@ -995,20 +991,16 @@ This has the form $y = ax - bx^2$ with constants $a$ and $b$, which is a **parab
 *The velocity at the apex is purely horizontal, and the arrow at landing mirrors the arrow at launch.*
 
 ```desmos
-{
-  "expressions": [
-    { "id": "1", "latex": "v_{0}=20" },
-    { "id": "2", "latex": "\\theta=45" },
-    { "id": "3", "latex": "g=9.8" },
-    { "id": "4", "latex": "y=x\\tan\\left(\\frac{\\pi\\theta}{180}\\right)-\\frac{gx^{2}}{2v_{0}^{2}\\cos^{2}\\left(\\frac{\\pi\\theta}{180}\\right)}\\left\\{y\\ge0\\right\\}", "color": "#2d70b3" },
-    { "id": "5", "latex": "\\left(\\frac{v_{0}^{2}\\sin\\left(\\frac{2\\pi\\theta}{180}\\right)}{g},0\\right)", "color": "#c74440" },
-    { "id": "6", "latex": "\\left(\\frac{v_{0}^{2}\\sin\\left(\\frac{2\\pi\\theta}{180}\\right)}{2g},\\frac{\\left(v_{0}\\sin\\left(\\frac{\\pi\\theta}{180}\\right)\\right)^{2}}{2g}\\right)", "color": "#388c46" }
-  ],
-  "graphSettings": { "xmin": -5, "xmax": 60, "ymin": -5, "ymax": 30 }
-}
+%view x=(0,60) y=(0,35)
+@initialSpeed [slider=(0,40,1)]: v_{0}=20
+@launchAngle [slider=(5,85,1)]: q=45
+@gravity [slider=(8,11,0.1)]: g=9.8
+@trajectory [color=#2d70b3]: y=x\tan\left(\frac{\pi q}{180}\right)-\frac{gx^{2}}{2v_{0}^{2}\cos^{2}\left(\frac{\pi q}{180}\right)}\left\{0\le x\le\frac{v_{0}^{2}\sin\left(\frac{2\pi q}{180}\right)}{g}\right\}
+@range [color=#c74440, showLabel, label="Range"]: \left(\frac{v_{0}^{2}\sin\left(\frac{2\pi q}{180}\right)}{g},0\right)
+@apex [color=#388c46, showLabel, label="Maximum height"]: \left(\frac{v_{0}^{2}\sin\left(\frac{2\pi q}{180}\right)}{2g},\frac{\left(v_{0}\sin\left(\frac{\pi q}{180}\right)\right)^{2}}{2g}\right)
 ```
 
-*The blue curve is the trajectory for launch speed $v_0$ (m s⁻¹) and angle $\theta$ (degrees); the red point is the landing point (the range) and the green point is the apex. Raising $\theta$ makes the arc taller and, up to $45^\circ$, longer; raising $v_0$ stretches it in both directions.*
+*The blue curve is the trajectory for launch speed $v_0$ (m s⁻¹) and angle $q$ (degrees); the red point is the landing point (the range) and the green point is the apex. Raising $q$ makes the arc taller and, up to $45^\circ$, longer; raising $v_0$ stretches it in both directions.*
 
 ### 8.6 Time to Reach Maximum Height ⭐
 
@@ -1064,17 +1056,13 @@ For a range below $R_{\max}$ there are therefore two launch angles, a flatter an
 | Range $R$ | $\sin 2\theta_0$ | $45^\circ$ |
 
 ```desmos
-{
-  "expressions": [
-    { "id": "1", "latex": "v_{0}=28" },
-    { "id": "2", "latex": "g=9.8" },
-    { "id": "3", "latex": "y=\\frac{v_{0}^{2}\\sin\\left(\\frac{2\\pi x}{180}\\right)}{g}", "color": "#2d70b3" },
-    { "id": "4", "latex": "\\left(30,\\frac{v_{0}^{2}\\sin\\left(\\frac{60\\pi}{180}\\right)}{g}\\right)", "color": "#c74440" },
-    { "id": "5", "latex": "\\left(60,\\frac{v_{0}^{2}\\sin\\left(\\frac{120\\pi}{180}\\right)}{g}\\right)", "color": "#c74440" },
-    { "id": "6", "latex": "\\left(45,\\frac{v_{0}^{2}}{g}\\right)", "color": "#388c46" }
-  ],
-  "graphSettings": { "xmin": 0, "xmax": 90, "ymin": 0, "ymax": 90 }
-}
+%view x=(0,90) y=(0,90)
+@initialSpeed [slider=(0,50,1)]: v_{0}=28
+@gravity: g=9.8
+@rangeCurve [color=#2d70b3]: y=\frac{v_{0}^{2}\sin\left(\frac{2\pi x}{180}\right)}{g}
+@angle30 [color=#c74440, showLabel, label="30 degrees"]: \left(30,\frac{v_{0}^{2}\sin\left(\frac{60\pi}{180}\right)}{g}\right)
+@angle60 [color=#c74440, showLabel, label="60 degrees"]: \left(60,\frac{v_{0}^{2}\sin\left(\frac{120\pi}{180}\right)}{g}\right)
+@angle45 [color=#388c46, showLabel, label="Maximum range at 45 degrees"]: \left(45,\frac{v_{0}^{2}}{g}\right)
 ```
 
 *The curve is the range against the launch angle in degrees. The two red points, at $30^\circ$ and $60^\circ$, sit at the same height, showing equal ranges for complementary angles; the green point at $45^\circ$ is the maximum $v_0^2/g$.*

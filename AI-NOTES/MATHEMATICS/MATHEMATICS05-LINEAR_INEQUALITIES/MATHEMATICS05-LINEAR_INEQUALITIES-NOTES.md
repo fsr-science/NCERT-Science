@@ -95,16 +95,12 @@ Substituting the special cases "add/subtract a constant" and "multiply/divide by
 **See it happen, not just read it.** Fix \(a=2 < b=5\) and let \(c\) vary:
 
 ```desmos
-{
-  "expressions": [
-    { "id": "a", "latex": "a=2" },
-    { "id": "b", "latex": "b=5" },
-    { "id": "c", "latex": "c=1" },
-    { "id": "ptA", "latex": "(a\\cdot c,\\ 0)", "color": "#2563eb", "label": "a\\cdot c" },
-    { "id": "ptB", "latex": "(b\\cdot c,\\ 0)", "color": "#dc2626", "label": "b\\cdot c" }
-  ],
-  "graphSettings": { "xmin": -20, "xmax": 20, "ymin": -3, "ymax": 3 }
-}
+%view x=(-20,20) y=(-3,3)
+@a: a=2
+@b: b=5
+@c [slider=(-5,5,0.1)]: c=1
+@ptA [color=#2563eb, label="a c", showLabel]: \left(a\cdot c,0\right)
+@ptB [color=#dc2626, label="b c", showLabel]: \left(b\cdot c,0\right)
 ```
 
 Drag the slider \(c\) from positive through \(0\) to negative. For every \(c>0\) the blue point \(a\cdot c\) stays to the *left* of the red point \(b\cdot c\) — same order as \(a<b\). The instant \(c\) crosses \(0\) into negative territory, blue jumps to the *right* of red: the order reverses discontinuously at \(c=0\), never gradually. That discontinuity at exactly \(c=0\) is Rule 2 made visible — it's also why the rule has no "in-between" case to memorize separately.
