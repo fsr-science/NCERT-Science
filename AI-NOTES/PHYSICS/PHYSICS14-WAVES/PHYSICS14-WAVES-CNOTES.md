@@ -1,5 +1,30 @@
 # Physics | Chapter 14 | Waves | CNOTES
 
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Waves))
+    Wave description
+      Amplitude wavelength frequency and phase describe oscillation
+      Wave speed links frequency and wavelength
+    Wave types
+      Transverse displacement is perpendicular to propagation
+      Longitudinal displacement is parallel to propagation
+      Mechanical waves require a medium
+    Sound
+      Speed depends on medium and thermodynamic conditions
+      Superposition combines disturbances
+      Beats arise from nearby frequencies
+    Standing waves
+      Opposite travelling waves interfere
+      Nodes remain at rest and antinodes oscillate maximally
+      Boundary conditions select normal modes
+    Reflection and interference
+      Boundary conditions determine reflected phase
+      Path difference determines constructive or destructive interference
+```
+
 ### Waves
 
 ---

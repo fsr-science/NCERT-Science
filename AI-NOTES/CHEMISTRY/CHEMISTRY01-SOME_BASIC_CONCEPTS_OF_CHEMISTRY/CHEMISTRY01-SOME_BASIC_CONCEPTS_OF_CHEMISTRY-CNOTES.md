@@ -616,3 +616,29 @@ $$M = \frac{n(\text{solute})}{V(\text{L})} \qquad m = \frac{n(\text{solute})}{\t
 
 *End of Condensed Notes — Chemistry Ch. 1: Some Basic Concepts of Chemistry*
 *Exam Tags: Board · NEET · JEE Mains · JEE Advanced*
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Some basic concepts of chemistry))
+    Matter and measurement
+      Matter classified as pure substances or mixtures
+      SI units standardise measurement
+      Significant figures and uncertainty qualify precision
+      Dimensional analysis checks units
+    Atomic and molecular quantities
+      Atomic molecular and formula masses describe particles
+      Mole connects particle count and measurable mass
+      Molar mass converts between mass and amount
+    Chemical combination
+      Balanced equation conserves atoms
+      Stoichiometric coefficients give mole ratios
+      Limiting reagent sets maximum product
+    Solutions
+      Concentration describes solute amount per solution amount
+      Molarity molality and mole fraction use different bases
+    Quantitative reasoning
+      Keep units through each calculation
+      Check conservation and significant figures
+```

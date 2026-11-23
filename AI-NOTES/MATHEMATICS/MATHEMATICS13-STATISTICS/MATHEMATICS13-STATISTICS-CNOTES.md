@@ -111,3 +111,27 @@ flowchart LR
 ```
 
 Each step to the right is a refinement of the one before it: Range uses only 2 points → Mean Deviation uses every point but can't be manipulated algebraically → Variance fixes that by squaring instead of taking absolute value → Standard Deviation restores the original units by undoing the square.
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Statistics and dispersion))
+    Need for dispersion
+      Averages alone do not describe spread
+      Dispersion compares variability in data
+    Range
+      Uses the extreme observations
+      Simple but sensitive to extremes
+    Mean deviation
+      Average distance from a chosen central value
+      Can be taken about mean or median
+      Absolute deviations limit algebraic use
+    Variance and standard deviation
+      Use squared deviations from the mean
+      Standard deviation returns spread to original units
+      Frequency data use their frequencies as weights
+    Comparing data sets
+      Coefficient of variation compares relative spread
+      Grouped observations may be represented by class midpoints
+```

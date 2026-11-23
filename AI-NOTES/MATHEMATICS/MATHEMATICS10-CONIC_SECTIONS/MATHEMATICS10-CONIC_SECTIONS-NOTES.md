@@ -383,6 +383,20 @@ x^2=4(300)\left(\frac{2}{100}\right)=24 \;\Longrightarrow\; x=\sqrt{24}=2\sqrt6\
 
 ---
 
+## Interactive Ellipse and Foci
+
+Vary the semi-minor axis \(b\) while keeping \(a=5\). The foci move along the
+major axis according to \(c^2=a^2-b^2\), approaching the centre as the ellipse
+becomes circular.
+
+```desmos
+%view x=(-6,6) y=(-5,5)
+@minorAxis [slider=(1,4.9,0.05)]: b=3
+@ellipse [color=blue, lineWidth=2]: \frac{x^2}{25}+\frac{y^2}{b^2}=1
+@rightFocus [color=red, pointSize=8, label="right focus", showLabel]: (\sqrt{25-b^2},0)
+@leftFocus [color=orange, pointSize=8, label="left focus", showLabel]: (-\sqrt{25-b^2},0)
+```
+
 ## Points to Ponder ⭐⭐
 
 > **Squaring can introduce extraneous solutions — but not here, and here's why.** Every derivation above squares both sides of a distance equation at least once. That's normally a red flag for extraneous roots (as in \(\sqrt{x+3}=x-3\)). It's safe in every derivation above only because each side being squared is a distance or an explicitly non-negative combination for the point actually being described — always re-check that condition before trusting a squared-through derivation elsewhere.

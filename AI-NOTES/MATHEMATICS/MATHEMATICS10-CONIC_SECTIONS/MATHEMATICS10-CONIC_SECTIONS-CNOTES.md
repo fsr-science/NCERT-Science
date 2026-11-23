@@ -114,3 +114,28 @@ flowchart TD
 - **Ellipse:** compare **denominator sizes** for the major axis.
 - **Hyperbola:** compare **term signs** for the transverse axis — this is the opposite test from the ellipse.
 - **Any conic built from conditions (points, foci, directrix, latus rectum):** set up the general equation first, substitute every condition, solve, then substitute back to confirm — don't stop at "solved," stop at "checked."
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Conic sections))
+    Origin in geometry
+      Plane cuts a double-napped cone
+      Section angle and plane position determine the curve
+    Circle
+      Points remain at a fixed distance from a centre
+      Centre and radius determine its position and size
+    Parabola
+      Points are equidistant from focus and directrix
+      Axis passes through focus and vertex
+    Ellipse
+      Sum of distances from two foci is constant
+      Major and minor axes describe its shape
+    Hyperbola
+      Difference of distances from two foci is constant
+      Branches approach asymptotes
+    Shared measures
+      Eccentricity distinguishes conic shapes
+      Latus rectum passes through a focus and is perpendicular to axis
+```

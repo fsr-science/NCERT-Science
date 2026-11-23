@@ -480,6 +480,19 @@ Since \(x^2 \geq 0\) for all real \(x\), \(1+x^2 \geq 1\), so \(0 < \dfrac{1}{1+
 
 ---
 
+## Interactive Graph: A Horizontal Line Test
+
+Move the horizontal line \(y=h\). For \(h>0\) it meets \(y=x^2\) twice, at
+\(h=0\) once, and for \(h<0\) not at all. This makes the range and the
+one-to-one question visible.
+
+```desmos
+%view x=(-4,4) y=(-3,10)
+@height [slider=(-2,9,0.1)]: h=4
+@parabola [color=blue, label="y = x^2", showLabel]: y=x^2
+@level [color=orange, label="y = h", showLabel]: y=h
+```
+
 ## Points to Ponder ⭐⭐⭐
 
 > **Watch out — component-wise equality, not sum/product equality.** \((a,b)=(x,y)\) means \(a=x\) *and* \(b=y\) separately. Students sometimes think \((2,3)\) and \((3,2)\) are "the same pair" because they have the same elements — they are not; order is the entire point of an ordered pair.

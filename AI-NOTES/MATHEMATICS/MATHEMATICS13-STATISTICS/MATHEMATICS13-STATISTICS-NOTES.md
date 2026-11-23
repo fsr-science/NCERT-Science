@@ -496,6 +496,20 @@ From \(\sigma=\sqrt{\frac1n\sum x_i^2-\bar x^2}\): \(5.1^2 = \frac{1}{100}(\text
 
 ---
 
+## Interactive Spread and Standard Deviation
+
+This normal-curve illustration shows how the spread parameter \(s\) changes
+the width of a distribution. It is a visualization of spread, not an
+assumption that every data set is normally distributed.
+
+```desmos
+%view x=(-8,8) y=(0,0.85)
+@mean [slider=(-3,3,0.1)]: m=0
+@spread [slider=(0.5,3,0.1)]: s=1
+@density [color=blue, lineWidth=2, label="normal curve", showLabel]: y=\frac{1}{s\sqrt{2\pi}}e^{-\frac{(x-m)^2}{2s^2}}
+@center [color=red, pointSize=8, label="mean m", showLabel]: (m,\frac{1}{s\sqrt{2\pi}})
+```
+
 ## Points to Ponder
 
 > **Watch out:** The signed deviations \((x_i-\bar x)\) always sum to zero — that's a property of the mean, *not* evidence that there's no spread. Only after taking absolute values (mean deviation) or squares (variance) does the sum actually measure dispersion.

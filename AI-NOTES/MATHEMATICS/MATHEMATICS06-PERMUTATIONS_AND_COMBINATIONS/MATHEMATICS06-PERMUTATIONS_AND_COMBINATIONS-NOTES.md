@@ -460,6 +460,19 @@ Running total after A, G, I: \(24+12+12=48\). So the 49th word is the *first* wo
 **Total:** \(5! \times {}^6P_3 = 120 \times 120 = 14{,}400\).
 **Check:** far smaller than the unrestricted \(8! = 40{,}320\), as expected since the constraint rules out many arrangements.
 
+## Interactive Permutations and Combinations
+
+Change \(n\) to compare the ordered selections \(nP_r\) with the unordered
+selections \(nC_r\). Each plotted sequence contains the values for integer
+\(r=0,\ldots,n\).
+
+```desmos
+%view x=(-1,11) y=(-1000,4000000)
+@objects [slider=(2,10,1)]: n=7
+@permutations [color=blue, pointStyle=point, label="nPr", showLabel]: \operatorname{sequence}\left(\left(k,\frac{n!}{(n-k)!}\right),k,0,n\right)
+@combinations [color=orange, pointStyle=point, label="nCr", showLabel]: \operatorname{sequence}\left(\left(k,\frac{n!}{k!\left(n-k\right)!}\right),k,0,n\right)
+```
+
 ## Points to Ponder ⭐⭐
 
 > **Watch out:** Treating a *selection* problem as if order mattered (or vice versa) is the single most common error. Ask "would swapping two chosen items change the answer?" — if no, it's a combination.

@@ -1,5 +1,29 @@
 # Physics | Chapter 12 | Kinetic Theory | CNOTES
 
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Kinetic theory))
+    Molecular model
+      Gas consists of many moving molecules
+      Collisions are elastic in the ideal model
+      Pressure arises from molecular impacts
+    Temperature and energy
+      Mean translational kinetic energy is proportional to absolute temperature
+      Equipartition assigns energy to active degrees of freedom
+      Specific heats follow the degrees of freedom
+    Gas laws
+      Ideal gas equation connects pressure volume and temperature
+      Boyle Charles and Avogadro laws follow from the model
+    Molecular speeds
+      RMS speed depends on temperature and molar mass
+      Mean free path depends on molecular size and number density
+    Limits
+      Real gases depart from ideal assumptions
+      Intermolecular forces and finite size matter at high density
+```
+
 ### Kinetic Theory
 
 ---

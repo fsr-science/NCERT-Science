@@ -63,3 +63,28 @@ flowchart LR
     R4 --> R5["Does the final a+ib have both a and b as real numbers, with no leftover i² or i³?"]
     R5 --> R6["Boxed final answer ✔"]
 ```
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Complex numbers and quadratic equations))
+    Need for complex numbers
+      Imaginary unit extends the real number system
+      Complex number has real and imaginary parts
+      Equality compares corresponding parts
+    Algebra of complex numbers
+      Addition and subtraction combine components
+      Multiplication uses the imaginary unit rule
+      Division uses a conjugate to obtain real denominator
+      Powers of the imaginary unit repeat every four
+    Modulus and conjugate
+      Conjugate reflects across the real axis
+      Product with conjugate gives squared modulus
+      Modulus represents distance from origin
+    Argand plane
+      Real and imaginary parts give coordinates
+      Conjugation gives reflection in real axis
+    Source coverage
+      Polar form and quadratic roots are outside this CNOTES excerpt
+```

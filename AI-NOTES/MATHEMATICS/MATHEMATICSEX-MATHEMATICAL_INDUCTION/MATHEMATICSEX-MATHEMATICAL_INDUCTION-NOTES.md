@@ -433,6 +433,21 @@ n=1:\ 2\cdot4^3+3^4 = 128+81=209, \qquad n=2:\ 2\cdot4^5+3^7=2048+2187=4235
 
 ---
 
+## Interactive Induction Inequality
+
+For integer \(n\ge1\), the graph compares \(2^n\) with \(n+1\). The slider
+selects an integer case of the inequality \(2^n\ge n+1\), which can be proved
+by induction.
+
+```desmos
+%view x=(-1,9) y=(-1,280)
+@integer [slider=(1,8,1)]: n=3
+@power [color=blue, label="2^x", showLabel]: y=2^x
+@successor [color=orange, label="x+1", showLabel]: y=x+1
+@powerPoint [color=blue, pointSize=8, label="2^n", showLabel]: (n,2^n)
+@successorPoint [color=orange, pointSize=8, label="n+1", showLabel]: (n,n+1)
+```
+
 ## Points to Ponder ⭐⭐⭐
 
 - **The base case is not always \(n=1\).** State it explicitly, and find it by testing small values rather than assuming — Example 11 shows a statement that is false at \(n=1,2,3\) and only becomes true at \(n=4\); Examples 2, 3, and 5 have genuine domain restrictions (\(n\geq2\) or \(n\geq3\)).

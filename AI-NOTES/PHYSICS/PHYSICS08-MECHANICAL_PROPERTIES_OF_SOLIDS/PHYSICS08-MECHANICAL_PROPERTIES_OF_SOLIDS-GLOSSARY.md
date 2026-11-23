@@ -4,271 +4,188 @@
 
 ---
 
-> [!note]
-> All terms arranged **alphabetically** with precise scientific definitions, dimensional formulae where applicable, and exam relevance tags.
+> All terms arranged **alphabetically**, one to two sentences each, with dimensional formulae where applicable and a `§` back-reference to the NOTES section that explains them. For a term's exam priority, see the ⭐ rating on that NOTES section heading — it is the single priority signal for the chapter. Where the handwritten notes use a different symbol or label, the entry says so; formula tables, numerical constants and common traps live in NOTES, CNOTES and the Rapid Reference.
 
 ---
 
 ## B
 
-**Brittle Material**
-A material in which the **ultimate tensile strength point (D) and the fracture point (E) are very close** on the stress-strain curve. The material fractures suddenly without significant plastic deformation. Examples: glass, cast iron, ceramics, concrete. Opposite of ductile. *(All levels)*
+**Brittle Material** — A material whose ultimate-tensile-strength point D and fracture point E lie close together on its stress–strain curve, so it fractures suddenly with almost no plastic deformation. The opposite of a ductile material; examples are glass, cast iron and ceramics. *(§5.2)*
 
-**Bulk Modulus (B)**
-The ratio of **hydraulic stress to volume strain** (negative sign to keep B positive):
+**Buckling** — The sideways bending of a deep, thin bar or column under a compressive load that is not exactly centred. It is a structural failure of slender members, not the local thinning (necking) that precedes fracture in a tension test. *(§9.2)*
 
-$$B = -\frac{p}{\Delta V/V}$$
-
-Since an increase in pressure causes a decrease in volume, the negative sign ensures B is always positive. SI unit: N m⁻² or Pa. Dimensional formula: **[ML⁻¹T⁻²]**. Applies to **solids, liquids, and gases**. The bulk modulus of solids >> liquids >> gases. Air at STP: B ≈ 1.0 × 10⁻⁴ GPa; Steel: B ≈ 160 GPa. *(All levels — critical)*
+**Bulk Modulus (B)** — The ratio of hydraulic stress to volume strain, $B=-p/(\Delta V/V)$, where the minus sign keeps $B$ positive because a pressure rise shrinks the volume. Unlike $Y$ and $G$ it applies to solids, liquids and gases; SI unit Pa, dimensional formula **[ML⁻¹T⁻²]**; not the point B on the stress–strain curve. *(§6.3)*
 
 ---
 
 ## C
 
-**Compressibility (k)**
-The **reciprocal of the bulk modulus**:
+**Compressibility (k)** — The reciprocal of the bulk modulus, $k=1/B$: the fractional change in volume per unit increase in pressure. SI unit Pa⁻¹, dimensional formula **[M⁻¹LT²]**; the same letter $k$ also denotes the modulus of elasticity in Hooke's law. *(§6.3)*
 
-$$k = \frac{1}{B} = -\frac{1}{\Delta p} \times \frac{\Delta V}{V}$$
-
-Defined as the fractional change in volume per unit increase in pressure. Solids have very low compressibility; gases have very high compressibility. Gases are approximately **10⁶ times more compressible** than solids. SI unit: Pa⁻¹. Dimensional formula: **[M⁻¹LT²]**. *(All levels)*
-
-**Compressive Stress**
-A type of longitudinal stress in which two equal and opposite forces act **perpendicular to the cross-section** but directed **inward** (pushing forces). Result: the body shortens (compresses). The restoring force per unit area is called compressive stress. Magnitude = F/A. SI unit: Pa. *(All levels)*
+**Compressive Stress** — A longitudinal stress in which two equal and opposite forces act perpendicular to the cross-section and push inward, shortening the body. Its magnitude is $F/A$; the counterpart of tensile stress. *(§2.2)*
 
 ---
 
 ## D
 
-**Deformation**
-Any change in the **shape or size** of a body caused by the application of a force. Deformation can be **elastic** (temporary — body recovers) or **plastic** (permanent — body does not recover). The extent of deformation depends on the material's nature and the magnitude of the applied force. *(All levels)*
+**Deformation** — Any change in the shape or size of a body caused by an applied force. It is elastic if the body recovers on unloading and plastic if it does not. *(§1.1)*
 
-**Ductile Material**
-A material in which the **ultimate tensile strength (D) and the fracture point (E) are far apart** on the stress-strain curve. The material undergoes significant plastic deformation (necking) before fracturing. Examples: copper, mild steel, gold, aluminium. Opposite of brittle. *(All levels)*
+**Ductile Material** — A material whose ultimate-tensile-strength point D and fracture point E lie far apart on its stress–strain curve, so it undergoes large plastic deformation (and necking) before breaking. The opposite of a brittle material; examples are copper, mild steel, gold and aluminium. *(§5.2)*
 
 ---
 
 ## E
 
-**Elastic Deformation**
-A temporary change in shape or size caused by an applied force; the body **fully regains its original dimensions** when the force is removed. Governed by Hooke's law within the elastic limit. The applied stress is below the **yield strength** of the material. *(All levels — critical)*
+**Elastic Deformation** — A temporary change of shape or size that is fully recovered when the deforming force is removed. It occurs for stresses below the elastic limit (yield point). *(§1.2)*
 
-**Elastic Limit**
-The maximum stress up to which a material can be deformed and **still return to its original shape** when the load is removed. Corresponds approximately to the **yield point (B)** on the stress-strain curve. Beyond the elastic limit, the deformation becomes plastic (permanent). *(All levels — critical)*
+**Elastic Limit** — See **Yield Point**. It is not the same as the proportional limit, which lies at or before it. *(§5.1)*
 
-**Elastic Modulus (Modulus of Elasticity)**
-The proportionality constant in Hooke's law (stress = k × strain), where k is the modulus of elasticity. It measures the **stiffness of a material** — how much stress is required per unit strain. There are three elastic moduli for solids: **Young's modulus (Y)**, **Shear modulus (G)**, and **Bulk modulus (B)**. SI unit: Pa. Dimensional formula: **[ML⁻¹T⁻²]**. *(All levels — critical)*
+**Elastic Modulus (Modulus of Elasticity, k)** — The constant ratio of stress to strain in the linear region, $\text{stress}=k\times\text{strain}$; it is a characteristic of the material, and the three kinds are Young's, shear and bulk modulus. SI unit Pa, dimensional formula **[ML⁻¹T⁻²]**. *(§4.1, §6)*
 
-**Elastic Potential Energy (u)**
-The **energy stored per unit volume** in a stretched or compressed body due to elastic deformation:
+**Elastic Potential Energy Density (u)** — The elastic energy stored per unit volume of a body deformed within its linear region, $u=\tfrac12\sigma\varepsilon=\tfrac12Y\varepsilon^2$. SI unit J m⁻³ (= Pa), dimensional formula **[ML⁻¹T⁻²]**; the handwritten notes write $\mu$ for it. *(§8.2)*
 
-$$u = \frac{1}{2} \sigma \varepsilon = \frac{1}{2} Y \varepsilon^2$$
+**Elasticity** — The tendency of a body to regain its original size and shape when the deforming force is removed. In physics the more elastic material is the one that deforms *less* for a given stress (larger $Y$), not the one that stretches more. *(§1.2, §6.1)*
 
-where σ = stress, ε = strain. This energy is released when the deforming force is removed. Analogous to ½kx² for a spring, but expressed per unit volume. SI unit: J m⁻³ = Pa. *(NEET/JEE — critical)*
-
-**Elasticity**
-The property of a body by virtue of which it **tends to regain its original size and shape** when the applied deforming force is removed. Elastic materials obey Hooke's law (for small deformations). Materials with a large elastic region are called **elastomers** if they don't obey Hooke's law, but still recover fully. *(All levels — critical)*
-
-**Elastomers**
-Substances that can be **stretched to several times their original length** and still return to their original shape when released, but do **not obey Hooke's law** (stress is not proportional to strain). There is no well-defined plastic region for elastomers. Examples: **rubber, biological tissue of the aorta**. Their stress-strain curve is non-linear over a very large elastic region. *(All levels)*
+**Elastomer** — A material such as rubber or aortic tissue that can be stretched to several times its length and still recover, yet does not obey Hooke's law over most of that range and has no well-defined plastic region. Its Young's modulus is small, so it is not "more elastic" than steel in the physics sense. *(§5.3)*
 
 ---
 
 ## F
 
-**Fracture Point (E)**
-The point on the stress-strain curve at which the material **breaks** (fractures). Beyond the ultimate tensile strength, the material may undergo necking (local thinning) and then fracture at a lower applied stress. In brittle materials, D and E are close; in ductile materials, they are far apart. *(All levels)*
+**Factor of Safety** — The margin by which a structural member is designed to exceed the minimum needed to stay below yield — about a factor of ten in the load for a crane rope. *(§9.1)*
+
+**Fracture Point (E)** — The point on the stress–strain curve at which the material breaks; it can lie at a lower stress than the ultimate tensile strength at D. *(§5.1)*
 
 ---
 
 ## H
 
-**Hooke's Law**
-An empirical law stating that **for small deformations, stress is directly proportional to strain**:
+**Hooke's Law** — For small deformations, stress is directly proportional to strain: $\text{stress}=k\times\text{strain}$. It is empirical, valid only in the linear region O → A of the curve, and fails for elastomers. *(§4.1)*
 
-Stress = k × Strain
+**Hydraulic Stress** — The restoring force per unit area when a fluid presses perpendicular to the surface at every point of a body (also called hydrostatic stress); its magnitude equals the hydraulic pressure. It changes the volume, not the shape. *(§2.2)*
 
-where k is the **modulus of elasticity**. Valid only within the **proportional limit** (linear region O to A on the stress-strain curve). Not valid for elastomers (rubber, biological tissue). First stated by Robert Hooke (1676). *(All levels — critical)*
+---
 
-**Hydraulic Stress**
-The **restoring force per unit area** when a body is subjected to uniform compression from all sides (e.g., submerged in fluid under pressure). In magnitude, hydraulic stress equals the applied hydraulic pressure. It acts perpendicular to the surface at every point. SI unit: Pa. Results in **volume strain** (ΔV/V). *(All levels)*
+## I
+
+**I-Section** — A beam cross-section shaped like the letter I, with wide flanges joined by a thin web. It gives large depth to resist bending and flanges to resist buckling, using little material. *(§9.2)*
 
 ---
 
 ## L
 
-**Lateral Strain**
-The strain (fractional change in dimension) **perpendicular to the direction of the applied force**. When a wire is stretched longitudinally, its diameter decreases — this fractional decrease in diameter is the lateral strain (Δd/d). Lateral strain is used in the definition of **Poisson's ratio**. *(NEET/JEE)*
+**Lateral Strain** — The fractional change $\Delta d/d$ of a dimension perpendicular to the applied force, such as the diameter of a stretched wire. It is the numerator of Poisson's ratio. *(§7.1)*
 
-**Longitudinal Strain**
-The fractional change in length (ΔL/L) along the **direction of the applied force** (tensile or compressive stress). Dimensionless. Associated with Young's modulus. *(All levels — critical)*
+**Longitudinal Strain** — The fractional change in length, $\Delta L/L$, along the direction of the applied force; dimensionless. *(§3.1)*
 
-**Longitudinal Stress**
-See **Tensile Stress** or **Compressive Stress** — both involve forces perpendicular to the cross-section causing a change in length. *(All levels)*
+**Longitudinal Stress** — See **Tensile Stress** and **Compressive Stress**; both change the length of the body. *(§2.2)*
 
 ---
 
 ## M
 
-**Modulus of Rigidity**
-Another name for **Shear Modulus (G)**. The ratio of shearing stress to shearing strain. Measures the resistance of a material to shearing (shape change at constant volume). SI unit: Pa. *(All levels)*
+**Modulus of Elasticity** — See **Elastic Modulus**.
+
+**Modulus of Rigidity** — See **Shear Modulus**.
+
+---
+
+## N
+
+**Necking** — The local thinning of a wire beyond the ultimate tensile strength, after which the force needed to keep stretching it falls until fracture (region D → E). It is a tension-test effect and is different from buckling. *(§5.1)*
 
 ---
 
 ## P
 
-**Permanent Set**
-The **residual strain** remaining in a material after the applied stress is removed, when the material has been deformed beyond its elastic limit. The material does not fully return to its original shape. Corresponds to the region beyond point B (yield point) on the stress-strain curve. *(All levels)*
+**Permanent Set** — The strain that remains at zero stress after a material is unloaded from the plastic region (beyond B). On the curve, unloading follows a line parallel to OA. *(§5.1, §5.4)*
 
-**Plastic Deformation**
-A **permanent change** in the shape or size of a body caused by applied stress exceeding the elastic limit. When the load is removed, the body does not regain its original dimensions. Associated with the region B to E on the stress-strain curve. *(All levels — critical)*
+**Plastic Deformation** — A permanent change of shape or size that remains after the load is removed, produced by stress beyond the yield point (region B → E). *(§5.1)*
 
-**Plasticity**
-The property of a material by which it gets **permanently deformed** when subjected to a deforming force. Putty, clay, and mud are close to ideal plastics. *(All levels)*
+**Plasticity** — The property of a material by which it is permanently deformed under a deforming force; putty and mud are close to ideal plastics. The contrast with elasticity. *(§1.2)*
 
-**Poisson's Ratio (ν or σ)**
-The ratio of **lateral strain to longitudinal strain** for a stretched wire:
+**Poisson's Ratio (ν)** — The ratio of lateral strain to longitudinal strain, $(\Delta d/d)/(\Delta L/L)$, for a stretched wire; a pure number depending on the material (steels $0.28$–$0.30$; theoretical range $-1<\nu<0.5$). Some texts write it $\sigma$, which clashes with the symbol for stress. *(§7.2)*
 
-$$\nu = \frac{\Delta d/d}{\Delta L/L}$$
-
-where d = original diameter, Δd = change in diameter, L = original length, ΔL = change in length. Poisson's ratio is a **pure number** (dimensionless). For steels: ν ≈ 0.28–0.30; for aluminium alloys: ν ≈ 0.33. Theoretical range: −1 to 0.5. Named after Siméon Denis Poisson (1781–1840). *(NEET/JEE)*
-
-**Proportional Limit**
-The maximum stress up to which **stress is directly proportional to strain** (Hooke's law is exactly obeyed). Corresponds to point **A** on the stress-strain curve. Beyond this point, the curve deviates from linearity. Note: the material may still be elastic between A and B (proportional limit to elastic limit), but Hooke's law no longer holds. *(NEET/JEE — important distinction)*
+**Proportional Limit** — The largest stress up to which stress is directly proportional to strain (point A). The material may still be elastic between A and B, but Hooke's law no longer holds there. *(§5.1)*
 
 ---
 
 ## R
 
-**Restoring Force**
-When a body is subjected to a deforming force, an **internal restoring force** is developed within the body. This force is equal in magnitude but **opposite in direction** to the applied deforming force. The restoring force per unit area is defined as **stress**. *(All levels — critical)*
+**Restoring Force** — The internal force developed in a deformed body, equal in magnitude and opposite in direction to the applied deforming force; per unit area it is the stress. *(§2.1)*
 
 ---
 
 ## S
 
-**Shear Modulus (G)**
-The ratio of **shearing stress to shearing strain**:
+**Sag (δ)** — The depression of the centre of a beam supported at its ends and loaded at the centre, $\delta=Wl^3/(4bd^3Y)$; SI unit m. *(§9.2)*
 
-$$G = \frac{F/A}{\Delta x/L} = \frac{F}{A\theta}$$
+**Shear Modulus (G)** — The ratio of shearing stress to shearing strain, $G=F/(A\theta)$, also called the modulus of rigidity ($\eta$ in the handwritten notes). Applies to solids only; SI unit Pa, dimensional formula **[ML⁻¹T⁻²]**; $G<Y$, roughly $Y/3$ to $Y/2.4$ for metals. *(§6.2)*
 
-Also called the **modulus of rigidity**. SI unit: Pa. Dimensional formula: **[ML⁻¹T⁻²]**. Applies to **solids only**. For most materials, G ≈ Y/3. Steel: G ≈ 84 GPa; Copper: G ≈ 42 GPa. *(All levels — critical)*
+**Shearing Strain** — The relative sideways displacement $\Delta x$ of two faces divided by their perpendicular separation $L$, $\Delta x/L=\tan\theta\approx\theta$ for small $\theta$ in radians; dimensionless. *(§3.2)*
 
-**Shearing Strain**
-The ratio of the relative lateral displacement (Δx) of one face to the perpendicular height (L): Δx/L = tan θ ≈ θ (for small θ). θ is the angular deformation in radians. Produced by shearing stress. Dimensionless. *(All levels)*
+**Shearing Stress (Tangential Stress)** — The restoring force per unit area developed when two equal and opposite forces act parallel to the cross-section. It changes the shape, not the volume, and exists only in solids because fluids flow. *(§2.2)*
 
-**Shearing Stress (Tangential Stress)**
-The restoring force per unit area developed due to forces applied **parallel** to the cross-sectional surface. Two equal and opposite tangential forces deform the shape without changing volume. Applies only to **solids**. SI unit: Pa. *(All levels)*
+**Stiffness** — A material's resistance to deformation in the linear region, measured by its modulus (for tension, $Y$). A stiffer material is not necessarily a stronger one; strength is read from $\sigma_y$ and $\sigma_u$. *(§6.1)*
 
-**Stress**
-The **restoring force per unit area** developed inside a body when it is subjected to a deforming force.
+**Strain** — The fractional change in a dimension (length, angle or volume) produced by a stress. It is dimensionless; the three kinds are longitudinal, shearing and volume strain. *(§3)*
 
-Stress = F/A
+**Stress (σ)** — The restoring force per unit area developed in a deformed body, $\sigma=F/A$. SI unit Pa (N m⁻²), dimensional formula **[ML⁻¹T⁻²]**; not a vector. *(§2.1)*
 
-SI unit: Pa = N m⁻². Dimensional formula: **[ML⁻¹T⁻²]**. **Not a vector** — it has magnitude and a surface orientation, but not a single direction like force. *(All levels — critical)*
-
-**Stress-Strain Curve**
-A graph of stress (y-axis) vs strain (x-axis) obtained experimentally by gradually increasing the tensile force on a material sample. The curve reveals key material properties: proportional limit (A), yield point (B), ultimate tensile strength (D), and fracture point (E). The shape of the curve characterises whether the material is brittle or ductile, and whether it is an elastomer. *(All levels — critical)*
+**Stress–Strain Curve** — The graph of stress against strain obtained by stretching a sample with a gradually increasing force. Its shape locates A, B, D and E and shows whether the material is brittle, ductile or an elastomer. *(§5)*
 
 ---
 
 ## T
 
-**Tensile Stress**
-A type of longitudinal stress in which two equal and opposite forces act **perpendicular to the cross-section** and are directed **outward** (pulling forces). The body elongates. Restoring force per unit area = F/A. SI unit: Pa. *(All levels — critical)*
+**Tensile Stress** — A longitudinal stress in which two equal and opposite forces act perpendicular to the cross-section and pull outward, elongating the body. Its magnitude is $F/A$. *(§2.2)*
 
 ---
 
 ## U
 
-**Ultimate Tensile Strength (σu)**
-The **maximum stress** a material can withstand before fracture. Corresponds to point **D** on the stress-strain curve. Beyond this point, the material undergoes necking (local area reduction) and fractures. SI unit: Pa. For steel: σu ≈ 400 × 10⁶ Pa. *(All levels — critical)*
+**Ultimate Tensile Strength (σu)** — The maximum stress on the stress–strain curve (point D). The material may fracture at E under a lower stress. *(§5.1)*
 
 ---
 
 ## V
 
-**Volume Strain**
-The ratio of the **change in volume (ΔV) to the original volume (V)**:
-
-Volume strain = ΔV/V
-
-Produced by hydraulic (bulk) stress. Dimensionless. Used in the definition of bulk modulus B. *(All levels)*
+**Volume Strain** — The change in volume divided by the original volume, $\Delta V/V$, produced by hydraulic stress; dimensionless. *(§3.3)*
 
 ---
 
 ## Y
 
-**Yield Point (B) / Yield Strength (σy)**
-The **yield point** is the stress on the stress-strain curve beyond which the material begins to deform plastically — it no longer returns to its original shape when the load is removed. The **yield strength (σy)** is the stress value at the yield point. Also called the **elastic limit**. For steel: σy ≈ 250 × 10⁶ Pa. *(All levels — critical)*
+**Yield Point (B) / Yield Strength (σy)** — The yield point is the point B beyond which a material deforms plastically; it is also called the elastic limit, and the stress there is the yield strength $\sigma_y$. **(Supp.)** The handwritten notes call B the elastic limit and C the yield strength; use the textbook's single point B. *(§5.1, §5.5)*
 
-**Young's Modulus (Y)**
-The ratio of **longitudinal (tensile or compressive) stress to longitudinal strain**:
-
-$$Y = \frac{F/A}{\Delta L/L} = \frac{F \cdot L}{A \cdot \Delta L}$$
-
-SI unit: Pa. Dimensional formula: **[ML⁻¹T⁻²]**. Applies to **solids only**. A material with a larger Young's modulus is **stiffer and more elastic** (in the physics sense — requires more force per unit strain). Steel (200 GPa) is more elastic than rubber (very low Y). *(All levels — critical)*
+**Young's Modulus (Y)** — The ratio of longitudinal (tensile or compressive) stress to longitudinal strain, $Y=FL/(A\,\Delta L)$; solids only, SI unit Pa, dimensional formula **[ML⁻¹T⁻²]**. A larger $Y$ means a stiffer material; steel's is about 200 GPa and rubber's is far smaller. *(§6.1)*
 
 ---
 
-## Key Symbols Summary
+## Key Symbols
 
-| Symbol | Quantity | Unit |
+| Symbol | Quantity | SI Unit |
 |:---|:---|:---|
-| σ | Stress (general) | Pa = N m⁻² |
+| σ | Stress | Pa |
 | σy | Yield strength | Pa |
 | σu | Ultimate tensile strength | Pa |
 | σs | Shearing stress | Pa |
-| ε | Longitudinal strain | Dimensionless |
-| θ | Shearing strain (angular deformation) | rad (dimensionless) |
+| ε | Longitudinal strain | — |
+| θ | Shearing strain (angle) | rad |
+| ΔV/V | Volume strain | — |
 | Y | Young's modulus | Pa |
-| G | Shear modulus (modulus of rigidity) | Pa |
+| G (η) | Shear modulus (modulus of rigidity) | Pa |
 | B | Bulk modulus | Pa |
-| k | Compressibility | Pa⁻¹ |
-| ν | Poisson's ratio | Dimensionless |
-| u | Elastic PE per unit volume | J m⁻³ = Pa |
+| k | Modulus of elasticity (Hooke); also compressibility ($k=1/B$, Pa⁻¹) | Pa |
+| ν | Poisson's ratio | — |
+| u (μ) | Elastic PE per unit volume | J m⁻³ |
 | A | Cross-sectional area | m² |
-| L | Original length | m |
-| ΔL | Change in length | m |
-| V | Original volume | m³ |
-| ΔV | Change in volume | m³ |
+| L, ΔL | Original length, change in length | m |
+| d, Δd | Diameter, change in diameter | m |
+| p | Pressure (hydraulic stress) | Pa |
 | δ | Sag of a beam | m |
+| b, d | Breadth, depth of a beam | m |
 
 ---
 
-## Key Numerical Constants
-
-| Quantity | Value |
-|:---|:---|
-| Young's modulus — Steel | 200 × 10⁹ Pa = 200 GPa |
-| Young's modulus — Copper | 110 × 10⁹ Pa = 110 GPa |
-| Young's modulus — Aluminium | 70 × 10⁹ Pa = 70 GPa |
-| Young's modulus — Glass | 65 × 10⁹ Pa = 65 GPa |
-| Young's modulus — Bone | 9.4 × 10⁹ Pa = 9.4 GPa |
-| Shear modulus — Steel | 84 GPa |
-| Shear modulus — Copper | 42 GPa |
-| Bulk modulus — Steel | 160 GPa |
-| Bulk modulus — Water | 2.2 GPa |
-| Bulk modulus — Air (STP) | 1.0 × 10⁻⁴ GPa |
-| Yield strength — Steel | 250 × 10⁶ Pa |
-| Ultimate tensile strength — Steel | 400 × 10⁶ Pa |
-| Elastic limit of rock (typical) | 30 × 10⁷ Pa |
-| Poisson's ratio — Steel | 0.28–0.30 |
-| Poisson's ratio — Aluminium alloys | ≈ 0.33 |
-
----
-
-## Common Misconceptions Clarified
-
-| Misconception | Correct Understanding |
-|:---|:---|
-| A material that stretches more is more elastic | In physics, a material with LARGER Young's modulus is more elastic — it resists deformation more. Steel is more elastic than rubber. |
-| Stress is a vector quantity | Stress is a scalar with directional context (surface orientation); it cannot be assigned a single direction like force. |
-| Hooke's law is valid for all elastic materials | Hooke's law is valid only in the LINEAR (proportional) region. Even elastic materials (A to B region) may not obey it. Elastomers are elastic but never obey Hooke's law. |
-| Elastic limit and proportional limit are the same | They are different: proportional limit (A) is where linearity ends; elastic limit/yield point (B) is where elastic behaviour ends. B ≥ A. |
-| Bulk modulus applies only to liquids | Bulk modulus applies to solids, liquids, AND gases — all three states of matter. |
-| Shearing stress applies to all materials | Shearing stress applies to solids only. Fluids flow under shear — they cannot sustain shearing stress. |
-| Increasing breadth b is as effective as increasing depth d for beam stiffness | WRONG: sag δ ∝ 1/d³ but δ ∝ 1/b. Increasing depth is much more effective. |
-
----
-
-*Total terms defined: 40+ | End of Glossary — Physics Ch. 8*
+*Terms defined: 39 (plus 4 cross-reference entries) | End of Glossary — Physics Ch. 8*

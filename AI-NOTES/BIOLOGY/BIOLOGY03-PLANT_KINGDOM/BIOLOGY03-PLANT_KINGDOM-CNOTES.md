@@ -163,3 +163,23 @@ graph LR
 | 8  | *Sequoia* — a gymnosperm — is among the **tallest trees** on Earth   | Board |
 | 9  | **Agar** is extracted from red algae *Gelidium* and *Gracilaria*     | Board |
 | 10 | Dicot seeds have**2 cotyledons**; monocot seeds have **1**         | Board |
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Biology Chapter 03 Plant Kingdom))
+    KINGDOM PLANTAE
+      CRYPTOGAMS br seedless
+        ALGAE
+          Chlorophyceae
+          Phaeophyceae
+          Rhodophyceae
+        BRYOPHYTES
+        PTERIDOPHYTES
+      PHANEROGAMS br seed-bearing
+        GYMNOSPERMS br naked seeds
+        ANGIOSPERMS br covered seeds
+          Dicotyledonae
+          Monocotyledonae
+```

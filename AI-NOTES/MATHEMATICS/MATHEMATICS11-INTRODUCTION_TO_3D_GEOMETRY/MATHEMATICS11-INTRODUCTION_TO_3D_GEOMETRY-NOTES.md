@@ -149,15 +149,20 @@ PA = y_2-y_1,\qquad AN = x_2-x_1,\qquad NQ = z_2-z_1.
 \end{tikzpicture}
 ```
 
-Step 1 — triangle \(ANQ\) has a right angle at \(N\):
+**Step 1 — triangle \(ANQ\) has a right angle at \(N\):**
+
 \[
 AQ^2 = AN^2 + NQ^2.
 \]
-Step 2 — triangle \(PAQ\) has a right angle at \(A\):
+
+**Step 2 — triangle \(PAQ\) has a right angle at \(A\):**
+
 \[
 PQ^2 = PA^2 + AQ^2 = PA^2 + AN^2 + NQ^2.
 \]
-Step 3 — substitute:
+
+**Step 3 — substitute:**
+
 \[
 \boxed{PQ=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}}
 \]
@@ -276,6 +281,23 @@ Example 9 above already needs the centroid formula, and the chapter's own Miscel
 | Centroid (New)       | \(\left(\frac{x_1+x_2+x_3}{3},\frac{y_1+y_2+y_3}{3},\frac{z_1+z_2+z_3}{3}\right)\) |
 | Collinear\(P,Q,R\)   | one of\(PQ+QR=PR\), \(QR+RP=QP\), \(RP+PQ=RQ\) holds                               |
 | Right angle test     | largest side\(^2\) = sum of other two sides\(^2\)                                  |
+
+## Interactive 3D Coordinates
+
+Move each coordinate slider to see the point \(P(a,b,c)\), its position
+vector, and its projections onto the coordinate axes.
+
+```desmos3d
+%view x=(-5,5) y=(-5,5) z=(-5,5)
+@xCoordinate [slider=(-4,4,0.1)]: a=2
+@yCoordinate [slider=(-4,4,0.1)]: b=3
+@zCoordinate [slider=(-4,4,0.1)]: c=1
+%point3 P at=(a,b,c) [color=blue, pointSize=10, showLabel]
+%vector position [color=purple, showLabel] dir=(a,b,c)
+%point3 X at=(a,0,0) [color=red, pointSize=8, showLabel]
+%point3 Y at=(0,b,0) [color=green, pointSize=8, showLabel]
+%point3 Z at=(0,0,c) [color=orange, pointSize=8, showLabel]
+```
 
 ## Points to Ponder
 

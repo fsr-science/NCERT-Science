@@ -533,3 +533,27 @@ flowchart TD
 ---
 
 *End of CNOTES — Ch. 4: Chemical Bonding and Molecular Structure.*
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Chemical bonding and molecular structure))
+    Bond formation
+      Ionic bonding follows electron transfer
+      Covalent bonding shares electron pairs
+      Lewis structures show valence electrons
+    Molecular shape
+      VSEPR relates electron pair repulsion to geometry
+      Lone pairs alter bond angles
+      Hybridisation describes directional bonding orbitals
+    Bond properties
+      Length strength and polarity describe bonds
+      Dipole moment reflects charge separation
+      Resonance represents delocalised bonding
+    Molecular orbital theory
+      Atomic orbitals combine into molecular orbitals
+      Bond order and magnetism follow orbital occupancy
+    Intermolecular attraction
+      Hydrogen bonding affects physical properties
+```

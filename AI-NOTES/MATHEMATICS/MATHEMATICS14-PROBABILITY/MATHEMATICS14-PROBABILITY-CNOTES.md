@@ -104,3 +104,35 @@ flowchart TD
 ```
 
 > **Tip:** "At least 3 Kings," "atleast one tail," "not an ace" are all textbook signals to try the complement route first — it's very often the shorter calculation (compare NCERT Example 5's "not an ace" and Example 10's "at least 3 Kings" in `NOTES-Probability.md`).
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Mathematics Chapter 14 Probability))
+    Random Experiment Sample Space S
+      Event
+        Types of Events
+          Impossible Event phi
+          Sure Event S
+          Simple Elementary Event -- one sample point
+          Compound Event -- more than one sample point
+        Algebra of Events
+          Complement A
+          A or B A union B
+          A and B A intersect B
+          A but not B A - B
+          Mutually Exclusive A intersect B
+            Mutually Exclusive AND Exhaustive
+            Addition Theorem P A or B
+              Three-event version adds pairwise, subtracts, adds back triple overlap
+            Complement Rule P not A
+          Exhaustive union of all Ei
+        Axiomatic Approach to Probability
+          Axiom i P E
+          Axiom ii P S
+          Axiom iii P E union F
+            Consequence P phi
+          Equally Likely Outcomes assumption
+            P E
+```

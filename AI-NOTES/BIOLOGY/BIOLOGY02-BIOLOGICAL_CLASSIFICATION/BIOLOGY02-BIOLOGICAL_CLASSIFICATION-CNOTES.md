@@ -186,3 +186,27 @@ graph TD
 | 11 | Virus = nucleic acid (RNA/DNA) + capsid (capsomeres) | Both |
 | 12 | Viroid (**T.O. Diener, 1971**) = free RNA, **no protein coat** | NEET |
 | 13 | Methanogens produce **biogas** from ruminant dung | Board |
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Biology Chapter 02 Biological Classification))
+    ALL LIVING ORGANISMS
+      KINGDOM MONERA br Prokaryotic
+        Archaebacteria
+        Eubacteria
+      KINGDOM PROTISTA br Unicellular Eukaryotic
+        Chrysophytes
+        Dinoflagellates
+        Euglenoids
+        Slime Moulds
+        Protozoans
+      KINGDOM FUNGI br Chitin Wall, Heterotrophic
+        Phycomycetes
+        Ascomycetes
+        Basidiomycetes
+        Deuteromycetes
+      KINGDOM PLANTAE br Cellulose Wall, Autotrophic
+      KINGDOM ANIMALIA br No Wall, Heterotrophic
+```

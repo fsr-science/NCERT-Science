@@ -575,3 +575,17 @@ flowchart TD
 ---
 
 *End of Condensed Notes — Physics Ch. 5*
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Physics Chapter 05 Work Energy and Power))
+    v 2 - u 2
+      multiply by m 2, use F
+        1 2 mv 2 - 1 2 mu 2
+          Kf - Ki
+            Kf greater than Ki net work positive
+            Kf less than Ki net work negative
+            Kf
+```

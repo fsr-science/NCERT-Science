@@ -76,3 +76,21 @@ flowchart TD
 ```
 
 **Reading guide:** identify which of the three condition shapes you're looking at *before* touching algebra — it tells you in advance whether the quadratic terms should vanish (plane) or survive (sphere), which catches an arithmetic slip immediately if the expected cancellation doesn't happen.
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Mathematics Chapter 11 Introduction to 3D Geometry))
+    Prerequisite 2D Cartesian coordinates and the Pythagorean theorem
+      3 mutually perpendicular planes meet at O -- x, y, z axes Section 11.2
+        Coordinate planes XY, YZ, ZX divide space into 8 octants Table 11.1
+        Coordinates x,y,z of P
+          Distance formula PQ from two applications of Pythagoras Section 11.4
+            Special case distance from the origin
+            Application collinearity test, PQ QR
+            Application classify a triangle -- isosceles right-angled scalene
+            Application locus equation of a set of points equidistant from given points
+          New Midpoint and Centroid formulas -- componentwise average Section 11.5
+            Application 4th vertex of a parallelogram, medians, centroid problems
+```

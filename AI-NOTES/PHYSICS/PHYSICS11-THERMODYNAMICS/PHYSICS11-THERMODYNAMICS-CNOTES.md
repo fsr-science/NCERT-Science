@@ -1,5 +1,33 @@
 # Physics | Chapter 11 | Thermodynamics | CNOTES
 
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Thermodynamics))
+    State and energy
+      Internal energy is a state function
+      Heat and work describe energy transfer
+      First law relates heat work and internal energy
+    Ideal-gas processes
+      Isothermal has constant temperature
+      Adiabatic has no heat transfer
+      Isochoric has no volume work
+      Isobaric keeps pressure constant
+      Cyclic process returns to initial state
+    Heat capacities
+      Molar heat capacity depends on process
+      Mayer relation links Cp and Cv
+      Adiabatic index is Cp divided by Cv
+    Heat engines
+      Engine converts some heat to work
+      Carnot efficiency sets the upper limit
+      Refrigerator uses work to move heat from cold to hot
+    Second law
+      Heat cannot spontaneously flow cold to hot
+      No cyclic engine converts all heat to work
+```
+
 ### Thermodynamics
 
 ---

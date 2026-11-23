@@ -106,3 +106,21 @@ flowchart TD
     I -->|No| K["Done"]
     J --> K
 ```
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Mathematics Chapter 03 Trigonometric Functions))
+    Prerequisite acute-angle trig ratios right-triangle definitions
+      Angle as rotation degree measure radian measure, l
+        Radian real-number correspondence
+          Unit-circle definition cos x
+            Pythagorean identity links sine and cosine
+              Four more functions tan cot sec cosec
+                Reciprocal identities connect the functions
+                  Sum Difference formulas cos x y , sin x y , tan x y , cot x y
+            Sign ASTC Domain Range per quadrant
+            Periodicity uses full turns for sine and cosine and half turns for tangent and cotangent
+            Even Odd cos −x
+```

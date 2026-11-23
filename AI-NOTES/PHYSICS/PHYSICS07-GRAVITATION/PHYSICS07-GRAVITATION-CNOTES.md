@@ -324,7 +324,7 @@ flowchart TD
 - Work to move $m$ from $r_1$ to $r_2$: $W_{12} = -GM_Em(1/r_2 - 1/r_1)$.
 - With $V=0$ at $r\to\infty$: $V(r) = -GM_Em/r$ (valid for $r>R_E$).
 - $V$ is **always negative** for finite $r$ — negative PE signals a **bound state**.
-- For a system of particles: $V = $ sum over all **pairs**, $-Gm_im_j/r_{ij}$ (superposition, §3.3).
+- For a system of particles, \(V=-G\sum_{i<j}\frac{m_i m_j}{r_{ij}}\): include one interaction term for each distinct pair (superposition, §3.3).
 - Trap: $mgh$ is only an **approximation** ($h\ll R_E$); $V=-GMm/r$ is the exact, general expression.
 
 ### 6.3 Gravitational Potential (Field Concept)
@@ -557,3 +557,26 @@ flowchart TD
 ---
 
 *End of Condensed Notes — Physics Ch. 7 | Mirrors NOTES §1–§10 exactly*
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Gravitation))
+    Planetary motion
+      Kepler laws describe orbital motion
+      Equal areas connect to conserved angular momentum
+    Universal gravitation
+      Every mass attracts every other mass
+      Superposition combines gravitational effects
+    Gravitational field
+      Acceleration due to gravity varies with location
+      Height and depth reduce surface value
+    Potential and energy
+      Gravitational potential is energy per unit mass
+      Potential energy depends on the chosen reference
+    Satellites
+      Orbital speed supports circular orbit
+      Period depends on orbital radius
+      Escape speed is the minimum speed to leave a field
+```

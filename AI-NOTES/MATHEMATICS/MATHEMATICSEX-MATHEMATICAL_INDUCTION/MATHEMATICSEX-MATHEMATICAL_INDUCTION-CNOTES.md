@@ -63,3 +63,23 @@ flowchart TD
 ```
 
 **Reading the map:** the *type* of statement (left branch) decides which algebraic move opens the inductive step; the base-case check (right side) is independent of that choice and must always be done by direct substitution, never assumed.
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Mathematics Chapter EX Mathematical Induction))
+    Natural numbers ℕ
+      Statement defined for natural numbers
+        Base Step verify the initial statement at the starting integer
+          Principle of Mathematical Induction
+            Conclusion the statement holds for every integer from the start
+              Summation formulas br Ex 1, 2
+              Divisibility results br Ex 4, 9
+              Inequalities br Ex 5
+              Recursively defined sequences br Ex 6
+              Trigonometric series br Ex 8 Exercises 20-22
+              Case-split parity-dependent sums br Ex 10
+        Inductive Hypothesis assume the statement for an arbitrary fixed integer
+          Inductive Step use that assumption to prove the next case
+```

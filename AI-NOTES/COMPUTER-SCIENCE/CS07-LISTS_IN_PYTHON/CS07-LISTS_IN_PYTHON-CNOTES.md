@@ -1382,3 +1382,19 @@ flowchart TD
 | 9.8 | Insertion Sort's special property | adaptive — less work on nearly-sorted input |
 | 9.8 | Sorting descending instead | flip every `>` to `<` |
 | 9.9 | `linearSearch` return when not found | `None` |
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Computer Science Chapter 07 Lists in Python))
+    Prerequisite Strings Sequences
+      List basics creation, indexing, mutability
+        List operations concatenation, repetition, membership, slicing, comparison
+          Traversing a list for while
+            Built-in methods add, remove, search, order
+              Nested lists
+                Lists as function arguments
+                  Sorting Bubble Sort, Insertion Sort
+              Copying lists alias vs. independent copy
+```

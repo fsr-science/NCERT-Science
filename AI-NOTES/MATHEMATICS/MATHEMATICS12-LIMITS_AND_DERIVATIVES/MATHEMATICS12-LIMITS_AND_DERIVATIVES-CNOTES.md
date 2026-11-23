@@ -80,3 +80,22 @@ flowchart TD
 ```
 
 **Reading the flowchart:** the last step — *state the domain* — is easy to drop but often carries marks, especially after a quotient rule, since the new denominator \(v^2\) can exclude points that weren't excluded from \(f\)'s own domain (or, as with \(\tan x\to\sec^2x\), can carry the *same* exclusion forward). Treat "find \(f'(x)\)" as incomplete until you've said where \(f'(x)\) is valid.
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Mathematics Chapter 12 Limits and Derivatives))
+    Physical motivation br average velocity over shrinking intervals
+      Left-hand and br right-hand limits
+        Limit at a point br LHL
+          Algebra of limits br sum, difference, product, quotient
+            Limits of polynomial and br rational functions
+              Derivative at a point br first-principle definition
+                Geometric picture br secant to tangent, slope
+                Algebra of derivatives br sum, product Leibniz, quotient
+                  Power rule d dx x n
+                  Derivatives of sin x, tan x, br cot x, sin 2 x
+            Sandwich theorem
+              Standard trig limits br sin x x to 1, 1-cos x x to 0
+```

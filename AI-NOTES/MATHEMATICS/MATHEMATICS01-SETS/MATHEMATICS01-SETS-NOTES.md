@@ -565,6 +565,20 @@ $$A \cup B = \{2,3,4,5\} \implies (A \cup B)' = U - \{2,3,4,5\} = \{1,6\}$$
 
 ---
 
+## Interactive Number Line
+
+Move the endpoints to see how an interval is represented. The left endpoint is
+open and the right endpoint is closed, so the graph represents \((a,b]\).
+
+```desmos
+%view x=(-6,6) y=(-1,1)
+@left [slider=(-5,-1,0.1)]: a=-2
+@right [slider=(1,5,0.1)]: b=3
+@interval [color=blue, lineWidth=5]: y=0\left\{a<x\le b\right\}
+@openEnd [color=red, pointStyle=open, label="a excluded", showLabel]: (a,0)
+@closedEnd [color=green, pointStyle=point, label="b included", showLabel]: (b,0)
+```
+
 ## POINTS TO PONDER ⭐⭐
 
 > [!warning] $\{0\}$, $\phi$, and $\{\phi\}$ are three different objects

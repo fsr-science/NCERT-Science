@@ -70,9 +70,9 @@ $$
 
 Let $P(n)$ be the statement above.
 
-*Step 1 — Base case.* For $n=1$: $(a+b)^1 = {}^{1}C_0 a^1 + {}^{1}C_1 b^1 = a+b$. So $P(1)$ holds.
+**Step 1 — Base case.** For $n=1$: $(a+b)^1 = {}^{1}C_0 a^1 + {}^{1}C_1 b^1 = a+b$. So $P(1)$ holds.
 
-*Step 2 — Inductive step.* Assume $P(k)$ holds for some positive integer $k$:
+**Step 2 — Inductive step.** Assume $P(k)$ holds for some positive integer $k$:
 
 $$
 (a+b)^k = {}^{k}C_0 a^k + {}^{k}C_1 a^{k-1}b + \dots + {}^{k}C_k b^k \qquad \text{...(1)}
@@ -264,6 +264,18 @@ $$
 **Check** $k$ is a sum of products of non-negative binomial coefficients and non-negative powers of 5, hence a natural number — verify for $n=2$: $6^2-10=26=25(1)+1$ ✓, and $k={}^2C_2=1$ matches.
 
 ---
+
+## Interactive Binomial Expansion
+
+The slider changes the positive integer exponent. Both expressions graph the
+same function, once as a power and once as its binomial expansion.
+
+```desmos
+%view x=(-2,2) y=(-10,30)
+@degree [slider=(1,6,1)]: n=3
+@powerForm [color=blue, label="(1+x)^n", showLabel]: y=(1+x)^n
+@expandedForm [color=orange, label="sum of binomial terms", showLabel]: y=\sum_{k=0}^{n}\binom{n}{k}x^k
+```
 
 ## Points to Ponder ⭐⭐
 

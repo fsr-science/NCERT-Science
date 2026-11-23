@@ -467,3 +467,33 @@ flowchart TD
 
 *End of Rapid Revision + Mind Maps — Ch. 1: Sets*
 *Exam Tags: Board · JEE Mains · JEE Advanced*
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Mathematics Chapter 01 Sets))
+    SETS
+      DEFINITION
+        Well-defined collection of objects
+        Elements denoted by lowercase letters
+      REPRESENTATION
+        Roster Form list all elements
+        Set-Builder Form describe property
+      TYPES OF SETS
+        Empty Set phi
+        Finite Set countable elements
+        Infinite Set uncountable
+        Equal Sets same elements
+        Singleton Set one element
+      RELATIONS BETWEEN SETS
+        Subset A subset B
+        Proper Subset A strictly inside B
+        Power Set all subsets of A
+        Universal Set reference set U
+      OPERATIONS ON SETS
+        Union A union B
+        Intersection A intersect B
+        Difference A minus B
+        Complement A prime
+```

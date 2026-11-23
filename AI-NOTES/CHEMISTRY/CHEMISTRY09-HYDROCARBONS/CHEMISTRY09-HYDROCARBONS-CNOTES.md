@@ -1,5 +1,32 @@
 # Chemistry | Chapter 09 | Hydrocarbons | CNOTES
 
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Hydrocarbons))
+    Aliphatic compounds
+      Alkanes are saturated
+        Substitution reactions
+        Conformations rotate about single bonds
+      Alkenes contain carbon carbon double bonds
+        Addition reactions
+        Markovnikov orientation in polar addition
+      Alkynes contain carbon carbon triple bonds
+        Addition reactions
+        Terminal alkynes show acidic character
+    Aromatic hydrocarbons
+      Benzene has delocalised pi electrons
+      Hückel rule identifies aromaticity
+      Substituents direct further substitution
+    Preparation
+      Routes depend on starting functional group
+      Reagents select addition substitution or elimination
+    Identification
+      Unsaturation tests distinguish multiple bonds
+      Product and conditions identify reaction pathway
+```
+
 ### Hydrocarbons
 
 ---

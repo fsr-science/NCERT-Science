@@ -215,3 +215,17 @@ graph TD
 | 8 | Chondrichthyes lacks an **air bladder** and an **operculum**; Osteichthyes has both | NEET |
 | 9 | Crocodiles are the **only reptiles** with a **four-chambered heart** | NEET |
 | 10 | **Platypus** (*Ornithorhynchus*) is an egg-laying mammal — an exception to mammalian viviparity | NEET |
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Biology Chapter 04 Animal Kingdom))
+    Animalia
+      Porifera br Cellular level, Asymmetrical
+      Coelenterata br Tissue level, Radial, Diploblastic
+      Ctenophora br Radial, Diploblastic, Comb plates
+      Platyhelminthes br Bilateral, Acoelomate
+      Aschelminthes br Bilateral, Pseudocoelomate
+      Annelida br Coelomate, Metameric segmentation
+```

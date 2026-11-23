@@ -1,5 +1,31 @@
 # Chemistry | Chapter 06 | Equilibrium | CNOTES
 
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Equilibrium))
+    Dynamic balance
+      Forward and reverse rates become equal
+      Concentrations remain constant not necessarily equal
+    Chemical equilibrium
+      Reaction quotient compared with equilibrium constant
+      Le Chatelier predicts response to disturbance
+      Temperature changes the equilibrium constant
+      Pressure changes gas equilibria when gas moles differ
+    Ionic equilibrium
+      Acids and bases donate or accept protons
+      pH describes hydrogen ion concentration
+      Buffers resist pH change
+      Common ion effect lowers solubility
+    Solubility equilibrium
+      Solubility product describes sparingly soluble salts
+      Compare ionic product with solubility product
+    Connections
+      Equilibrium constant gives reaction extent
+      Mass action underlies chemical and ionic cases
+```
+
 ### Equilibrium
 
 ---

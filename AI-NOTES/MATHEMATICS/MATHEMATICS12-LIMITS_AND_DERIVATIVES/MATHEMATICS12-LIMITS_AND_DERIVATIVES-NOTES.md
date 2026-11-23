@@ -400,6 +400,19 @@ valid wherever \(\cos x\neq0\), i.e. \(x\neq(2n+1)\pi/2\).
 
 ---
 
+## Interactive Tangent and Derivative
+
+Move \(a\) to slide the contact point along \(y=x^2\). The tangent line has
+slope \(2a=f'(a)\), making the derivative visible as the instantaneous slope.
+
+```desmos
+%view x=(-4,4) y=(-2,12)
+@contact [slider=(-3,3,0.05)]: a=1
+@curve [color=blue, label="f(x) = x^2", showLabel]: y=x^2
+@tangent [color=orange, label="slope f'(a) = 2a", showLabel]: y=2a(x-a)+a^2
+@point [color=red, pointSize=8, label="(a,f(a))", showLabel]: (a,a^2)
+```
+
 ## Points to Ponder ⭐
 
 - **Limit ≠ function value.** \(\lim_{x\to a}f(x)\) can exist and differ from \(f(a)\), can exist where \(f(a)\) is undefined, or can fail to exist even where \(f(a)\) is perfectly defined. Always be clear which of the two a question is actually asking for.

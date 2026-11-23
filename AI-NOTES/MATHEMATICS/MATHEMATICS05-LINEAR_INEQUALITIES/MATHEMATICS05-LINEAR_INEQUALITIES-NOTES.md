@@ -450,6 +450,18 @@ Rewriting with the smaller value first: \(x\in\left[-\dfrac{11}{3},\,5\right]\).
 
 *(A full glossary of terms and formulas is kept separately in the companion GLOSSARY note.)*
 
+### Interactive System of Inequalities
+
+The shaded overlap is the set of points satisfying both inequalities. Move
+the intercept slider to watch the feasible region change.
+
+```desmos
+%view x=(-2,8) y=(-2,10)
+@intercept [slider=(2,8,0.1)]: c=6
+@lowerBound [color=blue]: y\ge x+1
+@upperBound [color=orange]: y\le -x+c
+```
+
 ## Points to Ponder ⭐⭐⭐
 
 > **Watch out:** Multiplying or dividing **both sides** by a negative number reverses the inequality — but this only applies when the multiplier's sign is *known*. Every example in this chapter multiplies/divides by a fixed numeric constant, never by an expression whose sign could depend on \(x\); that subtlety belongs to a later chapter (rational/absolute-value inequalities), not this one.

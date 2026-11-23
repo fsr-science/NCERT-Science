@@ -366,6 +366,20 @@ The \(+\) sign forces \(k=0\); the \(-\) sign forces \(h=\frac53\). Both \(y=0\)
 
 ---
 
+## Interactive Perpendicular Lines
+
+Move \(m\) and \(c\). The two lines meet at \((0,c)\), and their slopes
+\(m\) and \(-1/m\) have product \(-1\), so they remain perpendicular.
+
+```desmos
+%view x=(-5,5) y=(-10,10)
+@slope [slider=(0.5,3,0.05)]: m=1.5
+@intercept [slider=(-3,3,0.1)]: c=0.5
+@line [color=blue, label="slope m", showLabel]: y=mx+c
+@perpendicular [color=orange, label="slope -1/m", showLabel]: y=-x/m+c
+@intersection [color=red, pointSize=8, label="(0,c)", showLabel]: (0,c)
+```
+
 ## Points to Ponder
 
 > **Watch out — slope is not always \(\tan\theta\) plugged in blindly.** For a vertical line, "slope" simply doesn't exist. Any formula built from \(m\) (point-slope, angle-between-lines, parallel/perpendicular tests) needs a vertical-line special case handled separately (§9.3.1, and the vertical-line note in §9.2.3) — never write \(m=\infty\).

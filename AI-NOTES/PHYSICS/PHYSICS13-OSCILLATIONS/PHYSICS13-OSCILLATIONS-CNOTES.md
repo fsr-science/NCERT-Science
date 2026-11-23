@@ -1,5 +1,30 @@
 # Physics | Chapter 13 | Oscillations | CNOTES
 
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Oscillations))
+    Periodic motion
+      Repeats after a fixed time
+      Amplitude period frequency and phase describe motion
+    Simple harmonic motion
+      Restoring acceleration is proportional to displacement
+      Acceleration points toward equilibrium
+      Displacement velocity and acceleration have phase relations
+    Energy
+      Kinetic and potential energy exchange
+      Total mechanical energy remains constant in ideal SHM
+    Examples
+      Mass spring oscillator
+      Simple pendulum approximates SHM at small angle
+      Uniform circular motion projects to SHM
+    Applications
+      Use period and frequency to compare oscillators
+      Damping reduces amplitude
+      Resonance occurs when driving frequency approaches natural frequency
+```
+
 ### Oscillations
 
 ---

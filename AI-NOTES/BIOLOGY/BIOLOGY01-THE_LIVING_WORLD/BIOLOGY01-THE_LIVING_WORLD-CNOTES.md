@@ -145,3 +145,17 @@ graph TD
 | 8  | Chordata's defining features:**notochord** + **dorsal hollow neural system** | NEET  |
 | 9  | *Panthera*: lion (*leo*), tiger (*tigris*), leopard (*pardus*)                   | Both  |
 | 10 | Mango and Wheat share Division**Angiospermae** but differ at **Class** level | NEET  |
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Biology Chapter 01 The Living World))
+    KINGDOM
+      PHYLUM DIVISION
+        CLASS
+          ORDER
+            FAMILY
+              GENUS
+                SPECIES
+```

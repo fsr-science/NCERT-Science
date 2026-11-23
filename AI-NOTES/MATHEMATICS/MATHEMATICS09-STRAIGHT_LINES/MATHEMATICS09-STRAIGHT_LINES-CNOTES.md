@@ -68,3 +68,25 @@ flowchart LR
     T4["Found a 'reflection' point?"] --> T4a["Verify BOTH: perpendicularity AND midpoint-on-line"]
     T5["Claimed three lines are concurrent?"] --> T5a["Verify by substitution into the third line, not by inspection"]
 ```
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Mathematics Chapter 09 Straight Lines))
+    9.1 Recall distance, section formula, area of a triangle
+      9.2 Slope m
+        9.2.1 Slope from two points
+          9.2.2 Parallel m1
+            Applications concurrency, reflection, locus, area cut off by lines
+          9.2.3 Angle between two lines
+        9.3 Equation of a line
+          9.3.1 Horizontal vertical lines
+          9.3.2 Point-slope form
+          9.3.3 Two-point form
+          9.3.4 Slope-intercept form
+          9.3.5 Intercept form
+            General linear equation Ax By C
+              9.4 Distance of a point from a line
+                9.4.1 Distance between parallel lines
+```

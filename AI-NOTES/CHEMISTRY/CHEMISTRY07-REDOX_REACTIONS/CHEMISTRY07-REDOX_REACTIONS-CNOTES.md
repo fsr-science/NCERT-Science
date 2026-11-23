@@ -325,3 +325,16 @@ flowchart TD
 ---
 
 *End of Condensed Notes — Ch. 7: Redox Reactions.*
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Chemistry Chapter 07 Redox Reactions))
+    Oxidation original O2
+      Broadened O2 OR electronegative element
+        Broadened further OR -H OR -electropositive element
+    Reduction original -O2
+      Broadened -O2 OR -electronegative element
+        Broadened further OR H OR electropositive element
+```

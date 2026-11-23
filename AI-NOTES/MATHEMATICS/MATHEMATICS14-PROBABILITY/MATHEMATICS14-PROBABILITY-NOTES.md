@@ -325,6 +325,20 @@ $$
 
 ---
 
+## Interactive Addition Theorem
+
+Adjust \(P(A)\) and \(P(B)\). The graph shows the valid range of
+\(P(A\cap B)\) and the corresponding value \(P(A\cup B)\), illustrating
+\(P(A\cup B)=P(A)+P(B)-P(A\cap B)\).
+
+```desmos
+%view x=(-0.1,0.7) y=(0,1.1)
+@eventA [slider=(0,1,0.01)]: p=0.6
+@eventB [slider=(0,1,0.01)]: q=0.5
+@union [color=blue, lineWidth=2, label="P(A union B)", showLabel]: y=p+q-x\left\{\max(0,p+q-1)\le x\le\min(p,q)\right\}
+@current [color=orange, pointSize=9, label="valid probability pair", showLabel]: \left(\frac{\max(0,p+q-1)+\min(p,q)}{2},p+q-\frac{\max(0,p+q-1)+\min(p,q)}{2}\right)
+```
+
 ## Points to Ponder
 
 > **Watch out — double counting.** The single most common error in this chapter: writing \(P(A \cup B) = P(A)+P(B)\) *unconditionally*. This is only correct when \(A\) and \(B\) are mutually exclusive. Always check \(A \cap B\) first, and subtract it if it's non-empty.

@@ -298,6 +298,20 @@ For example, \(2+4i,\ -2+3i,\ 0+1i,\ 2+0i,\ -5-2i,\ 1-2i\) correspond to points 
 
 ---
 
+## Interactive Argand Plane
+
+Adjust the real and imaginary parts. The two points are \(z=a+bi\) and its
+conjugate \(\bar z=a-bi\); the circle shows all points at modulus \(\lvert z\rvert\).
+
+```desmos
+%view x=(-6,6) y=(-6,6)
+@real [slider=(-4,4,0.1)]: a=2
+@imaginary [slider=(-4,4,0.1)]: b=3
+@modulus [color=purple]: x^2+y^2=a^2+b^2
+@z [color=blue, pointSize=9, label="z = (a,b)", showLabel]: (a,b)
+@conjugate [color=orange, pointSize=9, label="conjugate = (a,-b)", showLabel]: (a,-b)
+```
+
 ## Points to Ponder ⭐⭐⭐
 
 > [!warning] ⚠️ The traps that actually cost marks

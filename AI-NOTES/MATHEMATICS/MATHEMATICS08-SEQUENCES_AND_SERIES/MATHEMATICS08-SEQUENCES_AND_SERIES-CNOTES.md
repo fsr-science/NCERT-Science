@@ -73,3 +73,29 @@ flowchart TD
 ```
 
 **Reading guide:** all three strategies end in a **check** step deliberately — the chapter's most common errors (dropped roots, wrong exponent denominators, treating \(r=1\) as a special case of the main formula) are exactly the kind that a five-second substitution back into the given data catches immediately.
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Sequences and series))
+    Sequence
+      Ordered terms follow a rule
+      Rule may be explicit recursive or verbal
+    Arithmetic progression
+      Consecutive terms have a constant difference
+      General term links position to value
+      Partial sum adds an initial block of terms
+      Arithmetic mean inserts a middle term
+    Geometric progression
+      Consecutive terms have a constant ratio
+      General term scales multiplicatively
+      Sum depends on the common ratio
+      Geometric mean inserts proportional terms
+    Series
+      Finite series sums sequence terms
+      Infinite geometric series converges only under a ratio condition
+    Relationships
+      Arithmetic and geometric means compare positive values
+      Choose the progression from the pattern of differences or ratios
+```

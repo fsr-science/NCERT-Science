@@ -73,6 +73,14 @@ flowchart TD
 
 *A worked instance of Strategy 3 lives in the main notes: \(f(x)=\dfrac{x^2}{1+x^2}\) rewritten as \(1-\dfrac{1}{1+x^2}\), giving range \([0,1)\) — closed at \(0\) because it's attained at \(x=0\), open at \(1\) because it's only approached as \(x\to\pm\infty\).*
 
+## Section-by-section key facts
+
+- **2.1 Cartesian products:** Ordered pairs preserve order, and \(A\times B\) contains every pair with first element from \(A\) and second from \(B\). For finite sets, \(n(A\times B)=n(A)n(B)\).
+- **2.2 Relations:** A relation from \(A\) to \(B\) is any subset of \(A\times B\). Its domain consists of first components that occur, its range of second components that occur, and its codomain is the target set \(B\).
+- **2.3 Functions:** A function \(f:A\to B\) assigns every element of \(A\) exactly one image in \(B\); missing or multiple images violate the definition.
+- **2.4 Real functions:** Domain and range restrictions determine the graph. Standard examples include identity, constant, polynomial, rational, modulus, signum and greatest-integer functions.
+- **2.5 Algebra of real functions:** Sum, difference and product are defined pointwise on the common domain; the quotient also excludes points where the denominator function is zero.
+
 ### Strategy 4 — "Combine two real functions \(f\) and \(g\)"
 
 ```mermaid
@@ -87,3 +95,20 @@ flowchart TD
 ```
 
 *Reading the map:* the one place students lose marks here isn't the algebra — it's forgetting the quotient's extra restriction. Both worked examples in the main notes (NCERT Examples 16 and 17) show a value where \(f\) and \(g\) are individually fine but \(f/g\) is excluded solely because \(g(x)=0\) there.
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Mathematics Chapter 02 Relations and Functions))
+    Sets union, intersection, subsets
+      Ordered pair p, q order matters
+        Cartesian product A B all pairs p,q with p A, q B
+          Relation R any subset of A B
+            Domain Range Codomain first elements second elements whole target set
+              FN
+                Just a relation not a function
+                Function f A B
+                  Real valued Real function range and domain ℝ
+            Properties on a set a,a R a,b R b,a R transitive
+```

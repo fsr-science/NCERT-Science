@@ -394,6 +394,18 @@ Equal consecutive ratios is exactly the definition of a G.P. \(\blacksquare\)
 
 ---
 
+## Interactive Geometric Progression
+
+Change the first term and common ratio. The points show the discrete terms
+\(a, ar, ar^2,\ldots\); a negative ratio makes the signs alternate.
+
+```desmos
+%view x=(0,13) y=(-20,25)
+@firstTerm [slider=(0.5,4,0.1)]: a=2
+@ratio [slider=(-1.5,1.5,0.1)]: r=0.8
+@terms [color=blue, pointStyle=point]: \operatorname{sequence}\left(\left(n,ar^{n-1}\right),n,1,12\right)
+```
+
 ## Points to Ponder
 
 > [!warning] ⚠️ Series vs. sum of a series

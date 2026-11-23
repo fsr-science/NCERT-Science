@@ -101,3 +101,21 @@ flowchart TD
 ```
 
 **Interpretation:** most marks lost on word problems come from mapping "at least"/"at most" to the strict symbol instead of the slack one (see NCERT Example 7, where a mark of exactly 70 must still count as satisfying "at least 60 average") — this flow exists specifically to make that mapping explicit before setting up the algebra.
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Mathematics Chapter 05 Linear Inequalities))
+    Real number line and linear equations
+      Inequality expressions related by lt, gt, le, ge
+        Classify numerical vs literal vs double inequality
+        Order axioms of the real numbers
+          Rule 1 add or subtract the same number - sign unchanged
+            Solve a linear inequality in one variable
+              Graph the solution set on a number line
+              Compound - double inequality operate on all parts at once
+                System of inequalities solve separately, then intersect
+                  Applied word problems averages, mixtures, unit conversion, consecutive integ
+          Rule 2 multiply or divide - sign flips only if the number is negative
+```

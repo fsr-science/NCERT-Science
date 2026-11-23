@@ -596,6 +596,21 @@ By the sum-to-product identity (20)(i): $\cos\!\left(2x+\tfrac{2\pi}3\right)+\co
 
 ---
 
+## Interactive Unit Circle
+
+Move the angle slider through a full revolution. The moving point has
+coordinates \((\cos t,\sin t)\); its projections show the cosine and sine
+values directly.
+
+```desmos
+%view x=(-1.5,1.5) y=(-1.5,1.5)
+@angle [slider=(0,6.28,0.01)]: t=1.05
+@circle [color=#888888]: x^2+y^2=1
+@radiusPoint [color=blue, pointSize=9, label="(cos t, sin t)", showLabel]: P=(\cos t,\sin t)
+@cosPoint [color=green, pointSize=8, label="cos t", showLabel]: (\cos t,0)
+@sinPoint [color=orange, pointSize=8, label="sin t", showLabel]: (0,\sin t)
+```
+
 ## Points to Ponder
 
 > [!warning] ⚠️ The traps that actually cost marks

@@ -1,5 +1,32 @@
 # Chemistry | Chapter 05 | Thermodynamics | CNOTES
 
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Thermodynamics))
+    System and surroundings
+      Open exchanges matter and energy
+      Closed exchanges energy only
+      Isolated exchanges neither
+    First law
+      Energy is conserved
+      Internal energy changes with heat and work
+      Enthalpy tracks heat at constant pressure
+    Enthalpy changes
+      Reaction enthalpy from formation data
+      Hess law adds pathway enthalpies
+      Bond enthalpy estimates reaction energy
+      Born Haber cycle relates ionic lattice enthalpy
+    Entropy and spontaneity
+      Entropy measures dispersal
+      Spontaneous change increases total entropy
+      Gibbs energy combines enthalpy and entropy
+    Equilibrium
+      Gibbs energy change is zero at equilibrium
+      Standard Gibbs energy links to equilibrium constant
+```
+
 ### Thermodynamics
 
 ---

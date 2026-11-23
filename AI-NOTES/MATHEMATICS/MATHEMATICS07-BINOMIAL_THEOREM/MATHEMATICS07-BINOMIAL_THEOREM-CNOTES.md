@@ -59,3 +59,22 @@ flowchart TD
 ```
 
 **Reading the strategy map:** the branch order matters — always check "full expansion?" first, since every other route is really "apply the binomial theorem, then do one extra structural step." The distinguishing question between R2 and R3 is whether the problem wants an **exact value** (keep everything) or an **inequality/bound** (truncation is safe only because every kept-vs-dropped term's sign is known).
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Mathematics Chapter 07 Binomial Theorem))
+    Combinations ⁿCᵣ
+      Pattern in Pascal s Triangle br Meru-Prastara
+        Binomial Theorem br a b ⁿ
+          Special case b
+          Special case a
+            Put x
+          Special case a
+            Put x
+          Applications
+            Numerical estimation using bases near convenient values
+            Divisibility remainder proofs br e.g. 6ⁿ−5n mod 25
+            Conjugate-pair simplification br a b ⁿ a−b ⁿ
+```

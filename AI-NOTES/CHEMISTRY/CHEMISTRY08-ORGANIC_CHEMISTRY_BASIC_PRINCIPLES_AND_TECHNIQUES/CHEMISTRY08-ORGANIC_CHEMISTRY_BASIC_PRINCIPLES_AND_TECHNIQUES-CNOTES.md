@@ -1,5 +1,32 @@
 # Chemistry | Chapter 08 | Organic Chemistry Basic Principles and Techniques | CNOTES
 
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Organic chemistry principles and techniques))
+    Organic compounds
+      Classified by carbon skeleton and functional group
+      Functional groups control characteristic reactions
+    Nomenclature
+      Select parent chain
+      Number to give lowest locants
+      Name substituents and principal functional group
+    Bonding and structure
+      Hybridisation determines geometry
+      Inductive resonance and hyperconjugation affect stability
+      Isomerism allows different structures with same formula
+    Reaction mechanisms
+      Bond cleavage forms intermediates
+      Electrophiles accept electron pairs
+      Nucleophiles donate electron pairs
+      Electronic effects guide reactivity
+    Purification and analysis
+      Separate mixtures by physical properties
+      Element detection uses Lassaigne extract
+      Quantitative analysis determines composition
+```
+
 ### Organic Chemistry — Some Basic Principles and Techniques
 
 ---

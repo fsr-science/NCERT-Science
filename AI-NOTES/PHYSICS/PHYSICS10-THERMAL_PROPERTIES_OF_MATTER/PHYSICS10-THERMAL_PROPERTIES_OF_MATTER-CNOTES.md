@@ -424,3 +424,29 @@ flowchart TD
 ---
 
 _End of Revision Notes + Mind Maps — Physics Ch. 10_
+
+## Chapter Mindmap
+
+```mermaid
+mindmap
+  root((Thermal properties of matter))
+    Temperature and heat
+      Temperature determines direction of heat flow
+      Heat is energy transferred by temperature difference
+      Scales relate Celsius Fahrenheit and Kelvin
+    Thermal expansion
+      Solids expand with temperature
+      Water has anomalous expansion near freezing
+      Constraints can create thermal stress
+    Heat capacity and calorimetry
+      Specific heat measures warming per unit mass
+      Calorimetry balances heat gained and lost
+      Phase changes exchange latent heat
+    Heat transfer
+      Conduction transfers energy through matter
+      Convection moves energy with fluid motion
+      Radiation transfers energy by electromagnetic waves
+    Gases and temperature
+      Gas behaviour links pressure volume and temperature
+      Absolute zero is the lower temperature limit
+```
