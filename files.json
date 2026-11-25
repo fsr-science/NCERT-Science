@@ -975,21 +975,21 @@
                   "type": "file",
                   "name": "📒 CS08-TUPLES_AND_DICTIONARY-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-TUPLES_AND_DICTIONARY/CS08-TUPLES_AND_DICTIONARY-GLOSSARY.md",
-                  "sha": "e8574d8da4aef4b3532eb7a8ac617adce8c4f949",
+                  "sha": "1c1f6a8c919b78ced4e9e4685064ba710faf714e",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "📓 CS08-TUPLES_AND_DICTIONARY-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-TUPLES_AND_DICTIONARY/CS08-TUPLES_AND_DICTIONARY-NOTES.md",
-                  "sha": "b9441e571071d549c9120a37cf17fc5a09c60a49",
+                  "sha": "a83bfc43a30a4e25a82fd4c2148ed9333890825d",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "📔 CS08-TUPLES_AND_DICTIONARY-CNOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS08-TUPLES_AND_DICTIONARY/CS08-TUPLES_AND_DICTIONARY-CNOTES.md",
-                  "sha": "a69d5028808ce27cb7a9b99aacb0dde92956f452",
+                  "sha": "2bd2954ccc87aed599e7a04979e31930c21d7b66",
                   "mime": "text/markdown"
                 }
               ]
@@ -1029,21 +1029,48 @@
                   "type": "file",
                   "name": "📒 CS10-SOCIETY_LAW_AND_ETHICS-GLOSSARY.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-SOCIETY_LAW_AND_ETHICS/CS10-SOCIETY_LAW_AND_ETHICS-GLOSSARY.md",
-                  "sha": "1fa4cefbed3808ff47e91b4c1a07e158f8ddacc3",
+                  "sha": "fd52778f99579707530e7d32d911a61bb4d8bc19",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "📓 CS10-SOCIETY_LAW_AND_ETHICS-NOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-SOCIETY_LAW_AND_ETHICS/CS10-SOCIETY_LAW_AND_ETHICS-NOTES.md",
-                  "sha": "114737367f52e8db7c0c52a1382ab3badf09474a",
+                  "sha": "38066248b4033d6a9fff4595109cb7ea8323adeb",
                   "mime": "text/markdown"
                 },
                 {
                   "type": "file",
                   "name": "📔 CS10-SOCIETY_LAW_AND_ETHICS-CNOTES.md",
                   "path": "AI-NOTES/COMPUTER-SCIENCE/CS10-SOCIETY_LAW_AND_ETHICS/CS10-SOCIETY_LAW_AND_ETHICS-CNOTES.md",
-                  "sha": "543b92b3662c343452f2c818509b8fb0b5427e93",
+                  "sha": "76ca66c9db2e020bec1f5a73072b3ccf67fee08a",
+                  "mime": "text/markdown"
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "CS11-CYBER_SECURITY",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "📒 CS11-CYBER_SECURITY-GLOSSARY.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS11-CYBER_SECURITY/CS11-CYBER_SECURITY-GLOSSARY.md",
+                  "sha": "de5e757565d7982b38060a989f7a509775858023",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📓 CS11-CYBER_SECURITY-NOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS11-CYBER_SECURITY/CS11-CYBER_SECURITY-NOTES.md",
+                  "sha": "167c9014077abe7afeee5b011eba6f9cd505faa0",
+                  "mime": "text/markdown"
+                },
+                {
+                  "type": "file",
+                  "name": "📔 CS11-CYBER_SECURITY-CNOTES.md",
+                  "path": "AI-NOTES/COMPUTER-SCIENCE/CS11-CYBER_SECURITY/CS11-CYBER_SECURITY-CNOTES.md",
+                  "sha": "cf59e2c3bc16d4fcff5dc057465d6987401221a9",
                   "mime": "text/markdown"
                 }
               ]
